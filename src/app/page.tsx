@@ -1,4 +1,4 @@
-import { Mail, Globe, Heart, Shield, Star, Users, ArrowRight, CheckCircle, MessageCircle, UserCheck, Eye, Sparkles, Download, Smartphone } from 'lucide-react'
+import { Mail, Globe, Heart, Shield, Star, Users, ArrowRight, Download} from 'lucide-react'
 
 export default function Home() {
   const appStoreUrl = "https://apps.apple.com/kr/app/%EB%A0%88%ED%8B%B0/id6746454876"
