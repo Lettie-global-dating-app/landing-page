@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lettie 랜딩 페이지
 
-## Getting Started
+전 세계 친구들과 편지로 소통하며 진실한 관계를 만들어가는 글로벌 펜팔 앱 **Lettie**의 랜딩 페이지입니다.
 
-First, run the development server:
+## 🌟 소개
 
+Lettie는 편지를 통해 전 세계 사람들과 진정한 소통을 나누는 새로운 방식의 만남 앱입니다. 사진이나 외모가 아닌, 마음과 생각으로 시작하는 특별한 인연을 만나보세요.
+
+## 🚀 주요 기능
+
+- **편지 교환 시스템**: 전 세계 사람들과 진심이 담긴 편지를 주고받으세요
+- **프라이버시 보호**: 상대방의 사진은 편지를 주고받을수록 점점 선명해집니다
+- **젬 시스템**: 더 많은 편지를 열어보고 작성할 수 있는 재미있는 시스템
+- **다국가 지원**: 한국, 일본, 미국, 유럽 등 전 세계 사용자들과 소통
+- **연락처 교환**: 5통의 편지를 나눈 후 실제 연락처 교환 가능
+- **아름다운 UI**: 편지 쓰기의 감성을 살린 세련된 디자인
+
+## 🛠️ 기술 스택
+
+- **Next.js 15** - React 기반 풀스택 프레임워크
+- **TypeScript** - 타입 안전성을 위한 정적 타입 언어
+- **Tailwind CSS** - 유틸리티 퍼스트 CSS 프레임워크
+- **Lucide React** - 아름다운 아이콘 라이브러리
+
+## 📦 설치 및 실행
+
+1. 의존성 패키지 설치:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. 개발 서버 실행:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. 브라우저에서 [http://localhost:3000](http://localhost:3000)으로 접속
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📱 화면 구성
 
-## Learn More
+- **헤더**: 로고 및 네비게이션
+- **히어로 섹션**: 메인 제목과 소개, CTA 버튼
+- **주요 기능**: 6가지 핵심 기능 소개
+- **왜 Lettie인가요?**: 앱의 차별점과 장점
+- **추천 대상**: 타겟 사용자 그룹
+- **다운로드 CTA**: 앱 다운로드 유도
+- **푸터**: 저작권 정보
 
-To learn more about Next.js, take a look at the following resources:
+## 🎨 디자인 특징
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **따뜻한 색상**: Rose, Pink 계열의 편지 감성을 살린 컬러
+- **그라디언트**: 부드러운 그라디언트로 현대적인 느낌
+- **반응형 디자인**: 모바일부터 데스크톱까지 완벽 대응
+- **호버 효과**: 인터랙티브한 사용자 경험
+- **아이콘**: 직관적인 Lucide 아이콘 사용
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📄 라이선스
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2024 Lettie. All rights reserved.
