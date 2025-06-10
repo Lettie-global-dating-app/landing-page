@@ -219,6 +219,9 @@ export default function RootLayout({
         
         {/* 앱 스토어 스마트 배너 */}
         <meta name="apple-itunes-app" content="app-id=6746454876" />
+        
+        {/* 네이버 웹마스터 도구 인증 */}
+        <meta name="naver-site-verification" content="b933370623a65bbe5779c3dfdcf094f7a2985d36" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
