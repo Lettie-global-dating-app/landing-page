@@ -45,6 +45,7 @@ export const metadata: Metadata = {
   category: "Social Networking",
   classification: "펜팔 및 소셜 네트워킹 데이팅앱",
   
+  
   // Open Graph
   openGraph: {
     type: "website",
