@@ -1,4 +1,5 @@
 import { Mail, Globe, Heart, Shield, Star, Users, ArrowRight, Download} from 'lucide-react'
+import Image from 'next/image'
 
 export default function Home() {
   const appStoreUrl = "https://apps.apple.com/kr/app/%EB%A0%88%ED%8B%B0/id6746454876"
@@ -13,10 +14,13 @@ export default function Home() {
           <div className="flex items-center space-x-3">
             {/* Lettie App Icon */}
             <div className="w-10 h-10">
-              <img 
+              <Image 
                 src="/lettie-icon.png" 
                 alt="Lettie 앱 아이콘" 
                 className="w-10 h-10 rounded-2xl"
+                width={40}
+                height={40}
+                priority
               />
             </div>
             <span className="text-2xl font-bold text-gray-800">Lettie</span>
@@ -47,7 +51,7 @@ export default function Home() {
           </h1>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
             전 세계와 연결되는 특별한 경험<br />
-            Lettie는 편지를 통해 전 세계 사람들과 진정한 소통을 나누는 새로운 방식의 만남 앱입니다.<br />
+            Lettie는 편지를 통해 전 세계 사람들과 진정한 소통을 나누는 새로운 방식의 데이팅앱입니다.<br />
             사진이나 외모가 아닌, 마음과 생각으로 시작하는 특별한 인연을 만나보세요.
           </p>
           
@@ -93,15 +97,19 @@ export default function Home() {
       {/* Mobile Screenshots Grid */}
       <section id="app-preview" className="py-20 bg-white">
         <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">앱 미리보기</h2>
           {/* 5개의 모바일 스크린샷 */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
             {/* 1. 편지 작성 화면 */}
             <div className="flex flex-col items-center">
               <div className="w-full max-w-xs">
-                <img 
+                <Image 
                   src="/letter-writing.png" 
-                  alt="편지 작성 화면" 
+                  alt="Lettie 앱의 편지 작성 화면 - 감성적인 편지 작성 인터페이스" 
                   className="w-full h-auto rounded-3xl shadow-2xl"
+                  width={390}
+                  height={844}
+                  loading="lazy"
                 />
               </div>
               <p className="text-sm text-gray-600 mt-4 text-center font-medium">서두르지 않고 천천히,<br />서로의 진짜 모습을 알아가세요</p>
@@ -110,10 +118,13 @@ export default function Home() {
             {/* 2. 대화 상세 화면 */}
             <div className="flex flex-col items-center">
               <div className="w-full max-w-xs">
-                <img 
+                <Image 
                   src="/conversation-detail.png" 
-                  alt="대화 상세 화면" 
+                  alt="Lettie 앱의 대화 상세 화면 - 점진적 프로필 공개 시스템" 
                   className="w-full h-auto rounded-3xl shadow-2xl"
+                  width={390}
+                  height={844}
+                  loading="lazy"
                 />
               </div>
               <p className="text-sm text-gray-600 mt-4 text-center font-medium">편지를 교환할 때마다<br />상대방의 프로필이 뚜렷해져요</p>
@@ -122,10 +133,13 @@ export default function Home() {
             {/* 3. 연락처 교환 완료 */}
             <div className="flex flex-col items-center">
               <div className="w-full max-w-xs">
-                <img 
+                <Image 
                   src="/contact-exchange.png" 
-                  alt="연락처 교환 완료 화면" 
+                  alt="Lettie 앱의 연락처 교환 완료 화면 - 5통 편지 후 안전한 연락처 교환" 
                   className="w-full h-auto rounded-3xl shadow-2xl"
+                  width={390}
+                  height={844}
+                  loading="lazy"
                 />
               </div>
               <p className="text-sm text-gray-600 mt-4 text-center font-medium">5번의 진솔한 편지 후,<br />연락처를 교환해요</p>
@@ -134,10 +148,13 @@ export default function Home() {
             {/* 4. 편지 목록 화면 */}
             <div className="flex flex-col items-center">
               <div className="w-full max-w-xs">
-                <img 
+                <Image 
                   src="/letter-feed.png" 
-                  alt="편지 목록 화면" 
+                  alt="Lettie 앱의 편지 목록 화면 - 전 세계 사용자들의 편지 피드" 
                   className="w-full h-auto rounded-3xl shadow-2xl"
+                  width={390}
+                  height={844}
+                  loading="lazy"
                 />
               </div>
               <p className="text-sm text-gray-600 mt-4 text-center font-medium">마음에 드는 편지들 발견하고<br />의미 있는 대화를 시작하세요</p>
@@ -146,10 +163,13 @@ export default function Home() {
             {/* 5. 브랜드 화면 */}
             <div className="flex flex-col items-center">
               <div className="w-full max-w-xs">
-                <img 
+                <Image 
                   src="/brand-screen.png" 
-                  alt="Lettie 브랜드 화면" 
+                  alt="Lettie 앱의 브랜드 소개 화면 - 진심이 담긴 편지 문화" 
                   className="w-full h-auto rounded-3xl shadow-2xl"
+                  width={390}
+                  height={844}
+                  loading="lazy"
                 />
               </div>
               <p className="text-sm text-gray-600 mt-4 text-center font-medium">진심이 담긴 편지<br />시작되는 인연</p>
@@ -235,10 +255,13 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center space-x-3 mb-8">
             <div className="w-8 h-8">
-              <img 
+              <Image 
                 src="/lettie-icon.png" 
                 alt="Lettie 앱 아이콘" 
                 className="w-8 h-8 rounded-xl"
+                width={32}
+                height={32}
+                priority
               />
             </div>
             <span className="text-2xl font-bold">Lettie</span>
