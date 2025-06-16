@@ -1,10 +1,8 @@
-import { Mail, Globe, Heart, Shield, Star, Users, ArrowRight, Download} from 'lucide-react';
+import { Mail, Shield, Star, Users, ArrowRight, Download} from 'lucide-react';
 import Image from 'next/image';
 
 export default function Home() {
   const appStoreUrl = "https://apps.apple.com/app/id6746454876";
-  const privacyPolicyUrl = "https://relic-baboon-412.notion.site/Lettie-1fc766a8bb4680458932ea6a238e97b9";
-  const termsOfServiceUrl = "https://relic-baboon-412.notion.site/silverithm-13c766a8bb468082b91ddbd2dd6ce45d";
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
@@ -28,7 +26,7 @@ export default function Home() {
           <div className="hidden md:flex items-center space-x-8">
             <a href="#features" className="text-gray-600 hover:text-blue-500 transition-colors">Features</a>
             <a href="#app-preview" className="text-gray-600 hover:text-blue-500 transition-colors">App Preview</a>
-            <a href="#recommended" className="text-gray-600 hover:text-blue-500 transition-colors">Who It's For</a>
+            <a href="#recommended" className="text-gray-600 hover:text-blue-500 transition-colors">Who It&apos;s For</a>
             <a 
               href={appStoreUrl}
               target="_blank"
@@ -123,7 +121,7 @@ export default function Home() {
                   loading="lazy"
                 />
               </div>
-              <p className="text-sm text-gray-600 mt-4 text-center font-medium">With every letter exchanged,<br />your friend's profile becomes clearer</p>
+              <p className="text-sm text-gray-600 mt-4 text-center font-medium">With every letter exchanged,<br />your friend&apos;s profile becomes clearer</p>
             </div>
             {/* 3. Contact Exchange Complete */}
             <div className="flex flex-col items-center">
@@ -144,7 +142,7 @@ export default function Home() {
               <div className="w-full max-w-xs">
                 <Image 
                   src="/letter-feed-en.png" 
-                  alt="Lettie penpal letter feed screen - global users' letter feed" 
+                  alt="Lettie penpal letter feed screen - global users&apos; letter feed" 
                   className="w-full h-auto rounded-3xl shadow-2xl"
                   width={390}
                   height={844}
@@ -184,7 +182,7 @@ export default function Home() {
             <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-blue-100">
               <Shield className="w-12 h-12 text-blue-500 mb-4" />
               <h3 className="text-xl font-bold text-gray-800 mb-3">Gradual Profile Reveal</h3>
-              <p className="text-gray-600">The more penpal letters you exchange, the clearer your friend's profile becomes, focusing on personality over appearance</p>
+              <p className="text-gray-600">The more penpal letters you exchange, the clearer your friend&apos;s profile becomes, focusing on personality over appearance</p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-blue-100">
               <Users className="w-12 h-12 text-blue-500 mb-4" />
