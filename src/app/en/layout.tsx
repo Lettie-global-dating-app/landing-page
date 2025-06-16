@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,23 +12,20 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// 환경에 따른 base URL 설정
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL
-  ? process.env.NEXT_PUBLIC_SITE_URL
-  : "https://lettie.app";
+  ? process.env.NEXT_PUBLIC_SITE_URL + "/en"
+  : "https://lettie.app/en";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "편지, 펜팔 - Lettie | 전 세계 친구들과 편지로 소통하는 글로벌 펜팔 데이팅앱",
-    template: "%s | 편지, 펜팔 Lettie"
+    default: "Penpal, Letter - Lettie | Make Global Friends with Letters | Penpal App",
+    template: "%s | Penpal, Letter Lettie"
   },
-  description: "편지와 펜팔을 통해 전 세계 친구들과 소통하세요. Lettie는 진실한 관계를 만들어가는 글로벌 펜팔 데이팅앱입니다. 편지, 펜팔, 친구, 소통, 만남, 인연, 모두 Lettie에서 경험하세요.",
+  description: "Connect with global friends through penpal and letter. Lettie is a global penpal dating app for building genuine relationships. Experience penpal, letter, friends, communication, and connections on Lettie.",
   keywords: [
-    "편지", "펜팔", "펜팔앱", "편지앱", "글로벌 펜팔", "글로벌 친구", "글로벌", "친구", "소통", "문화교류", "외국인친구", "언어교환", 
-    "글로벌친구", "해외친구", "문화체험", "Lettie", "레티",
-    "펜친구", "편지친구", "해외문화", "언어학습", "국제교류", "세계친구", "데이팅",
-    "데이팅앱", "만남", "인연", "글로벌 데이팅", "국제 만남", "편지 데이팅"
+    "penpal", "letter", "penpal app", "letter app", "global penpal", "global friend", "global", "friend", "communication", "cultural exchange", "language exchange", 
+    "international friend", "overseas friend", "Lettie", "dating app", "relationship", "connection", "international dating", "penpal dating"
   ],
   authors: [{ name: "Lettie Team" }],
   creator: "Lettie Team",
@@ -39,67 +36,52 @@ export const metadata: Metadata = {
     telephone: false,
   },
   category: "Social Networking",
-  classification: "펜팔 및 소셜 네트워킹 데이팅앱",
-  
-  
-  // Open Graph
+  classification: "Penpal and Social Networking Dating App",
   openGraph: {
     type: "website",
-    locale: "ko_KR",
+    locale: "en_US",
     url: baseUrl,
     siteName: "Lettie",
-    title: "편지, 펜팔 - Lettie | 전 세계 친구들과 편지로 소통하는 글로벌 펜팔 데이팅앱",
-    description: "편지와 펜팔을 통해 전 세계 친구들과 소통하세요. Lettie는 진실한 관계를 만들어가는 글로벌 펜팔 데이팅앱입니다. 편지, 펜팔, 친구, 소통, 만남, 인연, 모두 Lettie에서 경험하세요.",
+    title: "Penpal, Letter - Lettie | Make Global Friends with Letters | Penpal App",
+    description: "Connect with global friends through penpal and letter. Lettie is a global penpal dating app for building genuine relationships. Experience penpal, letter, friends, communication, and connections on Lettie.",
     images: [
       {
         url: "/lettie-og-image.png",
         width: 1200,
         height: 630,
-        alt: "Lettie - 글로벌 펜팔 데이팅앱",
+        alt: "Lettie - Global Penpal Dating App",
         type: "image/png",
       }
     ],
   },
-
-  // Twitter Cards
   twitter: {
     card: "summary_large_image",
     site: "@lettie_app",
     creator: "@lettie_app",
-    title: "편지, 펜팔 - Lettie | 전 세계 친구들과 편지로 소통하는 글로벌 펜팔 데이팅앱",
-    description: "편지와 펜팔을 통해 전 세계 친구들과 소통하세요. Lettie는 진실한 관계를 만들어가는 글로벌 펜팔 데이팅앱입니다.",
+    title: "Penpal, Letter - Lettie | Make Global Friends with Letters | Penpal App",
+    description: "Connect with global friends through penpal and letter. Lettie is a global penpal dating app for building genuine relationships.",
     images: ["/lettie-og-image.png"],
   },
-
-  // App Store & Google Play
   alternates: {
     canonical: baseUrl,
     languages: {
-      'ko': baseUrl,
-      'en': `${baseUrl}/en`,
+      'en': baseUrl,
+      'ko': baseUrl.replace('/en', ''),
     },
   },
-
-  // App Links
   appLinks: {
     ios: {
       app_store_id: "6746454876",
-      url: "https://apps.apple.com/kr/app/%EB%A0%88%ED%8B%B0/id6746454876",
+      url: "https://apps.apple.com/app/id6746454876",
     },
     android: {
       package: "com.lettie.app",
       url: "https://play.google.com/store/apps/details?id=com.lettie.app",
     },
   },
-
-  // Verification
   verification: {
-    google: "google-site-verification-code", // 실제 코드로 교체 필요
-    // yandex: "yandex-verification-code",
-    // yahoo: "yahoo-site-verification-code",
+    google: "google-site-verification-code",
   },
-
-  // Robots
   robots: {
     index: true,
     follow: true,
@@ -113,8 +95,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-
-  // Icons
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "32x32" },
@@ -131,8 +111,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-
-  // Manifest
   manifest: "/site.webmanifest",
 };
 
@@ -142,25 +120,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
+    <html lang="en">
       <head>
-        {/* JSON-LD 구조화된 데이터 */}
+        {/* JSON-LD structured data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "MobileApplication",
-              "name": "Lettie - 편지, 펜팔 글로벌 데이팅앱",
+              "name": "Lettie - Penpal, Letter Global Dating App",
               "applicationCategory": "SocialNetworkingApplication",
               "operatingSystem": ["iOS", "Android"],
-              "description": "편지와 펜팔을 통해 전 세계 친구들과 소통하세요. Lettie는 진실한 관계를 만들어가는 글로벌 펜팔 데이팅앱입니다.",
+              "description": "Connect with global friends through penpal and letter. Lettie is a global penpal dating app for building genuine relationships.",
               "url": baseUrl,
-              "downloadUrl": "https://apps.apple.com/kr/app/%EB%A0%88%ED%8B%B0/id6746454876",
+              "downloadUrl": "https://apps.apple.com/app/id6746454876",
               "offers": {
                 "@type": "Offer",
                 "price": "0",
-                "priceCurrency": "KRW",
+                "priceCurrency": "USD",
                 "category": "Free"
               },
               "aggregateRating": {
@@ -190,33 +168,27 @@ export default function RootLayout({
                 `${baseUrl}/brand-screen.png`
               ],
               "featureList": [
-                "전 세계 친구들과 편지 교환",
-                "글로벌 펜팔 시스템",
-                "프라이버시 보호 시스템",
-                "5통 편지 후 연락처 교환",
-                "다국가 지원"
+                "Exchange letters with global friends",
+                "Global penpal system",
+                "Privacy protection system",
+                "Contact exchange after 5 letters",
+                "Multi-country support"
               ]
             })
           }}
         />
-        
-        {/* 추가 SEO 메타 태그 */}
+        {/* Extra SEO meta tags */}
         <meta name="theme-color" content="#4f46e5" />
         <meta name="msapplication-TileColor" content="#4f46e5" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="mobile-web-app-capable" content="yes" />
-        
-        {/* 지역 및 언어 정보 */}
-        <meta name="geo.region" content="KR" />
-        <meta name="geo.country" content="Korea" />
-        <meta name="language" content="Korean" />
-        
-        {/* 앱 스토어 스마트 배너 */}
+        {/* Region and language info */}
+        <meta name="geo.region" content="US" />
+        <meta name="geo.country" content="United States" />
+        <meta name="language" content="English" />
+        {/* App Store Smart Banner */}
         <meta name="apple-itunes-app" content="app-id=6746454876" />
-        
-        {/* 네이버 웹마스터 도구 인증 */}
-        <meta name="naver-site-verification" content="b933370623a65bbe5779c3dfdcf094f7a2985d36" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -225,4 +197,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+} 
