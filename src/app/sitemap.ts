@@ -23,6 +23,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/en`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 1,
+    },
+    {
+      url: `${baseUrl}/en/privacy`,
+      lastModified,
+      changeFrequency: 'yearly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/en/terms`,
+      lastModified,
+      changeFrequency: 'yearly',
+      priority: 0.8,
+    },
     // 추가 페이지들이 있다면 여기에 추가
   ]
 } 
