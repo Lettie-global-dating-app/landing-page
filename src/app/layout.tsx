@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import LanguageSwitcher from "./components/LanguageSwitcher";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -155,7 +156,7 @@ export default function RootLayout({
               "applicationCategory": "SocialNetworkingApplication",
               "operatingSystem": ["iOS", "Android"],
               "description": "편지와 펜팔을 통해 전 세계 친구들과 소통하세요. Lettie는 진실한 관계를 만들어가는 글로벌 펜팔 데이팅앱입니다.",
-              "url": baseUrl,
+              "url": "https://lettie.app",
               "downloadUrl": "https://apps.apple.com/kr/app/%EB%A0%88%ED%8B%B0/id6746454876",
               "offers": {
                 "@type": "Offer",
@@ -179,15 +180,15 @@ export default function RootLayout({
                 "name": "Lettie",
                 "logo": {
                   "@type": "ImageObject",
-                  "url": `${baseUrl}/lettie-icon.png`
+                  "url": "https://lettie.app/lettie-icon.png"
                 }
               },
               "screenshot": [
-                `${baseUrl}/letter-writing.png`,
-                `${baseUrl}/conversation-detail.png`,
-                `${baseUrl}/contact-exchange.png`,
-                `${baseUrl}/letter-feed.png`,
-                `${baseUrl}/brand-screen.png`
+                "https://lettie.app/letter-writing.png",
+                "https://lettie.app/conversation-detail.png",
+                "https://lettie.app/contact-exchange.png",
+                "https://lettie.app/letter-feed.png",
+                "https://lettie.app/brand-screen.png"
               ],
               "featureList": [
                 "전 세계 친구들과 편지 교환",
@@ -221,6 +222,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <LanguageSwitcher />
         {children}
       </body>
     </html>

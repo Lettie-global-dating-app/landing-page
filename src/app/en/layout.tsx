@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
+import LanguageSwitcher from "../components/LanguageSwitcher";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,6 +16,10 @@ const geistMono = Geist_Mono({
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL
   ? process.env.NEXT_PUBLIC_SITE_URL + "/en"
   : "https://lettie.app/en";
+
+const koBaseUrl = process.env.NEXT_PUBLIC_SITE_URL
+  ? process.env.NEXT_PUBLIC_SITE_URL
+  : "https://lettie.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -66,7 +71,7 @@ export const metadata: Metadata = {
     canonical: baseUrl,
     languages: {
       'en': baseUrl,
-      'ko': baseUrl.replace('/en', ''),
+      'ko': koBaseUrl,
     },
   },
   appLinks: {
@@ -133,7 +138,7 @@ export default function RootLayout({
               "applicationCategory": "SocialNetworkingApplication",
               "operatingSystem": ["iOS", "Android"],
               "description": "Connect with global friends through penpal and letter. Lettie is a global penpal dating app for building genuine relationships.",
-              "url": baseUrl,
+              "url": "https://lettie.app/en",
               "downloadUrl": "https://apps.apple.com/app/id6746454876",
               "offers": {
                 "@type": "Offer",
@@ -157,15 +162,15 @@ export default function RootLayout({
                 "name": "Lettie",
                 "logo": {
                   "@type": "ImageObject",
-                  "url": `${baseUrl}/lettie-icon.png`
+                  "url": "https://lettie.app/lettie-icon.png"
                 }
               },
               "screenshot": [
-                `${baseUrl}/letter-writing.png`,
-                `${baseUrl}/conversation-detail.png`,
-                `${baseUrl}/contact-exchange.png`,
-                `${baseUrl}/letter-feed.png`,
-                `${baseUrl}/brand-screen.png`
+                "https://lettie.app/letter-writing.png",
+                "https://lettie.app/conversation-detail.png",
+                "https://lettie.app/contact-exchange.png",
+                "https://lettie.app/letter-feed.png",
+                "https://lettie.app/brand-screen.png"
               ],
               "featureList": [
                 "Exchange letters with global friends",
@@ -193,6 +198,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <LanguageSwitcher />
         {children}
       </body>
     </html>
