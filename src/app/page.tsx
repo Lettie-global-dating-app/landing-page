@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 export default function Home() {
   const appStoreUrl = "https://apps.apple.com/kr/app/%EB%A0%88%ED%8B%B0/id6746454876"
+  const playStoreUrl = "https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe"
   const privacyPolicyUrl = "https://relic-baboon-412.notion.site/Lettie-1fc766a8bb4680458932ea6a238e97b9"
   const termsOfServiceUrl = "https://relic-baboon-412.notion.site/silverithm-13c766a8bb468082b91ddbd2dd6ce45d"
   
@@ -80,14 +81,21 @@ export default function Home() {
               App Store에서 다운로드
               <ArrowRight className="inline ml-2 w-5 h-5" />
             </a>
-            <button className="border-2 border-blue-500 text-blue-500 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 transition-colors">
-              더 알아보기
-            </button>
+            <a
+              href={playStoreUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-600 transition-colors shadow-lg inline-flex items-center"
+            >
+              <Download className="mr-2 w-5 h-5" />
+              Google Play에서 다운로드
+              <ArrowRight className="inline ml-2 w-5 h-5" />
+            </a>
           </div>
           
           <div className="text-sm text-gray-500">
             <span className="bg-gray-100 px-3 py-1 rounded-full mr-2">무료 다운로드</span>
-            <span className="bg-gray-100 px-3 py-1 rounded-full mr-2">iOS 13.0+</span>
+            <span className="bg-gray-100 px-3 py-1 rounded-full mr-2">iOS 13.0+ / Android 5.0+</span>
             <span className="bg-gray-100 px-3 py-1 rounded-full mr-2">앱 내 구입</span>
             <span className="bg-gray-100 px-3 py-1 rounded-full">개발자: junhyeong kim</span>
           </div>
@@ -277,6 +285,14 @@ export default function Home() {
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 App Store
+              </a>
+              <a
+                href={playStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                Google Play
               </a>
               <a
                 href={privacyPolicyUrl}

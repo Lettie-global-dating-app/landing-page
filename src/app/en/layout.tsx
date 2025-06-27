@@ -80,8 +80,8 @@ export const metadata: Metadata = {
       url: "https://apps.apple.com/app/id6746454876",
     },
     android: {
-      package: "com.lettie.app",
-      url: "https://play.google.com/store/apps/details?id=com.lettie.app",
+      package: "com.dearglobe.dearglobe",
+      url: "https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe",
     },
   },
   verification: {

@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 export default function Home() {
   const appStoreUrl = "https://apps.apple.com/app/id6746454876";
+  const playStoreUrl = "https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe";
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
@@ -76,13 +77,20 @@ export default function Home() {
               Download on the App Store
               <ArrowRight className="inline ml-2 w-5 h-5" />
             </a>
-            <button className="border-2 border-blue-500 text-blue-500 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 transition-colors">
-              Learn More
-            </button>
+            <a
+              href={playStoreUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-600 transition-colors shadow-lg inline-flex items-center"
+            >
+              <Download className="mr-2 w-5 h-5" />
+              Get it on Google Play
+              <ArrowRight className="inline ml-2 w-5 h-5" />
+            </a>
           </div>
           <div className="text-sm text-gray-500">
             <span className="bg-gray-100 px-3 py-1 rounded-full mr-2">Free Download</span>
-            <span className="bg-gray-100 px-3 py-1 rounded-full mr-2">iOS 13.0+</span>
+            <span className="bg-gray-100 px-3 py-1 rounded-full mr-2">iOS 13.0+ / Android 5.0+</span>
             <span className="bg-gray-100 px-3 py-1 rounded-full mr-2">In-App Purchases</span>
             <span className="bg-gray-100 px-3 py-1 rounded-full">Developer: junhyeong kim</span>
           </div>
