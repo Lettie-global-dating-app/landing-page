@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: '펜팔앱을 찾고 계신가요? Lettie는 전 세계 150개국 친구들과 안전하게 편지를 주고받을 수 있는 최고의 펜팔앱입니다. 지금 무료로 시작하세요!',
   keywords: ['펜팔앱', '펜팔 앱', '펜팔 어플', '편지 앱', '글로벌 펜팔앱', '무료 펜팔앱', '안전한 펜팔앱', '펜팔앱 추천'],
   alternates: {
-    canonical: 'https://lettie.app/penpal-app',
+    canonical: 'https://lettie-dating.com/penpal-app',
   },
 };
 

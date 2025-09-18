@@ -4,7 +4,7 @@ import { Calendar, Clock, ArrowRight } from 'lucide-react';
 
 export const metadata = {
   alternates: {
-    canonical: 'https://lettie.app/blog',
+    canonical: 'https://lettie-dating.com/blog',
   },
 };
 

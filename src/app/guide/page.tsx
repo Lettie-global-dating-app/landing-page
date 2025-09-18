@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: '펜팔 시작 방법, 편지 작성 팁, 문화 교류 가이드, 언어 학습법 등 성공적인 펜팔을 위한 완벽한 가이드',
   keywords: ['펜팔 가이드', '편지 작성법', '글로벌 친구 만들기', '언어 교환', '문화 교류', '펜팔 에티켓', '국제 친구'],
   alternates: {
-    canonical: 'https://lettie.app/guide',
+    canonical: 'https://lettie-dating.com/guide',
   },
 };
 
@@ -119,7 +119,7 @@ export default function GuidePage() {
     '@type': 'HowTo',
     name: '성공적인 펜팔 시작하기',
     description: '전 세계 친구들과 편지로 소통하며 의미 있는 관계를 만드는 방법',
-    image: 'https://lettie.app/lettie-og-image.png',
+    image: 'https://lettie-dating.com/lettie-og-image.png',
     totalTime: 'PT30M',
     estimatedCost: {
       '@type': 'MonetaryAmount',

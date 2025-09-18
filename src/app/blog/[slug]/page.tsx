@@ -257,7 +257,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       authors: [post.author],
     },
     alternates: {
-      canonical: `https://lettie.app/blog/${slug}`,
+      canonical: `https://lettie-dating.com/blog/${slug}`,
     },
   };
 }
@@ -282,7 +282,7 @@ export default async function BlogPostPage({ params }: Props) {
     '@type': 'BlogPosting',
     headline: post.title,
     description: post.description,
-    image: `https://lettie.app${post.image}`,
+    image: `https://lettie-dating.com${post.image}`,
     datePublished: post.date,
     dateModified: post.date,
     author: {
@@ -294,12 +294,12 @@ export default async function BlogPostPage({ params }: Props) {
       name: 'Lettie',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://lettie.app/lettie-icon.png',
+        url: 'https://lettie-dating.com/lettie-icon.png',
       },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://lettie.app/blog/${slug}`,
+      '@id': `https://lettie-dating.com/blog/${slug}`,
     },
   };
 

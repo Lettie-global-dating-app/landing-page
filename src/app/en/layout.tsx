@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL
   ? process.env.NEXT_PUBLIC_SITE_URL + "/en"
-  : "https://lettie.app/en";
+  : "https://lettie-dating.com/en";
 
 const koBaseUrl = process.env.NEXT_PUBLIC_SITE_URL
   ? process.env.NEXT_PUBLIC_SITE_URL
-  : "https://lettie.app";
+  : "https://lettie-dating.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -138,7 +138,7 @@ export default function RootLayout({
               "applicationCategory": "SocialNetworkingApplication",
               "operatingSystem": ["iOS", "Android"],
               "description": "Connect with global friends through penpal and letter. Lettie is a global penpal dating app for building genuine relationships.",
-              "url": "https://lettie.app/en",
+              "url": "https://lettie-dating.com/en",
               "downloadUrl": "https://apps.apple.com/app/id6746454876",
               "offers": {
                 "@type": "Offer",
@@ -162,15 +162,15 @@ export default function RootLayout({
                 "name": "Lettie",
                 "logo": {
                   "@type": "ImageObject",
-                  "url": "https://lettie.app/lettie-icon.png"
+                  "url": "https://lettie-dating.com/lettie-icon.png"
                 }
               },
               "screenshot": [
-                "https://lettie.app/letter-writing.png",
-                "https://lettie.app/conversation-detail.png",
-                "https://lettie.app/contact-exchange.png",
-                "https://lettie.app/letter-feed.png",
-                "https://lettie.app/brand-screen.png"
+                "https://lettie-dating.com/letter-writing.png",
+                "https://lettie-dating.com/conversation-detail.png",
+                "https://lettie-dating.com/contact-exchange.png",
+                "https://lettie-dating.com/letter-feed.png",
+                "https://lettie-dating.com/brand-screen.png"
               ],
               "featureList": [
                 "Exchange letters with global friends",

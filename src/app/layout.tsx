@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 // 환경에 따른 base URL 설정
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL
   ? process.env.NEXT_PUBLIC_SITE_URL
-  : "https://lettie.app";
+  : "https://lettie-dating.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -156,7 +156,7 @@ export default function RootLayout({
               "applicationCategory": "SocialNetworkingApplication",
               "operatingSystem": ["iOS", "Android"],
               "description": "편지와 펜팔을 통해 전 세계 친구들과 소통하세요. Lettie는 진실한 관계를 만들어가는 글로벌 펜팔 데이팅앱입니다.",
-              "url": "https://lettie.app",
+              "url": "https://lettie-dating.com",
               "downloadUrl": "https://apps.apple.com/kr/app/%EB%A0%88%ED%8B%B0/id6746454876",
               "offers": {
                 "@type": "Offer",
@@ -180,15 +180,15 @@ export default function RootLayout({
                 "name": "Lettie",
                 "logo": {
                   "@type": "ImageObject",
-                  "url": "https://lettie.app/lettie-icon.png"
+                  "url": "https://lettie-dating.com/lettie-icon.png"
                 }
               },
               "screenshot": [
-                "https://lettie.app/letter-writing.png",
-                "https://lettie.app/conversation-detail.png",
-                "https://lettie.app/contact-exchange.png",
-                "https://lettie.app/letter-feed.png",
-                "https://lettie.app/brand-screen.png"
+                "https://lettie-dating.com/letter-writing.png",
+                "https://lettie-dating.com/conversation-detail.png",
+                "https://lettie-dating.com/contact-exchange.png",
+                "https://lettie-dating.com/letter-feed.png",
+                "https://lettie-dating.com/brand-screen.png"
               ],
               "featureList": [
                 "전 세계 친구들과 편지 교환",

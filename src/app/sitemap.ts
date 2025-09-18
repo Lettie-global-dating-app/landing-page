@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://lettie.app'
+  const baseUrl = 'https://lettie-dating.com'
   const lastModified = new Date()
 
   // Blog post IDs

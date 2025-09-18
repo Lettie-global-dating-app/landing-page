@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'Lettie를 통해 전 세계 친구들과 펜팔하며 특별한 인연을 만든 실제 사용자들의 이야기',
   keywords: ['펜팔 후기', 'Lettie 사용후기', '펜팔 성공 스토리', '글로벌 친구 이야기', '편지 친구 후기'],
   alternates: {
-    canonical: 'https://lettie.app/stories',
+    canonical: 'https://lettie-dating.com/stories',
   },
 };
 

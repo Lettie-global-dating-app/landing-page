@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'Lettie 펜팔 앱 사용법, 편지 교환 방법, 안전 기능 등에 대한 자주 묻는 질문과 답변',
   keywords: ['Lettie FAQ', '펜팔 앱 사용법', '편지 앱 질문', '펜팔 가이드', 'Lettie 도움말'],
   alternates: {
-    canonical: 'https://lettie.app/faq',
+    canonical: 'https://lettie-dating.com/faq',
   },
 };
 
