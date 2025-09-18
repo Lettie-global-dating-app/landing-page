@@ -258,7 +258,7 @@ export default function PenpalAppPage() {
                 Q: 어떤 사람들이 이 펜팔앱을 사용하나요?
               </h3>
               <p className="text-gray-600">
-                A: 전 세계 150개국의 다양한 연령대 사용자들이 언어 학습, 문화 교류, 새로운 친구 만들기 등의 목적으로 사용합니다.
+                A: 전 세계 다양한 연령대 사용자들이 언어 학습, 문화 교류, 새로운 친구 만들기 등의 목적으로 사용합니다.
               </p>
             </div>
           </div>
@@ -271,7 +271,7 @@ export default function PenpalAppPage() {
               지금 바로 펜팔앱 Lettie를 시작하세요
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              10만 명이 선택한 최고의 펜팔앱<br />
+              많은 사용자가 선택한 최고의 펜팔앱<br />
               전 세계 친구들이 당신을 기다리고 있습니다
             </p>
 

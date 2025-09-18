@@ -146,6 +146,12 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
+        {/* Favicon - 실제 Lettie 로고 사용 */}
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
         {/* JSON-LD 구조화된 데이터 */}
         <script
           type="application/ld+json"
@@ -165,20 +171,13 @@ export default function RootLayout({
                 "priceCurrency": "KRW",
                 "category": "Free"
               },
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "5.0",
-                "ratingCount": "1000",
-                "bestRating": "5",
-                "worstRating": "1"
-              },
               "author": {
                 "@type": "Organization",
-                "name": "Lettie Team"
+                "name": "junhyeong kim"
               },
               "publisher": {
                 "@type": "Organization",
-                "name": "Lettie",
+                "name": "junhyeong kim",
                 "logo": {
                   "@type": "ImageObject",
                   "url": "https://lettie-dating.com/lettie-icon.png"

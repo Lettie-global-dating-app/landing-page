@@ -26,7 +26,7 @@ const blogPosts: Record<string, BlogPost> = {
     readTime: '5분',
     category: '가이드',
     image: '/letter-writing.png',
-    author: 'Lettie Team',
+    author: 'Lettie',
     keywords: ['펜팔 시작', '첫 편지', '펜팔 가이드', '편지 작성법', '국제 친구'],
     content: `
 # 펜팔을 시작하는 완벽한 가이드
@@ -106,7 +106,7 @@ Lettie는 5통의 편지를 주고받은 후 연락처를 교환할 수 있습�
     readTime: '7분',
     category: '문화',
     image: '/brand-screen.png',
-    author: 'Lettie Team',
+    author: 'Lettie',
     keywords: ['편지 문화', '글로벌 에티켓', '펜팔 문화', '국제 교류', '문화 차이'],
     content: `
 # 세계 각국의 편지 문화 이해하기
@@ -163,7 +163,7 @@ Lettie는 다양한 문화권의 사람들을 연결해줍니다. 서로의 차�
     readTime: '6분',
     category: '학습',
     image: '/conversation-detail.png',
-    author: 'Lettie Team',
+    author: 'Lettie',
     keywords: ['언어 교환', '언어 학습', '펜팔 학습', '외국어', '언어 공부'],
     content: `
 # 펜팔로 언어 실력 향상시키기

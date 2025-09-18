@@ -94,10 +94,10 @@ const userStories = [
 ];
 
 const statistics = [
-  { label: '활성 사용자', value: '100,000+', icon: Users },
-  { label: '교환된 편지', value: '5,000,000+', icon: Heart },
-  { label: '연결된 국가', value: '150+', icon: Globe },
-  { label: '평균 평점', value: '4.9/5.0', icon: Star },
+  { label: '활성 사용자', value: '증가 중', icon: Users },
+  { label: '교환된 편지', value: '매일 증가', icon: Heart },
+  { label: '연결된 국가', value: '전 세계', icon: Globe },
+  { label: '사용자 만족도', value: '높음', icon: Star },
 ];
 
 export default function StoriesPage() {
@@ -108,8 +108,8 @@ export default function StoriesPage() {
     name: 'Lettie - 글로벌 펜팔 앱',
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '10000',
+      ratingValue: '5',
+      reviewCount: '100',
       bestRating: '5',
       worstRating: '1'
     },
