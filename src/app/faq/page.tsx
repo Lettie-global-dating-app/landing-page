@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { ChevronDown, ChevronUp, HelpCircle, Mail, Shield, Globe, Users } from 'lucide-react';
+import { ChevronDown, HelpCircle, Mail, Shield, Globe, Users } from 'lucide-react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

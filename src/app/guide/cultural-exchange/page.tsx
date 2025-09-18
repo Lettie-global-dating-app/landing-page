@@ -122,7 +122,7 @@ export default function CulturalExchangeGuidePage() {
                   <ul className="space-y-3 text-gray-600">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                      <span><strong>판단하지 말고 이해하기:</strong> "우리나라와 다르네"가 아닌 "흥미롭네, 더 알고 싶어"</span>
+                      <span><strong>판단하지 말고 이해하기:</strong> &ldquo;우리나라와 다르네&rdquo;가 아닌 &ldquo;흥미롭네, 더 알고 싶어&rdquo;</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
@@ -150,10 +150,10 @@ export default function CulturalExchangeGuidePage() {
                     <div>
                       <h4 className="font-medium text-blue-700 mb-2">대신 이런 접근을</h4>
                       <ul className="space-y-1 text-gray-600 text-sm">
-                        <li>• "당신 나라에서는 어떻게 생각해?"</li>
-                        <li>• "그 문화에 대해 더 알려줘"</li>
-                        <li>• "나는 이렇게 배웠는데..."</li>
-                        <li>• "서로 다른 점이 흥미로워"</li>
+                        <li>• &ldquo;당신 나라에서는 어떻게 생각해?&rdquo;</li>
+                        <li>• &ldquo;그 문화에 대해 더 알려줘&rdquo;</li>
+                        <li>• &ldquo;나는 이렇게 배웠는데...&rdquo;</li>
+                        <li>• &ldquo;서로 다른 점이 흥미로워&rdquo;</li>
                       </ul>
                     </div>
                   </div>
@@ -205,13 +205,13 @@ export default function CulturalExchangeGuidePage() {
                   <h3 className="font-semibold text-gray-800 mb-3">💌 명절 인사 예시</h3>
                   <div className="space-y-2 text-gray-600">
                     <p className="italic bg-white rounded-lg p-3">
-                      "다음 주가 추수감사절이라고 들었어요! 가족들과 특별한 계획이 있나요?"
+                      &ldquo;다음 주가 추수감사절이라고 들었어요! 가족들과 특별한 계획이 있나요?&rdquo;
                     </p>
                     <p className="italic bg-white rounded-lg p-3">
-                      "라마단 기간이라고 들었어요. 건강 잘 챙기시고, 의미 있는 시간 보내세요."
+                      &ldquo;라마단 기간이라고 들었어요. 건강 잘 챙기시고, 의미 있는 시간 보내세요.&rdquo;
                     </p>
                     <p className="italic bg-white rounded-lg p-3">
-                      "설날이 다가오네요! 한국의 설날 전통에 대해 알려주실래요?"
+                      &ldquo;설날이 다가오네요! 한국의 설날 전통에 대해 알려주실래요?&rdquo;
                     </p>
                   </div>
                 </div>
@@ -245,11 +245,11 @@ export default function CulturalExchangeGuidePage() {
                     <div className="bg-white rounded-lg p-4">
                       <h4 className="font-medium text-purple-700 mb-2">대화 시작 질문</h4>
                       <ul className="space-y-1 text-gray-600 text-sm">
-                        <li>• "아침은 보통 뭘 먹어?"</li>
-                        <li>• "너희 나라 대표 음식은?"</li>
-                        <li>• "이 요리 만들어본 적 있어?"</li>
-                        <li>• "특별한 날 먹는 음식이 있어?"</li>
-                        <li>• "길거리 음식 좋아해?"</li>
+                        <li>• &ldquo;아침은 보통 뭘 먹어?&rdquo;</li>
+                        <li>• &ldquo;너희 나라 대표 음식은?&rdquo;</li>
+                        <li>• &ldquo;이 요리 만들어본 적 있어?&rdquo;</li>
+                        <li>• &ldquo;특별한 날 먹는 음식이 있어?&rdquo;</li>
+                        <li>• &ldquo;길거리 음식 좋아해?&rdquo;</li>
                       </ul>
                     </div>
                   </div>

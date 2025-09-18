@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Calendar, Clock, ArrowLeft, Share2, Heart, Globe, Shield, Mail } from 'lucide-react';
+import { Calendar, Clock, ArrowLeft, Share2 } from 'lucide-react';
 import { notFound } from 'next/navigation';
 
 type BlogPost = {
@@ -384,7 +384,7 @@ export default async function BlogPostPage({ params }: Props) {
         {/* Article Content */}
         <div className="prose prose-lg max-w-none">
           <div dangerouslySetInnerHTML={{
-            __html: post.content.replace(/\n/g, '<br />').replace(/#{1,6} (.+)/g, (match, text, offset) => {
+            __html: post.content.replace(/\n/g, '<br />').replace(/#{1,6} (.+)/g, (match, text) => {
               const level = match.indexOf(' ');
               return `<h${level} class="text-${7-level}xl font-bold mt-8 mb-4 text-gray-800">${text}</h${level}>`;
             }).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')

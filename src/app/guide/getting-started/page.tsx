@@ -87,8 +87,8 @@ export default function GettingStartedGuidePage() {
                 <div className="bg-yellow-50 rounded-xl p-6">
                   <h3 className="font-semibold text-gray-800 mb-3">💡 프로필 작성 팁</h3>
                   <p>
-                    "저는 한국에 사는 28살 직장인입니다" 보다는
-                    "저는 서울에서 그래픽 디자이너로 일하며, 주말에는 카페 탐방과 독립영화 보기를 좋아하는 28살입니다"
+                    &ldquo;저는 한국에 사는 28살 직장인입니다&rdquo; 보다는
+                    &ldquo;저는 서울에서 그래픽 디자이너로 일하며, 주말에는 카페 탐방과 독립영화 보기를 좋아하는 28살입니다&rdquo;
                     처럼 구체적이고 생동감 있게 작성해보세요.
                   </p>
                 </div>
@@ -105,7 +105,7 @@ export default function GettingStartedGuidePage() {
                 <div className="border-l-4 border-blue-500 pl-6">
                   <h3 className="font-semibold text-gray-800 mb-2">1. 따뜻한 인사로 시작하기</h3>
                   <p className="text-gray-600">
-                    "안녕하세요! 당신의 프로필을 읽고 꼭 편지를 보내고 싶었어요."
+                    &ldquo;안녕하세요! 당신의 프로필을 읽고 꼭 편지를 보내고 싶었어요.&rdquo;
                   </p>
                 </div>
                 <div className="border-l-4 border-blue-500 pl-6">
@@ -123,7 +123,7 @@ export default function GettingStartedGuidePage() {
                 <div className="border-l-4 border-blue-500 pl-6">
                   <h3 className="font-semibold text-gray-800 mb-2">4. 질문으로 마무리</h3>
                   <p className="text-gray-600">
-                    "당신의 나라에서 가장 좋아하는 계절은 언제인가요?" 같은 답하기 쉬운 질문으로 대화를 이어가세요.
+                    &ldquo;당신의 나라에서 가장 좋아하는 계절은 언제인가요?&rdquo; 같은 답하기 쉬운 질문으로 대화를 이어가세요.
                   </p>
                 </div>
               </div>

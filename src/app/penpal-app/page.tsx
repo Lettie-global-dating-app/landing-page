@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Mail, Globe, Shield, Heart, Users, Star, Download, Check } from 'lucide-react';
+import { Mail, Globe, Shield, Heart, Star, Download, Check } from 'lucide-react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

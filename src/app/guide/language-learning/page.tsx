@@ -97,9 +97,9 @@ export default function LanguageLearningGuidePage() {
                   <div className="bg-green-50 rounded-xl p-6">
                     <h4 className="font-semibold text-gray-800 mb-3">첫 메시지 예시</h4>
                     <p className="text-gray-600 text-sm italic">
-                      "안녕하세요! 저는 한국어를 가르치고 영어를 배우고 싶은 대학생입니다.
+                      &ldquo;안녕하세요! 저는 한국어를 가르치고 영어를 배우고 싶은 대학생입니다.
                       현재 영어는 중급 수준이고, 일상 회화를 더 자연스럽게 하고 싶어요.
-                      서로 도우며 언어를 배워갈 수 있으면 좋겠습니다!"
+                      서로 도우며 언어를 배워갈 수 있으면 좋겠습니다!&rdquo;
                     </p>
                   </div>
                 </div>
@@ -155,12 +155,12 @@ export default function LanguageLearningGuidePage() {
                     <div className="bg-gray-50 rounded-lg p-3 text-sm">
                       <p className="text-gray-700 mb-2"><strong>예시:</strong></p>
                       <p className="italic text-gray-600">
-                        "Hello! How was your weekend? I went to a beautiful park with my friends...
+                        &ldquo;Hello! How was your weekend? I went to a beautiful park with my friends...
                         (영어로 작성)
                       </p>
                       <p className="italic text-gray-600 mt-2">
                         주말에 간 공원이 정말 아름다웠어요. 벚꽃이 만개해서...
-                        (한국어로 작성)"
+                        (한국어로 작성)&rdquo;
                       </p>
                     </div>
                   </div>
@@ -227,9 +227,9 @@ export default function LanguageLearningGuidePage() {
                         펜팔이 사용한 자연스러운 표현을 모아두세요:
                       </p>
                       <div className="bg-gray-50 rounded p-2 text-sm">
-                        <p className="text-gray-700">• "That's a bummer" = 아쉽네요</p>
-                        <p className="text-gray-700">• "I'm all ears" = 잘 듣고 있어요</p>
-                        <p className="text-gray-700">• "It rings a bell" = 어렴풋이 기억나요</p>
+                        <p className="text-gray-700">• &ldquo;That&apos;s a bummer&rdquo; = 아쉽네요</p>
+                        <p className="text-gray-700">• &ldquo;I&apos;m all ears&rdquo; = 잘 듣고 있어요</p>
+                        <p className="text-gray-700">• &ldquo;It rings a bell&rdquo; = 어렴풋이 기억나요</p>
                       </div>
                     </div>
 
@@ -237,7 +237,7 @@ export default function LanguageLearningGuidePage() {
                       <h4 className="font-medium text-yellow-700 mb-2">문화적 맥락 이해하기</h4>
                       <p className="text-gray-600 text-sm">
                         단순 번역이 아닌, 그 표현이 사용되는 상황과 뉘앙스를 함께 배우세요.
-                        펜팔에게 "이 표현은 언제 사용해?" 라고 물어보는 것도 좋은 방법입니다.
+                        펜팔에게 &ldquo;이 표현은 언제 사용해?&rdquo; 라고 물어보는 것도 좋은 방법입니다.
                       </p>
                     </div>
                   </div>
@@ -248,15 +248,15 @@ export default function LanguageLearningGuidePage() {
                   <div className="space-y-2 text-gray-600">
                     <p className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                      <span><strong>실수 환영하기:</strong> "Feel free to correct my mistakes!"</span>
+                      <span><strong>실수 환영하기:</strong> &ldquo;Feel free to correct my mistakes!&rdquo;</span>
                     </p>
                     <p className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                      <span><strong>교정 요청하기:</strong> "Is this expression natural?"</span>
+                      <span><strong>교정 요청하기:</strong> &ldquo;Is this expression natural?&rdquo;</span>
                     </p>
                     <p className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                      <span><strong>피드백 감사하기:</strong> "Thanks for the correction!"</span>
+                      <span><strong>피드백 감사하기:</strong> &ldquo;Thanks for the correction!&rdquo;</span>
                     </p>
                   </div>
                 </div>

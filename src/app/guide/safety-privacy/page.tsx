@@ -358,7 +358,7 @@ export default function SafetyPrivacyGuidePage() {
 
               <div className="mt-6 bg-white/10 rounded-xl p-4 backdrop-blur-sm">
                 <p className="text-center font-semibold">
-                  "안전은 즐거운 펜팔의 첫걸음입니다. 서로를 존중하며 건강한 관계를 만들어가세요!"
+                  &ldquo;안전은 즐거운 펜팔의 첫걸음입니다. 서로를 존중하며 건강한 관계를 만들어가세요!&rdquo;
                 </p>
               </div>
             </section>

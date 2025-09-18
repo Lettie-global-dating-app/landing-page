@@ -215,7 +215,7 @@ export default function StoriesPage() {
                   {/* Highlight */}
                   <div className="bg-blue-50 rounded-lg p-4 mb-4">
                     <p className="text-blue-700 font-semibold text-sm">
-                      "{story.highlight}"
+                      &ldquo;{story.highlight}&rdquo;
                     </p>
                   </div>
 

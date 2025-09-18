@@ -134,18 +134,18 @@ export default function BuildingFriendshipGuidePage() {
                     <div className="bg-white rounded-lg p-4">
                       <h4 className="font-medium text-blue-700 mb-2">공감의 단계</h4>
                       <ol className="space-y-2 text-gray-600 text-sm">
-                        <li><strong>1단계:</strong> "그랬구나" - 단순 인지</li>
-                        <li><strong>2단계:</strong> "힘들었겠다" - 감정 인식</li>
-                        <li><strong>3단계:</strong> "나라도 그 상황에서는 똑같이 느꼈을 거야" - 감정 이입</li>
-                        <li><strong>4단계:</strong> "내가 어떻게 도와줄 수 있을까?" - 적극적 지지</li>
+                        <li><strong>1단계:</strong> &ldquo;그랬구나&rdquo; - 단순 인지</li>
+                        <li><strong>2단계:</strong> &ldquo;힘들었겠다&rdquo; - 감정 인식</li>
+                        <li><strong>3단계:</strong> &ldquo;나라도 그 상황에서는 똑같이 느꼈을 거야&rdquo; - 감정 이입</li>
+                        <li><strong>4단계:</strong> &ldquo;내가 어떻게 도와줄 수 있을까?&rdquo; - 적극적 지지</li>
                       </ol>
                     </div>
 
                     <div className="bg-white rounded-lg p-4">
                       <h4 className="font-medium text-blue-700 mb-2">공감 표현 예시</h4>
                       <div className="space-y-2 text-gray-600 text-sm italic">
-                        <p>"시험에서 좋은 결과를 못 받아서 속상하겠네. 열심히 준비했는데 기대만큼 안 나오면 정말 실망스러울 거야."</p>
-                        <p>"새로운 도시에서 적응하는 게 쉽지 않겠다. 모든 게 낯설고 외로울 때도 있을 텐데, 정말 대단해!"</p>
+                        <p>&ldquo;시험에서 좋은 결과를 못 받아서 속상하겠네. 열심히 준비했는데 기대만큼 안 나오면 정말 실망스러울 거야.&rdquo;</p>
+                        <p>&ldquo;새로운 도시에서 적응하는 게 쉽지 않겠다. 모든 게 낯설고 외로울 때도 있을 텐데, 정말 대단해!&rdquo;</p>
                       </div>
                     </div>
                   </div>
@@ -155,7 +155,7 @@ export default function BuildingFriendshipGuidePage() {
                   <h3 className="font-semibold text-gray-800 mb-3">💡 이해의 폭 넓히기</h3>
                   <ul className="space-y-2 text-gray-600">
                     <li>• <strong>판단 보류:</strong> 상대방의 선택이나 의견을 즉시 판단하지 마세요</li>
-                    <li>• <strong>호기심 갖기:</strong> "왜 그렇게 생각하게 됐어?" 같은 질문으로 깊이 이해하기</li>
+                    <li>• <strong>호기심 갖기:</strong> &ldquo;왜 그렇게 생각하게 됐어?&rdquo; 같은 질문으로 깊이 이해하기</li>
                     <li>• <strong>차이 인정:</strong> 서로 다른 배경과 경험을 가졌음을 인정하고 존중하기</li>
                     <li>• <strong>적극적 경청:</strong> 편지를 꼼꼼히 읽고 행간의 의미까지 파악하기</li>
                   </ul>
@@ -184,7 +184,7 @@ export default function BuildingFriendshipGuidePage() {
                       <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
                       <div>
                         <h4 className="font-semibold text-gray-800">상황 객관적으로 설명</h4>
-                        <p className="text-gray-600 text-sm">"너 때문에"가 아닌 "이런 상황에서 나는 이렇게 느꼈어" 방식으로 표현</p>
+                        <p className="text-gray-600 text-sm">&ldquo;너 때문에&rdquo;가 아닌 &ldquo;이런 상황에서 나는 이렇게 느꼈어&rdquo; 방식으로 표현</p>
                       </div>
                     </div>
                     <div className="flex gap-4">
@@ -209,9 +209,9 @@ export default function BuildingFriendshipGuidePage() {
                   <div className="bg-white rounded-lg p-4">
                     <p className="text-gray-600 text-sm mb-2"><strong>예시:</strong></p>
                     <p className="text-gray-600 text-sm italic">
-                      "지난 편지에서 내 이야기에 답변이 없어서 조금 서운했어.
+                      &ldquo;지난 편지에서 내 이야기에 답변이 없어서 조금 서운했어.
                       혹시 내가 쓴 내용이 불편했거나, 아니면 너무 바빴던 건지 궁금해.
-                      우리가 서로를 더 잘 이해할 수 있도록 솔직하게 이야기해줬으면 좋겠어."
+                      우리가 서로를 더 잘 이해할 수 있도록 솔직하게 이야기해줬으면 좋겠어.&rdquo;
                     </p>
                   </div>
                 </div>

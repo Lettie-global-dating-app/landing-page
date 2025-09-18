@@ -99,7 +99,7 @@ export default function WritingTipsGuidePage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                      <span>'만약에' 질문으로 상상력 자극하기</span>
+                      <span>&apos;만약에&apos; 질문으로 상상력 자극하기</span>
                     </li>
                   </ul>
                 </div>
@@ -117,8 +117,8 @@ export default function WritingTipsGuidePage() {
                   <h3 className="font-semibold text-gray-800 mb-3">진솔한 감정 전달법</h3>
                   <div className="space-y-3 text-gray-600">
                     <p>
-                      <strong>구체적인 묘사:</strong> "기분이 좋았어요"보다는
-                      "마치 구름 위를 걷는 것 같은 기분이었어요"처럼 표현해보세요.
+                      <strong>구체적인 묘사:</strong> &ldquo;기분이 좋았어요&rdquo;보다는
+                      &ldquo;마치 구름 위를 걷는 것 같은 기분이었어요&rdquo;처럼 표현해보세요.
                     </p>
                     <p>
                       <strong>오감 활용:</strong> 그때의 소리, 냄새, 촉감 등을 함께 전달하면
@@ -166,7 +166,7 @@ export default function WritingTipsGuidePage() {
                   <ol className="space-y-3 text-gray-600">
                     <li>
                       <strong>1. 도입부 (Hook):</strong> 호기심을 자극하는 첫 문장으로 시작하세요.
-                      <div className="mt-1 text-sm italic">"오늘 지하철에서 믿을 수 없는 일이 일어났어요..."</div>
+                      <div className="mt-1 text-sm italic">&ldquo;오늘 지하철에서 믿을 수 없는 일이 일어났어요...&rdquo;</div>
                     </li>
                     <li>
                       <strong>2. 배경 설정:</strong> 언제, 어디서, 누구와 함께였는지 간단히 설명하세요.
@@ -250,7 +250,7 @@ export default function WritingTipsGuidePage() {
               <h2 className="text-2xl font-bold mb-4">실전 편지 예시</h2>
               <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
                 <p className="mb-3 italic">
-                  "안녕하세요 Emma! 지난 편지에서 말씀하신 파리의 크리스마스 마켓 이야기 정말 흥미로웠어요.
+                  &ldquo;안녕하세요 Emma! 지난 편지에서 말씀하신 파리의 크리스마스 마켓 이야기 정말 흥미로웠어요.
                   반짝이는 조명들 사이를 걸으며 뱅쇼를 마시는 모습이 그려지네요.
                 </p>
                 <p className="mb-3 italic">
@@ -259,7 +259,7 @@ export default function WritingTipsGuidePage() {
                   커피를 마시며 눈 내리는 걸 한참 바라봤어요.
                 </p>
                 <p className="italic">
-                  프랑스의 겨울은 어떤가요? 당신이 가장 좋아하는 겨울 추억이 있다면 들려주세요!"
+                  프랑스의 겨울은 어떤가요? 당신이 가장 좋아하는 겨울 추억이 있다면 들려주세요!&rdquo;
                 </p>
               </div>
             </section>
