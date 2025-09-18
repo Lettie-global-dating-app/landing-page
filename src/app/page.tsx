@@ -1,5 +1,7 @@
 import { Mail, Globe, Heart, Shield, Star, Users, ArrowRight, Download} from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
+import MobileMenu from '@/components/MobileMenu'
 
 export default function Home() {
   const appStoreUrl = "https://apps.apple.com/kr/app/%EB%A0%88%ED%8B%B0/id6746454876"
@@ -28,9 +30,11 @@ export default function Home() {
           </div>
           <div className="hidden md:flex items-center space-x-8">
             <a href="#features" className="text-gray-600 hover:text-blue-500 transition-colors">기능</a>
-            <a href="#app-preview" className="text-gray-600 hover:text-blue-500 transition-colors">앱 미리보기</a>
-            <a href="#recommended" className="text-gray-600 hover:text-blue-500 transition-colors">추천 대상</a>
-            <a 
+            <Link href="/blog" className="text-gray-600 hover:text-blue-500 transition-colors">블로그</Link>
+            <Link href="/guide" className="text-gray-600 hover:text-blue-500 transition-colors">가이드</Link>
+            <Link href="/stories" className="text-gray-600 hover:text-blue-500 transition-colors">스토리</Link>
+            <Link href="/faq" className="text-gray-600 hover:text-blue-500 transition-colors">FAQ</Link>
+            <a
               href={appStoreUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -39,6 +43,7 @@ export default function Home() {
               다운로드
             </a>
           </div>
+          <MobileMenu />
         </nav>
       </header>
 
@@ -277,7 +282,17 @@ export default function Home() {
           <div className="text-center text-gray-400 space-y-4">
             <p>© 2025 Lettie Inc. All rights reserved.</p>
             <p>전 세계와 편지로 소통하는 특별한 만남과 인연</p>
-            <div className="flex items-center justify-center space-x-6 pt-4 flex-wrap">
+
+            {/* 주요 페이지 링크 */}
+            <div className="flex items-center justify-center space-x-6 pt-2 flex-wrap">
+              <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">블로그</Link>
+              <Link href="/guide" className="text-gray-400 hover:text-white transition-colors">가이드</Link>
+              <Link href="/stories" className="text-gray-400 hover:text-white transition-colors">스토리</Link>
+              <Link href="/faq" className="text-gray-400 hover:text-white transition-colors">FAQ</Link>
+            </div>
+
+            {/* 앱 다운로드 및 정책 링크 */}
+            <div className="flex items-center justify-center space-x-6 pt-2 flex-wrap">
               <a
                 href={appStoreUrl}
                 target="_blank"
@@ -310,8 +325,10 @@ export default function Home() {
               >
                 서비스 이용약관
               </a>
-              <span className="text-gray-500">소셜 네트워킹</span>
-              <span className="text-gray-500">개발자: junhyeong kim</span>
+            </div>
+
+            <div className="pt-2">
+              <span className="text-gray-500">소셜 네트워킹 | 개발자: junhyeong kim</span>
             </div>
           </div>
         </div>

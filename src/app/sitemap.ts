@@ -11,6 +11,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'language-exchange-tips'
   ]
 
+  // Guide categories
+  const guideCategories = [
+    'getting-started',
+    'writing-tips',
+    'cultural-exchange',
+    'language-learning',
+    'building-friendship',
+    'safety-privacy'
+  ]
+
   return [
     // Main pages
     {
@@ -62,6 +72,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: 'monthly' as const,
       priority: 0.7,
+    })),
+    // Guide Pages
+    ...guideCategories.map(category => ({
+      url: `${baseUrl}/guide/${category}`,
+      lastModified,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
     })),
     // Legal Pages
     {

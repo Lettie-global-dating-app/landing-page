@@ -45,7 +45,7 @@ const faqCategories = [
       },
       {
         q: '편지가 전달되지 않았어요. 어떻게 하나요?',
-        a: '네트워크 연결을 확인해주세요. 문제가 지속되면 앱 내 고객센터로 문의하시거나 support@lettie.app으로 이메일을 보내주세요.'
+        a: '네트워크 연결을 확인해주세요. 문제가 지속되면 앱 내 고객센터로 문의하시거나 ggprgrkjh@naver.com으로 이메일을 보내주세요.'
       }
     ]
   },
@@ -202,7 +202,7 @@ export default function FAQPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:support@lettie.app"
+                href="mailto:ggprgrkjh@naver.com"
                 className="bg-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition-colors inline-flex items-center justify-center gap-2"
               >
                 <Mail className="w-5 h-5" />

@@ -262,7 +262,7 @@ export default function StoriesPage() {
               당신의 이야기를 공유하고 다른 사람들에게 영감을 주세요.
             </p>
             <a
-              href="mailto:story@lettie.app"
+              href="mailto:ggprgrkjh@naver.com"
               className="bg-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition-colors inline-flex items-center gap-2"
             >
               스토리 제출하기 <ArrowRight className="w-5 h-5" />

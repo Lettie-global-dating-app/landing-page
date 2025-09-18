@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { BookOpen, Globe, Heart, Shield, Users, Mail, ArrowRight, Languages, Sparkles } from 'lucide-react';
+import { BookOpen, Globe, Heart, Shield, Users, Mail, ArrowRight, Languages, Sparkles, Download } from 'lucide-react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -292,31 +292,6 @@ export default function GuidePage() {
                 );
               })}
             </div>
-          </div>
-        </section>
-
-        {/* Newsletter CTA */}
-        <section className="container mx-auto px-4 py-16">
-          <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-3xl p-12 text-center text-white">
-            <h2 className="text-3xl font-bold mb-4">
-              펜팔 팁과 소식 받기
-            </h2>
-            <p className="text-lg mb-8 opacity-95">
-              매주 펜팔 가이드와 Lettie 업데이트를 이메일로 받아보세요
-            </p>
-            <form className="max-w-md mx-auto flex gap-4">
-              <input
-                type="email"
-                placeholder="이메일 주소"
-                className="flex-grow px-6 py-3 rounded-full text-gray-800 focus:outline-none focus:ring-4 focus:ring-white/30"
-              />
-              <button
-                type="submit"
-                className="bg-white text-blue-500 px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-shadow"
-              >
-                구독하기
-              </button>
-            </form>
           </div>
         </section>
 
