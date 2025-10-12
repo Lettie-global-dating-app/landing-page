@@ -276,7 +276,7 @@ export default async function BlogPostPage({ params }: Props) {
     notFound();
   }
 
-  // JSON-LD 구조화 데이터
+  // JSON-LD 구조화 데이터 - BlogPosting
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
@@ -303,11 +303,41 @@ export default async function BlogPostPage({ params }: Props) {
     },
   };
 
+  // BreadcrumbList 구조화 데이터
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: '홈',
+        item: 'https://lettie-dating.com',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: '블로그',
+        item: 'https://lettie-dating.com/blog',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: post.title,
+        item: `https://lettie-dating.com/blog/${slug}`,
+      },
+    ],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
       {/* Header */}

@@ -13,8 +13,38 @@ export const metadata: Metadata = {
 };
 
 export default function GettingStartedGuidePage() {
+  // BreadcrumbList 구조화 데이터
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: '홈',
+        item: 'https://lettie-dating.com',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: '가이드',
+        item: 'https://lettie-dating.com/guide',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: '펜팔 시작하기',
+        item: 'https://lettie-dating.com/guide/getting-started',
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       {/* Header */}
       <header className="container mx-auto px-4 py-6">
         <nav className="flex items-center justify-between">

@@ -152,7 +152,57 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-        {/* JSON-LD 구조화된 데이터 */}
+        {/* JSON-LD 구조화된 데이터 - Organization */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Lettie",
+              "alternateName": "레티",
+              "url": "https://lettie-dating.com",
+              "logo": "https://lettie-dating.com/lettie-icon.png",
+              "description": "전 세계 친구들과 편지로 소통하는 글로벌 펜팔 데이팅앱",
+              "foundingDate": "2024",
+              "sameAs": [
+                "https://apps.apple.com/kr/app/%EB%A0%88%ED%8B%B0/id6746454876",
+                "https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "Customer Service",
+                "availableLanguage": ["Korean", "English"]
+              }
+            })
+          }}
+        />
+
+        {/* JSON-LD 구조화된 데이터 - WebSite */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Lettie",
+              "url": "https://lettie-dating.com",
+              "description": "편지와 펜팔을 통해 전 세계 친구들과 소통하는 글로벌 펜팔 데이팅앱",
+              "publisher": {
+                "@type": "Organization",
+                "name": "Lettie"
+              },
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://lettie-dating.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              },
+              "inLanguage": ["ko", "en"]
+            })
+          }}
+        />
+
+        {/* JSON-LD 구조화된 데이터 - MobileApplication */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -173,11 +223,11 @@ export default function RootLayout({
               },
               "author": {
                 "@type": "Organization",
-                "name": "junhyeong kim"
+                "name": "Lettie Team"
               },
               "publisher": {
                 "@type": "Organization",
-                "name": "junhyeong kim",
+                "name": "Lettie Team",
                 "logo": {
                   "@type": "ImageObject",
                   "url": "https://lettie-dating.com/lettie-icon.png"

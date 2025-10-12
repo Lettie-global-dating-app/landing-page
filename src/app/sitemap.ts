@@ -2,7 +2,11 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://lettie-dating.com'
-  const lastModified = new Date()
+
+  // 페이지별로 다른 lastModified 날짜 설정 (더 정확한 SEO)
+  const mainPageDate = new Date('2025-10-13') // 메인 페이지 최근 수정일
+  const contentDate = new Date('2025-10-13') // 콘텐츠 페이지 최근 수정일
+  const legalDate = new Date('2025-06-20') // 법적 문서 최근 수정일
 
   // Blog post IDs
   const blogPosts = [
@@ -25,83 +29,83 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Main pages
     {
       url: baseUrl,
-      lastModified,
+      lastModified: mainPageDate,
       changeFrequency: 'weekly',
       priority: 1,
     },
     {
       url: `${baseUrl}/en`,
-      lastModified,
+      lastModified: mainPageDate,
       changeFrequency: 'weekly',
       priority: 1,
     },
     // SEO Content Pages
     {
       url: `${baseUrl}/blog`,
-      lastModified,
+      lastModified: contentDate,
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/faq`,
-      lastModified,
+      lastModified: contentDate,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/stories`,
-      lastModified,
+      lastModified: contentDate,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/guide`,
-      lastModified,
+      lastModified: contentDate,
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/penpal-app`,
-      lastModified,
+      lastModified: contentDate,
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     // Blog Posts
     ...blogPosts.map(slug => ({
       url: `${baseUrl}/blog/${slug}`,
-      lastModified,
+      lastModified: contentDate,
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     })),
     // Guide Pages
     ...guideCategories.map(category => ({
       url: `${baseUrl}/guide/${category}`,
-      lastModified,
+      lastModified: contentDate,
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     })),
     // Legal Pages
     {
       url: `${baseUrl}/privacy`,
-      lastModified,
+      lastModified: legalDate,
       changeFrequency: 'yearly',
       priority: 0.5,
     },
     {
       url: `${baseUrl}/terms`,
-      lastModified,
+      lastModified: legalDate,
       changeFrequency: 'yearly',
       priority: 0.5,
     },
     {
       url: `${baseUrl}/en/privacy`,
-      lastModified,
+      lastModified: legalDate,
       changeFrequency: 'yearly',
       priority: 0.5,
     },
     {
       url: `${baseUrl}/en/terms`,
-      lastModified,
+      lastModified: legalDate,
       changeFrequency: 'yearly',
       priority: 0.5,
     },

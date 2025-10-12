@@ -230,8 +230,99 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Popular Blog Posts Section */}
+      <section className="py-20 bg-gradient-to-br from-indigo-50 to-purple-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-4">펜팔 시작하기 가이드</h2>
+          <p className="text-center text-gray-600 mb-12">전 세계 친구들과 소통하는 방법을 알아보세요</p>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Link href="/blog/how-to-start-penpal" className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                <Mail className="w-6 h-6 text-blue-500" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">첫 편지 작성 가이드</h3>
+              <p className="text-gray-600 mb-4">성공적인 펜팔을 시작하는 완벽한 첫 편지 작성법</p>
+              <span className="text-blue-500 font-semibold">자세히 보기 →</span>
+            </Link>
+            <Link href="/blog/penpal-culture-guide" className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
+                <Globe className="w-6 h-6 text-purple-500" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">세계 각국의 편지 문화</h3>
+              <p className="text-gray-600 mb-4">나라마다 다른 편지 문화와 글로벌 에티켓 알아보기</p>
+              <span className="text-purple-500 font-semibold">자세히 보기 →</span>
+            </Link>
+            <Link href="/blog/language-exchange-tips" className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+                <Users className="w-6 h-6 text-green-500" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">언어 교환 팁</h3>
+              <p className="text-gray-600 mb-4">펜팔을 통한 효과적인 언어 학습 방법</p>
+              <span className="text-green-500 font-semibold">자세히 보기 →</span>
+            </Link>
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/blog" className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-600 font-semibold text-lg">
+              모든 블로그 포스트 보기
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Guide Links Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">완벽한 펜팔을 위한 가이드</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <Link href="/guide/getting-started" className="flex items-start gap-4 p-6 bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl hover:shadow-lg transition-shadow">
+              <Mail className="w-6 h-6 text-blue-500 flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-bold text-gray-800 mb-2">펜팔 시작하기</h3>
+                <p className="text-sm text-gray-600">첫 펜팔을 위한 완벽 가이드</p>
+              </div>
+            </Link>
+            <Link href="/guide/writing-tips" className="flex items-start gap-4 p-6 bg-gradient-to-br from-purple-50 to-pink-100 rounded-xl hover:shadow-lg transition-shadow">
+              <Heart className="w-6 h-6 text-purple-500 flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-bold text-gray-800 mb-2">편지 작성 마스터</h3>
+                <p className="text-sm text-gray-600">매력적인 편지 쓰는 법</p>
+              </div>
+            </Link>
+            <Link href="/guide/cultural-exchange" className="flex items-start gap-4 p-6 bg-gradient-to-br from-green-50 to-teal-100 rounded-xl hover:shadow-lg transition-shadow">
+              <Globe className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-bold text-gray-800 mb-2">문화 교류</h3>
+                <p className="text-sm text-gray-600">세계 문화 이해하기</p>
+              </div>
+            </Link>
+            <Link href="/guide/language-learning" className="flex items-start gap-4 p-6 bg-gradient-to-br from-yellow-50 to-orange-100 rounded-xl hover:shadow-lg transition-shadow">
+              <Star className="w-6 h-6 text-yellow-600 flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-bold text-gray-800 mb-2">언어 학습</h3>
+                <p className="text-sm text-gray-600">펜팔로 외국어 마스터하기</p>
+              </div>
+            </Link>
+            <Link href="/guide/building-friendship" className="flex items-start gap-4 p-6 bg-gradient-to-br from-red-50 to-rose-100 rounded-xl hover:shadow-lg transition-shadow">
+              <Users className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-bold text-gray-800 mb-2">우정 쌓기</h3>
+                <p className="text-sm text-gray-600">지속 가능한 펜팔 관계</p>
+              </div>
+            </Link>
+            <Link href="/guide/safety-privacy" className="flex items-start gap-4 p-6 bg-gradient-to-br from-gray-50 to-slate-100 rounded-xl hover:shadow-lg transition-shadow">
+              <Shield className="w-6 h-6 text-gray-600 flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-bold text-gray-800 mb-2">안전과 프라이버시</h3>
+                <p className="text-sm text-gray-600">안전한 펜팔 즐기기</p>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Recommended Section */}
-      <section id="recommended" className="py-20 bg-white">
+      <section id="recommended" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">이런 분들께 추천합니다</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
