@@ -36,6 +36,24 @@ const blogPosts = [
     category: '학습',
     image: '/conversation-detail.png',
   },
+  {
+    id: 'marcus-introduction',
+    title: 'Marcus와 함께하는 펜팔: 진실한 우정을 찾아서',
+    excerpt: '안녕하세요, Marcus입니다. 전 세계 친구들과 진심 어린 대화를 나누며 서로의 삶과 문화를 배워가고 싶습니다. 일상의 이야기부터 취미, 음악, 여행까지 함께 나눠요.',
+    date: '2025-01-20',
+    readTime: '4분',
+    category: '커뮤니티',
+    image: '/letter-writing.png',
+  },
+  {
+    id: 'dearest-friend',
+    title: '가을밤의 편지: 외로움을 나누는 카페에서',
+    excerpt: '가을이 다가오면 밤이 길어지고 외로움이 찾아오죠. 우리의 길은 만나지 않을지 모르지만, 바닷가 카페에서 당신을 기다리며 이 편지를 씁니다.',
+    date: '2025-01-20',
+    readTime: '3분',
+    category: '감성',
+    image: '/brand-screen.png',
+  },
 ];
 
 export default function BlogPage() {
