@@ -10,6 +10,15 @@ export const metadata = {
 
 const blogPosts = [
   {
+    id: 'dear-stranger',
+    title: 'Dear Stranger: A Letter from Someone Who Believes in Slow, Meaningful Connections',
+    excerpt: 'To you, whose voice I\'ve never heard, whose eyes I\'ve never seen. A letter from someone who still believes in slow, genuine connections through words.',
+    date: '2025-01-22',
+    readTime: '4 min',
+    category: 'Heartfelt',
+    image: '/letter-writing.png',
+  },
+  {
     id: 'how-to-start-penpal',
     title: 'Starting Your Penpal Journey: The Complete First Letter Guide',
     excerpt: 'Learn how to start meaningful relationships with friends around the world. From your first letter to lasting friendship, discover everything you need for successful penpalling.',

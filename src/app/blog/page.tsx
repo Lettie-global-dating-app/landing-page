@@ -10,6 +10,15 @@ export const metadata = {
 
 const blogPosts = [
   {
+    id: 'dear-stranger',
+    title: '낯선 당신에게: 천천히 깊어지는 연결을 믿는 사람의 편지',
+    excerpt: '목소리도, 얼굴도 모르는 당신에게. 느리지만 진실한 연결을 여전히 믿는 사람이 보내는 편지입니다. 글을 통해서도 영혼은 서로를 알아볼 수 있다고 믿습니다.',
+    date: '2025-01-22',
+    readTime: '4분',
+    category: '감성',
+    image: '/letter-writing.png',
+  },
+  {
     id: 'how-to-start-penpal',
     title: '펜팔 시작하기: 완벽한 첫 편지 작성 가이드',
     excerpt: '전 세계 친구들과 의미 있는 관계를 시작하는 방법을 알아보세요. 첫 편지부터 지속적인 우정까지, 성공적인 펜팔의 모든 것을 담았습니다.',
