@@ -78,8 +78,9 @@ export default function BlogPage() {
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/en" className="text-gray-600 hover:text-blue-500 transition-colors">Home</Link>
             <Link href="/en/blog" className="text-blue-500 font-semibold">Blog</Link>
-            <Link href="/faq" className="text-gray-600 hover:text-blue-500 transition-colors">FAQ</Link>
-            <Link href="/guide" className="text-gray-600 hover:text-blue-500 transition-colors">Guide</Link>
+            <Link href="/en/faq" className="text-gray-600 hover:text-blue-500 transition-colors">FAQ</Link>
+            <Link href="/en/guide" className="text-gray-600 hover:text-blue-500 transition-colors">Guide</Link>
+            <Link href="/en/stories" className="text-gray-600 hover:text-blue-500 transition-colors">Stories</Link>
           </div>
         </nav>
       </header>

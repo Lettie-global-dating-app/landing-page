@@ -1,5 +1,6 @@
 import { Mail, Shield, Star, Users, ArrowRight, Download} from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   const appStoreUrl = "https://apps.apple.com/app/id6746454876";
@@ -25,10 +26,12 @@ export default function Home() {
             <span className="text-2xl font-bold text-gray-800">Lettie</span>
           </div>
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-gray-600 hover:text-blue-500 transition-colors">Features</a>
-            <a href="#app-preview" className="text-gray-600 hover:text-blue-500 transition-colors">App Preview</a>
-            <a href="#recommended" className="text-gray-600 hover:text-blue-500 transition-colors">Who It&apos;s For</a>
-            <a 
+            <Link href="/en/blog" className="text-gray-600 hover:text-blue-500 transition-colors">Blog</Link>
+            <Link href="/en/faq" className="text-gray-600 hover:text-blue-500 transition-colors">FAQ</Link>
+            <Link href="/en/guide" className="text-gray-600 hover:text-blue-500 transition-colors">Guide</Link>
+            <Link href="/en/stories" className="text-gray-600 hover:text-blue-500 transition-colors">Stories</Link>
+            <Link href="/en/penpal-app" className="text-gray-600 hover:text-blue-500 transition-colors">About</Link>
+            <a
               href={appStoreUrl}
               target="_blank"
               rel="noopener noreferrer"
