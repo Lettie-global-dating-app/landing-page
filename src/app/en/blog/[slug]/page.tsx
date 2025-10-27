@@ -18,6 +18,80 @@ type BlogPost = {
 };
 
 const blogPosts: Record<string, BlogPost> = {
+  'dear-stranger': {
+    id: 'dear-stranger',
+    title: 'Dear Stranger: A Letter from Someone Who Believes in Slow, Meaningful Connections',
+    description: 'To you, whose voice I\'ve never heard, whose eyes I\'ve never seen. A letter from someone who still believes in slow, genuine connections. Start your heartfelt pen pal journey on Lettie.',
+    date: '2025-01-22',
+    readTime: '4 min',
+    category: 'Heartfelt',
+    image: '/letter-writing.png',
+    author: 'Lettie',
+    keywords: ['pen pal letter', 'genuine connection', 'heartfelt letter', 'dear stranger', 'starting pen pal', 'slow relationship', 'meaningful communication'],
+    content: `
+# Dear Stranger,
+
+It&apos;s a little strange, isn&apos;t it? Writing to someone whose voice I&apos;ve never heard, whose eyes I&apos;ve never seen — and yet, something in me believes that even through words, souls can recognize each other.
+
+## To You, Reading This
+
+I don&apos;t know who will read this, but I hope it finds someone who still believes in **slow connections** — the kind that don&apos;t rush to impress but simply unfold, like the first morning light slipping through the curtains.
+
+Maybe you&apos;re reading this after a long day, or maybe before bed when the world quiets down and your thoughts start to wander.
+
+## What I Want to Ask You
+
+If so, I want to ask you something — not about where you live or what you do, but **what makes your heart feel alive?**
+
+What are those small, quiet things that bring you peace — even if just for a moment?
+
+### Stories Behind Every Smile
+
+I&apos;ve come to believe that behind every calm smile there&apos;s a story no one has fully heard yet. And maybe, through this letter, I&apos;d like to hear a glimpse of yours.
+
+## For Honest Conversations
+
+No filters, no pretence — just two people being honest for a while.
+
+If you decide to reply, tell me something that matters to you — something most people don&apos;t usually ask about. I&apos;ll do the same.
+
+### Things We Can Share
+
+**Small Joys in Life**
+- A warm cup of tea you had today
+- The color of the sunset through your window
+- A childhood memory that suddenly came to mind
+- Music that makes your heart peaceful
+
+**Stories You Haven&apos;t Told Anyone**
+- Things you&apos;re dreaming about
+- Things you&apos;re afraid of
+- Moments when you were happy
+- Things you miss
+
+## Meeting on Lettie
+
+This is what makes Lettie special. We don&apos;t rush.
+
+**Through exchanging 5 letters**: We get to know each other slowly and genuinely.
+
+**Starting without photos**: We meet through hearts and thoughts, not appearances.
+
+**Unfiltered sincerity**: A space where you can show your true self without pretense.
+
+## Waiting for Your Story
+
+Until then, from someone who still believes in slow, meaningful connections.
+
+Hoping to receive your letter someday 🌙
+
+**I&apos;m curious about your story.**
+
+Let&apos;s meet on Lettie. Looking forward to the beginning of our conversation.
+
+— A man who still believes in slow, meaningful connections
+    `
+  },
   'marcus-introduction': {
     id: 'marcus-introduction',
     title: 'Penpalling with Marcus: Finding Genuine Friendship',

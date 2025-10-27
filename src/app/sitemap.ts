@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Blog post IDs
   const blogPosts = [
+    'dear-stranger',
     'how-to-start-penpal',
     'penpal-culture-guide',
     'language-exchange-tips',
