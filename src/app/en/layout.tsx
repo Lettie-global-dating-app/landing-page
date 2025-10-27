@@ -127,7 +127,53 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* JSON-LD structured data */}
+        {/* JSON-LD - Organization */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Lettie",
+              "alternateName": "Lettie Penpal App",
+              "url": "https://lettie-dating.com/en",
+              "logo": "https://lettie-dating.com/lettie-icon.png",
+              "description": "Global penpal dating app connecting friends worldwide through letters",
+              "foundingDate": "2024",
+              "sameAs": [
+                "https://apps.apple.com/app/id6746454876",
+                "https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "Customer Service",
+                "email": "ggprgrkjh@naver.com",
+                "availableLanguage": ["Korean", "English"]
+              }
+            })
+          }}
+        />
+
+        {/* JSON-LD - WebSite */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Lettie",
+              "url": "https://lettie-dating.com/en",
+              "description": "Connect with global friends through penpal and letter. Build genuine relationships worldwide.",
+              "publisher": {
+                "@type": "Organization",
+                "name": "Lettie"
+              },
+              "inLanguage": ["en", "ko"]
+            })
+          }}
+        />
+
+        {/* JSON-LD - MobileApplication */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

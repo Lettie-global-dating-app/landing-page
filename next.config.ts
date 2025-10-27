@@ -60,15 +60,27 @@ const nextConfig: NextConfig = {
     ];
   },
   
-  // 리다이렉트 설정 (필요시)
+  // 리다이렉트 설정
   async redirects() {
     return [
-      // 예시: 구버전 URL 리다이렉트
-      // {
-      //   source: '/old-page',
-      //   destination: '/',
-      //   permanent: true,
-      // },
+      // www 버전을 non-www로 리다이렉트
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.lettie-dating.com',
+          },
+        ],
+        destination: 'https://lettie-dating.com/:path*',
+        permanent: true,
+      },
+      // 잘못된 URL 패턴 수정
+      {
+        source: '/https\\://lettie-dating.com/:path*',
+        destination: '/:path*',
+        permanent: true,
+      },
     ];
   },
 };
