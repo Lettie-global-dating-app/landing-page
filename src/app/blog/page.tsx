@@ -10,6 +10,15 @@ export const metadata = {
 
 const blogPosts = [
   {
+    id: 'halloween-connections',
+    title: '할로윈 고백: 어둠 속에서 찾는 연결',
+    excerpt: '이번 할로윈, Vampiro가 전하는 특별한 유령 이야기 — 진심 어린 편지를 통해 예상치 못한 곳에서 진정한 우정을 찾는 이야기.',
+    date: '2025-10-29',
+    readTime: '5분',
+    category: '커뮤니티',
+    image: '/letter-writing.png',
+  },
+  {
     id: 'dear-stranger',
     title: '낯선 당신에게: 천천히 깊어지는 연결을 믿는 사람의 편지',
     excerpt: '목소리도, 얼굴도 모르는 당신에게. 느리지만 진실한 연결을 여전히 믿는 사람이 보내는 편지입니다. 글을 통해서도 영혼은 서로를 알아볼 수 있다고 믿습니다.',

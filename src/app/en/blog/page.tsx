@@ -10,6 +10,15 @@ export const metadata = {
 
 const blogPosts = [
   {
+    id: 'halloween-connections',
+    title: 'Halloween Confessions: Finding Connection in the Shadows',
+    excerpt: 'This Halloween, Vampiro shares a different kind of ghost story — one about finding genuine friendship in unexpected places through heartfelt letters.',
+    date: '2025-10-29',
+    readTime: '5 min',
+    category: 'Community',
+    image: '/letter-writing.png',
+  },
+  {
     id: 'dear-stranger',
     title: 'Dear Stranger: A Letter from Someone Who Believes in Slow, Meaningful Connections',
     excerpt: 'To you, whose voice I\'ve never heard, whose eyes I\'ve never seen. A letter from someone who still believes in slow, genuine connections through words.',
