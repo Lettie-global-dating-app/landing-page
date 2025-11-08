@@ -10,6 +10,15 @@ export const metadata = {
 
 const blogPosts = [
   {
+    id: 'autumn-morning-mist',
+    title: 'Morning Mist: Autumn\'s Warm Promise',
+    excerpt: 'In the misty morning, while woods and meadows dream. When the veil falls, you\'ll see the open blue of heaven and autumn\'s warm golden flow. A letter of hope in times of change.',
+    date: '2025-11-09',
+    readTime: '4 min',
+    category: 'Heartfelt',
+    image: '/letter-writing.png',
+  },
+  {
     id: 'halloween-connections',
     title: 'Halloween Confessions: Finding Connection in the Shadows',
     excerpt: 'This Halloween, Vampiro shares a different kind of ghost story — one about finding genuine friendship in unexpected places through heartfelt letters.',

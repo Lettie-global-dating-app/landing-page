@@ -323,6 +323,180 @@ Looking forward to hearing from you soon!
 — Marcus
     `
   },
+  'autumn-morning-mist': {
+    id: 'autumn-morning-mist',
+    title: 'Morning Mist: Autumn\'s Warm Promise',
+    description: 'In the misty morning, while woods and meadows dream. When the veil falls, you\'ll see the open blue of heaven and autumn\'s warm golden flow. A letter of hope waiting for moments of change.',
+    date: '2025-11-09',
+    readTime: '4 min',
+    category: 'Heartfelt',
+    image: '/letter-writing.png',
+    author: 'Lettie',
+    keywords: ['autumn letter', 'morning mist', 'poetic letter', 'seasons change', 'hopeful message', 'nature and penpal', 'heartfelt communication', 'autumn feelings', 'warm comfort'],
+    content: `
+# Morning Mist: Autumn's Warm Promise
+
+## While the World Still Sleeps
+
+The world still rests in mist;
+wood and meadow are dreaming.
+
+There are those early mornings when everything is wrapped in a hazy veil. Those boundary moments where you can't tell where things begin or end. A stillness so complete, it's as if the entire world has paused, holding its breath, waiting for something.
+
+Have you ever experienced such a morning?
+
+## When the Veil Falls
+
+Soon, when the veil falls, you'll see
+the open blue of heaven.
+
+Mist never stays forever. With time, the sun slowly lifts it away. And things we couldn't see begin to reveal themselves, piece by piece.
+
+**The blue sky**: The infinite possibilities we had forgotten
+**The wide horizon**: New beginnings stretching before us
+**Clear outlines**: Dreams once blurry now taking concrete form
+
+## Autumn's Strength, The Hushed World
+
+And autumn-strong, the hushed world
+will flow in warm gold.
+
+Autumn is a special season. Following summer's brilliance, it quietly yet powerfully displays its own colors.
+
+### Lessons From Autumn
+
+**The beauty of patience**: The value of ripening slowly, without rush
+**The grace of change**: That letting go can be beautiful too
+**The power in stillness**: That the greatest changes happen in the quietest moments
+
+## Starting Penpal Letters Through the Mist
+
+Our lives are sometimes like being in mist. When we can't see ahead, when we're uncertain where to go.
+
+But meeting someone on Lettie is like discovering a small light in that mist.
+
+### Letters That Pierce Through Fog
+
+**Strange at first**: Writing to someone you don't know
+**Gradually becoming clear**: The process of getting to know each other through exchanged words
+**Finally revealed**: The moment of genuine friendship and connection
+
+Like mist lifting, the more we exchange letters, the more clearly we see each other.
+
+## Questions I Want to Ask You
+
+Have you ever walked through morning mist?
+What thoughts came to you then?
+
+**What color is your autumn?**
+For some it's golden, for others orange, for still others a deep crimson.
+
+**What is your 'moment when the veil lifts'?**
+We all have something we're waiting to become clear, like fog lifting.
+
+**What does your quiet morning look like?**
+Before the world awakens, how do you spend your own time?
+
+## The Journey on Lettie
+
+The penpal journey on Lettie is like a morning walk through mist.
+
+### 5 Letters, 5 Sunrises
+
+**First letter**: Greetings exchanged in the fog
+**Second letter**: When shapes begin to emerge
+**Third letter**: When outlines become distinct
+**Fourth letter**: When warm golden light unfolds
+**Fifth letter**: When the veil completely lifts and true connection begins
+
+### Slowly, But Surely
+
+There's no need to rush. Like mist slowly clearing, our friendship deepens slowly too.
+
+**Why we start without photos**: To see the real you beyond the veil of appearance
+**Why we don't demand instant responses**: To give time to gather thoughts and pour in sincerity
+**Why we wait for 5 letters**: Because genuine connection needs time
+
+## A World Flowing in Warm Gold
+
+The world after the veil lifts is beautiful.
+
+Under autumn's sunlight, everything is tinged with warm gold. Each leaf, each blade of grass shines with its own hue.
+
+**You are like that too.**
+
+Though you may be hidden in mist now, there's a golden light within you. When you genuinely connect with someone, that light shines even brighter.
+
+## Waiting Together for Morning
+
+When the world is shrouded in mist, waiting alone is lonely.
+
+But what if we wait together?
+If we share our hearts through letters while we wait?
+
+**Even the waiting becomes a beautiful memory.**
+
+### Mornings I Want to Share With You
+
+- What you want to see first after the mist clears
+- The warm drink you enjoy on quiet mornings
+- Small sounds heard at dawn - birdsong, wind, rain
+- The peace of morning sunlight entering your room
+- Your personal ritual before starting the day
+
+## Send Your First Letter
+
+Look outside. Is there mist now? Or can you already see blue sky?
+
+Either way is fine.
+
+**If it's misty**: You need someone to wait with for the veil to lift
+**If it's clear sky**: You need someone to share that beauty with
+
+Lettie is a space for both.
+
+## Autumn's Promise
+
+Autumn promises:
+
+The mist will lift,
+the sky will turn blue again,
+and the world will flow in warm gold.
+
+**I promise you too:**
+
+That I'm waiting for your letter.
+That I want to hear your story.
+That I want to lift the mist together and greet the golden autumn together.
+
+## Waiting for You Beyond the Mist
+
+Though the world still rests in mist,
+soon the veil will fall.
+
+Then you will see:
+
+- The open blue of heaven
+- The autumn-strong, hushed world
+- Everything flowing in warm gold
+- And me, waiting for your letter
+
+**Start your first letter.**
+
+Mist always lifts.
+Sky always turns blue.
+Autumn always comes in gold.
+
+**And genuine connection is always possible.**
+
+Waiting for you on Lettie.
+Beyond the mist, in the golden autumn.
+
+— Gazing at morning mist together
+
+*P.S. How is your morning? Is there mist, or is sunlight already shining through? Either way, I want to hear that story.*
+    `
+  },
   'dearest-friend': {
     id: 'dearest-friend',
     title: 'Autumn Night Letter: From the Café by the Ocean',

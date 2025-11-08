@@ -10,6 +10,15 @@ export const metadata = {
 
 const blogPosts = [
   {
+    id: 'autumn-morning-mist',
+    title: '안개 속 아침: 가을이 전하는 따스한 약속',
+    excerpt: '안개 자욱한 아침, 숲과 들판이 꿈꾸는 시간. 베일이 걷히면 펼쳐질 푸른 하늘과 따뜻한 황금빛 가을. 변화의 순간을 기다리며 당신에게 보내는 편지입니다.',
+    date: '2025-11-09',
+    readTime: '4분',
+    category: '감성',
+    image: '/letter-writing.png',
+  },
+  {
     id: 'halloween-connections',
     title: '할로윈 고백: 어둠 속에서 찾는 연결',
     excerpt: '이번 할로윈, Vampiro가 전하는 특별한 유령 이야기 — 진심 어린 편지를 통해 예상치 못한 곳에서 진정한 우정을 찾는 이야기.',
