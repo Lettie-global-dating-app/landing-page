@@ -4,12 +4,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://lettie-dating.com'
 
   // 페이지별로 다른 lastModified 날짜 설정 (더 정확한 SEO)
-  const mainPageDate = new Date('2025-10-29') // 메인 페이지 최근 수정일
-  const contentDate = new Date('2025-10-29') // 콘텐츠 페이지 최근 수정일
+  const mainPageDate = new Date('2025-11-18') // 메인 페이지 최근 수정일
+  const contentDate = new Date('2025-11-18') // 콘텐츠 페이지 최근 수정일
   const legalDate = new Date('2025-06-20') // 법적 문서 최근 수정일
 
   // Blog post IDs
   const blogPosts = [
+    'slow-letter-beauty',
+    'first-penpal-letter',
+    'winter-letter-warmth',
+    'autumn-morning-mist',
     'halloween-connections',
     'dear-stranger',
     'how-to-start-penpal',
@@ -22,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Guide categories
   const guideCategories = [
     'getting-started',
+
     'writing-tips',
     'cultural-exchange',
     'language-learning',

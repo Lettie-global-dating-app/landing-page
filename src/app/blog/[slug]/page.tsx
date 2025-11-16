@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Calendar, Clock, ArrowLeft, Share2 } from 'lucide-react';
+import { Calendar, Clock, ArrowLeft, Share2, Mail, Feather, ArrowRight } from 'lucide-react';
 import { notFound } from 'next/navigation';
 
 type BlogPost = {
@@ -18,6 +18,553 @@ type BlogPost = {
 };
 
 const blogPosts: Record<string, BlogPost> = {
+  'slow-letter-beauty': {
+    id: 'slow-letter-beauty',
+    title: '느린 편지의 아름다움: 빠름이 지배하는 세상에서',
+    description: '모든 것이 빠르게 흘러가는 세상에서, 느리게 주고받는 편지의 가치. 기다림과 설렘, 깊이 있는 소통이 주는 특별한 경험.',
+    date: '2025-11-18',
+    readTime: '6분',
+    category: '감성',
+    image: '/letter-writing.png',
+    author: 'Lettie',
+    keywords: ['느린 편지', '슬로우 커뮤니케이션', '펜팔', '기다림의 미학', '깊은 소통', '아날로그 감성', '의미있는 연결', '디지털 디톡스'],
+    content: `
+# 느린 편지의 아름다움: 빠름이 지배하는 세상에서
+
+## 빠름에 지친 우리
+
+모든 것이 빠릅니다. 메시지는 즉시 전달되고, 답장은 곧바로 옵니다.
+1초도 기다리지 않는 세상. 그런데 왜 우리는 점점 더 외로워질까요?
+
+**속도가 빠르다고 해서 깊이도 깊은 건 아닙니다.**
+
+### 빠른 소통의 역설
+
+- 메시지는 많지만 대화는 적습니다
+- 연결은 많지만 관계는 얕습니다
+- 답장은 빠르지만 진심은 부족합니다
+- 정보는 많지만 이해는 적습니다
+
+## 편지가 느린 이유
+
+편지는 느립니다. 의도적으로 느립니다.
+
+**쓰는 시간**: 생각을 정리하고, 단어를 고르고, 마음을 담는 시간
+**보내는 시간**: 우편함에 넣고, 배달되기를 기다리는 시간
+**읽는 시간**: 천천히 한 줄 한 줄 읽으며 상대를 이해하는 시간
+**답장하는 시간**: 다시 생각하고, 다시 쓰는 시간
+
+### 이 느림이 주는 것
+
+느림은 단점이 아닙니다. 오히려 느림이기에 가능한 것들이 있습니다.
+
+**깊이**: 빠르게 쓸 때는 놓치는 깊은 생각들
+**진심**: 서두르지 않을 때 드러나는 진실한 마음
+**설렘**: 답장을 기다리는 동안의 설렘
+**존중**: 상대를 위해 시간을 쓴다는 것의 의미
+
+## 기다림의 미학
+
+Lettie에서 편지를 보내고 답장을 기다립니다.
+하루가 될 수도, 며칠이 될 수도 있습니다.
+
+**이 기다림이 나쁜가요?**
+아닙니다. 이 기다림이야말로 가장 아름다운 순간입니다.
+
+### 기다리는 동안
+
+기다리는 동안 우리는:
+- 상대가 무슨 생각을 할지 상상합니다
+- 내가 쓴 편지를 다시 떠올립니다
+- 다음 편지에 쓸 이야기를 준비합니다
+- 상대에 대해 더 궁금해집니다
+
+**기다림은 관계를 깊게 만듭니다.**
+
+## 생각하며 쓰는 편지
+
+즉시 답장하지 않아도 됩니다.
+천천히, 생각하며 쓸 수 있습니다.
+
+### 편지 쓰기의 과정
+
+1. **생각하기**: 무엇을 말하고 싶은지
+2. **정리하기**: 어떻게 표현할지
+3. **쓰기**: 한 문장 한 문장 정성스럽게
+4. **다듬기**: 더 나은 표현은 없을지
+5. **보내기**: 마음을 담아서
+
+이 과정 자체가 상대를 존중하는 방식입니다.
+
+## 디지털 시대의 아날로그 감성
+
+Lettie는 디지털 플랫폼입니다.
+하지만 아날로그 편지의 감성을 담았습니다.
+
+### 디지털의 장점 + 아날로그의 감성
+
+**편리함**: 언제 어디서나 편지 쓰기
+**느림**: 즉시 답장하지 않는 여유
+**깊이**: 긴 편지를 쓸 수 있는 공간
+**진심**: 생각을 담을 수 있는 시간
+
+## 빠르지 않아도 괜찮습니다
+
+세상은 빠르게 돌아갑니다.
+하지만 모든 것이 빨라야 하는 건 아닙니다.
+
+**어떤 것들은 느려야 더 아름답습니다.**
+
+### 느린 것들의 가치
+
+- 천천히 읽는 좋은 책
+- 오래 우려낸 차 한 잔
+- 시간을 들여 만든 요리
+- 정성스럽게 쓴 편지
+
+## 당신에게 묻고 싶습니다
+
+**마지막으로 누군가에게 긴 편지를 쓴 게 언제인가요?**
+
+**메시지가 아닌 편지를.**
+**빠르게가 아닌 천천히.**
+**간단하게가 아닌 정성스럽게.**
+
+Lettie에서 그 편지를 다시 시작해보세요.
+
+## 느린 소통의 시작
+
+오늘부터 시작해보세요.
+- 즉시 답장하지 않아도 됩니다
+- 긴 편지를 써도 됩니다
+- 생각을 정리할 시간을 가져도 됩니다
+- 기다림을 즐겨도 됩니다
+
+**느린 편지는 당신을 더 깊은 관계로 이끌 것입니다.**
+
+---
+
+*Lettie에서 느린 편지의 아름다움을 경험해보세요.*
+    `
+  },
+  'first-penpal-letter': {
+    id: 'first-penpal-letter',
+    title: '첫 펜팔 편지: 낯선 이에게 마음을 열다',
+    description: '한 번도 만난 적 없는 낯선 이에게 첫 편지를 쓴다는 것. 설렘과 두려움, 기대와 호기심이 공존하는 특별한 순간.',
+    date: '2025-11-18',
+    readTime: '5분',
+    category: '가이드',
+    image: '/letter-writing.png',
+    author: 'Lettie',
+    keywords: ['첫 펜팔', '펜팔 시작', '낯선 이에게 편지', '첫 만남', '펜팔 설렘', '글로벌 친구', '편지 쓰기', '새로운 만남'],
+    content: `
+# 첫 펜팔 편지: 낯선 이에게 마음을 열다
+
+## 낯선 이에게 보내는 첫 편지
+
+화면을 켜고 빈 편지지를 봅니다.
+**"안녕하세요"**라고 쓰려다가 지웁니다.
+**"Hi"**라고 써봤다가 또 지웁니다.
+
+**낯선 이에게 첫 편지를 쓴다는 건 쉽지 않습니다.**
+
+### 왜 어려울까요?
+
+- 상대가 어떤 사람인지 모릅니다
+- 무엇을 좋아하는지 모릅니다
+- 어떤 이야기를 하면 좋을지 모릅니다
+- 내 편지를 읽고 답장해줄지도 모릅니다
+
+## 하지만 그래서 더 특별합니다
+
+모르기 때문에 오히려 자유롭습니다.
+**아무것도 정해진 게 없기에 모든 게 가능합니다.**
+
+### 첫 편지의 마법
+
+- 선입견 없이 시작할 수 있습니다
+- 진짜 나를 보여줄 수 있습니다
+- 새로운 세계를 만날 수 있습니다
+- 예상치 못한 인연이 시작됩니다
+
+## 첫 편지에 담을 것들
+
+무엇을 써야 할까요?
+정답은 없습니다. 하지만 도움이 될 만한 것들이 있습니다.
+
+### 1. 진솔한 소개
+
+거창할 필요 없습니다. 있는 그대로의 당신을 소개하세요.
+
+**예시**:
+"안녕하세요, 저는 서울에 사는 25살 직장인입니다.
+주말이면 북한산에 올라가 도시를 내려다보는 걸 좋아합니다.
+당신은 어디에 살고 있나요?"
+
+### 2. 당신의 일상
+
+특별하지 않아도 괜찮습니다. 평범한 일상이 때로는 가장 흥미롭습니다.
+
+**예시**:
+"오늘 아침, 창밖을 보니 첫눈이 내리고 있었어요.
+급하게 준비하느라 커피를 쏟았지만,
+눈 내리는 풍경이 너무 예뻐서 늦어도 괜찮다는 생각이 들었습니다."
+
+### 3. 궁금한 것들
+
+상대에게 질문하세요. 질문은 대화의 시작입니다.
+
+**좋은 질문들**:
+- 당신의 나라는 지금 어떤 계절인가요?
+- 평범한 하루는 어떻게 흘러가나요?
+- 요즘 무엇에 관심이 있나요?
+- 당신을 행복하게 하는 작은 것들은 무엇인가요?
+
+### 4. 당신의 관심사
+
+좋아하는 것들을 공유하세요. 공통점을 찾을 수도, 새로운 걸 배울 수도 있습니다.
+
+**예시**:
+"저는 재즈를 좋아합니다.
+특히 비 오는 날 Miles Davis를 들으면 마음이 평온해집니다.
+당신은 어떤 음악을 좋아하나요?"
+
+## 첫 편지를 쓸 때의 팁
+
+### 1. 완벽하려 하지 마세요
+
+문법이 틀려도, 표현이 서툴러도 괜찮습니다.
+**진심이 담긴 편지가 완벽한 편지보다 낫습니다.**
+
+### 2. 너무 길지 않게
+
+첫 편지는 적당한 길이가 좋습니다.
+상대가 부담 없이 읽고 답장할 수 있도록.
+
+### 3. 열린 질문을 하세요
+
+"네/아니오"로 답할 수 있는 질문보다
+이야기를 나눌 수 있는 질문이 좋습니다.
+
+❌ "영화 좋아하세요?"
+✅ "어떤 영화를 좋아하시나요? 최근에 본 영화 중 기억에 남는 게 있나요?"
+
+### 4. 긍정적인 톤으로
+
+첫 만남은 밝고 긍정적으로.
+부정적이거나 무거운 이야기는 나중에.
+
+## 답장을 기다리며
+
+편지를 보냈습니다.
+이제 기다립니다.
+
+### 기다리는 동안의 마음
+
+**설렘**: 어떤 답장이 올까?
+**걱정**: 답장이 올까?
+**기대**: 어떤 사람일까?
+**호기심**: 우리의 대화는 어떻게 흘러갈까?
+
+**이 모든 감정이 펜팔의 시작입니다.**
+
+## 답장이 왔을 때
+
+첫 답장을 받는 순간,
+당신은 알게 될 것입니다.
+
+**이 설렘이 바로 펜팔의 매력이라는 것을.**
+
+### 답장을 읽으며
+
+- 천천히 읽으세요
+- 상대의 마음을 느껴보세요
+- 공통점을 찾아보세요
+- 다음 편지를 생각해보세요
+
+## 두 번째 편지로
+
+첫 편지보다 두 번째 편지가 더 쉬울 것입니다.
+이제 조금은 알기 때문입니다.
+
+**그렇게 편지는 계속되고,**
+**낯선 이는 친구가 되고,**
+**친구는 소중한 인연이 됩니다.**
+
+## 지금 시작하세요
+
+Lettie를 열고,
+첫 편지를 써보세요.
+
+**완벽하지 않아도 됩니다.**
+**길지 않아도 됩니다.**
+**그저 진심을 담으면 됩니다.**
+
+낯선 이에게 보내는 첫 편지,
+그것이 특별한 인연의 시작입니다.
+
+---
+
+*Lettie에서 첫 펜팔을 시작해보세요.*
+    `
+  },
+  'winter-letter-warmth': {
+    id: 'winter-letter-warmth',
+    title: '겨울 편지: 차가운 계절에 전하는 따뜻한 마음',
+    description: '첫눈이 내리는 겨울, 당신에게 보내는 편지 한 통. 추운 계절이지만 따뜻한 마음으로 서로를 응원하며, Lettie에서 시작하는 겨울 펜팔 이야기.',
+    date: '2025-11-16',
+    readTime: '5분',
+    category: '감성',
+    image: '/letter-writing.png',
+    author: 'Lettie',
+    keywords: ['겨울 편지', '펜팔 겨울', '따뜻한 편지', '겨울 감성', '크리스마스 펜팔', '연말 편지', '위로의 편지', '겨울 소통', '따뜻한 마음'],
+    content: `
+# 겨울 편지: 차가운 계절에 전하는 따뜻한 마음
+
+## 첫눈이 내리는 날
+
+창밖을 보니 첫눈이 내리고 있습니다.
+하얀 눈송이들이 하늘에서 천천히 내려와 세상을 하얗게 물들입니다.
+
+이런 날이면 문득 누군가에게 편지를 쓰고 싶어집니다. 멀리 있는 당신에게, 아직 만나지 못한 당신에게, 따뜻한 안부를 전하고 싶어집니다.
+
+**당신의 겨울은 어떤가요?**
+
+## 추운 계절, 따뜻한 마음
+
+겨울은 차갑습니다. 날씨도, 바람도, 밤도 길고 춥습니다. 하지만 겨울이기에 더욱 빛나는 것들이 있습니다.
+
+### 겨울에만 느낄 수 있는 따뜻함
+
+**따뜻한 차 한 잔**: 찬 공기 속에서 마시는 뜨거운 차는 온몸을 녹여줍니다
+**포근한 담요**: 추운 밤, 담요 속에 웅크리는 작은 행복
+**창가의 눈송이**: 창문에 앉아 내리는 눈을 바라보는 고요한 순간
+**따뜻한 편지**: 차가운 계절에 받는 따뜻한 마음의 편지
+
+### 편지가 주는 온기
+
+Lettie에서 주고받는 편지는 겨울의 찬 공기를 뚫고 따뜻함을 전합니다.
+
+당신이 어디에 있든, 얼마나 추운 겨울을 보내고 있든, 편지 한 통은 당신의 마음을 따뜻하게 만들어줄 수 있습니다.
+
+## 겨울 밤의 편지
+
+긴 겨울 밤, 혼자 있는 시간이 많아집니다. 해가 일찍 지고, 밤은 깁니다.
+
+하지만 이 긴 밤이 나쁜 것만은 아닙니다. 천천히 생각을 정리하고, 한 해를 돌아보고, 마음을 담은 편지를 쓸 수 있는 시간이기도 합니다.
+
+### 겨울 밤에 쓰는 편지의 특별함
+
+**진솔함**: 어둠 속에서는 더 솔직해집니다
+**깊이**: 긴 밤은 깊은 생각을 가능하게 합니다
+**위로**: 외로운 밤, 누군가와 연결된다는 느낌
+**희망**: 긴 밤이 지나면 아침이 온다는 것을 압니다
+
+## 크리스마스가 다가오는 계절
+
+크리스마스가 다가오는 계절입니다. 거리는 조명으로 화려해지고, 캐럴이 들려옵니다.
+
+하지만 모두가 행복한 것은 아닙니다. 어떤 이에게 연말은 외로움이 더 크게 느껴지는 시간이기도 합니다.
+
+### Lettie에서의 연말
+
+Lettie에서는 혼자가 아닙니다. 전 세계 어딘가에서 당신을 기다리는 펜팔이 있습니다.
+
+**함께 보내는 연말**: 멀리 있어도 마음은 가까이
+**서로를 응원하는 시간**: 힘든 시기를 함께 이겨냅니다
+**새해를 향한 희망**: 함께 새로운 해를 맞이합니다
+**진정한 연결**: 선물보다 마음을 나눕니다
+
+## 당신에게 묻고 싶은 것들
+
+이 겨울, 당신에게 묻고 싶습니다.
+
+**당신의 겨울은 어떤 색인가요?**
+누군가에게는 하얀색, 누군가에게는 따뜻한 주황색, 또 누군가에게는 차가운 파란색.
+
+**추운 날 당신을 따뜻하게 해주는 것은 무엇인가요?**
+따뜻한 음료? 좋아하는 음악? 아늑한 공간? 아니면 누군가의 따뜻한 말 한마디?
+
+**겨울 밤, 당신은 무슨 생각을 하나요?**
+한 해를 돌아보나요? 새해를 계획하나요? 아니면 그저 고요함을 즐기나요?
+
+**올 겨울, 누구에게 편지를 쓰고 싶나요?**
+오래된 친구? 새로운 펜팔? 아니면 아직 만나지 못한 누군가?
+
+## Lettie에서의 겨울 여정
+
+Lettie에서 보내는 겨울은 특별합니다.
+
+### 첫 번째 겨울 편지: 얼음을 녹이는 인사
+
+처음 만나는 낯선 사람에게 보내는 편지. 어색하지만 설레는 순간입니다.
+
+**자기소개**: 짧지만 진솔하게, 당신이 누구인지
+**겨울 이야기**: 당신의 겨울은 어떤지, 무엇을 좋아하는지
+**호기심**: 상대방에 대한 진심 어린 질문들
+**따뜻함**: 차가운 계절이지만 따뜻한 마음으로
+
+### 두 번째 겨울 편지: 조금씩 녹아가는 얼음
+
+서로에 대해 조금 알게 되었습니다. 대화가 자연스러워집니다.
+
+**공감**: 서로의 경험에 공감하기
+**나눔**: 좋아하는 겨울 음악, 영화, 책 공유하기
+**위로**: 힘든 점이 있다면 서로 위로하기
+**응원**: 서로의 꿈과 목표를 응원하기
+
+### 세 번째 겨울 편지: 완전히 녹은 얼음
+
+이제는 친구가 되어갑니다. 편지가 기다려집니다.
+
+**일상**: 소소한 일상을 나누는 편안함
+**진솔함**: 진짜 마음을 보여줄 수 있음
+**유머**: 함께 웃을 수 있는 관계
+**신뢰**: 서로를 믿고 의지할 수 있음
+
+### 네 번째 겨울 편지: 따뜻한 우정
+
+편지를 주고받을수록 우정은 깊어집니다.
+
+**깊은 대화**: 표면적인 이야기를 넘어서
+**서로의 성장**: 함께 배우고 성장하기
+**특별한 순간**: 크리스마스, 새해를 함께 맞이하기
+**감사**: 서로의 존재에 감사하기
+
+### 다섯 번째 겨울 편지: 봄을 기다리며
+
+긴 겨울이 지나가고 봄이 다가옵니다. 하지만 우정은 계절과 상관없이 계속됩니다.
+
+**추억**: 함께한 겨울을 돌아보기
+**기대**: 다가올 봄에 대한 설렘
+**약속**: 계속 연락하자는 약속
+**영원**: 거리와 시간을 넘어선 우정
+
+## 겨울이 주는 선물
+
+겨울은 춥고 어둡습니다. 하지만 겨울이기에 더 소중한 것들이 있습니다.
+
+### 느림의 가치
+
+겨울은 모든 것을 느리게 만듭니다. 자연도, 사람도 느려집니다.
+
+**하지만 그것이 좋습니다.**
+
+Lettie에서 주고받는 편지도 느립니다. 즉각적이지 않습니다. 기다림이 필요합니다.
+
+**하지만 그 기다림 속에서 우정이 익어갑니다.**
+
+### 고요함의 아름다움
+
+눈 내리는 날의 고요함처럼, 편지에도 고요함이 있습니다.
+
+**시끄러운 세상에서 벗어나**: 조용히 마음을 전합니다
+**깊은 생각**: 신중하게 단어를 고릅니다
+**진정한 소통**: 표면이 아닌 마음을 나눕니다
+**평화**: 편지를 쓰고 읽는 순간의 평온함
+
+### 따뜻함의 소중함
+
+추운 겨울에 따뜻함은 더욱 소중합니다.
+
+**작은 따뜻함도 크게 느껴집니다**: 따뜻한 말 한마디의 힘
+**나눔의 기쁨**: 따뜻함을 나누면 배가 됩니다
+**상호작용**: 주고받는 따뜻함
+**지속성**: 계절이 바뀌어도 계속되는 따뜻한 마음
+
+## 첫 편지를 시작하세요
+
+밖은 춥습니다. 눈이 내립니다. 바람이 붑니다.
+
+**하지만 당신의 마음은 따뜻할 수 있습니다.**
+
+Lettie를 열고 첫 편지를 써보세요.
+
+**누구에게 쓸까요?**
+
+- 세상 어딘가에서 당신을 기다리는 누군가
+- 당신처럼 따뜻한 연결을 찾는 사람
+- 겨울의 외로움을 이해하는 친구
+- 함께 봄을 기다릴 펜팔
+
+### 첫 편지에 담을 것들
+
+**솔직한 인사**: 안녕하세요, 저는...
+**겨울 이야기**: 지금 제 창밖에는...
+**당신의 관심사**: 저는 ... 를 좋아합니다
+**진심 어린 질문**: 당신의 겨울은 어떤가요?
+**따뜻한 마무리**: 당신의 답장을 기다립니다
+
+## 겨울의 약속
+
+겨울은 약속합니다.
+
+**추운 날이 지나면 따뜻한 봄이 온다고.**
+
+긴 밤이 지나면 밝은 아침이 온다고.
+
+**나도 당신에게 약속합니다.**
+
+Lettie에서 당신을 기다리고 있다고.
+
+당신의 편지를 읽고 싶다고.
+
+함께 이 겨울을 따뜻하게 보내고 싶다고.
+
+## 눈 내리는 밤에
+
+눈이 내립니다. 조용히, 천천히, 아름답게.
+
+**각각의 눈송이가 다르듯, 우리 모두 다릅니다.**
+
+하지만 함께 모이면 아름다운 겨울 풍경을 만듭니다.
+
+Lettie에서 당신과 나, 그리고 전 세계의 펜팔들이 함께 모여 아름다운 이야기를 만듭니다.
+
+## 따뜻한 초대
+
+이 겨울, 혼자 보내지 마세요.
+
+**Lettie에서 새로운 친구를 만나보세요.**
+
+- 첫눈을 함께 기뻐할 친구
+- 크리스마스 이야기를 나눌 펜팔
+- 새해 계획을 공유할 동반자
+- 긴 겨울 밤을 함께할 친구
+
+### 지금 시작하세요
+
+**Lettie를 다운로드하고**
+
+첫 편지를 쓰세요.
+
+당신의 겨울 이야기를 나누세요.
+
+누군가의 겨울을 따뜻하게 만들어주세요.
+
+**그리고 당신의 겨울도 따뜻해질 것입니다.**
+
+## 겨울 편지의 끝
+
+이 편지를 마치며, 당신에게 따뜻한 안부를 전합니다.
+
+**추운 날씨에 건강하시길 바랍니다.**
+
+외로운 밤에 따뜻한 편지가 있기를.
+
+힘든 시간에 응원해줄 친구가 있기를.
+
+**이 겨울, Lettie에서 만나요.**
+
+눈 내리는 창가에서, 따뜻한 차를 마시며, 당신의 편지를 기다립니다.
+
+— 따뜻한 마음을 담아
+
+*P.S. 당신의 겨울은 어떤가요? 무엇이 당신을 따뜻하게 해주나요? 편지로 들려주세요. 함께 이 겨울을 나누고 싶습니다.*
+
+**\u2744\ufe0f 첫눈이 내리는 날, 첫 편지를 시작하세요 \u2744\ufe0f**
+    `
+  },
   'halloween-connections': {
     id: 'halloween-connections',
     title: '할로윈 고백: 어둠 속에서 찾는 연결',
@@ -971,14 +1518,26 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
         </header>
 
-        {/* Featured Image */}
-        <div className="relative h-96 bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl mb-12">
-          <Image
-            src={post.image}
-            alt={post.title}
-            fill
-            className="object-contain p-8"
-          />
+        {/* Featured Icon Section */}
+        <div className="relative mb-12">
+          <div className="relative h-64 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-3xl overflow-hidden">
+            {/* Decorative Pattern */}
+            <div className="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC40Ij48cGF0aCBkPSJNMzYgMzRjMC0yLjIxLTEuNzktNC00LTRzLTQgMS43OS00IDQgMS43OSA0IDQgNCA0LTEuNzkgNC00em0wLTEyYzAtMi4yMS0xLjc5LTQtNC00cy00IDEuNzktNCA0IDEuNzkgNCA0IDQgNC0xLjc5IDQtNHptMC0xMmMwLTIuMjEtMS43OS00LTQtNHMtNCAxLjc5LTQgNCAxLjc5IDQgNCA0IDQtMS43OSA0LTR6Ii8+PC9nPjwvZz48L3N2Zz4=')]"></div>
+
+            {/* Animated blobs */}
+            <div className="absolute top-0 left-1/4 w-96 h-96 bg-white/20 rounded-full mix-blend-overlay filter blur-3xl animate-blob"></div>
+            <div className="absolute top-0 right-1/4 w-96 h-96 bg-white/20 rounded-full mix-blend-overlay filter blur-3xl animate-blob animation-delay-2000"></div>
+
+            {/* Category Icon */}
+            <div className="absolute inset-0 flex items-center justify-center text-white">
+              {post.category === '감성' && <Feather className="w-24 h-24" strokeWidth={1.5} />}
+              {post.category === '커뮤니티' && <Mail className="w-24 h-24" strokeWidth={1.5} />}
+              {post.category === '가이드' && <ArrowRight className="w-24 h-24" strokeWidth={1.5} />}
+              {post.category === '문화' && <Calendar className="w-24 h-24" strokeWidth={1.5} />}
+              {post.category === '학습' && <Clock className="w-24 h-24" strokeWidth={1.5} />}
+              {!['감성', '커뮤니티', '가이드', '문화', '학습'].includes(post.category) && <Mail className="w-24 h-24" strokeWidth={1.5} />}
+            </div>
+          </div>
         </div>
 
         {/* Article Content */}
@@ -1010,60 +1569,115 @@ export default async function BlogPostPage({ params }: Props) {
       </article>
 
       {/* Related Posts */}
-      <section className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
-          관련 글 더 읽기
-        </h2>
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {Object.values(blogPosts)
-            .filter(p => p.id !== post.id)
-            .slice(0, 3)
-            .map((relatedPost) => (
-              <Link
-                key={relatedPost.id}
-                href={`/blog/${relatedPost.id}`}
-                className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow"
-              >
-                <h3 className="text-xl font-bold text-gray-800 mb-2 hover:text-blue-500 transition-colors">
-                  {relatedPost.title}
-                </h3>
-                <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-                  {relatedPost.description}
-                </p>
-                <span className="text-blue-500 font-semibold text-sm">
-                  자세히 읽기 →
-                </span>
-              </Link>
-            ))}
+      <section className="container mx-auto px-4 py-16 bg-gradient-to-b from-transparent via-blue-50/30 to-transparent">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-3">
+              다른 이야기도 읽어보세요
+            </h2>
+            <p className="text-gray-600">비슷한 주제의 따뜻한 편지들</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {Object.values(blogPosts)
+              .filter(p => p.id !== post.id)
+              .slice(0, 3)
+              .map((relatedPost) => {
+                const categoryIcons: Record<string, React.ReactNode> = {
+                  '감성': <Feather className="w-6 h-6" />,
+                  '커뮤니티': <Mail className="w-6 h-6" />,
+                  '가이드': <ArrowRight className="w-6 h-6" />,
+                  '문화': <Calendar className="w-6 h-6" />,
+                  '학습': <Clock className="w-6 h-6" />
+                };
+
+                const categoryColors: Record<string, string> = {
+                  '감성': 'from-rose-400 to-pink-500',
+                  '커뮤니티': 'from-blue-400 to-indigo-500',
+                  '가이드': 'from-emerald-400 to-teal-500',
+                  '문화': 'from-amber-400 to-orange-500',
+                  '학습': 'from-violet-400 to-purple-500'
+                };
+
+                return (
+                  <Link
+                    key={relatedPost.id}
+                    href={`/blog/${relatedPost.id}`}
+                    className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100"
+                  >
+                    <div className={`h-24 bg-gradient-to-br ${categoryColors[relatedPost.category] || 'from-blue-400 to-purple-500'} flex items-center justify-center text-white`}>
+                      {categoryIcons[relatedPost.category] || <Mail className="w-6 h-6" />}
+                    </div>
+                    <div className="p-6">
+                      <span className="inline-block text-xs font-semibold text-gray-500 mb-2">
+                        {relatedPost.category}
+                      </span>
+                      <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-blue-600 transition-colors">
+                        {relatedPost.title}
+                      </h3>
+                      <p className="text-gray-600 text-sm mb-3 line-clamp-2">
+                        {relatedPost.description}
+                      </p>
+                      <span className="text-blue-600 font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
+                        자세히 읽기
+                        <ArrowRight className="w-4 h-4" />
+                      </span>
+                    </div>
+                  </Link>
+                );
+              })}
+          </div>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="container mx-auto px-4 py-16">
-        <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-3xl p-12 text-center text-white">
-          <h2 className="text-3xl font-bold mb-4">
-            Lettie와 함께 펜팔 시작하기
-          </h2>
-          <p className="text-lg mb-8 opacity-95">
-            전 세계 친구들과 편지로 소통하며 특별한 인연을 만들어보세요
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://apps.apple.com/kr/app/%EB%A0%88%ED%8B%B0/id6746454876"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white text-blue-500 px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-shadow"
-            >
-              App Store에서 다운로드
-            </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white text-blue-500 px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-shadow"
-            >
-              Google Play에서 다운로드
-            </a>
+        <div className="relative max-w-5xl mx-auto overflow-hidden rounded-3xl bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 p-12 text-center text-white shadow-2xl">
+          {/* Decorative elements */}
+          <div className="absolute top-0 left-0 w-full h-full opacity-10">
+            <div className="absolute top-10 left-10 w-32 h-32 bg-white rounded-full blur-3xl"></div>
+            <div className="absolute bottom-10 right-10 w-40 h-40 bg-white rounded-full blur-3xl"></div>
+          </div>
+
+          <div className="relative z-10">
+            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
+              <Mail className="w-4 h-4" />
+              <span className="text-sm font-medium">오늘부터 시작하는 펜팔 여행</span>
+            </div>
+
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
+              첫 편지를 기다리고 있어요
+            </h2>
+
+            <p className="text-lg mb-10 opacity-95 max-w-2xl mx-auto leading-relaxed">
+              전 세계 친구들과 편지로 소통하며<br className="hidden md:block" />
+              진실한 관계를 만들어보세요
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://apps.apple.com/kr/app/%EB%A0%88%ED%8B%B0/id6746454876"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-white text-gray-900 px-8 py-4 rounded-full font-semibold hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
+              >
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                </svg>
+                App Store
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-white text-gray-900 px-8 py-4 rounded-full font-semibold hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
+              >
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                </svg>
+                Google Play
+              </a>
+            </div>
           </div>
         </div>
       </section>
