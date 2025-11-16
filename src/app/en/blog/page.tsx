@@ -21,7 +21,7 @@ const blogPosts = [
   {
     id: 'first-penpal-letter',
     title: 'Your First Penpal Letter: Opening Your Heart to a Stranger',
-    excerpt: 'Writing your first letter to someone you've never met. A special moment where excitement and fear, expectation and curiosity coexist.',
+    excerpt: 'Writing your first letter to someone you\'ve never met. A special moment where excitement and fear, expectation and curiosity coexist.',
     date: '2025-11-18',
     readTime: '5 min',
     category: 'Guide',
@@ -170,7 +170,7 @@ export default function BlogPage() {
       {/* Blog Posts Grid */}
       <section className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-          {blogPosts.map((post, index) => {
+          {blogPosts.map((post) => {
             const categoryIcons: Record<string, React.ReactNode> = {
               'Heartfelt': <Feather className="w-8 h-8" />,
               'Community': <Mail className="w-8 h-8" />,

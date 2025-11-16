@@ -150,7 +150,7 @@ Start today.
   'first-penpal-letter': {
     id: 'first-penpal-letter',
     title: 'Your First Penpal Letter: Opening Your Heart to a Stranger',
-    description: 'Writing your first letter to someone you've never met. A special moment where excitement and fear, expectation and curiosity coexist.',
+    description: 'Writing your first letter to someone you\'ve never met. A special moment where excitement and fear, expectation and curiosity coexist.',
     date: '2025-11-18',
     readTime: '5 min',
     category: 'Guide',

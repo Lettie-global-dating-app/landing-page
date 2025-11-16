@@ -169,7 +169,7 @@ export default function BlogPage() {
       {/* Blog Posts Grid */}
       <section className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-          {blogPosts.map((post, index) => {
+          {blogPosts.map((post) => {
             const categoryIcons: Record<string, React.ReactNode> = {
               '감성': <Feather className="w-8 h-8" />,
               '커뮤니티': <Mail className="w-8 h-8" />,
