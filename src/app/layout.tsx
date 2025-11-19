@@ -27,10 +27,11 @@ export const metadata: Metadata = {
   },
   description: "편지와 펜팔을 통해 전 세계 친구들과 소통하세요. Lettie는 진실한 관계를 만들어가는 글로벌 펜팔 데이팅앱입니다. 편지, 펜팔, 친구, 소통, 만남, 인연, 모두 Lettie에서 경험하세요.",
   keywords: [
-    "편지", "펜팔", "펜팔앱", "편지앱", "글로벌 펜팔", "글로벌 친구", "글로벌", "친구", "소통", "문화교류", "외국인친구", "언어교환", 
+    "편지", "펜팔", "펜팔앱", "편지앱", "글로벌 펜팔", "글로벌 친구", "글로벌", "친구", "소통", "문화교류", "외국인친구", "언어교환",
     "글로벌친구", "해외친구", "문화체험", "Lettie", "레티",
     "펜친구", "편지친구", "해외문화", "언어학습", "국제교류", "세계친구", "데이팅",
-    "데이팅앱", "만남", "인연", "글로벌 데이팅", "국제 만남", "편지 데이팅"
+    "데이팅앱", "만남", "인연", "글로벌 데이팅", "국제 만남", "편지 데이팅",
+    "디지털 디톡스", "슬로우 라이프", "글로벌 에티켓", "문화 차이", "힐링"
   ],
   authors: [{ name: "Lettie Team" }],
   creator: "Lettie Team",
@@ -42,8 +43,8 @@ export const metadata: Metadata = {
   },
   category: "Social Networking",
   classification: "펜팔 및 소셜 네트워킹 데이팅앱",
-  
-  
+
+
   // Open Graph
   openGraph: {
     type: "website",
@@ -250,22 +251,22 @@ export default function RootLayout({
             })
           }}
         />
-        
+
         {/* 추가 SEO 메타 태그 */}
         <meta name="theme-color" content="#4f46e5" />
         <meta name="msapplication-TileColor" content="#4f46e5" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="mobile-web-app-capable" content="yes" />
-        
+
         {/* 지역 및 언어 정보 */}
         <meta name="geo.region" content="KR" />
         <meta name="geo.country" content="Korea" />
         <meta name="language" content="Korean" />
-        
+
         {/* 앱 스토어 스마트 배너 */}
         <meta name="apple-itunes-app" content="app-id=6746454876" />
-        
+
         {/* 네이버 웹마스터 도구 인증 */}
         <meta name="naver-site-verification" content="b933370623a65bbe5779c3dfdcf094f7a2985d36" />
       </head>
