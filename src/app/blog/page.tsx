@@ -16,7 +16,7 @@ const blogPosts = Object.values(blogPostsData).sort((a, b) => {
 
 export default function BlogPage() {
   return (
-    <>
+    <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="container mx-auto px-4 py-6">
         <nav className="flex items-center justify-between">
@@ -56,7 +56,7 @@ export default function BlogPage() {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-serif font-bold text-foreground mb-8 tracking-tight animate-fade-in-up animation-delay-100">
-            <span className="text-gradient bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+            <span className="text-gradient">
               Letters
             </span>
             <br />
@@ -200,6 +200,6 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
