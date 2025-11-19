@@ -10,7 +10,7 @@ export default function Home() {
   const termsOfServiceUrl = "https://relic-baboon-412.notion.site/silverithm-13c766a8bb468082b91ddbd2dd6ce45d"
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+    <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="container mx-auto px-4 py-6">
         <nav className="flex items-center justify-between">
@@ -26,19 +26,19 @@ export default function Home() {
                 priority
               />
             </div>
-            <span className="text-2xl font-bold text-gray-800">Lettie</span>
+            <span className="text-2xl font-bold text-foreground">Lettie</span>
           </div>
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-gray-600 hover:text-blue-500 transition-colors">기능</a>
-            <Link href="/blog" className="text-gray-600 hover:text-blue-500 transition-colors">블로그</Link>
-            <Link href="/guide" className="text-gray-600 hover:text-blue-500 transition-colors">가이드</Link>
-            <Link href="/stories" className="text-gray-600 hover:text-blue-500 transition-colors">스토리</Link>
-            <Link href="/faq" className="text-gray-600 hover:text-blue-500 transition-colors">FAQ</Link>
+            <a href="#features" className="text-muted-foreground hover:text-primary transition-colors">기능</a>
+            <Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors">블로그</Link>
+            <Link href="/guide" className="text-muted-foreground hover:text-primary transition-colors">가이드</Link>
+            <Link href="/stories" className="text-muted-foreground hover:text-primary transition-colors">스토리</Link>
+            <Link href="/faq" className="text-muted-foreground hover:text-primary transition-colors">FAQ</Link>
             <a
               href={appStoreUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors"
+              className="bg-primary text-primary-foreground px-6 py-2 rounded-full hover:bg-primary-dark transition-colors"
             >
               다운로드
             </a>
@@ -179,9 +179,9 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {/* Feature 1: Large */}
             <div className="md:col-span-2 glass-panel p-8 rounded-3xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 group relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-blue-100/50 rounded-full blur-3xl -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+              <div className="absolute top-0 right-0 w-64 h-64 bg-primary-light/30 rounded-full blur-3xl -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
               <div className="relative z-10">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-blue-50 text-blue-600">
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-primary-light text-primary">
                   <Mail className="w-8 h-8" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-3">편지 교환 시스템</h3>
@@ -194,9 +194,9 @@ export default function Home() {
 
             {/* Feature 2 */}
             <div className="glass-panel p-8 rounded-3xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 group relative overflow-hidden">
-              <div className="absolute bottom-0 left-0 w-40 h-40 bg-indigo-100/50 rounded-full blur-2xl -ml-10 -mb-10 transition-transform group-hover:scale-110"></div>
+              <div className="absolute bottom-0 left-0 w-40 h-40 bg-secondary-light/30 rounded-full blur-2xl -ml-10 -mb-10 transition-transform group-hover:scale-110"></div>
               <div className="relative z-10">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-indigo-50 text-indigo-600">
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-secondary-light text-secondary">
                   <Shield className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">점진적 프로필 공개</h3>
@@ -208,9 +208,9 @@ export default function Home() {
 
             {/* Feature 3 */}
             <div className="glass-panel p-8 rounded-3xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 group relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-40 h-40 bg-violet-100/50 rounded-full blur-2xl -ml-10 -mt-10 transition-transform group-hover:scale-110"></div>
+              <div className="absolute top-0 left-0 w-40 h-40 bg-accent-light/30 rounded-full blur-2xl -ml-10 -mt-10 transition-transform group-hover:scale-110"></div>
               <div className="relative z-10">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-violet-50 text-violet-600">
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-accent-light text-accent">
                   <Users className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">안전한 연락처 교환</h3>
@@ -222,9 +222,9 @@ export default function Home() {
 
             {/* Feature 4: Large */}
             <div className="md:col-span-2 glass-panel p-8 rounded-3xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 group relative overflow-hidden">
-              <div className="absolute bottom-0 right-0 w-64 h-64 bg-purple-100/50 rounded-full blur-3xl -mr-16 -mb-16 transition-transform group-hover:scale-110"></div>
+              <div className="absolute bottom-0 right-0 w-64 h-64 bg-primary-light/30 rounded-full blur-3xl -mr-16 -mb-16 transition-transform group-hover:scale-110"></div>
               <div className="relative z-10">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-purple-50 text-purple-600">
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-primary-light text-primary">
                   <Globe className="w-8 h-8" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-3">글로벌 문화 교류</h3>
@@ -237,9 +237,9 @@ export default function Home() {
 
             {/* Feature 5 */}
             <div className="glass-panel p-8 rounded-3xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 group relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-40 h-40 bg-pink-100/50 rounded-full blur-2xl -mr-10 -mt-10 transition-transform group-hover:scale-110"></div>
+              <div className="absolute top-0 right-0 w-40 h-40 bg-warning-light/30 rounded-full blur-2xl -mr-10 -mt-10 transition-transform group-hover:scale-110"></div>
               <div className="relative z-10">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-pink-50 text-pink-600">
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-warning-light text-warning">
                   <Star className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">젬 시스템</h3>
@@ -251,9 +251,9 @@ export default function Home() {
 
             {/* Feature 6 */}
             <div className="glass-panel p-8 rounded-3xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 group relative overflow-hidden">
-              <div className="absolute bottom-0 left-0 w-40 h-40 bg-rose-100/50 rounded-full blur-2xl -ml-10 -mb-10 transition-transform group-hover:scale-110"></div>
+              <div className="absolute bottom-0 left-0 w-40 h-40 bg-secondary-light/30 rounded-full blur-2xl -ml-10 -mb-10 transition-transform group-hover:scale-110"></div>
               <div className="relative z-10">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-rose-50 text-rose-600">
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-secondary-light text-secondary">
                   <Heart className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">감성적인 디자인</h3>
@@ -281,28 +281,28 @@ export default function Home() {
           <p className="text-center text-muted-foreground mb-12">전 세계 친구들과 소통하는 방법을 알아보세요</p>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Link href="/blog/how-to-start-penpal" className="glass-panel rounded-2xl p-6 hover:shadow-xl transition-all hover:-translate-y-1 group">
-              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <Mail className="w-6 h-6 text-blue-500" />
+              <div className="w-12 h-12 bg-primary-light rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <Mail className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">첫 편지 작성 가이드</h3>
               <p className="text-muted-foreground mb-4">성공적인 펜팔을 시작하는 완벽한 첫 편지 작성법</p>
               <span className="text-primary font-semibold group-hover:underline">자세히 보기 →</span>
             </Link>
             <Link href="/blog/penpal-culture-guide" className="glass-panel rounded-2xl p-6 hover:shadow-xl transition-all hover:-translate-y-1 group">
-              <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <Globe className="w-6 h-6 text-purple-500" />
+              <div className="w-12 h-12 bg-secondary-light rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <Globe className="w-6 h-6 text-secondary" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">세계 각국의 편지 문화</h3>
               <p className="text-muted-foreground mb-4">나라마다 다른 편지 문화와 글로벌 에티켓 알아보기</p>
-              <span className="text-accent font-semibold group-hover:underline">자세히 보기 →</span>
+              <span className="text-secondary font-semibold group-hover:underline">자세히 보기 →</span>
             </Link>
             <Link href="/blog/language-exchange-tips" className="glass-panel rounded-2xl p-6 hover:shadow-xl transition-all hover:-translate-y-1 group">
-              <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <Users className="w-6 h-6 text-green-500" />
+              <div className="w-12 h-12 bg-success-light rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <Users className="w-6 h-6 text-success" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">언어 교환 팁</h3>
               <p className="text-muted-foreground mb-4">펜팔을 통한 효과적인 언어 학습 방법</p>
-              <span className="text-green-500 font-semibold group-hover:underline">자세히 보기 →</span>
+              <span className="text-success font-semibold group-hover:underline">자세히 보기 →</span>
             </Link>
           </div>
           <div className="text-center mt-8">
@@ -320,42 +320,42 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center text-foreground mb-12">완벽한 펜팔을 위한 가이드</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             <Link href="/guide/getting-started" className="flex items-start gap-4 p-6 glass-panel rounded-xl hover:shadow-lg transition-all hover:-translate-y-1 group">
-              <Mail className="w-6 h-6 text-blue-500 flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
+              <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
               <div>
                 <h3 className="font-bold text-foreground mb-2">펜팔 시작하기</h3>
                 <p className="text-sm text-muted-foreground">첫 펜팔을 위한 완벽 가이드</p>
               </div>
             </Link>
             <Link href="/guide/writing-tips" className="flex items-start gap-4 p-6 glass-panel rounded-xl hover:shadow-lg transition-all hover:-translate-y-1 group">
-              <Heart className="w-6 h-6 text-purple-500 flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
+              <Heart className="w-6 h-6 text-secondary flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
               <div>
                 <h3 className="font-bold text-foreground mb-2">편지 작성 마스터</h3>
                 <p className="text-sm text-muted-foreground">매력적인 편지 쓰는 법</p>
               </div>
             </Link>
             <Link href="/guide/cultural-exchange" className="flex items-start gap-4 p-6 glass-panel rounded-xl hover:shadow-lg transition-all hover:-translate-y-1 group">
-              <Globe className="w-6 h-6 text-green-500 flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
+              <Globe className="w-6 h-6 text-success flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
               <div>
                 <h3 className="font-bold text-foreground mb-2">문화 교류</h3>
                 <p className="text-sm text-muted-foreground">세계 문화 이해하기</p>
               </div>
             </Link>
             <Link href="/guide/language-learning" className="flex items-start gap-4 p-6 glass-panel rounded-xl hover:shadow-lg transition-all hover:-translate-y-1 group">
-              <Star className="w-6 h-6 text-yellow-600 flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
+              <Star className="w-6 h-6 text-warning flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
               <div>
                 <h3 className="font-bold text-foreground mb-2">언어 학습</h3>
                 <p className="text-sm text-muted-foreground">펜팔로 외국어 마스터하기</p>
               </div>
             </Link>
             <Link href="/guide/building-friendship" className="flex items-start gap-4 p-6 glass-panel rounded-xl hover:shadow-lg transition-all hover:-translate-y-1 group">
-              <Users className="w-6 h-6 text-red-500 flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
+              <Users className="w-6 h-6 text-accent flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
               <div>
                 <h3 className="font-bold text-foreground mb-2">우정 쌓기</h3>
                 <p className="text-sm text-muted-foreground">지속 가능한 펜팔 관계</p>
               </div>
             </Link>
             <Link href="/guide/safety-privacy" className="flex items-start gap-4 p-6 glass-panel rounded-xl hover:shadow-lg transition-all hover:-translate-y-1 group">
-              <Shield className="w-6 h-6 text-gray-600 flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
+              <Shield className="w-6 h-6 text-muted-foreground flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
               <div>
                 <h3 className="font-bold text-foreground mb-2">안전과 프라이버시</h3>
                 <p className="text-sm text-muted-foreground">안전한 펜팔 즐기기</p>
@@ -371,25 +371,25 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center text-foreground mb-16">이런 분들께 추천합니다</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="text-center p-6 rounded-2xl glass-panel hover:shadow-lg transition-all hover:-translate-y-1">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+              <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
                 <Globe className="w-8 h-8 text-white" />
               </div>
               <h3 className="font-bold text-foreground mb-2">전 세계 친구들과 진정한 소통을 원하는 분</h3>
             </div>
             <div className="text-center p-6 rounded-2xl glass-panel hover:shadow-lg transition-all hover:-translate-y-1">
-              <div className="w-16 h-16 bg-gradient-to-br from-indigo-400 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+              <div className="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
                 <Users className="w-8 h-8 text-white" />
               </div>
               <h3 className="font-bold text-foreground mb-2">외국어 연습과 문화 교류에 관심 있는 분</h3>
             </div>
             <div className="text-center p-6 rounded-2xl glass-panel hover:shadow-lg transition-all hover:-translate-y-1">
-              <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+              <div className="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
                 <Heart className="w-8 h-8 text-white" />
               </div>
               <h3 className="font-bold text-foreground mb-2">깊이 있는 대화와 진실한 관계를 추구하는 분</h3>
             </div>
             <div className="text-center p-6 rounded-2xl glass-panel hover:shadow-lg transition-all hover:-translate-y-1">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+              <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
                 <Star className="w-8 h-8 text-white" />
               </div>
               <h3 className="font-bold text-foreground mb-2">새로운 방식의 만남을 경험하고 싶은 분</h3>

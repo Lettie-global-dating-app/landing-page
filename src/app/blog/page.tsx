@@ -84,11 +84,11 @@ export default function BlogPage() {
             };
 
             const categoryColors: Record<string, string> = {
-              '감성': 'from-blue-50 to-indigo-100 dark:from-blue-900/30 dark:to-indigo-900/30',
-              '커뮤니티': 'from-purple-50 to-blue-100 dark:from-purple-900/30 dark:to-blue-900/30',
-              '가이드': 'from-emerald-50 to-teal-100 dark:from-emerald-900/30 dark:to-teal-900/30',
-              '문화': 'from-amber-50 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30',
-              '학습': 'from-violet-50 to-purple-100 dark:from-violet-900/30 dark:to-purple-900/30'
+              '감성': 'from-primary-light to-secondary-light',
+              '커뮤니티': 'from-secondary-light to-accent-light',
+              '가이드': 'from-success-light to-primary-light',
+              '문화': 'from-accent-light to-primary-light',
+              '학습': 'from-secondary-light to-primary-light'
             };
 
             return (
@@ -151,11 +151,11 @@ export default function BlogPage() {
 
       {/* CTA Section */}
       <section className="container mx-auto px-4 py-24">
-        <div className="relative max-w-5xl mx-auto overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-blue-600 to-purple-700 p-12 md:p-20 text-center text-white shadow-2xl">
+        <div className="relative max-w-5xl mx-auto overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-primary to-secondary p-12 md:p-20 text-center text-white shadow-2xl">
           {/* Decorative elements */}
           <div className="absolute top-0 left-0 w-full h-full opacity-20">
             <div className="absolute top-10 left-10 w-64 h-64 bg-white rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute bottom-10 right-10 w-80 h-80 bg-pink-400 rounded-full blur-3xl animate-pulse animation-delay-1000"></div>
+            <div className="absolute bottom-10 right-10 w-80 h-80 bg-white rounded-full blur-3xl animate-pulse animation-delay-1000"></div>
           </div>
 
           <div className="relative z-10">

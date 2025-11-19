@@ -1,27 +1,38 @@
 @import "tailwindcss";
 
 :root {
-  /* Base Colors */
+  /* Base Colors - 통일된 색상 체계 */
   --background: #ffffff;
-  --foreground: #171717;
-  
-  /* Soft Aurora Palette - Light Mode */
-  --primary: #6366f1; /* Indigo 500 */
+  --foreground: #1a1a1a; /* 더 진한 검정으로 가독성 향상 */
+
+  /* 단순화된 색상 팔레트 - Blue 중심 */
+  --primary: #3b82f6; /* Blue 500 - 메인 컬러 */
   --primary-foreground: #ffffff;
-  
-  --secondary: #ec4899; /* Pink 500 */
+  --primary-light: #dbeafe; /* Blue 100 - 밝은 배경 */
+  --primary-dark: #1e40af; /* Blue 800 - 진한 강조 */
+
+  --secondary: #6366f1; /* Indigo 500 - 보조 컬러 */
   --secondary-foreground: #ffffff;
-  
-  --accent: #8b5cf6; /* Violet 500 */
+  --secondary-light: #e0e7ff; /* Indigo 100 */
+
+  --accent: #0ea5e9; /* Sky 500 - 액센트 */
   --accent-foreground: #ffffff;
-  
-  --muted: #f3f4f6;
-  --muted-foreground: #6b7280;
-  
-  --card: rgba(255, 255, 255, 0.7);
-  --card-foreground: #171717;
-  
-  --border: #e5e7eb;
+  --accent-light: #e0f2fe; /* Sky 100 */
+
+  /* 중성 색상 - 향상된 가독성 */
+  --muted: #f8fafc; /* Slate 50 - 배경용 */
+  --muted-foreground: #475569; /* Slate 600 - 본문 텍스트에 적합한 진한 회색 */
+
+  --card: rgba(255, 255, 255, 0.95); /* 더 불투명하게 */
+  --card-foreground: #1a1a1a;
+
+  --border: #e2e8f0; /* Slate 200 */
+
+  /* 성공/경고 색상 */
+  --success: #10b981; /* Green 500 */
+  --success-light: #d1fae5; /* Green 100 */
+  --warning: #f59e0b; /* Amber 500 */
+  --warning-light: #fef3c7; /* Amber 100 */
 }
 
 @theme inline {
@@ -29,19 +40,27 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary-light: var(--secondary-light);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-accent-light: var(--accent-light);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
   --color-border: var(--border);
-  
+  --color-success: var(--success);
+  --color-success-light: var(--success-light);
+  --color-warning: var(--warning);
+  --color-warning-light: var(--warning-light);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  
+
   /* Custom Animations */
   --animate-blob: blob 7s infinite;
   --animate-fade-in-up: fadeInUp 0.8s ease-out forwards;
@@ -50,26 +69,35 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    
-    /* Soft Aurora Palette - Dark Mode */
-    --primary: #818cf8; /* Indigo 400 */
-    --primary-foreground: #ffffff;
-    
-    --secondary: #f472b6; /* Pink 400 */
-    --secondary-foreground: #ffffff;
-    
-    --accent: #a78bfa; /* Violet 400 */
-    --accent-foreground: #ffffff;
-    
-    --muted: #1f2937;
-    --muted-foreground: #9ca3af;
-    
-    --card: rgba(20, 20, 20, 0.7);
-    --card-foreground: #ededed;
-    
-    --border: #374151;
+    --background: #0f172a; /* Slate 900 */
+    --foreground: #f1f5f9; /* Slate 100 */
+
+    /* Dark Mode - 통일된 Blue 팔레트 */
+    --primary: #60a5fa; /* Blue 400 */
+    --primary-foreground: #0f172a;
+    --primary-light: #1e3a8a; /* Blue 900 */
+    --primary-dark: #93c5fd; /* Blue 300 */
+
+    --secondary: #818cf8; /* Indigo 400 */
+    --secondary-foreground: #0f172a;
+    --secondary-light: #312e81; /* Indigo 900 */
+
+    --accent: #38bdf8; /* Sky 400 */
+    --accent-foreground: #0f172a;
+    --accent-light: #0c4a6e; /* Sky 900 */
+
+    --muted: #1e293b; /* Slate 800 */
+    --muted-foreground: #cbd5e1; /* Slate 300 - 다크 모드에서 가독성 향상 */
+
+    --card: rgba(30, 41, 59, 0.95); /* Slate 800 with opacity */
+    --card-foreground: #f1f5f9;
+
+    --border: #334155; /* Slate 700 */
+
+    --success: #34d399; /* Green 400 */
+    --success-light: #064e3b; /* Green 900 */
+    --warning: #fbbf24; /* Amber 400 */
+    --warning-light: #78350f; /* Amber 900 */
   }
 }
 
@@ -95,14 +123,7 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, var(--primary), var(--accent), var(--secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.text-gradient-blue {
-  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -184,7 +205,7 @@ body {
 /* Markdown Content Styles */
 .prose {
   max-width: 65ch;
-  color: var(--muted-foreground);
+  color: var(--foreground); /* 본문 색상을 foreground로 변경 (가독성 향상) */
 }
 
 .prose h1 {
@@ -222,7 +243,7 @@ body {
   font-weight: 600;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
-  color: var(--muted-foreground);
+  color: var(--foreground); /* h4도 foreground로 변경 */
 }
 
 .prose p {
@@ -230,6 +251,7 @@ body {
   line-height: 1.875rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  color: var(--foreground); /* 본문 단락도 진한 색으로 */
 }
 
 .prose ul, .prose ol {
