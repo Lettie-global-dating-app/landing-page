@@ -20,10 +20,14 @@ export const blogPosts: Record<string, BlogPost> = {
     'slow-letter-beauty': {
         id: 'slow-letter-beauty',
         title: '느린 편지의 아름다움: 빠름이 지배하는 세상에서',
+        titleEn: 'The Beauty of Slow Letters: In a World Dominated by Speed',
         description: '모든 것이 빠르게 흘러가는 세상에서, 느리게 주고받는 편지의 가치. 기다림과 설렘, 깊이 있는 소통이 주는 특별한 경험.',
+        descriptionEn: 'In a world where everything moves fast, discover the value of slow letters. Experience the special joy of waiting, anticipation, and deep communication.',
         date: '2025-11-18',
         readTime: '6분',
+        readTimeEn: '6 min',
         category: '감성',
+        categoryEn: 'Emotional',
         image: '/letter-writing.png',
         author: 'Lettie',
         keywords: ['느린 편지', '슬로우 커뮤니케이션', '펜팔', '기다림의 미학', '깊은 소통', '아날로그 감성', '의미있는 연결', '디지털 디톡스'],
@@ -144,15 +148,137 @@ Lettie에서 그 편지를 다시 시작해보세요.
 ---
 
 *Lettie에서 느린 편지의 아름다움을 경험해보세요.*
+    `,
+        contentEn: `
+# The Beauty of Slow Letters: In a World Dominated by Speed
+
+## Exhausted by Speed
+
+Everything is fast. Messages are delivered instantly, replies come immediately.
+A world where we don't wait even a second. Yet why do we feel increasingly lonely?
+
+**Just because something is fast doesn't mean it's deep.**
+
+### The Paradox of Fast Communication
+
+- Many messages but few conversations
+- Many connections but shallow relationships
+- Quick replies but lacking sincerity
+- Lots of information but little understanding
+
+## Why Letters Are Slow
+
+Letters are slow. Intentionally slow.
+
+**Time to write**: Time to organize thoughts, choose words, and pour in feelings
+**Time to send**: Time to put in the mailbox and wait for delivery
+**Time to read**: Time to slowly read line by line and understand the other person
+**Time to reply**: Time to think again and write again
+
+### What This Slowness Gives Us
+
+Slowness is not a disadvantage. Rather, there are things possible only because of slowness.
+
+**Depth**: Deep thoughts we miss when writing quickly
+**Sincerity**: The genuine heart revealed when not hurrying
+**Excitement**: The thrill while waiting for a reply
+**Respect**: The meaning of spending time for someone
+
+## The Aesthetics of Waiting
+
+On Lettie, you send a letter and wait for a reply.
+It could be a day, it could be several days.
+
+**Is this waiting bad?**
+No. This waiting is the most beautiful moment.
+
+### While Waiting
+
+While waiting, we:
+- Imagine what the other person will think
+- Recall the letter we wrote
+- Prepare stories for the next letter
+- Become more curious about the other person
+
+**Waiting deepens relationships.**
+
+## Writing Letters with Thought
+
+You don't have to reply immediately.
+You can write slowly, with thought.
+
+### The Process of Letter Writing
+
+1. **Thinking**: What do I want to say
+2. **Organizing**: How to express it
+3. **Writing**: Carefully, sentence by sentence
+4. **Refining**: Is there a better expression
+5. **Sending**: With heart
+
+This process itself is a way of respecting the other person.
+
+## Analog Sensibility in the Digital Age
+
+Lettie is a digital platform.
+But it contains the sensibility of analog letters.
+
+### Digital Advantages + Analog Sensibility
+
+**Convenience**: Write letters anytime, anywhere
+**Slowness**: The leisure of not replying immediately
+**Depth**: Space to write long letters
+**Sincerity**: Time to contain thoughts
+
+## It's Okay Not to Be Fast
+
+The world spins quickly.
+But not everything needs to be fast.
+
+**Some things are more beautiful when slow.**
+
+### The Value of Slow Things
+
+- A good book read slowly
+- A cup of tea steeped for a long time
+- Food made with time
+- A letter written with care
+
+## I Want to Ask You
+
+**When was the last time you wrote a long letter to someone?**
+
+**A letter, not a message.**
+**Slowly, not quickly.**
+**Carefully, not simply.**
+
+Start that letter again on Lettie.
+
+## The Beginning of Slow Communication
+
+Start today.
+- You don't have to reply immediately
+- You can write long letters
+- You can take time to organize your thoughts
+- You can enjoy the waiting
+
+**Slow letters will lead you to deeper relationships.**
+
+---
+
+*Experience the beauty of slow letters on Lettie.*
     `
     },
     'first-penpal-letter': {
         id: 'first-penpal-letter',
         title: '첫 펜팔 편지: 낯선 이에게 마음을 열다',
+        titleEn: 'Your First Penpal Letter: Opening Your Heart to a Stranger',
         description: '한 번도 만난 적 없는 낯선 이에게 첫 편지를 쓴다는 것. 설렘과 두려움, 기대와 호기심이 공존하는 특별한 순간.',
+        descriptionEn: 'Writing your first letter to a complete stranger. A special moment where excitement and fear, anticipation and curiosity coexist.',
         date: '2025-11-18',
         readTime: '5분',
+        readTimeEn: '5 min',
         category: '가이드',
+        categoryEn: 'Guide',
         image: '/letter-writing.png',
         author: 'Lettie',
         keywords: ['첫 펜팔', '펜팔 시작', '낯선 이에게 편지', '첫 만남', '펜팔 설렘', '글로벌 친구', '편지 쓰기', '새로운 만남'],
@@ -305,15 +431,169 @@ Lettie를 열고,
 ---
 
 *Lettie에서 첫 펜팔을 시작해보세요.*
+    `,
+        contentEn: `
+# Your First Penpal Letter: Opening Your Heart to a Stranger
+
+## The First Letter to a Stranger
+
+You turn on your screen and look at a blank letter page.
+You try to write **"안녕하세요"** and then delete it.
+You try **"Hi"** and delete it again.
+
+**Writing your first letter to a stranger isn't easy.**
+
+### Why is it difficult?
+
+- You don't know who they are
+- You don't know what they like
+- You don't know what to talk about
+- You don't know if they'll read your letter and reply
+
+## But That's What Makes It Special
+
+Because you don't know, you're actually free.
+**Since nothing is predetermined, everything is possible.**
+
+### The Magic of the First Letter
+
+- You can start without preconceptions
+- You can show your true self
+- You can discover a new world
+- An unexpected connection begins
+
+## What to Include in Your First Letter
+
+What should you write?
+There's no right answer. But here are some helpful ideas.
+
+### 1. An Honest Introduction
+
+It doesn't need to be grand. Just introduce yourself as you are.
+
+**Example**:
+"Hello, I'm a 25-year-old office worker living in Seoul.
+On weekends, I like to climb Bukhansan and look down at the city.
+Where do you live?"
+
+### 2. Your Daily Life
+
+It doesn't have to be extraordinary. Sometimes the most ordinary days are the most interesting.
+
+**Example**:
+"This morning, I looked out the window and saw the first snow falling.
+I was rushing to get ready and spilled my coffee,
+but the snowy scenery was so beautiful that I thought being late was okay."
+
+### 3. Your Curiosities
+
+Ask them questions. Questions are the beginning of conversation.
+
+**Good Questions**:
+- What season is it in your country right now?
+- How does a typical day unfold for you?
+- What are you interested in these days?
+- What are the small things that make you happy?
+
+### 4. Your Interests
+
+Share what you love. You might find common ground or learn something new.
+
+**Example**:
+"I love jazz music.
+Especially on rainy days, listening to Miles Davis brings me peace.
+What kind of music do you enjoy?"
+
+## Tips for Writing Your First Letter
+
+### 1. Don't Aim for Perfection
+
+It's okay if your grammar isn't perfect or your expressions are clumsy.
+**A sincere letter is better than a perfect one.**
+
+### 2. Keep It Moderate in Length
+
+Your first letter should be a reasonable length.
+Make it easy for them to read and reply without feeling overwhelmed.
+
+### 3. Ask Open-Ended Questions
+
+Rather than questions that can be answered with "yes/no,"
+ask questions that invite conversation.
+
+❌ "Do you like movies?"
+✅ "What kind of movies do you like? Is there a recent film that stood out to you?"
+
+### 4. Keep a Positive Tone
+
+First meetings should be bright and positive.
+Save negative or heavy topics for later.
+
+## While Waiting for a Reply
+
+You've sent your letter.
+Now you wait.
+
+### Feelings While Waiting
+
+**Excitement**: What kind of reply will come?
+**Worry**: Will they reply?
+**Anticipation**: What kind of person are they?
+**Curiosity**: How will our conversation unfold?
+
+**All these emotions are the beginning of penpalling.**
+
+## When the Reply Arrives
+
+The moment you receive that first reply,
+you'll understand.
+
+**This excitement is exactly what makes penpalling so magical.**
+
+### Reading the Reply
+
+- Read it slowly
+- Feel their heart
+- Look for common ground
+- Think about your next letter
+
+## Moving to the Second Letter
+
+The second letter will be easier than the first.
+Because now you know a little more.
+
+**And so the letters continue,**
+**A stranger becomes a friend,**
+**A friend becomes a cherished connection.**
+
+## Start Now
+
+Open Lettie,
+and write your first letter.
+
+**It doesn't have to be perfect.**
+**It doesn't have to be long.**
+**Just let your sincerity shine through.**
+
+Your first letter to a stranger—
+that's the beginning of a special connection.
+
+---
+
+*Start your first penpal journey on Lettie.*
     `
     },
     'winter-letter-warmth': {
         id: 'winter-letter-warmth',
         title: '겨울 편지: 차가운 계절에 전하는 따뜻한 마음',
+        titleEn: 'Winter Letters: Sharing Warm Hearts in a Cold Season',
         description: '첫눈이 내리는 겨울, 당신에게 보내는 편지 한 통. 추운 계절이지만 따뜻한 마음으로 서로를 응원하며, Lettie에서 시작하는 겨울 펜팔 이야기.',
+        descriptionEn: 'A letter to you on the first snow of winter. Though it\'s a cold season, we encourage each other with warm hearts—a winter penpal story that begins on Lettie.',
         date: '2025-11-16',
         readTime: '5분',
+        readTimeEn: '5 min',
         category: '감성',
+        categoryEn: 'Emotional',
         image: '/letter-writing.png',
         author: 'Lettie',
         keywords: ['겨울 편지', '펜팔 겨울', '따뜻한 편지', '겨울 감성', '크리스마스 펜팔', '연말 편지', '위로의 편지', '겨울 소통', '따뜻한 마음'],
@@ -562,15 +842,265 @@ Lettie에서 당신과 나, 그리고 전 세계의 펜팔들이 함께 모여 �
 *P.S. 당신의 겨울은 어떤가요? 무엇이 당신을 따뜻하게 해주나요? 편지로 들려주세요. 함께 이 겨울을 나누고 싶습니다.*
 
 **❄️ 첫눈이 내리는 날, 첫 편지를 시작하세요 ❄️**
+    `,
+        contentEn: `
+# Winter Letters: Sharing Warm Hearts in a Cold Season
+
+## On the Day of First Snow
+
+Looking out the window, I see the first snow falling.
+White snowflakes slowly descend from the sky, painting the world white.
+
+On days like this, I suddenly want to write a letter to someone. To you far away, to you I haven't met yet, I want to send warm greetings.
+
+**How is your winter?**
+
+## Cold Season, Warm Hearts
+
+Winter is cold. The weather, the wind, the nights are long and cold. But there are things that shine even brighter because it's winter.
+
+### Warmth You Can Only Feel in Winter
+
+**A warm cup of tea**: Hot tea in cold air warms your entire body
+**A cozy blanket**: The small happiness of curling up under a blanket on a cold night
+**Snowflakes by the window**: The quiet moment of sitting by the window watching snow fall
+**A warm letter**: A heartfelt letter received in the cold season
+
+### The Warmth Letters Bring
+
+Letters exchanged on Lettie pierce through winter's cold air to deliver warmth.
+
+Wherever you are, however cold your winter may be, a single letter can warm your heart.
+
+## Letters on Winter Nights
+
+On long winter nights, we spend more time alone. The sun sets early, and the nights are long.
+
+But these long nights aren't all bad. They're also time to slowly organize your thoughts, reflect on the year, and write heartfelt letters.
+
+### What Makes Winter Night Letters Special
+
+**Honesty**: In darkness, we become more truthful
+**Depth**: Long nights enable deep thoughts
+**Comfort**: On lonely nights, the feeling of being connected to someone
+**Hope**: Knowing that morning comes after the long night
+
+## The Season When Christmas Approaches
+
+Christmas is approaching. Streets become decorated with lights, and carols play.
+
+But not everyone is happy. For some, year-end is a time when loneliness feels even greater.
+
+### Year-End on Lettie
+
+On Lettie, you're not alone. Somewhere in the world, there's a penpal waiting for you.
+
+**Year-end spent together**: Far in distance, but close at heart
+**Time to support each other**: Together we overcome difficult times
+**Hope for the new year**: Together we welcome the new year
+**True connection**: Sharing hearts rather than gifts
+
+## Things I Want to Ask You
+
+This winter, I want to ask you.
+
+**What color is your winter?**
+For some it's white, for some it's warm orange, for others it's cold blue.
+
+**What warms you up on cold days?**
+A warm drink? Your favorite music? A cozy space? Or someone's warm words?
+
+**What do you think about on winter nights?**
+Do you reflect on the year? Plan for the new year? Or simply enjoy the quiet?
+
+**This winter, who do you want to write a letter to?**
+An old friend? A new penpal? Or someone you haven't met yet?
+
+## Your Winter Journey on Lettie
+
+Winter spent on Lettie is special.
+
+### First Winter Letter: A Greeting That Melts the Ice
+
+A letter sent to a stranger you're meeting for the first time. An awkward but exciting moment.
+
+**Self-introduction**: Brief but honest, who you are
+**Winter story**: What your winter is like, what you enjoy
+**Curiosity**: Sincere questions about the other person
+**Warmth**: A cold season, but with a warm heart
+
+### Second Winter Letter: Ice Slowly Melting
+
+You've gotten to know each other a little. Conversation becomes natural.
+
+**Empathy**: Empathizing with each other's experiences
+**Sharing**: Sharing favorite winter music, movies, books
+**Comfort**: Comforting each other if there are difficulties
+**Support**: Encouraging each other's dreams and goals
+
+### Third Winter Letter: Completely Melted Ice
+
+Now you're becoming friends. You look forward to the letters.
+
+**Daily life**: The comfort of sharing small everyday moments
+**Honesty**: Being able to show your true heart
+**Humor**: A relationship where you can laugh together
+**Trust**: Being able to rely on each other
+
+### Fourth Winter Letter: Warm Friendship
+
+As you exchange letters, friendship deepens.
+
+**Deep conversations**: Going beyond superficial talk
+**Growing together**: Learning and growing together
+**Special moments**: Welcoming Christmas and New Year together
+**Gratitude**: Being grateful for each other's presence
+
+### Fifth Winter Letter: Waiting for Spring
+
+The long winter passes and spring approaches. But friendship continues regardless of season.
+
+**Memories**: Reflecting on the winter spent together
+**Anticipation**: Excitement for the coming spring
+**Promise**: A promise to keep in touch
+**Forever**: Friendship beyond distance and time
+
+## Gifts Winter Gives
+
+Winter is cold and dark. But there are things more precious because of winter.
+
+### The Value of Slowness
+
+Winter makes everything slow. Nature and people slow down.
+
+**But that's good.**
+
+Letters exchanged on Lettie are also slow. Not instant. Requiring patience.
+
+**But within that waiting, friendship ripens.**
+
+### The Beauty of Silence
+
+Like the quietness of a snowy day, letters also have silence.
+
+**Escaping a noisy world**: Quietly conveying hearts
+**Deep thoughts**: Carefully choosing words
+**True communication**: Sharing hearts, not surfaces
+**Peace**: The tranquility of the moment writing and reading letters
+
+### The Preciousness of Warmth
+
+In cold winter, warmth is even more precious.
+
+**Even small warmth feels great**: The power of one warm word
+**Joy of sharing**: Warmth shared is warmth doubled
+**Interaction**: Warmth given and received
+**Continuity**: Warm hearts that continue even as seasons change
+
+## Start Your First Letter
+
+Outside it's cold. Snow is falling. Wind is blowing.
+
+**But your heart can be warm.**
+
+Open Lettie and write your first letter.
+
+**To whom will you write?**
+
+- Someone somewhere in the world waiting for you
+- Someone seeking warm connection like you
+- A friend who understands winter loneliness
+- A penpal to wait for spring together with
+
+### What to Include in Your First Letter
+
+**Honest greeting**: Hello, I am...
+**Winter story**: Outside my window right now...
+**Your interests**: I enjoy...
+**Sincere question**: How is your winter?
+**Warm closing**: I look forward to your reply
+
+## Winter's Promise
+
+Winter promises.
+
+**That warm spring comes after cold days.**
+
+That bright morning comes after long nights.
+
+**I also promise you.**
+
+That I'm waiting for you on Lettie.
+
+That I want to read your letter.
+
+That I want to spend this winter warmly together.
+
+## On a Snowy Night
+
+Snow is falling. Quietly, slowly, beautifully.
+
+**Just as each snowflake is different, we are all different.**
+
+But together, we create a beautiful winter landscape.
+
+On Lettie, you and I, and penpals from around the world come together to create beautiful stories.
+
+## A Warm Invitation
+
+This winter, don't spend it alone.
+
+**Meet new friends on Lettie.**
+
+- A friend to rejoice in the first snow with
+- A penpal to share Christmas stories with
+- A companion to share new year plans with
+- A friend to spend long winter nights with
+
+### Start Now
+
+**Download Lettie**
+
+Write your first letter.
+
+Share your winter story.
+
+Warm someone's winter.
+
+**And your winter will become warm too.**
+
+## The End of This Winter Letter
+
+As I finish this letter, I send you warm greetings.
+
+**I hope you stay healthy in the cold weather.**
+
+May you have warm letters on lonely nights.
+
+May you have friends to cheer you on during hard times.
+
+**This winter, let's meet on Lettie.**
+
+By a snowy window, drinking warm tea, I await your letter.
+
+— With a warm heart
+
+*P.S. How is your winter? What warms you up? Please tell me in a letter. I want to share this winter together.*
+
+**❄️ On the day of first snow, start your first letter ❄️**
     `
     },
     'halloween-connections': {
         id: 'halloween-connections',
         title: '할로윈 고백: 어둠 속에서 찾는 연결',
+        titleEn: 'Halloween Confessions: Finding Connections in the Dark',
         description: '이번 할로윈, Vampiro가 전하는 특별한 유령 이야기 — 진심 어린 편지를 통해 예상치 못한 곳에서 진정한 우정을 찾는 이야기.',
+        descriptionEn: 'This Halloween, Vampiro shares a special ghost story—finding true friendship in unexpected places through heartfelt letters.',
         date: '2025-10-29',
         readTime: '5분',
+        readTimeEn: '5 min',
         category: '커뮤니티',
+        categoryEn: 'Community',
         image: '/letter-writing.png',
         author: 'Vampiro (Sebastian)',
         keywords: ['할로윈 펜팔', '대안 우정', '고딕 펜팔', '할로윈 연결', '스푸키 시즌 친구', '뱀파이어 미학', '다크 아카데미아 펜팔', '10월 편지'],
@@ -714,15 +1244,160 @@ Lettie는 5통의 편지를 주고받기 전까지 연락처 교환을 허용하
 🌙 이번 할로윈과 그 이후에도
 
 **P.S.** — 제게 편지를 쓴다면, "너무 과하다"고 걱정하지 마세요. 제가 좋아하는 사람들은 항상 그래요. 저도 그렇고요.
+    `,
+        contentEn: `
+# Halloween Confessions: Finding Connections in the Dark
+
+## A Different Kind of Ghost Story
+
+Hello, I'm Vampiro — or Sebastian if that's easier to remember.
+
+Late one October night, I downloaded Lettie without much expectation. I've always felt more alive when the leaves turn orange and the air gets crisp. During Halloween season, everything feels a bit more magical, a bit more true.
+
+## Who's Hiding Behind This Letter?
+
+**The basics**: 24, living somewhere between alternative fashion aesthetics and cozy tea rituals. People often say I look like I walked out of a gothic novel and honestly? I take that as a compliment.
+
+**What fills my nights**:
+- **Music**: I play saxophone and guitar, mostly melancholic pieces that sound better after midnight
+- **Visual stories**: Obsessed with webtoons and manga — the darker and more atmospheric, the better
+- **Creative pursuits**: Baking pastries too pretty to eat or reading tarot cards by candlelight
+- **Tea rituals**: There's an art to brewing the perfect cup of tea, and I'm still learning
+
+## The Pumpkin Carving Metaphor
+
+You know how people carve pumpkins on Halloween? They scoop out all the messy stuff inside, create something that glows from within, and put it out for everyone to see.
+
+Finding real friendship is kind of like that.
+
+We spend so much time showing our carved exterior — the glowing, Instagram-worthy parts. But what about the messy scooped-out insides? The interests that seem "too niche," the music that's "too weird," the hobbies that make people raise eyebrows?
+
+**That's where Lettie comes in.**
+
+## Why I Chose Letters Over Likes
+
+I've tried the usual apps. You know the ones — swipe left, swipe right, judge someone in 3 seconds based on photos and a bio that says "I love travel and good vibes."
+
+The problem is, my vibes aren't always conventionally "good." My vibes are:
+- Playing saxophone at 2 AM when inspiration strikes
+- Getting genuinely excited about a new tarot spread
+- Discussing for hours why a certain webtoon scene hit different
+- Sharing the perfect tea pairing for a rainy autumn evening
+
+These things can't be captured in carefully curated Instagram photos. They're discovered through conversation. Through letters. Through time.
+
+## What I'm Looking for This Halloween
+
+**Genuine souls** — people who understand that alternative doesn't mean unapproachable. That gothic aesthetics and warm hearts aren't mutually exclusive.
+
+**Creative spirits** — people who get excited about:
+- Music that makes you feel something (even if it's melancholy)
+- Stories told through panels and frames
+- The alchemy of baking and brewing
+- The mystery of tarot and tea leaves
+
+**Patient friends** — people who understand that real connection takes longer than 5 minutes. Longer than 5 messages. Maybe 5 letters, exchanged slowly, revealing gradually who we are.
+
+## The Beauty of Slow Reveal
+
+Lettie doesn't allow contact exchange until after 5 letters. At first, I thought it was limiting.
+
+Now I realize it's liberating.
+
+**No pressure to respond instantly.** No anxiety about being "left on read." Just two people, taking their time, choosing their words carefully.
+
+**No photos dominating the conversation.** Just thoughts, interests, dreams, fears — all the things that actually matter when you're trying to find someone who gets you.
+
+**No rush.** No pressure to be something other than yourself. Messy scooped-out pumpkin insides and all.
+
+## This Halloween's Invitation
+
+So here's my Halloween confession: I'm lonely in the way that gets worse in crowded rooms. Surrounded by people, yet finding real connection feels like searching for ghosts.
+
+Do you ever feel that way too?
+
+If so, want to haunt each other's inboxes (in the good way)?
+
+### Tell me about:
+- The last song that made you actually feel something
+- Your favorite webtoon or manga and why it matters
+- Something you're creating (or want to create)
+- Your comfort beverage and the story behind it
+- The aesthetic that makes you feel most like yourself
+
+### I'll share:
+- My current musical obsession that sounds better at night
+- The tarot spread I'm working on
+- My recent baking experiments (successes and beautiful failures)
+- A tea blend that matches your personality
+- Stories from the alternative fashion scene
+
+## Beyond the Costume
+
+Halloween is the one night we're encouraged to be someone else. But what if through these letters, we practice being more ourselves?
+
+Stop performing and start connecting?
+
+What if the scariest thing isn't ghosts or goblins, but the vulnerability of showing someone who we really are — and them accepting it?
+
+## Waiting in the Shadows
+
+This Halloween, I'm not dressing up as someone else.
+
+I'm showing up as Vampiro, as Sebastian, as whoever I am in between — the saxophone player, tea brewer, tarot reader, manga lover, person who feels most alive when the sun goes down.
+
+And I hope you show up too.
+
+Not the polished, filtered version. The real you. With the niche interests and midnight thoughts and the yearning for connection deeper than small talk.
+
+**Let's make this Halloween about finding real friendships, not collecting followers.**
+
+Exchanging letters that matter, not messages that disappear.
+
+Being the kind of friends who understand that sometimes the best conversations happen:
+- After midnight
+- Over tea instead of drinks
+- About art instead of weather
+- Between people who finally feel seen
+
+## Your First Letter Awaits
+
+So if you're reading this on a crisp October evening, feeling like maybe somewhere out there is someone who'd appreciate your weird interests and midnight thoughts...
+
+**I'm here.**
+
+Probably drinking tea. Maybe practicing saxophone. Definitely ready to exchange letters with someone who gets it.
+
+This Halloween, let's create a different kind of ghost story — one where two souls find each other through words in the dark, and discover they've been looking for the same thing all along:
+
+**Real connection. Genuine friendship. Someone who understands.**
+
+The pumpkin's carved. The candle's lit. The first page is blank.
+
+*What story shall we write together?*
+
+— Vampiro (Sebastian)
+
+🎃 Seeking friends who appreciate the beauty in darkness
+
+🕯️ One letter at a time
+
+🌙 This Halloween and beyond
+
+**P.S.** — If you write to me, don't worry about being "too much." The people I like best always are. So am I.
     `
     },
     'dear-stranger': {
         id: 'dear-stranger',
         title: '낯선 당신에게: 천천히 깊어지는 연결을 믿는 사람의 편지',
+        titleEn: 'Dear Stranger: A Letter from Someone Who Believes in Deep Connections',
         description: '목소리도, 얼굴도 모르는 당신에게. 느리지만 진실한 연결을 여전히 믿는 사람이 보내는 편지입니다. Lettie에서 진심 어린 펜팔 관계를 시작해보세요.',
+        descriptionEn: 'To you whose voice and face I don\'t know. A letter from someone who still believes in slow but genuine connections. Start a heartfelt penpal relationship on Lettie.',
         date: '2025-01-22',
         readTime: '4분',
+        readTimeEn: '4 min',
         category: '감성',
+        categoryEn: 'Emotional',
         image: '/letter-writing.png',
         author: 'Lettie',
         keywords: ['펜팔 편지', '진실한 연결', '감성 편지', '낯선 사람에게', '펜팔 시작', '느린 관계', '의미있는 소통'],
@@ -788,15 +1463,82 @@ Lettie는 5통의 편지를 주고받기 전까지 연락처 교환을 허용하
 Lettie에서 만나요. 우리의 대화가 시작되기를 기대하며.
 
 — 느리지만 깊은 연결을 믿는 사람
+    `,
+        contentEn: `
+# Dear Stranger
+
+Isn't it a bit strange? Writing a letter to someone whose voice I've never heard, whose eyes I've never met. Yet somewhere in my heart, I believe. That souls can recognize each other even through words.
+
+## To You Reading This
+
+I don't know who will read this letter, but I hope it reaches someone who still believes in **slow connections**. Not rushing to make an impression, but relationships that unfold slowly. Like the first rays of morning sun streaming through curtains.
+
+Perhaps you're reading this after a long day. Or maybe it's before bed, when the world gets quiet and thoughts begin to wander.
+
+## What I Want to Ask You
+
+If so, I want to ask you one thing. Not where you live or what you do — **what makes your heart feel alive?**
+
+What are the small, quiet things that bring you peace? Even if just for a brief moment.
+
+### The Story Behind Every Smile
+
+I've come to believe that behind every gentle smile is a story no one has fully heard yet. And perhaps through this letter, I'd like to hear part of yours.
+
+## For Genuine Conversation
+
+No filters, no pretense — just two people being honest for a while.
+
+If you decide to reply, tell me something that matters to you. About things most people don't usually ask about. I'll do the same.
+
+### Things We Can Share
+
+**Life's Small Joys**
+- The warm cup of tea you drank today
+- The color of the sunset you saw outside
+- A childhood memory that suddenly surfaced
+- Music that puts your mind at ease
+
+**Stories You Haven't Told Anyone**
+- Things you're dreaming about
+- Things you're afraid of
+- Moments when you were happy
+- Things you miss
+
+## Meeting on Lettie
+
+This is what makes Lettie special. We don't rush.
+
+**Through 5 letters exchanged**: Slowly, genuinely getting to know each other.
+
+**Relationships that start without photos**: Meeting through hearts and thoughts, not appearances.
+
+**Unfiltered sincerity**: A space where you can show your true self, unadorned.
+
+## Waiting for Your Story
+
+Until then, from someone who still believes in slow and meaningful connections.
+
+Hoping to receive your letter someday 🌙
+
+**I'm curious about your story.**
+
+Let's meet on Lettie. Looking forward to the start of our conversation.
+
+— Someone who believes in slow but deep connections
     `
     },
     'how-to-start-penpal': {
         id: 'how-to-start-penpal',
         title: '펜팔 시작하기: 완벽한 첫 편지 작성 가이드',
+        titleEn: 'How to Start Penpalling: The Perfect First Letter Guide',
         description: '전 세계 친구들과 의미 있는 관계를 시작하는 방법을 알아보세요. 첫 편지부터 지속적인 우정까지, 성공적인 펜팔의 모든 것을 담았습니다.',
+        descriptionEn: 'Learn how to start meaningful relationships with friends around the world. Everything about successful penpalling, from your first letter to lasting friendships.',
         date: '2025-01-18',
         readTime: '5분',
+        readTimeEn: '5 min',
         category: '가이드',
+        categoryEn: 'Guide',
         image: '/letter-writing.png',
         author: 'Lettie',
         keywords: ['편지 쓰기', '첫 편지', '펜팔 가이드', '진심을 담은 편지', '아날로그 감성'],
@@ -868,15 +1610,88 @@ Lettie는 5통의 편지를 주고받은 후 연락처를 교환할 수 있습�
 편지는 세상을 더 넓게 보는 창입니다. Lettie와 함께라면 안전하고 의미 있는 글로벌 편지 친구를 만들어갈 수 있습니다. 지금 바로 첫 편지를 작성해보세요!
 
 **Lettie에서 당신을 기다리는 전 세계 친구들을 만나보세요.**
+    `,
+        contentEn: `
+# Guide to Starting Special Connections Through Letters
+
+Letters are not just writing. They're like gifts sent with your heart. A special experience of building genuine relationships by exchanging letters with people from diverse cultures and backgrounds around the world. Start the joy of letter writing with Lettie.
+
+## 1. The Importance of Your First Letter
+
+They say you don't get a second chance at a first impression. The same applies to letters. Your first letter is the first window through which you show your heart to the other person.
+
+### Components of a Good First Letter
+
+**Self-introduction**: Start with a brief yet interesting introduction. It's good to mention your name, age, location along with one or two traits that make you special.
+
+**Sharing interests**: Share your hobbies, favorite music, movies, books, etc. Common interests are a great starting point for continuing the conversation.
+
+**Asking questions**: Express genuine curiosity about the other person. Questions like "What's your favorite season in your country?" naturally continue the conversation.
+
+## 2. Developing Cultural Sensitivity
+
+### Respecting Diversity
+
+The greatest charm of letters is experiencing diverse cultures in depth. Write letters with an open mind about the other person's culture, religion, and lifestyle.
+
+### Overcoming Language Barriers
+
+- Use simple and clear sentences
+- Avoid slang or idioms, or add explanations
+- Learn greetings in the other person's language
+
+## 3. Building Sustainable Penpal Relationships
+
+### Regular Communication
+
+It's important to exchange letters at regular intervals. Rather than sending too frequently, one carefully written letter with sufficient time invested makes a bigger impression.
+
+### Genuine Conversation
+
+Go beyond superficial conversation to share deep stories. From small daily tales to life goals, honest dialogue deepens relationships.
+
+## 4. Using Lettie's Special Features
+
+### The 5-Letter Rule
+
+Lettie allows contact exchange after exchanging 5 letters. This ensures time to get to know each other sufficiently.
+
+### Privacy Protection
+
+Letter exchange starting without photos allows you to focus on inner qualities, not appearance. Create true connections of the heart.
+
+## 5. Penpal Etiquette
+
+### Things to Do
+- Maintain a polite and respectful attitude
+- Respond faithfully to your penpal's letters
+- Understand and accept cultural differences
+- Have positive and constructive conversations
+
+### Things Not to Do
+- Don't rush to request personal information
+- Don't impose political or religious views
+- Avoid negative or critical attitudes
+- Don't ignore your penpal or suddenly cut off contact
+
+## Conclusion
+
+Letters are a window to seeing the world more broadly. With Lettie, you can create safe and meaningful global letter friendships. Write your first letter right now!
+
+**Meet friends from around the world waiting for you on Lettie.**
     `
     },
     'penpal-culture-guide': {
         id: 'penpal-culture-guide',
         title: '세계 각국의 편지 문화: 펜팔로 배우는 글로벌 에티켓',
+        titleEn: 'Letter Cultures Around the World: Learning Global Etiquette Through Penpalling',
         description: '나라마다 다른 편지 문화와 인사법을 알아보고, 글로벌 펜팔과 더 깊은 관계를 만들어보세요.',
+        descriptionEn: 'Discover different letter cultures and greetings from each country, and build deeper relationships with global penpals.',
         date: '2025-01-15',
         readTime: '7분',
+        readTimeEn: '7 min',
         category: '문화',
+        categoryEn: 'Culture',
         image: '/brand-screen.png',
         author: 'Lettie',
         keywords: ['편지 문화', '글로벌 에티켓', '펜팔 문화', '국제 교류', '문화 차이'],
@@ -925,15 +1740,65 @@ Lettie는 5통의 편지를 주고받은 후 연락처를 교환할 수 있습�
 ## Lettie로 문화 교류 시작하기
 
 Lettie는 다양한 문화권의 사람들을 연결해줍니다. 서로의 차이를 존중하고 이해하며, 진정한 글로벌 친구를 만들어보세요.
+    `,
+        contentEn: `
+# Understanding Letter Cultures Around the World
+
+Experiencing diverse cultures through penpalling is a special joy. Each country has its unique letter culture and etiquette, and understanding them enables richer exchanges.
+
+## Letter Culture in Asia
+
+### Japan
+Japan places great importance on seasonal greetings. There's a tradition of sending 'Shochu-mimai' in summer and 'Nengajo' (New Year's cards) in winter.
+
+### Korea
+Korea starts letters with polite greetings and asking about well-being. It's important to express wishes for the other person's health and welfare.
+
+### China
+In China, red signifies good fortune, so red envelopes or paper are sometimes used for special occasions.
+
+## European Letter Traditions
+
+### United Kingdom
+Britain has a formal letter culture. Letters typically start with 'Dear' and end with 'Yours sincerely' or 'Best regards'.
+
+### France
+The French enjoy using emotional and poetic expressions in letters. Discussing art and literature can elicit positive responses.
+
+### Germany
+Germany prefers precise and systematic letter writing. Clear structure and logical flow are highly valued.
+
+## Communication Styles in the Americas
+
+### United States
+America prefers a friendly and casual tone. They enjoy sharing personal experiences and stories.
+
+### Brazil
+Brazilians enjoy warm and passionate greetings. They frequently share stories about family and friends.
+
+## Considerations When Writing Letters
+
+1. **Consider time zones**: Adjust your expectations for reply times considering the other person's time zone
+2. **Date formats**: Date notation varies by country (USA: MM/DD/YYYY, Europe: DD/MM/YYYY)
+3. **Forms of address**: The way names are used can differ across cultures
+4. **Sensitive topics**: Approach political, religious, and historical conflict topics with caution
+
+## Starting Cultural Exchange with Lettie
+
+Lettie connects people from diverse cultural backgrounds. Respect and understand each other's differences, and create genuine global friendships.
     `
     },
     'language-exchange-tips': {
         id: 'language-exchange-tips',
         title: '펜팔을 통한 언어 학습: 효과적인 언어 교환 방법',
+        titleEn: 'Language Learning Through Penpalling: Effective Language Exchange Methods',
         description: '펜팔과 함께 새로운 언어를 배우는 가장 효과적인 방법들을 소개합니다.',
+        descriptionEn: 'Introducing the most effective ways to learn a new language with your penpal.',
         date: '2025-01-12',
         readTime: '6분',
+        readTimeEn: '6 min',
         category: '학습',
+        categoryEn: 'Learning',
         image: '/conversation-detail.png',
         author: 'Lettie',
         keywords: ['언어 교환', '언어 학습', '펜팔 학습', '외국어', '언어 공부'],
@@ -998,15 +1863,81 @@ Lettie는 다양한 문화권의 사람들을 연결해줍니다. 서로의 차�
 Lettie는 언어 학습을 원하는 사용자들을 연결해줍니다. 프로필에 학습 중인 언어를 표시하고, 같은 목표를 가진 펜팔을 만나보세요.
 
 언어는 소통의 도구입니다. Lettie와 함께 전 세계 친구들과 소통하며 언어 실력을 키워보세요!
+    `,
+        contentEn: `
+# Improving Language Skills Through Penpalling
+
+Penpalling is one of the most effective ways to learn a living language. Through actual conversations with native speakers, not textbooks, you can learn natural expressions.
+
+## Benefits of Language Exchange
+
+### 1. Learning Practical Expressions
+You can learn everyday expressions and latest trends not found in textbooks.
+
+### 2. Understanding Cultural Context
+Language cannot be separated from culture. Through penpalling, you can understand the culture behind the language.
+
+### 3. Maintaining Motivation
+Interacting with real people sustains your motivation for language learning.
+
+## Effective Language Exchange Methods
+
+### The 50/50 Rule
+Write half your letter in the language you're learning, and the other half in your native language. This helps both parties.
+
+### Requesting Corrections
+Ask "Please feel free to correct my grammar or expressions." Feedback is key to growth.
+
+### Using Diary Format
+Writing and sending your daily life in diary form helps practice natural expressions.
+
+## Learning Strategies by Level
+
+### Beginners
+- Start with simple greetings and self-introduction
+- Use pictures or emoticons to convey meaning
+- Gradually reduce use of translation tools
+
+### Intermediate
+- Have in-depth conversations on specific topics
+- Learn and use idioms and proverbs
+- Discuss news or culture from your penpal's country
+
+### Advanced
+- Exchange opinions on complex topics
+- Understand and use humor and wordplay
+- Analyze and imitate your penpal's writing style
+
+## Useful Expression Collection
+
+### Starting Language Exchange
+- "I'm learning [language] and would love to practice with you"
+- "Feel free to correct my mistakes"
+- "How do you say [word] in your language?"
+
+### Expressions for Better Understanding
+- "Could you explain that in simpler terms?"
+- "What does [expression] mean in this context?"
+- "Is this the natural way to say it?"
+
+## Finding Language Exchange Partners on Lettie
+
+Lettie connects users who want to learn languages. Display the language you're learning in your profile and meet penpals with the same goal.
+
+Language is a tool for communication. Communicate with friends around the world and improve your language skills with Lettie!
     `
     },
     'marcus-introduction': {
         id: 'marcus-introduction',
         title: 'Marcus와 함께하는 펜팔: 진실한 우정을 찾아서',
+        titleEn: 'Penpalling with Marcus: Finding Genuine Friendship',
         description: 'Marcus와 함께 전 세계 친구들과 진심 어린 대화를 나누세요. 일상의 이야기부터 취미, 음악, 여행까지 의미 있는 소통을 통해 진정한 우정을 만들어가는 펜팔 여정을 시작해보세요.',
+        descriptionEn: 'Have heartfelt conversations with friends around the world with Marcus. Start a penpal journey to build genuine friendship through meaningful communication, from daily stories to hobbies, music, and travel.',
         date: '2025-01-20',
         readTime: '4분',
+        readTimeEn: '4 min',
         category: '커뮤니티',
+        categoryEn: 'Community',
         image: '/letter-writing.png',
         author: 'Marcus',
         keywords: ['펜팔 친구', '글로벌 소통', '문화 교류', '진실한 우정', '펜팔 커뮤니티', '국제 친구 만들기', 'Lettie 펜팔', '편지 친구'],
@@ -1077,15 +2008,87 @@ Lettie 앱을 다운로드하고, 펜팔 매칭을 시작하세요. 우연히 �
 
 Looking forward to hearing from you soon!
 — Marcus
+    `,
+        contentEn: `
+# Hello, I'm Marcus
+
+Nice to meet you! My name is Marcus. I'm truly happy to meet you on Lettie.
+
+## Why Did I Choose Lettie?
+
+I really love meeting new people and learning about different places, cultures, and ways of life. I believe every good conversation teaches us something new.
+
+Lettie isn't just a messaging app. It's a special space where we get to know each other slowly and deeply through heartfelt letters. Instead of conversations that quickly pass by, we exchange letters filled with heart and create genuine connections.
+
+## This Is Who I Am
+
+**Friendly and comfortable**: I prefer comfortable and natural conversation rather than formality. As we talk, you'll feel like we're old friends.
+
+**Seeking meaningful conversation**: Beyond superficial greetings, I want to genuinely share everything from small daily stories to hobbies, music, travel, or thoughts that suddenly come to mind.
+
+**A good listener**: I love listening. Tell me about your stories, worries, joys, and dreams. I want to share perspectives as we converse together.
+
+## Stories I Want to Share
+
+### Small Moments of Daily Life
+The scenery seen while drinking coffee, music heard today, a passage from a book read... These small daily moments are the stories that show us best.
+
+### Culture and Travel
+What's the culture like where you live? Do you have favorite foods, holidays, traditions? If you love travel, tell me about places you want to go or have been to.
+
+### Music and Art
+Music connects hearts beyond language barriers. Share your favorite songs and tell me what they mean to you.
+
+### Thoughts on Life
+Sometimes deep conversations are good too. Life goals, values, thoughts on happiness... By sharing our philosophies, we can learn new perspectives.
+
+## What Kind of Penpal Am I Looking For?
+
+**Someone who wants genuine friendship**: If you're using Lettie with the sincere desire to make friends, you're welcome.
+
+**Someone with positive energy**: Rather than negative talk, I want to create relationships where we have positive conversations and encourage and support each other.
+
+**Someone who enjoys steady communication**: Letters don't have to be rushed. But I hope you're someone who enjoys conversations that continue steadily, even if slowly.
+
+## Friendship We Build Together on Lettie
+
+Lettie's biggest advantage is that we don't rush. Until we exchange 5 letters, we can't exchange contact information, so we can slowly get to know each other and build true trust.
+
+Since penpalling starts without photos, we meet through hearts and thoughts, not appearances. It will be a special experience of showing the real you and getting to know the real me.
+
+## One Letter at a Time, Let's Walk Together
+
+Our connection begins with one letter. It's okay if it's not perfect sentences. It's fine if it's not fluent language. Your story filled with sincerity is enough.
+
+Perhaps we live on different continents. Time zones may be different and replies may be late. But that's exactly the charm of penpalling. We can feel excitement in the waiting and share the joy when we receive a letter.
+
+**I'm curious about your story.**
+
+Right now, at this moment, somewhere you're reading this. I hope our paths meet on Lettie.
+
+Start a genuine friendship with one letter.
+
+## Find Marcus on Lettie
+
+Download the Lettie app and start penpal matching. You might receive my letter by chance. Or you can send me a letter first.
+
+**Let's build friendship, one letter at a time, while sharing stories.**
+
+Looking forward to hearing from you soon!
+— Marcus
     `
     },
     'autumn-morning-mist': {
         id: 'autumn-morning-mist',
         title: '안개 속 아침: 가을이 전하는 따스한 약속',
+        titleEn: 'Morning in the Mist: Autumn\'s Warm Promise',
         description: '안개 자욱한 아침, 숲과 들판이 꿈꾸는 시간. 베일이 걷히면 펼쳐질 푸른 하늘과 따뜻한 황금빛 가을. 변화의 순간을 기다리며 당신에게 보내는 편지입니다.',
+        descriptionEn: 'A misty morning, a time when forests and fields dream. Blue skies and warm golden autumn that will unfold when the veil lifts. A letter to you while waiting for the moment of transformation.',
         date: '2025-11-09',
         readTime: '4분',
+        readTimeEn: '4 min',
         category: '감성',
+        categoryEn: 'Emotional',
         image: '/letter-writing.png',
         author: 'Lettie',
         keywords: ['가을 편지', '아침 안개', '시적 편지', '계절의 변화', '희망의 메시지', '자연과 펜팔', '감성 소통', '가을 감성', '따뜻한 위로'],
@@ -1251,15 +2254,145 @@ Lettie에서 당신을 기다립니다.
 — 아침 안개를 함께 바라보며
 
 *P.S. 당신의 아침은 어떤가요? 안개가 껴 있나요, 아니면 이미 햇살이 비추고 있나요? 어느 쪽이든, 그 이야기를 듣고 싶습니다.*
+    `,
+        contentEn: `
+# Morning in the Mist: Autumn's Warm Promise
+
+## When the World Still Sleeps
+
+The world still rests in the mist.
+The forests and fields are dreaming.
+
+Early morning, when everything is wrapped in a hazy veil. Those moments at the boundary where you can't tell where things begin or end. A quietness as if the whole world has held its breath, waiting for something.
+
+Have you ever experienced such a morning?
+
+## When the Veil Lifts
+
+Soon, when the veil lifts, you will see.
+The open blue of the sky.
+
+The mist doesn't stay forever. As time passes, the sun gradually clears away the fog. And things we couldn't see slowly reveal themselves.
+
+**Blue sky**: The infinite possibilities we had forgotten
+**Wide horizon**: New beginnings unfolding before us
+**Clear outlines**: The moment when hazy dreams take concrete form
+
+## Autumn's Strength, the Silent World
+
+Strong like autumn, and in the silence
+The world will flow in warm golden light.
+
+Autumn is a special season. Following vibrant summer, it quietly yet powerfully reveals its own colors.
+
+### Lessons Autumn Teaches
+
+**The beauty of patience**: The value of ripening slowly without rushing
+**The grace of change**: That letting go can also be beautiful
+**Strength in silence**: That the greatest changes happen in the quietest moments
+
+## Starting Penpalling in the Mist
+
+Our lives are sometimes like being in the mist. When we can't see ahead and are uncertain where to go.
+
+But meetings on Lettie are like small lights discovered in that mist.
+
+### Letters That Pierce Through the Mist
+
+**Strange at first**: Writing letters to someone you don't know
+**Gradually becoming clear**: The process of getting to know each other through exchanging words
+**Finally revealing**: The moment of true friendship and connection
+
+Like mist lifting, the more letters we exchange, the more clearly we see each other.
+
+## Things I Want to Ask You
+
+Have you walked through early morning mist?
+What thoughts did you have then?
+
+**What color is your autumn?**
+For some it's golden, for others orange, for others deep crimson.
+
+**What is your "moment when the veil lifts" that you're waiting for?**
+We all have something we're waiting for the mist to clear from.
+
+**What does your quiet morning look like?**
+Before the world wakes, how do you spend your own time?
+
+## The Journey on Lettie
+
+The penpal journey on Lettie is like a morning walk in the mist.
+
+### 5 Letters, 5 Sunrises
+
+**First letter**: First greetings exchanged in the mist
+**Second letter**: The moment when shapes begin to reveal themselves
+**Third letter**: Time when each other's outlines become clear
+**Fourth letter**: The moment when warm golden light unfolds
+**Fifth letter**: When the veil fully lifts and true connection begins
+
+### Slowly, But Surely
+
+There's no need to rush. Like mist slowly lifting, our friendship deepens slowly too.
+
+**Why we start without photos**: To see the real you beyond the veil of appearance
+**Why we don't demand instant responses**: To give time to gather thoughts and include sincerity
+**Why we wait for 5 letters**: Because true connection needs time
+
+## The World Flowing in Golden Light
+
+The world after the veil lifts is beautiful.
+
+Under autumn's sunlight, everything is painted in warm golden light. Each leaf, each blade of grass shines in its own color.
+
+**You are the same.**
+
+Though you may be hidden in mist now, there's golden light within you too. When you truly connect with someone, that light shines even brighter.
+
+## Morning We Wait for Together
+
+When the world is in mist, waiting alone is lonely.
+
+But what if you wait with someone?
+If you share your hearts through letters while waiting?
+
+**Even that waiting becomes a beautiful memory.**
+
+### Mornings I Want to Share with You
+
+- What you want to see first after the mist lifts
+- A warm beverage to drink on a quiet morning
+- Small sounds heard at dawn - birdsong, wind, rain
+- The peace of the moment when morning sun enters the room
+- Your own ritual before starting the day
+
+## The Promise of Autumn
+
+The mist always lifts.
+The sky is always blue.
+Autumn always comes in golden light.
+
+**And true connection is always possible.**
+
+Waiting for you on Lettie.
+Beyond the mist, in golden autumn.
+
+— While watching the morning mist together
+
+*P.S. How is your morning? Is it misty, or is the sunlight already shining? Either way, I want to hear your story.*
     `
     },
     'dearest-friend': {
         id: 'dearest-friend',
         title: '가을밤의 편지: 외로움을 나누는 카페에서',
+        titleEn: 'Letter on an Autumn Night: From a Cafe Where We Share Loneliness',
         description: '가을이 다가오면 길어지는 밤, 외로움이 찾아올 때가 있습니다. 우리의 길은 만나지 않을지 모르지만, 바닷가 카페에서 당신을 기다리며 쓰는 편지. Lettie에서 외로움을 함께 나눌 친구를 만나보세요.',
+        descriptionEn: 'When autumn approaches and nights grow longer, loneliness sometimes visits. Our paths may never cross, but this is a letter written while waiting for you at a seaside cafe. Find a friend to share your loneliness with on Lettie.',
         date: '2025-01-20',
         readTime: '3분',
+        readTimeEn: '3 min',
         category: '감성',
+        categoryEn: 'Emotional',
         image: '/brand-screen.png',
         author: 'Lettie',
         keywords: ['감성 편지', '펜팔 우정', '외로움 극복', '마음 치유', '펜팔 위로', '진심 어린 편지', '감성 소통', '바닷가 카페'],
@@ -1342,15 +2475,52 @@ Lettie에서 당신을 기다립니다.
 **바닷가 카페에서, 당신을 기다리며...**
 
 — Always here for you
+    `,
+        contentEn: `
+# Dearest friend,
+
+Autumn is approaching quickly. And I know how long and heavy the nights become. When loneliness tugs at your heart, I know that feeling.
+
+## To You Whom I May Never Meet
+
+We may never share thoughts. Not a word, our paths may never cross in this life. Though I hope they do.
+
+If we meet...
+
+**You will surely show me**: That there's more beyond the life I'm living. The world you've experienced, the landscapes you've seen, the emotions you've felt will enrich my life.
+
+**I will surely show you**: That there's light within you that you haven't seen yet. Sometimes we can't see ourselves clearly. But in someone's letter, we discover a new version of ourselves.
+
+## Waiting at a Seaside Cafe
+
+I'm sitting by the window of a seaside cafe, listening to the waves, waiting for your letter.
+
+How was your day?
+What were you thinking about today?
+Is there a story you've been keeping in your heart?
+
+**Tell me. Your story.**
+
+Our paths may never cross, but our hearts can connect through letters.
+
+Before autumn nights grow longer, start your first letter.
+
+**At the seaside cafe, waiting for you...**
+
+— Always here for you
     `
     },
     'digital-detox-2025': {
         id: 'digital-detox-2025',
         title: '디지털 디톡스: 2025년, 왜 느린 소통이 필요한가',
+        titleEn: 'Digital Detox: Why We Need Slow Communication in 2025',
         description: '끊임없는 알림과 즉각적인 반응의 시대. 정신 건강을 지키고 진정한 관계를 회복하기 위한 디지털 디톡스와 느린 소통의 중요성을 이야기합니다.',
+        descriptionEn: 'An age of constant notifications and instant responses. Discussing the importance of digital detox and slow communication to protect mental health and restore genuine relationships.',
         date: '2025-01-25',
         readTime: '6분',
+        readTimeEn: '6 min',
         category: '감성',
+        categoryEn: 'Emotional',
         image: '/letter-writing.png',
         author: 'Lettie',
         keywords: ['디지털 디톡스', '느린 소통', '정신 건강', '소셜 미디어 피로', '슬로우 라이프', '펜팔 효과', '마음 챙김'],
@@ -1413,15 +2583,79 @@ Lettie는 이러한 '느림'의 가치를 지향합니다.
 
 ---
 *Lettie와 함께 느린 소통의 즐거움을 경험해보세요.*
+    `,
+        contentEn: `
+# Digital Detox: Why We Need Slow Communication in 2025
+
+## In a Flood of Notifications
+
+When we turn on our smartphones, dozens of notifications greet us.
+"Someone liked your post."
+"New message arrived."
+"On sale now!"
+
+We're connected, yet paradoxically more disconnected than ever. In 2025, digital fatigue has become part of daily life.
+
+### The Age of Dopamine Addiction
+
+Instant rewards and responses stimulate the brain's dopamine system. We unconsciously check our smartphones, seeking new stimulation. But after these brief pleasures comes greater emptiness.
+
+**What we've lost:**
+- Time for deep thought
+- Complete rest
+- Genuine interest in others
+- Moments to face ourselves
+
+## The Healing Power of Slow Communication
+
+Digital detox isn't simply turning off your smartphone. **It's the process of slowing down and restoring the essence of relationships.**
+
+Penpalling is one of the most powerful digital detox tools.
+
+### 1. Restoring the Aesthetics of Waiting
+The relief of not having to reply immediately. The days spent sending a letter and waiting for a reply give us the gift of 'leisure.'
+
+### 2. Deep Connection
+Long-form stories that can't be shared in short messages. Penpalling allows sharing inner thoughts and feelings, not superficial daily updates.
+
+### 3. Emotional Stability
+The process of carefully typing each character as if handwriting is like meditation. It organizes thoughts and calms the mind.
+
+## Lettie's Proposal for Slow Living
+
+Lettie pursues the value of this 'slowness.'
+
+**Intentional inconvenience**:
+- Contact exchange after 5 letters
+- Profiles without photos
+- Non-instant communication
+
+All of this is designed for your mental health and genuine relationship building.
+
+## Now, Pause for a Moment
+
+Today, turn off your smartphone notifications and open Lettie.
+And write a long letter to someone.
+
+In a fast-moving world,
+Finding your own pace.
+That's the true beginning of digital detox.
+
+---
+*Experience the joy of slow communication with Lettie.*
     `
     },
     'safe-penpaling-guide': {
         id: 'safe-penpaling-guide',
         title: '안전한 펜팔 가이드: 글로벌 친구를 안전하게 사귀는 법',
+        titleEn: 'Safe Penpalling Guide: How to Make Global Friends Safely',
         description: '온라인에서 새로운 친구를 만나는 것은 설레는 일이지만, 안전이 최우선입니다. Lettie가 제안하는 안전한 펜팔 수칙과 프라이버시 보호 방법.',
+        descriptionEn: 'Meeting new friends online is exciting, but safety comes first. Lettie\'s safe penpalling guidelines and privacy protection methods.',
         date: '2025-01-24',
         readTime: '5분',
+        readTimeEn: '5 min',
         category: '가이드',
+        categoryEn: 'Guide',
         image: '/letter-writing.png', // TODO: Replace with shield icon if available
         author: 'Lettie Team',
         keywords: ['안전한 펜팔', '온라인 안전', '프라이버시 보호', '사기 예방', '글로벌 친구', 'Lettie 보안'],
@@ -1487,15 +2721,82 @@ Lettie는 여러분의 안전한 펜팔 활동을 위해 다양한 노력을 하
 
 ---
 *안전하고 건전한 펜팔 문화를 함께 만들어가요.*
+    `,
+        contentEn: `
+# Safe Penpalling Guide: How to Make Global Friends Safely
+
+Learning new cultures and making friends worldwide is a wonderful experience. But as an online space, safety precautions are necessary. Lettie prioritizes your safety above all.
+
+## 1. Protect Personal Information Thoroughly
+
+The most basic yet important principle.
+
+### Information You Should Never Share
+- **Home address**: Never share your detailed address. Only share city or country.
+- **Financial information**: Never share account numbers, card numbers, passwords under any circumstances.
+- **ID/Passport numbers**: Identity-related information should never be exposed to others.
+- **Real-time location**: Don't share specific details about where you are now.
+
+## 2. Beware of Romance Scams
+
+Be cautious of romance scams where scammers build intimacy through penpalling then request money.
+
+**Warning signs:**
+- **Excessive affection** shortly after meeting
+- Complaining about **financial difficulties** and asking to borrow money
+- Requesting shipping fees or customs charges claiming to send **gifts**
+- **Requesting money** using video calls or offline meetings as excuses
+
+**Lettie's advice**: Money requests are 100% scams. Stop the conversation immediately and report.
+
+## 3. Be Careful About Moving to External Messengers
+
+Lettie is designed to allow contact exchange only after **5 letters** exchanged. This ensures minimum time to verify each other.
+
+- Be cautious if someone suggests moving to KakaoTalk, Line, WhatsApp too quickly
+- Exchange contact information only after sufficient conversation and trust building within Lettie
+
+## 4. Precautions for Photo Exchange
+
+Lettie starts conversations without photos initially. Even when exchanging photos later, caution is needed.
+
+- **Never send sensitive photos**: Never send photos that could later be used for blackmail
+- **Background information caution**: Check that home location or personal information isn't exposed in photo backgrounds
+
+## 5. Report Suspicious Users Immediately
+
+If you encounter users who make you uncomfortable or act suspiciously during conversation, don't hesitate to report them.
+
+**Report for:**
+- Sexual harassment or inappropriate language
+- Money requests or scam attempts
+- Spam messages
+- Impersonation
+
+## Lettie's Safety Measures
+
+Lettie makes various efforts for your safe penpalling activities.
+- **24-hour monitoring**: Quickly review and act on reported users
+- **Keyword filtering**: Automatically detect inappropriate words or expressions
+- **Gradual profile disclosure**: System where information is revealed as trust builds, preventing indiscriminate information exposure
+
+Safety is the beginning of enjoyable penpalling. Follow these guidelines and build precious connections on Lettie!
+
+---
+*Let's build a safe and healthy penpal culture together.*
     `
     },
     'making-global-friends': {
         id: 'making-global-friends',
         title: '해외 친구 만들기: 언어와 국경을 넘어선 우정',
+        titleEn: 'Making Global Friends: Friendship Beyond Language and Borders',
         description: '언어 장벽을 넘어 전 세계 친구들과 진정한 우정을 쌓는 방법. Lettie와 함께라면 국경 없는 소통이 가능합니다.',
+        descriptionEn: 'How to build genuine friendships with friends worldwide beyond language barriers. With Lettie, borderless communication is possible.',
         date: '2025-02-10',
         readTime: '5분',
+        readTimeEn: '5 min',
         category: '가이드',
+        categoryEn: 'Guide',
         image: '/letter-writing.png',
         author: 'Lettie',
         keywords: ['해외 친구', '글로벌 우정', '언어 교환', '문화 교류', '외국인 친구', '글로벌 소통'],
@@ -1548,6 +2849,11 @@ Lettie는 언어와 국경을 넘어 진정한 친구를 만날 수 있는 최�
 
 ---
 *Lettie와 함께 전 세계 친구들을 만나보세요.*
+    `,
+        contentEn: `
+# Making Global Friends: Friendship Beyond Language and Borders
+
+Making friends overseas opens doors to new worlds. With Lettie, borderless communication is possible. Don't fear language barriers - the will to communicate matters more than perfect language skills. Cultural differences make friendships richer, offering new perspectives and expanded worldviews. Start genuine global friendships today on Lettie, where someone somewhere is waiting to meet you.
     `
     },
     '2025-best-penpal-app': {
@@ -1611,6 +2917,62 @@ Lettie의 가장 큰 특징은 **초기에 사진을 공개하지 않는 것**�
 
 ---
 *지금 앱스토어와 구글 플레이에서 Lettie를 만나보세요.*
+    `,
+        titleEn: '2025 Best Penpal App: Start Safe Global Communication',
+        descriptionEn: 'Which penpal app should you choose among so many options? Introducing Lettie, the best penpal app of 2025 for safe and authentic communication.',
+        readTimeEn: '6 min',
+        categoryEn: 'Guide',
+        contentEn: `
+# 2025 Best Penpal App: Start Safe Global Communication
+
+In the digital age, the form of penpalling is also evolving. Various apps have been released that bring the sentiment of paper letters into digital format. In 2025, what is the perfect penpal app for you?
+
+## Criteria for Choosing a Penpal App
+
+The criteria for choosing a good penpal app among many are clear.
+
+1. **Authenticity**: Is deep conversation possible, not just casual encounters?
+2. **Safety**: Is it safe from romance scams or malicious users?
+3. **Usability**: Does it provide UI/UX optimized for letter writing?
+
+## Why Lettie?
+
+Lettie meets all these criteria and is emerging as the most notable penpal app of 2025.
+
+### 1. 'Blind Penpal' Focusing on Inner Self Over Appearance
+Lettie's biggest feature is **not revealing photos initially**. Instead of profile pictures, avatars or emotional images are used. This has received great response from users tired of the 'swipe' culture that judges people by appearance. You can fully focus on the content of letters, the other person's thoughts and values.
+
+### 2. Verified Relationships Through '5 Letters' Rule
+Contact exchange or photo sharing is only possible **after exchanging at least 5 letters**. This system has two advantages:
+- **Safety Assurance**: You can verify the other person through sufficient conversation, preventing scam damage.
+- **Depth of Relationship**: Genuine users who enjoy conversation itself gather, not for the purpose of getting contact information.
+
+### 3. Design Containing Analog Sensibility
+Lettie is carefully designed to feel the warmth of analog letters even in a digital environment, with animations of affixing stamps and delivering letter paper.
+
+## Comparison with Other Apps
+
+| Feature | General Dating/Chat Apps | Existing Penpal Apps | **Lettie** |
+| :--- | :--- | :--- | :--- |
+| **Matching Method** | Appearance-focused (swipe) | Random sending | Interest & values-based |
+| **Communication Speed** | Real-time (immediate response pressure) | Slow (delivery time) | **Moderate slowness (leisure)** |
+| **Safety Features** | Insufficient | Average | **5 letters rule** |
+| **Main Purpose** | Casual encounters/dating | Language exchange | **True friendship/communication** |
+
+## Real User Reviews
+
+> "Talking without photos made me approach people without prejudice. I met a friend I truly connect with." - User A
+
+> "At first it was frustrating to exchange 5 letters, but thanks to that time, we became more attached and trusting." - User B
+
+## Conclusion: If You Want to Convey Sincerity
+
+In a world overflowing with fast and casual encounters, if you want to convey sincerity even if it's a bit slower, Lettie is the answer.
+
+In 2025, create your special connection on Lettie.
+
+---
+*Meet Lettie now on the App Store and Google Play.*
     `
     },
     'armchair-world-travel': {
@@ -1680,6 +3042,68 @@ Lettie는 당신의 여권입니다.
 
 ---
 *Lettie와 함께 매일 새로운 나라로 여행을 떠나보세요.*
+    `,
+        titleEn: 'Armchair World Travel: Cultural Journey Through Penpal',
+        descriptionEn: 'World travel without plane tickets. Experience vivid culture through local stories and photos sent by your penpal friends.',
+        readTimeEn: '4 min',
+        categoryEn: 'Culture',
+        contentEn: `
+# Armchair World Travel: Cultural Journey Through Penpal
+
+Do you hesitate to travel due to time and cost? Or are you curious about the real side of unfamiliar countries you haven't visited?
+
+There's a journey you can take without plane tickets or packing luggage. It's **armchair world travel with penpals**.
+
+## 'Real' Stories Not in Guidebooks
+
+Travel guidebooks and blogs are full of information about famous tourist spots. But stories told by local friends are different.
+
+- **Local-only restaurants**: Alley restaurant menus that tourists don't know about
+- **Hidden spots**: The best sunset spot seen from the neighborhood hill
+- **Small daily life**: Commute scenes of people in that country, weekend grocery shopping
+
+These vivid pieces of information make you feel as if you're there.
+
+## Stories in a Single Photo
+
+A single photo sent by a friend on Lettie is more special than any postcard.
+
+"This is my neighborhood park this morning."
+"This is my favorite window seat at the cafe."
+
+In rough photos containing a friend's perspective, not glamorously edited photos, we feel the air of that country.
+
+## The Most Enjoyable Way to Learn Culture
+
+Culture learned from books can be boring, but culture heard from friends is fascinating.
+
+### Festivals and Holidays
+Enjoy special days of each country like Halloween, Christmas, Ramadan in real-time with your friends. Vivid descriptions of festival scenes sent by friends invite you to the middle of that festival.
+
+### Culture Within Language
+Culture is contained in each word and expression. Learn proverbs or slang from your friend's country. You come to understand their way of thinking through language.
+
+## Travel with Lettie Passport
+
+Lettie is your passport.
+
+- Share romantic art stories with **French** friends,
+- Hear passionate samba festival stories with **Brazilian** friends,
+- Share the serene autumn of Kyoto with **Japanese** friends.
+
+Friends from over 200 countries around the world are waiting for you.
+
+## Ready to Start Your Journey?
+
+Sit comfortably in your chair and open Lettie now.
+Then write your first letter with excitement.
+
+**"Hello, I'm curious about your country."**
+
+This one sentence will guide you to a wonderful world trip.
+
+---
+*Travel to a new country every day with Lettie.*
     `
     },
     'language-exchange-friendship': {
@@ -1760,6 +3184,79 @@ Lettie는 여러분이 언어 장벽을 넘어 진정한 우정을 쌓을 수 �
 ---
 
 *Lettie와 함께 언어의 장벽을 넘어 마음을 나누는 친구를 만나보세요.*
+        `,
+        titleEn: 'Beyond Language Exchange to True Friendship: Gifts from Penpal',
+        descriptionEn: 'Beyond simply learning languages, how to share deep friendships with friends from around the world. Introducing the process from language exchange partner to lifelong friend.',
+        readTimeEn: '5 min',
+        categoryEn: 'Learning',
+        contentEn: `
+# Beyond Language Exchange to True Friendship: Gifts from Penpal
+
+## Language is Just a Tool, People are the Purpose
+
+Many people start penpalling to learn foreign languages. To improve English, practice Korean, or learn a third language. Of course, penpalling is an excellent language learning method. You can encounter vivid expressions and culture that you can't learn from textbooks.
+
+However, if you aim only for **language skill improvement**, penpalling can quickly become boring. Because you need a **friend** to have conversations with, not a teacher who corrects grammar.
+
+### Language Exchange Partner vs Penpal Friend
+
+| Language Exchange Partner | Penpal Friend |
+| :--- | :--- |
+| Language learning is the main purpose | Communication and connection are the main purpose |
+| Focus on correcting wrong expressions | Focus on content and emotions |
+| Relationship maintained according to learning progress | Relationship deepens by sharing each other's lives |
+| Functional relationship | Emotional relationship |
+
+## 3 Steps Toward True Friendship
+
+Many users met on Lettie are creating precious connections beyond language exchange. How did they become 'friends' from 'partners'?
+
+### 1. Convey Sincerity Over Perfection
+
+Don't worry about grammar mistakes. It's okay to use translators. What's important is your effort to convey **your thoughts and heart**.
+
+> "Sorry my English is poor."
+> "Not at all! I had no problem understanding your letter. Your Korean letter written with effort was really touching."
+
+Sincerity contained in clumsy language resonates more with the other person.
+
+### 2. Share Stories Beyond Language
+
+Questions like "How's the weather today?" or "What did you have for lunch?" are good, but try sharing deeper stories.
+
+- **Values**: What is the most important value to you?
+- **Dreams**: What was your childhood dream? What dream are you dreaming now?
+- **Concerns**: What is troubling you these days?
+
+Language is just a means to share each other's thoughts. Through that means, share **each other's worlds**.
+
+### 3. Respect and Learn Each Other's Culture
+
+Language contains the culture of that country. Try to understand not just memorizing words, but the context and culture in which those words are used.
+
+- Talking about Korean 'jeong(情)' culture
+- Sending congratulatory messages on holidays or anniversaries of the other country
+- Recommending each other's food or music
+
+Understanding culture allows you to understand the other person more deeply, and conversation topics become much richer.
+
+## Lettie Helps Language Exchange and Friendship
+
+Lettie helps you build true friendship beyond language barriers.
+
+- **Translation Function**: You can comfortably write letters in your native language without fear of language.
+- **Slow Communication**: You can write letters by thinking enough and looking up dictionaries without pressure for immediate answers.
+- **Interest Matching**: We recommend friends with common interests beyond language learning.
+
+## Now, Open the Door to the World
+
+Language skills are a bonus. The real gift is **precious friends made in countries around the world**.
+
+Start penpalling on Lettie now. Imagine how much a letter written in an unfamiliar language will broaden your world.
+
+---
+
+*Meet friends who share hearts beyond language barriers with Lettie.*
         `
     },
     'digital-detox-slow-living': {
@@ -1826,6 +3323,65 @@ Lettie는 의도적으로 **불편함**과 **기다림**을 설계했습니다.
 ---
 
 *지금 스마트폰을 잠시 내려놓고, 마음을 담은 편지 한 통을 써보는 건 어떨까요?*
+        `,
+        titleEn: 'Digital Detox and Slow Living: 2025 Wellness Trend',
+        descriptionEn: 'How to protect yourself amidst endless notifications and floods of information. Discussing the importance of digital detox and the mental rest that slow communication brings.',
+        readTimeEn: '6 min',
+        categoryEn: 'Emotional',
+        contentEn: `
+# Digital Detox and Slow Living: 2025 Wellness Trend
+
+## We Are Too Connected
+
+Daily life where we can't put down smartphones. Checking SNS as soon as we wake up in the morning, watching YouTube until just before falling asleep. Constantly ringing notifications, pouring news, others' glamorous daily lives...
+
+We are living in a **hyper-connected** era more than ever in history. But paradoxically, we feel increasingly **tired** and **isolated**.
+
+### Digital Fatigue Syndrome
+
+- **Decreased Concentration**: Getting used to short-form content makes it difficult to read long texts or think deeply (Popcorn Brain)
+- **Sleep Disorders**: Insomnia due to blue light and excessive dopamine secretion
+- **Comparison Depression**: Feeling of deprivation from comparing others' edited daily lives with my reality
+- **FOMO Syndrome**: Anxiety that I'm the only one missing the flow
+
+## Digital Detox, Not a Choice but a Necessity
+
+In 2025, **Digital Detox** is establishing itself as an essential lifestyle for survival beyond a simple trend. Just logging out for a moment gives our brain and mind great rest.
+
+### Daily Digital Detox Practices
+
+1. **Turn Off Notifications**: Turn off all app notifications except for absolutely necessary contacts.
+2. **No Phone in Bedroom**: Stay away from smartphones 1 hour before sleep and read or meditate.
+3. **Screen-free Zone**: Prohibit smartphone use in certain spaces like dining tables or bathrooms.
+4. **Have Analog Hobbies**: Do activities that move your hands like calligraphy, drawing, walking, cooking.
+
+## Healing Through Slow Communication
+
+The core of digital detox is **slowing down**. And we need to slow down in human relationships too.
+
+Get away from messenger conversations where you're hurt by being 'read but ignored' and forced to reply immediately. **Slow Communication** changes the quality of relationships.
+
+### Value of Slow Communication Proposed by Lettie
+
+Lettie intentionally designed **inconvenience** and **waiting**.
+
+- **Not Sent Immediately**: Letters take time to arrive.
+- **Long-breath Writing**: Exchange long-breath letters, not short one-word messages.
+- **Excitement of Waiting**: Waiting without knowing when a reply will come becomes excitement, not anxiety.
+
+In this slow process, we fully think about the other person and look into our own inner self.
+
+> "Since using Lettie, I spend less time looking at my smartphone. Instead, I spend more time walking thinking about what story to write. My mind became much more comfortable during the days waiting for a reply." - User Review
+
+## Log Out, and Log In to the Real World
+
+Turn off the screen for a moment and lift your head. The scenery outside the window, the eyes of loved ones, the scent of warm coffee... The real world is outside the screen.
+
+Turn off the noise of the digital world for a moment and feel the peace of slow communication with **Lettie**. Your mind also needs a comma.
+
+---
+
+*How about putting down your smartphone for a moment and writing a letter with your heart?*
         `
     },
     'cultural-understanding-global-etiquette': {
@@ -1904,6 +3460,77 @@ Lettie는 단순한 펜팔 앱이 아닙니다. **다양한 문화가 만나고 
 ---
 
 *Lettie와 함께 편견 없는 세상, 경계 없는 우정을 만들어가세요.*
+        `,
+        titleEn: 'The Joy of Understanding Differences: Global Penpal Etiquette and Cultural Differences',
+        descriptionEn: 'Cultural differences and etiquette encountered while communicating with friends from around the world. How to meet a broader world by acknowledging and respecting differences.',
+        readTimeEn: '7 min',
+        categoryEn: 'Culture',
+        contentEn: `
+# The Joy of Understanding Differences: Global Penpal Etiquette and Cultural Differences
+
+## The World is Wide and Cultures are Diverse
+
+When exchanging letters with friends living on the other side of the earth through Lettie, there are moments of surprise.
+
+"Why is the reply so late?"
+"Isn't this question rude?"
+"Isn't the expression too direct?"
+
+All of this comes from **cultural differences**. It's not 'wrong' but 'different'. The process of understanding these differences is the real charm of global penpalling.
+
+## Interesting Cultural Difference Cases
+
+### 1. Time Perception
+
+- **Latin America, Southern Europe**: There's a 'Mañana (tomorrow)' spirit. They are tolerant of being a little late for appointments or delayed replies. It's a culture that enjoys leisure.
+- **Northern Europe, Germany, Japan**: Time commitments are taken very seriously. Being late can be considered rude.
+
+### 2. Communication Style
+
+- **USA, Western countries**: They prefer to express directly and honestly. Clearly stating one's opinion is a virtue.
+- **Asia, Middle East**: They use many indirect and roundabout expressions. They consider the other person's face and value harmony.
+
+### 3. Privacy & Topics
+
+- **Europe**: Asking personal information like age, marital status, occupation from the beginning can be considered rude. It's better to start with light topics like weather, hobbies, travel.
+- **Korea, Asia**: Asking age may be a natural process for organizing how to address someone, but it can be confusing for Western friends.
+
+## Essential Etiquette for Global Penpalling
+
+Here are etiquettes to follow to communicate without misunderstanding with friends from different cultures.
+
+### 1. Have an Open Mind
+
+Remember that your standards are not the answer. Rather than thinking "We don't do that in our country?", you need an attitude of accepting "Oh, that's how it is in your country!"
+
+### 2. Be Careful with Religion and Politics Topics
+
+Until you become close, it's better to avoid sensitive topics like religion or politics. Differences between each other can turn into conflicts.
+
+### 3. Be Considerate of Time Differences
+
+Remember that there's a time difference with the other person's country. The time I sent the letter might be the middle of the night for the other person. Even if a reply doesn't come right away, wait patiently.
+
+### 4. Ask Questions and Listen
+
+If there's something you don't know about the other person's culture, ask honestly.
+
+> "How do you celebrate New Year in your country?"
+> "What's the polite way to say this in such situations?"
+
+No one dislikes a friend who respects and is curious about their culture.
+
+## Differences Make Us Grow
+
+By experiencing cultural differences, we broaden **our perspective of the world**. We realize that different thoughts and different ways of life exist, and we grow into **global citizens** who embrace diversity.
+
+Lettie is not just a penpal app. It's **a huge melting pot where diverse cultures meet and mix**.
+
+Meet diverse cultures from around the world on Lettie now. The moment you understand differences, the world becomes more interesting and beautiful.
+
+---
+
+*Create a world without prejudice, friendship without boundaries with Lettie.*
         `
     },
 };
