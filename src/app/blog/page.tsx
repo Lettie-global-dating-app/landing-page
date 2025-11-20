@@ -37,7 +37,7 @@ export default function BlogPage() {
             <span className="text-2xl font-bold text-foreground">Lettie</span>
           </Link>
           <div className="hidden md:flex items-center space-x-8">
-            <a href="/#features" className="text-muted-foreground hover:text-primary transition-colors">기능</a>
+            <Link href="/#features" className="text-muted-foreground hover:text-primary transition-colors">기능</Link>
             <Link href="/blog" className="text-primary font-semibold">블로그</Link>
             <Link href="/guide" className="text-muted-foreground hover:text-primary transition-colors">가이드</Link>
             <Link href="/stories" className="text-muted-foreground hover:text-primary transition-colors">스토리</Link>
