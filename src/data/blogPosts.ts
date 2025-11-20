@@ -1,11 +1,16 @@
 export type BlogPost = {
     id: string;
     title: string;
+    titleEn: string;
     description: string;
+    descriptionEn: string;
     content: string;
+    contentEn: string;
     date: string;
     readTime: string;
+    readTimeEn: string;
     category: string;
+    categoryEn: string;
     image: string;
     author: string;
     keywords: string[];

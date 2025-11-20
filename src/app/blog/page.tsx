@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Calendar, Clock, ArrowRight, Mail, Feather, Globe } from 'lucide-react';
+import MobileMenu from '@/components/MobileMenu';
 
 export const metadata = {
   alternates: {
@@ -15,29 +16,42 @@ const blogPosts = Object.values(blogPostsData).sort((a, b) => {
 });
 
 export default function BlogPage() {
+  const appStoreUrl = "https://apps.apple.com/kr/app/%EB%A0%88%ED%8B%B0/id6746454876";
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="container mx-auto px-4 py-6">
         <nav className="flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 relative overflow-hidden rounded-2xl shadow-md group-hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+          <Link href="/" className="flex items-center space-x-3">
+            <div className="w-10 h-10">
               <Image
                 src="/lettie-icon.png"
                 alt="Lettie 앱 아이콘"
-                fill
-                className="object-cover"
+                className="w-10 h-10 rounded-2xl"
+                width={40}
+                height={40}
                 priority
               />
             </div>
-            <span className="text-2xl font-bold text-foreground tracking-tight group-hover:text-primary transition-colors">Lettie</span>
+            <span className="text-2xl font-bold text-foreground">Lettie</span>
           </Link>
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-muted-foreground hover:text-primary transition-colors font-medium">홈</Link>
+            <a href="/#features" className="text-muted-foreground hover:text-primary transition-colors">기능</a>
             <Link href="/blog" className="text-primary font-semibold">블로그</Link>
-            <Link href="/faq" className="text-muted-foreground hover:text-primary transition-colors font-medium">FAQ</Link>
-            <Link href="/guide" className="text-muted-foreground hover:text-primary transition-colors font-medium">가이드</Link>
+            <Link href="/guide" className="text-muted-foreground hover:text-primary transition-colors">가이드</Link>
+            <Link href="/stories" className="text-muted-foreground hover:text-primary transition-colors">스토리</Link>
+            <Link href="/faq" className="text-muted-foreground hover:text-primary transition-colors">FAQ</Link>
+            <a
+              href={appStoreUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-primary text-primary-foreground px-6 py-2 rounded-full hover:bg-primary-dark transition-colors"
+            >
+              다운로드
+            </a>
           </div>
+          <MobileMenu />
         </nav>
       </header>
 
