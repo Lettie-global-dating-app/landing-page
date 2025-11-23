@@ -108,7 +108,7 @@ export default async function BlogPostPage({ params }: Props) {
   };
 
   return (
-    <>
+    <div className="min-h-screen bg-background">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -132,13 +132,13 @@ export default async function BlogPostPage({ params }: Props) {
                 priority
               />
             </div>
-            <span className="text-2xl font-bold text-gray-800">Lettie</span>
+            <span className="text-2xl font-bold text-foreground">Lettie</span>
           </Link>
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/en" className="text-gray-600 hover:text-blue-500 transition-colors">Home</Link>
-            <Link href="/en/blog" className="text-blue-500 font-semibold">Blog</Link>
-            <Link href="/faq" className="text-gray-600 hover:text-blue-500 transition-colors">FAQ</Link>
-            <Link href="/guide" className="text-gray-600 hover:text-blue-500 transition-colors">Guide</Link>
+            <Link href="/en" className="text-muted-foreground hover:text-primary transition-colors">Home</Link>
+            <Link href="/en/blog" className="text-primary font-semibold">Blog</Link>
+            <Link href="/en/faq" className="text-muted-foreground hover:text-primary transition-colors">FAQ</Link>
+            <Link href="/en/guide" className="text-muted-foreground hover:text-primary transition-colors">Guide</Link>
           </div>
         </nav>
       </header>
@@ -147,19 +147,19 @@ export default async function BlogPostPage({ params }: Props) {
       <article className="container mx-auto px-4 py-12 max-w-4xl">
         {/* Breadcrumb */}
         <nav className="mb-8 text-sm">
-          <ol className="flex items-center space-x-2 text-gray-600">
-            <li><Link href="/en" className="hover:text-blue-500">Home</Link></li>
+          <ol className="flex items-center space-x-2 text-muted-foreground">
+            <li><Link href="/en" className="hover:text-primary">Home</Link></li>
             <li>/</li>
-            <li><Link href="/en/blog" className="hover:text-blue-500">Blog</Link></li>
+            <li><Link href="/en/blog" className="hover:text-primary">Blog</Link></li>
             <li>/</li>
-            <li className="text-gray-800 font-semibold">{post.titleEn}</li>
+            <li className="text-foreground font-semibold">{post.titleEn}</li>
           </ol>
         </nav>
 
         {/* Article Header */}
         <header className="mb-12">
-          <div className="flex items-center gap-4 mb-4 text-sm text-gray-600">
-            <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full">
+          <div className="flex items-center gap-4 mb-4 text-sm text-muted-foreground">
+            <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">
               {post.categoryEn}
             </span>
             <span className="flex items-center gap-1">
@@ -171,10 +171,10 @@ export default async function BlogPostPage({ params }: Props) {
               {post.readTimeEn} read
             </span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             {post.titleEn}
           </h1>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-muted-foreground">
             {post.descriptionEn}
           </p>
         </header>
@@ -211,16 +211,16 @@ export default async function BlogPostPage({ params }: Props) {
         </div>
 
         {/* Share Section */}
-        <div className="mt-12 pt-8 border-t border-gray-200">
+        <div className="mt-12 pt-8 border-t border-border">
           <div className="flex items-center justify-between">
             <Link
               href="/en/blog"
-              className="flex items-center gap-2 text-blue-500 hover:text-blue-600 font-semibold"
+              className="flex items-center gap-2 text-primary hover:text-accent font-semibold"
             >
               <ArrowLeft className="w-5 h-5" />
               Back to Blog
             </Link>
-            <button className="flex items-center gap-2 text-gray-600 hover:text-blue-500">
+            <button className="flex items-center gap-2 text-muted-foreground hover:text-primary">
               <Share2 className="w-5 h-5" />
               Share
             </button>
@@ -229,13 +229,13 @@ export default async function BlogPostPage({ params }: Props) {
       </article>
 
       {/* Related Posts */}
-      <section className="container mx-auto px-4 py-16 bg-gradient-to-b from-transparent via-blue-50/30 to-transparent">
+      <section className="container mx-auto px-4 py-16 bg-gradient-to-b from-transparent via-muted/30 to-transparent">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-3">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-3">
               More Stories to Explore
             </h2>
-            <p className="text-gray-600">Related heartfelt letters and guides</p>
+            <p className="text-muted-foreground">Related heartfelt letters and guides</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -267,22 +267,22 @@ export default async function BlogPostPage({ params }: Props) {
                   <Link
                     key={relatedPost.id}
                     href={`/en/blog/${relatedPost.id}`}
-                    className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100"
+                    className="group glass-panel rounded-2xl hover:shadow-xl transition-all duration-300 overflow-hidden border border-border"
                   >
                     <div className={`h-24 bg-gradient-to-br ${categoryColors[relatedPost.categoryEn] || 'from-blue-400 to-purple-500'} flex items-center justify-center text-white`}>
                       {categoryIcons[relatedPost.categoryEn] || <Mail className="w-6 h-6" />}
                     </div>
                     <div className="p-6">
-                      <span className="inline-block text-xs font-semibold text-gray-500 mb-2">
+                      <span className="inline-block text-xs font-semibold text-muted-foreground mb-2">
                         {relatedPost.categoryEn}
                       </span>
-                      <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-blue-600 transition-colors">
+                      <h3 className="text-lg font-bold text-foreground mb-2 line-clamp-2 group-hover:text-primary transition-colors">
                         {relatedPost.titleEn}
                       </h3>
-                      <p className="text-gray-600 text-sm mb-3 line-clamp-2">
+                      <p className="text-muted-foreground text-sm mb-3 line-clamp-2">
                         {relatedPost.descriptionEn}
                       </p>
-                      <span className="text-blue-600 font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
+                      <span className="text-primary font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
                         Read More
                         <ArrowRight className="w-4 h-4" />
                       </span>
@@ -295,8 +295,8 @@ export default async function BlogPostPage({ params }: Props) {
       </section>
 
       {/* CTA Section */}
-      <section className="container mx-auto px-4 py-16">
-        <div className="relative max-w-5xl mx-auto overflow-hidden rounded-3xl bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 p-12 text-center text-white shadow-2xl">
+      <section className="container mx-auto px-4 py-16 bg-background">
+        <div className="relative max-w-5xl mx-auto overflow-hidden rounded-3xl bg-gradient-to-br from-primary via-secondary to-accent p-12 text-center text-primary-foreground shadow-2xl">
           {/* Decorative elements */}
           <div className="absolute top-0 left-0 w-full h-full opacity-10">
             <div className="absolute top-10 left-10 w-32 h-32 bg-white rounded-full blur-3xl"></div>
@@ -345,6 +345,6 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
