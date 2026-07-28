@@ -3,21 +3,16 @@ Allow: /
 
 # 검색엔진이 크롤링하지 않았으면 하는 페이지들
 Disallow: /api/
-Disallow: /_next/static/media/
-Disallow: /_next/static/chunks/
 Disallow: /admin/
 Disallow: /private/
 
-# 허용할 리소스 (크롤링 필요한 CSS/JS)
-Allow: /_next/static/css/
-Allow: /_next/static/*/pages/
+# _next/static 은 막지 않는다.
+# Googlebot 은 JS 를 실행해 페이지를 렌더링한 뒤 색인하는데,
+# chunks/media 를 차단하면 렌더링이 깨져 본문을 제대로 읽지 못한다.
+# (이전 설정이 chunks 와 media 를 Disallow 하고 있었다.)
+Allow: /_next/static/
 
-# 사이트맵 위치 - 실제 배포 도메인으로 변경하세요
-# 예시: https://your-domain.com/sitemap.xml 또는 https://your-vercel-app.vercel.app/sitemap.xml
 Sitemap: https://lettie-dating.com/sitemap.xml
-
-# 크롤링 지연 시간 (선택사항)
-Crawl-delay: 1
 
 # 주요 검색엔진 특별 설정
 User-agent: Googlebot
