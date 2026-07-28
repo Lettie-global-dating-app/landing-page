@@ -121,6 +121,26 @@ export default function Home() {
             </a>
           </div>
 
+          {/* Product Hunt 배지 — 2026-07-29 런치. 런치가 끝나면 제거하거나
+              "top product" 배지로 교체한다. */}
+          <div className="flex justify-center mb-10 animate-fade-in-up animation-delay-400">
+            <a
+              href="https://www.producthunt.com/posts/lettie-2?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-lettie-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Find Lettie on Product Hunt"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1208303&theme=light"
+                alt="Lettie - Penpal dating where letters come before looks | Product Hunt"
+                width={250}
+                height={54}
+                style={{ width: 250, height: 54 }}
+              />
+            </a>
+          </div>
+
           <div className="flex flex-wrap gap-3 justify-center text-sm text-muted-foreground animate-fade-in-up animation-delay-500">
             <span className="glass-panel px-4 py-2 rounded-full">✨ Free Download</span>
             <span className="glass-panel px-4 py-2 rounded-full">📱 iOS & Android</span>
