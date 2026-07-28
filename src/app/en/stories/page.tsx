@@ -101,39 +101,8 @@ const statistics = [
 ];
 
 export default function StoriesPage() {
-  const reviewJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: 'Lettie - Global Pen Pal App',
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '5',
-      reviewCount: '100',
-      bestRating: '5',
-      worstRating: '1'
-    },
-    review: userStories.map(story => ({
-      '@type': 'Review',
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: story.rating,
-        bestRating: '5'
-      },
-      author: {
-        '@type': 'Person',
-        name: story.name
-      },
-      reviewBody: story.story
-    }))
-  };
-
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewJsonLd) }}
-      />
-
       <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
         {/* Header */}
         <header className="container mx-auto px-4 py-6">

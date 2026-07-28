@@ -217,13 +217,6 @@ export default function RootLayout({
                 "priceCurrency": "USD",
                 "category": "Free"
               },
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "5.0",
-                "ratingCount": "1000",
-                "bestRating": "5",
-                "worstRating": "1"
-              },
               "author": {
                 "@type": "Organization",
                 "name": "Lettie Team"
