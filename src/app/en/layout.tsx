@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { languageAlternates } from "@/i18n/config";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import LanguageSwitcher from "../components/LanguageSwitcher";
@@ -76,15 +77,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: baseUrl,
-    languages: {
-      'en': baseUrl,
-      'ko': koBaseUrl,
-      'es': `${koBaseUrl}/es`,
-      'pt': `${koBaseUrl}/pt`,
-      'ja': `${koBaseUrl}/ja`,
-      'fr': `${koBaseUrl}/fr`,
-      'x-default': koBaseUrl,
-    },
+    languages: languageAlternates(),
   },
   appLinks: {
     ios: {

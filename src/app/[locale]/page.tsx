@@ -2,7 +2,7 @@ import { Mail, Globe, Heart, Shield, Languages, ArrowRight } from 'lucide-react'
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { isLocale, urlFor } from '@/i18n/config';
+import { LOCALES, LOCALE_NAMES, ROOT_LOCALE, isLocale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionaries';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/id6746454876';
@@ -213,13 +213,16 @@ export default async function LocaleHome({
             </div>
 
             {/* 다른 언어로 이동 — 크롤러가 따라갈 수 있는 실제 링크로 둔다. */}
-            <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
-              <Link href="/" className="hover:text-primary transition-colors">한국어</Link>
-              <Link href="/en" className="hover:text-primary transition-colors">English</Link>
-              <Link href="/es" className="hover:text-primary transition-colors">Español</Link>
-              <Link href="/pt" className="hover:text-primary transition-colors">Português</Link>
-              <Link href="/ja" className="hover:text-primary transition-colors">日本語</Link>
-              <Link href="/fr" className="hover:text-primary transition-colors">Français</Link>
+            {/* 언어 전환 — 크롤러가 따라갈 수 있는 실제 링크로 둔다. */}
+            <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-muted-foreground max-w-xl">
+              <Link href="/" className="hover:text-primary transition-colors">
+                {LOCALE_NAMES[ROOT_LOCALE]}
+              </Link>
+              {LOCALES.map((l) => (
+                <Link key={l} href={`/${l}`} className="hover:text-primary transition-colors">
+                  {LOCALE_NAMES[l]}
+                </Link>
+              ))}
             </div>
 
             <a

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { languageAlternates } from "@/i18n/config";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import LanguageSwitcher from "./components/LanguageSwitcher";
@@ -77,16 +78,7 @@ export const metadata: Metadata = {
   // App Store & Google Play
   alternates: {
     canonical: baseUrl,
-    languages: {
-      'ko': baseUrl,
-      'en': `${baseUrl}/en`,
-      'es': `${baseUrl}/es`,
-      'pt': `${baseUrl}/pt`,
-      'ja': `${baseUrl}/ja`,
-      'fr': `${baseUrl}/fr`,
-      // 어느 언어에도 해당하지 않는 방문자에게 보여줄 기본값
-      'x-default': baseUrl,
-    },
+    languages: languageAlternates(),
   },
 
   // App Links
