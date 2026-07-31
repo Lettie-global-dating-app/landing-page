@@ -4842,4 +4842,269 @@ Approach them as a person who happens to live somewhere you're curious about. Th
 Write four honest paragraphs about your actual life and ask one real question. That works far more often than anything clever.
 `
     },
+    'interpals-alternatives': {
+        id: 'interpals-alternatives',
+        title: 'InterPals 대안: 2026년 펜팔 사이트·앱 비교',
+        titleEn: 'InterPals Alternatives: Where Else to Find Pen Pals in 2026',
+        description: 'InterPals를 쓰다 지쳤다면. 대안이 될 만한 펜팔 서비스들을 실제 사용 관점에서 비교합니다.',
+        descriptionEn: 'Tired of sifting through low-effort messages on InterPals? Here\'s where else people are finding pen pals in 2026, and what each place is actually good at.',
+        date: '2026-08-01',
+        readTime: '8분',
+        readTimeEn: '8 min',
+        category: '가이드',
+        categoryEn: 'Guide',
+        image: '/letter-feed.png',
+        author: 'Lettie',
+        keywords: ['InterPals 대안', '펜팔 사이트', '펜팔 앱 비교'],
+        keywordsEn: ['interpals alternatives', 'alternative to interpals', 'interpals replacement', 'pen pal sites like interpals', 'best pen pal websites', 'pen pal app 2026', 'safe pen pal site'],
+        content: `
+# InterPals 대안: 2026년 펜팔 사이트·앱 비교
+
+이 글은 영어권 검색 유입을 위해 영어로 작성되었습니다.
+전문은 [English version](/en/blog/interpals-alternatives)에서 읽을 수 있습니다.
+
+InterPals를 쓰다 지쳤다면. 대안이 될 만한 펜팔 서비스들을 실제 사용 관점에서 비교합니다.
+`,
+        contentEn: `
+# InterPals Alternatives: Where Else to Find Pen Pals in 2026
+
+InterPals has been running since 1998, and that longevity is genuinely its biggest asset. Millions of profiles, every country you can name, filters for language and age. If you want a pen pal in Uruguay who's learning Japanese, InterPals probably has one.
+
+The complaints are also consistent, and if you're reading this you've likely hit one of them:
+
+- The inbox fills with two-word messages from people who didn't read your profile
+- Moderation is thin, and a share of accounts are obvious scams
+- The interface hasn't meaningfully changed in years
+
+So where else can you go? Here's what each alternative is actually good at.
+
+## If you want fewer, better messages
+
+**Slowly.** Messages take real time to arrive based on physical distance. That delay filters out people who wanted a chat app, which is most of the problem on InterPals. What arrives tends to be considered.
+
+The tradeoff: translation is a paid feature, consumed per use. If your correspondence crosses languages, that cost recurs.
+
+**Lettie.** Full disclosure, this is ours. The relevant difference for someone leaving InterPals: letters and replies translate across 16 languages without metering, and you can see the original next to the translation. Profile photos start blurred and sharpen as you exchange letters, and contact details don't unlock until five letters in.
+
+That last part removes the InterPals pattern where someone asks for your WhatsApp in the first message.
+
+The tradeoff: a smaller pool. InterPals will beat us on finding someone in a specific small country tonight.
+
+## If your goal is language practice
+
+**HelloTalk.** Native speakers correct your writing inline. It's the most efficient tool here for deliberate practice, and the Korean, Japanese, and Chinese communities are large.
+
+The tradeoff: conversations often stay in exchange mode — I fix yours, you fix mine — and thin out once the practice ends.
+
+**Tandem.** Similar idea with more structure and stricter onboarding, which cuts down on low-effort accounts.
+
+## If you want physical mail
+
+**Global Penfriends** and **Postcrossing.** Postcrossing in particular is worth knowing: you send a postcard to a random member and receive one from someone else entirely. It isn't correspondence, but it's a low-commitment way to feel connected to strangers.
+
+The tradeoff: you're sharing a mailing address. Decide how you feel about that first.
+
+## If you want serendipity
+
+**Bottled** throws your message into a virtual sea for someone to find. Charming, rarely leads to a sustained exchange.
+
+## Honest summary
+
+| What pushed you off InterPals | Where to look |
+|---|---|
+| Too many low-effort messages | Slowly, Tandem |
+| Scam accounts and pressure to move to WhatsApp | Lettie (contacts locked for five letters) |
+| Language barrier made it exhausting | Lettie, HelloTalk |
+| Just want structured language practice | HelloTalk, Tandem |
+| Want something tangible | Postcrossing, Global Penfriends |
+| Dated interface | Any of the app-first options |
+
+## One thing that isn't the platform's fault
+
+Most pen pal correspondences die at message three regardless of where they started. The usual cause is that both people wrote a version of "hi, what are your hobbies?" and neither had anything to answer.
+
+Whichever platform you move to, the first letter does most of the work. Write four honest paragraphs about your actual week, ask one question you genuinely want the answer to, and you'll outperform 90% of what lands in anyone's inbox.
+`
+    },
+    'pen-pal-for-language-learning': {
+        id: 'pen-pal-for-language-learning',
+        title: '펜팔로 언어 배우기: 실제로 효과 있는 방법',
+        titleEn: 'Using a Pen Pal to Learn a Language (What Actually Works)',
+        description: '언어 교환 앱과 펜팔의 차이, 그리고 쓰기 연습이 회화보다 먼저인 이유.',
+        descriptionEn: 'Language exchange apps, pen pals, and why writing is often the faster route to fluency than conversation practice.',
+        date: '2026-08-01',
+        readTime: '7분',
+        readTimeEn: '7 min',
+        category: '가이드',
+        categoryEn: 'Guide',
+        image: '/conversation-detail.png',
+        author: 'Lettie',
+        keywords: ['언어 교환', '펜팔 언어 학습', '외국어 쓰기 연습'],
+        keywordsEn: ['pen pal for language learning', 'language exchange partner', 'learn a language by writing', 'hellotalk vs pen pal', 'language exchange app', 'practice writing in a foreign language', 'how to learn a language with a native speaker'],
+        content: `
+# 펜팔로 언어 배우기: 실제로 효과 있는 방법
+
+이 글은 영어권 검색 유입을 위해 영어로 작성되었습니다.
+전문은 [English version](/en/blog/pen-pal-for-language-learning)에서 읽을 수 있습니다.
+
+언어 교환 앱과 펜팔의 차이, 그리고 쓰기 연습이 회화보다 먼저인 이유.
+`,
+        contentEn: `
+# Using a Pen Pal to Learn a Language (What Actually Works)
+
+Most language exchange advice points you toward conversation practice — find a native speaker, get on a call, talk. That works, but it skips something.
+
+Writing is slower, and the slowness is the point. You have time to reach for the word you actually mean instead of the one you can retrieve in half a second. That reaching is where vocabulary moves from recognition into use.
+
+## Why writing beats speaking early on
+
+**You can look things up mid-sentence.** In conversation you route around what you don't know. In writing you can stop, find the right structure, and use it. Do that fifty times and it stops needing a lookup.
+
+**You produce more language per session.** A 20-minute call in a language you're weak in might yield 200 words from you, most of them recycled. A 300-word letter is 300 words you constructed.
+
+**You have a record.** Rereading your letters from three months ago is the clearest progress measure you'll get. Nobody records their calls.
+
+**The anxiety is lower.** Silence in a call is uncomfortable. Silence while drafting is just thinking.
+
+None of this argues against speaking. It argues for writing first, when speaking is still too expensive.
+
+## Language exchange app or pen pal app?
+
+They're different tools and the distinction matters.
+
+**Language exchange apps (HelloTalk, Tandem)** exist for correction. Your partner marks your errors directly. Efficiency is high, and if your goal is measurable improvement in three months, start here.
+
+The limitation is structural: the relationship is an exercise. Many exchanges fade once the study session ends, because there was never anything else holding it together.
+
+**Pen pal apps (Slowly, InterPals, Lettie)** exist for the relationship. Language improvement is a side effect, and it happens more slowly — but it keeps happening, because you keep writing to someone you actually want to write to.
+
+The strongest setup for most people is a pen pal correspondence for consistency, plus occasional deliberate practice elsewhere.
+
+## Making a pen pal correspondence useful for learning
+
+**Write in the target language even when it's bad.** Your errors are the syllabus. A letter full of them teaches you more than a perfect letter in your own language.
+
+**Ask for correction explicitly, once.** Most pen pals won't correct you unless invited — they don't want to seem rude. One line settles it: "Please correct my mistakes, I'd rather learn than sound polished."
+
+**Steal their phrasing.** When they say something in a way you wouldn't have, use it in your next letter. This is how you get idiomatic rather than merely correct.
+
+**Keep a small list.** Not a full study system — just five expressions per letter that you want to reuse.
+
+**Read the original next to the translation.** If your app shows both, this is the highest-value habit available. Seeing the source sentence beside its meaning, repeatedly, in a context you care about, builds pattern recognition that flashcards don't.
+
+On Lettie both versions sit side by side by default across 16 languages, which is why a number of users report picking up their pen pal's language without having set out to study it. That's a real effect but a slow one — this isn't a substitute for a course if you need results by a deadline.
+
+## A realistic timeline
+
+- **Month 1:** Your letters are short and effortful. Normal.
+- **Month 3:** You stop translating whole sentences in your head. Some phrases arrive directly.
+- **Month 6:** You write a paragraph without a dictionary and it comes out mostly right.
+- **Month 12:** You notice you've been reading their letters without consciously decoding.
+
+That's slower than an intensive course and far more likely to still be happening at month twelve, because the motivation isn't discipline. It's that someone is waiting for your reply.
+
+## Choosing a partner
+
+Pick someone whose target language is yours and whose native language is what you're learning. The symmetry keeps it fair — otherwise one of you is doing a favor, and favors expire.
+
+Then write about your actual life. "What did you eat today" produces more usable language than any textbook dialogue about booking a hotel.
+`
+    },
+    'pen-pal-safety-guide': {
+        id: 'pen-pal-safety-guide',
+        title: '안전한 펜팔 가이드: 무엇을 조심해야 하나',
+        titleEn: 'Pen Pal Safety: What to Watch For and What to Ignore',
+        description: '온라인 펜팔에서 실제로 위험한 신호와, 과하게 걱정할 필요 없는 것들.',
+        descriptionEn: 'The scam patterns that actually appear in pen pal communities, what to share and when, and which worries are overblown.',
+        date: '2026-08-01',
+        readTime: '7분',
+        readTimeEn: '7 min',
+        category: '가이드',
+        categoryEn: 'Guide',
+        image: '/contact-exchange.png',
+        author: 'Lettie',
+        keywords: ['펜팔 안전', '온라인 사기', '개인정보 보호'],
+        keywordsEn: ['pen pal safety', 'is penpalling safe', 'pen pal scams', 'online friendship safety', 'romance scam warning signs', 'safe pen pal app', 'protect personal information online'],
+        content: `
+# 안전한 펜팔 가이드: 무엇을 조심해야 하나
+
+이 글은 영어권 검색 유입을 위해 영어로 작성되었습니다.
+전문은 [English version](/en/blog/pen-pal-safety-guide)에서 읽을 수 있습니다.
+
+온라인 펜팔에서 실제로 위험한 신호와, 과하게 걱정할 필요 없는 것들.
+`,
+        contentEn: `
+# Pen Pal Safety: What to Watch For and What to Ignore
+
+Writing to strangers is safer than most people assume and riskier in one specific way than they expect. Worth separating the two.
+
+## The pattern that actually causes harm
+
+Nearly every serious problem in pen pal communities follows the same shape, and it is not "stranger turns out to be dangerous in person." It's financial.
+
+It looks like this:
+
+1. **Unusually warm, unusually fast.** Deep affection within days. Long messages that feel intensely personal.
+2. **A story that explains distance.** Working offshore, deployed, a doctor abroad. Something that makes meeting impossible and calls difficult.
+3. **A crisis.** Medical emergency, customs fee, blocked bank account, a shipment held up.
+4. **The ask.** Usually gift cards or crypto — payment methods that can't be reversed.
+
+The tell isn't any single step. It's the **speed of intimacy relative to actual knowledge.** Someone who tells you they love you before knowing what you do for a living is running a script.
+
+**Rule that covers almost all of it:** never send money, gift cards, or crypto to someone you've only known online. Not once, not a small amount, not as a loan. There is no version of this that ends well.
+
+## What to share, and when
+
+**First few letters:** first name, general region ("northern England," not your town), interests, work in broad terms. That's plenty for a real correspondence.
+
+**Later:** city, more about your work, photos if you want.
+
+**Only if it becomes a genuine friendship:** full name, contact details, social media.
+
+**Not until you've met, if ever:** home address, workplace address, financial details, ID documents.
+
+The mistake isn't sharing — it's sharing on someone else's timeline because saying no felt awkward.
+
+Some apps handle this structurally. Lettie doesn't unlock contact exchange until you've traded five letters, which removes the social pressure entirely — there's nothing to refuse because the option isn't there yet.
+
+## Warning signs worth acting on
+
+- **Pressure to leave the platform immediately.** Platforms have reporting and moderation. Personal messengers don't. Someone who insists on WhatsApp in message two is usually avoiding oversight.
+- **Refusal to video call, ever, with escalating excuses.** One or two declines is normal — some people are private or self-conscious. A pattern of reasons is different.
+- **Photos that look like stock or model shots.** Reverse image search takes ten seconds.
+- **Inconsistencies in their story.** Ages, locations, and jobs that shift between letters.
+- **Any mention of money.** Investment opportunities included — "crypto mentor" pitches are extremely common in these communities.
+
+## Things people worry about more than they need to
+
+**Being "catfished" about appearance.** Common, usually harmless, and less relevant in letter-based correspondence where you formed the impression on writing rather than photos.
+
+**Someone finding you from your first name and country.** Extremely difficult without more specifics.
+
+**Awkwardness of ending it.** You can simply stop replying. You owe a stranger nothing beyond basic courtesy, and "I don't think we're clicking, take care" is a complete sentence.
+
+**Language mistakes offending someone.** Almost nobody in an international correspondence is graded on grammar. Errors read as effort.
+
+## Practical habits
+
+- Use a nickname or first name only, early on.
+- Keep it on the platform until you have a reason not to.
+- Reverse image search a profile photo if something feels off. Ten seconds.
+- Video call before meeting in person, always.
+- If you do meet: public place, someone knows where you are, your own transport.
+- Report rather than just blocking. Blocking protects you; reporting protects the next person.
+
+## For parents
+
+If a teenager wants a pen pal, the useful conversation isn't "don't talk to strangers online." It's the money rule and the address rule, plus an agreement that they can show you anything that feels strange without getting in trouble for it. Fear of losing access is what keeps young people quiet about grooming.
+
+Choose a platform with real moderation and reporting tools, and check the minimum age — most pen pal apps, including Lettie, are 18+.
+
+## The realistic picture
+
+Most pen pal correspondences are exactly what they appear to be: someone in another country who also wanted to write letters. The precautions above cost you almost nothing and remove nearly all of the real risk.
+
+Don't send money. Don't share your address early. Everything else is manageable.
+`
+    },
 };
