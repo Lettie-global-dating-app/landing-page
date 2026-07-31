@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { blogPosts } from '@/data/blogPosts';
 import { LOCALES } from '@/i18n/config';
+import { localizedPosts } from '@/data/localizedPosts';
 
 // 영어는 위 STATIC_PATHS 에서 이미 다루므로 제외한다.
 const NEW_LOCALES = LOCALES.filter((l) => l !== 'en');
@@ -61,5 +62,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  return [...staticRoutes, ...localeHomes, ...blogRoutes];
+  // 신규 언어로 번역된 글. 실제로 번역이 있는 조합만 넣는다.
+  const localizedRoutes = Object.entries(localizedPosts).flatMap(([slug, entry]) =>
+    Object.keys(entry.translations)
+      .filter((l) => l !== 'en')
+      .map((locale) => ({
+        url: `${baseUrl}/${locale}/blog/${slug}`,
+        lastModified: entry.date,
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+      })),
+  );
+
+  return [...staticRoutes, ...localeHomes, ...blogRoutes, ...localizedRoutes];
 }

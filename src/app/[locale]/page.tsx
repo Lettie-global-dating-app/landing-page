@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { LOCALES, LOCALE_NAMES, ROOT_LOCALE, isLocale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionaries';
+import { listLocalizedPosts } from '@/data/localizedPosts';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/id6746454876';
 const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe';
@@ -21,6 +22,7 @@ export default async function LocaleHome({
 
   const t = getDictionary(locale);
   const base = `/${locale}`;
+  const localized = listLocalizedPosts(locale);
 
   const features = [
     { icon: Languages, ...t.features.translation },
@@ -48,8 +50,11 @@ export default async function LocaleHome({
             <a href="#features" className="text-muted-foreground hover:text-primary transition-colors">
               {t.nav.features}
             </a>
-            {/* 블로그·가이드는 아직 영어만 있다. 빈 페이지로 보내는 대신 영어로 안내한다. */}
-            <Link href="/en/blog" className="text-muted-foreground hover:text-primary transition-colors">
+            {/* 이 언어로 번역된 글이 있으면 그쪽으로, 없으면 영어 블로그로 보낸다. */}
+            <Link
+              href={localized.length ? `/${locale}/blog/${localized[0].id}` : '/en/blog'}
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
               {t.nav.blog}
             </Link>
             <Link href="/en/guide" className="text-muted-foreground hover:text-primary transition-colors">
