@@ -80,6 +80,10 @@ export const metadata: Metadata = {
     languages: {
       'ko': baseUrl,
       'en': `${baseUrl}/en`,
+      'es': `${baseUrl}/es`,
+      'pt': `${baseUrl}/pt`,
+      'ja': `${baseUrl}/ja`,
+      'fr': `${baseUrl}/fr`,
       // 어느 언어에도 해당하지 않는 방문자에게 보여줄 기본값
       'x-default': baseUrl,
     },

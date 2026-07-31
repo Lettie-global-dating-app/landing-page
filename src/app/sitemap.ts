@@ -1,5 +1,9 @@
 import { MetadataRoute } from 'next';
 import { blogPosts } from '@/data/blogPosts';
+import { LOCALES } from '@/i18n/config';
+
+// 영어는 위 STATIC_PATHS 에서 이미 다루므로 제외한다.
+const NEW_LOCALES = LOCALES.filter((l) => l !== 'en');
 
 // 한국어(루트)와 영어(/en)가 같은 구조로 존재한다.
 // 이전 sitemap 은 루트와 /blog, 그리고 한국어 블로그 상세만 담고 있어서
@@ -48,5 +52,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   );
 
-  return [...staticRoutes, ...blogRoutes];
+  // 새로 추가한 언어는 아직 메인 페이지만 있다.
+  // 없는 하위 경로까지 넣으면 404 를 제출하는 셈이라 메인만 담는다.
+  const localeHomes = NEW_LOCALES.map((locale) => ({
+    url: `${baseUrl}/${locale}`,
+    lastModified: today,
+    changeFrequency: 'weekly' as const,
+    priority: 0.9,
+  }));
+
+  return [...staticRoutes, ...localeHomes, ...blogRoutes];
 }

@@ -79,6 +79,10 @@ export const metadata: Metadata = {
     languages: {
       'en': baseUrl,
       'ko': koBaseUrl,
+      'es': `${koBaseUrl}/es`,
+      'pt': `${koBaseUrl}/pt`,
+      'ja': `${koBaseUrl}/ja`,
+      'fr': `${koBaseUrl}/fr`,
       'x-default': koBaseUrl,
     },
   },
