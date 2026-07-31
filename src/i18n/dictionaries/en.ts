@@ -29,9 +29,9 @@ export const en = {
     titleLine3: 'worldwide',
     subtitleA: 'Not based on photos or looks, but on',
     subtitleHighlight: 'hearts and thoughts',
-    subtitleB: 'Experience',
+    subtitleB: '. Experience',
     subtitleHighlight2: 'genuine communication',
-    subtitleC: 'with Lettie.',
+    subtitleC: ' with Lettie.',
     appStore: 'App Store',
     googlePlay: 'Google Play',
     badges: {

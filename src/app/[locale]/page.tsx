@@ -90,11 +90,12 @@ export default async function LocaleHome({
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed max-w-3xl mx-auto font-light">
+            {/* 요소 사이 개행은 JSX 가 공백 하나로 바꾼다. 문장부호 앞에 공백이
+                끼거나(스페인어 "ideas . Vive") 공백을 쓰지 않는 언어에 공백이
+                들어가므로(일본어), 연결부는 붙여 쓰고 간격은 사전이 갖는다. */}
             {t.hero.subtitleA}{' '}
-            <span className="font-medium text-foreground">{t.hero.subtitleHighlight}</span>.{' '}
-            {t.hero.subtitleB}{' '}
-            <span className="font-medium text-foreground">{t.hero.subtitleHighlight2}</span>{' '}
-            {t.hero.subtitleC}
+            <span className="font-medium text-foreground">{t.hero.subtitleHighlight}</span>{t.hero.subtitleB}{' '}
+            <span className="font-medium text-foreground">{t.hero.subtitleHighlight2}</span>{t.hero.subtitleC}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-5 justify-center items-center mb-10">

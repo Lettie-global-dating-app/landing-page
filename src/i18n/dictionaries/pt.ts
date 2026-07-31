@@ -31,9 +31,9 @@ export const pt: Dictionary = {
     titleLine3: 'no mundo todo',
     subtitleA: 'Não por fotos ou aparência, mas por',
     subtitleHighlight: 'sentimentos e ideias',
-    subtitleB: 'Viva uma',
+    subtitleB: '. Viva uma',
     subtitleHighlight2: 'comunicação genuína',
-    subtitleC: 'com o Lettie.',
+    subtitleC: ' com o Lettie.',
     appStore: 'App Store',
     googlePlay: 'Google Play',
     badges: {
