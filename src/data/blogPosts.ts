@@ -14,6 +14,8 @@ export type BlogPost = {
     image: string;
     author: string;
     keywords: string[];
+    /** 영어 페이지 전용 키워드. 없으면 한국어 keywords 가 그대로 나가 영어권 검색에 무의미하다. */
+    keywordsEn?: string[];
 };
 
 export const blogPosts: Record<string, BlogPost> = {
@@ -31,6 +33,7 @@ export const blogPosts: Record<string, BlogPost> = {
         image: '/letter-writing.png',
         author: 'Lettie',
         keywords: ['느린 편지', '슬로우 커뮤니케이션', '펜팔', '기다림의 미학', '깊은 소통', '아날로그 감성', '의미있는 연결', '디지털 디톡스'],
+        keywordsEn: ['slow letters', 'slow communication', 'pen pal', 'meaningful connection', 'digital detox', 'analog writing', 'deep conversation'],
         content: `
 # 느린 편지의 아름다움: 빠름이 지배하는 세상에서
 
@@ -282,6 +285,7 @@ Start today.
         image: '/letter-writing.png',
         author: 'Lettie',
         keywords: ['첫 펜팔', '펜팔 시작', '낯선 이에게 편지', '첫 만남', '펜팔 설렘', '글로벌 친구', '편지 쓰기', '새로운 만남'],
+        keywordsEn: ['first pen pal letter', 'what to write to a pen pal', 'pen pal letter examples', 'how to start a letter', 'pen pal introduction'],
         content: `
 # 첫 펜팔 편지: 낯선 이에게 마음을 열다
 
@@ -597,6 +601,7 @@ that's the beginning of a special connection.
         image: '/letter-writing.png',
         author: 'Lettie',
         keywords: ['겨울 편지', '펜팔 겨울', '따뜻한 편지', '겨울 감성', '크리스마스 펜팔', '연말 편지', '위로의 편지', '겨울 소통', '따뜻한 마음'],
+        keywordsEn: ['winter letters', 'seasonal pen pal letters', 'holiday letter ideas', 'warm letter writing'],
         content: `
 # 겨울 편지: 차가운 계절에 전하는 따뜻한 마음
 
@@ -1104,6 +1109,7 @@ By a snowy window, drinking warm tea, I await your letter.
         image: '/letter-writing.png',
         author: 'Vampiro (Sebastian)',
         keywords: ['할로윈 펜팔', '대안 우정', '고딕 펜팔', '할로윈 연결', '스푸키 시즌 친구', '뱀파이어 미학', '다크 아카데미아 펜팔', '10월 편지'],
+        keywordsEn: ['halloween letters', 'seasonal pen pal', 'autumn letter writing', 'honest conversation'],
         content: `
 # 할로윈 고백: 어둠 속에서 찾는 연결
 
@@ -1401,6 +1407,7 @@ The pumpkin's carved. The candle's lit. The first page is blank.
         image: '/letter-writing.png',
         author: 'Lettie',
         keywords: ['펜팔 편지', '진실한 연결', '감성 편지', '낯선 사람에게', '펜팔 시작', '느린 관계', '의미있는 소통'],
+        keywordsEn: ['letter to a stranger', 'writing to strangers', 'anonymous letters', 'deep connection'],
         content: `
 # 낯선 당신에게
 
@@ -1542,6 +1549,7 @@ Let's meet on Lettie. Looking forward to the start of our conversation.
         image: '/letter-writing.png',
         author: 'Lettie',
         keywords: ['편지 쓰기', '첫 편지', '펜팔 가이드', '진심을 담은 편지', '아날로그 감성'],
+        keywordsEn: ['how to start penpalling', 'pen pal guide for beginners', 'first letter tips', 'how to find a pen pal'],
         content: `
 # 편지로 시작하는 특별한 만남 가이드
 
@@ -1695,6 +1703,7 @@ Letters are a window to seeing the world more broadly. With Lettie, you can crea
         image: '/brand-screen.png',
         author: 'Lettie',
         keywords: ['편지 문화', '글로벌 에티켓', '펜팔 문화', '국제 교류', '문화 차이'],
+        keywordsEn: ['letter writing customs', 'global etiquette', 'cultural differences in letters', 'international pen pal etiquette'],
         content: `
 # 세계 각국의 편지 문화 이해하기
 
@@ -1802,6 +1811,7 @@ Lettie connects people from diverse cultural backgrounds. Respect and understand
         image: '/conversation-detail.png',
         author: 'Lettie',
         keywords: ['언어 교환', '언어 학습', '펜팔 학습', '외국어', '언어 공부'],
+        keywordsEn: ['language exchange', 'learn a language with a pen pal', 'language exchange partner', 'practice writing in a foreign language'],
         content: `
 # 펜팔로 언어 실력 향상시키기
 
@@ -1941,6 +1951,7 @@ Language is a tool for communication. Communicate with friends around the world 
         image: '/letter-writing.png',
         author: 'Marcus',
         keywords: ['펜팔 친구', '글로벌 소통', '문화 교류', '진실한 우정', '펜팔 커뮤니티', '국제 친구 만들기', 'Lettie 펜팔', '편지 친구'],
+        keywordsEn: ['pen pal story', 'genuine friendship', 'long distance friendship', 'pen pal experience'],
         content: `
 # 안녕하세요, Marcus입니다
 
@@ -2092,6 +2103,7 @@ Looking forward to hearing from you soon!
         image: '/letter-writing.png',
         author: 'Lettie',
         keywords: ['가을 편지', '아침 안개', '시적 편지', '계절의 변화', '희망의 메시지', '자연과 펜팔', '감성 소통', '가을 감성', '따뜻한 위로'],
+        keywordsEn: ['autumn letters', 'slow living', 'reflective writing', 'seasonal letters'],
         content: `
 # 안개 속 아침: 가을이 전하는 따스한 약속
 
@@ -2396,6 +2408,7 @@ Beyond the mist, in golden autumn.
         image: '/brand-screen.png',
         author: 'Lettie',
         keywords: ['감성 편지', '펜팔 우정', '외로움 극복', '마음 치유', '펜팔 위로', '진심 어린 편지', '감성 소통', '바닷가 카페'],
+        keywordsEn: ['letter to a friend', 'heartfelt letter', 'emotional writing', 'pen pal letter', 'writing from the heart'],
         content: `
 # Dearest friend,
 
@@ -2524,6 +2537,7 @@ Before autumn nights grow longer, start your first letter.
         image: '/letter-writing.png',
         author: 'Lettie',
         keywords: ['디지털 디톡스', '느린 소통', '정신 건강', '소셜 미디어 피로', '슬로우 라이프', '펜팔 효과', '마음 챙김'],
+        keywordsEn: ['digital detox', 'slow communication', 'social media fatigue', 'mindful technology', 'screen time reduction'],
         content: `
 # 디지털 디톡스: 2025년, 왜 느린 소통이 필요한가
 
@@ -2659,6 +2673,7 @@ That's the true beginning of digital detox.
         image: '/letter-writing.png', // TODO: Replace with shield icon if available
         author: 'Lettie Team',
         keywords: ['안전한 펜팔', '온라인 안전', '프라이버시 보호', '사기 예방', '글로벌 친구', 'Lettie 보안'],
+        keywordsEn: ['pen pal safety', 'safe penpalling', 'online safety tips', 'how to stay safe with pen pals', 'protect personal information'],
         content: `
 # 안전한 펜팔 가이드: 글로벌 친구를 안전하게 사귀는 법
 
@@ -2800,6 +2815,7 @@ Safety is the beginning of enjoyable penpalling. Follow these guidelines and bui
         image: '/letter-writing.png',
         author: 'Lettie',
         keywords: ['해외 친구', '글로벌 우정', '언어 교환', '문화 교류', '외국인 친구', '글로벌 소통'],
+        keywordsEn: ['make friends worldwide', 'international friendship', 'global friends online', 'friends from other countries'],
         content: `
 # 해외 친구 만들기: 언어와 국경을 넘어선 우정
 
@@ -2866,6 +2882,7 @@ Making friends overseas opens doors to new worlds. With Lettie, borderless commu
         image: '/brand-screen.png',
         author: 'Lettie Team',
         keywords: ['펜팔 앱 추천', '안전한 펜팔', '2025 펜팔', '글로벌 메신저', '펜팔 어플', 'Lettie'],
+        keywordsEn: ['best pen pal app', 'pen pal apps compared', 'penpal app review', 'top penpal apps', 'safe pen pal app'],
         content: `
 # 2025년 펜팔 앱 추천: 안전한 글로벌 소통의 시작
 
@@ -2985,6 +3002,7 @@ In 2025, create your special connection on Lettie.
         image: '/conversation-detail.png',
         author: 'Lettie',
         keywords: ['방구석 여행', '랜선 여행', '문화 체험', '세계 여행', '현지 문화', '펜팔 여행'],
+        keywordsEn: ['travel through letters', 'cultural exchange', 'virtual travel', 'learn about other countries'],
         content: `
 # 방구석 세계여행: 펜팔로 떠나는 문화 여행
 
@@ -3116,6 +3134,7 @@ This one sentence will guide you to a wonderful world trip.
         image: '/conversation-detail.png',
         author: 'Lettie',
         keywords: ['언어 교환', '외국인 친구', '글로벌 우정', '영어 회화', '한국어 학습', '문화 교류', '펜팔 친구', '언어 학습'],
+        keywordsEn: ['language exchange friendship', 'beyond language practice', 'pen pal language learning', 'real friendship'],
         content: `
 # 언어 교환을 넘어 진정한 우정으로: 펜팔이 주는 선물
 
@@ -3269,6 +3288,7 @@ Start penpalling on Lettie now. Imagine how much a letter written in an unfamili
         image: '/letter-writing.png',
         author: 'Lettie',
         keywords: ['디지털 디톡스', '느린 삶', '슬로우 라이프', '정신 건강', '도파민 디톡스', '아날로그 감성', '휴식', '마음 챙김'],
+        keywordsEn: ['slow living', 'digital wellness', 'mindful living', 'wellness trend 2026'],
         content: `
 # 디지털 디톡스와 느린 삶: 2025년의 웰니스 트렌드
 
@@ -3394,6 +3414,7 @@ Turn off the noise of the digital world for a moment and feel the peace of slow 
         image: '/brand-screen.png',
         author: 'Lettie',
         keywords: ['문화 차이', '글로벌 에티켓', '다문화 이해', '세계 문화', '펜팔 매너', '해외 친구', '문화 교류', '글로벌 마인드'],
+        keywordsEn: ['cultural understanding', 'global etiquette', 'cross cultural communication', 'cultural differences'],
         content: `
 # 다름을 이해하는 즐거움: 글로벌 펜팔 에티켓과 문화 차이
 
@@ -3547,6 +3568,7 @@ Meet diverse cultures from around the world on Lettie now. The moment you unders
         image: '/letter-writing.png',
         author: 'Lettie',
         keywords: ['디지털 디톡스', 'SNS 피로', '펜팔', '정신 건강', '느린 소통', '소셜미디어 휴식', '의미있는 연결', '마음 챙김', 'digital detox', 'social media fatigue', 'mental health'],
+        keywordsEn: ['digital detox', 'social media fatigue', 'slow communication', 'pen pal healing'],
         content: `
 # 디지털 디톡스와 펜팔: SNS 피로를 치유하는 느린 소통
 
@@ -3784,6 +3806,7 @@ Communicating slowly in a fast world is **a gift to yourself**.
         image: '/world-connection.png',
         author: 'Lettie',
         keywords: ['외국인 친구', '국제 펜팔', '글로벌 친구 사귀기', '외국 친구 만들기', '펜팔 앱', '문화 교류', 'international friends', 'global pen pals', 'cultural exchange', 'make foreign friends'],
+        keywordsEn: ['international friends guide', 'how to make foreign friends', 'global pen pal', 'friendship across borders'],
         content: `
 # 외국인 친구 사귀기 완벽 가이드: 글로벌 펜팔로 세계와 연결되기
 
@@ -4121,6 +4144,7 @@ Find a pen pal with matching interests on Lettie and start a genuine global frie
         image: '/letter-writing.png',
         author: 'Lettie',
         keywords: ['자기 성찰', '펜팔', '글쓰기 치료', '자기 발견', '내면 성장', '저널링', '마음 치유', 'self-reflection', 'journaling', 'personal growth', 'writing therapy'],
+        keywordsEn: ['self reflection through writing', 'personal growth', 'journaling and letters', 'writing for self discovery'],
         content: `
 # 펜팔로 발견하는 나: 글쓰기를 통한 자기 성찰과 성장
 
@@ -4429,5 +4453,393 @@ Write your first letter today. That letter goes to someone while **returning to 
 
 *Start your journey of meeting yourself on Lettie. Letters are windows to the world and mirrors reflecting yourself.*
         `
+    },
+    'slowly-app-alternatives': {
+        id: 'slowly-app-alternatives',
+        title: 'Slowly 앱 대안 찾기: 2026년 펜팔 앱 6가지 비교',
+        titleEn: 'Slowly App Alternatives: 6 Pen Pal Apps Compared (2026)',
+        description: 'Slowly를 쓰다가 다른 앱을 찾고 있다면. 2026년 기준 주요 펜팔 앱 6가지의 강점과 약점을 정직하게 비교합니다.',
+        descriptionEn: 'Looking for something different from Slowly? An honest comparison of six pen pal apps in 2026 — what each one does well, and where each falls short.',
+        date: '2026-07-31',
+        readTime: '9분',
+        readTimeEn: '9 min',
+        category: '가이드',
+        categoryEn: 'Guide',
+        image: '/letter-feed.png',
+        author: 'Lettie',
+        keywords: ['Slowly 대안', '펜팔 앱 비교', '펜팔 앱 추천', 'InterPals', 'HelloTalk'],
+        keywordsEn: ['slowly app alternatives', 'alternative to slowly', 'pen pal apps compared', 'interpals alternative', 'hellotalk alternative', 'best pen pal app 2026', 'pen pal app with translation'],
+        content: `
+# Slowly 앱 대안 찾기: 2026년 펜팔 앱 6가지 비교
+
+이 글은 영어권 검색 유입을 위해 영어로 작성되었습니다.
+전문은 [English version](/en/blog/slowly-app-alternatives)에서 읽을 수 있습니다.
+
+Slowly를 쓰다가 다른 앱을 찾고 있다면. 2026년 기준 주요 펜팔 앱 6가지의 강점과 약점을 정직하게 비교합니다.
+`,
+        contentEn: `
+# Slowly App Alternatives: 6 Pen Pal Apps Compared (2026)
+
+Slowly did something clever. It made letters slow again — your message takes hours or days to arrive, depending on the real distance between you and the person you're writing to. That single constraint changed how people wrote. Less chatter, more thought.
+
+But it isn't the right fit for everyone. Maybe you've hit the paywall on translations. Maybe the stamp-collecting loop stopped landing for you. Maybe you want something closer to a real relationship than a hobby.
+
+Here's an honest look at where each option actually stands.
+
+## 1. Slowly — the benchmark
+
+**Best for:** people who want the delay itself to be the point.
+
+The delivery delay is genuinely well designed. Writing to someone 9,000 km away and waiting a day for the reply changes your tone — you stop firing off one-liners.
+
+**Where it falls short:** translation is a paid feature, and it's consumed per use. If your pen pal doesn't share a language with you, the thing you need most is the thing you keep paying for. Several users end up drafting in a separate translation app and pasting the result back in, which defeats the point.
+
+## 2. InterPals — the largest pool
+
+**Best for:** finding someone specific — a country, a language, an age range.
+
+It's been running since 1998 and the user base is enormous. If you want a pen pal in Argentina who's learning Korean, someone there fits that description.
+
+**Where it falls short:** it's a website first, and it feels like it. Moderation is thin, and the volume of low-effort first messages is high. You'll do some filtering.
+
+## 3. HelloTalk — language practice first
+
+**Best for:** people whose main goal is learning a language.
+
+Native speakers correct your writing directly in the message. For deliberate practice, nothing else comes close.
+
+**Where it falls short:** it's structured around language exchange, not friendship. Conversations often stay transactional — you correct mine, I correct yours. If you want the relationship to be the point rather than the exercise, it can feel thin.
+
+## 4. Global Penfriends — all ages, snail mail
+
+**Best for:** people who genuinely want physical mail.
+
+It's one of the few places that still takes postal correspondence seriously, and it's family-friendly.
+
+**Where it falls short:** the digital experience is dated, and physical mail means sharing your address. That's a real consideration.
+
+## 5. Bottled — messages at random
+
+**Best for:** low-stakes serendipity.
+
+You throw a message into the sea and someone finds it. There's no matching, no profile browsing.
+
+**Where it falls short:** almost nothing sticks. It's a fun idea rather than a way to build a correspondence.
+
+## 6. Lettie — translation built in
+
+**Best for:** writing to someone who doesn't share your language, without paying for each message.
+
+Full disclosure: we make this one. Here's the specific thing it does differently.
+
+Every letter and every reply translates across 16 languages, and it isn't metered. You write in Korean, they read it in Portuguese. You can view the original and the translation **side by side**, which is why a lot of people end up picking up some of their pen pal's language without setting out to.
+
+Two other things shape how it feels:
+
+- **Profile photos start blurred** and come into focus as you exchange letters. You form an impression of the person before you form one of their face.
+- **Contact exchange unlocks after five letters.** No phone numbers up front.
+
+**Where it falls short:** the user base is smaller than InterPals or Slowly. If you want a pen pal in a very specific country tonight, the larger platforms have better odds. And if you already share a language with the people you write to, the translation layer isn't doing much for you — Slowly's delay mechanic might suit you better.
+
+## How to actually choose
+
+Ask what's blocking you right now.
+
+| If your problem is… | Try |
+|---|---|
+| Messages arrive too fast to feel like letters | Slowly |
+| You can't find anyone in the country you want | InterPals |
+| You want your writing corrected | HelloTalk |
+| You want physical mail | Global Penfriends |
+| **Language is the thing stopping you** | **Lettie** |
+
+Most people who bounce between pen pal apps aren't looking for more features. They're looking for one correspondence that lasts longer than three messages. Pick the app that removes your specific obstacle, then write a real first letter — one that says something about you rather than "hi, how are you."
+
+That part matters more than the app.
+`
+    },
+    'how-to-find-a-pen-pal': {
+        id: 'how-to-find-a-pen-pal',
+        title: '펜팔 찾는 법: 2026년 완전 입문 가이드',
+        titleEn: 'How to Find a Pen Pal in 2026: A Complete Beginner\'s Guide',
+        description: '펜팔을 처음 시작하는 사람을 위한 안내. 어디서 찾고, 첫 편지에 무엇을 쓰고, 어떻게 오래 이어가는지.',
+        descriptionEn: 'New to pen pals? Where to find one, what to write in your first letter, and how to keep a correspondence going past the third message.',
+        date: '2026-07-31',
+        readTime: '8분',
+        readTimeEn: '8 min',
+        category: '가이드',
+        categoryEn: 'Guide',
+        image: '/letter-writing.png',
+        author: 'Lettie',
+        keywords: ['펜팔 찾기', '펜팔 시작하기', '펜팔 입문', '외국인 친구 사귀기'],
+        keywordsEn: ['how to find a pen pal', 'find a pen pal online', 'pen pal for beginners', 'how to get a pen pal', 'international pen pal', 'first pen pal letter', 'how to make foreign friends'],
+        content: `
+# 펜팔 찾는 법: 2026년 완전 입문 가이드
+
+이 글은 영어권 검색 유입을 위해 영어로 작성되었습니다.
+전문은 [English version](/en/blog/how-to-find-a-pen-pal)에서 읽을 수 있습니다.
+
+펜팔을 처음 시작하는 사람을 위한 안내. 어디서 찾고, 첫 편지에 무엇을 쓰고, 어떻게 오래 이어가는지.
+`,
+        contentEn: `
+# How to Find a Pen Pal in 2026: A Complete Beginner's Guide
+
+Most people who try pen pals quit within two weeks. Not because they can't find anyone — finding someone is easy now — but because the first three exchanges go nowhere and it starts to feel like homework.
+
+This guide is about getting past that.
+
+## Where to look
+
+**Apps built for correspondence.** Slowly, InterPals, Lettie, HelloTalk. These are where most people start, and they're the fastest route to an actual reply. Each has a different bias: Slowly toward slow delivery, InterPals toward raw numbers, HelloTalk toward language practice, Lettie toward writing across languages.
+
+**Postal organizations.** Global Penfriends and similar groups still coordinate physical mail. Slower, more committed, and you'll be sharing a mailing address — so read the safety section below before you do.
+
+**Interest communities.** Subreddits, hobby forums, book clubs. The correspondence starts with something concrete in common, which solves the "what do we talk about" problem before it appears.
+
+Don't sign up for all of them. One platform, one real attempt, is worth more than five profiles you never return to.
+
+## What to put in your profile
+
+Be specific enough to be answerable.
+
+"I like music, movies, and travel" gives someone nothing to respond to. "I'm relearning piano at 29 and currently failing at a Chopin nocturne" gives them a door.
+
+Three concrete details beat a paragraph of adjectives. Mention something you're currently doing, not just something you like.
+
+## The first letter
+
+This is where most correspondences die. A first letter that says "Hi! How are you? What are your hobbies?" gets a matching non-answer, and then neither of you has anything to build on.
+
+A first letter that works usually does three things:
+
+1. **Says where you are and what it's like right now.** Not a weather report — the specific texture of your day. The bus you take. What's outside the window.
+2. **Offers one real thing about you.** Something you're working through, curious about, or bad at. Vulnerability in small doses invites the same in return.
+3. **Asks one question you actually want answered.** One. Not a questionnaire.
+
+Length: 200–400 words is plenty. A wall of text on day one puts pressure on the reply.
+
+## Keeping it alive past week two
+
+**Answer what they wrote.** Sounds obvious. Most people write their own update and ignore the letter they just received. Quote something they said. React to it.
+
+**Don't match energy exactly.** If their letter is short because they're busy, a warm short reply keeps it going. Punishing them with silence ends it.
+
+**Let gaps be normal.** A reply two weeks later isn't rejection. Say "no rush" and mean it — that single line saves more correspondences than any other.
+
+**Go one layer deeper each time.** Weather → work → what you actually think about your work → what you want instead. If you're on the same layer at letter ten as letter two, it'll fade.
+
+## Safety, briefly
+
+This part is not optional.
+
+- Don't share your full name, address, workplace, or school in early letters.
+- Keep it on the platform until you have a reason to move off it. Platforms have reporting tools; your personal inbox doesn't.
+- Be wary of anyone who moves fast — declarations of deep feeling within a few messages, or any request involving money. This is the single most common scam pattern in pen pal communities, and it looks like romance before it looks like fraud.
+- Video call before you meet, if it ever gets that far.
+
+Some apps build the delay in for you. Lettie, for instance, doesn't unlock contact exchange until you've traded five letters, which removes the awkwardness of saying no to an early request.
+
+## What about the language barrier
+
+You don't need fluent English to have a pen pal, and your pen pal doesn't need it either.
+
+Some apps translate for you. On Lettie every letter translates across 16 languages, and you can read the original alongside the translation — which is how a fair number of people end up learning some of their pen pal's language by accident. HelloTalk takes the opposite approach: native speakers correct your writing directly, which is better if practice is the actual goal.
+
+If you're using a platform without translation, writing in short plain sentences does most of the work. Your pen pal is not grading you.
+
+## Realistic expectations
+
+You'll write to several people before one sticks. That's normal and not a reflection on you — timing, life circumstances, and plain chemistry decide most of it.
+
+One correspondence that lasts a year is the goal. Not twenty that last a week.
+
+Start with one letter today.
+`
+    },
+    'writing-across-languages': {
+        id: 'writing-across-languages',
+        title: '언어가 다른 사람에게 편지 쓰는 법',
+        titleEn: 'How to Write to Someone Who Doesn\'t Speak Your Language',
+        description: '영어가 유창하지 않아도 펜팔은 가능합니다. 번역을 활용하는 법과 오해를 줄이는 글쓰기 요령.',
+        descriptionEn: 'You don\'t need fluent English to have a pen pal abroad. How to use translation well, and how to write so meaning survives the trip.',
+        date: '2026-07-31',
+        readTime: '7분',
+        readTimeEn: '7 min',
+        category: '가이드',
+        categoryEn: 'Guide',
+        image: '/conversation-detail.png',
+        author: 'Lettie',
+        keywords: ['언어 장벽', '번역 펜팔', '영어 못해도 펜팔', '외국인과 소통'],
+        keywordsEn: ['pen pal app with translation', 'write to someone who speaks another language', 'language barrier pen pal', 'penpal without speaking english', 'translated letters', 'learn a language through letters'],
+        content: `
+# 언어가 다른 사람에게 편지 쓰는 법
+
+이 글은 영어권 검색 유입을 위해 영어로 작성되었습니다.
+전문은 [English version](/en/blog/writing-across-languages)에서 읽을 수 있습니다.
+
+영어가 유창하지 않아도 펜팔은 가능합니다. 번역을 활용하는 법과 오해를 줄이는 글쓰기 요령.
+`,
+        contentEn: `
+# How to Write to Someone Who Doesn't Speak Your Language
+
+The most common reason people give up on international pen pals isn't distance or time zones. It's the quiet assumption that they need good English first.
+
+They don't. But writing across languages does take a slightly different approach than writing in your own.
+
+## Write shorter sentences than feels natural
+
+Machine translation handles simple structure well and complex structure badly. One idea per sentence survives the trip. Three clauses stacked with commas usually don't.
+
+Compare:
+
+> Although I had been planning to visit my grandmother in the countryside, which I do every summer since I was young, the trains were fully booked and I ended up staying home, which turned out fine.
+
+versus:
+
+> I usually visit my grandmother every summer. This year the trains were fully booked. I stayed home instead. It turned out fine.
+
+The second one carries the same meaning and arrives intact in any language.
+
+## Avoid what doesn't travel
+
+**Idioms.** "It's raining cats and dogs" becomes nonsense or, worse, literal. Say it's raining hard.
+
+**Sarcasm.** Tone is the first thing lost. If you write "great, another Monday," there's a real chance it lands as enthusiasm.
+
+**Puns and wordplay.** They're built on one language's sounds. They can't cross.
+
+**Heavy slang.** It ages fast and translates badly. Some slang is fine and even fun to explain — just don't build a whole paragraph on it.
+
+## Keep culture-specific things, but explain them
+
+This is the opposite of the advice above, and it matters more.
+
+Don't flatten your letters into generic English. The specific things — a dish your mother makes, a holiday nobody outside your country celebrates, a word that has no equivalent — are the most interesting part of an international correspondence.
+
+Just add one line of context:
+
+> Yesterday was Chuseok, our harvest holiday. Families travel to their hometowns and the highways are jammed for ten hours. My grandmother made songpyeon — small rice cakes shaped like half-moons.
+
+Now it's translatable *and* worth reading.
+
+## Use translation as a tool, not a wall
+
+Most people who write across languages do one of three things:
+
+**Draft in your own language and translate.** Fastest, most natural. Your voice survives because you weren't fighting vocabulary while thinking. The risk is you never see what actually got sent.
+
+**Write directly in their language.** Slower, more errors, and genuinely good practice. Your pen pal will almost certainly find the effort endearing rather than annoying.
+
+**Send both.** Your original and the translation together. This is the most robust option — if the translation garbles something, the original is right there, and over months the person starts recognizing patterns in your language.
+
+That last approach is why some apps show original and translation side by side by default. On Lettie, every letter and reply translates across 16 languages and both versions sit next to each other, so nothing gets hidden behind the machine. A lot of people report picking up their pen pal's language gradually without ever deciding to study it.
+
+## When something lands wrong
+
+It will happen. A sentence arrives colder than you meant, or a joke reads as an insult.
+
+Say so plainly:
+
+> I think my last letter came out wrong. What I meant was…
+
+Almost everyone in an international correspondence has been on both sides of this. Naming it directly resolves it faster than anything else, and it usually deepens the friendship rather than damaging it.
+
+## What you gain
+
+Writing across languages forces a kind of clarity you don't practice otherwise. You say what you mean, once, plainly, because you can't rely on tone to carry it.
+
+People often notice their writing in their own language gets better too.
+
+And the friendship itself tends to be sturdier than you'd expect. When two people keep writing despite the extra effort, both of them are choosing it deliberately every time.
+
+Start with four short sentences. That's enough.
+`
+    },
+    'korean-pen-pals': {
+        id: 'korean-pen-pals',
+        title: '한국인 펜팔 만드는 법: 외국인을 위한 안내',
+        titleEn: 'How to Find a Korean Pen Pal (and Actually Keep the Conversation Going)',
+        description: '한국 친구를 사귀고 싶은 외국인을 위한 안내. 어디서 만나고, 무엇을 이야기하고, 무엇을 조심해야 하는지.',
+        descriptionEn: 'Want a pen pal in Korea? Where to find one, what actually makes a good first letter, and the cultural notes worth knowing.',
+        date: '2026-07-31',
+        readTime: '8분',
+        readTimeEn: '8 min',
+        category: '문화',
+        categoryEn: 'Culture',
+        image: '/brand-screen.png',
+        author: 'Lettie',
+        keywords: ['한국인 펜팔', '외국인 친구', '한국 문화 교류', '한국어 교환'],
+        keywordsEn: ['korean pen pal', 'find korean friends online', 'korean language exchange', 'make friends in korea', 'korean pen pal app', 'learn korean with a pen pal', 'talk to koreans online'],
+        content: `
+# 한국인 펜팔 만드는 법: 외국인을 위한 안내
+
+이 글은 영어권 검색 유입을 위해 영어로 작성되었습니다.
+전문은 [English version](/en/blog/korean-pen-pals)에서 읽을 수 있습니다.
+
+한국 친구를 사귀고 싶은 외국인을 위한 안내. 어디서 만나고, 무엇을 이야기하고, 무엇을 조심해야 하는지.
+`,
+        contentEn: `
+# How to Find a Korean Pen Pal (and Actually Keep the Conversation Going)
+
+Interest in Korea has outrun the number of people who know how to actually talk to Koreans. Plenty of guides tell you to "find a language partner." Fewer tell you why those conversations stall out after a week.
+
+## Where Koreans actually are
+
+**Pen pal apps with Korean user bases.** Lettie was built in Korea and a large share of its users are Korean, which changes the odds considerably compared to a global platform where Koreans are a small slice. Letters translate across 16 languages, so you can write in English and they read Korean — useful, since many Korean users are more comfortable reading their own language even when their English is decent.
+
+**HelloTalk.** Very popular in Korea for language exchange specifically. Expect corrections and study-shaped conversations.
+
+**Language exchange communities.** Discord servers and university exchange programs. Higher effort to get into, but the people there have already committed.
+
+What generally doesn't work: cold-messaging Korean users on Instagram or TikTok. It reads as a pickup attempt regardless of intent.
+
+## What makes a good first letter to a Korean pen pal
+
+**Don't open with K-pop or K-drama alone.** Not because it's a bad interest — it's often a genuine shared one — but because it's the opening every Korean user receives twenty times a week. It signals you're interested in Korea as a product, not in them as a person.
+
+If you do love a group or a show, mention it as one detail among several, not the whole letter.
+
+**Do ask about ordinary life.** What their commute is like. What they eat when they can't be bothered to cook. What they think about the thing everyone in Korea is currently arguing about. Ordinary questions get real answers.
+
+**Be specific about yourself.** Koreans in pen pal apps are often there partly to practice English or learn about life elsewhere. Describing your actual daily routine — the boring parts included — is more useful and more interesting than a list of hobbies.
+
+## Cultural notes that actually matter
+
+**Age comes up early, and it isn't rude.** Korean has different speech levels depending on relative age, so asking someone's age is a practical question about how to address them, not a personal probe. If you're asked, it's not an insult.
+
+**Names.** Family name comes first — in "Kim Minjun," Kim is the family name. Many Korean users will offer an English name to make things easier; using their Korean name if they've given it is usually appreciated.
+
+**Modesty is default.** Compliments are often deflected rather than accepted. "No, no, I'm not good at it" isn't fishing — it's the standard response. Don't read it as low self-esteem.
+
+**Indirect refusals.** "That might be a little difficult" often means no. Pressing after that reads as pushy.
+
+**Reply speed varies wildly.** Korean work and study schedules are demanding. A slow reply is usually a calendar problem, not disinterest.
+
+## The language question
+
+You don't need Korean. Most Korean pen pal users have studied English for years and read it better than they speak it.
+
+But learning even a little changes the tone of the correspondence. Not because they need it — because it signals the exchange goes both ways. Three phrases worth knowing:
+
+- **안녕하세요** (annyeonghaseyo) — hello
+- **감사합니다** (gamsahamnida) — thank you
+- **잘 지내세요?** (jal jinaeseyo?) — how have you been?
+
+If you're using an app that shows the original alongside the translation, you'll start absorbing patterns without studying. Seeing 감사합니다 next to "thank you" fifty times does more than a flashcard deck.
+
+## Keeping it going
+
+The correspondences that last usually find one specific shared thread — cooking, a game, running, a book both of you are working through — rather than staying on "tell me about your country."
+
+Country-level questions run out. A shared interest doesn't.
+
+## One honest caution
+
+Interest in Korea attracts a certain kind of message, and Korean users on these platforms get a lot of it. Approaching someone as a representative of their country — or as an opportunity to practice — tends to end quickly.
+
+Approach them as a person who happens to live somewhere you're curious about. That's the whole difference.
+
+Write four honest paragraphs about your actual life and ask one real question. That works far more often than anything clever.
+`
     },
 };
