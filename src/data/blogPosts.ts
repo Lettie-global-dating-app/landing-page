@@ -5107,4 +5107,409 @@ Most pen pal correspondences are exactly what they appear to be: someone in anot
 Don't send money. Don't share your address early. Everything else is manageable.
 `
     },
+    'what-to-write-to-a-pen-pal': {
+        id: 'what-to-write-to-a-pen-pal',
+        title: '펜팔에게 무엇을 쓸까: 소재 40가지',
+        titleEn: 'What to Write to a Pen Pal: 40 Things That Actually Get a Reply',
+        description: '첫 편지부터 열 번째 편지까지, 실제로 답장을 부르는 소재들.',
+        descriptionEn: 'Stuck on what to say? Concrete prompts for the first letter, the fifth, and the one where you\'ve run out of things to talk about.',
+        date: '2026-08-01',
+        readTime: '9분',
+        readTimeEn: '9 min',
+        category: '가이드',
+        categoryEn: 'Guide',
+        image: '/letter-writing.png',
+        author: 'Lettie',
+        keywords: ['펜팔 소재', '편지 쓸 내용', '펜팔 질문'],
+        keywordsEn: ['what to write to a pen pal', 'pen pal letter ideas', 'pen pal topics', 'questions to ask a pen pal', 'first pen pal letter', 'what to say to a pen pal', 'pen pal conversation starters'],
+        content: `
+# 펜팔에게 무엇을 쓸까: 소재 40가지
+
+이 글은 영어권 검색 유입을 위해 영어로 작성되었습니다.
+전문은 [English version](/en/blog/what-to-write-to-a-pen-pal)에서 읽을 수 있습니다.
+
+첫 편지부터 열 번째 편지까지, 실제로 답장을 부르는 소재들.
+`,
+        contentEn: `
+# What to Write to a Pen Pal: 40 Things That Actually Get a Reply
+
+The blank page problem is real, and it kills more correspondences than anything else. Here's the thing nobody says: **the topic matters less than the specificity.**
+
+"What's your favorite food?" gets you "pizza." Dead end.
+
+"What did you eat for lunch today, and was it any good?" gets you a story about the place around the corner from their office where the owner always adds too much chili.
+
+Same subject. Completely different letter.
+
+## For the first letter
+
+You need enough to answer, not a questionnaire. Pick two or three.
+
+1. What your street looks like right now, out the window
+2. How you got to work or class today — the actual route
+3. Something you're bad at and keep doing anyway
+4. The last thing that made you laugh out loud
+5. What you were like at fifteen, versus now
+6. A small thing in your home that has a story behind it
+7. What you thought you'd be doing at this age
+8. The most ordinary part of your week, described honestly
+
+That last one is underrated. Ordinary life in another country is genuinely interesting to someone who doesn't live it.
+
+## When you want to go deeper (letters 3–8)
+
+9. Something you changed your mind about recently
+10. A decision you're currently avoiding
+11. What your family is like, and what you inherited from them
+12. Something people misread about you
+13. The thing you'd do if money weren't part of the equation
+14. A friendship that ended and why
+15. What you're afraid people will find out
+16. A place you go when you need to think
+17. Something you did that you're quietly proud of
+18. What you believed strongly at twenty that you don't now
+
+Don't fire these off in sequence. One per letter, woven into ordinary news, is the right dose.
+
+## About their country and yours
+
+19. What's the most misunderstood thing about where you live?
+20. What's a normal weekday like there — actually, hour by hour?
+21. What do people your age argue about right now?
+22. What holiday means the most to you, and what do you actually do?
+23. Is there a word in your language with no good translation?
+24. What food do foreigners get wrong about your country?
+25. What's taught in school there about my country?
+
+That last one produces surprising conversations, in both directions.
+
+## When you've run out of things to say
+
+This happens around letter eight or nine and it's normal, not a sign the friendship is over.
+
+26. Send a photo of something mundane and describe it
+27. Ask them to recommend one song, and actually listen, then react in detail
+28. Describe your day in strict chronological order, nothing skipped
+29. Ask what they'd show you if you visited for 24 hours
+30. Tell them about a dream you had
+31. Ask what they were doing exactly one year ago
+32. Pick a news story from their country and ask what people there actually think
+33. Ask them to teach you five words worth knowing
+
+## Prompts that reliably produce good letters
+
+34. "What's something you've never told a friend in person but would write down?"
+35. "What did you want to be when you were eight?"
+36. "What's the last thing you bought that turned out to be worth it?"
+37. "What do you do when you can't sleep?"
+38. "What's a habit you picked up from someone else?"
+39. "Which version of yourself would surprise the current one most?"
+40. "What are you looking forward to that's small?"
+
+## What not to do
+
+**Don't send a list of questions.** Ten questions in one letter reads as an interview and produces one-line answers to each. One good question, answered thoroughly, is worth more.
+
+**Don't only ask.** Answer your own question first. It shows what depth you're inviting, and it gives them something to react to.
+
+**Don't apologize for length or delay.** "Sorry this is so long" makes them feel obliged to read carefully. "Sorry for the slow reply" makes slowness feel like a problem when it usually isn't.
+
+**Don't skip what they wrote.** The single most common failure: writing your own update and not responding to theirs. Quote a line. React to it. That alone puts you ahead of most correspondents.
+
+## If you're writing across languages
+
+Keep sentences short and one idea each — machine translation preserves that structure and mangles long clause-stacks. Keep the culturally specific details, but add a line of context so they land.
+
+If your app shows the original beside the translation — Lettie does this across 16 languages — you can be a bit more natural, since anything the machine garbles is still visible in your own words.
+
+## The actual rule
+
+Write the letter you'd want to receive. Specific, a little unguarded, and clearly addressed to *them* rather than to anyone who might be reading.
+
+That's the whole method. The forty prompts are just scaffolding until it's a habit.
+`
+    },
+    'japanese-pen-pals': {
+        id: 'japanese-pen-pals',
+        title: '일본인 펜팔 만드는 법',
+        titleEn: 'How to Find a Japanese Pen Pal (Without Being the Person They Ignore)',
+        description: '일본 친구를 사귀고 싶다면. 어디서 만나고, 무엇을 조심해야 하는지.',
+        descriptionEn: 'Where Japanese users actually are, what makes a first letter get answered, and the cultural notes that matter in practice.',
+        date: '2026-08-01',
+        readTime: '8분',
+        readTimeEn: '8 min',
+        category: '문화',
+        categoryEn: 'Culture',
+        image: '/brand-screen.png',
+        author: 'Lettie',
+        keywords: ['일본인 펜팔', '일본 친구', '일본어 교환'],
+        keywordsEn: ['japanese pen pal', 'find japanese friends online', 'japanese language exchange', 'make friends in japan', 'japanese pen pal app', 'learn japanese with a pen pal', 'talk to japanese people online'],
+        content: `
+# 일본인 펜팔 만드는 법
+
+이 글은 영어권 검색 유입을 위해 영어로 작성되었습니다.
+전문은 [English version](/en/blog/japanese-pen-pals)에서 읽을 수 있습니다.
+
+일본 친구를 사귀고 싶다면. 어디서 만나고, 무엇을 조심해야 하는지.
+`,
+        contentEn: `
+# How to Find a Japanese Pen Pal (Without Being the Person They Ignore)
+
+Japan has one of the strongest letter-writing cultures still alive — 文通 (buntsū) has a long history, and seasonal greeting cards are a genuine institution. That's good news if you want a Japanese pen pal.
+
+The bad news is that Japanese users on language and pen pal platforms receive a very high volume of near-identical first messages, and most go unanswered.
+
+Here's how not to be one of them.
+
+## Where Japanese users actually are
+
+**HelloTalk and Tandem.** The largest Japanese presence for language exchange specifically. Expect corrections and study-shaped conversation.
+
+**Pen pal apps.** Slowly and Lettie both have Japanese users. If you don't speak Japanese and they don't speak much English, the translation matters — on Lettie every letter translates across 16 languages with the original shown alongside, which removes the usual bottleneck where both people give up after two stilted exchanges.
+
+**Interest communities.** Hobby forums, game communities, Discord servers around specific interests. Slower to break into, but the people there already share something with you.
+
+What doesn't work: cold-messaging on Instagram or X. It reads as a pickup attempt no matter how it's phrased.
+
+## What makes a first letter get answered
+
+**Don't lead with anime, manga, or "I love Japan."** These aren't bad interests — they're just the opening in the overwhelming majority of messages Japanese users receive. It signals interest in Japan as a concept rather than in them as a person.
+
+If anime is genuinely your thing, mention one specific work and something specific you thought about it, as one detail among several.
+
+**Do write about your ordinary life.** What your commute is like. What you cooked badly this week. What's annoying about your job. Japanese users on these platforms are often curious about daily life elsewhere, and ordinary detail is more interesting than enthusiasm about their country.
+
+**Do ask something answerable.** "What's Japan like?" is unanswerable. "What's the food at your office cafeteria like?" gets a real answer.
+
+## Cultural notes that matter in practice
+
+**Indirect refusal is standard.** ちょっと難しいです ("that's a little difficult") usually means no. Pressing after it reads as not listening.
+
+**Modesty is the default register.** Compliments get deflected — いえいえ, そんなことないです. It isn't low confidence, it's the expected response. Don't push back hard.
+
+**Names.** Family name comes first. Adding さん to someone's name is the safe default; dropping it too early can feel abrupt.
+
+**Reply speed varies a lot.** Japanese work hours are long. A three-week gap is usually a schedule, not a verdict.
+
+**Directness lands differently.** Blunt questions about salary, relationships, or politics early on tend to close things down rather than open them.
+
+## The language question
+
+You don't need Japanese. Many Japanese users are on these platforms partly to practice English and read it better than they speak it.
+
+But even a little goes a long way, because it signals the exchange runs both directions:
+
+- **はじめまして** (hajimemashite) — nice to meet you, for a first letter
+- **ありがとうございます** (arigatō gozaimasu) — thank you
+- **よろしくお願いします** (yoroshiku onegaishimasu) — hard to translate; roughly "I look forward to this." Ends a first letter well.
+
+Writing your letter in English and letting it translate is completely normal. If your app shows the original alongside the translation, you'll also start absorbing patterns — seeing よろしくお願いします in context fifty times teaches you more than a definition does.
+
+## Seasonal letters are a real thing
+
+If the correspondence lasts, this is worth knowing. Japanese letter culture has strong seasonal conventions — 年賀状 (New Year cards) and 暑中見舞い (midsummer greetings) especially.
+
+You don't have to follow the formal templates. But sending a short New Year note, or simply mentioning the season in your opening line, reads as genuine attentiveness rather than performance.
+
+## One honest caution
+
+Interest in Japan attracts a certain kind of approach, and Japanese users on these platforms have seen all of it. The people who get long-term correspondences are the ones who write like they're talking to a person who happens to live in Japan — not to Japan itself.
+
+Write four honest paragraphs about your actual week. Ask one real question. That's more effective than anything clever.
+`
+    },
+    'apps-to-make-friends-online': {
+        id: 'apps-to-make-friends-online',
+        title: '온라인에서 친구 사귀는 앱 (2026)',
+        titleEn: 'Apps to Make Friends Online in 2026 (Not Dating Apps)',
+        description: '연애 목적이 아닌, 진짜 친구를 찾는 앱들을 비교합니다.',
+        descriptionEn: 'You want friends, not dates. Here\'s what each of the main options is actually built for, and which one fits how you want to talk.',
+        date: '2026-08-01',
+        readTime: '8분',
+        readTimeEn: '8 min',
+        category: '가이드',
+        categoryEn: 'Guide',
+        image: '/letter-feed.png',
+        author: 'Lettie',
+        keywords: ['온라인 친구', '친구 사귀는 앱', '외국인 친구 앱'],
+        keywordsEn: ['apps to make friends online', 'best apps to make friends', 'make friends online 2026', 'friendship app not dating', 'apps to meet people worldwide', 'online friends app', 'how to make friends as an adult'],
+        content: `
+# 온라인에서 친구 사귀는 앱 (2026)
+
+이 글은 영어권 검색 유입을 위해 영어로 작성되었습니다.
+전문은 [English version](/en/blog/apps-to-make-friends-online)에서 읽을 수 있습니다.
+
+연애 목적이 아닌, 진짜 친구를 찾는 앱들을 비교합니다.
+`,
+        contentEn: `
+# Apps to Make Friends Online in 2026 (Not Dating Apps)
+
+Making friends as an adult is structurally hard. School and university handed you repeated unplanned contact with the same people, which is the actual mechanism friendships form through. Work sometimes replicates it. Once neither applies, you have to manufacture it.
+
+Apps can help, but most "friendship" apps are dating apps with the romance filed off. Here's what each option is genuinely built for.
+
+## If you want to talk in depth, slowly
+
+**Pen pal apps** — Slowly, Lettie, InterPals.
+
+These optimize for length and thought rather than immediacy. You write something substantial, they reply when they can. It suits people who express themselves better in writing than in conversation, and people whose schedules make live chat impractical.
+
+Slowly adds delivery delay based on real distance. Lettie translates across 16 languages with the original shown beside the translation, which matters if you want friends outside your language. InterPals has the largest pool but the least moderation.
+
+**Not for you if** you want someone to talk to tonight.
+
+## If you want live conversation
+
+**Discord.** Still the most reliable place to find people through a shared interest. The key is joining a server about something specific you actually do, not a generic "make friends" server — those are mostly people waiting to be approached.
+
+**Bumble BFF.** Local, profile-based, works in cities. Success rate depends heavily on population density.
+
+**Not for you if** you find the pace of live chat draining.
+
+## If your goal is language practice
+
+**HelloTalk, Tandem.** Structured around correction and exchange. Friendship happens sometimes, but the scaffolding is study.
+
+## If you want something physical
+
+**Postcrossing.** You send a postcard to a randomly assigned member and receive one from someone else. Not correspondence — but a surprisingly warm low-commitment ritual.
+
+## What actually determines whether it works
+
+The app matters less than three habits.
+
+**Be specific about yourself.** Every generic profile competes with every other generic profile. "I like music and travel" is invisible. "I'm relearning piano at 29 and losing to a Chopin nocturne" is a conversation.
+
+**Answer what they said.** The most common failure across every platform is people writing their own update and ignoring what they just received. Quote a line. React to it.
+
+**Let it be slow.** Adult friendships form over months of low-intensity contact, not in one great conversation. Expecting instant closeness is how people conclude the apps don't work.
+
+## A realistic comparison
+
+| What you want | Where to look |
+|---|---|
+| Long, thoughtful exchanges | Slowly, Lettie |
+| Friends outside your language | Lettie, HelloTalk |
+| Live conversation about a shared hobby | Discord |
+| Someone to meet in person locally | Bumble BFF |
+| Deliberate language practice | HelloTalk, Tandem |
+| Low commitment, something in the mail | Postcrossing |
+
+## The uncomfortable part
+
+Most people download three apps, send a handful of low-effort messages, get low-effort replies, and conclude that online friendship doesn't work.
+
+What actually works is picking one, writing one genuinely thoughtful first message, and then — the hard part — replying consistently for two months to someone you don't yet feel close to. Closeness is the output of that process, not the entry requirement.
+
+That's not an app feature. But choosing an app whose format matches how you naturally communicate makes the two months much more likely to happen.
+`
+    },
+    'keep-a-pen-pal-conversation-going': {
+        id: 'keep-a-pen-pal-conversation-going',
+        title: '펜팔 대화가 끊기지 않게 하는 법',
+        titleEn: 'How to Keep a Pen Pal Conversation Going Past the Third Letter',
+        description: '대부분의 펜팔은 세 번째 편지에서 끝납니다. 왜 그런지, 어떻게 넘기는지.',
+        descriptionEn: 'Most pen pal exchanges die around letter three. Here\'s the specific reason, and what to do differently.',
+        date: '2026-08-01',
+        readTime: '7분',
+        readTimeEn: '7 min',
+        category: '가이드',
+        categoryEn: 'Guide',
+        image: '/conversation-detail.png',
+        author: 'Lettie',
+        keywords: ['펜팔 대화', '편지 이어가기', '펜팔 유지'],
+        keywordsEn: ['keep a pen pal conversation going', 'pen pal stopped replying', 'how to reply to a pen pal', 'pen pal running out of things to say', 'long term pen pal', 'maintain online friendship'],
+        content: `
+# 펜팔 대화가 끊기지 않게 하는 법
+
+이 글은 영어권 검색 유입을 위해 영어로 작성되었습니다.
+전문은 [English version](/en/blog/keep-a-pen-pal-conversation-going)에서 읽을 수 있습니다.
+
+대부분의 펜팔은 세 번째 편지에서 끝납니다. 왜 그런지, 어떻게 넘기는지.
+`,
+        contentEn: `
+# How to Keep a Pen Pal Conversation Going Past the Third Letter
+
+There's a specific place where pen pal correspondences die, and it's remarkably consistent: **letter three**.
+
+Letter one is introductions. Letter two is the reciprocal introduction. Letter three is where you have to find an actual reason to keep writing — and if both people are still exchanging biographical facts, there isn't one.
+
+## Why letter three is the wall
+
+The first two letters run on novelty. Where you live, what you do, what you like. That material is finite.
+
+By letter three you've covered the basics and neither person has established what the correspondence is *about*. So it becomes an obligation with no subject, and one of you quietly stops.
+
+The fix isn't more interesting facts. It's changing what kind of thing you're exchanging.
+
+## Move from facts to thinking
+
+Facts: "I work as a nurse. I've been doing it six years."
+
+Thinking: "I've been a nurse six years and I still can't tell whether I'm good at it or just used to it. Last week something happened that made me wonder if I should have stopped at three."
+
+The second one invites a real response. It also gives them permission to be less polished, which is what most people are waiting for.
+
+You don't need to be dramatic. Uncertainty about ordinary things works fine — a decision you're avoiding, an opinion you've changed, something you're bad at.
+
+## Actually respond to their letter
+
+This is the single most common failure, and it's invisible to the person doing it.
+
+Most people write their own update and treat the received letter as a prompt rather than something to answer. The other person notices. It feels like talking into a room where nobody looks up.
+
+Concretely:
+- Quote a line from their letter and react to it
+- Ask a follow-up about something they mentioned in passing
+- Reference something from two letters ago — this signals you're keeping track of them as a person
+
+That last one carries disproportionate weight.
+
+## Find the thread
+
+Correspondences that last usually settle on something specific that belongs to the two of you. Cooking. A game. Running. A book you're both slowly working through. The city one of you is thinking of moving to.
+
+"Tell me about your country" runs out. A shared thread doesn't, because it generates new material by itself.
+
+You don't have to plan this. Just notice when something gets an unusually alive response from both sides, and go back to it.
+
+## Handle the gaps correctly
+
+Someone takes three weeks to reply. Two things people do wrong here:
+
+**Punishing them with silence.** Waiting three weeks back to make a point ends the correspondence quietly.
+
+**Apologizing excessively.** "I'm so sorry for the delay, I've been terrible" makes slowness a moral failure and raises the stakes for both of you.
+
+The line that saves more correspondences than any other is some version of: *"No rush — reply whenever it suits you."* And then meaning it.
+
+Letters aren't messages. A two-week gap is normal and should feel normal.
+
+## Match depth, roughly
+
+If they wrote three paragraphs and you send three lines, they'll calibrate down next time. If they wrote three lines because they're overwhelmed and you send two pages, that's pressure.
+
+Roughly matching what they gave you keeps it comfortable. Slightly exceeding it, occasionally, is how depth increases without either person deciding to.
+
+## When it's genuinely fading
+
+Sometimes it's just over, and that's not a failure. Timing, life, chemistry.
+
+One honest line is better than trailing off: *"I've loved these letters — life's swallowed me lately, but I'll write properly when it settles."* Many correspondences restart from exactly that message months later.
+
+And if someone stops replying to you, don't over-read it. People get busy, apps get deleted, life happens. It's rarely about the last letter you sent.
+
+## If language is part of the friction
+
+Writing across languages adds effort to every exchange, which makes the letter-three wall arrive faster.
+
+Short sentences, one idea each, survive translation intact. Long clause-stacked ones don't. And if your app shows the original next to the translation — Lettie does this across 16 languages — misfires stay visible instead of silently changing your meaning, which prevents the slow accumulation of small misunderstandings that ends a lot of cross-language friendships.
+
+## The short version
+
+Say something uncertain. Answer what they wrote. Find the thread. Let gaps be normal.
+
+Get past letter three and the correspondence usually finds its own momentum.
+`
+    },
 };
