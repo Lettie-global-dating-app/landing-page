@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { ArrowLeft, Heart, Users, Sparkles, MessageSquare, CheckCircle } from 'lucide-react';
 import { Metadata } from 'next';
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   keywords: ['펜팔 우정', '펜팔 관계', '친구 만들기', '신뢰 구축', '장기 펜팔'],
   alternates: {
     canonical: 'https://lettie-dating.com/guide/building-friendship',
+    languages: koEnAlternates('/guide/building-friendship'),
   },
 };
 

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { Mail, Globe, Shield, Heart, Star, Download, Check } from 'lucide-react';
 import { Metadata } from 'next';
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   keywords: ['펜팔앱', '펜팔 앱', '펜팔 어플', '편지 앱', '글로벌 펜팔앱', '무료 펜팔앱', '안전한 펜팔앱', '펜팔앱 추천'],
   alternates: {
     canonical: 'https://lettie-dating.com/penpal-app',
+    languages: koEnAlternates('/penpal-app'),
   },
 };
 

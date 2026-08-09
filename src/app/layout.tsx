@@ -93,13 +93,6 @@ export const metadata: Metadata = {
     },
   },
 
-  // Verification
-  verification: {
-    google: "google-site-verification-code", // 실제 코드로 교체 필요
-    // yandex: "yandex-verification-code",
-    // yahoo: "yahoo-site-verification-code",
-  },
-
   // Robots
   robots: {
     index: true,
@@ -123,13 +116,6 @@ export const metadata: Metadata = {
     ],
     apple: [
       { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
-    ],
-    other: [
-      {
-        rel: "mask-icon",
-        url: "/safari-pinned-tab.svg",
-        color: "#4f46e5",
-      },
     ],
   },
 
@@ -190,11 +176,6 @@ export default function RootLayout({
               "publisher": {
                 "@type": "Organization",
                 "name": "Lettie"
-              },
-              "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://lettie-dating.com/search?q={search_term_string}",
-                "query-input": "required name=search_term_string"
               },
               "inLanguage": ["ko", "en"]
             })

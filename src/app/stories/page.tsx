@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { Star, Heart, Quote, Globe, Users, ArrowRight } from 'lucide-react';
 import { Metadata } from 'next';
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   keywords: ['펜팔 후기', 'Lettie 사용후기', '펜팔 성공 스토리', '글로벌 친구 이야기', '편지 친구 후기'],
   alternates: {
     canonical: 'https://lettie-dating.com/stories',
+    languages: koEnAlternates('/stories'),
   },
 };
 

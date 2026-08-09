@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { blogPosts } from '@/data/blogPosts';
+import { koEnAlternates } from '@/i18n/config';
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -32,9 +33,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'article',
       publishedTime: post.date,
       authors: [post.author],
+      url: `https://lettie-dating.com/blog/${slug}`,
+      siteName: 'Lettie',
+      // 페이지 openGraph 는 레이아웃 것을 통째로 대체하므로 이미지를 직접 넣어야 한다.
+      images: [{ url: 'https://lettie-dating.com/lettie-og-image.png', width: 1200, height: 630 }],
     },
     alternates: {
       canonical: `https://lettie-dating.com/blog/${slug}`,
+      languages: koEnAlternates(`/blog/${slug}`),
     },
   };
 }

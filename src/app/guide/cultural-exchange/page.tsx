@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { ArrowLeft, Globe, Heart, Users, Calendar, CheckCircle } from 'lucide-react';
 import { Metadata } from 'next';
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   keywords: ['문화 교류', '글로벌 문화', '펜팔 문화', '세계 문화', '국제 교류'],
   alternates: {
     canonical: 'https://lettie-dating.com/guide/cultural-exchange',
+    languages: koEnAlternates('/guide/cultural-exchange'),
   },
 };
 

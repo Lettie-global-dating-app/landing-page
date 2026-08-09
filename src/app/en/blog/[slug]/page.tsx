@@ -6,7 +6,7 @@ import { notFound } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { blogPosts } from '@/data/blogPosts';
-
+import { koEnAlternates } from '@/i18n/config';
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -33,9 +33,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'article',
       publishedTime: post.date,
       authors: [post.author],
+      url: `https://lettie-dating.com/en/blog/${slug}`,
+      siteName: 'Lettie',
+      // 페이지 openGraph 는 레이아웃 것을 대체하고, /en 은 metadataBase 가 .../en 이라
+      // 상대 경로가 404 로 해석된다. 반드시 절대 URL 로 넣는다.
+      images: [{ url: 'https://lettie-dating.com/lettie-og-image.png', width: 1200, height: 630 }],
     },
     alternates: {
       canonical: `https://lettie-dating.com/en/blog/${slug}`,
+      languages: koEnAlternates(`/blog/${slug}`),
     },
   };
 }

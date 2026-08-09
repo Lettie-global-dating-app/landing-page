@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { BookOpen, Globe, Heart, Shield, Users, Mail, ArrowRight, Languages, Sparkles, Download } from 'lucide-react';
 import { Metadata } from 'next';
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   keywords: ['펜팔 가이드', '편지 작성법', '글로벌 친구 만들기', '언어 교환', '문화 교류', '펜팔 에티켓', '국제 친구'],
   alternates: {
     canonical: 'https://lettie-dating.com/guide',
+    languages: koEnAlternates('/guide'),
   },
 };
 

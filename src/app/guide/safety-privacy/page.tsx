@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { ArrowLeft, Shield, Lock, AlertTriangle, Eye, CheckCircle } from 'lucide-react';
 import { Metadata } from 'next';
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   keywords: ['펜팔 안전', '개인정보 보호', '온라인 안전', '펜팔 프라이버시', '안전한 소통'],
   alternates: {
     canonical: 'https://lettie-dating.com/guide/safety-privacy',
+    languages: koEnAlternates('/guide/safety-privacy'),
   },
 };
 

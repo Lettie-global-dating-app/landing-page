@@ -1,10 +1,12 @@
 import Link from 'next/link';
+import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { Calendar, Clock, ArrowRight, Mail, Feather, Globe } from 'lucide-react';
 
 export const metadata = {
   alternates: {
     canonical: 'https://lettie-dating.com/en/blog',
+    languages: koEnAlternates('/blog'),
   },
 };
 

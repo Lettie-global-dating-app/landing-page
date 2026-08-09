@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { ArrowLeft, BookOpen, PenTool, Heart, Sparkles, CheckCircle } from 'lucide-react';
 import { Metadata } from 'next';
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   keywords: ['편지 작성법', '펜팔 편지', '편지 쓰기', '감정 표현', '스토리텔링'],
   alternates: {
     canonical: 'https://lettie-dating.com/guide/writing-tips',
+    languages: koEnAlternates('/guide/writing-tips'),
   },
 };
 

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { ArrowLeft, Shield } from 'lucide-react';
 import { Metadata } from 'next';
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   keywords: ['pen pal safety', 'online privacy', 'safe correspondence', 'pen pal security'],
   alternates: {
     canonical: 'https://lettie-dating.com/en/guide/safety-privacy',
+    languages: koEnAlternates('/guide/safety-privacy'),
   },
 };
 

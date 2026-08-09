@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { ArrowLeft, Heart } from 'lucide-react';
 import { Metadata } from 'next';
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   keywords: ['building friendship', 'pen pal relationships', 'lasting friendships', 'pen pal bonds'],
   alternates: {
     canonical: 'https://lettie-dating.com/en/guide/building-friendship',
+    languages: koEnAlternates('/guide/building-friendship'),
   },
 };
 

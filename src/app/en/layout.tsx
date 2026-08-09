@@ -89,9 +89,6 @@ export const metadata: Metadata = {
       url: "https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe",
     },
   },
-  verification: {
-    google: "google-site-verification-code",
-  },
   robots: {
     index: true,
     follow: true,
@@ -112,13 +109,6 @@ export const metadata: Metadata = {
     ],
     apple: [
       { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
-    ],
-    other: [
-      {
-        rel: "mask-icon",
-        url: "/safari-pinned-tab.svg",
-        color: "#4f46e5",
-      },
     ],
   },
   manifest: "/site.webmanifest",

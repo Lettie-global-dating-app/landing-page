@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { Calendar, Clock, ArrowRight, Mail, Feather, Globe } from 'lucide-react';
 import MobileMenu from '@/components/MobileMenu';
@@ -6,6 +7,7 @@ import MobileMenu from '@/components/MobileMenu';
 export const metadata = {
   alternates: {
     canonical: 'https://lettie-dating.com/blog',
+    languages: koEnAlternates('/blog'),
   },
 };
 

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { Star, Heart, Quote, Globe, Users, ArrowRight } from 'lucide-react';
 import { Metadata } from 'next';
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   keywords: ['pen pal reviews', 'Lettie reviews', 'pen pal success stories', 'global friends stories', 'letter friend reviews'],
   alternates: {
     canonical: 'https://lettie-dating.com/en/stories',
+    languages: koEnAlternates('/stories'),
   },
 };
 

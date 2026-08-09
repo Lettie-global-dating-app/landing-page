@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { ArrowLeft, Languages, BookOpen, MessageCircle, Target, CheckCircle } from 'lucide-react';
 import { Metadata } from 'next';
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   keywords: ['언어 학습', '언어 교환', '외국어 공부', '펜팔 언어', '언어 교환 파트너'],
   alternates: {
     canonical: 'https://lettie-dating.com/guide/language-learning',
+    languages: koEnAlternates('/guide/language-learning'),
   },
 };
 

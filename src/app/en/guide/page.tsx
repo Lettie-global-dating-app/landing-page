@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { BookOpen, Globe, Heart, Shield, Users, Mail, ArrowRight, Languages, Sparkles, Download } from 'lucide-react';
 import { Metadata } from 'next';
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   keywords: ['pen pal guide', 'letter writing', 'making global friends', 'language exchange', 'cultural exchange', 'pen pal etiquette', 'international friends'],
   alternates: {
     canonical: 'https://lettie-dating.com/en/guide',
+    languages: koEnAlternates('/guide'),
   },
 };
 

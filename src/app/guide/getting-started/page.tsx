@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { ArrowLeft, Mail, User, Heart, Shield, CheckCircle } from 'lucide-react';
 import { Metadata } from 'next';
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   keywords: ['펜팔 시작', '첫 편지', '펜팔 프로필', '펜팔 에티켓', 'Lettie 사용법'],
   alternates: {
     canonical: 'https://lettie-dating.com/guide/getting-started',
+    languages: koEnAlternates('/guide/getting-started'),
   },
 };
 

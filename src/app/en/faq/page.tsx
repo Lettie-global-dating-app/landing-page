@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { ChevronDown, HelpCircle, Mail, Shield, Globe, Users } from 'lucide-react';
 import { Metadata } from 'next';
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   keywords: ['Lettie FAQ', 'pen pal app guide', 'letter app questions', 'pen pal help', 'Lettie support'],
   alternates: {
     canonical: 'https://lettie-dating.com/en/faq',
+    languages: koEnAlternates('/faq'),
   },
 };
 

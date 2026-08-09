@@ -47,6 +47,22 @@ export function urlFor(locale: string, path = ''): string {
 export function languageAlternates(path = ''): Record<string, string> {
   const map: Record<string, string> = { [ROOT_LOCALE]: urlFor(ROOT_LOCALE, path) };
   for (const l of LOCALES) map[l] = urlFor(l, path);
-  map['x-default'] = urlFor(ROOT_LOCALE, path);
+  // 검색 유입의 주력이 영어권이라 언어 불일치 방문자는 영어로 보낸다.
+  map['x-default'] = urlFor('en', path);
   return map;
+}
+
+/**
+ * 한국어(루트)와 영어(/en) 두 벌만 존재하는 하위 경로의 hreflang.
+ * 페이지에서 alternates 를 정의하면 레이아웃의 languages 가 통째로 사라지므로,
+ * canonical 을 가진 모든 페이지는 이 함수로 languages 도 함께 넣어야 한다.
+ * 없는 언어 URL 을 가리키면 404 를 제출하는 셈이라 실존하는 두 경로만 잇는다.
+ */
+export function koEnAlternates(path = ''): Record<string, string> {
+  const suffix = path.startsWith('/') ? path : path ? `/${path}` : '';
+  return {
+    ko: `${SITE_URL}${suffix}`,
+    en: `${SITE_URL}/en${suffix}`,
+    'x-default': `${SITE_URL}/en${suffix}`,
+  };
 }

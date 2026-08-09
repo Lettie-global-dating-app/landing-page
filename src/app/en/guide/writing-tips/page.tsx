@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { ArrowLeft, BookOpen } from 'lucide-react';
 import { Metadata } from 'next';
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   keywords: ['letter writing', 'pen pal tips', 'writing guide', 'letter composition', 'storytelling'],
   alternates: {
     canonical: 'https://lettie-dating.com/en/guide/writing-tips',
+    languages: koEnAlternates('/guide/writing-tips'),
   },
 };
 
