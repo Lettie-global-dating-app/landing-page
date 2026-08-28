@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { koEnAlternates } from '@/i18n/config';
+import { faqAlternates } from '@/data/localizedFaq';
 import Image from 'next/image';
 import { ChevronDown, HelpCircle, Mail, Shield, Globe, Users } from 'lucide-react';
 import { Metadata } from 'next';
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   keywords: ['Lettie FAQ', '펜팔 앱 사용법', '편지 앱 질문', '펜팔 가이드', 'Lettie 도움말'],
   alternates: {
     canonical: 'https://lettie-dating.com/faq',
-    languages: koEnAlternates('/faq'),
+    languages: faqAlternates(),
   },
 };
 

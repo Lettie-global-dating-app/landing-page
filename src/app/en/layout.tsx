@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { languageAlternates } from "@/i18n/config";
+import { siteGraph } from "@/lib/schema";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import LanguageSwitcher from "../components/LanguageSwitcher";
@@ -136,103 +137,15 @@ export default function RootLayout({
             __html: `document.documentElement.lang='en';`,
           }}
         />
-        {/* JSON-LD - Organization */}
+        {/* 사이트 전역 구조화 데이터.
+            Organization·WebSite·MobileApplication 을 하나의 @graph 로 묶고
+            @id 로 상호 참조한다. 페이지마다 조직을 새로 선언하면
+            검색엔진과 LLM 안에서 엔티티가 분열되기 때문이다. */}
         <script
           type="application/ld+json"
-          suppressHydrationWarning
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Lettie",
-              "alternateName": "Lettie Penpal App",
-              "url": "https://lettie-dating.com/en",
-              "logo": "https://lettie-dating.com/lettie-icon.png",
-              "description": "Global penpal dating app connecting friends worldwide through letters",
-              "foundingDate": "2024",
-              "sameAs": [
-                "https://apps.apple.com/app/id6746454876",
-                "https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe"
-              ],
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "contactType": "Customer Service",
-                "email": "ggprgrkjh@naver.com",
-                "availableLanguage": ["Korean", "English"]
-              }
-            })
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteGraph('en')) }}
         />
 
-        {/* JSON-LD - WebSite */}
-        <script
-          type="application/ld+json"
-          suppressHydrationWarning
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              "name": "Lettie",
-              "url": "https://lettie-dating.com/en",
-              "description": "Connect with global friends through penpal and letter. Build genuine relationships worldwide.",
-              "publisher": {
-                "@type": "Organization",
-                "name": "Lettie"
-              },
-              "inLanguage": ["en", "ko"]
-            })
-          }}
-        />
-
-        {/* JSON-LD - MobileApplication */}
-        <script
-          type="application/ld+json"
-          suppressHydrationWarning
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "MobileApplication",
-              "name": "Lettie - Penpal, Letter Global Dating App",
-              "applicationCategory": "SocialNetworkingApplication",
-              "operatingSystem": ["iOS", "Android"],
-              "description": "Connect with global friends through penpal and letter. Lettie is a global penpal dating app for building genuine relationships.",
-              "url": "https://lettie-dating.com/en",
-              "downloadUrl": "https://apps.apple.com/app/id6746454876",
-              "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "USD",
-                "category": "Free"
-              },
-              "author": {
-                "@type": "Organization",
-                "name": "Lettie Team"
-              },
-              "publisher": {
-                "@type": "Organization",
-                "name": "Lettie",
-                "logo": {
-                  "@type": "ImageObject",
-                  "url": "https://lettie-dating.com/lettie-icon.png"
-                }
-              },
-              "screenshot": [
-                "https://lettie-dating.com/letter-writing.png",
-                "https://lettie-dating.com/conversation-detail.png",
-                "https://lettie-dating.com/contact-exchange.png",
-                "https://lettie-dating.com/letter-feed.png",
-                "https://lettie-dating.com/brand-screen.png"
-              ],
-              "featureList": [
-                "Exchange letters with global friends",
-                "Global penpal system",
-                "Privacy protection system",
-                "Contact exchange after 5 letters",
-                "Multi-country support"
-              ]
-            })
-          }}
-        />
         {/* Extra SEO meta tags */}
         <meta name="theme-color" content="#4f46e5" />
         <meta name="msapplication-TileColor" content="#4f46e5" />

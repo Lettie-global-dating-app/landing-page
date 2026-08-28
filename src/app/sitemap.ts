@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import { blogPosts } from '@/data/blogPosts';
 import { LOCALES } from '@/i18n/config';
 import { localizedPosts } from '@/data/localizedPosts';
+import { FAQ_LOCALES } from '@/data/localizedFaq';
 
 // 영어는 위 STATIC_PATHS 에서 이미 다루므로 제외한다.
 const NEW_LOCALES = LOCALES.filter((l) => l !== 'en');
@@ -74,5 +75,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       })),
   );
 
-  return [...staticRoutes, ...localeHomes, ...blogRoutes, ...localizedRoutes];
+  // 언어별 FAQ. 번역이 실제로 있는 언어만 — 없는 언어를 넣으면 404 를 제출하는 셈이다.
+  const localeFaqs = FAQ_LOCALES.map((locale) => ({
+    url: `${baseUrl}/${locale}/faq`,
+    lastModified: today,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }));
+
+  return [...staticRoutes, ...localeHomes, ...localeFaqs, ...blogRoutes, ...localizedRoutes];
 }

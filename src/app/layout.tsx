@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { languageAlternates } from "@/i18n/config";
+import { siteGraph } from "@/lib/schema";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import LanguageSwitcher from "./components/LanguageSwitcher";
@@ -137,98 +138,13 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-        {/* JSON-LD 구조화된 데이터 - Organization */}
+        {/* 사이트 전역 구조화 데이터.
+            Organization·WebSite·MobileApplication 을 하나의 @graph 로 묶고
+            @id 로 상호 참조한다. 페이지마다 조직을 새로 선언하면
+            검색엔진과 LLM 안에서 엔티티가 분열되기 때문이다. */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Lettie",
-              "alternateName": "레티",
-              "url": "https://lettie-dating.com",
-              "logo": "https://lettie-dating.com/lettie-icon.png",
-              "description": "전 세계 친구들과 편지로 소통하는 글로벌 펜팔 데이팅앱",
-              "foundingDate": "2024",
-              "sameAs": [
-                "https://apps.apple.com/kr/app/%EB%A0%88%ED%8B%B0/id6746454876",
-                "https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe"
-              ],
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "contactType": "Customer Service",
-                "availableLanguage": ["Korean", "English"]
-              }
-            })
-          }}
-        />
-
-        {/* JSON-LD 구조화된 데이터 - WebSite */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              "name": "Lettie",
-              "url": "https://lettie-dating.com",
-              "description": "편지와 펜팔을 통해 전 세계 친구들과 소통하는 글로벌 펜팔 데이팅앱",
-              "publisher": {
-                "@type": "Organization",
-                "name": "Lettie"
-              },
-              "inLanguage": ["ko", "en"]
-            })
-          }}
-        />
-
-        {/* JSON-LD 구조화된 데이터 - MobileApplication */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "MobileApplication",
-              "name": "Lettie - 편지, 펜팔 글로벌 데이팅앱",
-              "applicationCategory": "SocialNetworkingApplication",
-              "operatingSystem": ["iOS", "Android"],
-              "description": "편지와 펜팔을 통해 전 세계 친구들과 소통하세요. Lettie는 진실한 관계를 만들어가는 글로벌 펜팔 데이팅앱입니다.",
-              "url": "https://lettie-dating.com",
-              "downloadUrl": "https://apps.apple.com/kr/app/%EB%A0%88%ED%8B%B0/id6746454876",
-              "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "KRW",
-                "category": "Free"
-              },
-              "author": {
-                "@type": "Organization",
-                "name": "Lettie Team"
-              },
-              "publisher": {
-                "@type": "Organization",
-                "name": "Lettie Team",
-                "logo": {
-                  "@type": "ImageObject",
-                  "url": "https://lettie-dating.com/lettie-icon.png"
-                }
-              },
-              "screenshot": [
-                "https://lettie-dating.com/letter-writing.png",
-                "https://lettie-dating.com/conversation-detail.png",
-                "https://lettie-dating.com/contact-exchange.png",
-                "https://lettie-dating.com/letter-feed.png",
-                "https://lettie-dating.com/brand-screen.png"
-              ],
-              "featureList": [
-                "전 세계 친구들과 편지 교환",
-                "글로벌 펜팔 시스템",
-                "프라이버시 보호 시스템",
-                "5통 편지 후 연락처 교환",
-                "다국가 지원"
-              ]
-            })
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteGraph('ko')) }}
         />
 
         {/* 추가 SEO 메타 태그 */}
