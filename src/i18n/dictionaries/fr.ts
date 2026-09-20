@@ -4,7 +4,7 @@ export const fr: Dictionary = {
   meta: {
     title: 'Lettie - Application de Correspondants | Des Amitiés du Monde Entier par Lettre',
     description:
-      "Écrivez une lettre, pas un swipe. Lettie vous met en relation avec des correspondants du monde entier et traduit chaque lettre en 16 langues, pour que la langue ne décide jamais de qui vous pouvez rencontrer.",
+      "Écrivez une lettre, pas un swipe. Lettie vous met en relation avec des correspondants du monde entier et traduit chaque lettre en 28 langues, pour que la langue ne décide jamais de qui vous pouvez rencontrer.",
     keywords: [
       'application correspondant',
       'correspondant étranger',
@@ -48,7 +48,7 @@ export const fr: Dictionary = {
       "La sensibilité analogique de l'écriture de lettres, réinterprétée en expérience numérique",
     translation: {
       title: 'Des lettres qui se traduisent seules',
-      body: 'Écrivez dans votre langue. Chaque lettre et chaque réponse est traduite en 16 langues, et vous pouvez lire l\'original à côté de la traduction.',
+      body: 'Écrivez dans votre langue. Chaque lettre et chaque réponse est traduite en 28 langues, et vous pouvez lire l\'original à côté de la traduction.',
     },
     letters: {
       title: 'Système d\'échange de lettres',

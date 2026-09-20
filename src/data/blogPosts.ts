@@ -4532,7 +4532,7 @@ You throw a message into the sea and someone finds it. There's no matching, no p
 
 Full disclosure: we make this one. Here's the specific thing it does differently.
 
-Every letter and every reply translates across 16 languages, and it isn't metered. You write in Korean, they read it in Portuguese. You can view the original and the translation **side by side**, which is why a lot of people end up picking up some of their pen pal's language without setting out to.
+Every letter and every reply translates across 28 languages, and it isn't metered. You write in Korean, they read it in Portuguese. You can view the original and the translation **side by side**, which is why a lot of people end up picking up some of their pen pal's language without setting out to.
 
 Two other things shape how it feels:
 
@@ -4643,7 +4643,7 @@ Some apps build the delay in for you. Lettie, for instance, doesn't unlock conta
 
 You don't need fluent English to have a pen pal, and your pen pal doesn't need it either.
 
-Some apps translate for you. On Lettie every letter translates across 16 languages, and you can read the original alongside the translation — which is how a fair number of people end up learning some of their pen pal's language by accident. HelloTalk takes the opposite approach: native speakers correct your writing directly, which is better if practice is the actual goal.
+Some apps translate for you. On Lettie every letter translates across 28 languages, and you can read the original alongside the translation — which is how a fair number of people end up learning some of their pen pal's language by accident. HelloTalk takes the opposite approach: native speakers correct your writing directly, which is better if practice is the actual goal.
 
 If you're using a platform without translation, writing in short plain sentences does most of the work. Your pen pal is not grading you.
 
@@ -4732,7 +4732,7 @@ Most people who write across languages do one of three things:
 
 **Send both.** Your original and the translation together. This is the most robust option — if the translation garbles something, the original is right there, and over months the person starts recognizing patterns in your language.
 
-That last approach is why some apps show original and translation side by side by default. On Lettie, every letter and reply translates across 16 languages and both versions sit next to each other, so nothing gets hidden behind the machine. A lot of people report picking up their pen pal's language gradually without ever deciding to study it.
+That last approach is why some apps show original and translation side by side by default. On Lettie, every letter and reply translates across 28 languages and both versions sit next to each other, so nothing gets hidden behind the machine. A lot of people report picking up their pen pal's language gradually without ever deciding to study it.
 
 ## When something lands wrong
 
@@ -4785,7 +4785,7 @@ Interest in Korea has outrun the number of people who know how to actually talk 
 
 ## Where Koreans actually are
 
-**Pen pal apps with Korean user bases.** Lettie was built in Korea and a large share of its users are Korean, which changes the odds considerably compared to a global platform where Koreans are a small slice. Letters translate across 16 languages, so you can write in English and they read Korean — useful, since many Korean users are more comfortable reading their own language even when their English is decent.
+**Pen pal apps with Korean user bases.** Lettie was built in Korea and a large share of its users are Korean, which changes the odds considerably compared to a global platform where Koreans are a small slice. Letters translate across 28 languages, so you can write in English and they read Korean — useful, since many Korean users are more comfortable reading their own language even when their English is decent.
 
 **HelloTalk.** Very popular in Korea for language exchange specifically. Expect corrections and study-shaped conversations.
 
@@ -4884,7 +4884,7 @@ So where else can you go? Here's what each alternative is actually good at.
 
 The tradeoff: translation is a paid feature, consumed per use. If your correspondence crosses languages, that cost recurs.
 
-**Lettie.** Full disclosure, this is ours. The relevant difference for someone leaving InterPals: letters and replies translate across 16 languages without metering, and you can see the original next to the translation. Profile photos start blurred and sharpen as you exchange letters, and contact details don't unlock until five letters in.
+**Lettie.** Full disclosure, this is ours. The relevant difference for someone leaving InterPals: letters and replies translate across 28 languages without metering, and you can see the original next to the translation. Profile photos start blurred and sharpen as you exchange letters, and contact details don't unlock until five letters in.
 
 That last part removes the InterPals pattern where someone asks for your WhatsApp in the first message.
 
@@ -4992,7 +4992,7 @@ The strongest setup for most people is a pen pal correspondence for consistency,
 
 **Read the original next to the translation.** If your app shows both, this is the highest-value habit available. Seeing the source sentence beside its meaning, repeatedly, in a context you care about, builds pattern recognition that flashcards don't.
 
-On Lettie both versions sit side by side by default across 16 languages, which is why a number of users report picking up their pen pal's language without having set out to study it. That's a real effect but a slow one — this isn't a substitute for a course if you need results by a deadline.
+On Lettie both versions sit side by side by default across 28 languages, which is why a number of users report picking up their pen pal's language without having set out to study it. That's a real effect but a slow one — this isn't a substitute for a course if you need results by a deadline.
 
 ## A realistic timeline
 
@@ -5220,7 +5220,7 @@ This happens around letter eight or nine and it's normal, not a sign the friends
 
 Keep sentences short and one idea each — machine translation preserves that structure and mangles long clause-stacks. Keep the culturally specific details, but add a line of context so they land.
 
-If your app shows the original beside the translation — Lettie does this across 16 languages — you can be a bit more natural, since anything the machine garbles is still visible in your own words.
+If your app shows the original beside the translation — Lettie does this across 28 languages — you can be a bit more natural, since anything the machine garbles is still visible in your own words.
 
 ## The actual rule
 
@@ -5265,7 +5265,7 @@ Here's how not to be one of them.
 
 **HelloTalk and Tandem.** The largest Japanese presence for language exchange specifically. Expect corrections and study-shaped conversation.
 
-**Pen pal apps.** Slowly and Lettie both have Japanese users. If you don't speak Japanese and they don't speak much English, the translation matters — on Lettie every letter translates across 16 languages with the original shown alongside, which removes the usual bottleneck where both people give up after two stilted exchanges.
+**Pen pal apps.** Slowly and Lettie both have Japanese users. If you don't speak Japanese and they don't speak much English, the translation matters — on Lettie every letter translates across 28 languages with the original shown alongside, which removes the usual bottleneck where both people give up after two stilted exchanges.
 
 **Interest communities.** Hobby forums, game communities, Discord servers around specific interests. Slower to break into, but the people there already share something with you.
 
@@ -5354,7 +5354,7 @@ Apps can help, but most "friendship" apps are dating apps with the romance filed
 
 These optimize for length and thought rather than immediacy. You write something substantial, they reply when they can. It suits people who express themselves better in writing than in conversation, and people whose schedules make live chat impractical.
 
-Slowly adds delivery delay based on real distance. Lettie translates across 16 languages with the original shown beside the translation, which matters if you want friends outside your language. InterPals has the largest pool but the least moderation.
+Slowly adds delivery delay based on real distance. Lettie translates across 28 languages with the original shown beside the translation, which matters if you want friends outside your language. InterPals has the largest pool but the least moderation.
 
 **Not for you if** you want someone to talk to tonight.
 
@@ -5503,7 +5503,7 @@ And if someone stops replying to you, don't over-read it. People get busy, apps 
 
 Writing across languages adds effort to every exchange, which makes the letter-three wall arrive faster.
 
-Short sentences, one idea each, survive translation intact. Long clause-stacked ones don't. And if your app shows the original next to the translation — Lettie does this across 16 languages — misfires stay visible instead of silently changing your meaning, which prevents the slow accumulation of small misunderstandings that ends a lot of cross-language friendships.
+Short sentences, one idea each, survive translation intact. Long clause-stacked ones don't. And if your app shows the original next to the translation — Lettie does this across 28 languages — misfires stay visible instead of silently changing your meaning, which prevents the slow accumulation of small misunderstandings that ends a lot of cross-language friendships.
 
 ## The short version
 

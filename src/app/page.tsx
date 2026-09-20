@@ -165,6 +165,63 @@ export default function Home() {
       </section>
 
       {/* Features Section - Bento Grid */}
+
+      {/* 2.0 「하늘의 편지」에서 새로 생긴 것들 — 검색·답변엔진이 읽는 본문 */}
+      <section id="whats-new" className="py-24 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">지금의 Lettie — 하늘의 편지</h2>
+            <p className="text-xl text-muted-foreground font-light max-w-3xl mx-auto">
+              편지가 지구본 위를 실제로 날아갑니다. 거리만큼 시간이 걸려 도착하고, 지나온 도시에서 인사를 주워 옵니다.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <article className="glass-panel p-8 rounded-3xl">
+              <h3 className="text-2xl font-bold text-foreground mb-3">거리만큼 걸려서 도착하는 편지</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                두 도시 사이의 실제 거리로 도착 시간을 계산합니다. 가까운 나라는 몇 시간, 지구 반대편은 하루쯤 걸립니다.
+                기다리는 동안 지구본에서 내 편지가 어디쯤 가고 있는지 볼 수 있습니다.
+              </p>
+            </article>
+            <article className="glass-panel p-8 rounded-3xl">
+              <h3 className="text-2xl font-bold text-foreground mb-3">발견 — 남이 띄운 편지 줍기</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                누구에게랄 것 없이 띄운 편지가 봉투로 떠 있습니다. 마음에 드는 봉투를 열어 읽고 답장하면 대화가 시작됩니다.
+                무료로도 8시간마다 새 봉투 세 장이 오고, 하루 한 번 광고를 보면 더 받습니다.
+              </p>
+            </article>
+            <article className="glass-panel p-8 rounded-3xl">
+              <h3 className="text-2xl font-bold text-foreground mb-3">28개 언어 번역</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                내 말로 쓰고 상대는 자기 말로 읽습니다. 편지를 열면 번역 버튼이 있고, 원문과 번역문을 나란히 볼 수 있습니다.
+                앱 화면도 28개 언어를 지원합니다.
+              </p>
+            </article>
+            <article className="glass-panel p-8 rounded-3xl">
+              <h3 className="text-2xl font-bold text-foreground mb-3">나라마다 모이는 우표</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                편지를 주고받은 나라는 지구본에 색으로 칠해지고, 그 나라의 우표가 우표첩에 남습니다.
+                무작위 픽셀 우표를 뽑아 내 편지에 붙일 수도 있습니다.
+              </p>
+            </article>
+            <article className="glass-panel p-8 rounded-3xl">
+              <h3 className="text-2xl font-bold text-foreground mb-3">사진 대신 나만의 캐릭터</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                프로필은 사진이 아니라 픽셀 캐릭터로 시작합니다. 기본 16종은 언제든 무료로 바꿀 수 있고,
+                생김새를 글로 적으면 같은 그림체로 나만의 캐릭터를 그려 줍니다.
+              </p>
+            </article>
+            <article className="glass-panel p-8 rounded-3xl">
+              <h3 className="text-2xl font-bold text-foreground mb-3">스와이프 없는 매칭</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                하루에 몇 장씩만 카드가 옵니다. 점수도, 무한 스와이프도 없습니다.
+                만날 상대의 성별(이성·동성·모두)은 프로필에서 고릅니다.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
       <section id="features" className="py-24 bg-background relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjAwLCAyMDAsIDIwMCwgMC4yKSIvPjwvc3ZnPg==')] opacity-30"></div>
 

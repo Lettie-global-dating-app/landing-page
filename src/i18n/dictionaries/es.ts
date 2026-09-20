@@ -4,7 +4,7 @@ export const es: Dictionary = {
   meta: {
     title: 'Lettie - App de Amigos por Correspondencia | Amistades Globales por Carta',
     description:
-      'Escribe una carta, no un swipe. Lettie te conecta con amigos por correspondencia de todo el mundo y traduce cada carta a 16 idiomas, para que el idioma nunca decida a quién puedes conocer.',
+      'Escribe una carta, no un swipe. Lettie te conecta con amigos por correspondencia de todo el mundo y traduce cada carta a 28 idiomas, para que el idioma nunca decida a quién puedes conocer.',
     keywords: [
       'app amigos por correspondencia',
       'amigos por correspondencia',
@@ -48,7 +48,7 @@ export const es: Dictionary = {
       'La sensibilidad analógica de escribir cartas, reinterpretada como experiencia digital',
     translation: {
       title: 'Cartas que se traducen solas',
-      body: 'Escribe en tu propio idioma. Cada carta y cada respuesta se traduce a 16 idiomas, y puedes leer el original junto a la traducción.',
+      body: 'Escribe en tu propio idioma. Cada carta y cada respuesta se traduce a 28 idiomas, y puedes leer el original junto a la traducción.',
     },
     letters: {
       title: 'Sistema de intercambio de cartas',

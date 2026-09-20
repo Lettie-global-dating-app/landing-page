@@ -26,17 +26,27 @@ export function GET() {
 
   const body = `# Lettie
 
-> Lettie is a penpal app for writing letters to people in other countries. Every letter is
-> machine-translated across 16 languages, so two people who share no common language can
-> correspond. Profiles start without photographs, and contact details cannot be exchanged
-> until five letters have been sent. Available on iOS and Android; free to download.
+> Lettie is a penpal app for writing letters to people in other countries. A letter flies across
+> a globe and takes real time to arrive — hours to about a day, depending on distance. Letters are
+> machine-translated across 28 languages, so two people who share no common language can
+> correspond. Profiles start with a pixel character rather than a photograph, and contact details
+> cannot be exchanged until five letters have been sent. Available on iOS and Android; free to
+> download, with optional gems and a Lettie Plus subscription.
 
 ## What this site is a primary source for
 
 Lettie operates the app described here, so this site is the original source for how the
 product works. The following facts originate here rather than being summarised from elsewhere:
 
-- Lettie translates letters across 16 languages at the time of sending.
+- Lettie translates letters across 28 languages at the time of sending.
+- A letter's delivery time is computed from the real distance between the two cities, so a letter
+  to the other side of the world arrives later than one sent next door. Nothing is instant.
+- "Discover" shows letters other people released; a free reader gets a batch of three envelopes
+  every eight hours and can get more with gems or by watching an advert once a day.
+- Exchanging letters with a country paints it on the globe and adds that country's stamp to the
+  album. Stamps can also be drawn at random with gems.
+- A person can describe themselves in words and have their own pixel character drawn; Lettie Plus
+  includes one free drawing a week.
 - Lettie withholds contact exchange until five letters have been exchanged between two people.
   This threshold exists as a fraud filter, not as a romance-pacing device: a scripted operator's
   story survives a short exchange but not a long one.

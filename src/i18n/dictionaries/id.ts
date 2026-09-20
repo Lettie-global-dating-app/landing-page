@@ -4,7 +4,7 @@ export const id: Dictionary = {
   meta: {
     title: 'Lettie - Aplikasi Sahabat Pena | Berteman Sedunia lewat Surat',
     description:
-      'Tulis surat, bukan swipe. Lettie menghubungkanmu dengan sahabat pena di seluruh dunia dan menerjemahkan setiap surat ke 16 bahasa, supaya bahasa tak pernah menentukan siapa yang bisa kamu kenal.',
+      'Tulis surat, bukan swipe. Lettie menghubungkanmu dengan sahabat pena di seluruh dunia dan menerjemahkan setiap surat ke 28 bahasa, supaya bahasa tak pernah menentukan siapa yang bisa kamu kenal.',
     keywords: [
       'aplikasi sahabat pena',
       'sahabat pena internasional',
@@ -48,7 +48,7 @@ export const id: Dictionary = {
       'Rasa analog menulis surat, ditafsirkan ulang sebagai pengalaman digital',
     translation: {
       title: 'Surat yang menerjemahkan dirinya',
-      body: 'Tulis dalam bahasamu sendiri. Setiap surat dan balasan diterjemahkan ke 16 bahasa, dan kamu bisa membaca versi aslinya berdampingan dengan terjemahannya.',
+      body: 'Tulis dalam bahasamu sendiri. Setiap surat dan balasan diterjemahkan ke 28 bahasa, dan kamu bisa membaca versi aslinya berdampingan dengan terjemahannya.',
     },
     letters: {
       title: 'Sistem bertukar surat',

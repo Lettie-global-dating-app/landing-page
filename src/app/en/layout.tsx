@@ -33,13 +33,14 @@ export const metadata: Metadata = {
   title: {
     // absolute 를 쓰지 않으면 루트 레이아웃의 template("%s | 편지, 펜팔 Lettie")이
     // 덧붙어 영어 검색결과 제목에 한국어가 섞인다.
-    absolute: "Lettie - Penpal Dating App | Make Global Friends Through Letters",
+    absolute: "Lettie — Penpal App Where Letters Fly Across a Globe, in 28 Languages",
     template: "%s | Lettie"
   },
-  description: "Write a letter, not a swipe. Lettie connects you with penpals around the world and translates every letter across 16 languages, so language never decides who you get to meet.",
+  description: "A penpal app where your letter flies across a globe and takes real time to arrive. Pick up letters strangers released, translate them into any of 28 languages, and collect a stamp for every country you reach. No swiping, no photos to start. Free on iOS and Android.",
   keywords: [
     "penpal", "letter", "penpal app", "letter app", "global penpal", "global friend", "global", "friend", "communication", "cultural exchange", "language exchange", 
-    "international friend", "overseas friend", "Lettie", "dating app", "relationship", "connection", "international dating", "penpal dating"
+    "international friend", "overseas friend", "Lettie", "dating app", "relationship", "connection", "international dating", "penpal dating",
+    "slow letters", "letter translation app", "28 languages", "stamp collecting app", "pen pal without photos", "no swipe dating", "snail mail app", "write to strangers"
   ],
   authors: [{ name: "Lettie Team" }],
   creator: "Lettie Team",
@@ -57,7 +58,7 @@ export const metadata: Metadata = {
     url: baseUrl,
     siteName: "Lettie",
     title: "Lettie - Penpal Dating App | Make Global Friends Through Letters",
-    description: "Write a letter, not a swipe. Lettie connects you with penpals around the world and translates every letter across 16 languages, so language never decides who you get to meet.",
+    description: "A penpal app where your letter flies across a globe and takes real time to arrive. Pick up letters strangers released, translate them into any of 28 languages, and collect a stamp for every country you reach. No swiping, no photos to start. Free on iOS and Android.",
     images: [
       {
         url: ogImageUrl,
@@ -73,7 +74,7 @@ export const metadata: Metadata = {
     site: "@lettie_app",
     creator: "@lettie_app",
     title: "Lettie - Penpal Dating App | Make Global Friends Through Letters",
-    description: "Write a letter, not a swipe. Lettie connects you with penpals worldwide and translates every letter across 16 languages.",
+    description: "A penpal app where your letter flies across a globe and takes real time to arrive. Pick up letters strangers released, translate them into any of 28 languages, and collect a stamp for every country you reach. No swiping, no photos to start. Free on iOS and Android.",
     images: [ogImageUrl],
   },
   alternates: {

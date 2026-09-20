@@ -4,7 +4,7 @@ export const zh: Dictionary = {
   meta: {
     title: 'Lettie - 笔友交友应用 | 用书信连接世界',
     description:
-      '写一封信，而不是划一下屏幕。Lettie 帮你结识世界各地的笔友，每封信都会翻译成 16 种语言，语言不再决定你能认识谁。',
+      '写一封信，而不是划一下屏幕。Lettie 帮你结识世界各地的笔友，每封信都会翻译成 28 种语言，语言不再决定你能认识谁。',
     keywords: [
       '笔友应用',
       '国际笔友',
@@ -47,7 +47,7 @@ export const zh: Dictionary = {
     subheading: '把写信的模拟质感，重新诠释为数字体验',
     translation: {
       title: '会自动翻译的信',
-      body: '用你自己的语言写就好。每封信和回信都会翻译成 16 种语言，还能对照原文一起阅读。',
+      body: '用你自己的语言写就好。每封信和回信都会翻译成 28 种语言，还能对照原文一起阅读。',
     },
     letters: {
       title: '书信往来',

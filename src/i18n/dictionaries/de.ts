@@ -4,7 +4,7 @@ export const de: Dictionary = {
   meta: {
     title: 'Lettie - Brieffreunde-App | Weltweite Freundschaften per Brief',
     description:
-      'Schreib einen Brief statt zu swipen. Lettie verbindet dich mit Brieffreunden weltweit und übersetzt jeden Brief in 16 Sprachen – damit die Sprache nie entscheidet, wen du kennenlernen kannst.',
+      'Schreib einen Brief statt zu swipen. Lettie verbindet dich mit Brieffreunden weltweit und übersetzt jeden Brief in 28 Sprachen – damit die Sprache nie entscheidet, wen du kennenlernen kannst.',
     keywords: [
       'brieffreunde app',
       'brieffreund finden',
@@ -48,7 +48,7 @@ export const de: Dictionary = {
       'Das analoge Gefühl des Briefeschreibens, neu gedacht als digitales Erlebnis',
     translation: {
       title: 'Briefe, die sich selbst übersetzen',
-      body: 'Schreib in deiner eigenen Sprache. Jeder Brief und jede Antwort wird in 16 Sprachen übersetzt, und du kannst das Original neben der Übersetzung lesen.',
+      body: 'Schreib in deiner eigenen Sprache. Jeder Brief und jede Antwort wird in 28 Sprachen übersetzt, und du kannst das Original neben der Übersetzung lesen.',
     },
     letters: {
       title: 'Briefwechsel',

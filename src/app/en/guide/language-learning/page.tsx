@@ -142,7 +142,7 @@ export default function LanguageLearningPage() {
           safety net: it determines whether a conversation can continue when your level runs out.
         </p>
         <p>
-          On Lettie every letter is translated across 16 languages, which means a beginner and a native speaker
+          On Lettie every letter is translated across 28 languages, which means a beginner and a native speaker
           can hold a real conversation from the first letter rather than after a year of study. The practice
           value depends on how you use it — write your attempt first and treat the translation as the check, and
           you keep the learning. Write only in your own language and let the translation carry everything, and

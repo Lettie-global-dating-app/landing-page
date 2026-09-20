@@ -74,20 +74,50 @@ const faqCategories = [
     ]
   },
   {
+    title: 'How a letter travels',
+    icon: Globe,
+    questions: [
+      {
+        q: 'Why doesn\'t my letter arrive straight away?',
+        a: 'Because it actually flies. Lettie computes the delivery time from the real distance between the two cities, so a letter to a nearby country lands in a few hours and one to the other side of the world takes about a day. While you wait you can watch it move across the globe.'
+      },
+      {
+        q: 'What is Discover?',
+        a: 'Discover is where letters other people released float as envelopes. On the free plan three new envelopes arrive every eight hours, and you can get more with gems or by watching an advert once a day. Lettie Plus swipes through every letter that is floating.'
+      },
+      {
+        q: 'What are stamps for?',
+        a: 'Every country you exchange letters with adds its stamp to your album. You can also draw a random pixel stamp with gems, and the stamp you pick is the one that appears on the letters you send and on the greetings you leave.'
+      },
+      {
+        q: 'Can I make my own character?',
+        a: 'Yes. Describe how you look in words — no photograph — and Lettie draws it in the same art style. It costs gems, and Lettie Plus includes one free drawing a week. The 16 default characters are always free to switch between.'
+      },
+      {
+        q: 'What is a stopover greeting?',
+        a: 'When your letter passes over another city, people there can leave one line of greeting. The greetings and their stamps arrive together with your letter.'
+      },
+      {
+        q: 'Why do we have to take turns?',
+        a: 'By default a conversation takes turns: you write again once your letter has been answered. Once two people have exchanged more than five letters they can unlock unlimited conversation with gems, and Lettie Plus has every conversation unlimited from the start.'
+      }
+    ]
+  },
+  {
     title: 'Finding Pen Pals',
     icon: Users,
     questions: [
       {
         q: 'What countries can I pen pal with?',
-        a: 'Lettie has active users from over 150 countries worldwide. You can select specific countries or languages to find pen pals, or receive random matches.'
+        a: 'Letters are not limited by country. Discover shows envelopes people in other countries have released; pick one up, reply, and a conversation starts. Every country you exchange letters with is painted on your globe and adds its stamp to your album.'
       },
       {
         q: 'How do I find pen pals with similar interests?',
-        a: 'When you set your interests in your profile, AI recommends pen pals with similar interests. You can choose from various categories including music, movies, sports, travel, and more.'
+        a: 'Pick up to three interests in your profile. Letters that share an interest with you come first in Discover, and the Matching tab brings you a few cards a day, drawn from people who have been active recently.'
       },
       {
         q: 'Is there an age restriction?',
-        a: 'Lettie is available for users aged 17 and above. Age verification is required to protect minors, and age-appropriate matching options are provided.'
+        a: 'Lettie is for people aged 16 and above. You set your gender and age in your profile, and you choose who Matching brings you — the opposite gender, the same, or everyone.'
       }
     ]
   }

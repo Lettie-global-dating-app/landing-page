@@ -52,7 +52,7 @@ const FAQS = [
   },
   {
     q: 'Do I need perfect grammar to write to a pen pal?',
-    a: 'No. Pen pal correspondence is one of the few forms of writing where imperfect grammar carries no penalty, because both people are usually writing outside their first language. On Lettie every letter is also translated across 16 languages, so meaning survives grammar mistakes.',
+    a: 'No. Pen pal correspondence is one of the few forms of writing where imperfect grammar carries no penalty, because both people are usually writing outside their first language. On Lettie every letter is also translated across 28 languages, so meaning survives grammar mistakes.',
   },
 ];
 
@@ -163,7 +163,7 @@ export default function WritingTipsPage() {
           the reader something that lands in any language, whereas describing a mood often does not.
         </p>
         <p>
-          On Lettie every letter is translated across 16 languages, so you can write in the language you think
+          On Lettie every letter is translated across 28 languages, so you can write in the language you think
           in and be read in the language they think in. That removes the grammar penalty, but it does not remove
           the idiom problem — writing plainly is still the thing that helps most.
         </p>

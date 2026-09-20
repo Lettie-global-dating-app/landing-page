@@ -4,7 +4,7 @@ export const it: Dictionary = {
   meta: {
     title: 'Lettie - App per Amici di Penna | Amicizie nel Mondo attraverso le Lettere',
     description:
-      'Scrivi una lettera, non uno swipe. Lettie ti mette in contatto con amici di penna in tutto il mondo e traduce ogni lettera in 16 lingue, così la lingua non decide mai chi puoi conoscere.',
+      'Scrivi una lettera, non uno swipe. Lettie ti mette in contatto con amici di penna in tutto il mondo e traduce ogni lettera in 28 lingue, così la lingua non decide mai chi puoi conoscere.',
     keywords: [
       'app amici di penna',
       'amico di penna',
@@ -48,7 +48,7 @@ export const it: Dictionary = {
       'La sensibilità analogica dello scrivere lettere, reinterpretata come esperienza digitale',
     translation: {
       title: 'Lettere che si traducono da sole',
-      body: 'Scrivi nella tua lingua. Ogni lettera e risposta viene tradotta in 16 lingue, e puoi leggere l\'originale accanto alla traduzione.',
+      body: 'Scrivi nella tua lingua. Ogni lettera e risposta viene tradotta in 28 lingue, e puoi leggere l\'originale accanto alla traduzione.',
     },
     letters: {
       title: 'Scambio di lettere',

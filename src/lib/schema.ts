@@ -31,7 +31,7 @@ export const organizationSchema = {
     url: `${SITE_URL}/lettie-icon.png`,
   },
   description:
-    'Lettie is a penpal app for writing letters to people in other countries, with every letter translated across 16 languages.',
+    'Lettie is a penpal app for writing letters to people in other countries, with every letter translated across 28 languages.',
   foundingDate: '2024',
   sameAs: [APP_STORE, PLAY_STORE],
   contactPoint: {
@@ -53,7 +53,7 @@ export function websiteSchema(locale: 'ko' | 'en') {
     description:
       locale === 'ko'
         ? '편지와 펜팔을 통해 전 세계 친구들과 소통하는 글로벌 펜팔 데이팅앱'
-        : 'Penpal app connecting people worldwide through letters translated across 16 languages',
+        : 'Penpal app connecting people worldwide through letters translated across 28 languages',
     publisher: { '@id': ORG_ID },
     inLanguage: ['ko', 'en', 'es', 'pt', 'ja', 'fr', 'zh', 'de', 'hi', 'id', 'ru', 'it'],
   };
@@ -75,8 +75,8 @@ export function mobileAppSchema(locale: 'ko' | 'en') {
     operatingSystem: ['iOS', 'Android'],
     description:
       locale === 'ko'
-        ? '편지와 펜팔을 통해 전 세계 친구들과 소통하세요. 모든 편지는 16개 언어로 번역되고, 편지 5통을 주고받은 뒤에 연락처를 교환합니다.'
-        : 'Write letters to people in other countries. Every letter is translated across 16 languages, and contact details are exchanged only after five letters.',
+        ? '편지가 지구본 위를 실제로 날아가 거리만큼 시간이 걸려 도착합니다. 남들이 띄운 편지를 주워 읽고 답장하며, 28개 언어로 번역됩니다. 주고받은 나라마다 우표가 모이고, 편지 5통을 주고받은 뒤에 연락처를 교환합니다.'
+        : 'Letters fly across a globe and take real time to arrive — hours or a day, depending on distance. Pick up letters other people released, read them translated into any of 28 languages, and collect a stamp for every country you reach. Contact details are exchanged only after five letters.',
     url: locale === 'ko' ? SITE_URL : `${SITE_URL}/en`,
     downloadUrl: [APP_STORE, PLAY_STORE],
     offers: {
@@ -97,16 +97,24 @@ export function mobileAppSchema(locale: 'ko' | 'en') {
     featureList:
       locale === 'ko'
         ? [
-            '전 세계 친구들과 편지 교환',
-            '16개 언어 자동 번역',
-            '사진 없이 시작하는 프로필',
+            '지구본 위를 날아가는 편지 — 거리만큼 걸려서 도착',
+            '남들이 띄운 편지를 주워 읽고 답장하는 발견',
+            '28개 언어 자동 번역 (원문과 나란히 보기)',
+            '사진 없이 캐릭터로 시작하는 프로필',
+            '나라마다 모이는 우표와 지구본 색칠',
+            '글로 적으면 그려 주는 나만의 캐릭터',
+            '하루 몇 장씩 만나는 매칭 카드',
             '편지 5통 후 연락처 교환',
             'iOS · Android 지원',
           ]
         : [
-            'Exchange letters with people worldwide',
-            'Automatic translation across 16 languages',
-            'Profiles that start without photographs',
+            'Letters that fly across a globe and take real time to arrive',
+            'Discover — pick up letters other people released',
+            'Automatic translation across 28 languages, shown beside the original',
+            'Profiles that start with a character instead of a photograph',
+            'A stamp for every country you reach, painting the globe',
+            'Your own character, drawn from a written description',
+            'A few matching cards a day — no swiping',
             'Contact exchange after five letters',
             'Available on iOS and Android',
           ],

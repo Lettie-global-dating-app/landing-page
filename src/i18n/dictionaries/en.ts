@@ -2,7 +2,7 @@ export const en = {
   meta: {
     title: 'Lettie - Penpal Dating App | Make Global Friends Through Letters',
     description:
-      'Write a letter, not a swipe. Lettie connects you with penpals around the world and translates every letter across 16 languages, so language never decides who you get to meet.',
+      'Write a letter, not a swipe. Lettie connects you with penpals around the world and translates every letter across 28 languages, so language never decides who you get to meet.',
     keywords: [
       'penpal app',
       'pen pal',
@@ -46,7 +46,7 @@ export const en = {
       'Reinterpreting the analog sensibility of letter writing into a digital experience',
     translation: {
       title: 'Letters That Translate Themselves',
-      body: 'Write in your own language. Every letter and reply translates across 16 languages, and you can read the original next to the translation.',
+      body: 'Write in your own language. Every letter and reply translates across 28 languages, and you can read the original next to the translation.',
     },
     letters: {
       title: 'Letter Exchange System',

@@ -76,7 +76,7 @@ Entre 200 y 400 palabras basta.
 
 No necesitas inglés fluido. Escribe frases cortas y simples: la traducción automática las conserva bien y las oraciones largas con muchas comas no.
 
-Algunas apps traducen por ti. En Lettie cada carta y respuesta se traduce a 16 idiomas y puedes leer el original junto a la traducción, que es como mucha gente termina aprendiendo algo del idioma de su corresponsal sin proponérselo.
+Algunas apps traducen por ti. En Lettie cada carta y respuesta se traduce a 28 idiomas y puedes leer el original junto a la traducción, que es como mucha gente termina aprendiendo algo del idioma de su corresponsal sin proponérselo.
 
 ## Seguridad, en breve
 
@@ -134,7 +134,7 @@ De 200 a 400 palavras é suficiente.
 
 Você não precisa de inglês fluente. Escreva frases curtas e simples: a tradução automática preserva bem esse tipo de frase e se perde nas longas, cheias de vírgulas.
 
-Alguns apps traduzem para você. No Lettie cada carta e resposta é traduzida em 16 idiomas, e dá para ler o original ao lado da tradução — é assim que muita gente acaba aprendendo um pouco do idioma do outro sem ter planejado.
+Alguns apps traduzem para você. No Lettie cada carta e resposta é traduzida em 28 idiomas, e dá para ler o original ao lado da tradução — é assim que muita gente acaba aprendendo um pouco do idioma do outro sem ter planejado.
 
 ## Segurança, resumindo
 
@@ -192,7 +192,7 @@ Você vai escrever para várias pessoas antes de uma dar certo. Uma correspondê
 
 流暢な英語は要りません。短く単純な文を書いてください。機械翻訳はその形をよく保ちますが、読点でつないだ長い文は崩れます。
 
-翻訳してくれるアプリもあります。Lettie ではすべての手紙と返信が16言語に翻訳され、原文と訳文を並べて読めます。そのおかげで、勉強するつもりがなかったのに相手の言葉を少し覚えていた、という人が少なくありません。
+翻訳してくれるアプリもあります。Lettie ではすべての手紙と返信が28言語に翻訳され、原文と訳文を並べて読めます。そのおかげで、勉強するつもりがなかったのに相手の言葉を少し覚えていた、という人が少なくありません。
 
 ## 安全について、手短に
 
@@ -250,7 +250,7 @@ Une première lettre qui fonctionne fait trois choses :
 
 Vous n'avez pas besoin d'un anglais courant. Écrivez des phrases courtes et simples : la traduction automatique les préserve bien, alors qu'elle se perd dans les phrases longues à virgules.
 
-Certaines applications traduisent pour vous. Sur Lettie, chaque lettre et chaque réponse est traduite en 16 langues, et vous pouvez lire l'original à côté de la traduction — c'est ainsi que beaucoup finissent par apprendre un peu la langue de leur correspondant sans l'avoir décidé.
+Certaines applications traduisent pour vous. Sur Lettie, chaque lettre et chaque réponse est traduite en 28 langues, et vous pouvez lire l'original à côté de la traduction — c'est ainsi que beaucoup finissent par apprendre un peu la langue de leur correspondant sans l'avoir décidé.
 
 ## Sécurité, en bref
 
@@ -308,7 +308,7 @@ Ein erster Brief, der funktioniert, macht drei Dinge:
 
 Du brauchst kein fließendes Englisch. Schreib kurze, einfache Sätze — maschinelle Übersetzung hält die gut, verliert sich aber in langen Kommakonstruktionen.
 
-Manche Apps übersetzen für dich. Bei Lettie wird jeder Brief und jede Antwort in 16 Sprachen übersetzt, und du kannst das Original neben der Übersetzung lesen. So lernen viele nebenbei etwas von der Sprache ihres Brieffreunds, ohne es sich vorgenommen zu haben.
+Manche Apps übersetzen für dich. Bei Lettie wird jeder Brief und jede Antwort in 28 Sprachen übersetzt, und du kannst das Original neben der Übersetzung lesen. So lernen viele nebenbei etwas von der Sprache ihres Brieffreunds, ohne es sich vorgenommen zu haben.
 
 ## Sicherheit, kurz gefasst
 
@@ -359,7 +359,7 @@ Du wirst mehreren Menschen schreiben, bevor eine Korrespondenz trägt. Eine, die
 
 不需要流利的英语。写短句、简单句——机器翻译能很好地保留这种结构，长句和层层逗号则容易失真。
 
-有些应用会帮你翻译。在 Lettie 上，每封信和回信都会翻译成 16 种语言，还能把原文和译文对照着读。很多人因此在没打算学习的情况下，慢慢记住了对方语言的一些说法。
+有些应用会帮你翻译。在 Lettie 上，每封信和回信都会翻译成 28 种语言，还能把原文和译文对照着读。很多人因此在没打算学习的情况下，慢慢记住了对方语言的一些说法。
 
 ## 关于安全，简短说
 

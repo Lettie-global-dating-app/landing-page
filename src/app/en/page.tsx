@@ -181,6 +181,63 @@ export default function Home() {
       </section>
 
       {/* Features Section - Bento Grid */}
+
+      {/* What Lettie is now (2.0) — the body copy search and answer engines read */}
+      <section id="whats-new" className="py-24 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">Lettie today — letters in the sky</h2>
+            <p className="text-xl text-muted-foreground font-light max-w-3xl mx-auto">
+              Your letter flies across a globe. It takes as long as the distance takes, and it picks up greetings from the cities it passes.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <article className="glass-panel p-8 rounded-3xl">
+              <h3 className="text-2xl font-bold text-foreground mb-3">A letter that takes real time</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Delivery time is computed from the actual distance between your city and theirs. A nearby country lands in a few
+                hours; the other side of the world takes about a day. You can watch it move across the globe while you wait.
+              </p>
+            </article>
+            <article className="glass-panel p-8 rounded-3xl">
+              <h3 className="text-2xl font-bold text-foreground mb-3">Discover — pick up a stranger’s letter</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Letters written to no one in particular float as envelopes. Open one, read it, reply, and a conversation begins.
+                Three new envelopes arrive every eight hours on the free plan, and an advert once a day brings more.
+              </p>
+            </article>
+            <article className="glass-panel p-8 rounded-3xl">
+              <h3 className="text-2xl font-bold text-foreground mb-3">Translated across 28 languages</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Write in your language; they read it in theirs. Every letter has a translate button, and you can read the original
+                beside the translation. The app itself speaks 28 languages.
+              </p>
+            </article>
+            <article className="glass-panel p-8 rounded-3xl">
+              <h3 className="text-2xl font-bold text-foreground mb-3">A stamp for every country</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Exchange letters with a country and it is painted on your globe, with that country’s stamp added to your album.
+                You can also draw random pixel stamps and put them on the letters you send.
+              </p>
+            </article>
+            <article className="glass-panel p-8 rounded-3xl">
+              <h3 className="text-2xl font-bold text-foreground mb-3">A character instead of a photo</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Profiles start with a pixel character, not a photograph. Sixteen defaults are always free, and you can describe
+                yourself in words to have your own character drawn in the same style.
+              </p>
+            </article>
+            <article className="glass-panel p-8 rounded-3xl">
+              <h3 className="text-2xl font-bold text-foreground mb-3">Matching without swiping</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                A few cards a day — no scores, no endless swiping. You choose who Matching brings you: the opposite gender,
+                the same, or everyone.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
       <section id="features" className="py-24 bg-background relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjAwLCAyMDAsIDIwMCwgMC4yKSIvPjwvc3ZnPg==')] opacity-30"></div>
 
