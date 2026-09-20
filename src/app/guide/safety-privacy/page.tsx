@@ -30,7 +30,7 @@ export default function SafetyPrivacyGuidePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* Header */}
       <header className="container mx-auto px-4 py-6">
-        <nav className="flex items-center justify-between">
+        <nav className="flex items-center justify-between md:pr-40">
           <Link href="/" className="flex items-center space-x-3">
             <Image
               src="/lettie-icon.png"

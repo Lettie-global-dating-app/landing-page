@@ -5,8 +5,8 @@ import { Mail, Globe, Shield, Heart, Star, Download, Check } from 'lucide-react'
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '펜팔앱 추천 1위 - Lettie | 안전한 글로벌 펜팔 앱',
-  description: '펜팔앱을 찾고 계신가요? Lettie는 전 세계 150개국 친구들과 안전하게 편지를 주고받을 수 있는 최고의 펜팔앱입니다. 지금 무료로 시작하세요!',
+  title: '펜팔앱 Lettie | 지구본 위를 날아가는 편지, 28개 언어 번역',
+  description: '펜팔앱을 찾고 계신가요? Lettie는 전 세계 150개국 친구들과 안전하게 편지를 주고받는 펜팔앱입니다. 지금 무료로 시작하세요!',
   keywords: ['펜팔앱', '펜팔 앱', '펜팔 어플', '편지 앱', '글로벌 펜팔앱', '무료 펜팔앱', '안전한 펜팔앱', '펜팔앱 추천'],
   alternates: {
     canonical: 'https://lettie-dating.com/penpal-app',
@@ -43,17 +43,17 @@ const comparisons = [
   { feature: '무료 사용', lettie: true, others: false },
   { feature: '자동 번역', lettie: true, others: false },
   { feature: '프라이버시 보호', lettie: true, others: false },
-  { feature: '검증된 사용자', lettie: true, others: false },
+  { feature: '거리 기준 배달 시간', lettie: true, others: false },
 ];
 
 export default function PenpalAppPage() {
   const appJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'MobileApplication',
-    name: 'Lettie - 최고의 펜팔앱',
+    name: 'Lettie - 펜팔앱',
     applicationCategory: 'SocialNetworkingApplication',
     operatingSystem: ['iOS', 'Android'],
-    description: '전 세계 친구들과 안전하게 편지를 주고받는 최고의 펜팔앱',
+    description: '편지가 지구본 위를 날아가 거리만큼 걸려 도착하는 글로벌 펜팔앱. 28개 언어 번역, 사진 대신 픽셀 캐릭터.',
     offers: {
       '@type': 'Offer',
       price: '0',
@@ -71,7 +71,7 @@ export default function PenpalAppPage() {
       <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
         {/* Header */}
         <header className="container mx-auto px-4 py-6">
-          <nav className="flex items-center justify-between">
+          <nav className="flex items-center justify-between md:pr-40">
             <Link href="/" className="flex items-center space-x-3">
               <Image
                 src="/lettie-icon.png"
@@ -96,16 +96,16 @@ export default function PenpalAppPage() {
         <section className="container mx-auto px-4 py-20 text-center">
           <div className="inline-flex items-center gap-2 bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full mb-6">
             <Star className="w-5 h-5 fill-yellow-500" />
-            <span className="font-semibold">펜팔앱 추천 1위</span>
+            <span className="font-semibold">2.0 · 하늘의 편지</span>
           </div>
 
           <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
-            최고의 <span className="text-blue-500">펜팔앱</span> Lettie
+            지구본 위를 날아가는 <span className="text-blue-500">펜팔앱</span> Lettie
           </h1>
 
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            전 세계 150개국 친구들과 안전하게 편지를 주고받는 펜팔앱<br />
-            10만 명이 선택한 믿을 수 있는 펜팔앱입니다
+            150개국 넘는 나라의 사람들과 편지를 주고받는 펜팔앱<br />
+            편지는 거리만큼 시간이 걸려 닿고, 28개 언어로 번역해 읽습니다
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -120,10 +120,10 @@ export default function PenpalAppPage() {
 
           {/* App Screenshots */}
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-5xl mx-auto">
-            {['letter-writing', 'conversation-detail', 'letter-feed', 'contact-exchange', 'brand-screen'].map((screen) => (
+            {['sky', 'discover', 'letter', 'post-office', 'character'].map((screen) => (
               <div key={screen} className="relative h-48 md:h-64 bg-white rounded-2xl shadow-lg overflow-hidden">
                 <Image
-                  src={`/${screen}.png`}
+                  src={`/v2/app-${screen}.png`}
                   alt={`펜팔앱 Lettie 스크린샷`}
                   fill
                   className="object-contain p-2"
@@ -136,7 +136,7 @@ export default function PenpalAppPage() {
         {/* Why Lettie Section */}
         <section className="container mx-auto px-4 py-16">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-            왜 Lettie가 최고의 펜팔앱인가요?
+            Lettie는 어떤 펜팔앱인가요?
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
@@ -201,25 +201,25 @@ export default function PenpalAppPage() {
         <section className="container mx-auto px-4 py-16">
           <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-3xl p-12">
             <h2 className="text-3xl font-bold text-center text-white mb-12">
-              펜팔앱 Lettie의 놀라운 숫자들
+              펜팔앱 Lettie를 숫자로
             </h2>
 
             <div className="grid md:grid-cols-4 gap-8 text-center text-white">
               <div>
-                <div className="text-4xl font-bold mb-2">100,000+</div>
-                <div className="opacity-90">활성 사용자</div>
+                <div className="text-4xl font-bold mb-2">28</div>
+                <div className="opacity-90">개 언어 번역</div>
               </div>
               <div>
                 <div className="text-4xl font-bold mb-2">150+</div>
                 <div className="opacity-90">연결된 국가</div>
               </div>
               <div>
-                <div className="text-4xl font-bold mb-2">5,000,000+</div>
-                <div className="opacity-90">교환된 편지</div>
+                <div className="text-4xl font-bold mb-2">1~24h</div>
+                <div className="opacity-90">거리만큼 걸리는 배달</div>
               </div>
               <div>
-                <div className="text-4xl font-bold mb-2">4.9/5.0</div>
-                <div className="opacity-90">평균 평점</div>
+                <div className="text-4xl font-bold mb-2">16</div>
+                <div className="opacity-90">무료 기본 캐릭터</div>
               </div>
             </div>
           </div>
@@ -268,7 +268,7 @@ export default function PenpalAppPage() {
               지금 바로 펜팔앱 Lettie를 시작하세요
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              많은 사용자가 선택한 최고의 펜팔앱<br />
+              편지 한 통으로 시작하는 펜팔앱<br />
               전 세계 친구들이 당신을 기다리고 있습니다
             </p>
 

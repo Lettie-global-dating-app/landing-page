@@ -5,9 +5,9 @@ import { Mail, Globe, Shield, Heart, Star, Download, Check } from 'lucide-react'
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '#1 Recommended Pen Pal App - Lettie | Safe Global Pen Pal App',
-  description: 'Looking for a pen pal app? Lettie is the best pen pal app to safely exchange letters with friends from 150+ countries. Start for free today!',
-  keywords: ['pen pal app', 'letter app', 'global pen pal app', 'free pen pal app', 'safe pen pal app', 'best pen pal app'],
+  title: 'Pen Pal App Lettie | Letters That Fly Across a Globe, 28 Languages',
+  description: 'Looking for a pen pal app? Lettie is a pen pal app for exchanging letters with friends from 150+ countries. Start for free today!',
+  keywords: ['pen pal app', 'letter app', 'global pen pal app', 'free pen pal app', 'safe pen pal app', 'pen pal app with translation'],
   alternates: {
     canonical: 'https://lettie-dating.com/en/penpal-app',
     languages: koEnAlternates('/penpal-app'),
@@ -43,17 +43,17 @@ const comparisons = [
   { feature: 'Free to Use', lettie: true, others: false },
   { feature: 'Auto Translation', lettie: true, others: false },
   { feature: 'Privacy Protection', lettie: true, others: false },
-  { feature: 'Verified Users', lettie: true, others: false },
+  { feature: 'Delivery time by distance', lettie: true, others: false },
 ];
 
 export default function PenpalAppPage() {
   const appJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'MobileApplication',
-    name: 'Lettie - Best Pen Pal App',
+    name: 'Lettie - Pen Pal App',
     applicationCategory: 'SocialNetworkingApplication',
     operatingSystem: ['iOS', 'Android'],
-    description: 'The best pen pal app to safely exchange letters with friends worldwide',
+    description: 'A pen pal app where letters fly across a globe and translate into 28 languages',
     offers: {
       '@type': 'Offer',
       price: '0',
@@ -71,7 +71,7 @@ export default function PenpalAppPage() {
       <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
         {/* Header */}
         <header className="container mx-auto px-4 py-6">
-          <nav className="flex items-center justify-between">
+          <nav className="flex items-center justify-between md:pr-40">
             <Link href="/en" className="flex items-center space-x-3">
               <Image
                 src="/lettie-icon.png"
@@ -96,16 +96,16 @@ export default function PenpalAppPage() {
         <section className="container mx-auto px-4 py-20 text-center">
           <div className="inline-flex items-center gap-2 bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full mb-6">
             <Star className="w-5 h-5 fill-yellow-500" />
-            <span className="font-semibold">#1 Recommended Pen Pal App</span>
+            <span className="font-semibold">2.0 · Slow letters</span>
           </div>
 
           <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
-            The Best <span className="text-blue-500">Pen Pal App</span> Lettie
+            The <span className="text-blue-500">Pen Pal App</span> Where Letters Fly
           </h1>
 
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Safely exchange letters with friends from 150+ countries<br />
-            The trusted pen pal app chosen by 100,000+ users
+            Exchange letters with people in 150+ countries<br />
+            Letters take as long as the distance, and translate into 28 languages
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -120,10 +120,10 @@ export default function PenpalAppPage() {
 
           {/* App Screenshots */}
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-5xl mx-auto">
-            {['letter-writing', 'conversation-detail', 'letter-feed', 'contact-exchange', 'brand-screen'].map((screen) => (
+            {['sky', 'discover', 'letter', 'post-office', 'character'].map((screen) => (
               <div key={screen} className="relative h-48 md:h-64 bg-white rounded-2xl shadow-lg overflow-hidden">
                 <Image
-                  src={`/${screen}.png`}
+                  src={`/v2/app-${screen}.png`}
                   alt={`Lettie Pen Pal App Screenshot`}
                   fill
                   className="object-contain p-2"
@@ -136,7 +136,7 @@ export default function PenpalAppPage() {
         {/* Why Lettie Section */}
         <section className="container mx-auto px-4 py-16">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-            Why Lettie is the Best Pen Pal App
+            What kind of pen pal app is Lettie?
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
@@ -206,20 +206,20 @@ export default function PenpalAppPage() {
 
             <div className="grid md:grid-cols-4 gap-8 text-center text-white">
               <div>
-                <div className="text-4xl font-bold mb-2">100,000+</div>
-                <div className="opacity-90">Active Users</div>
+                <div className="text-4xl font-bold mb-2">28</div>
+                <div className="opacity-90">Languages translated</div>
               </div>
               <div>
                 <div className="text-4xl font-bold mb-2">150+</div>
                 <div className="opacity-90">Connected Countries</div>
               </div>
               <div>
-                <div className="text-4xl font-bold mb-2">5,000,000+</div>
-                <div className="opacity-90">Letters Exchanged</div>
+                <div className="text-4xl font-bold mb-2">1–24h</div>
+                <div className="opacity-90">Delivery, by distance</div>
               </div>
               <div>
-                <div className="text-4xl font-bold mb-2">4.9/5.0</div>
-                <div className="opacity-90">Average Rating</div>
+                <div className="text-4xl font-bold mb-2">16</div>
+                <div className="opacity-90">Free base characters</div>
               </div>
             </div>
           </div>
@@ -268,7 +268,7 @@ export default function PenpalAppPage() {
               Start with Lettie Pen Pal App Today
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              The best pen pal app chosen by many users<br />
+              A pen pal app that starts with one letter<br />
               Friends from around the world are waiting for you
             </p>
 

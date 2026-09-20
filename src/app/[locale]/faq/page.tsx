@@ -96,7 +96,7 @@ export default async function LocaleFaqPage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       <header className="container mx-auto px-4 py-6">
-        <nav className="flex items-center justify-between">
+        <nav className="flex items-center justify-between md:pr-40">
           <Link href={`/${locale}`} className="flex items-center space-x-3">
             <Image src="/lettie-icon.png" alt="Lettie" className="w-10 h-10 rounded-2xl" width={40} height={40} priority />
             <span className="text-2xl font-bold text-gray-800">Lettie</span>

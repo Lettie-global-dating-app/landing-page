@@ -23,9 +23,9 @@ export default function LanguageSwitcher() {
   return (
     <div style={{ position: "fixed", top: 24, right: 24, zIndex: 50 }}>
       <div style={{ 
-        background: "white", 
+        background: "#FBF7EE", 
         borderRadius: 9999, 
-        boxShadow: "0 2px 8px rgba(0,0,0,0.08)", 
+        boxShadow: "0 2px 8px rgba(43,36,24,0.12)", border: "1px solid #E7D9B9", 
         display: "flex", 
         gap: 4, 
         padding: "4px 8px", 
@@ -34,8 +34,8 @@ export default function LanguageSwitcher() {
         <button
           onClick={() => isEn && (window.location.href = "/")}
           style={{
-            background: !isEn ? "#4f46e5" : "transparent",
-            color: !isEn ? "white" : "#4f46e5",
+            background: !isEn ? "#F97159" : "transparent",
+            color: !isEn ? "white" : "#F97159",
             border: "none",
             borderRadius: 8,
             padding: "4px 12px",
@@ -50,8 +50,8 @@ export default function LanguageSwitcher() {
         <button
           onClick={() => !isEn && (window.location.href = "/en")}
           style={{
-            background: isEn ? "#4f46e5" : "transparent",
-            color: isEn ? "white" : "#4f46e5",
+            background: isEn ? "#F97159" : "transparent",
+            color: isEn ? "white" : "#F97159",
             border: "none",
             borderRadius: 8,
             padding: "4px 12px",

@@ -2,8 +2,9 @@
 
 :root {
   /* Base Colors - 통일된 색상 체계 */
-  --background: #ffffff;
-  --foreground: #1a1a1a; /* 더 진한 검정으로 가독성 향상 */
+  /* 2.0 라이트 — 종이색 바탕에 산호색 강조 (홈의 밤하늘과 같은 계열) */
+  --background: #FBF7EE;
+  --foreground: #2B2418;
 
   /* 단순화된 색상 팔레트 - Blue 중심 */
   --primary: #3b82f6; /* Blue 500 - 메인 컬러 */
@@ -58,6 +59,16 @@
   --color-warning: var(--warning);
   --color-warning-light: var(--warning-light);
 
+  /* 1.x 페이지들이 blue/indigo/purple/sky 유틸리티를 직접 쓴다. 파일을 일일이 고치는 대신 색 자체를 2.0 팔레트로 바꾼다.
+     blue → coral, indigo/sky → sea, purple → sand */
+  --color-blue-50: #FFF3F0; --color-blue-100: #FFE7E1; --color-blue-200: #FDCDC3; --color-blue-300: #FBA493; --color-blue-400: #F98A74;
+  --color-blue-500: #F97159; --color-blue-600: #E25A43; --color-blue-700: #C24733; --color-blue-800: #9A3626; --color-blue-900: #7A2B1F;
+  --color-indigo-50: #EEF4FC; --color-indigo-100: #DCE8F8; --color-indigo-200: #B9D1F1; --color-indigo-300: #8FB4E8; --color-indigo-400: #6497DF;
+  --color-indigo-500: #3E7ED6; --color-indigo-600: #2F66B3; --color-indigo-700: #26508D; --color-indigo-800: #1E3D6B; --color-indigo-900: #172B52;
+  --color-sky-50: #EEF4FC; --color-sky-100: #DCE8F8; --color-sky-200: #B9D1F1; --color-sky-300: #8FB4E8; --color-sky-400: #6497DF;
+  --color-sky-500: #3E7ED6; --color-sky-600: #2F66B3; --color-sky-700: #26508D; --color-sky-800: #1E3D6B; --color-sky-900: #172B52;
+  --color-purple-50: #FBF6EA; --color-purple-100: #F5EBD3; --color-purple-200: #EAD7A8; --color-purple-300: #DEC182; --color-purple-400: #D3B070;
+  --color-purple-500: #CFA86C; --color-purple-600: #B58C4F; --color-purple-700: #92703E; --color-purple-800: #6F5530; --color-purple-900: #4E3B22;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
@@ -67,39 +78,7 @@
   --animate-float: float 6s ease-in-out infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0f172a; /* Slate 900 */
-    --foreground: #f1f5f9; /* Slate 100 */
-
-    /* Dark Mode - 통일된 Blue 팔레트 */
-    --primary: #60a5fa; /* Blue 400 */
-    --primary-foreground: #0f172a;
-    --primary-light: #1e3a8a; /* Blue 900 */
-    --primary-dark: #93c5fd; /* Blue 300 */
-
-    --secondary: #818cf8; /* Indigo 400 */
-    --secondary-foreground: #0f172a;
-    --secondary-light: #312e81; /* Indigo 900 */
-
-    --accent: #38bdf8; /* Sky 400 */
-    --accent-foreground: #0f172a;
-    --accent-light: #0c4a6e; /* Sky 900 */
-
-    --muted: #1e293b; /* Slate 800 */
-    --muted-foreground: #cbd5e1; /* Slate 300 - 다크 모드에서 가독성 향상 */
-
-    --card: rgba(30, 41, 59, 0.95); /* Slate 800 with opacity */
-    --card-foreground: #f1f5f9;
-
-    --border: #334155; /* Slate 700 */
-
-    --success: #34d399; /* Green 400 */
-    --success-light: #064e3b; /* Green 900 */
-    --warning: #fbbf24; /* Amber 400 */
-    --warning-light: #78350f; /* Amber 900 */
-  }
-}
+/* 다크 모드 오버라이드는 두지 않는다 — 하위 페이지 대부분이 bg-white·text-gray 를 직접 써서 토큰만 어두워지면 섞여 보인다. 홈은 항상 밤하늘이다. */
 
 
 /* ── 2.0 「하늘의 편지」 토큰 — 앱(lib/v2/design/tokens.dart)과 같은 값 ── */

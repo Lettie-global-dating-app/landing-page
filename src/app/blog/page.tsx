@@ -24,7 +24,7 @@ export default function BlogPage() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="container mx-auto px-4 py-6">
-        <nav className="flex items-center justify-between">
+        <nav className="flex items-center justify-between md:pr-40">
           <Link href="/" className="flex items-center space-x-3">
             <div className="w-10 h-10">
               <Image
