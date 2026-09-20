@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     absolute: "Lettie — Penpal App Where Letters Fly Across a Globe, in 28 Languages",
     template: "%s | Lettie"
   },
-  description: "A penpal app where your letter flies across a globe and takes real time to arrive. Pick up letters strangers released, translate them into any of 28 languages, and collect a stamp for every country you reach. No swiping, no photos to start. Free on iOS and Android.",
+  description: "A penpal & dating app where your letter flies across a globe and takes hours to arrive. Pick up letters strangers released, translate them in 28 languages, collect a stamp per country. No swiping, no photos first. Free on iOS & Android.",
   keywords: [
     "penpal", "letter", "penpal app", "letter app", "global penpal", "global friend", "global", "friend", "communication", "cultural exchange", "language exchange", 
     "international friend", "overseas friend", "Lettie", "dating app", "relationship", "connection", "international dating", "penpal dating",
@@ -57,8 +57,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: baseUrl,
     siteName: "Lettie",
-    title: "Lettie - Penpal Dating App | Make Global Friends Through Letters",
-    description: "A penpal app where your letter flies across a globe and takes real time to arrive. Pick up letters strangers released, translate them into any of 28 languages, and collect a stamp for every country you reach. No swiping, no photos to start. Free on iOS and Android.",
+    title: "Lettie — Slow Letters That Fly Across a Globe | Penpal App",
+    description: "A penpal & dating app where your letter flies across a globe and takes hours to arrive. Pick up letters strangers released, translate them in 28 languages, collect a stamp per country. No swiping, no photos first. Free on iOS & Android.",
     images: [
       {
         url: ogImageUrl,
@@ -73,8 +73,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@lettie_app",
     creator: "@lettie_app",
-    title: "Lettie - Penpal Dating App | Make Global Friends Through Letters",
-    description: "A penpal app where your letter flies across a globe and takes real time to arrive. Pick up letters strangers released, translate them into any of 28 languages, and collect a stamp for every country you reach. No swiping, no photos to start. Free on iOS and Android.",
+    title: "Lettie — Slow Letters That Fly Across a Globe | Penpal App",
+    description: "A penpal & dating app where your letter flies across a globe and takes hours to arrive. Pick up letters strangers released, translate them in 28 languages, collect a stamp per country. No swiping, no photos first. Free on iOS & Android.",
     images: [ogImageUrl],
   },
   alternates: {

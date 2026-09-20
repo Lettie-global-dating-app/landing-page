@@ -33,7 +33,7 @@ export const organizationSchema = {
   description:
     'Lettie is a penpal app for writing letters to people in other countries, with every letter translated across 28 languages.',
   foundingDate: '2024',
-  sameAs: [APP_STORE, PLAY_STORE],
+  sameAs: [APP_STORE, PLAY_STORE, 'https://www.instagram.com/lettie_dating/', 'https://www.threads.com/@lettie_dating', 'https://www.producthunt.com/products/lettie-2'],
   contactPoint: {
     '@type': 'ContactPoint',
     contactType: 'Customer Service',

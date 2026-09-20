@@ -24,10 +24,10 @@ const baseUrl = process.env.NEXT_PUBLIC_SITE_URL
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "편지, 펜팔 - Lettie | 지구본 위를 날아가는 편지, 28개 언어 글로벌 펜팔 앱",
+    default: "Lettie 레티 — 지구본 위를 날아가는 편지, 28개 언어 펜팔 앱",
     template: "%s | 편지, 펜팔 Lettie"
   },
-  description: "편지가 지구본 위를 날아가 거리만큼 걸려서 도착하는 펜팔 앱. 남들이 띄운 편지를 주워 읽고 28개 언어로 번역해 답장하세요. 주고받은 나라마다 우표가 모이고, 사진 없이 캐릭터로 시작합니다. iOS·안드로이드 무료.",
+  description: "편지가 지구본 위를 날아가 거리만큼 걸려 도착하는 펜팔·데이팅 앱. 남이 띄운 편지를 주워 읽고 28개 언어로 번역해 답장하세요. 사진 대신 캐릭터, 나라마다 우표. iOS·Android 무료.",
   keywords: [
     "편지", "펜팔", "펜팔앱", "편지앱", "글로벌 펜팔", "글로벌 친구", "글로벌", "친구", "소통", "문화교류", "외국인친구", "언어교환",
     "글로벌친구", "해외친구", "문화체험", "Lettie", "레티",
@@ -54,8 +54,8 @@ export const metadata: Metadata = {
     locale: "ko_KR",
     url: baseUrl,
     siteName: "Lettie",
-    title: "편지, 펜팔 - Lettie | 지구본 위를 날아가는 편지, 28개 언어 글로벌 펜팔 앱",
-    description: "편지가 지구본 위를 날아가 거리만큼 걸려서 도착하는 펜팔 앱. 남들이 띄운 편지를 주워 읽고 28개 언어로 번역해 답장하세요. 주고받은 나라마다 우표가 모이고, 사진 없이 캐릭터로 시작합니다. iOS·안드로이드 무료.",
+    title: "Lettie 레티 — 지구본 위를 날아가는 편지, 28개 언어 펜팔 앱",
+    description: "편지가 지구본 위를 날아가 거리만큼 걸려 도착하는 펜팔·데이팅 앱. 남이 띄운 편지를 주워 읽고 28개 언어로 번역해 답장하세요. 사진 대신 캐릭터, 나라마다 우표. iOS·Android 무료.",
     images: [
       {
         url: "/lettie-og-image.png",
@@ -72,8 +72,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@lettie_app",
     creator: "@lettie_app",
-    title: "편지, 펜팔 - Lettie | 지구본 위를 날아가는 편지, 28개 언어 글로벌 펜팔 앱",
-    description: "편지가 지구본 위를 날아가 거리만큼 걸려서 도착하는 펜팔 앱. 남들이 띄운 편지를 주워 읽고 28개 언어로 번역해 답장하세요. 주고받은 나라마다 우표가 모이고, 사진 없이 캐릭터로 시작합니다. iOS·안드로이드 무료.",
+    title: "Lettie 레티 — 지구본 위를 날아가는 편지, 28개 언어 펜팔 앱",
+    description: "편지가 지구본 위를 날아가 거리만큼 걸려 도착하는 펜팔·데이팅 앱. 남이 띄운 편지를 주워 읽고 28개 언어로 번역해 답장하세요. 사진 대신 캐릭터, 나라마다 우표. iOS·Android 무료.",
     images: ["/lettie-og-image.png"],
   },
 
