@@ -86,8 +86,10 @@ export default async function BlogPostPage({ params }: Props) {
     },
   };
 
-  // FAQ Schema (특정 포스트에만 추가)
-  let faqJsonLd = null;
+  // FAQ Schema — 글 데이터의 faq 를 우선 쓰고, 예전 두 글은 하드코딩 유지
+  let faqJsonLd: Record<string, unknown> | null = post.faq
+    ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: post.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }
+    : null;
   if (slug === 'how-to-start-penpal' || slug === 'safe-penpaling-guide') {
     faqJsonLd = {
       '@context': 'https://schema.org',
@@ -259,6 +261,21 @@ export default async function BlogPostPage({ params }: Props) {
             {post.content}
           </ReactMarkdown>
         </div>
+
+        {/* FAQ — 보이는 글과 FAQPage JSON-LD 가 같은 데이터 */}
+        {post.faq && (
+          <section className="mt-12 pt-8 border-t border-border">
+            <h2 className="text-2xl font-bold mb-6">자주 묻는 질문</h2>
+            <dl className="space-y-6">
+              {post.faq.map((f) => (
+                <div key={f.q}>
+                  <dt className="font-semibold text-foreground">{f.q}</dt>
+                  <dd className="mt-2 text-muted-foreground leading-relaxed">{f.a}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        )}
 
         {/* Share Section */}
         <div className="mt-12 pt-8 border-t border-border">

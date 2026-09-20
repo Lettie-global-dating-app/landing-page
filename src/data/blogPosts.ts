@@ -16,6 +16,9 @@ export type BlogPost = {
     keywords: string[];
     /** 영어 페이지 전용 키워드. 없으면 한국어 keywords 가 그대로 나가 영어권 검색에 무의미하다. */
     keywordsEn?: string[];
+    /** 글 하단에 보이는 FAQ. 같은 내용이 FAQPage JSON-LD 로도 나간다 (보이는 글과 구조화 데이터를 다르게 두지 않는다). */
+    faq?: { q: string; a: string }[];
+    faqEn?: { q: string; a: string }[];
 };
 
 export const blogPosts: Record<string, BlogPost> = {
@@ -5527,6 +5530,18 @@ Get past letter three and the correspondence usually finds its own momentum.
         author: 'Lettie',
         keywords: ['Slowly', '슬로울리', 'Slowly 대안', 'Slowly 비슷한 앱', '느린 편지 앱', '펜팔 앱 비교', '편지 데이팅 앱', 'Lettie', '레티', '편지 번역 앱', '지구본 편지'],
         keywordsEn: ['Slowly app', 'Slowly alternative', 'apps like Slowly', 'Slowly vs Lettie', 'slow letter app', 'pen pal app comparison', 'letter dating app', 'pen pal app with translation'],
+        faq: [
+            { q: 'Lettie와 Slowly의 가장 큰 차이는 무엇인가요?', a: '목적입니다. Slowly는 펜팔(친구)에 초점이 있고, Lettie는 편지로 사람을 알아 가는 데이팅·펜팔 앱입니다. 그래서 Lettie에는 성별 선택 매칭, 사진 없는 캐릭터 프로필, 번갈아 쓰기 같은 장치가 있습니다.' },
+            { q: 'Lettie에도 Slowly처럼 편지가 거리만큼 걸려 도착하나요?', a: '네. 두 도시의 실제 거리로 계산해 최소 30분, 최대 24시간이 걸립니다. 서울에서 도쿄는 2~3시간, 뉴욕은 17~18시간 정도입니다.' },
+            { q: 'Lettie의 번역은 유료인가요?', a: '아니요. 편지 안의 번역 버튼으로 28개 언어를 무료로 번역하며, 원문과 번역문을 나란히 보여 줍니다.' },
+            { q: 'Slowly에서 Lettie로 옮기면 무엇이 달라지나요?', a: '첫 편지를 매칭 카드로 받는 대신, 발견 탭에서 남이 하늘에 띄운 편지를 주워 읽고 답장할 수 있습니다. 프로필은 사진 대신 16종의 픽셀 캐릭터로 시작합니다.' },
+        ],
+        faqEn: [
+            { q: 'What is the biggest difference between Lettie and Slowly?', a: 'Purpose. Slowly is built for pen-pal friendship; Lettie is a letter-based dating and pen-pal app. That is why Lettie has gender-choice matching, photo-free character profiles and turn-taking letters.' },
+            { q: 'Do letters in Lettie take time to arrive like in Slowly?', a: 'Yes. Delivery time is computed from the real distance between the two cities: at least 30 minutes, at most 24 hours. Seoul to Tokyo is about 2–3 hours; Seoul to New York about 17–18 hours.' },
+            { q: 'Is translation in Lettie paid?', a: 'No. A translate button inside each letter covers 28 languages for free and shows the original and the translation side by side.' },
+            { q: 'What changes if I move from Slowly to Lettie?', a: 'Instead of only receiving match cards, you can pick up letters strangers released into the sky in the Discover tab and reply. Profiles start as one of sixteen pixel characters instead of a photo.' },
+        ],
         content: `
 # Lettie vs Slowly — 느린 편지 앱 두 개, 무엇이 다른가
 
@@ -5673,6 +5688,16 @@ Lettie is smaller than Slowly. If you need to find someone in a specific small c
         author: 'Lettie',
         keywords: ['Slowly 대안', 'Slowly 비슷한 앱', '슬로울리 대안', '펜팔 앱 추천', '느린 편지 앱', '언어 교환 앱', 'InterPals', 'HelloTalk', 'Tandem', 'Lettie'],
         keywordsEn: ['Slowly alternatives', 'apps like Slowly', 'Slowly app alternative 2026', 'best pen pal apps', 'slow letter apps', 'language exchange apps', 'InterPals alternative', 'HelloTalk vs Tandem'],
+        faq: [
+            { q: 'Slowly와 가장 비슷한 앱은 무엇인가요?', a: '편지가 거리만큼 걸려 도착한다는 핵심이 같은 앱은 Lettie입니다. 언어 교환이 목적이면 HelloTalk·Tandem, 이메일 펜팔이면 InterPals가 가깝습니다.' },
+            { q: 'Slowly 대안 앱들은 무료인가요?', a: '이 글의 여섯 앱 모두 무료로 시작할 수 있습니다. 차이는 유료 항목입니다. Lettie는 번역이 무료이고 우표·캐릭터·무제한 대화가 유료 항목입니다.' },
+            { q: '사진 없이 시작할 수 있는 펜팔 앱이 있나요?', a: 'Lettie는 사진 대신 픽셀 캐릭터로 시작하며, 처음 만나는 사람에게 사진이 보이지 않습니다.' },
+        ],
+        faqEn: [
+            { q: 'Which app is most similar to Slowly?', a: 'Lettie keeps the same core: letters take time to arrive based on distance. For language exchange HelloTalk and Tandem are closer; for email-style pen pals, InterPals.' },
+            { q: 'Are the Slowly alternatives free?', a: 'All six apps in this article are free to start. The difference is what is paid: in Lettie translation is free, while stamps, custom characters and unlimited conversation are paid extras.' },
+            { q: 'Is there a pen-pal app that works without photos?', a: 'Lettie starts every profile as a pixel character, and no photograph is shown to someone you meet for the first time.' },
+        ],
         content: `
 # Slowly 대안 앱 6가지 비교 (2026)
 
@@ -6163,6 +6188,16 @@ If that's you, open one envelope in Discover tonight. You won't know the writer'
         author: 'Lettie',
         keywords: ['펜팔 앱 추천', '펜팔 어플 추천 2026', '외국인 친구 사귀는 앱', '무료 펜팔 앱', '해외 펜팔 앱', '언어 교환 앱 추천', '편지 앱 추천'],
         keywordsEn: ['best pen pal apps 2026', 'pen pal apps free', 'apps to make friends abroad', 'international pen pal app', 'letter writing app', 'language exchange app recommendation'],
+        faq: [
+            { q: '2026년 무료로 쓸 수 있는 펜팔 앱은 무엇인가요?', a: '이 글의 일곱 앱 모두 무료로 시작할 수 있습니다. Slowly·Lettie는 느린 편지, HelloTalk·Tandem은 언어 교환, InterPals·Penpal World는 이메일식 펜팔에 가깝습니다.' },
+            { q: '외국어를 못해도 펜팔 앱을 쓸 수 있나요?', a: '네. Lettie는 편지 안의 번역 버튼으로 28개 언어를 무료로 번역하고, HelloTalk·Tandem에도 번역 도구가 있습니다.' },
+            { q: '펜팔 앱에서 첫 편지는 어떻게 시작하나요?', a: '상대 프로필이나 상대가 띄운 편지에서 구체적인 한 문장을 골라 그 얘기부터 시작하세요. 예시 일곱 개를 「발견에서 주운 편지에 답하는 첫 편지 예시」 글에 정리했습니다.' },
+        ],
+        faqEn: [
+            { q: 'Which pen-pal apps are free in 2026?', a: 'All seven apps in this article are free to start. Slowly and Lettie are slow-letter apps, HelloTalk and Tandem are for language exchange, and InterPals and Penpal World are closer to email pen pals.' },
+            { q: 'Can I use a pen-pal app without speaking a foreign language?', a: 'Yes. Lettie translates 28 languages for free with a button inside each letter, and HelloTalk and Tandem also have translation tools.' },
+            { q: 'How do I start a first letter on a pen-pal app?', a: 'Pick one concrete sentence from the other person\'s profile or letter and begin there. Seven worked examples are in our article on answering a letter you picked up in Discover.' },
+        ],
         content: `
 # 2026 펜팔 앱 추천 7가지 — 목적별로
 

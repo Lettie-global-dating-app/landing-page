@@ -113,12 +113,27 @@ export default async function BlogPostPage({ params }: Props) {
     ],
   };
 
+  const faqJsonLd = post.faqEn
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: post.faqEn.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }
+    : null;
+
   return (
     <div className="min-h-screen bg-background">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {faqJsonLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      )}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
@@ -221,6 +236,21 @@ export default async function BlogPostPage({ params }: Props) {
             {post.contentEn}
           </ReactMarkdown>
         </div>
+
+        {/* FAQ — 보이는 글과 FAQPage JSON-LD 가 같은 데이터 */}
+        {post.faqEn && (
+          <section className="mt-12 pt-8 border-t border-border">
+            <h2 className="text-2xl font-bold mb-6">Frequently asked questions</h2>
+            <dl className="space-y-6">
+              {post.faqEn.map((f) => (
+                <div key={f.q}>
+                  <dt className="font-semibold text-foreground">{f.q}</dt>
+                  <dd className="mt-2 text-muted-foreground leading-relaxed">{f.a}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        )}
 
         {/* Share Section */}
         <div className="mt-12 pt-8 border-t border-border">

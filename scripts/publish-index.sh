@@ -29,12 +29,19 @@ if [[ "${1:-}" == "--all-gsc" || ! -f $SNAP ]]; then
 else
   comm -13 $SNAP /tmp/sitemap.now.txt > /tmp/sitemap.new.txt
 fi
-n=$(wc -l < /tmp/sitemap.new.txt | tr -d ' ')
-echo "새 URL $n 건"
+# 지난번 한도에 걸려 못 보낸 URL(scripts/.gsc-pending.txt)을 앞에 붙인다
+PENDING=scripts/.gsc-pending.txt
+{ [[ -f $PENDING ]] && cat $PENDING; cat /tmp/sitemap.new.txt; } | awk 'NF && !seen[$0]++' > /tmp/sitemap.todo.txt
+n=$(wc -l < /tmp/sitemap.todo.txt | tr -d ' ')
+echo "요청할 URL $n 건"
 if [[ $n -gt 0 ]]; then
   # 블로그 글을 먼저, 한도(10) 안에서
-  { grep -E '/blog/' /tmp/sitemap.new.txt; grep -vE '/blog/' /tmp/sitemap.new.txt; } | head -10 > /tmp/sitemap.req.txt
-  node ~/AndroidStudioProjects/dearglobe/tools/promo-video/gsc_request.mjs --file /tmp/sitemap.req.txt || echo "GSC 요청 중 오류 (CDP Chrome 이 켜져 있어야 한다: open -na 'Google Chrome' --args --user-data-dir=/tmp/chrome-lettie --remote-debugging-port=9333)"
+  { grep -E '/blog/' /tmp/sitemap.todo.txt; grep -vE '/blog/' /tmp/sitemap.todo.txt; } | head -10 > /tmp/sitemap.req.txt
+  node ~/AndroidStudioProjects/dearglobe/tools/promo-video/gsc_request.mjs --file /tmp/sitemap.req.txt | tee /tmp/gsc.result.txt || echo "GSC 요청 중 오류 (CDP Chrome 이 켜져 있어야 한다: open -na 'Google Chrome' --args --user-data-dir=/tmp/chrome-lettie --remote-debugging-port=9333)"
+  # requested 된 것만 빼고 나머지는 다음 실행으로 넘긴다
+  grep -E '^requested' /tmp/gsc.result.txt | awk '{print $2}' | sort > /tmp/gsc.done.txt
+  sort /tmp/sitemap.todo.txt | comm -23 - /tmp/gsc.done.txt > $PENDING
+  echo "다음으로 넘긴 URL $(wc -l < $PENDING | tr -d ' ') 건"
 fi
 cp /tmp/sitemap.now.txt $SNAP
 echo "done"
