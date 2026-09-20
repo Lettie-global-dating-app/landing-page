@@ -55,7 +55,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: '¿Cuándo puedo intercambiar mi contacto con alguien?',
-        a: 'Después de cinco cartas intercambiadas. El límite no es romántico sino de seguridad: una historia inventada resiste una conversación corta, pero rara vez resiste cinco cartas.',
+        a: 'Cuando los dos queráis; no hay una regla fija. Como las cartas tardan lo que marca la distancia, tenéis tiempo de conoceros antes. Mantén tus datos dentro de la app hasta estar seguro y recuerda que puedes denunciar o bloquear a cualquiera en cualquier momento.',
       },
       {
         q: '¿Por qué no se ven fotos al principio?',
@@ -89,7 +89,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: 'Quando posso trocar contatos com alguém?',
-        a: 'Depois de cinco cartas trocadas. O limite não é romântico e sim de segurança: uma história inventada sobrevive a uma conversa curta, mas raramente sobrevive a cinco cartas.',
+        a: 'Quando os dois quiserem; não há regra fixa. Como as cartas levam o tempo da distância, vocês têm tempo de se conhecer antes. Mantenha seus dados dentro do app até ter certeza, e lembre que dá para denunciar ou bloquear qualquer pessoa a qualquer momento.',
       },
       {
         q: 'Por que não aparecem fotos no início?',
@@ -123,7 +123,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: '連絡先はいつ交換できますか。',
-        a: '手紙を5通やりとりした後です。これは恋愛的な演出ではなく安全のための仕組みで、作り話は短い会話には耐えても、5通の手紙にはほとんど耐えられないためです。',
+        a: '二人が望んだときに交換できます。決まったルールはありません。手紙は距離のぶんだけ時間をかけて届くので、その前にお互いを知る時間が自然に生まれます。確信が持てるまでは連絡先をアプリの中にとどめ、不快な相手はいつでも通報・ブロックできます。',
       },
       {
         q: 'なぜ最初は写真が見えないのですか。',
@@ -157,7 +157,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: 'Quand puis-je échanger mes coordonnées ?',
-        a: 'Après cinq lettres échangées. Ce seuil n’est pas une mise en scène romantique mais une mesure de sécurité : une histoire inventée résiste à une conversation courte, rarement à cinq lettres.',
+        a: 'Quand vous le souhaitez tous les deux ; il n’y a pas de règle fixe. Comme les lettres mettent le temps de la distance, vous avez le temps de vous connaître avant. Gardez vos coordonnées dans l’application tant que vous n’êtes pas sûr, et sachez que vous pouvez signaler ou bloquer quelqu’un à tout moment.',
       },
       {
         q: 'Pourquoi ne voit-on pas de photo au début ?',
@@ -191,7 +191,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: 'Wann kann ich Kontaktdaten austauschen?',
-        a: 'Nach fünf ausgetauschten Briefen. Diese Schwelle ist keine romantische Inszenierung, sondern ein Sicherheitsmechanismus: Eine erfundene Geschichte übersteht ein kurzes Gespräch, aber selten fünf Briefe.',
+        a: 'Wann immer ihr beide wollt; eine feste Regel gibt es nicht. Da Briefe so lange brauchen wie die Entfernung, habt ihr vorher Zeit, euch kennenzulernen. Behalte deine Kontaktdaten in der App, bis du sicher bist, und denk daran, dass du jederzeit jemanden melden oder blockieren kannst.',
       },
       {
         q: 'Warum sieht man am Anfang keine Fotos?',
@@ -225,7 +225,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: '什么时候可以交换联系方式？',
-        a: '在互相寄出五封信之后。这个门槛不是浪漫设定，而是安全机制：编造的身份能撑过一次简短对话，却很难撑过五封信。',
+        a: '你们两人都愿意的时候就可以，没有固定规则。因为信要按距离花时间送达，你们自然有时间先了解彼此。在确定之前，把联系方式留在应用内；随时都可以举报或拉黑任何人。',
       },
       {
         q: '为什么一开始看不到照片？',
@@ -259,7 +259,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: 'Quando posso scambiare i contatti?',
-        a: 'Dopo cinque lettere scambiate. Non è una scelta romantica ma di sicurezza: una storia inventata regge una conversazione breve, raramente cinque lettere.',
+        a: 'Quando lo volete entrambi; non c’è una regola fissa. Poiché le lettere impiegano il tempo della distanza, avete tempo di conoscervi prima. Tieni i tuoi contatti dentro l’app finché non sei sicuro e ricorda che puoi segnalare o bloccare chiunque in qualsiasi momento.',
       },
       {
         q: 'Perché all’inizio non si vedono le foto?',
@@ -293,7 +293,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: 'Когда можно обменяться контактами?',
-        a: 'После пяти отправленных писем. Это не романтическая условность, а мера безопасности: выдуманная история выдерживает короткий разговор, но редко выдерживает пять писем.',
+        a: 'Когда захотите вы оба; жёсткого правила нет. Поскольку письма идут столько, сколько занимает расстояние, у вас есть время сначала узнать друг друга. Держите контакты внутри приложения, пока не уверены, и помните, что пожаловаться на кого-то или заблокировать можно в любой момент.',
       },
       {
         q: 'Почему в начале не видно фотографий?',
@@ -327,7 +327,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: 'संपर्क विवरण कब साझा किए जा सकते हैं?',
-        a: 'पाँच चिट्ठियों के आदान-प्रदान के बाद। यह रोमानी नियम नहीं बल्कि सुरक्षा उपाय है: गढ़ी हुई कहानी छोटी बातचीत झेल लेती है, पाँच चिट्ठियाँ शायद ही झेलती है।',
+        a: 'जब आप दोनों चाहें; कोई तय नियम नहीं है। चिट्ठियाँ दूरी जितना समय लेती हैं, इसलिए पहले एक-दूसरे को जानने का समय अपने आप मिल जाता है। पक्का होने तक संपर्क विवरण ऐप के भीतर ही रखें, और याद रखें कि आप कभी भी किसी की रिपोर्ट कर सकते हैं या उसे ब्लॉक कर सकते हैं।',
       },
       {
         q: 'शुरू में तस्वीरें क्यों नहीं दिखतीं?',
@@ -361,7 +361,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: 'Kapan saya boleh bertukar kontak?',
-        a: 'Setelah lima surat saling dikirim. Ambang ini bukan gaya romantis melainkan pengaman: cerita palsu bertahan dalam percakapan singkat, tetapi jarang bertahan sampai lima surat.',
+        a: 'Kapan pun kalian berdua mau; tidak ada aturan tetap. Karena surat butuh waktu sesuai jarak, kalian punya waktu untuk saling mengenal lebih dulu. Simpan kontakmu di dalam aplikasi sampai kamu yakin, dan ingat kamu bisa melaporkan atau memblokir siapa pun kapan saja.',
       },
       {
         q: 'Mengapa foto tidak terlihat di awal?',

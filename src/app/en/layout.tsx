@@ -26,7 +26,7 @@ const koBaseUrl = process.env.NEXT_PUBLIC_SITE_URL
 // OG/트위터 이미지는 절대 URL 로 지정한다.
 // metadataBase 가 ".../en" 이라 상대 경로("/lettie-og-image.png")를 주면
 // ".../en/lettie-og-image.png" 로 해석되어 404 가 났다(공유 시 썸네일 깨짐).
-const ogImageUrl = `${koBaseUrl}/lettie-og-image.png`;
+const ogImageUrl = `${koBaseUrl}/og/en.png`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -36,11 +36,11 @@ export const metadata: Metadata = {
     absolute: "Lettie — Penpal App Where Letters Fly Across a Globe, in 28 Languages",
     template: "%s | Lettie"
   },
-  description: "A penpal & dating app where your letter flies across a globe and takes hours to arrive. Pick up letters strangers released, translate them in 28 languages, collect a stamp per country. No swiping, no photos first. Free on iOS & Android.",
+  description: "A pen pal app where your letter flies across a globe and takes hours to arrive. Pick up letters strangers released, translate them in 28 languages, collect a stamp per country. No swiping, no photos first. Free on iOS & Android.",
   keywords: [
     "penpal", "letter", "penpal app", "letter app", "global penpal", "global friend", "global", "friend", "communication", "cultural exchange", "language exchange", 
-    "international friend", "overseas friend", "Lettie", "dating app", "relationship", "connection", "international dating", "penpal dating",
-    "slow letters", "letter translation app", "28 languages", "stamp collecting app", "pen pal without photos", "no swipe dating", "snail mail app", "write to strangers"
+    "international friend", "overseas friend", "Lettie", "pen pal app with translation", "pen pal for adults", "find a pen pal", "pen pal website",
+    "slow letters", "letter translation app", "28 languages", "stamp collecting app", "pen pal without photos", "pen pal not dating", "snail mail app", "write to strangers"
   ],
   authors: [{ name: "Lettie Team" }],
   creator: "Lettie Team",
@@ -51,20 +51,21 @@ export const metadata: Metadata = {
     telephone: false,
   },
   category: "Social Networking",
-  classification: "Penpal and Social Networking Dating App",
+  classification: "Pen Pal and Social Networking App",
   openGraph: {
     type: "website",
     locale: "en_US",
+    alternateLocale: ["ko_KR", "es_ES", "pt_BR", "ja_JP", "fr_FR", "zh_CN", "de_DE", "hi_IN", "id_ID", "ru_RU", "it_IT"],
     url: baseUrl,
     siteName: "Lettie",
     title: "Lettie — Slow Letters That Fly Across a Globe | Penpal App",
-    description: "A penpal & dating app where your letter flies across a globe and takes hours to arrive. Pick up letters strangers released, translate them in 28 languages, collect a stamp per country. No swiping, no photos first. Free on iOS & Android.",
+    description: "A pen pal app where your letter flies across a globe and takes hours to arrive. Pick up letters strangers released, translate them in 28 languages, collect a stamp per country. No swiping, no photos first. Free on iOS & Android.",
     images: [
       {
         url: ogImageUrl,
         width: 1200,
         height: 630,
-        alt: "Lettie - Global Penpal Dating App",
+        alt: "Lettie — A letter you write today lands tomorrow",
         type: "image/png",
       }
     ],
@@ -74,7 +75,7 @@ export const metadata: Metadata = {
     site: "@lettie_app",
     creator: "@lettie_app",
     title: "Lettie — Slow Letters That Fly Across a Globe | Penpal App",
-    description: "A penpal & dating app where your letter flies across a globe and takes hours to arrive. Pick up letters strangers released, translate them in 28 languages, collect a stamp per country. No swiping, no photos first. Free on iOS & Android.",
+    description: "A pen pal app where your letter flies across a globe and takes hours to arrive. Pick up letters strangers released, translate them in 28 languages, collect a stamp per country. No swiping, no photos first. Free on iOS & Android.",
     images: [ogImageUrl],
   },
   alternates: {

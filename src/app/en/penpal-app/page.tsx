@@ -18,7 +18,7 @@ const features = [
   {
     icon: Shield,
     title: 'Safe Pen Pal App',
-    description: 'Secure environment with 5-letter contact exchange system'
+    description: 'Start without photos, and report or block anyone at any time'
   },
   {
     icon: Globe,
@@ -246,7 +246,7 @@ export default function PenpalAppPage() {
                 Q: What makes it different from other pen pal apps?
               </h3>
               <p className="text-gray-600">
-                A: Lettie ensures safety with a 5-letter contact exchange system and starts without photos to pursue genuine inner communication.
+                A: Lettie starts with pixel characters instead of photos, and letters take real time to travel, so you get to know each other before sharing anything. You can report or block anyone at any time.
               </p>
             </div>
 

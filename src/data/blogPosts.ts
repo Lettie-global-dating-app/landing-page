@@ -5528,16 +5528,16 @@ Get past letter three and the correspondence usually finds its own momentum.
         categoryEn: 'Comparison',
         image: '/v2/key-ko-s1.png',
         author: 'Lettie',
-        keywords: ['Slowly', '슬로울리', 'Slowly 대안', 'Slowly 비슷한 앱', '느린 편지 앱', '펜팔 앱 비교', '편지 데이팅 앱', 'Lettie', '레티', '편지 번역 앱', '지구본 편지'],
-        keywordsEn: ['Slowly app', 'Slowly alternative', 'apps like Slowly', 'Slowly vs Lettie', 'slow letter app', 'pen pal app comparison', 'letter dating app', 'pen pal app with translation'],
+        keywords: ['Slowly', '슬로울리', 'Slowly 대안', 'Slowly 비슷한 앱', '느린 편지 앱', '펜팔 앱 비교', '편지 펜팔 앱', 'Lettie', '레티', '편지 번역 앱', '지구본 편지'],
+        keywordsEn: ['Slowly app', 'Slowly alternative', 'apps like Slowly', 'Slowly vs Lettie', 'slow letter app', 'pen pal app comparison', 'letter pen pal app', 'pen pal app with translation'],
         faq: [
-            { q: 'Lettie와 Slowly의 가장 큰 차이는 무엇인가요?', a: '목적입니다. Slowly는 펜팔(친구)에 초점이 있고, Lettie는 편지로 사람을 알아 가는 데이팅·펜팔 앱입니다. 그래서 Lettie에는 성별 선택 매칭, 사진 없는 캐릭터 프로필, 번갈아 쓰기 같은 장치가 있습니다.' },
+            { q: 'Lettie와 Slowly의 가장 큰 차이는 무엇인가요?', a: '첫 편지를 시작하는 방식입니다. Slowly는 관심사 매칭과 공개 편지로 상대를 찾고, Lettie는 남이 하늘에 띄운 편지를 발견에서 주워 답장하는 데서 시작합니다. 여기에 앱 안 무료 번역(28개 언어), 글로 적으면 그려 주는 픽셀 캐릭터, 하루 몇 장의 소개 카드가 더해집니다.' },
             { q: 'Lettie에도 Slowly처럼 편지가 거리만큼 걸려 도착하나요?', a: '네. 두 도시의 실제 거리로 계산해 최소 30분, 최대 24시간이 걸립니다. 서울에서 도쿄는 2~3시간, 뉴욕은 17~18시간 정도입니다.' },
             { q: 'Lettie의 번역은 유료인가요?', a: '아니요. 편지 안의 번역 버튼으로 28개 언어를 무료로 번역하며, 원문과 번역문을 나란히 보여 줍니다.' },
             { q: 'Slowly에서 Lettie로 옮기면 무엇이 달라지나요?', a: '첫 편지를 매칭 카드로 받는 대신, 발견 탭에서 남이 하늘에 띄운 편지를 주워 읽고 답장할 수 있습니다. 프로필은 사진 대신 16종의 픽셀 캐릭터로 시작합니다.' },
         ],
         faqEn: [
-            { q: 'What is the biggest difference between Lettie and Slowly?', a: 'Purpose. Slowly is built for pen-pal friendship; Lettie is a letter-based dating and pen-pal app. That is why Lettie has gender-choice matching, photo-free character profiles and turn-taking letters.' },
+            { q: 'What is the biggest difference between Lettie and Slowly?', a: 'How the first letter starts. Slowly finds you a pen pal through interest matching and open letters; Lettie starts with picking up a letter a stranger released into the sky (Discover) and replying. On top of that: free in-app translation in 28 languages, a pixel character drawn from your description, and a few introduction cards a day. Photo-free character profiles and turn-taking letters.' },
             { q: 'Do letters in Lettie take time to arrive like in Slowly?', a: 'Yes. Delivery time is computed from the real distance between the two cities: at least 30 minutes, at most 24 hours. Seoul to Tokyo is about 2–3 hours; Seoul to New York about 17–18 hours.' },
             { q: 'Is translation in Lettie paid?', a: 'No. A translate button inside each letter covers 28 languages for free and shows the original and the translation side by side.' },
             { q: 'What changes if I move from Slowly to Lettie?', a: 'Instead of only receiving match cards, you can pick up letters strangers released into the sky in the Discover tab and reply. Profiles start as one of sixteen pixel characters instead of a photo.' },
@@ -5559,7 +5559,7 @@ Get past letter three and the correspondence usually finds its own momentum.
 
 Slowly는 처음부터 끝까지 **펜팔** 앱입니다. 취미가 맞는 사람과 오래 편지를 주고받는 것이 목적이고, 그래서 연애나 만남을 전제로 한 장치가 없습니다.
 
-Lettie는 **편지로 시작하는 만남**입니다. 우정으로 끝나도 좋지만, 만날 상대의 성별(이성·동성·모두)을 고르고 하루 몇 장의 매칭 카드를 받는 구조가 있습니다. 스와이프와 점수는 없습니다. "사진 먼저"인 데이팅 앱이 싫고, "친구까지만"인 펜팔 앱은 아쉬웠던 사람을 위한 자리입니다.
+Lettie도 **펜팔 앱**입니다. 다른 점은 첫 편지를 남이 띄운 편지를 주워서 시작한다는 것, 번역이 앱 안에서 무료라는 것, 그리고 하루 몇 장의 소개 카드가 온다는 것입니다. 스와이프와 점수는 없습니다. 검색해서 상대를 고르기보다 편지 한 통을 읽고 마음이 움직이면 답장하는 쪽을 원하는 사람을 위한 자리입니다.
 
 ## 2. 첫 편지를 어떻게 만나나 — 매칭 vs 발견
 
@@ -5579,7 +5579,7 @@ Slowly의 아바타는 부품을 조합해 만듭니다. Lettie는 기본 픽셀
 
 ## 5. 매칭 — 없음 vs 하루 몇 장
 
-Slowly에는 데이팅식 매칭이 없습니다. Lettie는 하루 몇 장의 카드가 오고, 마음에 들면 편지를 씁니다. 무한 스와이프가 아니라 **하루치**라서, 고르는 데 쓰는 시간보다 쓰는 데 쓰는 시간이 깁니다.
+Slowly는 펜팔 검색으로 상대를 찾습니다. Lettie는 하루 몇 장의 소개 카드가 오고, 마음에 들면 편지를 씁니다. 무한 스와이프가 아니라 **하루치**라서, 고르는 데 쓰는 시간보다 쓰는 데 쓰는 시간이 깁니다.
 
 ## 표로 정리하면
 
@@ -5598,7 +5598,7 @@ Slowly에는 데이팅식 매칭이 없습니다. Lettie는 하루 몇 장의 �
 
 - **취미가 맞는 펜팔과 오래 편지를 주고받고 싶다** → Slowly. 사용자 층이 두텁고, 8년 된 커뮤니티가 있습니다.
 - **언어가 달라도 상관없이, 글로 사람을 고르고 싶다** → Lettie. 번역이 기본이고, 발견에서 편지를 읽고 고릅니다.
-- **데이팅 앱의 "사진 먼저"가 싫었다** → Lettie. 캐릭터로 시작하고 편지가 먼저입니다.
+- **얼굴보다 글로 사람을 알고 싶다** → Lettie. 캐릭터로 시작하고 편지가 먼저입니다.
 - **아무 기대 없이 세상 사람 이야기를 읽고 싶다** → 둘 다 좋습니다. Lettie의 발견은 무료로도 하루 여러 통을 엽니다.
 
 ## 한 가지 솔직한 단점
@@ -5622,9 +5622,9 @@ From here they diverge on five things.
 
 ## 1. Purpose — pen-pal friendship vs meeting someone through letters
 
-Slowly is a **pen-pal** app end to end. The goal is a long correspondence with someone who shares your interests, and there is deliberately nothing built around dating.
+Slowly is a **pen-pal** app end to end. The goal is a long correspondence with someone who shares your interests, found through interest matching and open letters.
 
-Lettie is **meeting someone through letters.** Friendship is a fine outcome, but you choose who you'd like to meet (opposite, same, everyone) and get a few matching cards a day. No swiping, no scores. It's for people who disliked "photo first" dating apps and found "friends only" pen-pal apps not quite enough.
+Lettie is a pen-pal app too. What differs is how it starts: you pick up a letter a stranger released into the sky and reply, translation is free inside the app, and a few introduction cards arrive each day. No swiping, no scores. It's for people who would rather read one letter and answer it than search a directory and found "friends only" pen-pal apps not quite enough.
 
 ## 2. How you meet your first letter — matching vs Discover
 
@@ -5644,7 +5644,7 @@ Slowly's avatars are assembled from parts. Lettie gives you sixteen pixel charac
 
 ## 5. Matching — none vs a few a day
 
-Slowly has no dating-style matching. Lettie sends a few cards a day; if you like one, you write. It's a daily handful rather than an endless swipe, so you spend more time writing than choosing.
+Slowly finds pen pals through search and matching. Lettie sends a few introduction cards a day; if you like one, you write. It's a daily handful rather than an endless swipe, so you spend more time writing than choosing.
 
 ## Side by side
 
@@ -5663,7 +5663,7 @@ Slowly has no dating-style matching. Lettie sends a few cards a day; if you like
 
 - **You want a long correspondence with someone who shares your hobbies** → Slowly. Bigger user base, an eight-year-old community.
 - **You want to meet people regardless of language, chosen by what they wrote** → Lettie. Translation is the default; Discover lets you read before you choose.
-- **You hated "photo first" dating apps** → Lettie. Characters first, letters first.
+- **You'd rather know someone by their words than their face** → Lettie. Characters first, letters first.
 - **You just want to read what people around the world are thinking** → Either. Lettie's Discover opens several letters a day for free.
 
 ## One honest downside
@@ -5707,7 +5707,7 @@ Slowly를 쓰다가 다른 앱을 찾는 이유는 대개 셋 중 하나입니�
 
 | 앱 | 한 줄 요약 | 번역 | 편지 지연 | 목적 |
 |---|---|---|---|---|
-| **Lettie** | 지구본 위를 날아가는 편지, 발견에서 줍기 | 앱 안, 28개 언어, 무료 | 거리 기준 1~24h | 만남(데이팅·우정) |
+| **Lettie** | 지구본 위를 날아가는 편지, 발견에서 줍기 | 앱 안, 28개 언어, 무료 | 거리 기준 1~24h | 펜팔 (편지 줍기·소개 카드) |
 | **Slowly** | 느린 편지의 원조 | 외부·유료 | 거리 기준 | 펜팔 |
 | **InterPals** | 가장 큰 펜팔 커뮤니티(웹 중심) | 없음 | 즉시 | 펜팔·언어 |
 | **HelloTalk** | 원어민 교정 채팅 | 내장 | 즉시 | 언어 교환 |
@@ -5725,7 +5725,7 @@ Slowly에서 가장 자주 나오는 아쉬움이 번역입니다. 편지를 복
 
 ## 2. 친구 이상을 기대한다면 → Lettie
 
-Slowly는 의도적으로 데이팅 요소를 넣지 않습니다. 그게 장점인 사람이 있고, 아쉬운 사람이 있습니다. Lettie는 **편지로 시작하는 만남**을 전제로 만든 앱입니다. 만날 상대의 성별을 고르고 하루 몇 장의 매칭 카드를 받지만, 사진과 스와이프는 없습니다. 사진 먼저인 데이팅 앱이 불편했던 사람을 위한 자리입니다.
+Slowly는 펜팔 검색과 관심사 매칭으로 상대를 찾습니다. Lettie는 **남이 띄운 편지를 주워 답장하는 것**으로 시작하고, 하루 몇 장의 소개 카드가 옵니다. 사진과 스와이프는 없습니다. 상대를 검색해 고르기보다 편지 한 통에서 시작하고 싶은 사람을 위한 자리입니다.
 
 ## 3. 사람이 많은 곳을 원한다면 → InterPals, Penpal World
 
@@ -5759,7 +5759,7 @@ People leave Slowly for one of three reasons: **the language gap**, **wanting mo
 
 | App | One line | Translation | Letter delay | Purpose |
 |---|---|---|---|---|
-| **Lettie** | Letters fly across a globe; pick up strangers' letters | In-app, 28 languages, free | 1–24 h by distance | Meeting people (dating & friendship) |
+| **Lettie** | Letters fly across a globe; pick up strangers' letters | In-app, 28 languages, free | 1–24 h by distance | Pen pals (pick up letters · introduction cards) |
 | **Slowly** | The original slow-letter app | External / paid | By distance | Pen pals |
 | **InterPals** | The biggest pen-pal community (web-first) | None | Instant | Pen pals · languages |
 | **HelloTalk** | Chat with native-speaker corrections | Built in | Instant | Language exchange |
@@ -5777,7 +5777,7 @@ The most common complaint about Slowly is translation: copy the letter out to a 
 
 ## 2. If you want more than friendship → Lettie
 
-Slowly deliberately has no dating layer. That's a plus for some and a gap for others. Lettie is built around **meeting someone through letters**: you choose who you'd like to meet and get a few matching cards a day, but there are no photos and no swiping. It's for people who found "photo first" dating apps uncomfortable.
+Slowly finds pen pals through search and interest matching. Lettie starts with **picking up a letter a stranger released** and replying, plus a few introduction cards a day. No photos, no swiping. It's for people who found "photo first" dating apps uncomfortable.
 
 ## 3. If you want the biggest crowd → InterPals, Penpal World
 
@@ -6091,8 +6091,8 @@ You'll still improve with translation on, because you keep seeing the original n
     },
     'no-photo-dating-pixel-character': {
         id: 'no-photo-dating-pixel-character',
-        title: '사진 없는 데이팅 앱은 어떻게 다른가 — 픽셀 캐릭터로 시작하면 생기는 일',
-        titleEn: 'What changes when a dating app has no photos — starting as a pixel character',
+        title: '사진 없는 펜팔 앱은 어떻게 다른가 — 픽셀 캐릭터로 시작하면 생기는 일',
+        titleEn: 'What changes when a pen pal app has no photos — starting as a pixel character',
         description: '프로필 사진을 빼면 대화가 어떻게 달라지는지. Lettie가 사진 대신 픽셀 캐릭터로 시작하는 이유, 나만의 캐릭터를 글로 그리는 법, 그리고 솔직한 단점.',
         descriptionEn: 'How conversations change when profile photos are gone. Why Lettie starts with a pixel character instead of a face, how to draw your own from a description, and the honest downside.',
         date: '2026-09-21',
@@ -6102,12 +6102,12 @@ You'll still improve with translation on, because you keep seeing the original n
         categoryEn: 'Emotional',
         image: '/v2/key-ko-s4.png',
         author: 'Lettie',
-        keywords: ['사진 없는 데이팅 앱', '외모 안 보는 소개팅 앱', '픽셀 캐릭터 프로필', '얼굴 없는 데이팅', '편지 데이팅', 'Lettie 캐릭터', '아바타 데이팅 앱'],
-        keywordsEn: ['dating app without photos', 'no photo dating app', 'personality first dating app', 'pixel avatar dating', 'faceless dating app', 'Lettie character', 'dating app no swiping'],
+        keywords: ['사진 없는 펜팔 앱', '외모 안 보는 친구 사귀기', '픽셀 캐릭터 프로필', '얼굴 없는 프로필', '편지 펜팔', 'Lettie 캐릭터', '아바타 프로필 앱'],
+        keywordsEn: ['pen pal app without photos', 'no photo pen pal app', 'personality first friendship app', 'pixel avatar profile', 'faceless profile app', 'Lettie character', 'pen pal app no swiping'],
         content: `
-# 사진 없는 데이팅 앱은 어떻게 다른가
+# 사진 없는 펜팔 앱은 어떻게 다른가
 
-데이팅 앱의 첫 화면은 얼굴입니다. 그래서 0.5초 안에 결정이 나고, 그 뒤의 대화는 그 결정을 확인하는 절차가 됩니다. Lettie는 순서를 뒤집었습니다. 처음엔 **픽셀 캐릭터**와 **편지**만 있습니다.
+사람을 만나는 앱 대부분은 첫 화면이 얼굴입니다. 그래서 0.5초 안에 결정이 나고, 그 뒤의 대화는 그 결정을 확인하는 절차가 됩니다. Lettie는 순서를 뒤집었습니다. 처음엔 **픽셀 캐릭터**와 **편지**만 있습니다.
 
 ## 사진을 빼면 실제로 생기는 일
 
@@ -6128,7 +6128,7 @@ You'll still improve with translation on, because you keep seeing the original n
 
 - 외모가 중요한 사람에게는 비효율적입니다. 이 앱은 그런 분께 맞지 않습니다.
 - 편지 한 통이 도착하는 데 몇 시간이 걸립니다. 오늘 밤 당장 누군가와 이야기하고 싶다면 채팅 앱이 낫습니다.
-- 사용자 수가 큰 데이팅 앱보다 적습니다. 대신 여기 있는 사람들은 편지를 쓰러 온 사람들입니다.
+- 사용자 수가 큰 소셜 앱보다 적습니다. 대신 여기 있는 사람들은 편지를 쓰러 온 사람들입니다.
 
 ## 이 방식이 맞는 사람
 
@@ -6136,12 +6136,12 @@ You'll still improve with translation on, because you keep seeing the original n
 - 대화가 길어지면 오히려 편하다
 - 외국 사람과의 만남에 열려 있다 (번역은 앱이 합니다)
 
-맞다면 오늘 밤 발견에서 봉투 하나를 열어 보세요. 그 편지를 쓴 사람의 얼굴은 모르지만, 무슨 생각을 하는 사람인지는 압니다. 데이팅 앱에서는 보통 그 반대죠.
+맞다면 오늘 밤 발견에서 봉투 하나를 열어 보세요. 그 편지를 쓴 사람의 얼굴은 모르지만, 무슨 생각을 하는 사람인지는 압니다. 얼굴부터 보는 앱에서는 보통 그 반대죠.
 `,
         contentEn: `
-# What changes when a dating app has no photos
+# What changes when a pen pal app has no photos
 
-The first screen of a dating app is a face. The decision happens in half a second, and the conversation after that is a procedure to confirm it. Lettie flips the order. At the start there is only a **pixel character** and a **letter.**
+On most apps for meeting people, the first screen is a face. The decision happens in half a second, and the conversation after that is a procedure to confirm it. Lettie flips the order. At the start there is only a **pixel character** and a **letter.**
 
 ## What actually happens when the photos are gone
 
@@ -6162,7 +6162,7 @@ You do, naturally, once letters are flowing. You can attach photos to a letter, 
 
 - If looks are what matter to you, this is inefficient. The app isn't for you.
 - A letter takes hours to arrive. If you want to talk to someone tonight, use a chat app.
-- Fewer people than the big dating apps. The ones here came to write letters.
+- Fewer people than the big social apps. The ones here came to write letters.
 
 ## Who this is for
 
@@ -6170,7 +6170,7 @@ You do, naturally, once letters are flowing. You can attach photos to a letter, 
 - Longer conversations feel easier to you, not harder
 - You're open to meeting someone abroad (the app does the translating)
 
-If that's you, open one envelope in Discover tonight. You won't know the writer's face, but you'll know how they think. On dating apps it's usually the other way round.
+If that's you, open one envelope in Discover tonight. You won't know the writer's face, but you'll know how they think. On face-first apps it's usually the other way round.
 `,
     },
     'best-penpal-apps-2026': {

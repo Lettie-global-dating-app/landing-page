@@ -5,14 +5,18 @@ import React, { useEffect, useState } from "react";
 export default function LanguageSwitcher() {
   const [isEn, setIsEn] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [isHome, setIsHome] = useState(false);
 
   useEffect(() => {
     setMounted(true);
-    setIsEn(window.location.pathname.startsWith("/en"));
+    const path = window.location.pathname.replace(/\/$/, "");
+    setIsEn(path.startsWith("/en"));
+    // 홈은 12개 언어 메뉴를 헤더에 직접 그린다. 여기의 한/영 토글은 블로그·가이드처럼 두 언어만 있는 페이지용.
+    setIsHome(path === "" || /^\/[a-z]{2}$/.test(path));
   }, []);
 
   // 서버 렌더링 시에는 아무것도 표시하지 않음
-  if (!mounted) {
+  if (!mounted || isHome) {
     return null;
   }
 

@@ -160,6 +160,16 @@
   opacity: 0.9;
 }
 
+/* 히어로의 폰이 아주 천천히 떠 있다. 움직임을 줄인 사용자에겐 멈춘다 */
+@keyframes phone-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.phone-float { animation: phone-float 7s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .phone-float { animation: none; }
+}
+
 /* 편지지 카드 — 앱의 종이 색과 딱딱한 그림자 */
 .paper-card {
   background: var(--paper);

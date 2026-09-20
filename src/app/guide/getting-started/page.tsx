@@ -202,7 +202,7 @@ export default function GettingStartedGuidePage() {
                     <strong>1. 개인정보 보호:</strong> 주소, 전화번호, 금융 정보 등은 절대 초기에 공유하지 마세요
                   </li>
                   <li>
-                    <strong>2. 5통 규칙 활용:</strong> Lettie의 5통 편지 후 연락처 교환 시스템을 신뢰하세요
+                    <strong>2. 서두르지 않기:</strong> 편지는 거리만큼 시간이 걸려 오갑니다. 연락처는 서로를 충분히 알고 나서, 두 사람이 원할 때 교환하세요
                   </li>
                   <li>
                     <strong>3. 직감 신뢰:</strong> 불편한 느낌이 들면 대화를 중단하고 신고하세요

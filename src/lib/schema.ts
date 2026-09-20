@@ -52,7 +52,7 @@ export function websiteSchema(locale: 'ko' | 'en') {
     url: SITE_URL,
     description:
       locale === 'ko'
-        ? '편지와 펜팔을 통해 전 세계 친구들과 소통하는 글로벌 펜팔 데이팅앱'
+        ? '편지가 지구본 위를 날아가 거리만큼 걸려 도착하는 글로벌 펜팔 앱'
         : 'Penpal app connecting people worldwide through letters translated across 28 languages',
     publisher: { '@id': ORG_ID },
     inLanguage: ['ko', 'en', 'es', 'pt', 'ja', 'fr', 'zh', 'de', 'hi', 'id', 'ru', 'it'],
@@ -70,13 +70,13 @@ export function mobileAppSchema(locale: 'ko' | 'en') {
     '@context': 'https://schema.org',
     '@type': 'MobileApplication',
     '@id': APP_ID,
-    name: locale === 'ko' ? 'Lettie - 편지, 펜팔 글로벌 데이팅앱' : 'Lettie - Penpal Letter App',
+    name: locale === 'ko' ? 'Lettie - 편지, 글로벌 펜팔 앱' : 'Lettie - Penpal Letter App',
     applicationCategory: 'SocialNetworkingApplication',
     operatingSystem: ['iOS', 'Android'],
     description:
       locale === 'ko'
-        ? '편지가 지구본 위를 실제로 날아가 거리만큼 시간이 걸려 도착합니다. 남들이 띄운 편지를 주워 읽고 답장하며, 28개 언어로 번역됩니다. 주고받은 나라마다 우표가 모이고, 편지 5통을 주고받은 뒤에 연락처를 교환합니다.'
-        : 'Letters fly across a globe and take real time to arrive — hours or a day, depending on distance. Pick up letters other people released, read them translated into any of 28 languages, and collect a stamp for every country you reach. Contact details are exchanged only after five letters.',
+        ? '편지가 지구본 위를 실제로 날아가 거리만큼 시간이 걸려 도착합니다. 남들이 띄운 편지를 주워 읽고 답장하며, 28개 언어로 번역됩니다. 주고받은 나라마다 우표가 모이고, 사진 대신 픽셀 캐릭터로 시작합니다.'
+        : 'Letters fly across a globe and take real time to arrive — hours or a day, depending on distance. Pick up letters other people released, read them translated into any of 28 languages, and collect a stamp for every country you reach. Profiles start as pixel characters instead of photos.',
     url: locale === 'ko' ? SITE_URL : `${SITE_URL}/en`,
     downloadUrl: [APP_STORE, PLAY_STORE],
     offers: {

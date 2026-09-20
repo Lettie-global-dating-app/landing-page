@@ -18,7 +18,7 @@ const features = [
   {
     icon: Shield,
     title: '안전한 펜팔앱',
-    description: '5통 편지 후 연락처 교환 시스템으로 안전한 펜팔앱 환경 제공'
+    description: '사진 없이 시작하고, 신고·차단이 언제나 가능한 안전한 펜팔앱 환경 제공'
   },
   {
     icon: Globe,
@@ -246,7 +246,7 @@ export default function PenpalAppPage() {
                 Q: 다른 펜팔앱과 뭐가 다른가요?
               </h3>
               <p className="text-gray-600">
-                A: Lettie는 5통 편지 후 연락처 교환 시스템으로 안전성을 보장하고, 사진 없이 시작해 진정한 내면의 소통을 추구하는 펜팔앱입니다.
+                A: Lettie는 사진 대신 픽셀 캐릭터로 시작하고, 편지가 거리만큼 시간이 걸려 오가는 동안 서로를 알아 가는 펜팔앱입니다. 불편한 상대는 언제든 신고·차단할 수 있습니다.
               </p>
             </div>
 

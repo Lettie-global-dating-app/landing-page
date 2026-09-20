@@ -108,7 +108,7 @@ export default async function BlogPostPage({ params }: Props) {
           name: '펜팔 친구와 연락처는 언제 교환하는 것이 안전한가요?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Lettie에서는 최소 5통의 편지를 주고받은 후 연락처 교환을 권장합니다. 충분한 대화를 통해 신뢰를 쌓은 후 개인 메신저나 연락처를 공유하세요.',
+            text: '정해진 규칙은 없지만, 편지를 여러 통 주고받으며 신뢰가 쌓인 뒤에 교환하기를 권장합니다. 확신이 들기 전에는 개인 메신저나 연락처를 앱 밖으로 내보내지 마세요.',
           },
         },
         {

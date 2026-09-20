@@ -1,6 +1,6 @@
 export const en = {
   meta: {
-    title: 'Lettie - Penpal Dating App | Make Global Friends Through Letters',
+    title: 'Lettie - Pen Pal App | Make Global Friends Through Letters',
     description:
       'Write a letter, not a swipe. Lettie connects you with penpals around the world and translates every letter across 28 languages, so language never decides who you get to meet.',
     keywords: [
@@ -11,7 +11,7 @@ export const en = {
       'language exchange',
       'global friends',
       'letter app',
-      'slow dating',
+      'slow letters',
     ],
   },
   nav: {

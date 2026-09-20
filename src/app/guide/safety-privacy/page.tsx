@@ -158,8 +158,8 @@ export default function SafetyPrivacyGuidePage() {
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
                       <div>
-                        <strong>5통 규칙:</strong>
-                        <p className="text-sm mt-1">5통의 편지를 주고받은 후에만 연락처 교환이 가능합니다. 충분히 서로를 알아가세요.</p>
+                        <strong>연락처는 천천히:</strong>
+                        <p className="text-sm mt-1">편지는 거리만큼 시간이 걸려 오가므로 서로를 알아 갈 시간이 자연스럽게 생깁니다. 확신이 들기 전에는 연락처를 앱 밖으로 내보내지 마세요.</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-2">
@@ -185,7 +185,7 @@ export default function SafetyPrivacyGuidePage() {
                     <div className="bg-white rounded-lg p-4">
                       <div className="flex items-center gap-3 mb-2">
                         <span className="text-2xl">📮</span>
-                        <strong className="text-gray-800">1-5통: 탐색 단계</strong>
+                        <strong className="text-gray-800">처음 몇 통: 탐색 단계</strong>
                       </div>
                       <p className="text-gray-600 text-sm">
                         기본적인 관심사와 일상 공유. 개인정보는 최소한으로 유지
@@ -194,7 +194,7 @@ export default function SafetyPrivacyGuidePage() {
                     <div className="bg-white rounded-lg p-4">
                       <div className="flex items-center gap-3 mb-2">
                         <span className="text-2xl">🤝</span>
-                        <strong className="text-gray-800">5통 이후: 신뢰 구축</strong>
+                        <strong className="text-gray-800">그 다음: 신뢰 구축</strong>
                       </div>
                       <p className="text-gray-600 text-sm">
                         더 깊은 대화 시작. 연락처 교환 가능하지만 신중하게 결정

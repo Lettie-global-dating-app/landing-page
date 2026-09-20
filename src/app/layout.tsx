@@ -27,14 +27,13 @@ export const metadata: Metadata = {
     default: "Lettie 레티 — 지구본 위를 날아가는 편지, 28개 언어 펜팔 앱",
     template: "%s | 편지, 펜팔 Lettie"
   },
-  description: "편지가 지구본 위를 날아가 거리만큼 걸려 도착하는 펜팔·데이팅 앱. 남이 띄운 편지를 주워 읽고 28개 언어로 번역해 답장하세요. 사진 대신 캐릭터, 나라마다 우표. iOS·Android 무료.",
+  description: "편지가 지구본 위를 날아가 거리만큼 걸려 도착하는 펜팔 앱. 남이 띄운 편지를 주워 읽고 28개 언어로 번역해 답장하세요. 사진 대신 캐릭터, 나라마다 우표. iOS·Android 무료.",
   keywords: [
     "편지", "펜팔", "펜팔앱", "편지앱", "글로벌 펜팔", "글로벌 친구", "글로벌", "친구", "소통", "문화교류", "외국인친구", "언어교환",
     "글로벌친구", "해외친구", "문화체험", "Lettie", "레티",
-    "펜친구", "편지친구", "해외문화", "언어학습", "국제교류", "세계친구", "데이팅",
-    "데이팅앱", "만남", "인연", "글로벌 데이팅", "국제 만남", "편지 데이팅",
+    "펜친구", "편지친구", "해외문화", "언어학습", "국제교류", "세계친구", "외국인 펜팔", "펜팔 사이트", "펜팔 어플",
     "디지털 디톡스", "슬로우 라이프", "글로벌 에티켓", "문화 차이", "힐링",
-    "느린 편지", "편지 번역", "번역 펜팔", "28개 언어", "우표 수집", "지구본 편지", "외국인 친구 사귀기", "픽셀 캐릭터", "스와이프 없는 데이팅"
+    "느린 편지", "편지 번역", "번역 펜팔", "28개 언어", "우표 수집", "지구본 편지", "외국인 친구 사귀기", "픽셀 캐릭터", "스와이프 없는 펜팔"
   ],
   authors: [{ name: "Lettie Team" }],
   creator: "Lettie Team",
@@ -45,23 +44,25 @@ export const metadata: Metadata = {
     telephone: false,
   },
   category: "Social Networking",
-  classification: "펜팔 및 소셜 네트워킹 데이팅앱",
+  classification: "펜팔 및 소셜 네트워킹 앱",
 
 
   // Open Graph
   openGraph: {
     type: "website",
     locale: "ko_KR",
+    alternateLocale: ["en_US", "es_ES", "pt_BR", "ja_JP", "fr_FR", "zh_CN", "de_DE", "hi_IN", "id_ID", "ru_RU", "it_IT"],
     url: baseUrl,
     siteName: "Lettie",
-    title: "Lettie 레티 — 지구본 위를 날아가는 편지, 28개 언어 펜팔 앱",
-    description: "편지가 지구본 위를 날아가 거리만큼 걸려 도착하는 펜팔·데이팅 앱. 남이 띄운 편지를 주워 읽고 28개 언어로 번역해 답장하세요. 사진 대신 캐릭터, 나라마다 우표. iOS·Android 무료.",
+    // 루트를 그대로 공유하는 해외 사용자를 위해 제목은 한·영을 같이 쓴다. 언어별 링크(/en, /es …)는 각자 자기 언어로 뜬다.
+    title: "Lettie 레티 — 오늘 쓴 편지는 내일 도착합니다 | A letter you write today lands tomorrow",
+    description: "편지가 지구본 위를 날아가 거리만큼 걸려 도착하는 펜팔 앱. 남이 띄운 편지를 주워 읽고 28개 언어로 번역해 답장하세요. 사진 대신 캐릭터, 나라마다 우표. iOS·Android 무료.",
     images: [
       {
-        url: "/lettie-og-image.png",
+        url: "/og/ko.png",
         width: 1200,
         height: 630,
-        alt: "Lettie - 글로벌 펜팔 데이팅앱",
+        alt: "Lettie — 오늘 쓴 편지는 내일 도착합니다",
         type: "image/png",
       }
     ],
@@ -72,9 +73,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@lettie_app",
     creator: "@lettie_app",
-    title: "Lettie 레티 — 지구본 위를 날아가는 편지, 28개 언어 펜팔 앱",
-    description: "편지가 지구본 위를 날아가 거리만큼 걸려 도착하는 펜팔·데이팅 앱. 남이 띄운 편지를 주워 읽고 28개 언어로 번역해 답장하세요. 사진 대신 캐릭터, 나라마다 우표. iOS·Android 무료.",
-    images: ["/lettie-og-image.png"],
+    // 루트를 그대로 공유하는 해외 사용자를 위해 제목은 한·영을 같이 쓴다. 언어별 링크(/en, /es …)는 각자 자기 언어로 뜬다.
+    title: "Lettie 레티 — 오늘 쓴 편지는 내일 도착합니다 | A letter you write today lands tomorrow",
+    description: "편지가 지구본 위를 날아가 거리만큼 걸려 도착하는 펜팔 앱. 남이 띄운 편지를 주워 읽고 28개 언어로 번역해 답장하세요. 사진 대신 캐릭터, 나라마다 우표. iOS·Android 무료.",
+    images: ["/og/ko.png"],
   },
 
   // App Store & Google Play

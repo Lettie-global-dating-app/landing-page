@@ -200,7 +200,7 @@ export default function GettingStartedGuidePage() {
                   <ul className="space-y-3">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-indigo-500 mt-0.5 flex-shrink-0" />
-                      <span><strong>5-Letter Rule:</strong> Contact exchange only after 5 letters ensures safe getting-to-know period</span>
+                      <span><strong>Take your time:</strong> letters travel as long as the distance, so you get to know each other before exchanging contact details</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-indigo-500 mt-0.5 flex-shrink-0" />

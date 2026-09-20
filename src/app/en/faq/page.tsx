@@ -21,7 +21,7 @@ const faqCategories = [
     questions: [
       {
         q: 'What is Lettie?',
-        a: 'Lettie is a global pen pal app where you can exchange letters with people around the world and build genuine relationships. Start without photos to focus on inner qualities, and exchange contact information after exchanging 5 letters.'
+        a: 'Lettie is a global pen pal app for exchanging letters with people around the world. Letters fly across a globe and take as long as the distance to arrive, and you can read them translated into 28 languages. Profiles start as pixel characters instead of photos, so the focus is on what someone writes.'
       },
       {
         q: 'How do I get started?',
@@ -60,8 +60,8 @@ const faqCategories = [
         a: 'Lettie prioritizes user privacy. All data is encrypted and stored securely, and personal information is not shared with third parties without user consent.'
       },
       {
-        q: 'What is the 5-letter rule?',
-        a: 'For safe interaction, contact information can only be exchanged after 5 letters have been exchanged. This ensures time to get to know each other and prevents spam or inappropriate approaches.'
+        q: 'When can I exchange contact details?',
+        a: 'There is no fixed rule — whenever both of you want to. Because letters take real time to travel, you naturally get time to know each other first. Keep contact details inside the app until you are sure, and you can report or block anyone at any time.'
       },
       {
         q: 'I received inappropriate content. How do I report it?',

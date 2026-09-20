@@ -13,7 +13,7 @@ export const de: Dictionary = {
       'freunde im ausland finden',
       'brief app',
       'übersetzte briefe',
-      'langsames dating',
+      'langsame briefe',
     ],
   },
   nav: {
