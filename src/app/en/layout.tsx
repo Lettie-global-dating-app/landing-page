@@ -148,8 +148,8 @@ export default function RootLayout({
         />
 
         {/* Extra SEO meta tags */}
-        <meta name="theme-color" content="#4f46e5" />
-        <meta name="msapplication-TileColor" content="#4f46e5" />
+        <meta name="theme-color" content="#102040" />
+        <meta name="msapplication-TileColor" content="#102040" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="mobile-web-app-capable" content="yes" />

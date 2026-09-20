@@ -1165,7 +1165,7 @@ By a snowy window, drinking warm tea, I await your letter.
 
 ## 천천히 드러나는 아름다움
 
-Lettie는 5통의 편지를 주고받기 전까지 연락처 교환을 허용하지 않아요. 처음에는 제한적이라고 생각했어요.
+Lettie에서는 편지가 거리만큼 시간이 걸려 도착하고, 상대의 답장이 와야 다음 편지를 쓸 수 있어요. 처음에는 답답하다고 생각했어요.
 
 이제는 그게 자유롭다는 걸 깨달았어요.
 
@@ -1306,7 +1306,7 @@ These things can't be captured in carefully curated Instagram photos. They're di
 
 ## The Beauty of Slow Reveal
 
-Lettie doesn't allow contact exchange until after 5 letters. At first, I thought it was limiting.
+On Lettie a letter takes as long as the distance to arrive, and you can only write again once their reply lands. At first, I thought it was limiting.
 
 Now I realize it's liberating.
 
@@ -1453,7 +1453,7 @@ The pumpkin's carved. The candle's lit. The first page is blank.
 
 이것이 바로 Lettie가 특별한 이유예요. 우리는 서두르지 않습니다.
 
-**5통의 편지를 주고받으며**: 천천히, 진실되게 서로를 알아갑니다.
+**번갈아 주고받는 편지로**: 천천히, 진실되게 서로를 알아갑니다.
 
 **사진 없이 시작하는 관계**: 외모가 아닌 마음과 생각으로 만납니다.
 
@@ -1516,7 +1516,7 @@ If you decide to reply, tell me something that matters to you. About things most
 
 This is what makes Lettie special. We don't rush.
 
-**Through 5 letters exchanged**: Slowly, genuinely getting to know each other.
+**Through letters that take turns**: Slowly, genuinely getting to know each other.
 
 **Relationships that start without photos**: Meeting through hearts and thoughts, not appearances.
 
@@ -1591,9 +1591,9 @@ Let's meet on Lettie. Looking forward to the start of our conversation.
 
 ## 4. Lettie만의 특별한 기능 활용하기
 
-### 5통의 편지 규칙
+### 번갈아 쓰는 규칙
 
-Lettie는 5통의 편지를 주고받은 후 연락처를 교환할 수 있습니다. 이는 서로를 충분히 알아가는 시간을 보장합니다.
+Lettie에서는 내 편지가 도착하고 상대의 답장이 올 때까지 다음 편지를 쓸 수 없습니다. 이 기다림이 서로를 충분히 알아가는 시간을 보장합니다.
 
 ### 프라이버시 보호
 
@@ -1662,7 +1662,7 @@ Go beyond superficial conversation to share deep stories. From small daily tales
 
 ### The 5-Letter Rule
 
-Lettie allows contact exchange after exchanging 5 letters. This ensures time to get to know each other sufficiently.
+On Lettie you can't write again until your letter has landed and their reply has come back. That wait guarantees time to get to know each other.
 
 ### Privacy Protection
 
@@ -1995,7 +1995,7 @@ Lettie는 단순한 메시징 앱이 아닙니다. 진심 어린 편지를 통�
 
 ## Lettie로 함께 만들어가는 우정
 
-Lettie의 가장 큰 장점은 서두르지 않는다는 것입니다. 5통의 편지를 주고받기 전까지는 연락처를 교환할 수 없어, 천천히 서로를 알아가며 진정한 신뢰를 쌓을 수 있습니다.
+Lettie의 가장 큰 장점은 서두르지 않는다는 것입니다. 편지는 거리만큼 시간이 걸려 도착하고 상대의 답장이 와야 다음 편지를 쓸 수 있어, 천천히 서로를 알아가며 진정한 신뢰를 쌓을 수 있습니다.
 
 사진 없이 시작하는 펜팔이기에, 외모가 아닌 마음과 생각으로 서로를 만납니다. 진짜 당신을 보여주고, 진짜 나를 알아가는 특별한 경험이 될 거예요.
 
@@ -2172,7 +2172,7 @@ Looking forward to hearing from you soon!
 
 Lettie에서의 펜팔 여정은 안개 속 아침 산책과 같습니다.
 
-### 5통의 편지, 5번의 일출
+### 편지 한 통, 일출 한 번
 
 **첫 번째 편지**: 안개 속에서 주고받는 첫 인사
 **두 번째 편지**: 조금씩 모습이 드러나기 시작하는 순간
@@ -2186,7 +2186,7 @@ Lettie에서의 펜팔 여정은 안개 속 아침 산책과 같습니다.
 
 **사진 없이 시작하는 이유**: 외모라는 베일 너머의 진짜 당신을 보기 위해
 **즉각적인 응답을 요구하지 않는 이유**: 생각을 가다듬고 진심을 담을 시간을 주기 위해
-**5통의 편지를 기다리는 이유**: 진정한 연결은 시간이 필요하기 때문에
+**편지가 하루 걸려 도착하는 이유**: 진정한 연결은 시간이 필요하기 때문에
 
 ## 황금빛으로 흐르는 세상
 
@@ -2349,7 +2349,7 @@ There's no need to rush. Like mist slowly lifting, our friendship deepens slowly
 
 **Why we start without photos**: To see the real you beyond the veil of appearance
 **Why we don't demand instant responses**: To give time to gather thoughts and include sincerity
-**Why we wait for 5 letters**: Because true connection needs time
+**Why a letter takes a day to arrive**: Because true connection needs time
 
 ## The World Flowing in Golden Light
 
@@ -2465,7 +2465,7 @@ Beyond the mist, in golden autumn.
 
 우리의 길이 직접 만나지 않을지라도, 편지로는 만날 수 있습니다.
 
-**5통의 편지를 주고받으며**: 천천히 서로를 알아가세요. 급하지 않아도 됩니다.
+**번갈아 오가는 편지로**: 천천히 서로를 알아가세요. 급하지 않아도 됩니다.
 
 **사진 없이 시작하는 만남**: 외모가 아닌, 마음과 생각으로 서로를 이해합니다.
 
@@ -2580,7 +2580,7 @@ Before autumn nights grow longer, start your first letter.
 Lettie는 이러한 '느림'의 가치를 지향합니다.
 
 **의도적인 불편함**:
-- 5통의 편지 후 연락처 교환
+- 젬으로 여는 무제한 대화 (그 전까지는 번갈아 쓰기)
 - 사진 없는 프로필
 - 즉각적이지 않은 소통
 
@@ -2640,7 +2640,7 @@ The process of carefully typing each character as if handwriting is like meditat
 Lettie pursues the value of this 'slowness.'
 
 **Intentional inconvenience**:
-- Contact exchange after 5 letters
+- Unlimited conversation unlocked with gems (turn-taking before that)
 - Profiles without photos
 - Non-instant communication
 
@@ -2703,7 +2703,7 @@ That's the true beginning of digital detox.
 
 ## 3. 외부 메신저 이동은 신중하게
 
-Lettie는 **5통의 편지**를 주고받은 후에만 연락처 교환이 가능하도록 설계되었습니다. 이는 서로를 검증할 최소한의 시간을 확보하기 위함입니다.
+Lettie는 편지가 **거리만큼 시간이 걸려 도착**하고, 답장이 와야 다음 편지를 쓸 수 있게 설계되었습니다. 이는 서로를 알아볼 최소한의 시간을 확보하기 위함입니다.
 
 - 너무 빨리 카카오톡, 라인, 왓츠앱 등으로 이동하자고 제안하는 경우 주의하세요.
 - Lettie 앱 내에서 충분히 대화를 나누고 신뢰가 쌓였을 때 연락처를 교환하세요.
@@ -2766,7 +2766,7 @@ Be cautious of romance scams where scammers build intimacy through penpalling th
 
 ## 3. Be Careful About Moving to External Messengers
 
-Lettie is designed to allow contact exchange only after **5 letters** exchanged. This ensures minimum time to verify each other.
+Lettie is designed so a letter **takes as long as the distance** to arrive, and you write again only after a reply. That guarantees a minimum of time to get a sense of each other.
 
 - Be cautious if someone suggests moving to KakaoTalk, Line, WhatsApp too quickly
 - Exchange contact information only after sufficient conversation and trust building within Lettie
@@ -2852,7 +2852,7 @@ Lettie는 언어와 국경을 넘어 진정한 친구를 만날 수 있는 최�
 비슷한 취미와 관심사를 가진 친구를 추천받아 자연스럽게 대화를 시작할 수 있습니다.
 
 ### 3. 안전한 환경
-사진 없이 시작하고, 5통의 편지 후 연락처를 교환하는 시스템은 낯선 외국인과의 대화에 대한 막연한 두려움을 덜어줍니다.
+사진 없이 캐릭터로 시작하고, 편지가 시간을 두고 오가는 구조는 낯선 외국인과의 대화에 대한 막연한 두려움을 덜어줍니다.
 
 ## 지금, 세계 지도를 펼쳐보세요
 
@@ -2903,8 +2903,8 @@ Lettie는 이 모든 기준을 충족하며, 2025년 가장 주목받는 펜팔 
 ### 1. 외모보다 내면에 집중하는 '블라인드 펜팔'
 Lettie의 가장 큰 특징은 **초기에 사진을 공개하지 않는 것**입니다. 프로필 사진 대신 아바타나 감성적인 이미지를 사용합니다. 이는 외모로 사람을 판단하는 '스와이프' 문화에 지친 사용자들에게 큰 호응을 얻고 있습니다. 편지의 내용, 상대방의 생각과 가치관에 온전히 집중할 수 있기 때문입니다.
 
-### 2. '5통의 편지' 규칙으로 검증된 관계
-연락처 교환이나 사진 공개는 **최소 5통의 편지**를 주고받은 후에만 가능합니다. 이 시스템은 두 가지 장점이 있습니다.
+### 2. 시간이 걸리는 편지로 검증된 관계
+편지는 **거리만큼 시간이 걸려 도착**하고, 상대의 답장이 와야 다음 편지를 쓸 수 있습니다. 이 구조는 두 가지 장점이 있습니다.
 - **안전 확보**: 충분한 대화를 통해 상대를 검증할 수 있어 스캠 피해를 예방합니다.
 - **관계의 깊이**: 연락처를 얻기 위한 목적이 아닌, 대화 자체를 즐기는 진성 유저들이 모입니다.
 
@@ -2917,7 +2917,7 @@ Lettie의 가장 큰 특징은 **초기에 사진을 공개하지 않는 것**�
 | :--- | :--- | :--- | :--- |
 | **매칭 방식** | 외모 중심 (스와이프) | 랜덤 발송 | 관심사 & 가치관 기반 |
 | **소통 속도** | 실시간 (즉답 압박) | 느림 (배송 시간) | **적당한 느림 (여유)** |
-| **안전 장치** | 미흡 | 보통 | **5통 편지 규칙** |
+| **안전 장치** | 미흡 | 보통 | **시간이 걸리는 편지·캐릭터 프로필** |
 | **주요 목적** | 가벼운 만남/연애 | 언어 교환 | **진정한 우정/소통** |
 
 ## 사용자들의 리얼 후기
@@ -2960,7 +2960,7 @@ Lettie meets all these criteria and is emerging as the most notable penpal app o
 Lettie's biggest feature is **not revealing photos initially**. Instead of profile pictures, avatars or emotional images are used. This has received great response from users tired of the 'swipe' culture that judges people by appearance. You can fully focus on the content of letters, the other person's thoughts and values.
 
 ### 2. Verified Relationships Through '5 Letters' Rule
-Contact exchange or photo sharing is only possible **after exchanging at least 5 letters**. This system has two advantages:
+A letter **takes as long as the distance** to arrive, and you write again only after a reply. This structure has two advantages:
 - **Safety Assurance**: You can verify the other person through sufficient conversation, preventing scam damage.
 - **Depth of Relationship**: Genuine users who enjoy conversation itself gather, not for the purpose of getting contact information.
 
@@ -2973,7 +2973,7 @@ Lettie is carefully designed to feel the warmth of analog letters even in a digi
 | :--- | :--- | :--- | :--- |
 | **Matching Method** | Appearance-focused (swipe) | Random sending | Interest & values-based |
 | **Communication Speed** | Real-time (immediate response pressure) | Slow (delivery time) | **Moderate slowness (leisure)** |
-| **Safety Features** | Insufficient | Average | **5 letters rule** |
+| **Safety Features** | Insufficient | Average | **Slow letters · character profiles** |
 | **Main Purpose** | Casual encounters/dating | Language exchange | **True friendship/communication** |
 
 ## Real User Reviews
@@ -4536,8 +4536,8 @@ Every letter and every reply translates across 28 languages, and it isn't metere
 
 Two other things shape how it feels:
 
-- **Profile photos start blurred** and come into focus as you exchange letters. You form an impression of the person before you form one of their face.
-- **Contact exchange unlocks after five letters.** No phone numbers up front.
+- **No profile photos to start** — everyone shows up as a pixel character, so you form an impression of the person before you form one of their face.
+- **Letters take real time to arrive** (by distance) and you write again only after a reply. No phone numbers up front.
 
 **Where it falls short:** the user base is smaller than InterPals or Slowly. If you want a pen pal in a very specific country tonight, the larger platforms have better odds. And if you already share a language with the people you write to, the translation layer isn't doing much for you — Slowly's delay mechanic might suit you better.
 
@@ -4637,7 +4637,7 @@ This part is not optional.
 - Be wary of anyone who moves fast — declarations of deep feeling within a few messages, or any request involving money. This is the single most common scam pattern in pen pal communities, and it looks like romance before it looks like fraud.
 - Video call before you meet, if it ever gets that far.
 
-Some apps build the delay in for you. Lettie, for instance, doesn't unlock contact exchange until you've traded five letters, which removes the awkwardness of saying no to an early request.
+Some apps build the delay in for you. Lettie, for instance, makes each letter take hours to arrive and only lets you write again after a reply, which removes the awkwardness of saying no to an early request.
 
 ## What about the language barrier
 
@@ -4884,7 +4884,7 @@ So where else can you go? Here's what each alternative is actually good at.
 
 The tradeoff: translation is a paid feature, consumed per use. If your correspondence crosses languages, that cost recurs.
 
-**Lettie.** Full disclosure, this is ours. The relevant difference for someone leaving InterPals: letters and replies translate across 28 languages without metering, and you can see the original next to the translation. Profile photos start blurred and sharpen as you exchange letters, and contact details don't unlock until five letters in.
+**Lettie.** Full disclosure, this is ours. The relevant difference for someone leaving InterPals: letters and replies translate across 28 languages without metering, and you can see the original next to the translation. Profiles are pixel characters instead of photos, so looks come last as you exchange letters, and contact details don't unlock until five letters in.
 
 That last part removes the InterPals pattern where someone asks for your WhatsApp in the first message.
 
@@ -4913,7 +4913,7 @@ The tradeoff: you're sharing a mailing address. Decide how you feel about that f
 | What pushed you off InterPals | Where to look |
 |---|---|
 | Too many low-effort messages | Slowly, Tandem |
-| Scam accounts and pressure to move to WhatsApp | Lettie (contacts locked for five letters) |
+| Scam accounts and pressure to move to WhatsApp | Lettie (slow letters, character profiles, no photos up front) |
 | Language barrier made it exhausting | Lettie, HelloTalk |
 | Just want structured language practice | HelloTalk, Tandem |
 | Want something tangible | Postcrossing, Global Penfriends |
@@ -5065,7 +5065,7 @@ The tell isn't any single step. It's the **speed of intimacy relative to actual 
 
 The mistake isn't sharing — it's sharing on someone else's timeline because saying no felt awkward.
 
-Some apps handle this structurally. Lettie doesn't unlock contact exchange until you've traded five letters, which removes the social pressure entirely — there's nothing to refuse because the option isn't there yet.
+Some apps handle this structurally. Lettie makes each letter take hours to arrive and lets you write again only after a reply, which removes the social pressure entirely — there's nothing to refuse because the option isn't there yet.
 
 ## Warning signs worth acting on
 
@@ -5511,5 +5511,151 @@ Say something uncertain. Answer what they wrote. Find the thread. Let gaps be no
 
 Get past letter three and the correspondence usually finds its own momentum.
 `
+    },
+    'lettie-vs-slowly': {
+        id: 'lettie-vs-slowly',
+        title: 'Lettie vs Slowly — 느린 편지 앱 두 개, 무엇이 다른가',
+        titleEn: 'Lettie vs Slowly: two slow-letter apps, one real difference',
+        description: 'Slowly와 Lettie는 둘 다 편지가 거리만큼 걸려 도착하는 앱입니다. 목적, 첫 편지를 만나는 방식, 번역, 프로필, 매칭 — 다섯 가지 축으로 솔직하게 비교했습니다.',
+        descriptionEn: 'Slowly and Lettie both deliver letters by distance. An honest comparison across purpose, how you meet your first letter, translation, profiles and matching — and who each app is right for.',
+        date: '2026-09-20',
+        readTime: '8분',
+        readTimeEn: '8 min',
+        category: '비교',
+        categoryEn: 'Comparison',
+        image: '/v2/key-ko-s1.png',
+        author: 'Lettie',
+        keywords: ['Slowly', '슬로울리', 'Slowly 대안', 'Slowly 비슷한 앱', '느린 편지 앱', '펜팔 앱 비교', '편지 데이팅 앱', 'Lettie', '레티', '편지 번역 앱', '지구본 편지'],
+        keywordsEn: ['Slowly app', 'Slowly alternative', 'apps like Slowly', 'Slowly vs Lettie', 'slow letter app', 'pen pal app comparison', 'letter dating app', 'pen pal app with translation'],
+        content: `
+# Lettie vs Slowly — 느린 편지 앱 두 개, 무엇이 다른가
+
+먼저 밝혀 둡니다. **Lettie는 저희가 만든 앱입니다.** 그래서 이 글은 "우리가 더 낫다"가 아니라 "어디가 갈라지느냐"를 씁니다. Slowly는 2017년부터 느린 편지라는 장르를 사실상 만들어 온 앱이고, 저희도 그 앱을 좋아합니다. 편지 펜팔만 원한다면 Slowly는 여전히 좋은 선택입니다.
+
+## 같은 점부터
+
+- **편지는 거리만큼 시간이 걸려 도착합니다.** 서울에서 리스본까지 하루쯤, 도쿄까지는 몇 시간. 두 앱 다 이 지연을 "기능"으로 씁니다. 즉시 답이 오지 않으니 사람들이 다르게 씁니다 — 더 길게, 더 천천히.
+- **우표를 모읍니다.** 나라별·기념 우표를 편지에 붙이고 수집하는 재미가 둘 다 있습니다.
+- **얼굴 사진으로 시작하지 않습니다.** Slowly는 아바타, Lettie는 픽셀 캐릭터.
+
+여기까지 보면 비슷해 보입니다. 실제로 갈라지는 건 아래 다섯 가지입니다.
+
+## 1. 목적 — 펜팔 우정 vs 편지로 시작하는 만남
+
+Slowly는 처음부터 끝까지 **펜팔** 앱입니다. 취미가 맞는 사람과 오래 편지를 주고받는 것이 목적이고, 그래서 연애나 만남을 전제로 한 장치가 없습니다.
+
+Lettie는 **편지로 시작하는 만남**입니다. 우정으로 끝나도 좋지만, 만날 상대의 성별(이성·동성·모두)을 고르고 하루 몇 장의 매칭 카드를 받는 구조가 있습니다. 스와이프와 점수는 없습니다. "사진 먼저"인 데이팅 앱이 싫고, "친구까지만"인 펜팔 앱은 아쉬웠던 사람을 위한 자리입니다.
+
+## 2. 첫 편지를 어떻게 만나나 — 매칭 vs 발견
+
+Slowly에서는 관심사·언어·지역으로 상대를 찾거나 자동 매칭으로 소개받고, 공개 편지(Open Letters)를 쓸 수도 있습니다.
+
+Lettie의 첫 편지는 대부분 **발견**에서 시작합니다. 누구에게랄 것 없이 띄운 편지들이 봉투로 떠 있고, 8시간마다 새 봉투 세 장이 다가옵니다. 마음에 드는 봉투를 열어 읽고 답장하면 그때부터 둘만의 대화가 됩니다. 프로필을 보고 고르는 게 아니라 **글을 읽고 고른다**는 점이 다릅니다.
+
+## 3. 번역 — 언어의 벽을 어디서 넘느냐
+
+이 차이가 가장 큽니다. Lettie는 편지를 열면 **번역 버튼이 앱 안에 있고, 28개 언어**를 한 번에 번역해 원문과 나란히 보여 줍니다. 무료 사용자도 씁니다. 상대는 자기 말로 쓰고 나는 내 말로 읽는 것이 기본 경험입니다.
+
+Slowly는 편지 번역이 기본 경험에 들어 있지 않습니다. 외부 번역기를 오가거나 유료 기능을 쓰게 됩니다. 같은 언어권 펜팔이라면 전혀 문제가 아니지만, "언어가 달라도 상관없이" 사람을 만나고 싶다면 체감 차이가 큽니다.
+
+## 4. 프로필 — 아바타 조합 vs 글로 그리는 캐릭터
+
+Slowly의 아바타는 부품을 조합해 만듭니다. Lettie는 기본 픽셀 캐릭터 16종을 무료로 쓰고, **생김새를 글로 적으면 같은 그림체로 나만의 캐릭터를 그려 줍니다.** 사진은 시작 단계에 아예 없습니다.
+
+## 5. 매칭 — 없음 vs 하루 몇 장
+
+Slowly에는 데이팅식 매칭이 없습니다. Lettie는 하루 몇 장의 카드가 오고, 마음에 들면 편지를 씁니다. 무한 스와이프가 아니라 **하루치**라서, 고르는 데 쓰는 시간보다 쓰는 데 쓰는 시간이 깁니다.
+
+## 표로 정리하면
+
+| | Lettie | Slowly |
+|---|---|---|
+| 목적 | 편지로 시작하는 만남 | 펜팔 우정 |
+| 첫 편지 | 남이 띄운 편지를 골라 줍는다 | 관심사 매칭·공개 편지 |
+| 배달 | 실제 거리 기준 1~24시간 | 실제 거리 기준 |
+| 번역 | 앱 안에서 한 번에, 28개 언어, 무료 | 외부 도구 또는 유료 |
+| 프로필 | 픽셀 캐릭터, 글로 적으면 그려 줌 | 아바타 조합 |
+| 매칭 | 하루 몇 장, 상대 성별 선택 | 없음 |
+| 우표 | 나라별 우표 + 픽셀 우표 뽑기 | 나라별·기념 우표 |
+| 가격 | 무료, Plus 구독·젬 | 무료, 코인 |
+
+## 그래서 누구에게 무엇이 맞나
+
+- **취미가 맞는 펜팔과 오래 편지를 주고받고 싶다** → Slowly. 사용자 층이 두텁고, 8년 된 커뮤니티가 있습니다.
+- **언어가 달라도 상관없이, 글로 사람을 고르고 싶다** → Lettie. 번역이 기본이고, 발견에서 편지를 읽고 고릅니다.
+- **데이팅 앱의 "사진 먼저"가 싫었다** → Lettie. 캐릭터로 시작하고 편지가 먼저입니다.
+- **아무 기대 없이 세상 사람 이야기를 읽고 싶다** → 둘 다 좋습니다. Lettie의 발견은 무료로도 하루 여러 통을 엽니다.
+
+## 한 가지 솔직한 단점
+
+Lettie는 Slowly보다 작습니다. 특정 나라의 특정 취미를 가진 사람을 오늘 밤 당장 찾는 일은 Slowly가 낫습니다. 저희가 가진 건 번역과 발견, 그리고 편지가 지구본 위를 실제로 날아가는 그림입니다. 그게 필요하다면 한 통 띄워 보세요. 내일 아침 누군가 읽습니다.
+
+*비교는 2026년 9월 기준 공개된 정보를 바탕으로 했습니다. Slowly의 기능이 바뀌었다면 알려 주세요 — 고치겠습니다.*
+`,
+        contentEn: `
+# Lettie vs Slowly: two slow-letter apps, one real difference
+
+Full disclosure first: **Lettie is ours.** So this isn't "we're better" — it's "where do they split." Slowly has more or less defined the slow-letter genre since 2017, and we like it. If all you want is a pen pal, Slowly is still a fine choice.
+
+## What's the same
+
+- **Letters take as long as the distance.** Seoul to Lisbon is about a day; to Tokyo, a few hours. Both apps treat that delay as the feature. Nobody replies instantly, so people write differently — longer, slower.
+- **You collect stamps.** Country and seasonal stamps, stuck to letters and kept in an album, in both.
+- **You don't start with a face.** Slowly uses avatars; Lettie uses pixel characters.
+
+From here they diverge on five things.
+
+## 1. Purpose — pen-pal friendship vs meeting someone through letters
+
+Slowly is a **pen-pal** app end to end. The goal is a long correspondence with someone who shares your interests, and there is deliberately nothing built around dating.
+
+Lettie is **meeting someone through letters.** Friendship is a fine outcome, but you choose who you'd like to meet (opposite, same, everyone) and get a few matching cards a day. No swiping, no scores. It's for people who disliked "photo first" dating apps and found "friends only" pen-pal apps not quite enough.
+
+## 2. How you meet your first letter — matching vs Discover
+
+In Slowly you search by interests, languages and region, get auto-matched, or write Open Letters.
+
+Most first letters on Lettie start in **Discover.** Letters released to no one in particular float by as envelopes; three new ones drift close every eight hours. Open one you like, read it, reply — and it becomes a conversation for two. You pick by **what someone wrote**, not by their profile.
+
+## 3. Translation — where you cross the language line
+
+This is the biggest gap. On Lettie the **translate button is inside the letter, covers 28 languages,** and shows the original next to the translation. Free users get it. The default experience is: they write in their language, you read in yours.
+
+Slowly doesn't put letter translation in the base experience; you go out to another tool or use a paid feature. That's a non-issue if your pen pal shares your language, and a big deal if you want to meet people regardless of language.
+
+## 4. Profiles — avatar builder vs a character drawn from words
+
+Slowly's avatars are assembled from parts. Lettie gives you sixteen pixel characters for free and, if you **describe how you look in words, draws your own in the same style.** There are no photos at the start at all.
+
+## 5. Matching — none vs a few a day
+
+Slowly has no dating-style matching. Lettie sends a few cards a day; if you like one, you write. It's a daily handful rather than an endless swipe, so you spend more time writing than choosing.
+
+## Side by side
+
+| | Lettie | Slowly |
+|---|---|---|
+| Purpose | Meeting someone through letters | Pen-pal friendship |
+| First letter | Pick up letters strangers released | Interest matching · open letters |
+| Delivery | 1–24 h by real distance | By real distance |
+| Translation | In-app, one tap, 28 languages, free | External tools or paid |
+| Profile | Pixel character; describe it and we draw it | Avatar builder |
+| Matching | A few cards a day, choose who you meet | None |
+| Stamps | Country stamps + random pixel stamps | Country & seasonal stamps |
+| Price | Free; Plus subscription & gems | Free; coins |
+
+## So who should use what
+
+- **You want a long correspondence with someone who shares your hobbies** → Slowly. Bigger user base, an eight-year-old community.
+- **You want to meet people regardless of language, chosen by what they wrote** → Lettie. Translation is the default; Discover lets you read before you choose.
+- **You hated "photo first" dating apps** → Lettie. Characters first, letters first.
+- **You just want to read what people around the world are thinking** → Either. Lettie's Discover opens several letters a day for free.
+
+## One honest downside
+
+Lettie is smaller than Slowly. If you need to find someone in a specific small country with a specific hobby tonight, Slowly wins. What we have is translation, Discover, and a letter that really flies across a globe. If that's what you're after, release one tonight. Someone reads it tomorrow morning.
+
+*Based on public information as of September 2026. If Slowly has changed, tell us and we'll fix it.*
+`,
     },
 };

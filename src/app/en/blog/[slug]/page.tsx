@@ -187,6 +187,11 @@ export default async function BlogPostPage({ params }: Props) {
 
         {/* Featured Icon Section */}
         <div className="relative mb-12">
+          {post.image?.startsWith('/v2/') ? (
+            <div className="relative h-72 md:h-96 rounded-3xl overflow-hidden night">
+              <Image src={post.image} alt={post.title} fill sizes="(max-width: 768px) 100vw, 900px" className="object-cover object-top" priority />
+            </div>
+          ) : (
           <div className="relative h-64 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-3xl overflow-hidden">
             {/* Decorative Pattern */}
             <div className="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC40Ij48cGF0aCBkPSJNMzYgMzRjMC0yLjIxLTEuNzktNC00LTRzLTQgMS43OS00IDQgMS43OSA0IDQgNCA0LTEuNzkgNC00em0wLTEyYzAtMi4yMS0xLjc5LTQtNC00cy00IDEuNzktNCA0IDEuNzkgNCA0IDQgNC0xLjc5IDQtNHptMC0xMmMwLTIuMjEtMS43OS00LTQtNHMtNCAxLjc5LTQgNCAxLjc5IDQgNCA0IDQtMS43OSA0LTR6Ii8+PC9nPjwvZz48L3N2Zz4=')]"></div>
@@ -207,6 +212,7 @@ export default async function BlogPostPage({ params }: Props) {
               {!['Heartfelt', 'Emotional', 'Community', 'Guide', 'Culture', 'Learning', 'Inspiration'].includes(post.categoryEn) && <Mail className="w-24 h-24" strokeWidth={1.5} />}
             </div>
           </div>
+          )}
         </div>
 
         {/* Article Content */}

@@ -101,6 +101,73 @@
   }
 }
 
+
+/* ── 2.0 「하늘의 편지」 토큰 — 앱(lib/v2/design/tokens.dart)과 같은 값 ── */
+:root {
+  --sky0: #0A142C;
+  --sky1: #102040;
+  --sky2: #172B52;
+  --line: #2C4478;
+  --ink2: #B8BFD3;
+  --ink3: #7D89A9;
+  --paper: #F5ECD8;
+  --paper-deep: #E7D9B9;
+  --paper-ink: #2B2418;
+  --paper-ink2: #6B5F4B;
+  --star: #FFEAA7;
+  --coral: #F97159;
+  --sand: #CFA86C;
+  --sea: #3E7ED6;
+}
+
+@theme inline {
+  --color-sky0: var(--sky0);
+  --color-sky1: var(--sky1);
+  --color-sky2: var(--sky2);
+  --color-line: var(--line);
+  --color-ink2: var(--ink2);
+  --color-ink3: var(--ink3);
+  --color-paper: var(--paper);
+  --color-paperDeep: var(--paper-deep);
+  --color-paperInk: var(--paper-ink);
+  --color-paperInk2: var(--paper-ink2);
+  --color-star: var(--star);
+  --color-coral: var(--coral);
+  --color-sand: var(--sand);
+  --color-sea: var(--sea);
+}
+
+/* 밤하늘 배경: 위쪽이 살짝 밝고 아래로 깊어진다 (영상의 _Sky 와 같은 결) */
+.night {
+  background:
+    radial-gradient(120% 80% at 50% -10%, var(--sky1) 0%, var(--sky0) 55%, #060C1E 100%);
+  color: var(--paper);
+}
+
+/* 별. 두 겹의 점 패턴을 다른 크기로 겹친다 */
+.stars {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1.2px 1.2px at 12% 18%, rgba(245, 236, 216, 0.55) 50%, transparent 51%),
+    radial-gradient(1px 1px at 68% 8%, rgba(245, 236, 216, 0.45) 50%, transparent 51%),
+    radial-gradient(1.6px 1.6px at 85% 36%, rgba(245, 236, 216, 0.6) 50%, transparent 51%),
+    radial-gradient(1px 1px at 30% 62%, rgba(245, 236, 216, 0.4) 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 52% 80%, rgba(245, 236, 216, 0.5) 50%, transparent 51%),
+    radial-gradient(1px 1px at 92% 74%, rgba(245, 236, 216, 0.4) 50%, transparent 51%),
+    radial-gradient(1.4px 1.4px at 8% 88%, rgba(245, 236, 216, 0.5) 50%, transparent 51%);
+  background-size: 640px 520px;
+  opacity: 0.9;
+}
+
+/* 편지지 카드 — 앱의 종이 색과 딱딱한 그림자 */
+.paper-card {
+  background: var(--paper);
+  color: var(--paper-ink);
+  border-radius: 1rem;
+  box-shadow: 0 6px 0 0 var(--paper-deep), 0 24px 60px -30px rgba(0, 0, 0, 0.6);
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
