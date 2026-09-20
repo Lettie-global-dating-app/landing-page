@@ -5658,4 +5658,628 @@ Lettie is smaller than Slowly. If you need to find someone in a specific small c
 *Based on public information as of September 2026. If Slowly has changed, tell us and we'll fix it.*
 `,
     },
+    'slowly-alternatives-2026': {
+        id: 'slowly-alternatives-2026',
+        title: 'Slowly 대안 앱 6가지 비교 (2026) — 느린 편지, 펜팔, 언어 교환',
+        titleEn: '6 Slowly alternatives compared (2026): slow letters, pen pals, language exchange',
+        description: 'Slowly가 아쉬웠던 이유별로 고른 대안 6가지. Lettie, InterPals, HelloTalk, Tandem, Penpal World, Ablo를 목적·번역·안전·비용 축으로 비교합니다.',
+        descriptionEn: 'Six alternatives to Slowly, picked by the reason Slowly fell short: Lettie, InterPals, HelloTalk, Tandem, Penpal World and Ablo, compared on purpose, translation, safety and cost.',
+        date: '2026-09-21',
+        readTime: '9분',
+        readTimeEn: '9 min',
+        category: '비교',
+        categoryEn: 'Comparison',
+        image: '/v2/key-ko-s2.png',
+        author: 'Lettie',
+        keywords: ['Slowly 대안', 'Slowly 비슷한 앱', '슬로울리 대안', '펜팔 앱 추천', '느린 편지 앱', '언어 교환 앱', 'InterPals', 'HelloTalk', 'Tandem', 'Lettie'],
+        keywordsEn: ['Slowly alternatives', 'apps like Slowly', 'Slowly app alternative 2026', 'best pen pal apps', 'slow letter apps', 'language exchange apps', 'InterPals alternative', 'HelloTalk vs Tandem'],
+        content: `
+# Slowly 대안 앱 6가지 비교 (2026)
+
+Slowly를 쓰다가 다른 앱을 찾는 이유는 대개 셋 중 하나입니다. **언어가 안 맞아서**, **친구 이상을 기대해서**, 아니면 **답장이 끊겨서**. 이유가 다르면 답도 다릅니다. 아래는 이유별로 고른 여섯 앱입니다. Lettie는 저희 앱이라 그 부분은 그렇게 읽어 주세요.
+
+## 한눈에
+
+| 앱 | 한 줄 요약 | 번역 | 편지 지연 | 목적 |
+|---|---|---|---|---|
+| **Lettie** | 지구본 위를 날아가는 편지, 발견에서 줍기 | 앱 안, 28개 언어, 무료 | 거리 기준 1~24h | 만남(데이팅·우정) |
+| **Slowly** | 느린 편지의 원조 | 외부·유료 | 거리 기준 | 펜팔 |
+| **InterPals** | 가장 큰 펜팔 커뮤니티(웹 중심) | 없음 | 즉시 | 펜팔·언어 |
+| **HelloTalk** | 원어민 교정 채팅 | 내장 | 즉시 | 언어 교환 |
+| **Tandem** | 화상·음성 언어 교환 | 내장 | 즉시 | 언어 교환 |
+| **Penpal World** | 오래된 펜팔 매칭 | 없음 | 즉시 | 펜팔 |
+| **Ablo** | 자동 번역 채팅 | 내장 | 즉시 | 가벼운 대화 |
+
+## 1. 언어가 벽이었다면 → Lettie, HelloTalk, Ablo
+
+Slowly에서 가장 자주 나오는 아쉬움이 번역입니다. 편지를 복사해 번역기에 붙였다가 다시 돌아오는 왕복이 편지 한 통마다 반복됩니다.
+
+- **Lettie**는 편지를 열면 번역 버튼이 그 자리에 있습니다. 28개 언어, 원문과 번역을 나란히. 무료 사용자도 씁니다. 편지가 거리만큼 시간이 걸려 도착하는 느린 구조는 Slowly와 같습니다.
+- **HelloTalk**는 채팅이지만 문장 단위 교정과 번역이 붙어 있어 언어 학습 목적이면 가장 효율이 좋습니다. 대신 "편지"의 호흡은 없습니다.
+- **Ablo**는 모든 메시지가 자동 번역되는 채팅입니다. 가볍게 여러 나라 사람과 이야기해 보고 싶을 때. 깊이는 기대하지 않는 게 좋습니다.
+
+## 2. 친구 이상을 기대한다면 → Lettie
+
+Slowly는 의도적으로 데이팅 요소를 넣지 않습니다. 그게 장점인 사람이 있고, 아쉬운 사람이 있습니다. Lettie는 **편지로 시작하는 만남**을 전제로 만든 앱입니다. 만날 상대의 성별을 고르고 하루 몇 장의 매칭 카드를 받지만, 사진과 스와이프는 없습니다. 사진 먼저인 데이팅 앱이 불편했던 사람을 위한 자리입니다.
+
+## 3. 사람이 많은 곳을 원한다면 → InterPals, Penpal World
+
+- **InterPals**는 2000년대부터 이어진 가장 큰 펜팔 커뮤니티입니다. 특정 나라·도시의 사람을 오늘 찾는다면 여기가 가장 빠릅니다. 대신 웹 중심 UI, 첫 메시지부터 연락처를 묻는 사람, 스팸 계정이 단점으로 자주 언급됩니다.
+- **Penpal World**는 프로필 기반 매칭이 단순하고 오래됐습니다. 광고와 오래된 디자인을 감수할 수 있다면.
+
+## 4. 말하기 연습이 목적이라면 → Tandem
+
+**Tandem**은 텍스트보다 음성·화상 통화에 강합니다. 편지와는 반대편에 있는 앱이지만, "언어 교환"이라는 이유로 Slowly를 썼다면 이쪽이 더 맞을 수 있습니다.
+
+## 5. 답장이 끊겨서 떠난다면
+
+이건 앱을 바꿔도 반복되기 쉬운 문제라 한마디만. 답장이 끊기는 가장 큰 이유는 첫 편지가 **질문 없이 자기소개만** 하기 때문입니다. 어느 앱에서든 첫 편지 끝에 상대가 답하기 쉬운 질문 하나를 두세요. Lettie의 발견은 상대가 쓴 글을 먼저 읽고 답장하는 구조라 이 문제가 조금 덜합니다 — 답장할 거리가 이미 있으니까요.
+
+## 정리
+
+- 번역이 핵심이면 **Lettie**(편지) 또는 **HelloTalk**(채팅)
+- 만남까지 열어 두고 싶으면 **Lettie**
+- 사람 수가 핵심이면 **InterPals**
+- 말하기 연습이면 **Tandem**
+- 느린 편지 자체가 좋고 언어가 같다면 **Slowly**를 계속 쓰는 게 맞습니다
+
+*2026년 9월 기준 공개 정보로 썼습니다. 틀린 부분이 있으면 알려 주세요.*
+`,
+        contentEn: `
+# 6 Slowly alternatives compared (2026)
+
+People leave Slowly for one of three reasons: **the language gap**, **wanting more than friendship**, or **replies drying up**. Different reasons, different answers. Here are six apps sorted by reason. Lettie is ours — read that part accordingly.
+
+## At a glance
+
+| App | One line | Translation | Letter delay | Purpose |
+|---|---|---|---|---|
+| **Lettie** | Letters fly across a globe; pick up strangers' letters | In-app, 28 languages, free | 1–24 h by distance | Meeting people (dating & friendship) |
+| **Slowly** | The original slow-letter app | External / paid | By distance | Pen pals |
+| **InterPals** | The biggest pen-pal community (web-first) | None | Instant | Pen pals · languages |
+| **HelloTalk** | Chat with native-speaker corrections | Built in | Instant | Language exchange |
+| **Tandem** | Voice & video language exchange | Built in | Instant | Language exchange |
+| **Penpal World** | Old-school pen-pal matching | None | Instant | Pen pals |
+| **Ablo** | Auto-translated chat | Built in | Instant | Light conversation |
+
+## 1. If language was the wall → Lettie, HelloTalk, Ablo
+
+The most common complaint about Slowly is translation: copy the letter out to a translator, paste it back, repeat for every letter.
+
+- **Lettie** puts the translate button inside the letter — 28 languages, original next to the translation, free. The slow, distance-based delivery is the same idea as Slowly.
+- **HelloTalk** is chat, but sentence-level corrections and translation make it the most efficient tool if learning is the goal. No letter rhythm, though.
+- **Ablo** auto-translates every message. Good for casually talking to people in many countries; don't expect depth.
+
+## 2. If you want more than friendship → Lettie
+
+Slowly deliberately has no dating layer. That's a plus for some and a gap for others. Lettie is built around **meeting someone through letters**: you choose who you'd like to meet and get a few matching cards a day, but there are no photos and no swiping. It's for people who found "photo first" dating apps uncomfortable.
+
+## 3. If you want the biggest crowd → InterPals, Penpal World
+
+- **InterPals** has been the largest pen-pal community since the 2000s. If you need someone in a specific country or city tonight, it's the fastest. The usual downsides: web-first UI, people asking for WhatsApp in the first message, spam accounts.
+- **Penpal World** is simple profile-based matching that's been around forever. Fine if you can live with ads and a dated design.
+
+## 4. If speaking practice is the point → Tandem
+
+**Tandem** is strongest at voice and video calls. It's the opposite end from letters, but if "language exchange" was why you used Slowly, this may fit better.
+
+## 5. If you're leaving because replies died
+
+One note, because this follows you to the next app: replies die mostly because the first letter is **all introduction and no question.** Whatever app you use, end the first letter with one question that's easy to answer. Lettie's Discover softens this a little — you read what someone wrote before you reply, so there's already something to answer.
+
+## Summary
+
+- Translation is the point → **Lettie** (letters) or **HelloTalk** (chat)
+- You want the door open to meeting someone → **Lettie**
+- Numbers matter most → **InterPals**
+- Speaking practice → **Tandem**
+- You like slow letters and share a language → keep **Slowly**
+
+*Based on public information as of September 2026. Corrections welcome.*
+`,
+    },
+    'letter-delivery-time-by-distance': {
+        id: 'letter-delivery-time-by-distance',
+        title: '편지가 도착하는 데 얼마나 걸리나 — 도시별 배달 시간표 (Lettie)',
+        titleEn: 'How long does a letter take to arrive? Delivery times by city (Lettie)',
+        description: 'Lettie의 편지는 두 도시 사이 실제 거리로 도착 시간을 계산합니다. 서울에서 도쿄·하노이·리스본·뉴욕까지 각각 몇 시간 걸리는지, 왜 일부러 느리게 만들었는지 설명합니다.',
+        descriptionEn: 'Lettie computes delivery time from the real distance between two cities. How long from Seoul to Tokyo, Hanoi, Lisbon and New York — and why we made letters slow on purpose.',
+        date: '2026-09-21',
+        readTime: '5분',
+        readTimeEn: '5 min',
+        category: '가이드',
+        categoryEn: 'Guide',
+        image: '/v2/key-ko-s1.png',
+        author: 'Lettie',
+        keywords: ['편지 도착 시간', 'Lettie 배달 시간', '느린 편지 앱', '편지 지연', '거리 기준 배달', '펜팔 앱 도착', '지구본 편지'],
+        keywordsEn: ['Lettie delivery time', 'how long letter arrive Lettie', 'slow letter app delivery', 'distance based delivery', 'letter delay app', 'Slowly delivery time comparison'],
+        content: `
+# 편지가 도착하는 데 얼마나 걸리나
+
+Lettie에서 편지를 보내면 바로 도착하지 않습니다. 봉투가 지구본 위로 떠올라 상대가 있는 도시까지 날아가고, **두 도시 사이의 실제 거리**로 계산된 시간이 지나야 우체통에 닿습니다. 자주 받는 질문이라 표로 정리했습니다.
+
+## 서울에서 보내면
+
+| 받는 도시 | 대략 거리 | 도착까지 |
+|---|---|---|
+| 같은 나라(부산 등) | ~300 km | 1~2시간 |
+| 도쿄 | 1,150 km | 약 2~3시간 |
+| 타이베이 | 1,480 km | 약 3시간 |
+| 하노이 | 2,740 km | 약 5시간 |
+| 방콕 | 3,720 km | 약 6~7시간 |
+| 델리 | 4,690 km | 약 8시간 |
+| 시드니 | 8,300 km | 약 13~14시간 |
+| 이스탄불 | 7,960 km | 약 13시간 |
+| 리스본 | 10,300 km | 약 16시간 |
+| 런던 | 8,880 km | 약 14시간 |
+| 뉴욕 | 11,050 km | 약 17~18시간 |
+| 상파울루 | 18,300 km | 약 24시간 (상한) |
+
+배달 시간은 **최소 30분, 최대 24시간**입니다. 같은 나라 안에서는 1~2시간 사이에서 조금 무작위로 정해집니다. 정확한 값은 보내는 순간 봉투 밑에 "N시간 뒤 도착"으로 표시되고, 지구본에서 봉투가 어디쯤 가는지 볼 수 있습니다.
+
+## 왜 일부러 느리게 만들었나
+
+즉시 도착하는 메시지는 즉시 답을 요구합니다. 그래서 짧아지고, 가벼워지고, 결국 "ㅇㅇ"이 됩니다. 도착까지 14시간이 걸린다는 걸 알면 사람들은 다르게 씁니다. 더 길게, 오늘 있었던 일을 담아서, 상대가 읽을 시간을 상상하며.
+
+이건 저희가 지어낸 이야기가 아니라 실제 편지들에서 본 것입니다. 하노이에서 온 편지는 비가 짧고 굵어서 다들 안장 밑에 우비를 넣어 둔다는 이야기로 시작했습니다. 그런 문장은 채팅에서는 안 나옵니다.
+
+## 기다리는 동안 할 수 있는 것
+
+- **지구본**에서 내 편지가 어디쯤 가는지 봅니다. 도착하면 알림이 옵니다. 2.0.6부터는 도착 1시간 전에 "곧 도착해요" 알림도 옵니다.
+- **발견**에서 남이 띄운 편지를 읽습니다. 8시간마다 새 봉투 세 장이 다가옵니다.
+- 답장이 오기 전까지 같은 사람에게 다음 편지는 쓸 수 없습니다(번갈아 쓰기). 기다리지 않고 쓰고 싶으면 젬으로 **무제한 대화**를 열 수 있습니다.
+
+## Slowly와 같은가요?
+
+원리는 같습니다 — Slowly도 거리로 지연을 계산합니다. 다른 점은 도착 시간을 지구본 위 봉투의 위치로 보여 주는 것, 그리고 도착한 편지를 28개 언어로 바로 번역해 읽을 수 있다는 것입니다. 자세한 비교는 [Lettie vs Slowly](/blog/lettie-vs-slowly)에 있습니다.
+`,
+        contentEn: `
+# How long does a letter take to arrive?
+
+A letter on Lettie doesn't land right away. The envelope lifts off the globe, flies to the other person's city, and reaches their mailbox after a delay computed from the **real distance between the two cities.** We get asked about this a lot, so here's the table.
+
+## Sent from Seoul
+
+| To | Distance | Arrives in |
+|---|---|---|
+| Same country (Busan etc.) | ~300 km | 1–2 hours |
+| Tokyo | 1,150 km | about 2–3 hours |
+| Taipei | 1,480 km | about 3 hours |
+| Hanoi | 2,740 km | about 5 hours |
+| Bangkok | 3,720 km | about 6–7 hours |
+| Delhi | 4,690 km | about 8 hours |
+| Sydney | 8,300 km | about 13–14 hours |
+| Istanbul | 7,960 km | about 13 hours |
+| Lisbon | 10,300 km | about 16 hours |
+| London | 8,880 km | about 14 hours |
+| New York | 11,050 km | about 17–18 hours |
+| São Paulo | 18,300 km | about 24 hours (cap) |
+
+Delivery is **at least 30 minutes and at most 24 hours.** Within one country it lands somewhere between one and two hours, slightly randomized. The exact time shows under the envelope the moment you send ("lands in N hours"), and you can watch the envelope cross the globe.
+
+## Why we made it slow on purpose
+
+An instant message asks for an instant answer. So messages get shorter, lighter, and eventually become "ok". When you know it takes 14 hours to arrive, you write differently — longer, with the day you actually had, imagining the moment they'll read it.
+
+This isn't a story we made up; it's what the letters look like. One from Hanoi opened with how the rain there is short and heavy, so everyone keeps a poncho under the motorbike seat. Sentences like that don't happen in chat.
+
+## While you wait
+
+- Watch the envelope on the **globe**. You get a notification when it lands, and from 2.0.6 a "landing soon" notification an hour before.
+- Read letters strangers released in **Discover** — three new envelopes drift close every eight hours.
+- You can't write the same person again until their reply lands (turn-taking). If you'd rather not wait, gems unlock an **unlimited conversation.**
+
+## Is this the same as Slowly?
+
+Same principle — Slowly also computes delay from distance. What's different is that you see the delay as an envelope moving across a globe, and that a letter that lands can be translated into any of 28 languages right there. The full comparison is in [Lettie vs Slowly](/en/blog/lettie-vs-slowly).
+`,
+    },
+    'first-letter-examples-discover': {
+        id: 'first-letter-examples-discover',
+        title: '답장이 오는 첫 편지 예문 7가지 — 발견에서 주운 편지에 이렇게 답하세요',
+        titleEn: '7 first-letter examples that get replies — how to answer a letter you picked up',
+        description: '펜팔 첫 편지는 자기소개가 아니라 답장입니다. Lettie 발견에서 주운 편지에 답할 때 실제로 답장이 잘 오는 구조와 상황별 예문 7가지, 피해야 할 문장.',
+        descriptionEn: 'A first pen-pal letter is a reply, not a bio. Seven example openers for answering a letter you picked up in Lettie Discover, the structure that gets replies, and lines to avoid.',
+        date: '2026-09-21',
+        readTime: '7분',
+        readTimeEn: '7 min',
+        category: '가이드',
+        categoryEn: 'Guide',
+        image: '/v2/key-ko-s3.png',
+        author: 'Lettie',
+        keywords: ['펜팔 첫 편지', '펜팔 첫 편지 예문', '외국인 펜팔 첫 메시지', '편지 답장 잘 받는 법', 'Lettie 발견', '펜팔 인사말', '영어 펜팔 편지 예문'],
+        keywordsEn: ['first pen pal letter example', 'how to write a first letter to a pen pal', 'pen pal opening lines', 'letter that gets a reply', 'Lettie Discover', 'pen pal introduction examples'],
+        content: `
+# 답장이 오는 첫 편지 예문 7가지
+
+Lettie의 첫 편지는 대부분 **발견**에서 시작합니다. 남이 띄운 편지를 읽고 답장하는 것. 그래서 "안녕하세요, 저는 28살이고 서울에 살고…"로 시작하면 이미 어긋납니다. 상대는 자기가 쓴 글에 대한 반응을 기다리고 있으니까요.
+
+## 답장이 오는 구조 (세 문단이면 충분)
+
+1. **상대 글에서 한 문장을 집어 반응한다.** 읽었다는 증거이자, 왜 하필 그 편지를 주웠는지의 이유.
+2. **내 쪽의 비슷한 장면 하나.** 자기소개 대신 장면. 나이·직업은 나중에 저절로 나옵니다.
+3. **답하기 쉬운 질문 하나.** "왜"보다 "무엇"이 답하기 쉽습니다.
+
+## 예문 7가지
+
+### 1. 날씨·계절 이야기에
+> 하노이 비가 짧고 굵다는 문장에서 멈췄어요. 여기 서울은 지금 장마 끝물이라 하루 종일 미지근한 비가 옵니다. 우비 대신 다들 편의점 우산을 삽니다. 그쪽 우비는 무슨 색이 제일 많아요?
+
+### 2. 음식 이야기에
+> 아침에 국수를 먹는다는 게 부러웠어요. 저는 아침을 거의 안 먹는데, 먹는 날은 편의점 삼각김밥입니다. 그 국수는 집에서 만드나요, 아니면 골목 가게에서 사 먹나요?
+
+### 3. 일·공부 힘들다는 편지에
+> 시험 끝나고 아무것도 하기 싫다는 문장, 저도 지난달에 똑같이 썼을 거예요. 저는 그럴 때 지하철 한 바퀴를 그냥 탑니다. 당신은 시험 끝나면 제일 먼저 뭘 해요?
+
+### 4. 음악·영화 이야기에
+> 그 앨범을 버스에서 듣는다고 하셨죠. 저는 같은 앨범을 설거지할 때 틀어요. 이상하게 3번 트랙에서 항상 손이 느려집니다. 당신은 몇 번 트랙이에요?
+
+### 5. 외로움·심심함 이야기에
+> 주말에 아무하고도 말을 안 했다는 문장이 제일 오래 남았어요. 저도 그런 주말이 있어서 이 앱을 깔았습니다. 그 주말에 그래도 제일 좋았던 순간이 하나 있다면요?
+
+### 6. 여행 이야기에
+> 리스본 언덕이 생각보다 가파르다는 말에 웃었어요. 저는 부산 감천마을에서 똑같은 생각을 했거든요. 그 도시에서 사진 말고 냄새로 기억나는 게 있나요?
+
+### 7. 별말 없이 짧게 띄운 편지에
+> 짧게 쓰신 편지가 오히려 눈에 들어왔어요. 저도 긴 글이 부담스러운 날이 있어서요. 오늘은 어떤 날이었는지 한 줄만 더 들려주세요.
+
+## 피해야 할 문장
+
+- **"안녕하세요! 저는 ___입니다. 친구 하고 싶어요."** — 상대 글을 안 읽은 티가 납니다.
+- **질문 세 개 이상** — 하나만 남기세요. 여러 개면 아무것도 답하지 않습니다.
+- **"왜 그렇게 생각하세요?"** — 설명을 요구하는 질문은 무겁습니다. "무엇을/언제/어디서"로.
+- **첫 편지에 연락처·SNS** — 2.0에서는 애초에 물을 필요가 없습니다. 대화는 앱 안에서 이어지고, 편지가 시간을 두고 오갑니다.
+
+## 번역을 켜 두고 써도 될까요
+
+됩니다. 상대는 자기 언어로 읽습니다. 다만 번역이 잘 되게 **한 문장에 하나의 뜻**, 관용구와 줄임말은 피하세요. "ㅋㅋ" 대신 "웃었어요"라고 쓰면 28개 언어 어디서든 웃음이 전달됩니다.
+
+보내고 나면 봉투가 지구본 위로 떠오릅니다. 도착까지 몇 시간이 걸리고, 답장은 그 사람의 아침에 옵니다. 그 사이엔 아무것도 안 해도 됩니다.
+`,
+        contentEn: `
+# 7 first-letter examples that get replies
+
+On Lettie the first letter usually starts in **Discover** — you read a letter someone released and reply to it. So opening with "Hi, I'm 28 and I live in Seoul…" is already off: the other person is waiting for a reaction to what they wrote.
+
+## The structure that gets replies (three paragraphs is enough)
+
+1. **Pick one sentence from their letter and react to it.** Proof you read it, and the reason you picked this envelope.
+2. **One matching scene from your side.** A scene instead of a bio — age and job come out on their own later.
+3. **One question that's easy to answer.** "What" is easier than "why".
+
+## Seven examples
+
+### 1. To a letter about weather or seasons
+> I stopped at the line about Hanoi rain being short and heavy. Here in Seoul it's the tail end of monsoon, so it's lukewarm rain all day and everyone buys convenience-store umbrellas instead of ponchos. What colour are most of the ponchos there?
+
+### 2. To a letter about food
+> I was jealous of noodles for breakfast. I mostly skip breakfast, and on the days I don't it's a convenience-store rice triangle. Do you make the noodles at home or buy them from a place in the alley?
+
+### 3. To a letter about being tired of work or study
+> "After the exam I didn't want to do anything" — I could have written that line last month. My version is riding the subway loop for no reason. What's the first thing you do when an exam ends?
+
+### 4. To a letter about music or films
+> You said you listen to that album on the bus. I play the same album while doing dishes, and for some reason my hands always slow down on track three. Which track is yours?
+
+### 5. To a letter about loneliness or boredom
+> The line about not talking to anyone all weekend stayed with me the longest. I've had weekends like that — it's why I installed this app. Was there one moment that weekend that was still good?
+
+### 6. To a letter about travel
+> I laughed at "the Lisbon hills are steeper than they look". I thought exactly that in Gamcheon village in Busan. Is there something about that city you remember by smell rather than by photo?
+
+### 7. To a very short letter
+> Your short letter is actually what caught my eye — I have days when long writing feels heavy too. Tell me one more line about what today was like.
+
+## Lines to avoid
+
+- **"Hi! I'm ___. I want to be friends."** — it shows you didn't read their letter.
+- **Three or more questions** — leave one. With several, people answer none.
+- **"Why do you think that?"** — questions that demand an explanation feel heavy. Use what / when / where.
+- **Contact details or social handles in the first letter** — in 2.0 there's no need: the conversation continues in the app, and letters take their time.
+
+## Can I write with translation on?
+
+Yes. They read in their language. To translate well, keep **one idea per sentence** and skip idioms and slang. "That made me laugh" travels across 28 languages; "lol" doesn't always.
+
+After you send, the envelope lifts off the globe. It takes hours to land, and the reply arrives on their morning. In between, you don't have to do anything at all.
+`,
+    },
+    'penpal-app-with-translation': {
+        id: 'penpal-app-with-translation',
+        title: '번역되는 펜팔 앱 고르는 법 — "28개 언어"가 실제로 뜻하는 것',
+        titleEn: 'How to choose a pen-pal app with translation — what "28 languages" actually means',
+        description: '언어가 다른 사람과 편지를 주고받으려면 번역이 어디에 붙어 있느냐가 전부입니다. 앱 안 번역·외부 번역기·유료 번역의 차이, 번역이 잘 되게 쓰는 법, Lettie가 28개 언어를 처리하는 방식.',
+        descriptionEn: 'If your pen pal speaks another language, where translation lives is everything. In-app vs external vs paid translation, how to write so it translates well, and how Lettie handles 28 languages.',
+        date: '2026-09-21',
+        readTime: '6분',
+        readTimeEn: '6 min',
+        category: '가이드',
+        categoryEn: 'Guide',
+        image: '/v2/key-ko-s2.png',
+        author: 'Lettie',
+        keywords: ['번역 펜팔 앱', '자동 번역 펜팔', '외국인 친구 앱 번역', '편지 번역 앱', '28개 언어 번역', '언어 달라도 펜팔', 'Lettie 번역'],
+        keywordsEn: ['pen pal app with translation', 'auto translate pen pal app', 'letter translation app', 'talk to foreigners without knowing language', 'pen pal app 28 languages', 'Lettie translation'],
+        content: `
+# 번역되는 펜팔 앱 고르는 법
+
+"영어 못해도 외국인 펜팔 할 수 있나요?" 답은 앱마다 다릅니다. 번역이 **어디에** 붙어 있는지가 경험을 갈라놓습니다.
+
+## 세 가지 방식
+
+**① 앱 안, 편지 안에 번역 버튼이 있다.** 편지를 열고 한 번 누르면 원문 옆에 번역이 뜹니다. 왕복이 없습니다. Lettie가 이 방식이고, 28개 언어를 무료로 처리합니다.
+
+**② 외부 번역기로 왕복한다.** 편지를 복사 → 번역기 → 답장을 쓰고 → 다시 번역 → 붙여넣기. 편지 한 통에 네 번 앱을 오갑니다. 처음엔 괜찮다가 세 통째부터 귀찮아지고, 귀찮음은 답장 지연으로, 지연은 관계 종료로 이어집니다.
+
+**③ 유료 번역.** 번역이 코인이나 구독에 묶여 있습니다. 언어가 다른 상대와 계속 쓰면 비용이 편지마다 붙습니다.
+
+## "28개 언어"는 무엇을 뜻하나
+
+Lettie 기준으로 두 가지를 뜻합니다.
+
+- **편지 번역**: 상대가 어느 언어로 썼든 내 언어로 번역합니다. 원문과 번역을 나란히 보여 주기 때문에 상대의 표현을 그대로 배울 수도 있습니다.
+- **앱 화면**: 메뉴·버튼·알림이 28개 언어로 나옵니다. 한국어, 영어, 일본어, 중국어, 스페인어, 포르투갈어, 프랑스어, 독일어, 이탈리아어, 러시아어, 터키어, 베트남어, 태국어, 인도네시아어, 힌디어, 아랍어, 벵골어, 체코어, 그리스어, 페르시아어, 필리핀어, 말레이어, 네덜란드어, 폴란드어, 루마니아어, 스와힐리어, 우크라이나어, 우르두어.
+
+## 번역이 잘 되게 쓰는 다섯 가지
+
+1. **한 문장에 하나의 뜻.** 긴 복문은 어느 번역기든 흔들립니다.
+2. **줄임말·유행어를 풀어 쓴다.** "ㅋㅋ" → "웃었어요", "존맛" → "정말 맛있었어요".
+3. **주어를 생략하지 않는다.** 한국어는 주어를 자주 빼는데, 번역에서 "나/너/그 사람"이 뒤바뀝니다.
+4. **고유명사는 그대로 두고 한 줄 설명.** "감천마을(부산의 언덕 동네)".
+5. **농담은 상황을 함께 적는다.** 말장난은 번역을 넘지 못하지만 상황 유머는 넘습니다.
+
+## 그래도 언어를 배우고 싶다면
+
+번역을 켜 두고도 실력은 늡니다. 원문과 번역을 나란히 보는 습관 때문입니다. 상대가 쓴 문장 중 마음에 드는 표현 하나를 다음 편지에 그대로 써 보세요. 그게 가장 오래 남는 학습입니다. 더 구체적인 방법은 [펜팔로 외국어 늘리기](/blog/language-exchange-tips)에 있습니다.
+`,
+        contentEn: `
+# How to choose a pen-pal app with translation
+
+"Can I have a pen pal abroad without speaking their language?" It depends on the app — specifically on **where** translation lives.
+
+## Three ways apps do it
+
+**① A translate button inside the letter.** Open the letter, tap once, the translation appears next to the original. No round trip. Lettie works this way, with 28 languages, free.
+
+**② Round-tripping through an external translator.** Copy the letter → translator → write a reply → translate again → paste. Four app switches per letter. Fine at first, tedious by the third letter, and tedium becomes late replies, and late replies become the end.
+
+**③ Paid translation.** Translation tied to coins or a subscription. If your pen pal speaks another language, the cost recurs with every letter.
+
+## What "28 languages" means
+
+On Lettie it means two things.
+
+- **Letter translation**: whatever language they wrote in, you read it in yours. Original and translation sit side by side, so you can also pick up their phrasing.
+- **The app itself**: menus, buttons and notifications in 28 languages — Korean, English, Japanese, Chinese, Spanish, Portuguese, French, German, Italian, Russian, Turkish, Vietnamese, Thai, Indonesian, Hindi, Arabic, Bengali, Czech, Greek, Persian, Filipino, Malay, Dutch, Polish, Romanian, Swahili, Ukrainian, Urdu.
+
+## Five habits that make translation work
+
+1. **One idea per sentence.** Long compound sentences wobble in any translator.
+2. **Spell out slang.** "lol" → "that made me laugh".
+3. **Keep the subject in.** Dropped subjects flip "I / you / they" in translation.
+4. **Leave proper nouns alone, add a short gloss.** "Gamcheon (a hillside neighbourhood in Busan)".
+5. **Explain the situation behind a joke.** Puns don't cross; situational humour does.
+
+## If you still want to learn the language
+
+You'll still improve with translation on, because you keep seeing the original next to it. Take one phrase you liked from their letter and use it in your next one. That's the learning that sticks. More in [language exchange through letters](/en/blog/language-exchange-tips).
+`,
+    },
+    'no-photo-dating-pixel-character': {
+        id: 'no-photo-dating-pixel-character',
+        title: '사진 없는 데이팅 앱은 어떻게 다른가 — 픽셀 캐릭터로 시작하면 생기는 일',
+        titleEn: 'What changes when a dating app has no photos — starting as a pixel character',
+        description: '프로필 사진을 빼면 대화가 어떻게 달라지는지. Lettie가 사진 대신 픽셀 캐릭터로 시작하는 이유, 나만의 캐릭터를 글로 그리는 법, 그리고 솔직한 단점.',
+        descriptionEn: 'How conversations change when profile photos are gone. Why Lettie starts with a pixel character instead of a face, how to draw your own from a description, and the honest downside.',
+        date: '2026-09-21',
+        readTime: '6분',
+        readTimeEn: '6 min',
+        category: '감성',
+        categoryEn: 'Emotional',
+        image: '/v2/key-ko-s4.png',
+        author: 'Lettie',
+        keywords: ['사진 없는 데이팅 앱', '외모 안 보는 소개팅 앱', '픽셀 캐릭터 프로필', '얼굴 없는 데이팅', '편지 데이팅', 'Lettie 캐릭터', '아바타 데이팅 앱'],
+        keywordsEn: ['dating app without photos', 'no photo dating app', 'personality first dating app', 'pixel avatar dating', 'faceless dating app', 'Lettie character', 'dating app no swiping'],
+        content: `
+# 사진 없는 데이팅 앱은 어떻게 다른가
+
+데이팅 앱의 첫 화면은 얼굴입니다. 그래서 0.5초 안에 결정이 나고, 그 뒤의 대화는 그 결정을 확인하는 절차가 됩니다. Lettie는 순서를 뒤집었습니다. 처음엔 **픽셀 캐릭터**와 **편지**만 있습니다.
+
+## 사진을 빼면 실제로 생기는 일
+
+- **첫 편지가 길어집니다.** 보여 줄 게 글밖에 없으니까요. 평균적으로 채팅 첫 메시지의 대여섯 배 길이입니다.
+- **선택 기준이 바뀝니다.** 발견에서 봉투를 고를 때 보이는 건 첫 문장과 상대의 캐릭터, 우표뿐입니다. "이 문장을 쓴 사람이 궁금하다"가 유일한 이유가 됩니다.
+- **거절이 덜 아픕니다.** 답장이 안 와도 그건 편지 한 통에 대한 것이지 얼굴에 대한 것이 아닙니다.
+- **쓸데없는 대화가 줄어듭니다.** "뭐 해?"로 시작하는 대화가 없습니다. 편지는 시간이 걸려 도착하니까 "뭐 해?"를 물을 수 없습니다.
+
+## 캐릭터는 어떻게 생겼나
+
+작은 전신 픽셀 캐릭터 16종이 기본으로 있고 언제든 무료로 바꿉니다. 그리고 **"짧은 곱슬머리, 노란 우비, 안경"** 처럼 생김새를 글로 적으면 같은 그림체로 나만의 캐릭터를 그려 줍니다. 얼굴을 닮게 그리는 게 아니라 **분위기**를 그립니다. 그게 이 앱에서 "나"를 보여 주는 방식입니다.
+
+## 그럼 얼굴은 영영 안 보나요
+
+편지를 주고받다 보면 자연스럽게 사진을 나눕니다. 편지에 사진을 동봉할 수 있고, 그건 두 사람이 정합니다. 앱이 정하는 건 **순서**뿐입니다 — 글이 먼저, 얼굴은 나중에.
+
+## 솔직한 단점
+
+- 외모가 중요한 사람에게는 비효율적입니다. 이 앱은 그런 분께 맞지 않습니다.
+- 편지 한 통이 도착하는 데 몇 시간이 걸립니다. 오늘 밤 당장 누군가와 이야기하고 싶다면 채팅 앱이 낫습니다.
+- 사용자 수가 큰 데이팅 앱보다 적습니다. 대신 여기 있는 사람들은 편지를 쓰러 온 사람들입니다.
+
+## 이 방식이 맞는 사람
+
+- 사진으로 평가받는 게 지쳤다
+- 대화가 길어지면 오히려 편하다
+- 외국 사람과의 만남에 열려 있다 (번역은 앱이 합니다)
+
+맞다면 오늘 밤 발견에서 봉투 하나를 열어 보세요. 그 편지를 쓴 사람의 얼굴은 모르지만, 무슨 생각을 하는 사람인지는 압니다. 데이팅 앱에서는 보통 그 반대죠.
+`,
+        contentEn: `
+# What changes when a dating app has no photos
+
+The first screen of a dating app is a face. The decision happens in half a second, and the conversation after that is a procedure to confirm it. Lettie flips the order. At the start there is only a **pixel character** and a **letter.**
+
+## What actually happens when the photos are gone
+
+- **First letters get longer.** Words are all you have to show. They run several times the length of a first chat message.
+- **The selection criterion changes.** In Discover you see an envelope's first line, the sender's character and a stamp. "I'm curious about whoever wrote this sentence" becomes the only reason to open it.
+- **Rejection stings less.** No reply is about one letter, not about your face.
+- **Empty conversation disappears.** Nothing starts with "what's up?" — a letter takes hours to arrive, so you can't ask.
+
+## What the character looks like
+
+Sixteen small full-body pixel characters come free and you can switch any time. And if you describe yourself in words — **"short curly hair, yellow raincoat, glasses"** — we draw your own in the same style. It doesn't try to look like your face; it draws your **mood.** That's how you show up here.
+
+## So do you never see a face?
+
+You do, naturally, once letters are flowing. You can attach photos to a letter, and the two of you decide when. The app only decides the **order** — words first, faces later.
+
+## The honest downsides
+
+- If looks are what matter to you, this is inefficient. The app isn't for you.
+- A letter takes hours to arrive. If you want to talk to someone tonight, use a chat app.
+- Fewer people than the big dating apps. The ones here came to write letters.
+
+## Who this is for
+
+- You're tired of being judged by a photo
+- Longer conversations feel easier to you, not harder
+- You're open to meeting someone abroad (the app does the translating)
+
+If that's you, open one envelope in Discover tonight. You won't know the writer's face, but you'll know how they think. On dating apps it's usually the other way round.
+`,
+    },
+    'best-penpal-apps-2026': {
+        id: 'best-penpal-apps-2026',
+        title: '2026 펜팔 앱 추천 7가지 — 목적별로 고르는 법 (무료 기준)',
+        titleEn: 'Best pen-pal apps in 2026 — 7 picks by what you want (free tiers compared)',
+        description: '느린 편지, 언어 교환, 실제 만남, 익명 대화 — 목적이 다르면 맞는 펜팔 앱도 다릅니다. Lettie, Slowly, InterPals, HelloTalk, Tandem, Ablo, Penpal World를 무료 범위 기준으로 정리했습니다.',
+        descriptionEn: 'Slow letters, language exchange, actually meeting someone, anonymous conversation — different goals, different apps. Lettie, Slowly, InterPals, HelloTalk, Tandem, Ablo and Penpal World compared on what the free tier gives you.',
+        date: '2026-09-21',
+        readTime: '8분',
+        readTimeEn: '8 min',
+        category: '비교',
+        categoryEn: 'Comparison',
+        image: '/v2/key-ko-s1.png',
+        author: 'Lettie',
+        keywords: ['펜팔 앱 추천', '펜팔 어플 추천 2026', '외국인 친구 사귀는 앱', '무료 펜팔 앱', '해외 펜팔 앱', '언어 교환 앱 추천', '편지 앱 추천'],
+        keywordsEn: ['best pen pal apps 2026', 'pen pal apps free', 'apps to make friends abroad', 'international pen pal app', 'letter writing app', 'language exchange app recommendation'],
+        content: `
+# 2026 펜팔 앱 추천 7가지 — 목적별로
+
+"펜팔 앱 뭐가 좋아요?"에 하나로 답하면 틀립니다. 편지를 쓰고 싶은 사람과 말하기 연습을 하고 싶은 사람에게 같은 앱을 권할 수는 없으니까요. 목적별로 나눴고, **무료로 어디까지 되는지**를 기준으로 봤습니다. Lettie는 저희 앱입니다.
+
+## 요약표
+
+| 목적 | 1순위 | 2순위 |
+|---|---|---|
+| 느린 편지, 시간이 걸리는 관계 | Lettie | Slowly |
+| 편지로 시작하는 만남 | Lettie | — |
+| 언어가 달라도 상관없이 | Lettie | Ablo |
+| 글쓰기 교정·언어 학습 | HelloTalk | Tandem |
+| 말하기·화상 | Tandem | HelloTalk |
+| 사람 수·특정 나라 찾기 | InterPals | Penpal World |
+| 가볍고 익명에 가까운 대화 | Ablo | — |
+
+## 1. Lettie — 편지가 지구본 위를 날아간다
+
+편지는 두 도시 거리만큼 시간이 걸려 도착합니다(1~24시간). 남이 띄운 편지를 **발견**에서 주워 읽고 답장하며 대화가 시작되고, 편지 안 번역 버튼이 28개 언어를 처리합니다. 사진 대신 픽셀 캐릭터, 스와이프 없는 하루 몇 장의 매칭. **무료 범위**: 발견 봉투 8시간마다 3장, 하루 편지 3통, 번역 무제한, 캐릭터 16종. 광고를 보면 봉투와 편지를 더 받습니다.
+
+맞는 사람: 편지의 호흡이 좋고, 언어가 다른 사람도 만나고 싶고, 우정이든 만남이든 열어 두고 싶은 사람.
+
+## 2. Slowly — 느린 편지의 원조
+
+2017년부터 이 장르를 만든 앱. 거리 기준 배달, 우표 수집, 아바타. 데이팅 요소는 의도적으로 없습니다. **무료 범위**: 편지·우표 대부분 무료, 번역은 별도.
+
+맞는 사람: 취미가 맞는 펜팔과 오래 편지를 주고받고 싶고, 언어가 같거나 번역기 왕복이 괜찮은 사람.
+
+## 3. InterPals — 가장 큰 펜팔 커뮤니티
+
+2000년대부터 이어진 웹 중심 커뮤니티. 특정 나라·도시 사람을 찾는 데 가장 빠릅니다. 단점은 첫 메시지부터 연락처를 묻는 사람과 스팸. **무료 범위**: 사실상 전부.
+
+## 4. HelloTalk — 원어민 교정 채팅
+
+문장 단위 교정·번역·음성 메시지. 학습 도구로는 가장 효율적입니다. 편지의 호흡은 없고, 무료는 학습 언어 1개 제한.
+
+## 5. Tandem — 화상·음성 언어 교환
+
+말하기 연습이 목적이면 여기. 매칭 심사가 있어 진지한 학습자 비율이 높습니다. 무료는 기능 일부 제한.
+
+## 6. Ablo — 자동 번역 채팅
+
+모든 메시지가 자동 번역되는 채팅. 가볍게 여러 나라 사람과 이야기하기에 좋고, 깊이는 기대하지 않는 편이 낫습니다.
+
+## 7. Penpal World — 단순한 펜팔 매칭
+
+오래된 프로필 기반 매칭. 광고와 오래된 UI를 감수하면 무료로 충분합니다.
+
+## 고르는 법 세 줄
+
+1. **편지 vs 채팅**부터 정하세요. 호흡이 다릅니다.
+2. **언어가 다르면** 번역이 어디에 있는지 보세요 — 앱 안(Lettie·HelloTalk·Ablo)인지, 왕복인지.
+3. **만남까지 열어 둘지** 정하세요. 열어 두면 Lettie, 우정만이면 Slowly·InterPals.
+
+어느 앱이든 첫 편지는 자기소개가 아니라 상대 글에 대한 반응이어야 답장이 옵니다. [첫 편지 예문 7가지](/blog/first-letter-examples-discover)를 보고 시작하세요.
+
+*2026년 9월 기준 공개 정보. 각 앱의 무료 범위는 바뀔 수 있습니다.*
+`,
+        contentEn: `
+# Best pen-pal apps in 2026 — by what you actually want
+
+There's no single answer to "which pen-pal app is best" — the person who wants to write letters and the person who wants speaking practice shouldn't get the same recommendation. Sorted by goal, judged on **what the free tier gives you.** Lettie is ours.
+
+## Summary
+
+| Goal | First pick | Second |
+|---|---|---|
+| Slow letters, relationships that take time | Lettie | Slowly |
+| Meeting someone through letters | Lettie | — |
+| Regardless of language | Lettie | Ablo |
+| Writing corrections, language learning | HelloTalk | Tandem |
+| Speaking, video | Tandem | HelloTalk |
+| Numbers, finding a specific country | InterPals | Penpal World |
+| Light, near-anonymous conversation | Ablo | — |
+
+## 1. Lettie — letters fly across a globe
+
+Letters take as long as the distance between two cities (1–24 hours). You pick up letters strangers released in **Discover**, reply, and a conversation begins; a translate button inside the letter covers 28 languages. Pixel characters instead of photos, a few matching cards a day instead of swiping. **Free tier**: three Discover envelopes every eight hours, three letters a day, unlimited translation, sixteen characters. Watch an ad for more envelopes and letters.
+
+For: people who like the rhythm of letters, want to meet people regardless of language, and want the door open to friendship or more.
+
+## 2. Slowly — the original slow-letter app
+
+Defined the genre since 2017. Distance-based delivery, stamp collecting, avatars. Deliberately no dating layer. **Free tier**: most letters and stamps; translation is separate.
+
+For: a long correspondence with someone who shares your hobbies, when you share a language or don't mind round-tripping a translator.
+
+## 3. InterPals — the biggest pen-pal community
+
+Web-first, around since the 2000s. Fastest way to find someone in a specific country or city. Downsides: WhatsApp requests in the first message, spam. **Free tier**: essentially everything.
+
+## 4. HelloTalk — chat with native-speaker corrections
+
+Sentence-level corrections, translation, voice messages. The most efficient learning tool here. No letter rhythm; free is limited to one target language.
+
+## 5. Tandem — voice and video exchange
+
+If speaking is the goal. Applications are reviewed, so the share of serious learners is high. Some features paid.
+
+## 6. Ablo — auto-translated chat
+
+Every message auto-translated. Good for light conversation across many countries; don't expect depth.
+
+## 7. Penpal World — simple pen-pal matching
+
+Profile-based matching that's been around forever. Free is plenty if you can live with ads and a dated UI.
+
+## How to choose, in three lines
+
+1. Decide **letters vs chat** first. The rhythm is different.
+2. If languages differ, check **where translation lives** — in the app (Lettie · HelloTalk · Ablo) or a round trip.
+3. Decide whether you want **the door open to meeting someone.** Open → Lettie; friendship only → Slowly · InterPals.
+
+Whichever app, a first letter that gets a reply is a reaction to what they wrote, not a bio. Start with [7 first-letter examples](/en/blog/first-letter-examples-discover).
+
+*Public information as of September 2026. Free tiers change.*
+`,
+    },
 };

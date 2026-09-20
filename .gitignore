@@ -42,3 +42,4 @@ next-env.d.ts
 
 # 세션 작업 상태
 .omc/
+scripts/.sitemap-snapshot.txt
