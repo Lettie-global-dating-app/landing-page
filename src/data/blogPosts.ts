@@ -1543,9 +1543,9 @@ Let's meet on Lettie. Looking forward to the start of our conversation.
     'how-to-start-penpal': {
         id: 'how-to-start-penpal',
         title: '편지 첫 문장 쓰는 법: 상황별 예시 12개',
-        titleEn: 'How to Start Penpalling: The Perfect First Letter Guide',
+        titleEn: 'How to Start a Pen Pal Letter: 12 First Lines That Work',
         description: '편지를 어떻게 시작할지 막힐 때 쓰는 첫 문장 예시 12개. 처음 쓰는 상대, 친구, 부모님, 오랜만의 안부, 외국인 펜팔까지 상황별로 정리했습니다.',
-        descriptionEn: 'Learn how to start meaningful relationships with friends around the world. Everything about successful penpalling, from your first letter to lasting friendships.',
+        descriptionEn: 'Stuck on the first line? 12 openers for a first letter to a new pen pal, a friend, family or someone abroad, plus what to avoid in the first sentence.',
         date: '2025-01-18',
         readTime: '5분',
         readTimeEn: '5 min',
@@ -1555,12 +1555,18 @@ Let's meet on Lettie. Looking forward to the start of our conversation.
         author: 'Lettie',
         keywords: ['편지 첫 문장', '편지 시작', '편지 시작하는 법', '편지 첫 문장 예시', '첫 편지', '펜팔 첫 편지'],
         updated: '2026-09-24',
-        keywordsEn: ['how to start penpalling', 'pen pal guide for beginners', 'first letter tips', 'how to find a pen pal'],
+        keywordsEn: ['how to start a pen pal letter', 'how to start a pen pal', 'first letter to a pen pal', 'how to start a letter', 'first line of a letter examples', 'pen pal first letter'],
         faq: [
             { q: '편지 첫 문장은 어떻게 시작하나요?', a: '인사말보다 지금 이 편지를 쓰게 된 장면이나 이유 하나로 시작하세요. "오늘 퇴근길에 네가 좋아하던 빵집이 문을 닫은 걸 봤어."처럼 구체적인 한 장면이 첫 줄로 가장 잘 읽힙니다.' },
             { q: '처음 편지를 쓰는 상대에게는 첫 문장을 어떻게 쓰나요?', a: '상대가 쓴 글이나 프로필에서 본 한 가지를 짚으며 시작하세요. 자기소개는 둘째 문장으로 미루고, 첫 문장은 왜 이 사람에게 쓰는지를 보여 주는 데 씁니다.' },
             { q: '오랜만에 쓰는 편지는 어떻게 시작하나요?', a: '연락이 뜸했던 사과는 한 줄로 끝내고 바로 요즘 이야기로 넘어가세요. 펜을 들게 된 계기(생일, 이사, 우연히 본 물건)를 첫 문장에 두면 어색함이 줄어듭니다.' },
             { q: '외국인 펜팔에게 보내는 첫 편지는 무엇으로 시작하나요?', a: '내가 사는 도시의 지금 장면 하나와 질문 하나로 시작하세요. Lettie에서는 편지가 28개 언어로 번역되므로 한국어로 써도 상대는 자기 언어로 읽습니다.' },
+        ],
+        faqEn: [
+            { q: 'How do you start a letter to a pen pal?', a: 'Start with the moment or reason that made you write rather than a greeting. One concrete scene from your day, such as a street you walked down or something you saw, reads better as a first line than "How are you?".' },
+            { q: 'What should the first line of a first letter say?', a: 'Point to one thing you noticed in their profile or letter and say why it made you write. Save your self-introduction for the second sentence.' },
+            { q: 'How do you start a letter after a long time?', a: 'Keep the apology to one line and go straight to your news. Naming what made you pick up the pen, like a birthday or a move, takes the awkwardness out.' },
+            { q: 'How do you start a letter to someone in another country?', a: 'Describe one thing happening in your city right now and ask one question about theirs. On Lettie letters are translated into 28 languages, so you can write in your own language.' },
         ],
         content: `
 # 편지 첫 문장 쓰는 법
@@ -1660,7 +1666,35 @@ Lettie에서는 내 편지가 도착하고 상대의 답장이 올 때까지 다
 **Lettie에서 당신을 기다리는 전 세계 친구들을 만나보세요.**
     `,
         contentEn: `
-# Guide to Starting Special Connections Through Letters
+# How to start a pen pal letter
+
+**Short answer: start with the moment that made you write, not with a greeting.** Instead of "Hi, how are you?", try "I walked past the bakery you told me about today, and it had closed." The reader steps into your day from the first line.
+
+## 12 first lines, by situation
+
+| Writing to | First line |
+|---|---|
+| A new pen pal | I read your line about taking the bus on purpose when it rains, and I started this letter right after. |
+| A new pen pal | I cross a bridge over the Han River every morning in Seoul. Today the fog hid the other side. |
+| A friend | I just walked past the place where we always got noodles, so I'm writing to you from the bench outside. |
+| A friend | I finally finished the book you gave me. You were in my head for the whole last chapter. |
+| Family | Mum, I made your soup on my own for the first time tonight. It came out about half as good as yours. |
+| Family | Dad, the fountain pen you gave me sits on my desk now, and I'm writing this with it. |
+| After a long silence | It's been a while. I moved, and the first view from the new window is the thing I wanted to tell you first. |
+| After a long silence | I turned the calendar page and saw your birthday is next week, so I picked up a pen. |
+| A thank-you | I still think about the coffee you handed me in the hallway the day my presentation fell apart. |
+| A thank-you | I played the guitar in front of people for the first time today, and it started with your lessons. |
+| Someone abroad | It's 11 p.m. here in Seoul and only the convenience store lights are on. What time is it where you are? |
+| Someone abroad | What do people eat on rainy days where you live? Here a lot of us make green-onion pancakes. |
+
+## What to avoid in the first sentence
+
+- **Only introducing yourself.** "Hi, I'm Min" can wait for the second sentence. The first one belongs to a scene or a reason.
+- **A long apology.** If you're replying late, apologise in one line and move on to your news.
+- **A list of questions.** One question is enough, and it lands better after you've shared something of your own.
+- **Weather alone.** If you mention the weather, say what you did in it.
+
+## Writing a first letter to a pen pal
 
 Letters are not just writing. They're like gifts sent with your heart. A special experience of building genuine relationships by exchanging letters with people from diverse cultures and backgrounds around the world. Start the joy of letter writing with Lettie.
 
