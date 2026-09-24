@@ -5,6 +5,7 @@ import { Calendar, Clock, ArrowLeft, Share2, Mail, Feather, ArrowRight } from 'l
 import { notFound } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import { seoDesc, seoTitle } from '@/lib/seo';
+import { ORG_ID } from '@/lib/schema';
 import remarkGfm from 'remark-gfm';
 import { articleMdComponents, stripLeadingH1 } from '@/lib/markdown';
 import { blogPosts } from '@/data/blogPosts';
@@ -69,61 +70,20 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.description,
     image: `https://lettie-dating.com${post.image}`,
     datePublished: post.date,
-    dateModified: post.date,
-    author: {
-      '@type': 'Organization',
-      name: post.author,
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Lettie',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://lettie-dating.com/lettie-icon.png',
-      },
-    },
+    dateModified: post.updated ?? post.date,
+    author: { '@id': ORG_ID },
+    publisher: { '@id': ORG_ID },
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `https://lettie-dating.com/blog/${slug}`,
     },
   };
 
-  // FAQ Schema — 글 데이터의 faq 를 우선 쓰고, 예전 두 글은 하드코딩 유지
-  let faqJsonLd: Record<string, unknown> | null = post.faq
+  // FAQ Schema — 글 데이터의 faq 만 쓴다. 화면에 없는 FAQ 를 LD 에만 넣던 하드코딩(두 글)은 2026-09-24 글 데이터로 옮겼다.
+  const faqJsonLd: Record<string, unknown> | null = post.faq
     ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: post.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }
     : null;
-  if (slug === 'how-to-start-penpal' || slug === 'safe-penpaling-guide') {
-    faqJsonLd = {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: [
-        {
-          '@type': 'Question',
-          name: '펜팔을 처음 시작할 때 첫 편지에 무엇을 써야 하나요?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: '자기소개, 취미, 사는 곳의 문화, 그리고 상대방에 대한 진심 어린 질문을 포함하는 것이 좋습니다. 너무 길지 않게 작성하고, 공통 관심사를 찾는 것이 중요합니다.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: '펜팔 친구와 연락처는 언제 교환하는 것이 안전한가요?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: '정해진 규칙은 없지만, 편지를 여러 통 주고받으며 신뢰가 쌓인 뒤에 교환하기를 권장합니다. 확신이 들기 전에는 개인 메신저나 연락처를 앱 밖으로 내보내지 마세요.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: '해외 펜팔 친구에게 선물을 보내도 되나요?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: '신뢰가 충분히 쌓인 후라면 가능하지만, 초기에는 주소 공유를 자제하는 것이 좋습니다. 또한 고가의 선물 요구는 사기일 수 있으니 주의해야 합니다.',
-          },
-        },
-      ],
-    };
-  }
+
 
   // BreadcrumbList 구조화 데이터
   const breadcrumbJsonLd = {

@@ -5,6 +5,7 @@ import { Calendar, Clock, ArrowLeft, Share2, Mail, Feather, ArrowRight } from 'l
 import { notFound } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import { seoDesc, seoTitle } from '@/lib/seo';
+import { ORG_ID } from '@/lib/schema';
 import remarkGfm from 'remark-gfm';
 import { articleMdComponents, stripLeadingH1 } from '@/lib/markdown';
 import { blogPosts } from '@/data/blogPosts';
@@ -70,19 +71,9 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.descriptionEn,
     image: `https://lettie-dating.com${post.image}`,
     datePublished: post.date,
-    dateModified: post.date,
-    author: {
-      '@type': 'Organization',
-      name: post.author,
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Lettie',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://lettie-dating.com/lettie-icon.png',
-      },
-    },
+    dateModified: post.updated ?? post.date,
+    author: { '@id': ORG_ID },
+    publisher: { '@id': ORG_ID },
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `https://lettie-dating.com/en/blog/${slug}`,
