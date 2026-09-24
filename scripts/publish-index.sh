@@ -37,7 +37,7 @@ echo "요청할 URL $n 건"
 if [[ $n -gt 0 ]]; then
   # 블로그 글을 먼저, 한도(10) 안에서
   { grep -E '/blog/' /tmp/sitemap.todo.txt; grep -vE '/blog/' /tmp/sitemap.todo.txt; } | head -10 > /tmp/sitemap.req.txt
-  node ~/AndroidStudioProjects/dearglobe/tools/promo-video/gsc_request.mjs --file /tmp/sitemap.req.txt | tee /tmp/gsc.result.txt || echo "GSC 요청 중 오류 (CDP Chrome 이 켜져 있어야 한다: open -na 'Google Chrome' --args --user-data-dir=/tmp/chrome-lettie --remote-debugging-port=9333)"
+  node ~/AndroidStudioProjects/dearglobe/tools/promo-video/gsc_request.mjs --file /tmp/sitemap.req.txt | tee /tmp/gsc.result.txt || echo "GSC 요청 중 오류 (CDP Chrome 이 켜져 있어야 한다: open -na 'Google Chrome' --args --user-data-dir=$HOME/.lettie-chrome --remote-debugging-port=9333)"
   # requested 된 것만 빼고 나머지는 다음 실행으로 넘긴다
   grep -E '^requested' /tmp/gsc.result.txt | awk '{print $2}' | sort > /tmp/gsc.done.txt
   sort /tmp/sitemap.todo.txt | comm -23 - /tmp/gsc.done.txt > $PENDING
