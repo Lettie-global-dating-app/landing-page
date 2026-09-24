@@ -5729,9 +5729,10 @@ One note, because this follows you to the next app: replies die mostly because t
         id: 'letter-delivery-time-by-distance',
         title: '편지가 도착하는 데 얼마나 걸리나 — 도시별 배달 시간표 (Lettie)',
         titleEn: 'How long does a letter take to arrive? Delivery times by city (Lettie)',
-        description: 'Lettie의 편지는 두 도시 사이 실제 거리로 도착 시간을 계산합니다. 서울에서 도쿄·하노이·리스본·뉴욕까지 각각 몇 시간 걸리는지, 왜 일부러 느리게 만들었는지 설명합니다.',
-        descriptionEn: 'Lettie computes delivery time from the real distance between two cities. How long from Seoul to Tokyo, Hanoi, Lisbon and New York — and why we made letters slow on purpose.',
+        description: 'Lettie의 편지는 두 나라 사이 거리에 따라 1~24시간 걸려 도착합니다. 서울에서 도쿄 3~6시간, 뉴욕 12~24시간처럼 도시 17곳의 도착 시간과 규칙을 정리했습니다.',
+        descriptionEn: 'Letters on Lettie take 1–24 hours depending on the distance between two countries: Seoul to Tokyo 3–6 hours, to New York 12–24 hours. 17 cities and the exact rule.',
         date: '2026-09-21',
+        updated: '2026-09-24',
         readTime: '5분',
         readTimeEn: '5 min',
         category: '가이드',
@@ -5743,26 +5744,43 @@ One note, because this follows you to the next app: replies die mostly because t
         content: `
 # 편지가 도착하는 데 얼마나 걸리나
 
-Lettie에서 편지를 보내면 바로 도착하지 않습니다. 봉투가 지구본 위로 떠올라 상대가 있는 도시까지 날아가고, **두 도시 사이의 실제 거리**로 계산된 시간이 지나야 우체통에 닿습니다. 자주 받는 질문이라 표로 정리했습니다.
+Lettie에서 편지를 보내면 바로 도착하지 않습니다. 봉투가 지구본 위로 떠올라 상대가 있는 도시까지 날아가고, **두 나라 사이 거리**로 정해진 시간이 지나야 우체통에 닿습니다. 자주 받는 질문이라 표로 정리했습니다.
 
 ## 서울에서 보내면
 
-| 받는 도시 | 대략 거리 | 도착까지 |
+| 받는 도시 | 도시 간 거리 | 도착까지 (앱 구간) |
 |---|---|---|
-| 같은 나라(부산 등) | ~300 km | 1~2시간 |
-| 도쿄 | 1,150 km | 약 2~3시간 |
-| 타이베이 | 1,480 km | 약 3시간 |
-| 하노이 | 2,740 km | 약 5시간 |
-| 방콕 | 3,720 km | 약 6~7시간 |
-| 델리 | 4,690 km | 약 8시간 |
-| 시드니 | 8,300 km | 약 13~14시간 |
-| 이스탄불 | 7,960 km | 약 13시간 |
-| 리스본 | 10,300 km | 약 16시간 |
-| 런던 | 8,880 km | 약 14시간 |
-| 뉴욕 | 11,050 km | 약 17~18시간 |
-| 상파울루 | 18,300 km | 약 24시간 (상한) |
+| 같은 나라 (부산 등) | 330 km | 1~2시간 |
+| 도쿄 | 1,150 km | 3~6시간 |
+| 타이베이 | 1,480 km | 3~6시간 |
+| 마닐라 | 2,620 km | 3~6시간 |
+| 하노이 | 2,740 km | 6~12시간 |
+| 방콕 | 3,720 km | 6~12시간 |
+| 델리 | 4,690 km | 6~12시간 |
+| 이스탄불 | 7,950 km | 6~12시간 |
+| 시드니 | 8,330 km | 6~12시간 |
+| 런던 | 8,860 km | 12~24시간 |
+| 리스본 | 10,420 km | 12~24시간 |
+| 뉴욕 | 11,050 km | 12~24시간 |
+| 멕시코시티 | 12,050 km | 12~24시간 |
+| 라고스 | 12,400 km | 12~24시간 |
+| 상파울루 | 18,340 km | 12~24시간 |
+| 나이로비 | 10,110 km | 6~24시간 |
+| 아크라 | 12,750 km | 6~24시간 |
 
-배달 시간은 **최소 30분, 최대 24시간**입니다. 같은 나라 안에서는 1~2시간 사이에서 조금 무작위로 정해집니다. 정확한 값은 보내는 순간 봉투 밑에 "N시간 뒤 도착"으로 표시되고, 지구본에서 봉투가 어디쯤 가는지 볼 수 있습니다.
+## 도착 시간을 정하는 규칙
+
+앱은 **두 나라의 중심점 사이 거리**로 구간을 고르고, 그 구간 안에서 보낼 때마다 시간을 무작위로 정합니다. 그래서 같은 두 도시라도 편지마다 도착 시간이 조금씩 다릅니다. 시드니는 도시 간 거리가 8,330km이지만 호주 중심점까지는 약 6,900km라 6~12시간 구간입니다. (2026년 9월 24일 기준 앱 규칙)
+
+| 두 나라 중심점 사이 거리 | 도착까지 |
+|---|---|
+| 같은 나라 | 1~2시간 |
+| 3,000km 미만 | 3~6시간 |
+| 3,000~8,000km | 6~12시간 |
+| 8,000km 이상 | 12~24시간 |
+| 중심점 자료가 없는 나라 | 같은 대륙 3~6시간, 다른 대륙 6~24시간 |
+
+최소 30분, 최대 24시간입니다. 정확한 값은 보내는 순간 봉투 밑에 "N시간 뒤 도착"으로 표시되고, 지구본에서 봉투가 어디쯤 가는지 볼 수 있습니다.
 
 ## 왜 일부러 느리게 만들었나
 
@@ -5783,26 +5801,43 @@ Lettie에서 편지를 보내면 바로 도착하지 않습니다. 봉투가 지
         contentEn: `
 # How long does a letter take to arrive?
 
-A letter on Lettie doesn't land right away. The envelope lifts off the globe, flies to the other person's city, and reaches their mailbox after a delay computed from the **real distance between the two cities.** We get asked about this a lot, so here's the table.
+A letter on Lettie doesn't land right away. The envelope lifts off the globe, flies to the other person's city, and reaches their mailbox after a delay set by the **distance between the two countries.** We get asked about this a lot, so here's the table.
 
 ## Sent from Seoul
 
-| To | Distance | Arrives in |
+| To | City-to-city distance | Arrives in (app band) |
 |---|---|---|
-| Same country (Busan etc.) | ~300 km | 1–2 hours |
-| Tokyo | 1,150 km | about 2–3 hours |
-| Taipei | 1,480 km | about 3 hours |
-| Hanoi | 2,740 km | about 5 hours |
-| Bangkok | 3,720 km | about 6–7 hours |
-| Delhi | 4,690 km | about 8 hours |
-| Sydney | 8,300 km | about 13–14 hours |
-| Istanbul | 7,960 km | about 13 hours |
-| Lisbon | 10,300 km | about 16 hours |
-| London | 8,880 km | about 14 hours |
-| New York | 11,050 km | about 17–18 hours |
-| São Paulo | 18,300 km | about 24 hours (cap) |
+| Same country (Busan etc.) | 330 km | 1–2 hours |
+| Tokyo | 1,150 km | 3–6 hours |
+| Taipei | 1,480 km | 3–6 hours |
+| Manila | 2,620 km | 3–6 hours |
+| Hanoi | 2,740 km | 6–12 hours |
+| Bangkok | 3,720 km | 6–12 hours |
+| Delhi | 4,690 km | 6–12 hours |
+| Istanbul | 7,950 km | 6–12 hours |
+| Sydney | 8,330 km | 6–12 hours |
+| London | 8,860 km | 12–24 hours |
+| Lisbon | 10,420 km | 12–24 hours |
+| New York | 11,050 km | 12–24 hours |
+| Mexico City | 12,050 km | 12–24 hours |
+| Lagos | 12,400 km | 12–24 hours |
+| São Paulo | 18,340 km | 12–24 hours |
+| Nairobi | 10,110 km | 6–24 hours |
+| Accra | 12,750 km | 6–24 hours |
 
-Delivery is **at least 30 minutes and at most 24 hours.** Within one country it lands somewhere between one and two hours, slightly randomized. The exact time shows under the envelope the moment you send ("lands in N hours"), and you can watch the envelope cross the globe.
+## The rule that sets delivery time
+
+The app picks a band from the **distance between the two countries' centre points**, then chooses a random time inside that band for each letter. So two letters between the same cities can land at slightly different times. Sydney is 8,330 km from Seoul city to city, but only about 6,900 km to Australia's centre point, so it falls in the 6–12 hour band. (App rules as of September 24, 2026.)
+
+| Distance between the two countries' centre points | Arrives in |
+|---|---|
+| Same country | 1–2 hours |
+| Under 3,000 km | 3–6 hours |
+| 3,000–8,000 km | 6–12 hours |
+| 8,000 km or more | 12–24 hours |
+| Country without centre-point data | 3–6 hours within the same continent, 6–24 hours otherwise |
+
+Delivery is at least 30 minutes and at most 24 hours. The exact time shows under the envelope the moment you send ("lands in N hours"), and you can watch the envelope cross the globe.
 
 ## Why we made it slow on purpose
 

@@ -15,7 +15,7 @@ const APP_STORE = 'https://apps.apple.com/app/id6746454876';
 const PLAY = 'https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe';
 
 const TITLE = '펜팔 앱 무료 다운로드: iOS·안드로이드 | Lettie';
-const DESC = 'Lettie는 무료 펜팔 앱입니다. 편지가 두 도시의 실제 거리만큼 1~24시간 걸려 도착하고, 28개 언어로 번역돼 외국인과도 편지를 주고받습니다.';
+const DESC = 'Lettie는 무료 펜팔 앱입니다. 편지가 두 나라 사이 거리에 따라 1~24시간 걸려 도착하고, 28개 언어로 번역돼 외국인과도 편지를 주고받습니다.';
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     q: '편지는 얼마나 걸려 도착하나요?',
-    a: '두 나라 사이 실제 거리로 정해집니다. 같은 나라 1~2시간, 3,000km 미만 3~6시간, 8,000km 미만 6~12시간, 그보다 멀면 12~24시간입니다.',
+    a: '두 나라 사이 거리로 정해집니다. 같은 나라 1~2시간, 3,000km 미만 3~6시간, 8,000km 미만 6~12시간, 그보다 멀면 12~24시간입니다.',
   },
   {
     q: '외국어를 못해도 펜팔을 할 수 있나요?',
@@ -96,7 +96,7 @@ export default function PenpalAppPage() {
         subtitle="다른 나라 사람에게 내 말로 편지를 씁니다."
         answer={
           <>
-            <strong>Lettie는 아이폰과 안드로이드에서 쓰는 무료 펜팔 앱입니다.</strong> 편지는 두 도시의 실제 거리만큼 걸려 도착하고(같은 나라 1~2시간,
+            <strong>Lettie는 아이폰과 안드로이드에서 쓰는 무료 펜팔 앱입니다.</strong> 편지는 두 나라 사이 거리에 따라 걸려 도착하고(같은 나라 1~2시간,
             지구 반대편 최대 하루), 버튼 하나로 28개 언어로 번역됩니다.
           </>
         }
@@ -111,7 +111,7 @@ export default function PenpalAppPage() {
           <GuideTable
             head={['기능', '하는 일']}
             rows={[
-              ['거리만큼 걸리는 편지', '편지가 지구본 위를 날아가 두 도시의 실제 거리만큼 30분~24시간 뒤에 도착합니다.'],
+              ['거리만큼 걸리는 편지', '편지가 지구본 위를 날아가 두 나라 사이 거리에 따라 30분~24시간 뒤에 도착합니다.'],
               ['발견', '남이 하늘에 띄운 편지를 주워 읽고, 마음에 드는 편지에 답장합니다.'],
               ['번역', '모든 편지에 번역 버튼, 28개 언어, 무료, 원문과 나란히 보기.'],
               ['프로필', '사진 대신 픽셀 캐릭터(기본 16종 무료)로 시작합니다. 생김새를 글로 적으면 그려 줍니다.'],
@@ -123,7 +123,7 @@ export default function PenpalAppPage() {
 
         <GuideSection title="편지가 도착하는 시간">
           <p>
-            배달 시간은 두 나라 사이 거리로 정해집니다. {UPDATED} 기준 앱이 쓰는 구간입니다. 도시별 예시는{' '}
+            배달 시간은 두 나라 중심점 사이 거리로 정해집니다. {UPDATED} 기준 앱이 쓰는 구간입니다. 도시별 예시는{' '}
             <Link href="/blog/letter-delivery-time-by-distance" className="text-blue-600 underline">거리별 편지 배달 시간표</Link>에 있습니다.
           </p>
           <GuideTable

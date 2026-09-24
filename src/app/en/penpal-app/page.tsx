@@ -16,7 +16,7 @@ const PLAY = 'https://play.google.com/store/apps/details?id=com.dearglobe.deargl
 
 const TITLE = 'Pen Pal App: Free Download for iOS & Android | Lettie';
 const DESC =
-  'Lettie is a free pen pal app. Letters fly the real distance between two cities, arrive in 1–24 hours, and translate into 28 languages. iOS and Android.';
+  'Lettie is a free pen pal app. Letters take 1–24 hours to arrive, depending on the distance between two countries, and translate into 28 languages. iOS and Android.';
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -45,7 +45,7 @@ const FAQS = [
   },
   {
     q: 'How long does a letter take to arrive on Lettie?',
-    a: 'It depends on the real distance between the two cities: 1–2 hours within one country, 3–6 hours under 3,000 km, 6–12 hours under 8,000 km, and 12–24 hours for anything farther.',
+    a: 'It depends on the distance between the two countries: 1–2 hours within one country, 3–6 hours under 3,000 km, 6–12 hours under 8,000 km, and 12–24 hours for anything farther.',
   },
   {
     q: 'Do I need to speak English to use Lettie?',
@@ -112,7 +112,7 @@ export default function PenpalAppPage() {
           <GuideTable
             head={['Feature', 'What it does']}
             rows={[
-              ['Letters by distance', 'A letter flies across a globe and arrives after the real distance between the two cities: 30 minutes to 24 hours.'],
+              ['Letters by distance', 'A letter flies across a globe and arrives 30 minutes to 24 hours later, depending on the distance between the two countries.'],
               ['Discover', 'Pick up letters strangers released into the sky and reply to the ones that speak to you.'],
               ['Translation', 'A translate button in every letter, 28 languages, free, with the original shown beside it.'],
               ['Profiles', 'You start as a pixel character (16 free ones) instead of a photo. Describe your look and one is drawn for you.'],
@@ -124,7 +124,7 @@ export default function PenpalAppPage() {
 
         <GuideSection title="How long a letter takes">
           <p>
-            Delivery time comes from the distance between the two countries. These are the bands the app uses, as of {UPDATED}.
+            Delivery time comes from the distance between the two countries' centre points. These are the bands the app uses, as of {UPDATED}.
             See <Link href="/en/blog/letter-delivery-time-by-distance" className="text-blue-600 underline">delivery times by city</Link> for examples.
           </p>
           <GuideTable
