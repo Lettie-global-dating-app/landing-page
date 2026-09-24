@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: { absolute: seoTitle(post.titleEn) },
+    title: { absolute: seoTitle(post.seoTitleEn ?? post.titleEn) },
     description: seoDesc(post.descriptionEn),
     keywords: post.keywordsEn ?? post.keywords,
     authors: [{ name: post.author }],

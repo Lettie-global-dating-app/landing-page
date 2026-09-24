@@ -39,17 +39,6 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      // 페이지를 Netlify 가장자리(Edge) 캐시에 둔다. 없으면 매 요청이 안쪽 Durable 캐시까지 가서
-      // 첫 응답이 0.7~1초였다(2026-09-24 Lighthouse 최대 개선 항목). 배포하면 Netlify 가 가장자리 캐시를 비우므로 낡은 페이지가 남지 않는다.
-      {
-        source: '/((?!_next|api).*)',
-        headers: [
-          {
-            key: 'Netlify-CDN-Cache-Control',
-            value: 'public, s-maxage=86400, stale-while-revalidate=604800',
-          },
-        ],
-      },
       {
         source: '/favicon.ico',
         headers: [
