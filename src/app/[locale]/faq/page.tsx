@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { ArrowLeft } from 'lucide-react';
 import { SITE_URL, isLocale, OG_LOCALE } from '@/i18n/config';
+import { seoTitle } from '@/lib/seo';
 import { FAQ_LOCALES, faqAlternates, getFaq } from '@/data/localizedFaq';
 
 /**
@@ -30,7 +31,7 @@ export async function generateMetadata({
   const url = `${SITE_URL}/${locale}/faq`;
   return {
     metadataBase: new URL(SITE_URL),
-    title: { absolute: `${faq.title} | Lettie` },
+    title: { absolute: seoTitle(faq.title) },
     description: faq.description,
     keywords: faq.keywords,
     alternates: { canonical: url, languages: faqAlternates() },
