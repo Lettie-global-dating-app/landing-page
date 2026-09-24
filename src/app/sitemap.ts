@@ -1,3 +1,4 @@
+import { execFileSync } from 'node:child_process';
 import { MetadataRoute } from 'next';
 import { blogPosts } from '@/data/blogPosts';
 import { LOCALES } from '@/i18n/config';
@@ -25,9 +26,24 @@ const STATIC_PATHS = [
   '/guide/safety-privacy',
 ];
 
+/**
+ * lastmod 는 정직해야 쓸모가 있다. 빌드할 때마다 오늘 날짜를 찍으면 구글이 이 사이트의 lastmod 를 통째로 무시한다(2026-09-24 이전).
+ * 페이지를 그리는 소스 파일들의 마지막 git 커밋 날짜를 쓴다. git 이 없으면(얕은 복제 등) 고정 기준일.
+ */
+const FALLBACK_DATE = '2026-09-24';
+function gitDate(files: string[]): string {
+  try {
+    const out = execFileSync('git', ['log', '-1', '--format=%cs', '--', ...files], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim();
+    return /^\d{4}-\d{2}-\d{2}$/.test(out) ? out : FALLBACK_DATE;
+  } catch {
+    return FALLBACK_DATE;
+  }
+}
+const pageFile = (prefix: string, path: string) =>
+  path === '' ? ['src/components/Home2.tsx', `src/i18n/home/${prefix ? 'en' : 'ko'}.ts`] : [`src/app${prefix}${path}/page.tsx`];
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://lettie-dating.com';
-  const today = new Date().toISOString().split('T')[0];
   const posts = Object.values(blogPosts);
 
   const priorityOf = (path: string) => {
@@ -39,7 +55,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = STATIC_PATHS.flatMap((path) =>
     ['', '/en'].map((prefix) => ({
       url: `${baseUrl}${prefix}${path}`,
-      lastModified: today,
+      lastModified: gitDate(pageFile(prefix, path)),
       changeFrequency: 'weekly' as const,
       priority: priorityOf(path),
     })),
@@ -48,7 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const blogRoutes = posts.flatMap((post) =>
     ['', '/en'].map((prefix) => ({
       url: `${baseUrl}${prefix}/blog/${post.id}`,
-      lastModified: post.date,
+      lastModified: post.updated ?? post.date,
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     })),
@@ -58,7 +74,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 없는 하위 경로까지 넣으면 404 를 제출하는 셈이라 메인만 담는다.
   const localeHomes = NEW_LOCALES.map((locale) => ({
     url: `${baseUrl}/${locale}`,
-    lastModified: today,
+    lastModified: gitDate(['src/components/Home2.tsx', `src/i18n/home/${locale}.ts`]),
     changeFrequency: 'weekly' as const,
     priority: 0.9,
   }));
@@ -78,7 +94,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 언어별 FAQ. 번역이 실제로 있는 언어만 — 없는 언어를 넣으면 404 를 제출하는 셈이다.
   const localeFaqs = FAQ_LOCALES.map((locale) => ({
     url: `${baseUrl}/${locale}/faq`,
-    lastModified: today,
+    lastModified: gitDate(['src/data/localizedFaq.ts']),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
   }));
