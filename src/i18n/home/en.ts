@@ -24,7 +24,7 @@ export const en: HomeCopy = {
   newTitle: 'New in 2.0',
   newSub: 'We rebuilt the whole app and kept one rule: a letter should take time.',
   news: [
-    ['Delivery time by distance', 'Arrival is computed from the real distance between two cities. An hour or two within a country, about a day for the other side of the world. Watch your letter on the globe while you wait.'],
+    ['Delivery time by distance', 'Arrival time comes from the distance between the two countries. An hour or two within a country, about a day for the other side of the world. Watch your letter on the globe while you wait.'],
     ['Discover — pick up released letters', 'Three new envelopes drift close every eight hours. Free is plenty; watch one ad a day for more.'],
     ['AI translation, 28 languages', 'Open a letter and there’s a translate button, original and translation side by side. The app itself speaks 28 languages too.'],
     ['A stamp from every country', 'Countries you exchange with get painted on the globe and their stamps go in your album. Random pixel stamps too.'],
@@ -46,7 +46,7 @@ export const en: HomeCopy = {
   faqTitle: 'Questions people ask',
   faqs: [
     { q: 'Is Lettie free?', a: 'Yes. Writing, picking up letters, translation and the sixteen base characters are all free. Gems are only for extras like unlimited conversations, stamp draws or a custom character.' },
-    { q: 'How long does a letter take to arrive?', a: 'It is computed from the real distance between two cities. One to two hours within a country, a few hours to a neighbouring one, close to a day for the other side of the world. You can watch the envelope on the globe while you wait.' },
+    { q: 'How long does a letter take to arrive?', a: 'It comes from the distance between the two countries. One to two hours within a country, a few hours to a neighbouring one, close to a day for the other side of the world. You can watch the envelope on the globe while you wait.' },
     { q: 'Can I have a pen pal without speaking their language?', a: 'Yes. Every letter has a translate button, and the original sits next to the translation. With 28 languages, you write in yours and they read in theirs.' },
     { q: 'How do I get to know someone without photos?', a: 'A profile is a pixel character, a few interests and the letters themselves. Describe your look in words and we draw a character in the same style. You learn how someone thinks before what they look like.' },
   ],

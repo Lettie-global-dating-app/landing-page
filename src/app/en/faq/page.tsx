@@ -79,7 +79,7 @@ const faqCategories = [
     questions: [
       {
         q: 'Why doesn\'t my letter arrive straight away?',
-        a: 'Because it actually flies. Lettie computes the delivery time from the real distance between the two cities, so a letter to a nearby country lands in a few hours and one to the other side of the world takes about a day. While you wait you can watch it move across the globe.'
+        a: 'Because it actually flies. Lettie sets the delivery time from the distance between the two countries, so a letter to a nearby country lands in a few hours and one to the other side of the world takes about a day. While you wait you can watch it move across the globe.'
       },
       {
         q: 'What is Discover?',

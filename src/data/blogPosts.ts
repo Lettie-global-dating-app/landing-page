@@ -5454,13 +5454,13 @@ Get past letter three and the correspondence usually finds its own momentum.
         keywordsEn: ['Slowly app', 'Slowly alternative', 'apps like Slowly', 'Slowly vs Lettie', 'slow letter app', 'pen pal app comparison', 'letter pen pal app', 'pen pal app with translation'],
         faq: [
             { q: 'Lettie와 Slowly의 가장 큰 차이는 무엇인가요?', a: '첫 편지를 시작하는 방식입니다. Slowly는 관심사 매칭과 공개 편지로 상대를 찾고, Lettie는 남이 하늘에 띄운 편지를 발견에서 주워 답장하는 데서 시작합니다. 여기에 앱 안 무료 번역(28개 언어), 글로 적으면 그려 주는 픽셀 캐릭터, 하루 몇 장의 소개 카드가 더해집니다.' },
-            { q: 'Lettie에도 Slowly처럼 편지가 거리만큼 걸려 도착하나요?', a: '네. 두 도시의 실제 거리로 계산해 최소 30분, 최대 24시간이 걸립니다. 서울에서 도쿄는 2~3시간, 뉴욕은 17~18시간 정도입니다.' },
+            { q: 'Lettie에도 Slowly처럼 편지가 거리만큼 걸려 도착하나요?', a: '네. 두 나라 사이 거리로 구간을 정해 최소 30분, 최대 24시간이 걸립니다. 서울에서 도쿄는 3~6시간, 뉴욕은 12~24시간입니다.' },
             { q: 'Lettie의 번역은 유료인가요?', a: '아니요. 편지 안의 번역 버튼으로 28개 언어를 무료로 번역하며, 원문과 번역문을 나란히 보여 줍니다.' },
             { q: 'Slowly에서 Lettie로 옮기면 무엇이 달라지나요?', a: '첫 편지를 매칭 카드로 받는 대신, 발견 탭에서 남이 하늘에 띄운 편지를 주워 읽고 답장할 수 있습니다. 프로필은 사진 대신 16종의 픽셀 캐릭터로 시작합니다.' },
         ],
         faqEn: [
             { q: 'What is the biggest difference between Lettie and Slowly?', a: 'How the first letter starts. Slowly finds you a pen pal through interest matching and open letters; Lettie starts with picking up a letter a stranger released into the sky (Discover) and replying. On top of that: free in-app translation in 28 languages, a pixel character drawn from your description, and a few introduction cards a day. Photo-free character profiles and turn-taking letters.' },
-            { q: 'Do letters in Lettie take time to arrive like in Slowly?', a: 'Yes. Delivery time is computed from the real distance between the two cities: at least 30 minutes, at most 24 hours. Seoul to Tokyo is about 2–3 hours; Seoul to New York about 17–18 hours.' },
+            { q: 'Do letters in Lettie take time to arrive like in Slowly?', a: 'Yes. Delivery time comes from the distance between the two countries: at least 30 minutes, at most 24 hours. Seoul to Tokyo takes 3–6 hours; Seoul to New York 12–24 hours.' },
             { q: 'Is translation in Lettie paid?', a: 'No. A translate button inside each letter covers 28 languages for free and shows the original and the translation side by side.' },
             { q: 'What changes if I move from Slowly to Lettie?', a: 'Instead of only receiving match cards, you can pick up letters strangers released into the sky in the Discover tab and reply. Profiles start as one of sixteen pixel characters instead of a photo.' },
         ],

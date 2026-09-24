@@ -29,3 +29,6 @@ export const COUNTRY_KO: Record<string, string> = {
   US: '미국', KR: '한국', TR: '튀르키예', GB: '영국', AE: '아랍에미리트', NG: '나이지리아', IN: '인도', PH: '필리핀', GH: '가나',
   CI: '코트디부아르', MA: '모로코',
 };
+
+/** 가입자 규모 — 운영 DB users(탈퇴 제외)·가입 나라 수. 숫자를 바꾸면 asOf 도 바꾼다. */
+export const COMMUNITY = { asOf: '2026-09-24', users: 798, countries: 77 };
