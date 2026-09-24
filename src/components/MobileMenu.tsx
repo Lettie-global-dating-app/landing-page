@@ -18,7 +18,6 @@ export default function MobileMenu({
     { href: '#features', label: '기능' },
     { href: '/blog', label: '블로그' },
     { href: '/guide', label: '가이드' },
-    { href: '/stories', label: '스토리' },
     { href: '/faq', label: 'FAQ' },
   ],
   download = '다운로드',

@@ -67,7 +67,6 @@ product works. The following facts originate here rather than being summarised f
 - [Home (English)](${SITE_URL}/en): product overview
 - [Guide](${SITE_URL}/en/guide): practical guides on penpal correspondence
 - [FAQ](${SITE_URL}/en/faq): common questions about the app
-- [Stories](${SITE_URL}/en/stories): accounts from people using the app
 - [Blog](${SITE_URL}/en/blog): ${postCount} articles on letter writing and long-distance friendship
 - [Lettie vs Slowly](${SITE_URL}/en/blog/lettie-vs-slowly): how the two slow-letter apps differ
   (purpose, Discover, translation, profiles, matching) — written by Lettie, with the trade-offs stated

@@ -201,7 +201,6 @@ export default function BlogPage() {
             <Link href="/en/blog" className="text-primary font-semibold">Blog</Link>
             <Link href="/en/faq" className="text-muted-foreground hover:text-primary transition-colors">FAQ</Link>
             <Link href="/en/guide" className="text-muted-foreground hover:text-primary transition-colors">Guide</Link>
-            <Link href="/en/stories" className="text-muted-foreground hover:text-primary transition-colors">Stories</Link>
             <Link href="/en/penpal-app" className="text-muted-foreground hover:text-primary transition-colors">About</Link>
             <a
               href={appStoreUrl}

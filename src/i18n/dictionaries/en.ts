@@ -58,7 +58,7 @@ export const en = {
     },
     contact: {
       title: 'Safe Contact Exchange',
-      body: 'Share contacts only after five letters, once you actually know each other.',
+      body: 'Keep contact details inside the app until you actually know each other.',
     },
   },
   audience: {

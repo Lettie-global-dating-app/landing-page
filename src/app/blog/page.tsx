@@ -42,7 +42,6 @@ export default function BlogPage() {
             <Link href="/#features" className="text-muted-foreground hover:text-primary transition-colors">기능</Link>
             <Link href="/blog" className="text-primary font-semibold">블로그</Link>
             <Link href="/guide" className="text-muted-foreground hover:text-primary transition-colors">가이드</Link>
-            <Link href="/stories" className="text-muted-foreground hover:text-primary transition-colors">스토리</Link>
             <Link href="/faq" className="text-muted-foreground hover:text-primary transition-colors">FAQ</Link>
             <a
               href={appStoreUrl}

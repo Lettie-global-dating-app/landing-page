@@ -42,7 +42,7 @@ const FAQS = [
   },
   {
     q: 'When is it safe to exchange contact details with a pen pal?',
-    a: 'After enough exchanges that you can recognise the person’s writing and their story has stayed consistent. Lettie uses five letters as its default threshold before contact exchange is offered, which is long enough for inconsistencies to surface.',
+    a: 'After enough exchanges that you can recognise the person’s writing and their story has stayed consistent. Lettie has no fixed rule for this. Because letters take real time to travel, a handful of them is usually enough for inconsistencies to surface.',
   },
   {
     q: 'What are the warning signs of a pen pal romance scam?',
@@ -140,9 +140,9 @@ export default function SafetyPrivacyPage() {
           long one.
         </p>
         <p>
-          Lettie does not offer contact exchange until five letters have been exchanged. The threshold is not
-          about romance pacing; it is a fraud filter. Five letters is long enough that inconsistencies surface
-          and short enough that genuine correspondents are not obstructed.
+          Lettie does not set a fixed number of letters before contact exchange. Letters take real time to
+          travel, so a few exchanges already span days, which is long enough for inconsistencies to surface.
+          Keep contact details inside the app until you are sure, and report or block anyone at any time.
         </p>
         <p>
           Lettie also starts without profile photographs, so the first impression is what someone writes rather

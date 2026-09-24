@@ -15,7 +15,6 @@ const STATIC_PATHS = [
   '/blog',
   '/faq',
   '/guide',
-  '/stories',
   '/penpal-app',
   '/guide/getting-started',
   '/guide/writing-tips',

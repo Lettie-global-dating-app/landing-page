@@ -2103,7 +2103,7 @@ Sometimes deep conversations are good too. Life goals, values, thoughts on happi
 
 ## Friendship We Build Together on Lettie
 
-Lettie's biggest advantage is that we don't rush. Until we exchange 5 letters, we can't exchange contact information, so we can slowly get to know each other and build true trust.
+Lettie's biggest advantage is that we don't rush. Letters take real time to travel, so we slowly get to know each other and build trust before sharing anything outside the app.
 
 Since penpalling starts without photos, we meet through hearts and thoughts, not appearances. It will be a special experience of showing the real you and getting to know the real me.
 

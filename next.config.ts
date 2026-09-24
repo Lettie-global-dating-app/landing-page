@@ -75,6 +75,12 @@ const nextConfig: NextConfig = {
         destination: 'https://lettie-dating.com/:path*',
         permanent: true,
       },
+      // 연도가 낡은 글을 같은 주제의 최신 글로 합친다 (2026-09-24, 순위 신호를 넘긴다)
+      { source: '/blog/2025-best-penpal-app', destination: '/blog/best-penpal-apps-2026', permanent: true },
+      { source: '/en/blog/2025-best-penpal-app', destination: '/en/blog/best-penpal-apps-2026', permanent: true },
+      // 이야기 페이지의 후기 6편은 실제 사용자 것이 아니었다(편지 수 합 316 > 사람 간 편지 전체 208). 내리고 블로그로.
+      { source: '/stories', destination: '/blog', permanent: true },
+      { source: '/en/stories', destination: '/en/blog', permanent: true },
       // 잘못된 URL 패턴 수정
       {
         source: '/https\\://lettie-dating.com/:path*',

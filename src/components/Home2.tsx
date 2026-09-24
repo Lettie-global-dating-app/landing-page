@@ -321,7 +321,6 @@ export default function Home2({ lang }: { lang: string }) {
           <div className="flex items-center justify-center gap-x-6 gap-y-2 flex-wrap">
             <Link href={blogIndexHref} className="hover:text-paper">{t.nav.blog}</Link>
             <Link href={`${contentBase}/guide`} className="hover:text-paper">{t.nav.guide}</Link>
-            <Link href={`${contentBase}/stories`} className="hover:text-paper">Stories</Link>
             <Link href={faqHref} className="hover:text-paper">{t.nav.faq}</Link>
             <a href={APP_STORE} target="_blank" rel="noopener noreferrer" className="hover:text-paper">App Store</a>
             <a href={PLAY} target="_blank" rel="noopener noreferrer" className="hover:text-paper">Google Play</a>
