@@ -6,7 +6,7 @@ import GuideArticle, { GuideSection, GuideTable, GuideCallout } from '@/componen
 const UPDATED = '2026-08-28';
 
 export const metadata: Metadata = {
-  title: 'Is Pen Palling Safe? Privacy Rules That Work | Lettie',
+  title: { absolute: 'Is Pen Palling Safe? Privacy Rules That Work | Lettie' },
   description:
     'What to share and what to hold back with an online pen pal, the warning signs of a romance scam, and when contact details are safe to exchange.',
   keywords: [

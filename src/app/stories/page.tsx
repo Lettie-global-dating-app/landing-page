@@ -5,7 +5,7 @@ import { Star, Heart, Quote, Globe, Users, ArrowRight } from 'lucide-react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '사용자 스토리 - 펜팔로 만난 특별한 인연들 | Lettie',
+  title: { absolute: '펜팔 이야기 | Lettie' },
   description: 'Lettie를 통해 전 세계 친구들과 펜팔하며 특별한 인연을 만든 실제 사용자들의 이야기',
   keywords: ['펜팔 후기', 'Lettie 사용후기', '펜팔 성공 스토리', '글로벌 친구 이야기', '편지 친구 후기'],
   alternates: {

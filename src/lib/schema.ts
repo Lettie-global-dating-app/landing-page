@@ -70,14 +70,15 @@ export function mobileAppSchema(locale: 'ko' | 'en') {
     '@context': 'https://schema.org',
     '@type': 'MobileApplication',
     '@id': APP_ID,
-    name: locale === 'ko' ? 'Lettie - 편지, 글로벌 펜팔 앱' : 'Lettie - Penpal Letter App',
+    name: 'Lettie',
+    alternateName: ['레티', 'Lettie - Pen Pal App'],
     applicationCategory: 'SocialNetworkingApplication',
     operatingSystem: ['iOS', 'Android'],
     description:
       locale === 'ko'
         ? '편지가 지구본 위를 실제로 날아가 거리만큼 시간이 걸려 도착합니다. 남들이 띄운 편지를 주워 읽고 답장하며, 28개 언어로 번역됩니다. 주고받은 나라마다 우표가 모이고, 사진 대신 픽셀 캐릭터로 시작합니다.'
         : 'Letters fly across a globe and take real time to arrive — hours or a day, depending on distance. Pick up letters other people released, read them translated into any of 28 languages, and collect a stamp for every country you reach. Profiles start as pixel characters instead of photos.',
-    url: locale === 'ko' ? SITE_URL : `${SITE_URL}/en`,
+    url: SITE_URL,
     downloadUrl: [APP_STORE, PLAY_STORE],
     offers: {
       '@type': 'Offer',
@@ -88,11 +89,11 @@ export function mobileAppSchema(locale: 'ko' | 'en') {
     author: { '@id': ORG_ID },
     publisher: { '@id': ORG_ID },
     screenshot: [
-      `${SITE_URL}/letter-writing.png`,
-      `${SITE_URL}/conversation-detail.png`,
-      `${SITE_URL}/contact-exchange.png`,
-      `${SITE_URL}/letter-feed.png`,
-      `${SITE_URL}/brand-screen.png`,
+      `${SITE_URL}/v2/app-sky.png`,
+      `${SITE_URL}/v2/app-discover.png`,
+      `${SITE_URL}/v2/app-letter.png`,
+      `${SITE_URL}/v2/app-post-office.png`,
+      `${SITE_URL}/v2/app-character.png`,
     ],
     featureList:
       locale === 'ko'
@@ -103,8 +104,7 @@ export function mobileAppSchema(locale: 'ko' | 'en') {
             '사진 없이 캐릭터로 시작하는 프로필',
             '나라마다 모이는 우표와 지구본 색칠',
             '글로 적으면 그려 주는 나만의 캐릭터',
-            '하루 몇 장씩 만나는 매칭 카드',
-            '편지 5통 후 연락처 교환',
+            '하루 몇 장씩 오는 소개 카드',
             'iOS · Android 지원',
           ]
         : [
@@ -114,14 +114,17 @@ export function mobileAppSchema(locale: 'ko' | 'en') {
             'Profiles that start with a character instead of a photograph',
             'A stamp for every country you reach, painting the globe',
             'Your own character, drawn from a written description',
-            'A few matching cards a day — no swiping',
-            'Contact exchange after five letters',
+            'A few introduction cards a day — no swiping',
             'Available on iOS and Android',
           ],
   };
 }
 
-/** JSON-LD 를 하나의 @graph 로 묶어 내보낸다. 엔티티 참조가 한 문서 안에서 해결된다. */
+/**
+ * JSON-LD 를 하나의 @graph 로 묶어 내보낸다. 엔티티 참조가 한 문서 안에서 해결된다.
+ * **루트 레이아웃에서 한 번만** 내보낸다. /en 레이아웃이 한 번 더 내보내 같은 @id 에 설명이 두 벌이던 것을
+ * 2026-09-24 정리했다. 다른 페이지는 APP_ID·ORG_ID 를 참조만 한다.
+ */
 export function siteGraph(locale: 'ko' | 'en') {
   return {
     '@context': 'https://schema.org',

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { languageAlternates } from "@/i18n/config";
-import { siteGraph } from "@/lib/schema";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import LanguageSwitcher from "../components/LanguageSwitcher";
@@ -33,10 +32,10 @@ export const metadata: Metadata = {
   title: {
     // absolute 를 쓰지 않으면 루트 레이아웃의 template("%s | 편지, 펜팔 Lettie")이
     // 덧붙어 영어 검색결과 제목에 한국어가 섞인다.
-    absolute: "Lettie — Penpal App Where Letters Fly Across a Globe, in 28 Languages",
+    absolute: "Lettie: Pen Pal App With Letters That Fly Across a Globe",
     template: "%s | Lettie"
   },
-  description: "A pen pal app where your letter flies across a globe and takes hours to arrive. Pick up letters strangers released, translate them in 28 languages, collect a stamp per country. No swiping, no photos first. Free on iOS & Android.",
+  description: "A free pen pal app where each letter flies the real distance across a globe. Pick up letters strangers released and read them in 28 languages. iOS & Android.",
   keywords: [
     "penpal", "letter", "penpal app", "letter app", "global penpal", "global friend", "global", "friend", "communication", "cultural exchange", "language exchange", 
     "international friend", "overseas friend", "Lettie", "pen pal app with translation", "pen pal for adults", "find a pen pal", "pen pal website",
@@ -59,7 +58,7 @@ export const metadata: Metadata = {
     url: baseUrl,
     siteName: "Lettie",
     title: "Lettie — Slow Letters That Fly Across a Globe | Penpal App",
-    description: "A pen pal app where your letter flies across a globe and takes hours to arrive. Pick up letters strangers released, translate them in 28 languages, collect a stamp per country. No swiping, no photos first. Free on iOS & Android.",
+    description: "A free pen pal app where each letter flies the real distance across a globe. Pick up letters strangers released and read them in 28 languages. iOS & Android.",
     images: [
       {
         url: ogImageUrl,
@@ -75,7 +74,7 @@ export const metadata: Metadata = {
     site: "@lettie_app",
     creator: "@lettie_app",
     title: "Lettie — Slow Letters That Fly Across a Globe | Penpal App",
-    description: "A pen pal app where your letter flies across a globe and takes hours to arrive. Pick up letters strangers released, translate them in 28 languages, collect a stamp per country. No swiping, no photos first. Free on iOS & Android.",
+    description: "A free pen pal app where each letter flies the real distance across a globe. Pick up letters strangers released and read them in 28 languages. iOS & Android.",
     images: [ogImageUrl],
   },
   alternates: {
@@ -139,14 +138,7 @@ export default function RootLayout({
             __html: `document.documentElement.lang='en';`,
           }}
         />
-        {/* 사이트 전역 구조화 데이터.
-            Organization·WebSite·MobileApplication 을 하나의 @graph 로 묶고
-            @id 로 상호 참조한다. 페이지마다 조직을 새로 선언하면
-            검색엔진과 LLM 안에서 엔티티가 분열되기 때문이다. */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteGraph('en')) }}
-        />
+        {/* 사이트 엔티티(@graph)는 루트 레이아웃이 한 번만 내보낸다 — 여기서 또 내보내면 같은 @id 가 두 벌이 된다 */}
 
         {/* Extra SEO meta tags */}
         <meta name="theme-color" content="#102040" />

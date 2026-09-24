@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { stripLeadingH1 } from '@/lib/markdown';
 import { notFound } from 'next/navigation';
 import { ArrowLeft } from 'lucide-react';
 import { LOCALES, OG_LOCALE, SITE_URL, isLocale, urlFor } from '@/i18n/config';
@@ -98,9 +99,9 @@ function renderMarkdown(md: string) {
     } else if (line.startsWith('# ')) {
       flushList(i);
       blocks.push(
-        <h1 key={i} className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-6">
+        <h2 key={i} className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-6">
           {line.slice(2)}
-        </h1>,
+        </h2>,
       );
     } else if (/^\d+\.\s/.test(line)) {
       flushList(i);
@@ -148,7 +149,8 @@ export default async function LocalizedBlogPost({ params }: Props) {
         </Link>
 
         <article>
-          {renderMarkdown(post.content)}
+          <h1 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-6">{post.title}</h1>
+          {renderMarkdown(stripLeadingH1(post.content))}
 
           <div className="mt-14 pt-8 border-t border-border">
             <p className="text-sm text-muted-foreground mb-4">

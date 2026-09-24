@@ -5,7 +5,7 @@ import { ArrowLeft, Heart, Users, Sparkles, MessageSquare, CheckCircle } from 'l
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '우정 쌓기 가이드 - 지속 가능한 펜팔 관계 | Lettie',
+  title: { absolute: '펜팔 우정 오래 이어가는 법 | Lettie' },
   description: '펜팔과 진정한 우정을 쌓는 방법. 신뢰 구축부터 갈등 해결까지, 오래 지속되는 펜팔 관계의 비결',
   keywords: ['펜팔 우정', '펜팔 관계', '친구 만들기', '신뢰 구축', '장기 펜팔'],
   alternates: {

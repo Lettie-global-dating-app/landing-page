@@ -5,7 +5,7 @@ import { Star, Heart, Quote, Globe, Users, ArrowRight } from 'lucide-react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'User Stories - Special Connections Made Through Pen Pals | Lettie',
+  title: { absolute: 'Pen Pal Stories | Lettie' },
   description: 'Real stories from users who made special connections with friends worldwide through pen pals on Lettie',
   keywords: ['pen pal reviews', 'Lettie reviews', 'pen pal success stories', 'global friends stories', 'letter friend reviews'],
   alternates: {

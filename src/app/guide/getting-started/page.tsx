@@ -5,7 +5,7 @@ import { ArrowLeft, Mail, User, Heart, Shield, CheckCircle } from 'lucide-react'
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '펜팔 시작하기 완벽 가이드 | Lettie',
+  title: { absolute: '펜팔 시작하는 법: 첫 편지까지 | Lettie' },
   description: '첫 펜팔을 시작하는 방법부터 기본 에티켓까지, Lettie와 함께 성공적인 펜팔을 시작하세요',
   keywords: ['펜팔 시작', '첫 편지', '펜팔 프로필', '펜팔 에티켓', 'Lettie 사용법'],
   alternates: {

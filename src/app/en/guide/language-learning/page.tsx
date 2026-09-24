@@ -6,7 +6,7 @@ import GuideArticle, { GuideSection, GuideTable, GuideCallout } from '@/componen
 const UPDATED = '2026-08-28';
 
 export const metadata: Metadata = {
-  title: 'Learning a Language With a Pen Pal - Does It Work? | Lettie',
+  title: { absolute: 'Learning a Language With a Pen Pal: Does It Work?' },
   description:
     'Why writing letters builds different language skills than chat apps, what a pen pal can and cannot teach you, and how to use correspondence alongside study.',
   keywords: [

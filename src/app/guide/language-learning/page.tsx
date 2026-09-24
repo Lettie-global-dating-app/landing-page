@@ -5,7 +5,7 @@ import { ArrowLeft, Languages, BookOpen, MessageCircle, Target, CheckCircle } fr
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '언어 학습 가이드 - 펜팔로 외국어 마스터하기 | Lettie',
+  title: { absolute: '펜팔로 외국어 배우기, 효과 있을까' },
   description: '펜팔을 통한 효과적인 언어 학습법. 실전 회화부터 문법까지, 자연스럽게 외국어를 익히는 방법',
   keywords: ['언어 학습', '언어 교환', '외국어 공부', '펜팔 언어', '언어 교환 파트너'],
   alternates: {

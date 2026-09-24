@@ -5,7 +5,7 @@ import { BookOpen, Globe, Heart, Shield, Users, Mail, ArrowRight, Languages, Spa
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '펜팔 완벽 가이드 - 글로벌 친구 만들기의 모든 것 | Lettie',
+  title: { absolute: '펜팔 가이드: 첫 편지부터 우정까지 | Lettie' },
   description: '펜팔 시작 방법, 편지 작성 팁, 문화 교류 가이드, 언어 학습법 등 성공적인 펜팔을 위한 완벽한 가이드',
   keywords: ['펜팔 가이드', '편지 작성법', '글로벌 친구 만들기', '언어 교환', '문화 교류', '펜팔 에티켓', '국제 친구'],
   alternates: {

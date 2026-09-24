@@ -2,8 +2,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: "Lettie Blog - Penpal Guides & Global Communication Tips",
-    template: "%s | Lettie Blog"
+    default: "Pen Pal Blog: Letter Ideas and Guides",
+    template: "%s | Lettie"
   },
   description: "Discover how to start penpalling, letter writing tips, cultural exchange guides, and everything about global communication with Lettie",
   keywords: [

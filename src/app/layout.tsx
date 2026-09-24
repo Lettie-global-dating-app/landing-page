@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
     default: "Lettie 레티 — 지구본 위를 날아가는 편지, 28개 언어 펜팔 앱",
-    template: "%s | 편지, 펜팔 Lettie"
+    template: "%s | Lettie"
   },
   description: "편지가 지구본 위를 날아가 거리만큼 걸려 도착하는 펜팔 앱. 남이 띄운 편지를 주워 읽고 28개 언어로 번역해 답장하세요. 사진 대신 캐릭터, 나라마다 우표. iOS·Android 무료.",
   keywords: [
@@ -147,7 +147,7 @@ export default function RootLayout({
             검색엔진과 LLM 안에서 엔티티가 분열되기 때문이다. */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteGraph('ko')) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteGraph('en')) }}
         />
 
         {/* 추가 SEO 메타 태그 */}

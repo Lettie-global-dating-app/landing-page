@@ -5,7 +5,7 @@ import { ChevronDown, HelpCircle, Mail, Shield, Globe, Users } from 'lucide-reac
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'FAQ - Frequently Asked Questions | Lettie Pen Pal App',
+  title: { absolute: 'Lettie FAQ: Pen Pal App Questions Answered' },
   description: 'Answers to frequently asked questions about Lettie pen pal app usage, letter exchange, safety features, and more',
   keywords: ['Lettie FAQ', 'pen pal app guide', 'letter app questions', 'pen pal help', 'Lettie support'],
   alternates: {

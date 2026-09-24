@@ -5,7 +5,7 @@ import { BookOpen, Globe, Heart, Shield, Users, Mail, ArrowRight, Languages, Spa
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Complete Pen Pal Guide - Everything About Making Global Friends | Lettie',
+  title: { absolute: 'Pen Pal Guide: From First Letter to Friendship | Lettie' },
   description: 'Complete guide for successful pen pals: how to start, letter writing tips, cultural exchange guide, language learning methods',
   keywords: ['pen pal guide', 'letter writing', 'making global friends', 'language exchange', 'cultural exchange', 'pen pal etiquette', 'international friends'],
   alternates: {

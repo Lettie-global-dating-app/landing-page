@@ -5,7 +5,7 @@ import { ArrowLeft, BookOpen, PenTool, Heart, Sparkles, CheckCircle } from 'luci
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '편지 작성 마스터 가이드 | Lettie',
+  title: { absolute: '펜팔 편지 쓰는 법과 소재 | Lettie' },
   description: '매력적이고 의미 있는 편지 작성법을 배워보세요. 흥미로운 주제 선정부터 감정 표현까지 완벽 가이드',
   keywords: ['편지 작성법', '펜팔 편지', '편지 쓰기', '감정 표현', '스토리텔링'],
   alternates: {

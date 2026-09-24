@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation';
 import { LOCALES, OG_LOCALE, SITE_URL, isLocale, languageAlternates, urlFor } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionaries';
 import { getHomeCopy } from '@/i18n/home';
+import { seoDesc } from '@/lib/seo';
+import { APP_ID, SITE_ID } from '@/lib/schema';
 
 // 한국어(루트)와 영어(/en)는 기존 라우트가 그대로 담당한다.
 // 이미 색인된 경로를 건드리지 않기 위해서다. 여기서는 새로 추가하는 언어만 만든다.
@@ -25,7 +27,7 @@ export async function generateMetadata({
   const url = urlFor(locale);
   // 제목·설명·OG 이미지는 그 언어로 만든다. 링크를 공유했을 때 미리보기가 그 언어로 뜨게 하기 위해서다.
   const title = `Lettie — ${h.h1a} ${h.h1b}`;
-  const description = h.sub;
+  const description = seoDesc(h.sub);
   const ogImage = `${SITE_URL}/og/${locale}.png`;
   const alternateLocale = Object.entries(OG_LOCALE).filter(([k]) => k !== locale).map(([, v]) => v);
 
@@ -100,15 +102,13 @@ export default async function LocaleLayout({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'MobileApplication',
-            name: 'Lettie',
-            applicationCategory: 'SocialNetworkingApplication',
-            operatingSystem: ['iOS', 'Android'],
-            description: getHomeCopy(locale).sub,
+            '@type': 'WebPage',
+            '@id': `${urlFor(locale)}#webpage`,
             url: urlFor(locale),
-            downloadUrl: 'https://apps.apple.com/app/id6746454876',
-            offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD', category: 'Free' },
-            publisher: { '@type': 'Organization', name: 'Lettie' },
+            name: `Lettie — ${getHomeCopy(locale).h1a} ${getHomeCopy(locale).h1b}`,
+            inLanguage: locale,
+            isPartOf: { '@id': SITE_ID },
+            about: { '@id': APP_ID },
           }),
         }}
       />

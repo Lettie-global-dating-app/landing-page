@@ -5,7 +5,7 @@ import { ArrowLeft, Shield, Lock, AlertTriangle, Eye, CheckCircle } from 'lucide
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '안전과 프라이버시 가이드 - 안전한 펜팔 | Lettie',
+  title: { absolute: '펜팔은 안전할까? 개인정보 지키는 법' },
   description: '펜팔을 안전하게 즐기는 방법. 개인정보 보호부터 위험 신호 알아차리기까지, 안전한 펜팔을 위한 필수 가이드',
   keywords: ['펜팔 안전', '개인정보 보호', '온라인 안전', '펜팔 프라이버시', '안전한 소통'],
   alternates: {

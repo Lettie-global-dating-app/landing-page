@@ -7,7 +7,7 @@ import GuideArticle, { GuideSection, GuideTable, GuideCallout } from '@/componen
 const UPDATED = '2026-08-28';
 
 export const metadata: Metadata = {
-  title: 'What to Write in a Pen Pal Letter - Writing Tips | Lettie',
+  title: { absolute: 'What to Write in a Pen Pal Letter | Lettie' },
   description:
     'What to write in your first pen pal letter, how long it should be, and the question habit that keeps a correspondence alive past the third exchange.',
   keywords: [

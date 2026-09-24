@@ -6,7 +6,7 @@ import GuideArticle, { GuideSection, GuideTable, GuideCallout } from '@/componen
 const UPDATED = '2026-08-28';
 
 export const metadata: Metadata = {
-  title: 'Cultural Exchange With a Pen Pal - What to Ask | Lettie',
+  title: { absolute: 'Cultural Exchange With a Pen Pal: What to Ask | Lettie' },
   description:
     'The questions that produce real answers about another country, the ones that produce brochures, and how to handle disagreement across cultures by letter.',
   keywords: [

@@ -5,7 +5,7 @@ import { ArrowLeft, Mail, User, Heart, Shield, CheckCircle } from 'lucide-react'
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Getting Started with Pen Pals - Complete Guide | Lettie',
+  title: { absolute: 'How to Start With a Pen Pal, Step by Step | Lettie' },
   description: 'Start your pen pal journey with Lettie - from creating your first profile to basic etiquette for successful pen palling',
   keywords: ['starting penpal', 'first letter', 'penpal profile', 'penpal etiquette', 'Lettie guide'],
   alternates: {

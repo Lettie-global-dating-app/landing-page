@@ -5,7 +5,7 @@ import { ArrowLeft, Globe, Heart, Users, Calendar, CheckCircle } from 'lucide-re
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '문화 교류 가이드 - 다양한 문화 이해하기 | Lettie',
+  title: { absolute: '펜팔 문화 교류, 무엇을 물을까 | Lettie' },
   description: '펜팔을 통해 세계 각국의 문화를 이해하고 교류하는 방법. 문화적 감수성을 기르고 글로벌 친구를 만드세요',
   keywords: ['문화 교류', '글로벌 문화', '펜팔 문화', '세계 문화', '국제 교류'],
   alternates: {

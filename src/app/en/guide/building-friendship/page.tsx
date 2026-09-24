@@ -6,7 +6,7 @@ import GuideArticle, { GuideSection, GuideTable, GuideCallout } from '@/componen
 const UPDATED = '2026-08-28';
 
 export const metadata: Metadata = {
-  title: 'How to Keep a Pen Pal Friendship Going | Lettie',
+  title: { absolute: 'How to Keep a Pen Pal Friendship Going | Lettie' },
   description:
     'Why most pen pal correspondences die between the third and fifth letter, and the habits that carry a friendship past that point and into years.',
   keywords: [

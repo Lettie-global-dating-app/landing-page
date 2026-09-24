@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { APP_ID, SITE_ID } from '@/lib/schema';
 import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { Mail, Globe, Shield, Heart, Star, Download, Check } from 'lucide-react';
@@ -47,18 +48,15 @@ const comparisons = [
 ];
 
 export default function PenpalAppPage() {
+  // 앱 엔티티는 루트 레이아웃의 @graph 가 한 번만 선언한다. 이 페이지는 그 앱에 관한 페이지다.
   const appJsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'MobileApplication',
-    name: 'Lettie - 펜팔앱',
-    applicationCategory: 'SocialNetworkingApplication',
-    operatingSystem: ['iOS', 'Android'],
-    description: '편지가 지구본 위를 날아가 거리만큼 걸려 도착하는 글로벌 펜팔앱. 28개 언어 번역, 사진 대신 픽셀 캐릭터.',
-    offers: {
-      '@type': 'Offer',
-      price: '0',
-      priceCurrency: 'KRW'
-    }
+    '@type': 'WebPage',
+    '@id': 'https://lettie-dating.com/penpal-app#webpage',
+    url: 'https://lettie-dating.com/penpal-app',
+    inLanguage: 'ko',
+    isPartOf: { '@id': SITE_ID },
+    about: { '@id': APP_ID },
   };
 
   return (

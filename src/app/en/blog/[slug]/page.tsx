@@ -4,7 +4,9 @@ import Image from 'next/image';
 import { Calendar, Clock, ArrowLeft, Share2, Mail, Feather, ArrowRight } from 'lucide-react';
 import { notFound } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
+import { seoDesc, seoTitle } from '@/lib/seo';
 import remarkGfm from 'remark-gfm';
+import { articleMdComponents, stripLeadingH1 } from '@/lib/markdown';
 import { blogPosts } from '@/data/blogPosts';
 import { koEnAlternates } from '@/i18n/config';
 
@@ -23,13 +25,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: post.titleEn,
-    description: post.descriptionEn,
+    title: { absolute: seoTitle(post.titleEn) },
+    description: seoDesc(post.descriptionEn),
     keywords: post.keywordsEn ?? post.keywords,
     authors: [{ name: post.author }],
     openGraph: {
       title: post.titleEn,
-      description: post.descriptionEn,
+      description: seoDesc(post.descriptionEn),
       type: 'article',
       publishedTime: post.date,
       authors: [post.author],
@@ -232,8 +234,8 @@ export default async function BlogPostPage({ params }: Props) {
 
         {/* Article Content */}
         <div className="prose prose-lg max-w-none">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>
-            {post.contentEn}
+          <ReactMarkdown remarkPlugins={[remarkGfm]} components={articleMdComponents}>
+            {stripLeadingH1(post.contentEn)}
           </ReactMarkdown>
         </div>
 
