@@ -141,15 +141,6 @@ const blogPosts = [
     image: '/letter-writing.png',
   },
   {
-    id: '2025-best-penpal-app',
-    title: '2025 Best Penpal App: Start Safe Global Communication',
-    description: 'Among countless penpal apps, which one should you choose? Introducing Lettie, the best penpal app for safe and authentic communication in 2025.',
-    date: '2025-02-15',
-    readTime: '6 min',
-    category: 'Guide',
-    image: '/brand-screen.png',
-  },
-  {
     id: 'armchair-world-travel',
     title: 'Armchair World Travel: Cultural Journey Through Penpal',
     description: 'Travel the world from your living room through letters. Experience different cultures and perspectives without leaving home.',

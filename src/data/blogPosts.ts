@@ -2565,8 +2565,8 @@ Before autumn nights grow longer, start your first letter.
     },
     'digital-detox-2025': {
         id: 'digital-detox-2025',
-        title: '디지털 디톡스: 2025년, 왜 느린 소통이 필요한가',
-        titleEn: 'Digital Detox: Why We Need Slow Communication in 2025',
+        title: '디지털 디톡스: 왜 느린 소통이 필요한가',
+        titleEn: 'Digital Detox: Why We Need Slow Communication',
         description: '끊임없는 알림과 즉각적인 반응의 시대. 정신 건강을 지키고 진정한 관계를 회복하기 위한 디지털 디톡스와 느린 소통의 중요성을 이야기합니다.',
         descriptionEn: 'An age of constant notifications and instant responses. Discussing the importance of digital detox and slow communication to protect mental health and restore genuine relationships.',
         date: '2025-01-25',
@@ -2917,126 +2917,6 @@ Lettie는 언어와 국경을 넘어 진정한 친구를 만날 수 있는 최�
 Making friends overseas opens doors to new worlds. With Lettie, borderless communication is possible. Don't fear language barriers - the will to communicate matters more than perfect language skills. Cultural differences make friendships richer, offering new perspectives and expanded worldviews. Start genuine global friendships today on Lettie, where someone somewhere is waiting to meet you.
     `
     },
-    '2025-best-penpal-app': {
-        id: '2025-best-penpal-app',
-        title: '2025년 펜팔 앱 추천: 안전한 글로벌 소통의 시작',
-        description: '수많은 펜팔 앱 중 어떤 것을 선택해야 할까요? 안전하고 진정성 있는 소통을 위한 2025년 최고의 펜팔 앱, Lettie를 소개합니다.',
-        date: '2025-02-15',
-        readTime: '6분',
-        category: '가이드',
-        image: '/brand-screen.png',
-        author: 'Lettie Team',
-        keywords: ['펜팔 앱 추천', '안전한 펜팔', '2025 펜팔', '글로벌 메신저', '펜팔 어플', 'Lettie'],
-        keywordsEn: ['best pen pal app', 'pen pal apps compared', 'penpal app review', 'top penpal apps', 'safe pen pal app'],
-        content: `
-# 2025년 펜팔 앱 추천: 안전한 글로벌 소통의 시작
-
-디지털 시대, 펜팔의 형태도 진화하고 있습니다. 종이 편지의 감성을 디지털로 옮겨온 다양한 앱들이 출시되고 있죠. 2025년, 당신에게 꼭 맞는 펜팔 앱은 무엇일까요?
-
-## 펜팔 앱 선택의 기준
-
-수많은 앱 중에서 좋은 펜팔 앱을 고르는 기준은 명확합니다.
-
-1. **진정성**: 가벼운 만남이 아닌 깊이 있는 대화가 가능한가?
-2. **안전성**: 로맨스 스캠이나 악성 유저로부터 안전한가?
-3. **사용성**: 편지 쓰기에 최적화된 UI/UX를 제공하는가?
-
-## 왜 Lettie인가?
-
-Lettie는 이 모든 기준을 충족하며, 2025년 가장 주목받는 펜팔 앱으로 떠오르고 있습니다.
-
-### 1. 외모보다 내면에 집중하는 '블라인드 펜팔'
-Lettie의 가장 큰 특징은 **초기에 사진을 공개하지 않는 것**입니다. 프로필 사진 대신 아바타나 감성적인 이미지를 사용합니다. 이는 외모로 사람을 판단하는 '스와이프' 문화에 지친 사용자들에게 큰 호응을 얻고 있습니다. 편지의 내용, 상대방의 생각과 가치관에 온전히 집중할 수 있기 때문입니다.
-
-### 2. 시간이 걸리는 편지로 검증된 관계
-편지는 **거리만큼 시간이 걸려 도착**하고, 상대의 답장이 와야 다음 편지를 쓸 수 있습니다. 이 구조는 두 가지 장점이 있습니다.
-- **안전 확보**: 충분한 대화를 통해 상대를 검증할 수 있어 스캠 피해를 예방합니다.
-- **관계의 깊이**: 연락처를 얻기 위한 목적이 아닌, 대화 자체를 즐기는 진성 유저들이 모입니다.
-
-### 3. 아날로그 감성을 담은 디자인
-우표를 붙이고, 편지지가 전송되는 애니메이션 등 Lettie는 디지털 환경에서도 아날로그 편지의 따뜻함을 느낄 수 있도록 세심하게 디자인되었습니다.
-
-## 다른 앱과의 비교
-
-| 특징 | 일반 데이팅/채팅 앱 | 기존 펜팔 앱 | **Lettie** |
-| :--- | :--- | :--- | :--- |
-| **매칭 방식** | 외모 중심 (스와이프) | 랜덤 발송 | 관심사 & 가치관 기반 |
-| **소통 속도** | 실시간 (즉답 압박) | 느림 (배송 시간) | **적당한 느림 (여유)** |
-| **안전 장치** | 미흡 | 보통 | **시간이 걸리는 편지·캐릭터 프로필** |
-| **주요 목적** | 가벼운 만남/연애 | 언어 교환 | **진정한 우정/소통** |
-
-## 사용자들의 리얼 후기
-
-> "사진 없이 대화하니까 편견 없이 사람을 대하게 되더라고요. 진짜 마음이 통하는 친구를 만났습니다." - User A
-
-> "5통을 주고받아야 한다는 게 처음엔 답답했는데, 오히려 그 시간 덕분에 더 애틋해지고 신뢰가 생겼어요." - User B
-
-## 결론: 진심을 전하고 싶다면
-
-빠르고 가벼운 만남이 넘쳐나는 세상에서, 조금은 느리더라도 진심을 전하고 싶다면 Lettie가 정답입니다.
-
-2025년, Lettie에서 당신만의 특별한 인연을 만들어보세요.
-
----
-*지금 앱스토어와 구글 플레이에서 Lettie를 만나보세요.*
-    `,
-        titleEn: '2025 Best Penpal App: Start Safe Global Communication',
-        descriptionEn: 'Which penpal app should you choose among so many options? Introducing Lettie, the best penpal app of 2025 for safe and authentic communication.',
-        readTimeEn: '6 min',
-        categoryEn: 'Guide',
-        contentEn: `
-# 2025 Best Penpal App: Start Safe Global Communication
-
-In the digital age, the form of penpalling is also evolving. Various apps have been released that bring the sentiment of paper letters into digital format. In 2025, what is the perfect penpal app for you?
-
-## Criteria for Choosing a Penpal App
-
-The criteria for choosing a good penpal app among many are clear.
-
-1. **Authenticity**: Is deep conversation possible, not just casual encounters?
-2. **Safety**: Is it safe from romance scams or malicious users?
-3. **Usability**: Does it provide UI/UX optimized for letter writing?
-
-## Why Lettie?
-
-Lettie meets all these criteria and is emerging as the most notable penpal app of 2025.
-
-### 1. 'Blind Penpal' Focusing on Inner Self Over Appearance
-Lettie's biggest feature is **not revealing photos initially**. Instead of profile pictures, avatars or emotional images are used. This has received great response from users tired of the 'swipe' culture that judges people by appearance. You can fully focus on the content of letters, the other person's thoughts and values.
-
-### 2. Verified Relationships Through '5 Letters' Rule
-A letter **takes as long as the distance** to arrive, and you write again only after a reply. This structure has two advantages:
-- **Safety Assurance**: You can verify the other person through sufficient conversation, preventing scam damage.
-- **Depth of Relationship**: Genuine users who enjoy conversation itself gather, not for the purpose of getting contact information.
-
-### 3. Design Containing Analog Sensibility
-Lettie is carefully designed to feel the warmth of analog letters even in a digital environment, with animations of affixing stamps and delivering letter paper.
-
-## Comparison with Other Apps
-
-| Feature | General Dating/Chat Apps | Existing Penpal Apps | **Lettie** |
-| :--- | :--- | :--- | :--- |
-| **Matching Method** | Appearance-focused (swipe) | Random sending | Interest & values-based |
-| **Communication Speed** | Real-time (immediate response pressure) | Slow (delivery time) | **Moderate slowness (leisure)** |
-| **Safety Features** | Insufficient | Average | **Slow letters · character profiles** |
-| **Main Purpose** | Casual encounters/dating | Language exchange | **True friendship/communication** |
-
-## Real User Reviews
-
-> "Talking without photos made me approach people without prejudice. I met a friend I truly connect with." - User A
-
-> "At first it was frustrating to exchange 5 letters, but thanks to that time, we became more attached and trusting." - User B
-
-## Conclusion: If You Want to Convey Sincerity
-
-In a world overflowing with fast and casual encounters, if you want to convey sincerity even if it's a bit slower, Lettie is the answer.
-
-In 2025, create your special connection on Lettie.
-
----
-*Meet Lettie now on the App Store and Google Play.*
-    `
-    },
     'armchair-world-travel': {
         id: 'armchair-world-travel',
         title: '방구석 세계여행: 펜팔로 떠나는 문화 여행',
@@ -3325,7 +3205,7 @@ Start penpalling on Lettie now. Imagine how much a letter written in an unfamili
     },
     'digital-detox-slow-living': {
         id: 'digital-detox-slow-living',
-        title: '디지털 디톡스와 느린 삶: 2025년의 웰니스 트렌드',
+        title: '디지털 디톡스와 느린 삶: 편지가 주는 쉼',
         description: '끊임없는 알림과 정보의 홍수 속에서 나를 지키는 방법. 디지털 디톡스의 중요성과 느린 소통이 가져다주는 정신적 휴식에 대해 이야기합니다.',
         date: '2025-02-15',
         readTime: '6분',
@@ -3389,7 +3269,7 @@ Lettie는 의도적으로 **불편함**과 **기다림**을 설계했습니다.
 
 *지금 스마트폰을 잠시 내려놓고, 마음을 담은 편지 한 통을 써보는 건 어떨까요?*
         `,
-        titleEn: 'Digital Detox and Slow Living: 2025 Wellness Trend',
+        titleEn: 'Digital Detox and Slow Living: What Letters Give Back',
         descriptionEn: 'How to protect yourself amidst endless notifications and floods of information. Discussing the importance of digital detox and the mental rest that slow communication brings.',
         readTimeEn: '6 min',
         categoryEn: 'Emotional',
