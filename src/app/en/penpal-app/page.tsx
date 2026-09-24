@@ -124,7 +124,7 @@ export default function PenpalAppPage() {
 
         <GuideSection title="How long a letter takes">
           <p>
-            Delivery time comes from the distance between the two countries' centre points. These are the bands the app uses, as of {UPDATED}.
+            Delivery time comes from the distance between the two countries&apos; centre points. These are the bands the app uses, as of {UPDATED}.
             See <Link href="/en/blog/letter-delivery-time-by-distance" className="text-blue-600 underline">delivery times by city</Link> for examples.
           </p>
           <GuideTable
