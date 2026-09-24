@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { Calendar, Clock, ArrowRight, Mail, Feather, Globe } from 'lucide-react';
+import { blogPosts as blogPostsData } from '@/data/blogPosts';
 
 export const metadata = {
   alternates: {
@@ -13,170 +14,18 @@ export const metadata = {
 const appStoreUrl = "https://apps.apple.com/app/id6746454876";
 const playStoreUrl = "https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe";
 
-const blogPosts = [
-  {
-    id: 'slow-letter-beauty',
-    title: 'The Beauty of Slow Letters: In a World Ruled by Speed',
-    description: 'In a world where everything moves fast, discover the value of slow correspondence. The anticipation, the depth, and the special experience that thoughtful communication brings.',
-    date: '2025-11-18',
-    readTime: '6 min',
-    category: 'Heartfelt',
-    image: '/letter-writing.png',
-  },
-  {
-    id: 'first-penpal-letter',
-    title: 'Your First Penpal Letter: Opening Your Heart to a Stranger',
-    description: 'Writing your first letter to someone you\'ve never met. A special moment where excitement and fear, expectation and curiosity coexist.',
-    date: '2025-11-18',
-    readTime: '5 min',
-    category: 'Guide',
-    image: '/letter-writing.png',
-  },
-  {
-    id: 'winter-letter-warmth',
-    title: 'Winter Letter: Warm Hearts in a Cold Season',
-    description: 'As the first snow falls, a letter for you. Though the season is cold, we support each other with warm hearts. A winter penpal story that begins with Lettie.',
-    date: '2025-11-16',
-    readTime: '5 min',
-    category: 'Heartfelt',
-    image: '/letter-writing.png',
-  },
-  {
-    id: 'autumn-morning-mist',
-    title: 'Morning Mist: Autumn\'s Warm Promise',
-    description: 'In the misty morning, while woods and meadows dream. When the veil falls, you\'ll see the open blue of heaven and autumn\'s warm golden flow. A letter of hope in times of change.',
-    date: '2025-11-09',
-    readTime: '4 min',
-    category: 'Heartfelt',
-    image: '/letter-writing.png',
-  },
-  {
-    id: 'halloween-connections',
-    title: 'Halloween Confessions: Finding Connection in the Shadows',
-    description: 'This Halloween, Vampiro shares a different kind of ghost story — one about finding genuine friendship in unexpected places through heartfelt letters.',
-    date: '2025-10-29',
-    readTime: '5 min',
-    category: 'Community',
-    image: '/letter-writing.png',
-  },
-  {
-    id: 'dear-stranger',
-    title: 'Dear Stranger: A Letter from Someone Who Believes in Slow, Meaningful Connections',
-    description: 'To you, whose voice I\'ve never heard, whose eyes I\'ve never seen. A letter from someone who still believes in slow, genuine connections through words.',
-    date: '2025-01-22',
-    readTime: '4 min',
-    category: 'Heartfelt',
-    image: '/letter-writing.png',
-  },
-  {
-    id: 'how-to-start-penpal',
-    title: 'Starting Your Penpal Journey: The Complete First Letter Guide',
-    description: 'Learn how to start meaningful relationships with friends around the world. From your first letter to lasting friendship, discover everything you need for successful penpalling.',
-    date: '2025-01-18',
-    readTime: '5 min',
-    category: 'Guide',
-    image: '/letter-writing.png',
-  },
-  {
-    id: 'penpal-culture-guide',
-    title: 'Letter Cultures Around the World: Global Etiquette Through Penpalling',
-    description: 'Explore different letter cultures and greetings from around the world, and build deeper relationships with your global penpals.',
-    date: '2025-01-15',
-    readTime: '7 min',
-    category: 'Culture',
-    image: '/brand-screen.png',
-  },
-  {
-    id: 'language-exchange-tips',
-    title: 'Language Learning Through Penpals: Effective Language Exchange Methods',
-    description: 'Discover the most effective ways to learn a new language together with your penpal friends.',
-    date: '2025-01-12',
-    readTime: '6 min',
-    category: 'Learning',
-    image: '/conversation-detail.png',
-  },
-  {
-    id: 'marcus-introduction',
-    title: 'Penpalling with Marcus: Finding Genuine Friendship',
-    description: 'Hi, I\'m Marcus. I want to have heartfelt conversations with friends around the world, sharing stories about daily life, hobbies, music, and travel. Let\'s connect through letters.',
-    date: '2025-01-20',
-    readTime: '4 min',
-    category: 'Community',
-    image: '/letter-writing.png',
-  },
-  {
-    id: 'dearest-friend',
-    title: 'Autumn Night Letter: From the Café by the Ocean',
-    description: 'As fall approaches, the nights grow longer and loneliness creeps in. Though our paths may never cross, I write this letter while waiting for you at the café by the ocean.',
-    date: '2025-01-20',
-    readTime: '3 min',
-    category: 'Inspiration',
-    image: '/brand-screen.png',
-  },
-  {
-    id: 'digital-detox-2025',
-    title: 'Digital Detox 2025: Slow Communication with Penpal Letters',
-    description: 'In a world where everything connects instantly, discover the value of slow communication through penpal letters.',
-    date: '2025-02-20',
-    readTime: '5 min',
-    category: 'Heartfelt',
-    image: '/letter-writing.png',
-  },
-  {
-    id: 'safe-penpaling-guide',
-    title: 'Safe Penpaling Guide: 5 Rules for Secure Penpal Exchanges',
-    description: 'Essential safety tips for building meaningful connections while protecting your privacy in the penpal world.',
-    date: '2025-02-18',
-    readTime: '6 min',
-    category: 'Guide',
-    image: '/brand-screen.png',
-  },
-  {
-    id: 'making-global-friends',
-    title: 'Making Global Friends: Letters That Cross Borders',
-    description: 'Discover how penpal letters can help you build genuine friendships with people from around the world.',
-    date: '2025-02-17',
-    readTime: '5 min',
-    category: 'Culture',
-    image: '/letter-writing.png',
-  },
-  {
-    id: 'armchair-world-travel',
-    title: 'Armchair World Travel: Cultural Journey Through Penpal',
-    description: 'Travel the world from your living room through letters. Experience different cultures and perspectives without leaving home.',
-    date: '2025-02-10',
-    readTime: '4 min',
-    category: 'Culture',
-    image: '/letter-writing.png',
-  },
-  {
-    id: 'language-exchange-friendship',
-    title: 'Beyond Language Exchange to True Friendship: Gifts from Penpal',
-    description: 'What starts as language practice can blossom into lifelong friendships. Discover the unexpected gifts of penpal relationships.',
-    date: '2025-02-08',
-    readTime: '5 min',
-    category: 'Learning',
-    image: '/conversation-detail.png',
-  },
-  {
-    id: 'digital-detox-slow-living',
-    title: 'Digital Detox and Slow Living: 2025 Wellness Trend',
-    description: 'In an era of constant connectivity, slow living and digital detox have become essential wellness practices.',
-    date: '2025-02-05',
-    readTime: '6 min',
-    category: 'Heartfelt',
-    image: '/letter-writing.png',
-  },
-  {
-    id: 'cultural-understanding-global-etiquette',
-    title: 'The Joy of Understanding Differences: Global Penpal Etiquette',
-    description: 'Learn about cultural differences and etiquette from around the world to build more meaningful penpal relationships.',
-    date: '2025-02-01',
-    readTime: '7 min',
-    category: 'Culture',
-    image: '/brand-screen.png',
-  },
-].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+// 글 목록은 글 데이터에서 만든다. 손으로 적은 목록이던 때 39편 중 18편만 있어 새 글 6편이 내부 링크 0개였다(2026-09-24).
+const blogPosts = Object.values(blogPostsData)
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  .map((p) => ({
+    id: p.id,
+    title: p.titleEn,
+    description: p.descriptionEn,
+    date: p.date,
+    readTime: p.readTimeEn,
+    category: p.categoryEn,
+    image: p.image,
+  }));
 
 export default function BlogPage() {
   return (
@@ -254,7 +103,9 @@ export default function BlogPage() {
               'Guide': <ArrowRight className="w-8 h-8" />,
               'Culture': <Globe className="w-8 h-8" />,
               'Learning': <Clock className="w-8 h-8" />,
-              'Inspiration': <Feather className="w-8 h-8" />
+              'Inspiration': <Feather className="w-8 h-8" />,
+              'Emotional': <Feather className="w-8 h-8" />,
+              'Comparison': <Globe className="w-8 h-8" />
             };
 
             const categoryColors: Record<string, string> = {
@@ -263,7 +114,9 @@ export default function BlogPage() {
               'Guide': 'from-success-light to-primary-light',
               'Culture': 'from-accent-light to-primary-light',
               'Learning': 'from-secondary-light to-primary-light',
-              'Inspiration': 'from-primary-light to-secondary-light'
+              'Inspiration': 'from-primary-light to-secondary-light',
+              'Emotional': 'from-primary-light to-secondary-light',
+              'Comparison': 'from-accent-light to-secondary-light'
             };
 
             return (
