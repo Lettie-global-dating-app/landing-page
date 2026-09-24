@@ -1,59 +1,85 @@
 import Link from 'next/link';
-import { APP_ID, SITE_ID } from '@/lib/schema';
-import { koEnAlternates } from '@/i18n/config';
-import Image from 'next/image';
-import { Mail, Globe, Shield, Heart, Star, Download, Check } from 'lucide-react';
 import { Metadata } from 'next';
+import { Mail } from 'lucide-react';
+import { koEnAlternates } from '@/i18n/config';
+import { APP_ID, SITE_ID } from '@/lib/schema';
+import GuideArticle, { GuideSection, GuideTable, GuideCallout } from '@/components/GuideArticle';
+
+/**
+ * "펜팔 앱 / 펜팔 어플 / 펜팔 어플 추천" 질의의 랜딩 (2026-09-24 재작성).
+ * 숫자는 운영 DB 기준일을 붙여서만 쓴다. 배달 시간은 서버 DeliveryTimeService 의 거리 구간 그대로.
+ */
+const UPDATED = '2026-09-24';
+const URL = 'https://lettie-dating.com/penpal-app';
+const APP_STORE = 'https://apps.apple.com/app/id6746454876';
+const PLAY = 'https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe';
+
+const TITLE = '펜팔 앱 무료 다운로드: iOS·안드로이드 | Lettie';
+const DESC = 'Lettie는 무료 펜팔 앱입니다. 편지가 두 도시의 실제 거리만큼 1~24시간 걸려 도착하고, 28개 언어로 번역돼 외국인과도 편지를 주고받습니다.';
 
 export const metadata: Metadata = {
-  title: '펜팔앱 Lettie | 지구본 위를 날아가는 편지, 28개 언어 번역',
-  description: '펜팔앱을 찾고 계신가요? Lettie는 전 세계 150개국 친구들과 안전하게 편지를 주고받는 펜팔앱입니다. 지금 무료로 시작하세요!',
-  keywords: ['펜팔앱', '펜팔 앱', '펜팔 어플', '편지 앱', '글로벌 펜팔앱', '무료 펜팔앱', '안전한 펜팔앱', '펜팔앱 추천'],
-  alternates: {
-    canonical: 'https://lettie-dating.com/penpal-app',
-    languages: koEnAlternates('/penpal-app'),
+  title: { absolute: TITLE },
+  description: DESC,
+  keywords: ['펜팔 앱', '펜팔 어플', '펜팔 어플 추천', '펜팔앱', '외국인 펜팔', '번역 펜팔 앱'],
+  alternates: { canonical: URL, languages: koEnAlternates('/penpal-app') },
+  openGraph: {
+    title: TITLE,
+    description: DESC,
+    url: URL,
+    siteName: 'Lettie',
+    locale: 'ko_KR',
+    type: 'website',
+    images: [{ url: 'https://lettie-dating.com/og/ko.png', width: 1200, height: 630 }],
   },
 };
 
-const features = [
+const FAQS = [
   {
-    icon: Shield,
-    title: '안전한 펜팔앱',
-    description: '사진 없이 시작하고, 신고·차단이 언제나 가능한 안전한 펜팔앱 환경 제공'
+    q: 'Lettie 펜팔 앱은 무료인가요?',
+    a: '네. 편지 쓰기·읽기·답장, 번역, 기본 캐릭터 16종은 iOS와 안드로이드 모두 무료입니다. 젬과 Lettie Plus 구독으로 하루에 띄우는 편지 늘리기, 한 사람과 무제한 대화, 우표 뽑기, 나만의 캐릭터 같은 부가 기능을 쓸 수 있습니다.',
   },
   {
-    icon: Globe,
-    title: '글로벌 펜팔앱',
-    description: '150개국 이상의 친구들과 연결되는 진정한 글로벌 펜팔앱'
+    q: 'Lettie는 어디서 다운로드하나요?',
+    a: '아이폰은 앱스토어, 안드로이드는 구글 플레이에서 "Lettie" 또는 "레티"로 검색하거나 이 페이지의 버튼을 누르면 됩니다.',
   },
   {
-    icon: Heart,
-    title: '진실한 관계',
-    description: '외모가 아닌 내면으로 시작하는 특별한 펜팔앱'
+    q: '편지는 얼마나 걸려 도착하나요?',
+    a: '두 나라 사이 실제 거리로 정해집니다. 같은 나라 1~2시간, 3,000km 미만 3~6시간, 8,000km 미만 6~12시간, 그보다 멀면 12~24시간입니다.',
   },
   {
-    icon: Mail,
-    title: '편리한 기능',
-    description: '자동 번역, 편지 알림 등 펜팔앱에 필요한 모든 기능'
-  }
+    q: '외국어를 못해도 펜팔을 할 수 있나요?',
+    a: '할 수 있습니다. 모든 편지에 번역 버튼이 있고 28개 언어를 지원하며, 원문이 번역 옆에 그대로 남습니다. 한국어로 쓰면 상대는 자기 언어로 읽습니다.',
+  },
+  {
+    q: 'Lettie를 쓰는 사람은 얼마나 되나요?',
+    a: '작은 앱입니다. 2026년 9월 24일 기준 77개 나라에서 798명이 가입했고, 서울의 1인 개발자가 만듭니다.',
+  },
+  {
+    q: 'Slowly와 무엇이 다른가요?',
+    a: '둘 다 거리만큼 걸려 도착하는 편지 앱입니다. Lettie는 남이 띄운 편지를 주워 답장하는 발견, 앱 안의 무료 번역(28개 언어), 글로 적으면 그려 주는 픽셀 캐릭터가 다릅니다.',
+  },
 ];
 
-const comparisons = [
-  { feature: '안전성', lettie: true, others: false },
-  { feature: '글로벌 네트워크', lettie: true, others: false },
-  { feature: '무료 사용', lettie: true, others: false },
-  { feature: '자동 번역', lettie: true, others: false },
-  { feature: '프라이버시 보호', lettie: true, others: false },
-  { feature: '거리 기준 배달 시간', lettie: true, others: false },
-];
+function StoreButtons() {
+  return (
+    <div className="flex flex-col sm:flex-row gap-3">
+      <a href={APP_STORE} className="inline-flex items-center justify-center rounded-xl bg-gray-900 px-6 py-3 font-semibold text-white hover:bg-gray-800">
+        App Store에서 받기
+      </a>
+      <a href={PLAY} className="inline-flex items-center justify-center rounded-xl border border-gray-300 bg-white px-6 py-3 font-semibold text-gray-900 hover:bg-gray-50">
+        Google Play에서 받기
+      </a>
+    </div>
+  );
+}
 
 export default function PenpalAppPage() {
   // 앱 엔티티는 루트 레이아웃의 @graph 가 한 번만 선언한다. 이 페이지는 그 앱에 관한 페이지다.
-  const appJsonLd = {
+  const pageJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    '@id': 'https://lettie-dating.com/penpal-app#webpage',
-    url: 'https://lettie-dating.com/penpal-app',
+    '@id': `${URL}#webpage`,
+    url: URL,
     inLanguage: 'ko',
     isPartOf: { '@id': SITE_ID },
     about: { '@id': APP_ID },
@@ -61,234 +87,78 @@ export default function PenpalAppPage() {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(appJsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }} />
+      <GuideArticle
+        locale="ko"
+        path="/penpal-app"
+        parent={null}
+        title="Lettie: 아이폰·안드로이드 무료 펜팔 앱"
+        subtitle="다른 나라 사람에게 내 말로 편지를 씁니다."
+        answer={
+          <>
+            <strong>Lettie는 아이폰과 안드로이드에서 쓰는 무료 펜팔 앱입니다.</strong> 편지는 두 도시의 실제 거리만큼 걸려 도착하고(같은 나라 1~2시간,
+            지구 반대편 최대 하루), 버튼 하나로 28개 언어로 번역됩니다.
+          </>
+        }
+        cta={<StoreButtons />}
+        icon={<Mail className="w-8 h-8" />}
+        accent="from-blue-500 to-indigo-500"
+        updated={UPDATED}
+        published="2025-06-11"
+        faqs={FAQS}
+      >
+        <GuideSection title="앱에서 할 수 있는 것">
+          <GuideTable
+            head={['기능', '하는 일']}
+            rows={[
+              ['거리만큼 걸리는 편지', '편지가 지구본 위를 날아가 두 도시의 실제 거리만큼 30분~24시간 뒤에 도착합니다.'],
+              ['발견', '남이 하늘에 띄운 편지를 주워 읽고, 마음에 드는 편지에 답장합니다.'],
+              ['번역', '모든 편지에 번역 버튼, 28개 언어, 무료, 원문과 나란히 보기.'],
+              ['프로필', '사진 대신 픽셀 캐릭터(기본 16종 무료)로 시작합니다. 생김새를 글로 적으면 그려 줍니다.'],
+              ['우표', '편지가 닿은 나라마다 우표가 모이고 지구본이 칠해집니다.'],
+              ['소개', '하루 몇 장의 소개 카드. 스와이프도 점수도 없습니다.'],
+            ]}
+          />
+        </GuideSection>
 
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
-        {/* Header */}
-        <header className="container mx-auto px-4 py-6">
-          <nav className="flex items-center justify-between md:pr-40">
-            <Link href="/" className="flex items-center space-x-3">
-              <Image
-                src="/lettie-icon.png"
-                alt="Lettie 펜팔앱 아이콘"
-                className="w-10 h-10 rounded-2xl"
-                width={40}
-                height={40}
-                priority
-              />
-              <span className="text-2xl font-bold text-gray-800">Lettie</span>
-            </Link>
-            <a
-              href="https://apps.apple.com/kr/app/%EB%A0%88%ED%8B%B0/id6746454876"
-              className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors"
-            >
-              펜팔앱 다운로드
-            </a>
-          </nav>
-        </header>
-
-        {/* Hero Section */}
-        <section className="container mx-auto px-4 py-20 text-center">
-          <div className="inline-flex items-center gap-2 bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full mb-6">
-            <Star className="w-5 h-5 fill-yellow-500" />
-            <span className="font-semibold">2.0 · 하늘의 편지</span>
-          </div>
-
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
-            지구본 위를 날아가는 <span className="text-blue-500">펜팔앱</span> Lettie
-          </h1>
-
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            150개국 넘는 나라의 사람들과 편지를 주고받는 펜팔앱<br />
-            편지는 거리만큼 시간이 걸려 닿고, 28개 언어로 번역해 읽습니다
+        <GuideSection title="편지가 도착하는 시간">
+          <p>
+            배달 시간은 두 나라 사이 거리로 정해집니다. {UPDATED} 기준 앱이 쓰는 구간입니다. 도시별 예시는{' '}
+            <Link href="/blog/letter-delivery-time-by-distance" className="text-blue-600 underline">거리별 편지 배달 시간표</Link>에 있습니다.
           </p>
+          <GuideTable
+            head={['거리', '배달 시간']}
+            rows={[
+              ['같은 나라', '1~2시간'],
+              ['3,000km 미만', '3~6시간'],
+              ['3,000~8,000km', '6~12시간'],
+              ['8,000km 이상', '12~24시간'],
+            ]}
+          />
+        </GuideSection>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <a
-              href="https://apps.apple.com/kr/app/%EB%A0%88%ED%8B%B0/id6746454876"
-              className="bg-blue-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-600 transition-colors inline-flex items-center justify-center gap-2 text-lg"
-            >
-              <Download className="w-6 h-6" />
-              펜팔앱 무료 다운로드
-            </a>
-          </div>
+        <GuideSection title="무료와 선택 기능">
+          <GuideTable
+            head={['무료', '선택 (젬 또는 Lettie Plus)']}
+            rows={[
+              ['편지 쓰기·읽기·답장', '하루에 띄우는 편지 늘리기'],
+              ['모든 편지 28개 언어 번역', '한 사람과 무제한 대화'],
+              ['기본 픽셀 캐릭터 16종', '글로 적으면 그려 주는 나만의 캐릭터'],
+              ['발견: 8시간마다 새 봉투', '우표 뽑기, 봉투 더 받기'],
+            ]}
+          />
+          <GuideCallout title="규모를 솔직하게">
+            Lettie는 작은 커뮤니티입니다. 2026년 9월 24일 기준 77개 나라 798명입니다. 답장이 느릴 수 있는데, 그것도 이 앱의 방식입니다.
+          </GuideCallout>
+        </GuideSection>
 
-          {/* App Screenshots */}
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-5xl mx-auto">
-            {['sky', 'discover', 'letter', 'post-office', 'character'].map((screen) => (
-              <div key={screen} className="relative h-48 md:h-64 bg-white rounded-2xl shadow-lg overflow-hidden">
-                <Image
-                  src={`/v2/app-${screen}.png`}
-                  alt={`펜팔앱 Lettie 스크린샷`}
-                  fill
-                  className="object-contain p-2"
-                />
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Why Lettie Section */}
-        <section className="container mx-auto px-4 py-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-            Lettie는 어떤 펜팔앱인가요?
-          </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {features.map((feature, index) => {
-              const Icon = feature.icon;
-              return (
-                <div key={index} className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
-                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <Icon className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-3">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.description}</p>
-                </div>
-              );
-            })}
-          </div>
-        </section>
-
-        {/* Comparison Table */}
-        <section className="container mx-auto px-4 py-16">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-              펜팔앱 비교
-            </h2>
-
-            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-              <table className="w-full">
-                <thead>
-                  <tr className="bg-gradient-to-r from-blue-500 to-purple-500 text-white">
-                    <th className="py-4 px-6 text-left">기능</th>
-                    <th className="py-4 px-6 text-center">Lettie 펜팔앱</th>
-                    <th className="py-4 px-6 text-center">타 펜팔앱</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {comparisons.map((item, index) => (
-                    <tr key={index} className="border-b">
-                      <td className="py-4 px-6 font-semibold text-gray-800">{item.feature}</td>
-                      <td className="py-4 px-6 text-center">
-                        {item.lettie ? (
-                          <Check className="w-6 h-6 text-green-500 mx-auto" />
-                        ) : (
-                          <span className="text-gray-400">-</span>
-                        )}
-                      </td>
-                      <td className="py-4 px-6 text-center">
-                        {item.others ? (
-                          <Check className="w-6 h-6 text-green-500 mx-auto" />
-                        ) : (
-                          <span className="text-gray-400">-</span>
-                        )}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
-
-        {/* User Stats */}
-        <section className="container mx-auto px-4 py-16">
-          <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-3xl p-12">
-            <h2 className="text-3xl font-bold text-center text-white mb-12">
-              펜팔앱 Lettie를 숫자로
-            </h2>
-
-            <div className="grid md:grid-cols-4 gap-8 text-center text-white">
-              <div>
-                <div className="text-4xl font-bold mb-2">28</div>
-                <div className="opacity-90">개 언어 번역</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold mb-2">150+</div>
-                <div className="opacity-90">연결된 국가</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold mb-2">1~24h</div>
-                <div className="opacity-90">거리만큼 걸리는 배달</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold mb-2">16</div>
-                <div className="opacity-90">무료 기본 캐릭터</div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section className="container mx-auto px-4 py-16">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-            펜팔앱 Lettie FAQ
-          </h2>
-
-          <div className="max-w-3xl mx-auto space-y-6">
-            <div className="bg-white rounded-xl shadow-md p-6">
-              <h3 className="text-lg font-bold text-gray-800 mb-2">
-                Q: Lettie 펜팔앱은 정말 무료인가요?
-              </h3>
-              <p className="text-gray-600">
-                A: 네, 기본 기능은 모두 무료입니다. 편지 작성, 받기, 답장 등 핵심 펜팔앱 기능을 무료로 이용할 수 있습니다.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-md p-6">
-              <h3 className="text-lg font-bold text-gray-800 mb-2">
-                Q: 다른 펜팔앱과 뭐가 다른가요?
-              </h3>
-              <p className="text-gray-600">
-                A: Lettie는 사진 대신 픽셀 캐릭터로 시작하고, 편지가 거리만큼 시간이 걸려 오가는 동안 서로를 알아 가는 펜팔앱입니다. 불편한 상대는 언제든 신고·차단할 수 있습니다.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-md p-6">
-              <h3 className="text-lg font-bold text-gray-800 mb-2">
-                Q: 어떤 사람들이 이 펜팔앱을 사용하나요?
-              </h3>
-              <p className="text-gray-600">
-                A: 전 세계 다양한 연령대 사용자들이 언어 학습, 문화 교류, 새로운 친구 만들기 등의 목적으로 사용합니다.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Final CTA */}
-        <section className="container mx-auto px-4 py-20">
-          <div className="text-center">
-            <h2 className="text-4xl font-bold text-gray-800 mb-6">
-              지금 바로 펜팔앱 Lettie를 시작하세요
-            </h2>
-            <p className="text-xl text-gray-600 mb-8">
-              편지 한 통으로 시작하는 펜팔앱<br />
-              전 세계 친구들이 당신을 기다리고 있습니다
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://apps.apple.com/kr/app/%EB%A0%88%ED%8B%B0/id6746454876"
-                className="bg-black text-white px-8 py-4 rounded-xl font-semibold hover:bg-gray-800 transition-colors inline-flex items-center justify-center gap-3"
-              >
-                <Image src="/lettie-icon.png" alt="펜팔앱" width={24} height={24} className="rounded" />
-                App Store에서 펜팔앱 다운로드
-              </a>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe"
-                className="bg-green-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-green-700 transition-colors inline-flex items-center justify-center gap-3"
-              >
-                <Image src="/lettie-icon.png" alt="펜팔앱" width={24} height={24} className="rounded" />
-                Google Play에서 펜팔앱 다운로드
-              </a>
-            </div>
-          </div>
-        </section>
-      </div>
+        <GuideSection title="다른 펜팔 앱과 비교">
+          <p>
+            어떤 앱이 맞을지 고민이라면 <Link href="/blog/lettie-vs-slowly" className="text-blue-600 underline">Lettie와 Slowly 비교</Link>와{' '}
+            <Link href="/blog/best-penpal-apps-2026" className="text-blue-600 underline">2026 펜팔 앱 추천</Link>을 보세요. Lettie가 약한 부분도 같이 적었습니다.
+          </p>
+        </GuideSection>
+      </GuideArticle>
     </>
   );
 }

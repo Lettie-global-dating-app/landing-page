@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowLeft } from 'lucide-react';
 import type { ReactNode } from 'react';
+import { ORG_ID } from '@/lib/schema';
 
 /**
  * 가이드 상세 페이지의 공용 셸.
@@ -42,6 +43,12 @@ type Props = {
   updated: string;
   faqs: GuideFaq[];
   children: ReactNode;
+  /** 경로 표시의 두 번째 칸. 기본은 가이드 목록. 예: { name: 'Home', path: '' } 이면 두 칸짜리 */
+  parent?: { name: string; path: string } | null;
+  /** 직답 아래에 놓을 것 (스토어 버튼 등) */
+  cta?: ReactNode;
+  /** 처음 공개한 날 (YYYY-MM-DD) */
+  published?: string;
 };
 
 const LABEL = {
@@ -60,19 +67,23 @@ export default function GuideArticle({
   updated,
   faqs,
   children,
+  parent,
+  cta,
+  published = '2026-07-20',
 }: Props) {
   const base = 'https://lettie-dating.com';
   const prefix = locale === 'en' ? '/en' : '';
   const url = `${base}${prefix}${path}`;
   const t = LABEL[locale];
+  const mid = parent === undefined ? { name: t.guide, path: '/guide' } : parent;
 
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: t.home, item: `${base}${prefix}` },
-      { '@type': 'ListItem', position: 2, name: t.guide, item: `${base}${prefix}/guide` },
-      { '@type': 'ListItem', position: 3, name: title, item: url },
+      ...(mid ? [{ '@type': 'ListItem', position: 2, name: mid.name, item: `${base}${prefix}${mid.path}` }] : []),
+      { '@type': 'ListItem', position: mid ? 3 : 2, name: title, item: url },
     ],
   };
 
@@ -93,15 +104,12 @@ export default function GuideArticle({
     headline: title,
     description: subtitle,
     inLanguage: locale,
-    datePublished: '2026-07-20',
+    datePublished: published,
     dateModified: updated,
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
-    author: { '@type': 'Organization', name: 'Lettie', url: base },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Lettie',
-      logo: { '@type': 'ImageObject', url: `${base}/lettie-icon.png` },
-    },
+    // 조직은 루트 @graph 의 엔티티를 참조만 한다 (엔티티 분열 방지)
+    author: { '@id': ORG_ID },
+    publisher: { '@id': ORG_ID },
   };
 
   return (
@@ -132,8 +140,12 @@ export default function GuideArticle({
           <ol className="flex flex-wrap items-center gap-2">
             <li><Link href={prefix || '/'} className="hover:text-blue-600">{t.home}</Link></li>
             <li aria-hidden="true">/</li>
-            <li><Link href={`${prefix}/guide`} className="hover:text-blue-600">{t.guide}</Link></li>
-            <li aria-hidden="true">/</li>
+            {mid && (
+              <>
+                <li><Link href={`${prefix}${mid.path}`} className="hover:text-blue-600">{mid.name}</Link></li>
+                <li aria-hidden="true">/</li>
+              </>
+            )}
             <li className="text-gray-700 font-medium">{title}</li>
           </ol>
         </nav>
@@ -150,6 +162,7 @@ export default function GuideArticle({
           {/* 직답 — 답변엔진이 첫 화면에서 집어가는 자리 */}
           <div className="mb-12 rounded-2xl border-l-4 border-blue-500 bg-blue-50 p-6">
             <p className="text-lg leading-relaxed text-gray-800">{answer}</p>
+            {cta && <div className="mt-5">{cta}</div>}
           </div>
 
           <div className="space-y-12">{children}</div>

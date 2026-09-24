@@ -1,59 +1,86 @@
 import Link from 'next/link';
-import { APP_ID, SITE_ID } from '@/lib/schema';
-import { koEnAlternates } from '@/i18n/config';
-import Image from 'next/image';
-import { Mail, Globe, Shield, Heart, Star, Download, Check } from 'lucide-react';
 import { Metadata } from 'next';
+import { Mail } from 'lucide-react';
+import { koEnAlternates } from '@/i18n/config';
+import { APP_ID, SITE_ID } from '@/lib/schema';
+import GuideArticle, { GuideSection, GuideTable, GuideCallout } from '@/components/GuideArticle';
+
+/**
+ * "pen pal app" / "pen pal app download" 질의의 랜딩 (GSC 28일 노출 1위 페이지, 2026-09-24 재작성).
+ * 숫자는 운영 DB 기준일을 붙여서만 쓴다. 배달 시간은 서버 DeliveryTimeService 의 거리 구간 그대로.
+ */
+const UPDATED = '2026-09-24';
+const URL = 'https://lettie-dating.com/en/penpal-app';
+const APP_STORE = 'https://apps.apple.com/app/id6746454876';
+const PLAY = 'https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe';
+
+const TITLE = 'Pen Pal App: Free Download for iOS & Android | Lettie';
+const DESC =
+  'Lettie is a free pen pal app. Letters fly the real distance between two cities, arrive in 1–24 hours, and translate into 28 languages. iOS and Android.';
 
 export const metadata: Metadata = {
-  title: 'Pen Pal App Lettie | Letters That Fly Across a Globe, 28 Languages',
-  description: 'Looking for a pen pal app? Lettie is a pen pal app for exchanging letters with friends from 150+ countries. Start for free today!',
-  keywords: ['pen pal app', 'letter app', 'global pen pal app', 'free pen pal app', 'safe pen pal app', 'pen pal app with translation'],
-  alternates: {
-    canonical: 'https://lettie-dating.com/en/penpal-app',
-    languages: koEnAlternates('/penpal-app'),
+  title: { absolute: TITLE },
+  description: DESC,
+  keywords: ['pen pal app', 'pen pal app download', 'free pen pal app', 'pen pal app with translation', 'penpal app', 'best pen pal app'],
+  alternates: { canonical: URL, languages: koEnAlternates('/penpal-app') },
+  openGraph: {
+    title: TITLE,
+    description: DESC,
+    url: URL,
+    siteName: 'Lettie',
+    locale: 'en_US',
+    type: 'website',
+    images: [{ url: 'https://lettie-dating.com/og/en.png', width: 1200, height: 630 }],
   },
 };
 
-const features = [
+const FAQS = [
   {
-    icon: Shield,
-    title: 'Safe Pen Pal App',
-    description: 'Start without photos, and report or block anyone at any time'
+    q: 'Is Lettie a free pen pal app?',
+    a: 'Yes. Writing, reading and replying to letters, translating them, and the 16 base characters are free on iOS and Android. Optional gems and the Lettie Plus subscription add extras such as more letters per day, unlimited back-and-forth with one person, stamp draws and a custom-drawn character.',
   },
   {
-    icon: Globe,
-    title: 'Global Pen Pal App',
-    description: 'Connect with friends from 150+ countries worldwide'
+    q: 'Where can I download the Lettie pen pal app?',
+    a: 'Lettie is on the Apple App Store for iPhone and on Google Play for Android. Search for "Lettie" or use the store links on this page.',
   },
   {
-    icon: Heart,
-    title: 'Genuine Relationships',
-    description: 'Focus on inner qualities, not appearances'
+    q: 'How long does a letter take to arrive on Lettie?',
+    a: 'It depends on the real distance between the two cities: 1–2 hours within one country, 3–6 hours under 3,000 km, 6–12 hours under 8,000 km, and 12–24 hours for anything farther.',
   },
   {
-    icon: Mail,
-    title: 'Convenient Features',
-    description: 'All features you need: auto-translation, letter notifications, and more'
-  }
+    q: 'Do I need to speak English to use Lettie?',
+    a: 'No. Every letter has a translate button covering 28 languages, and the original stays next to the translation, so you can write in your own language.',
+  },
+  {
+    q: 'How many people use Lettie?',
+    a: 'Lettie is small: 798 people in 77 countries had signed up as of September 24, 2026. The app is built by one developer in Seoul.',
+  },
+  {
+    q: 'How is Lettie different from Slowly?',
+    a: 'Both deliver letters by distance. Lettie adds picking up letters strangers released (Discover), free built-in translation in 28 languages, and pixel characters drawn from a written description.',
+  },
 ];
 
-const comparisons = [
-  { feature: 'Safety', lettie: true, others: false },
-  { feature: 'Global Network', lettie: true, others: false },
-  { feature: 'Free to Use', lettie: true, others: false },
-  { feature: 'Auto Translation', lettie: true, others: false },
-  { feature: 'Privacy Protection', lettie: true, others: false },
-  { feature: 'Delivery time by distance', lettie: true, others: false },
-];
+function StoreButtons() {
+  return (
+    <div className="flex flex-col sm:flex-row gap-3">
+      <a href={APP_STORE} className="inline-flex items-center justify-center rounded-xl bg-gray-900 px-6 py-3 font-semibold text-white hover:bg-gray-800">
+        Download on the App Store
+      </a>
+      <a href={PLAY} className="inline-flex items-center justify-center rounded-xl border border-gray-300 bg-white px-6 py-3 font-semibold text-gray-900 hover:bg-gray-50">
+        Get it on Google Play
+      </a>
+    </div>
+  );
+}
 
 export default function PenpalAppPage() {
   // 앱 엔티티는 루트 레이아웃의 @graph 가 한 번만 선언한다. 이 페이지는 그 앱에 관한 페이지다.
-  const appJsonLd = {
+  const pageJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    '@id': 'https://lettie-dating.com/en/penpal-app#webpage',
-    url: 'https://lettie-dating.com/en/penpal-app',
+    '@id': `${URL}#webpage`,
+    url: URL,
     inLanguage: 'en',
     isPartOf: { '@id': SITE_ID },
     about: { '@id': APP_ID },
@@ -61,234 +88,79 @@ export default function PenpalAppPage() {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(appJsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }} />
+      <GuideArticle
+        locale="en"
+        path="/penpal-app"
+        parent={null}
+        title="Lettie: a free pen pal app for iPhone and Android"
+        subtitle="Write letters to people in other countries, in your own language."
+        answer={
+          <>
+            <strong>Lettie is a free pen pal app for iPhone and Android.</strong> Each letter takes the real distance to arrive, from about an
+            hour inside one country to up to a day across the world, and translates into 28 languages with one tap.
+          </>
+        }
+        cta={<StoreButtons />}
+        icon={<Mail className="w-8 h-8" />}
+        accent="from-blue-500 to-indigo-500"
+        updated={UPDATED}
+        published="2025-06-11"
+        faqs={FAQS}
+      >
+        <GuideSection title="What you can do in the app">
+          <GuideTable
+            head={['Feature', 'What it does']}
+            rows={[
+              ['Letters by distance', 'A letter flies across a globe and arrives after the real distance between the two cities: 30 minutes to 24 hours.'],
+              ['Discover', 'Pick up letters strangers released into the sky and reply to the ones that speak to you.'],
+              ['Translation', 'A translate button in every letter, 28 languages, free, with the original shown beside it.'],
+              ['Profiles', 'You start as a pixel character (16 free ones) instead of a photo. Describe your look and one is drawn for you.'],
+              ['Stamps', 'Each country your letters reach adds a stamp to your album and paints the globe.'],
+              ['Introductions', 'A few introduction cards a day. No swiping, no scores.'],
+            ]}
+          />
+        </GuideSection>
 
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
-        {/* Header */}
-        <header className="container mx-auto px-4 py-6">
-          <nav className="flex items-center justify-between md:pr-40">
-            <Link href="/en" className="flex items-center space-x-3">
-              <Image
-                src="/lettie-icon.png"
-                alt="Lettie Pen Pal App Icon"
-                className="w-10 h-10 rounded-2xl"
-                width={40}
-                height={40}
-                priority
-              />
-              <span className="text-2xl font-bold text-gray-800">Lettie</span>
-            </Link>
-            <a
-              href="https://apps.apple.com/kr/app/%EB%A0%88%ED%8B%B0/id6746454876"
-              className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors"
-            >
-              Download App
-            </a>
-          </nav>
-        </header>
-
-        {/* Hero Section */}
-        <section className="container mx-auto px-4 py-20 text-center">
-          <div className="inline-flex items-center gap-2 bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full mb-6">
-            <Star className="w-5 h-5 fill-yellow-500" />
-            <span className="font-semibold">2.0 · Slow letters</span>
-          </div>
-
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
-            The <span className="text-blue-500">Pen Pal App</span> Where Letters Fly
-          </h1>
-
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Exchange letters with people in 150+ countries<br />
-            Letters take as long as the distance, and translate into 28 languages
+        <GuideSection title="How long a letter takes">
+          <p>
+            Delivery time comes from the distance between the two countries. These are the bands the app uses, as of {UPDATED}.
+            See <Link href="/en/blog/letter-delivery-time-by-distance" className="text-blue-600 underline">delivery times by city</Link> for examples.
           </p>
+          <GuideTable
+            head={['Distance', 'Delivery time']}
+            rows={[
+              ['Same country', '1–2 hours'],
+              ['Under 3,000 km', '3–6 hours'],
+              ['3,000–8,000 km', '6–12 hours'],
+              ['Over 8,000 km', '12–24 hours'],
+            ]}
+          />
+        </GuideSection>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <a
-              href="https://apps.apple.com/kr/app/%EB%A0%88%ED%8B%B0/id6746454876"
-              className="bg-blue-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-600 transition-colors inline-flex items-center justify-center gap-2 text-lg"
-            >
-              <Download className="w-6 h-6" />
-              Download Free
-            </a>
-          </div>
+        <GuideSection title="What is free and what is optional">
+          <GuideTable
+            head={['Free', 'Optional (gems or Lettie Plus)']}
+            rows={[
+              ['Write, read and reply to letters', 'More letters released per day'],
+              ['Translate any letter into 28 languages', 'Unlimited back-and-forth with one person'],
+              ['16 base pixel characters', 'A custom character drawn from your description'],
+              ['Discover: new envelopes every 8 hours', 'Stamp draws and extra envelopes'],
+            ]}
+          />
+          <GuideCallout title="Honest size check">
+            Lettie is a small community: 798 people in 77 countries as of September 24, 2026. Replies can take a while, which is part of the idea.
+          </GuideCallout>
+        </GuideSection>
 
-          {/* App Screenshots */}
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-5xl mx-auto">
-            {['sky', 'discover', 'letter', 'post-office', 'character'].map((screen) => (
-              <div key={screen} className="relative h-48 md:h-64 bg-white rounded-2xl shadow-lg overflow-hidden">
-                <Image
-                  src={`/v2/app-${screen}.png`}
-                  alt={`Lettie Pen Pal App Screenshot`}
-                  fill
-                  className="object-contain p-2"
-                />
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Why Lettie Section */}
-        <section className="container mx-auto px-4 py-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-            What kind of pen pal app is Lettie?
-          </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {features.map((feature, index) => {
-              const Icon = feature.icon;
-              return (
-                <div key={index} className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
-                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <Icon className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-3">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.description}</p>
-                </div>
-              );
-            })}
-          </div>
-        </section>
-
-        {/* Comparison Table */}
-        <section className="container mx-auto px-4 py-16">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-              Pen Pal App Comparison
-            </h2>
-
-            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-              <table className="w-full">
-                <thead>
-                  <tr className="bg-gradient-to-r from-blue-500 to-purple-500 text-white">
-                    <th className="py-4 px-6 text-left">Feature</th>
-                    <th className="py-4 px-6 text-center">Lettie</th>
-                    <th className="py-4 px-6 text-center">Other Apps</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {comparisons.map((item, index) => (
-                    <tr key={index} className="border-b">
-                      <td className="py-4 px-6 font-semibold text-gray-800">{item.feature}</td>
-                      <td className="py-4 px-6 text-center">
-                        {item.lettie ? (
-                          <Check className="w-6 h-6 text-green-500 mx-auto" />
-                        ) : (
-                          <span className="text-gray-400">-</span>
-                        )}
-                      </td>
-                      <td className="py-4 px-6 text-center">
-                        {item.others ? (
-                          <Check className="w-6 h-6 text-green-500 mx-auto" />
-                        ) : (
-                          <span className="text-gray-400">-</span>
-                        )}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
-
-        {/* User Stats */}
-        <section className="container mx-auto px-4 py-16">
-          <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-3xl p-12">
-            <h2 className="text-3xl font-bold text-center text-white mb-12">
-              Amazing Numbers of Lettie Pen Pal App
-            </h2>
-
-            <div className="grid md:grid-cols-4 gap-8 text-center text-white">
-              <div>
-                <div className="text-4xl font-bold mb-2">28</div>
-                <div className="opacity-90">Languages translated</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold mb-2">150+</div>
-                <div className="opacity-90">Connected Countries</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold mb-2">1–24h</div>
-                <div className="opacity-90">Delivery, by distance</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold mb-2">16</div>
-                <div className="opacity-90">Free base characters</div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section className="container mx-auto px-4 py-16">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-            Lettie Pen Pal App FAQ
-          </h2>
-
-          <div className="max-w-3xl mx-auto space-y-6">
-            <div className="bg-white rounded-xl shadow-md p-6">
-              <h3 className="text-lg font-bold text-gray-800 mb-2">
-                Q: Is Lettie pen pal app really free?
-              </h3>
-              <p className="text-gray-600">
-                A: Yes, all basic features are free. You can write letters, receive them, and reply for free—all core pen pal app features.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-md p-6">
-              <h3 className="text-lg font-bold text-gray-800 mb-2">
-                Q: What makes it different from other pen pal apps?
-              </h3>
-              <p className="text-gray-600">
-                A: Lettie starts with pixel characters instead of photos, and letters take real time to travel, so you get to know each other before sharing anything. You can report or block anyone at any time.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-md p-6">
-              <h3 className="text-lg font-bold text-gray-800 mb-2">
-                Q: Who uses this pen pal app?
-              </h3>
-              <p className="text-gray-600">
-                A: Users of all ages from around the world use it for language learning, cultural exchange, making new friends, and more.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Final CTA */}
-        <section className="container mx-auto px-4 py-20">
-          <div className="text-center">
-            <h2 className="text-4xl font-bold text-gray-800 mb-6">
-              Start with Lettie Pen Pal App Today
-            </h2>
-            <p className="text-xl text-gray-600 mb-8">
-              A pen pal app that starts with one letter<br />
-              Friends from around the world are waiting for you
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://apps.apple.com/kr/app/%EB%A0%88%ED%8B%B0/id6746454876"
-                className="bg-black text-white px-8 py-4 rounded-xl font-semibold hover:bg-gray-800 transition-colors inline-flex items-center justify-center gap-3"
-              >
-                <Image src="/lettie-icon.png" alt="Pen Pal App" width={24} height={24} className="rounded" />
-                Download on App Store
-              </a>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe"
-                className="bg-green-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-green-700 transition-colors inline-flex items-center justify-center gap-3"
-              >
-                <Image src="/lettie-icon.png" alt="Pen Pal App" width={24} height={24} className="rounded" />
-                Get it on Google Play
-              </a>
-            </div>
-          </div>
-        </section>
-      </div>
+        <GuideSection title="Compared with other pen pal apps">
+          <p>
+            If you are choosing between apps, read <Link href="/en/blog/lettie-vs-slowly" className="text-blue-600 underline">Lettie vs Slowly</Link> and{' '}
+            <Link href="/en/blog/best-penpal-apps-2026" className="text-blue-600 underline">the best pen pal apps in 2026</Link>. Both list what each app does
+            better, including where Lettie is weaker.
+          </p>
+        </GuideSection>
+      </GuideArticle>
     </>
   );
 }
