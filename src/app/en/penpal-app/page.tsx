@@ -16,7 +16,7 @@ const PLAY = 'https://play.google.com/store/apps/details?id=com.dearglobe.deargl
 
 const TITLE = 'Pen Pal App: Free Download for iOS & Android | Lettie';
 const DESC =
-  'Lettie is a free pen pal app. Letters take 1–24 hours to arrive, depending on the distance between two countries, and translate into 28 languages. iOS and Android.';
+  'Lettie is a free pen pal app. Letters take 1–24 hours to arrive depending on distance, and translate into 28 languages. On iOS and Android.';
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },

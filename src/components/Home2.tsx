@@ -322,6 +322,8 @@ export default function Home2({ lang }: { lang: string }) {
             <Link href={blogIndexHref} className="hover:text-paper">{t.nav.blog}</Link>
             <Link href={`${contentBase}/guide`} className="hover:text-paper">{t.nav.guide}</Link>
             <Link href={faqHref} className="hover:text-paper">{t.nav.faq}</Link>
+            <Link href={`${contentBase}/letter-map`} className="hover:text-paper">{isKo ? '편지 지도' : 'Letter map'}</Link>
+            <Link href={`${contentBase}/penpal-app`} className="hover:text-paper">{isKo ? '펜팔 앱' : 'Pen pal app'}</Link>
             <a href={APP_STORE} target="_blank" rel="noopener noreferrer" className="hover:text-paper">App Store</a>
             <a href={PLAY} target="_blank" rel="noopener noreferrer" className="hover:text-paper">Google Play</a>
             <a href={PRIVACY} target="_blank" rel="noopener noreferrer" className="hover:text-paper">{t.footer.privacy}</a>
