@@ -15,4 +15,4 @@ export default async () => {
   console.log('lettie-scheduler dispatch', r.status);
 };
 
-export const config = { schedule: '20,50 0-3,11-15 * * *' };
+export const config = { schedule: '5,35 0-3,11-15 * * *' }; // UTC — 게시 시각(0·11·13시) 5분 뒤부터 30분마다
