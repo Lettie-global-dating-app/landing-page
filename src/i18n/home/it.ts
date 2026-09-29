@@ -1,3 +1,6 @@
+import { FACTS } from '@/data/facts';
+import { COMMUNITY } from '@/data/letterMap';
+
 import type { HomeCopy } from '../home';
 
 export const it: HomeCopy = {
@@ -9,8 +12,8 @@ export const it: HomeCopy = {
   free: 'Gratis · iOS · Android',
   videoLabel: 'Video di presentazione di Lettie 2.0',
   stats: [
-    ['28', 'lingue, tradotte con un tocco'],
-    ['150+', 'paesi di amici di penna'],
+    [FACTS.languagesRounded, 'lingue, tradotte con un tocco'],
+    [String(COMMUNITY.countries), 'paesi di amici di penna'],
     ['1–24 h', 'di consegna, in base alla distanza'],
   ],
   howTitle: 'Come funziona',
@@ -18,15 +21,15 @@ export const it: HomeCopy = {
   how: [
     { t: 'Lancia una lettera nel cielo', d: 'Una busta si alza dal mappamondo e vola per il tempo della distanza reale fino all’altra città. Mentre aspetti, vedi sul mappamondo dov’è arrivata.', alt: 'Una lettera che vola sopra il mappamondo' },
     { t: 'Raccogli la lettera di uno sconosciuto', d: 'Le lettere lanciate senza destinatario galleggiano come buste. Apri quella che ti incuriosisce, leggila, rispondi: inizia una corrispondenza a due.', alt: 'Schermata Scopri con buste che galleggiano' },
-    { t: 'Traduci con un tocco', d: 'Loro scrivono nella loro lingua, tu leggi nella tua. 28 lingue, con l’originale accanto alla traduzione.', alt: 'Lettura di una lettera con il pulsante traduci' },
+    { t: 'Traduci con un tocco', d: 'Loro scrivono nella loro lingua, tu leggi nella tua. Oltre 70 lingue, con l’originale accanto alla traduzione.', alt: 'Lettura di una lettera con il pulsante traduci' },
     { t: 'Colleziona un francobollo da ogni paese', d: 'I paesi raggiunti dalle tue lettere si colorano sul mappamondo e i loro francobolli finiscono nel tuo album. Pesca francobolli pixel e attaccali alle tue lettere.', alt: 'Ufficio postale: album di francobolli e mappamondo' },
   ],
   newTitle: 'Novità della 2.0',
   newSub: 'Abbiamo rifatto tutta l’app tenendo una sola regola: una lettera deve metterci tempo.',
   news: [
     ['Consegna in base alla distanza', 'L’arrivo si calcola sulla distanza reale tra due città. Un’ora o due nello stesso paese, circa un giorno per l’altra parte del mondo. Segui la tua lettera sul mappamondo mentre aspetti.'],
-    ['Scopri: raccogliere lettere lanciate', 'Ogni otto ore si avvicinano tre buste nuove. Il gratuito basta e avanza; con una pubblicità al giorno ne ricevi altre.'],
-    ['Traduzione IA, 28 lingue', 'Aprendo una lettera c’è un pulsante per tradurre, con originale e traduzione affiancati. Anche l’app parla 28 lingue.'],
+    ['Scopri: raccogliere lettere lanciate', 'Ogni giorno si avvicinano tre buste nuove. Il gratuito basta e avanza; con una pubblicità al giorno ne ricevi altre.'],
+    ['Traduzione IA, oltre 70 lingue', 'Aprendo una lettera c’è un pulsante per tradurre, con originale e traduzione affiancati. Anche l’app parla oltre 70 lingue.'],
     ['Un francobollo da ogni paese', 'I paesi con cui ti scrivi si colorano sul mappamondo e i loro francobolli vanno nell’album. Ci sono anche francobolli pixel casuali.'],
     ['Un personaggio al posto della foto', 'Il profilo parte da un personaggio pixel. Sedici sono gratis; descrivi il tuo aspetto a parole e disegniamo il tuo nello stesso stile.'],
     ['Le presentazioni del giorno, senza swipe', 'Poche carte di presentazione al giorno. Niente punteggi, niente scorrimento infinito. Se qualcuno ti incuriosisce, inizi con una lettera.'],
@@ -36,7 +39,7 @@ export const it: HomeCopy = {
   cmpHead: ['', 'Lettie', 'Slowly'],
   cmpRows: [
     ['Prima lettera', 'Raccogli lettere lanciate da altri (Scopri)', 'Abbinamento per interessi · lettere aperte'],
-    ['Traduzione', 'Nell’app, un tocco, 28 lingue, gratis', 'Strumenti esterni o funzione a pagamento'],
+    ['Traduzione', 'Nell’app, un tocco, oltre 70 lingue, gratis', 'Strumenti esterni o funzione a pagamento'],
     ['Profilo', 'Personaggio pixel; lo descrivi e lo disegniamo', 'Editor di avatar'],
     ['Presentazioni', 'Poche carte al giorno', 'Nessuna (ricerca di corrispondenti)'],
     ['Francobolli', 'Per paese + pesca di francobolli pixel, da attaccare alle lettere', 'Collezione di francobolli per paese'],
@@ -47,7 +50,7 @@ export const it: HomeCopy = {
   faqs: [
     { q: 'Lettie è gratis?', a: 'Sì. Scrivere, raccogliere lettere, tradurre e i sedici personaggi base sono gratis. Le gemme servono solo per gli extra: conversazioni illimitate, pesca di francobolli o un personaggio personalizzato.' },
     { q: 'Quanto ci mette una lettera ad arrivare?', a: 'Si calcola sulla distanza reale tra due città. Da una a due ore nello stesso paese, qualche ora verso un paese vicino, quasi un giorno per l’altra parte del mondo. Mentre aspetti vedi la busta sul mappamondo.' },
-    { q: 'Posso avere un amico di penna senza parlare la sua lingua?', a: 'Sì. Ogni lettera ha un pulsante per tradurre e l’originale resta accanto alla traduzione. Con 28 lingue, tu scrivi nella tua e l’altro legge nella sua.' },
+    { q: 'Posso avere un amico di penna senza parlare la sua lingua?', a: 'Sì. Ogni lettera ha un pulsante per tradurre e l’originale resta accanto alla traduzione. Con oltre 70 lingue, tu scrivi nella tua e l’altro legge nella sua.' },
     { q: 'Come conosco qualcuno senza foto?', a: 'Un profilo è un personaggio pixel, qualche interesse e le lettere stesse. Descrivi il tuo aspetto a parole e disegniamo un personaggio nello stesso stile. Scopri come pensa una persona prima di sapere com’è fatta.' },
   ],
   blogTitle: 'Da leggere',

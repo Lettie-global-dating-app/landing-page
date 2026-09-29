@@ -1,3 +1,6 @@
+import { FACTS } from '@/data/facts';
+import { COMMUNITY } from '@/data/letterMap';
+
 import type { HomeCopy } from '../home';
 
 export const en: HomeCopy = {
@@ -9,8 +12,8 @@ export const en: HomeCopy = {
   free: 'Free · iOS · Android',
   videoLabel: 'Lettie 2.0 intro video',
   stats: [
-    ['28', 'languages, translated in a tap'],
-    ['150+', 'countries of pen pals'],
+    [FACTS.languagesRounded, 'languages, translated in a tap'],
+    [String(COMMUNITY.countries), 'countries of pen pals'],
     ['1–24h', 'delivery, by distance'],
   ],
   howTitle: 'How it works',
@@ -18,15 +21,15 @@ export const en: HomeCopy = {
   how: [
     { t: 'Release a letter into the sky', d: 'An envelope lifts off the globe and flies for as long as the real distance to the other city. You can watch where it is on the globe while you wait.', alt: 'A letter flying over the globe' },
     { t: 'Pick up a stranger’s letter', d: 'Letters released to no one in particular float by as envelopes. Open one you like, read it, reply — and a correspondence for two begins.', alt: 'Discover screen with floating envelopes' },
-    { t: 'Translate with one tap', d: 'They write in their language, you read in yours. 28 languages, with the original right next to the translation.', alt: 'Reading a letter with the translate button' },
+    { t: 'Translate with one tap', d: 'They write in their language, you read in yours. 70+ languages, with the original right next to the translation.', alt: 'Reading a letter with the translate button' },
     { t: 'Collect a stamp from every country', d: 'Countries your letters reach get painted on the globe, and their stamps land in your album. Draw pixel stamps and stick them on your letters.', alt: 'Post office — stamp album and globe' },
   ],
   newTitle: 'New in 2.0',
   newSub: 'We rebuilt the whole app and kept one rule: a letter should take time.',
   news: [
     ['Delivery time by distance', 'Arrival time comes from the distance between the two countries. An hour or two within a country, about a day for the other side of the world. Watch your letter on the globe while you wait.'],
-    ['Discover — pick up released letters', 'Three new envelopes drift close every eight hours. Free is plenty; watch one ad a day for more.'],
-    ['AI translation, 28 languages', 'Open a letter and there’s a translate button, original and translation side by side. The app itself speaks 28 languages too.'],
+    ['Discover — pick up released letters', 'Three new envelopes drift close once a day. Free is plenty; watch one ad a day for more.'],
+    ['AI translation, 70+ languages', 'Open a letter and there’s a translate button, original and translation side by side. The app itself speaks 70+ languages too.'],
     ['A stamp from every country', 'Countries you exchange with get painted on the globe and their stamps go in your album. Random pixel stamps too.'],
     ['A character instead of a photo', 'Profiles start as pixel characters. Sixteen are free; describe your look in words and we draw yours in the same style.'],
     ['Today’s introductions — no swiping', 'A few introduction cards a day. No scores, no endless swiping. If someone sounds interesting, you start with one letter.'],
@@ -36,7 +39,7 @@ export const en: HomeCopy = {
   cmpHead: ['', 'Lettie', 'Slowly'],
   cmpRows: [
     ['First letter', 'Pick up letters strangers released (Discover)', 'Interest matching · open letters'],
-    ['Translation', 'In-app, one tap, 28 languages, free', 'External tools or a paid feature'],
+    ['Translation', 'In-app, one tap, 70+ languages, free', 'External tools or a paid feature'],
     ['Profile', 'Pixel character; describe it and we draw it', 'Avatar builder'],
     ['Introductions', 'A few introduction cards a day', 'None (pen-pal search)'],
     ['Stamps', 'Per country + pixel stamp draws, stick them on letters', 'Per-country stamp collecting'],
@@ -47,7 +50,7 @@ export const en: HomeCopy = {
   faqs: [
     { q: 'Is Lettie free?', a: 'Yes. Writing, picking up letters, translation and the sixteen base characters are all free. Gems are only for extras like unlimited conversations, stamp draws or a custom character.' },
     { q: 'How long does a letter take to arrive?', a: 'It comes from the distance between the two countries. One to two hours within a country, a few hours to a neighbouring one, close to a day for the other side of the world. You can watch the envelope on the globe while you wait.' },
-    { q: 'Can I have a pen pal without speaking their language?', a: 'Yes. Every letter has a translate button, and the original sits next to the translation. With 28 languages, you write in yours and they read in theirs.' },
+    { q: 'Can I have a pen pal without speaking their language?', a: 'Yes. Every letter has a translate button, and the original sits next to the translation. With 70+ languages, you write in yours and they read in theirs.' },
     { q: 'How do I get to know someone without photos?', a: 'A profile is a pixel character, a few interests and the letters themselves. Describe your look in words and we draw a character in the same style. You learn how someone thinks before what they look like.' },
   ],
   blogTitle: 'Reading',

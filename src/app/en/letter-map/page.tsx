@@ -51,7 +51,7 @@ export default function LetterMapPage() {
       <GuideSection title="How this was counted">
         <p>
           Source: Lettie&apos;s own database, queried on {D.asOf}. Only letters one human user sent to another are counted, grouped by the sender&apos;s and
-          recipient&apos;s country. Letters by the app&apos;s AI characters and by developer test accounts are excluded, which is why the numbers are small.
+          recipient&apos;s country. Letters by the app&apos;s AI characters, developer test accounts, deleted letters and accounts with an invalid country code are excluded, which is why the numbers are small.
           Lines on the map are great-circle routes between country centre points. The community is small, and this page is updated as it grows.
         </p>
         <p>

@@ -1,3 +1,6 @@
+import { FACTS } from '@/data/facts';
+import { COMMUNITY } from '@/data/letterMap';
+
 import type { HomeCopy } from '../home';
 
 export const de: HomeCopy = {
@@ -9,8 +12,8 @@ export const de: HomeCopy = {
   free: 'Kostenlos · iOS · Android',
   videoLabel: 'Vorstellungsvideo zu Lettie 2.0',
   stats: [
-    ['28', 'Sprachen, übersetzt mit einem Tipp'],
-    ['150+', 'Länder mit Brieffreunden'],
+    [FACTS.languagesRounded, 'Sprachen, übersetzt mit einem Tipp'],
+    [String(COMMUNITY.countries), 'Länder mit Brieffreunden'],
     ['1–24 h', 'Zustellung, je nach Entfernung'],
   ],
   howTitle: 'So funktioniert es',
@@ -18,15 +21,15 @@ export const de: HomeCopy = {
   how: [
     { t: 'Schick einen Brief in den Himmel', d: 'Ein Umschlag hebt vom Globus ab und fliegt so lange, wie die echte Entfernung zur anderen Stadt braucht. Während du wartest, siehst du auf dem Globus, wo er gerade ist.', alt: 'Ein Brief fliegt über den Globus' },
     { t: 'Heb den Brief eines Fremden auf', d: 'Briefe ohne bestimmten Empfänger schweben als Umschläge vorbei. Öffne einen, der dich anspricht, lies ihn, antworte – und ein Briefwechsel zu zweit beginnt.', alt: 'Entdecken-Bildschirm mit schwebenden Umschlägen' },
-    { t: 'Übersetze mit einem Tipp', d: 'Sie schreiben in ihrer Sprache, du liest in deiner. 28 Sprachen, das Original direkt neben der Übersetzung.', alt: 'Brief lesen mit Übersetzen-Knopf' },
+    { t: 'Übersetze mit einem Tipp', d: 'Sie schreiben in ihrer Sprache, du liest in deiner. Über 70 Sprachen, das Original direkt neben der Übersetzung.', alt: 'Brief lesen mit Übersetzen-Knopf' },
     { t: 'Sammle aus jedem Land eine Briefmarke', d: 'Länder, die deine Briefe erreichen, werden auf dem Globus eingefärbt, und ihre Marken landen in deinem Album. Zieh Pixel-Marken und kleb sie auf deine Briefe.', alt: 'Postamt: Markenalbum und Globus' },
   ],
   newTitle: 'Neu in 2.0',
   newSub: 'Wir haben die ganze App neu gebaut und eine einzige Regel behalten: Ein Brief muss Zeit brauchen.',
   news: [
     ['Zustellzeit nach Entfernung', 'Die Ankunft wird aus der echten Entfernung zwischen zwei Städten berechnet. Ein bis zwei Stunden im eigenen Land, etwa ein Tag ans andere Ende der Welt. Verfolge deinen Brief auf dem Globus, während du wartest.'],
-    ['Entdecken: losgelassene Briefe aufheben', 'Alle acht Stunden kommen drei neue Umschläge näher. Kostenlos reicht völlig; mit einer Werbung am Tag bekommst du mehr.'],
-    ['KI-Übersetzung, 28 Sprachen', 'Beim Öffnen eines Briefs gibt es einen Übersetzen-Knopf, Original und Übersetzung nebeneinander. Die App selbst spricht ebenfalls 28 Sprachen.'],
+    ['Entdecken: losgelassene Briefe aufheben', 'Jeden Tag kommen drei neue Umschläge näher. Kostenlos reicht völlig; mit einer Werbung am Tag bekommst du mehr.'],
+    ['KI-Übersetzung, über 70 Sprachen', 'Beim Öffnen eines Briefs gibt es einen Übersetzen-Knopf, Original und Übersetzung nebeneinander. Die App selbst spricht ebenfalls über 70 Sprachen.'],
     ['Eine Briefmarke aus jedem Land', 'Länder, mit denen du schreibst, werden auf dem Globus eingefärbt, ihre Marken wandern ins Album. Dazu zufällige Pixel-Marken.'],
     ['Ein Charakter statt Foto', 'Das Profil beginnt als Pixel-Charakter. Sechzehn sind kostenlos; beschreib dein Aussehen in Worten, und wir zeichnen deinen im selben Stil.'],
     ['Vorstellungen des Tages, ohne Wischen', 'Ein paar Vorstellungskarten am Tag. Keine Punkte, kein endloses Wischen. Klingt jemand interessant, fängst du mit einem Brief an.'],
@@ -36,7 +39,7 @@ export const de: HomeCopy = {
   cmpHead: ['', 'Lettie', 'Slowly'],
   cmpRows: [
     ['Erster Brief', 'Du hebst Briefe auf, die andere losgelassen haben (Entdecken)', 'Interessen-Matching · offene Briefe'],
-    ['Übersetzung', 'In der App, ein Tipp, 28 Sprachen, kostenlos', 'Externe Tools oder Bezahlfunktion'],
+    ['Übersetzung', 'In der App, ein Tipp, über 70 Sprachen, kostenlos', 'Externe Tools oder Bezahlfunktion'],
     ['Profil', 'Pixel-Charakter; du beschreibst, wir zeichnen', 'Avatar-Baukasten'],
     ['Vorstellungen', 'Ein paar Karten am Tag', 'Keine (Brieffreund-Suche)'],
     ['Briefmarken', 'Pro Land + Pixel-Marken ziehen, auf Briefe kleben', 'Markensammlung pro Land'],
@@ -47,7 +50,7 @@ export const de: HomeCopy = {
   faqs: [
     { q: 'Ist Lettie kostenlos?', a: 'Ja. Schreiben, Briefe aufheben, Übersetzen und die sechzehn Basis-Charaktere sind kostenlos. Edelsteine braucht man nur für Extras wie unbegrenzte Gespräche, Markenziehungen oder einen eigenen Charakter.' },
     { q: 'Wie lange braucht ein Brief?', a: 'Die Zeit wird aus der echten Entfernung zwischen zwei Städten berechnet. Ein bis zwei Stunden im eigenen Land, ein paar Stunden ins Nachbarland, fast ein Tag ans andere Ende der Welt. Während du wartest, siehst du den Umschlag auf dem Globus.' },
-    { q: 'Geht ein Brieffreund auch ohne dessen Sprache?', a: 'Ja. Jeder Brief hat einen Übersetzen-Knopf, und das Original bleibt neben der Übersetzung. Mit 28 Sprachen schreibst du in deiner und der andere liest in seiner.' },
+    { q: 'Geht ein Brieffreund auch ohne dessen Sprache?', a: 'Ja. Jeder Brief hat einen Übersetzen-Knopf, und das Original bleibt neben der Übersetzung. Mit über 70 Sprachen schreibst du in deiner und der andere liest in seiner.' },
     { q: 'Wie lerne ich jemanden ohne Fotos kennen?', a: 'Ein Profil besteht aus einem Pixel-Charakter, ein paar Interessen und den Briefen selbst. Beschreib dein Aussehen in Worten, und wir zeichnen einen Charakter im selben Stil. Du erfährst, wie jemand denkt, bevor du weißt, wie er aussieht.' },
   ],
   blogTitle: 'Zum Lesen',

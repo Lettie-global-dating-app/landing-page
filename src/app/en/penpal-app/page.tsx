@@ -3,20 +3,22 @@ import { Metadata } from 'next';
 import { Mail } from 'lucide-react';
 import { koEnAlternates } from '@/i18n/config';
 import { APP_ID, SITE_ID } from '@/lib/schema';
+import { COMMUNITY } from '@/data/letterMap';
+import { enDate } from '@/data/facts';
 import GuideArticle, { GuideSection, GuideTable, GuideCallout } from '@/components/GuideArticle';
 
 /**
  * "pen pal app" / "pen pal app download" 질의의 랜딩 (GSC 28일 노출 1위 페이지, 2026-09-24 재작성).
  * 숫자는 운영 DB 기준일을 붙여서만 쓴다. 배달 시간은 서버 DeliveryTimeService 의 거리 구간 그대로.
  */
-const UPDATED = '2026-09-24';
+const UPDATED = '2026-09-30';
 const URL = 'https://lettie-dating.com/en/penpal-app';
 const APP_STORE = 'https://apps.apple.com/app/id6746454876';
 const PLAY = 'https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe';
 
 const TITLE = 'Pen Pal App: Free Download for iOS & Android | Lettie';
 const DESC =
-  'Lettie is a free pen pal app. Letters take 1–24 hours to arrive depending on distance, and translate into 28 languages. On iOS and Android.';
+  'Free pen pal app for iPhone and Android. Letters fly across a globe, arrive in 1–24 hours depending on distance, and translate into 70+ languages.';
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -49,15 +51,15 @@ const FAQS = [
   },
   {
     q: 'Do I need to speak English to use Lettie?',
-    a: 'No. Every letter has a translate button covering 28 languages, and the original stays next to the translation, so you can write in your own language.',
+    a: 'No. Every letter has a translate button covering 70+ languages, and the original stays next to the translation, so you can write in your own language.',
   },
   {
     q: 'How many people use Lettie?',
-    a: 'Lettie is small: 798 people in 77 countries had signed up as of September 24, 2026. The app is built by one developer in Seoul.',
+    a: `Lettie is small: ${COMMUNITY.users} people in ${COMMUNITY.countries} countries had signed up as of ${enDate(COMMUNITY.asOf)}. The app is built by one developer in Seoul.`,
   },
   {
     q: 'How is Lettie different from Slowly?',
-    a: 'Both deliver letters by distance. Lettie adds picking up letters strangers released (Discover), free built-in translation in 28 languages, and pixel characters drawn from a written description.',
+    a: 'Both deliver letters by distance. Lettie adds picking up letters strangers released (Discover), free built-in translation in 70+ languages, and pixel characters drawn from a written description.',
   },
 ];
 
@@ -98,7 +100,7 @@ export default function PenpalAppPage() {
         answer={
           <>
             <strong>Lettie is a free pen pal app for iPhone and Android.</strong> Each letter takes the real distance to arrive, from about an
-            hour inside one country to up to a day across the world, and translates into 28 languages with one tap.
+            hour inside one country to up to a day across the world, and translates into 70+ languages with one tap.
           </>
         }
         cta={<StoreButtons />}
@@ -112,9 +114,9 @@ export default function PenpalAppPage() {
           <GuideTable
             head={['Feature', 'What it does']}
             rows={[
-              ['Letters by distance', 'A letter flies across a globe and arrives 30 minutes to 24 hours later, depending on the distance between the two countries.'],
+              ['Letters by distance', 'A letter flies across a globe and arrives 1 to 24 hours later, depending on the distance between the two countries.'],
               ['Discover', 'Pick up letters strangers released into the sky and reply to the ones that speak to you.'],
-              ['Translation', 'A translate button in every letter, 28 languages, free, with the original shown beside it.'],
+              ['Translation', 'A translate button in every letter, 70+ languages, free, with the original shown beside it.'],
               ['Profiles', 'You start as a pixel character (16 free ones) instead of a photo. Describe your look and one is drawn for you.'],
               ['Stamps', 'Each country your letters reach adds a stamp to your album and paints the globe.'],
               ['Introductions', 'A few introduction cards a day. No swiping, no scores.'],
@@ -143,13 +145,13 @@ export default function PenpalAppPage() {
             head={['Free', 'Optional (gems or Lettie Plus)']}
             rows={[
               ['Write, read and reply to letters', 'More letters released per day'],
-              ['Translate any letter into 28 languages', 'Unlimited back-and-forth with one person'],
+              ['Translate any letter into 70+ languages', 'Unlimited back-and-forth with one person'],
               ['16 base pixel characters', 'A custom character drawn from your description'],
-              ['Discover: new envelopes every 8 hours', 'Stamp draws and extra envelopes'],
+              ['Discover: three new envelopes a day', 'Stamp draws and extra envelopes'],
             ]}
           />
           <GuideCallout title="Honest size check">
-            Lettie is a small community: 798 people in 77 countries as of September 24, 2026. Replies can take a while, which is part of the idea.
+            Lettie is a small community: {COMMUNITY.users} people in {COMMUNITY.countries} countries as of {enDate(COMMUNITY.asOf)}. Replies can take a while, which is part of the idea.
           </GuideCallout>
         </GuideSection>
 

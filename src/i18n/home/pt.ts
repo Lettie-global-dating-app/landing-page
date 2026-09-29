@@ -1,3 +1,6 @@
+import { FACTS } from '@/data/facts';
+import { COMMUNITY } from '@/data/letterMap';
+
 import type { HomeCopy } from '../home';
 
 export const pt: HomeCopy = {
@@ -9,8 +12,8 @@ export const pt: HomeCopy = {
   free: 'Grátis · iOS · Android',
   videoLabel: 'Vídeo de apresentação do Lettie 2.0',
   stats: [
-    ['28', 'idiomas, tradução em um toque'],
-    ['150+', 'países com correspondentes'],
+    [FACTS.languagesRounded, 'idiomas, tradução em um toque'],
+    [String(COMMUNITY.countries), 'países com correspondentes'],
     ['1–24 h', 'de entrega, pela distância'],
   ],
   howTitle: 'É assim que funciona',
@@ -18,15 +21,15 @@ export const pt: HomeCopy = {
   how: [
     { t: 'Solte uma carta no céu', d: 'Um envelope sobe do globo e voa pelo tempo da distância real até a outra cidade. Enquanto espera, você vê no globo por onde ele está.', alt: 'Uma carta voando sobre o globo' },
     { t: 'Pegue a carta de um desconhecido', d: 'Cartas soltas sem destinatário flutuam como envelopes. Abra o que chamar sua atenção, leia, responda, e começa uma correspondência a dois.', alt: 'Tela Descobrir com envelopes flutuando' },
-    { t: 'Traduza com um toque', d: 'Eles escrevem no idioma deles, você lê no seu. 28 idiomas, com o original bem ao lado da tradução.', alt: 'Leitura de uma carta com o botão de traduzir' },
+    { t: 'Traduza com um toque', d: 'Eles escrevem no idioma deles, você lê no seu. Mais de 70 idiomas, com o original bem ao lado da tradução.', alt: 'Leitura de uma carta com o botão de traduzir' },
     { t: 'Colecione um selo de cada país', d: 'Os países que suas cartas alcançam ficam pintados no globo, e os selos deles vão para o seu álbum. Sorteie selos em pixel e cole nas suas cartas.', alt: 'Correio: álbum de selos e globo' },
   ],
   newTitle: 'O que há de novo na 2.0',
   newSub: 'Refizemos o app inteiro e mantivemos uma única regra: uma carta precisa levar tempo.',
   news: [
     ['Entrega pela distância', 'A chegada é calculada pela distância real entre duas cidades. Uma ou duas horas dentro do país, quase um dia até o outro lado do mundo. Acompanhe sua carta no globo enquanto espera.'],
-    ['Descobrir: pegar cartas soltas', 'A cada oito horas, três envelopes novos se aproximam. O gratuito já é bastante; com um anúncio por dia você recebe mais.'],
-    ['Tradução por IA, 28 idiomas', 'Ao abrir uma carta há um botão de traduzir, com original e tradução lado a lado. O app também fala 28 idiomas.'],
+    ['Descobrir: pegar cartas soltas', 'Todo dia, três envelopes novos se aproximam. O gratuito já é bastante; com um anúncio por dia você recebe mais.'],
+    ['Tradução por IA, mais de 70 idiomas', 'Ao abrir uma carta há um botão de traduzir, com original e tradução lado a lado. O app também fala mais de 70 idiomas.'],
     ['Um selo de cada país', 'Os países com quem você se corresponde ficam pintados no globo e os selos vão para o álbum. Há também selos em pixel aleatórios.'],
     ['Um personagem em vez de foto', 'O perfil começa como um personagem em pixel. Dezesseis são grátis; descreva sua aparência em palavras e desenhamos o seu no mesmo estilo.'],
     ['Apresentações do dia, sem deslizar', 'Poucos cartões de apresentação por dia. Sem notas nem deslizar sem fim. Se alguém parecer interessante, você começa com uma carta.'],
@@ -36,7 +39,7 @@ export const pt: HomeCopy = {
   cmpHead: ['', 'Lettie', 'Slowly'],
   cmpRows: [
     ['Primeira carta', 'Você pega cartas que outros soltaram (Descobrir)', 'Combinação por interesses · cartas abertas'],
-    ['Tradução', 'Dentro do app, um toque, 28 idiomas, grátis', 'Ferramentas externas ou recurso pago'],
+    ['Tradução', 'Dentro do app, um toque, mais de 70 idiomas, grátis', 'Ferramentas externas ou recurso pago'],
     ['Perfil', 'Personagem em pixel; você descreve e nós desenhamos', 'Montador de avatar'],
     ['Apresentações', 'Poucos cartões por dia', 'Não há (busca de correspondentes)'],
     ['Selos', 'Por país + sorteio de selos em pixel, colados nas cartas', 'Coleção de selos por país'],
@@ -47,7 +50,7 @@ export const pt: HomeCopy = {
   faqs: [
     { q: 'O Lettie é grátis?', a: 'Sim. Escrever, pegar cartas, traduzir e os dezesseis personagens básicos são grátis. As gemas servem só para extras, como conversas ilimitadas, sorteio de selos ou um personagem próprio.' },
     { q: 'Quanto tempo uma carta leva para chegar?', a: 'É calculado pela distância real entre duas cidades. De uma a duas horas dentro do país, algumas horas até um país vizinho e quase um dia até o outro lado do mundo. Enquanto espera, você vê o envelope no globo.' },
-    { q: 'Dá para ter um correspondente sem falar o idioma dele?', a: 'Dá. Toda carta tem um botão de traduzir, e o original fica ao lado da tradução. Com 28 idiomas, você escreve no seu e a outra pessoa lê no dela.' },
+    { q: 'Dá para ter um correspondente sem falar o idioma dele?', a: 'Dá. Toda carta tem um botão de traduzir, e o original fica ao lado da tradução. Com mais de 70 idiomas, você escreve no seu e a outra pessoa lê no dela.' },
     { q: 'Como conhecer alguém sem fotos?', a: 'O perfil é um personagem em pixel, alguns interesses e as próprias cartas. Se você descrever sua aparência em palavras, desenhamos um personagem no mesmo estilo. Você descobre como a pessoa pensa antes de saber como ela é.' },
   ],
   blogTitle: 'Para ler',

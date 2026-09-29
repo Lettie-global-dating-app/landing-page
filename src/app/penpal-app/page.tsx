@@ -3,19 +3,21 @@ import { Metadata } from 'next';
 import { Mail } from 'lucide-react';
 import { koEnAlternates } from '@/i18n/config';
 import { APP_ID, SITE_ID } from '@/lib/schema';
+import { COMMUNITY } from '@/data/letterMap';
+import { koDate } from '@/data/facts';
 import GuideArticle, { GuideSection, GuideTable, GuideCallout } from '@/components/GuideArticle';
 
 /**
  * "펜팔 앱 / 펜팔 어플 / 펜팔 어플 추천" 질의의 랜딩 (2026-09-24 재작성).
  * 숫자는 운영 DB 기준일을 붙여서만 쓴다. 배달 시간은 서버 DeliveryTimeService 의 거리 구간 그대로.
  */
-const UPDATED = '2026-09-24';
+const UPDATED = '2026-09-30';
 const URL = 'https://lettie-dating.com/penpal-app';
 const APP_STORE = 'https://apps.apple.com/app/id6746454876';
 const PLAY = 'https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe';
 
 const TITLE = '펜팔 앱 무료 다운로드: iOS·안드로이드 | Lettie';
-const DESC = 'Lettie는 무료 펜팔 앱입니다. 편지가 두 나라 사이 거리에 따라 1~24시간 걸려 도착하고, 28개 언어로 번역돼 외국인과도 편지를 주고받습니다.';
+const DESC = 'Lettie는 무료 펜팔 앱입니다. 편지가 두 나라 사이 거리에 따라 1~24시간 걸려 도착하고, 70개 넘는 언어로 번역돼 외국인과도 편지를 주고받습니다.';
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -48,15 +50,15 @@ const FAQS = [
   },
   {
     q: '외국어를 못해도 펜팔을 할 수 있나요?',
-    a: '할 수 있습니다. 모든 편지에 번역 버튼이 있고 28개 언어를 지원하며, 원문이 번역 옆에 그대로 남습니다. 한국어로 쓰면 상대는 자기 언어로 읽습니다.',
+    a: '할 수 있습니다. 모든 편지에 번역 버튼이 있고 70개 넘는 언어를 지원하며, 원문이 번역 옆에 그대로 남습니다. 한국어로 쓰면 상대는 자기 언어로 읽습니다.',
   },
   {
     q: 'Lettie를 쓰는 사람은 얼마나 되나요?',
-    a: '작은 앱입니다. 2026년 9월 24일 기준 77개 나라에서 798명이 가입했고, 서울의 1인 개발자가 만듭니다.',
+    a: `작은 앱입니다. ${koDate(COMMUNITY.asOf)} 기준 ${COMMUNITY.countries}개 나라에서 ${COMMUNITY.users}명이 가입했고, 서울의 1인 개발자가 만듭니다.`,
   },
   {
     q: 'Slowly와 무엇이 다른가요?',
-    a: '둘 다 거리만큼 걸려 도착하는 편지 앱입니다. Lettie는 남이 띄운 편지를 주워 답장하는 발견, 앱 안의 무료 번역(28개 언어), 글로 적으면 그려 주는 픽셀 캐릭터가 다릅니다.',
+    a: '둘 다 거리만큼 걸려 도착하는 편지 앱입니다. Lettie는 남이 띄운 편지를 주워 답장하는 발견, 앱 안의 무료 번역(70개 넘는 언어), 글로 적으면 그려 주는 픽셀 캐릭터가 다릅니다.',
   },
 ];
 
@@ -97,7 +99,7 @@ export default function PenpalAppPage() {
         answer={
           <>
             <strong>Lettie는 아이폰과 안드로이드에서 쓰는 무료 펜팔 앱입니다.</strong> 편지는 두 나라 사이 거리에 따라 걸려 도착하고(같은 나라 1~2시간,
-            지구 반대편 최대 하루), 버튼 하나로 28개 언어로 번역됩니다.
+            지구 반대편 최대 하루), 버튼 하나로 70개 넘는 언어로 번역됩니다.
           </>
         }
         cta={<StoreButtons />}
@@ -111,9 +113,9 @@ export default function PenpalAppPage() {
           <GuideTable
             head={['기능', '하는 일']}
             rows={[
-              ['거리만큼 걸리는 편지', '편지가 지구본 위를 날아가 두 나라 사이 거리에 따라 30분~24시간 뒤에 도착합니다.'],
+              ['거리만큼 걸리는 편지', '편지가 지구본 위를 날아가 두 나라 사이 거리에 따라 1~24시간 뒤에 도착합니다.'],
               ['발견', '남이 하늘에 띄운 편지를 주워 읽고, 마음에 드는 편지에 답장합니다.'],
-              ['번역', '모든 편지에 번역 버튼, 28개 언어, 무료, 원문과 나란히 보기.'],
+              ['번역', '모든 편지에 번역 버튼, 70개 넘는 언어, 무료, 원문과 나란히 보기.'],
               ['프로필', '사진 대신 픽셀 캐릭터(기본 16종 무료)로 시작합니다. 생김새를 글로 적으면 그려 줍니다.'],
               ['우표', '편지가 닿은 나라마다 우표가 모이고 지구본이 칠해집니다.'],
               ['소개', '하루 몇 장의 소개 카드. 스와이프도 점수도 없습니다.'],
@@ -142,13 +144,13 @@ export default function PenpalAppPage() {
             head={['무료', '선택 (젬 또는 Lettie Plus)']}
             rows={[
               ['편지 쓰기·읽기·답장', '하루에 띄우는 편지 늘리기'],
-              ['모든 편지 28개 언어 번역', '한 사람과 무제한 대화'],
+              ['모든 편지 70개 넘는 언어 번역', '한 사람과 무제한 대화'],
               ['기본 픽셀 캐릭터 16종', '글로 적으면 그려 주는 나만의 캐릭터'],
-              ['발견: 8시간마다 새 봉투', '우표 뽑기, 봉투 더 받기'],
+              ['발견: 하루 한 번 새 봉투 3장', '우표 뽑기, 봉투 더 받기'],
             ]}
           />
           <GuideCallout title="규모를 솔직하게">
-            Lettie는 작은 커뮤니티입니다. 2026년 9월 24일 기준 77개 나라 798명입니다. 답장이 느릴 수 있는데, 그것도 이 앱의 방식입니다.
+            Lettie는 작은 커뮤니티입니다. {koDate(COMMUNITY.asOf)} 기준 {COMMUNITY.countries}개 나라 {COMMUNITY.users}명입니다. 답장이 느릴 수 있는데, 그것도 이 앱의 방식입니다.
           </GuideCallout>
         </GuideSection>
 

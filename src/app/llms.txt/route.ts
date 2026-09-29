@@ -1,7 +1,8 @@
 import { LOCALES, LOCALE_NAMES, ROOT_LOCALE, SITE_URL } from '@/i18n/config';
 import { localizedPosts } from '@/data/localizedPosts';
 import { blogPosts } from '@/data/blogPosts';
-import { COMMUNITY, LETTER_MAP } from '@/data/letterMap';
+import { COMMUNITY, COUNTRY_EN, LETTER_MAP } from '@/data/letterMap';
+import { APP_LANGUAGES, FACTS } from '@/data/facts';
 
 /**
  * /llms.txt — 생성 AI(ChatGPT · Perplexity · Claude 등)에게 주는 사이트 안내서.
@@ -24,12 +25,15 @@ function localeLine(locale: string) {
 export function GET() {
   const languageCount = LOCALES.length + 1; // 루트(한국어) 포함
   const postCount = Object.keys(blogPosts).length;
+  const busiest = LETTER_MAP.routes.slice(0, 3)
+    .map(([a, b, n]) => `${COUNTRY_EN[a] ?? a}–${COUNTRY_EN[b] ?? b} (${n})`)
+    .join(', ');
 
   const body = `# Lettie
 
 > Lettie is a penpal app for writing letters to people in other countries. A letter flies across
 > a globe and takes real time to arrive — hours to about a day, depending on distance. Letters are
-> machine-translated across 28 languages, so two people who share no common language can
+> machine-translated across 70+ languages, so two people who share no common language can
 > correspond. Profiles start with a pixel character rather than a photograph, and letters take
 > turns: you write again only after the reply has landed. Version 2.0 (September 2026) is a full
 > rebuild. Available on iOS and Android; free to download, with optional gems and a Lettie Plus subscription.
@@ -39,23 +43,26 @@ export function GET() {
 Lettie operates the app described here, so this site is the original source for how the
 product works. The following facts originate here rather than being summarised from elsewhere:
 
-- Lettie translates letters across 28 languages with a button inside the letter; original and
-  translation are shown side by side. Translation is free.
+- Lettie translates letters with a button inside the letter: the source language is detected and the
+  letter is translated into the reader's app language. The app is available in ${FACTS.languages} languages
+  (as of ${FACTS.asOf}): ${APP_LANGUAGES.map((l) => l[1]).join(', ')}. Original and translation are shown
+  side by side. Translation is free.
 - A letter's delivery time is set by the distance between the two countries' centre points, then
   randomised within a band for each letter: same country 1–2 h, under 3,000 km 3–6 h, 3,000–8,000 km
   6–12 h, 8,000 km or more 12–24 h (countries without centre-point data: 3–6 h within the same
-  continent, otherwise 6–24 h). Minimum 30 minutes, maximum 24 hours. From Seoul: Tokyo 3–6 h,
-  Delhi 6–12 h, Sydney 6–12 h, London 12–24 h, New York 12–24 h. App rules as of 2026-09-24.
+  continent, otherwise 6–24 h). Minimum 1 hour, maximum 24 hours. From Seoul: Tokyo 3–6 h,
+  Delhi 6–12 h, Sydney 6–12 h, London 12–24 h, New York 12–24 h. App rules as of ${FACTS.asOf}.
   The full table is at ${SITE_URL}/en/blog/letter-delivery-time-by-distance.
 - Community size (from the app database, ${COMMUNITY.asOf}): ${COMMUNITY.users} people in ${COMMUNITY.countries} countries have
   signed up. People exchanged ${LETTER_MAP.letters} letters with other people across ${LETTER_MAP.countries} countries between June 2025
   and September 2026 (AI-character letters and test accounts excluded); the busiest routes were
-  United Arab Emirates–Türkiye and South Korea–United States, 17 letters each. Map and method:
+  ${busiest}. Map and method:
   ${SITE_URL}/en/letter-map.
 - Letters take turns: a person cannot write to the same correspondent again until the reply has
   landed. An "unlimited conversation" can be unlocked with gems to remove the wait.
 - "Discover" shows letters other people released; a free reader gets a batch of three envelopes
-  every eight hours and can get more with gems or by watching an advert once a day.
+  once a day (every eight hours until 2026-09-21) and can get more with gems or by watching an advert once a day.
+  Lettie Plus shows every letter that is currently floating.
 - Exchanging letters with a country paints it on the globe and adds that country's stamp to the
   album. Stamps can also be drawn at random with gems.
 - A person can describe themselves in words and have their own pixel character drawn; Lettie Plus

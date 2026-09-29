@@ -27,10 +27,10 @@ export type FaqContent = {
 };
 
 /**
- * 제품 사실(모든 언어 공통, 2026-08-28 기준)
- * - 편지는 28개 언어로 번역된다
+ * 제품 사실(모든 언어 공통, 2026-09-30 기준 — 숫자의 정본은 src/data/facts.ts)
+ * - 편지는 읽는 사람이 번역 버튼을 누르면 그 사람의 앱 언어로 번역된다(앱 언어 70개 넘음). 보낼 때 번역되는 게 아니다
  * - 연락처 교환에 정해진 통수 규칙은 없다(5통 규칙은 1.x 때 것, 2.0 에서 없어짐)
- * - 시작 시 프로필 사진이 보이지 않고, 편지를 주고받으며 점차 드러난다
+ * - 프로필 사진 대신 픽셀 캐릭터로 시작한다(기본 16종 무료, 글로 적으면 그려 준다). 1.x 의 "사진이 점차 드러난다"는 없어졌다
  * - iOS · Android, 다운로드 무료
  */
 export const localizedFaq: Record<string, FaqContent> = {
@@ -43,7 +43,7 @@ export const localizedFaq: Record<string, FaqContent> = {
     items: [
       {
         q: '¿Qué es Lettie?',
-        a: 'Lettie es una aplicación para escribir cartas a personas de otros países. Cada carta se traduce a 28 idiomas al enviarse, así que dos personas sin idioma común pueden mantener una correspondencia real. Está disponible en iOS y Android.',
+        a: 'Lettie es una aplicación para escribir cartas a personas de otros países. Cada carta tiene un botón para traducirla al idioma de quien la lee (más de 70 idiomas), así que dos personas sin idioma común pueden mantener una correspondencia real. Está disponible en iOS y Android.',
       },
       {
         q: '¿Lettie es gratis?',
@@ -51,7 +51,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: '¿Tengo que escribir en inglés?',
-        a: 'No. Escribes en tu idioma y la otra persona lo lee en el suyo, porque cada carta se traduce al enviarse. También puedes ver el texto original junto a la traducción.',
+        a: 'No. Escribes en tu idioma y la otra persona lo lee en el suyo, porque cada carta se puede traducir con un toque. También puedes ver el texto original junto a la traducción.',
       },
       {
         q: '¿Cuándo puedo intercambiar mi contacto con alguien?',
@@ -59,7 +59,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: '¿Por qué no se ven fotos al principio?',
-        a: 'Lettie empieza sin fotografía de perfil para que la primera impresión sea lo que alguien escribe. La foto se revela de forma gradual a medida que la correspondencia avanza.',
+        a: 'Lettie empieza sin fotografía de perfil para que la primera impresión sea lo que alguien escribe. En lugar de una foto, cada persona empieza con un personaje de píxeles: hay 16 gratuitos y puedes describir tu aspecto con palabras para que se dibuje el tuyo.',
       },
       {
         q: '¿Es seguro escribir a desconocidos?',
@@ -77,7 +77,7 @@ export const localizedFaq: Record<string, FaqContent> = {
     items: [
       {
         q: 'O que é o Lettie?',
-        a: 'O Lettie é um aplicativo para escrever cartas a pessoas de outros países. Cada carta é traduzida para 28 idiomas no momento do envio, então duas pessoas sem idioma em comum conseguem manter uma correspondência real. Está disponível para iOS e Android.',
+        a: 'O Lettie é um aplicativo para escrever cartas a pessoas de outros países. Cada carta tem um botão que a traduz para o idioma de quem lê (mais de 70 idiomas), então duas pessoas sem idioma em comum conseguem manter uma correspondência real. Está disponível para iOS e Android.',
       },
       {
         q: 'O Lettie é gratuito?',
@@ -111,7 +111,7 @@ export const localizedFaq: Record<string, FaqContent> = {
     items: [
       {
         q: 'Lettieとはどんなアプリですか。',
-        a: 'Lettieは、外国に住む人と手紙をやりとりするアプリです。手紙は送信時に28言語へ翻訳されるため、共通の言語がない二人でも文通が成立します。iOSとAndroidで利用できます。',
+        a: 'Lettieは、外国に住む人と手紙をやりとりするアプリです。手紙には翻訳ボタンがあり、読む人の言語（70以上）に翻訳できるため、共通の言語がない二人でも文通が成立します。iOSとAndroidで利用できます。',
       },
       {
         q: 'Lettieは無料ですか。',
@@ -145,7 +145,7 @@ export const localizedFaq: Record<string, FaqContent> = {
     items: [
       {
         q: 'Qu’est-ce que Lettie ?',
-        a: 'Lettie est une application pour écrire des lettres à des personnes vivant dans d’autres pays. Chaque lettre est traduite en 28 langues au moment de l’envoi, ce qui permet à deux personnes sans langue commune de correspondre réellement. L’application existe sur iOS et Android.',
+        a: 'Lettie est une application pour écrire des lettres à des personnes vivant dans d’autres pays. Chaque lettre a un bouton qui la traduit dans la langue de la personne qui la lit (plus de 70 langues), ce qui permet à deux personnes sans langue commune de correspondre réellement. L’application existe sur iOS et Android.',
       },
       {
         q: 'Lettie est-elle gratuite ?',
@@ -179,7 +179,7 @@ export const localizedFaq: Record<string, FaqContent> = {
     items: [
       {
         q: 'Was ist Lettie?',
-        a: 'Lettie ist eine App, mit der man Briefe an Menschen in anderen Ländern schreibt. Jeder Brief wird beim Versenden in 28 Sprachen übersetzt, sodass zwei Menschen ohne gemeinsame Sprache tatsächlich korrespondieren können. Die App gibt es für iOS und Android.',
+        a: 'Lettie ist eine App, mit der man Briefe an Menschen in anderen Ländern schreibt. Jeder Brief hat einen Knopf, der ihn in die Sprache der lesenden Person übersetzt (über 70 Sprachen), sodass zwei Menschen ohne gemeinsame Sprache tatsächlich korrespondieren können. Die App gibt es für iOS und Android.',
       },
       {
         q: 'Ist Lettie kostenlos?',
@@ -213,7 +213,7 @@ export const localizedFaq: Record<string, FaqContent> = {
     items: [
       {
         q: 'Lettie 是什么？',
-        a: 'Lettie 是一款用来给其他国家的人写信的应用。每封信在发送时会被翻译成 28 种语言，因此没有共同语言的两个人也能真正通信。iOS 和 Android 都可以使用。',
+        a: 'Lettie 是一款用来给其他国家的人写信的应用。每封信都有翻译按钮，可以译成读信人的语言（70 多种语言），因此没有共同语言的两个人也能真正通信。iOS 和 Android 都可以使用。',
       },
       {
         q: 'Lettie 免费吗？',
@@ -247,7 +247,7 @@ export const localizedFaq: Record<string, FaqContent> = {
     items: [
       {
         q: 'Che cos’è Lettie?',
-        a: 'Lettie è un’applicazione per scrivere lettere a persone che vivono in altri paesi. Ogni lettera viene tradotta in 28 lingue al momento dell’invio, così due persone senza una lingua in comune possono davvero corrispondere. È disponibile su iOS e Android.',
+        a: 'Lettie è un’applicazione per scrivere lettere a persone che vivono in altri paesi. Ogni lettera ha un pulsante che la traduce nella lingua di chi la legge (oltre 70 lingue), così due persone senza una lingua in comune possono davvero corrispondere. È disponibile su iOS e Android.',
       },
       {
         q: 'Lettie è gratuita?',
@@ -281,7 +281,7 @@ export const localizedFaq: Record<string, FaqContent> = {
     items: [
       {
         q: 'Что такое Lettie?',
-        a: 'Lettie — это приложение для переписки с людьми из других стран. Каждое письмо переводится на 28 языков в момент отправки, поэтому переписываться могут даже двое, у кого нет общего языка. Приложение доступно на iOS и Android.',
+        a: 'Lettie — это приложение для переписки с людьми из других стран. В каждом письме есть кнопка перевода на язык читающего (более 70 языков), поэтому переписываться могут даже двое, у кого нет общего языка. Приложение доступно на iOS и Android.',
       },
       {
         q: 'Lettie бесплатное?',
@@ -315,7 +315,7 @@ export const localizedFaq: Record<string, FaqContent> = {
     items: [
       {
         q: 'Lettie क्या है?',
-        a: 'Lettie एक ऐप है जिससे आप दूसरे देशों में रहने वाले लोगों को चिट्ठियाँ लिखते हैं। हर चिट्ठी भेजते समय 28 भाषाओं में अनुवादित होती है, इसलिए जिनकी कोई साझा भाषा नहीं है वे भी सचमुच पत्र-व्यवहार कर सकते हैं। यह iOS और Android दोनों पर उपलब्ध है।',
+        a: 'Lettie एक ऐप है जिससे आप दूसरे देशों में रहने वाले लोगों को चिट्ठियाँ लिखते हैं। हर चिट्ठी में एक बटन है जो उसे पढ़ने वाले की भाषा में अनुवाद कर देता है (70 से ज़्यादा भाषाएँ), इसलिए जिनकी कोई साझा भाषा नहीं है वे भी सचमुच पत्र-व्यवहार कर सकते हैं। यह iOS और Android दोनों पर उपलब्ध है।',
       },
       {
         q: 'क्या Lettie मुफ़्त है?',
@@ -349,7 +349,7 @@ export const localizedFaq: Record<string, FaqContent> = {
     items: [
       {
         q: 'Apa itu Lettie?',
-        a: 'Lettie adalah aplikasi untuk menulis surat kepada orang di negara lain. Setiap surat diterjemahkan ke 28 bahasa saat dikirim, sehingga dua orang tanpa bahasa yang sama tetap bisa berkirim surat. Tersedia untuk iOS dan Android.',
+        a: 'Lettie adalah aplikasi untuk menulis surat kepada orang di negara lain. Setiap surat punya tombol untuk menerjemahkannya ke bahasa pembaca (lebih dari 70 bahasa), sehingga dua orang tanpa bahasa yang sama tetap bisa berkirim surat. Tersedia untuk iOS dan Android.',
       },
       {
         q: 'Apakah Lettie gratis?',

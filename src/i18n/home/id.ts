@@ -1,3 +1,6 @@
+import { FACTS } from '@/data/facts';
+import { COMMUNITY } from '@/data/letterMap';
+
 import type { HomeCopy } from '../home';
 
 export const id: HomeCopy = {
@@ -9,8 +12,8 @@ export const id: HomeCopy = {
   free: 'Gratis · iOS · Android',
   videoLabel: 'Video perkenalan Lettie 2.0',
   stats: [
-    ['28', 'bahasa, diterjemahkan sekali ketuk'],
-    ['150+', 'negara sahabat pena'],
+    [FACTS.languagesRounded, 'bahasa, diterjemahkan sekali ketuk'],
+    [String(COMMUNITY.countries), 'negara sahabat pena'],
     ['1–24 jam', 'pengiriman sesuai jarak'],
   ],
   howTitle: 'Begini caranya',
@@ -18,15 +21,15 @@ export const id: HomeCopy = {
   how: [
     { t: 'Lepaskan surat ke langit', d: 'Sebuah amplop terangkat dari bola dunia dan terbang selama waktu yang dihitung dari jarak sebenarnya ke kota tujuan. Sambil menunggu, kamu bisa melihat posisinya di bola dunia.', alt: 'Surat terbang di atas bola dunia' },
     { t: 'Pungut surat orang asing', d: 'Surat yang dilepaskan tanpa alamat mengambang sebagai amplop. Buka yang menarik, baca, balas, dan korespondensi berdua pun dimulai.', alt: 'Layar Temukan dengan amplop mengambang' },
-    { t: 'Terjemahkan sekali ketuk', d: 'Mereka menulis dalam bahasanya, kamu membaca dalam bahasamu. 28 bahasa, dengan teks asli tepat di samping terjemahannya.', alt: 'Membaca surat dengan tombol terjemahkan' },
+    { t: 'Terjemahkan sekali ketuk', d: 'Mereka menulis dalam bahasanya, kamu membaca dalam bahasamu. Lebih dari 70 bahasa, dengan teks asli tepat di samping terjemahannya.', alt: 'Membaca surat dengan tombol terjemahkan' },
     { t: 'Kumpulkan prangko dari setiap negara', d: 'Negara yang dicapai suratmu diwarnai di bola dunia, dan prangkonya masuk ke albummu. Tarik prangko piksel dan tempelkan di suratmu.', alt: 'Kantor pos: album prangko dan bola dunia' },
   ],
   newTitle: 'Yang baru di 2.0',
   newSub: 'Kami membangun ulang seluruh aplikasi dan hanya menyisakan satu aturan: surat harus butuh waktu.',
   news: [
     ['Waktu kirim sesuai jarak', 'Waktu tiba dihitung dari jarak sebenarnya antara dua kota. Satu dua jam di dalam negeri, sekitar sehari ke belahan dunia lain. Pantau suratmu di bola dunia sambil menunggu.'],
-    ['Temukan: memungut surat yang dilepas', 'Setiap delapan jam, tiga amplop baru mendekat. Gratis sudah lebih dari cukup; tonton satu iklan sehari untuk dapat lebih.'],
-    ['Terjemahan AI, 28 bahasa', 'Saat membuka surat ada tombol terjemahkan, teks asli dan terjemahan berdampingan. Aplikasinya sendiri juga tersedia dalam 28 bahasa.'],
+    ['Temukan: memungut surat yang dilepas', 'Setiap hari, tiga amplop baru mendekat. Gratis sudah lebih dari cukup; tonton satu iklan sehari untuk dapat lebih.'],
+    ['Terjemahan AI, lebih dari 70 bahasa', 'Saat membuka surat ada tombol terjemahkan, teks asli dan terjemahan berdampingan. Aplikasinya sendiri juga tersedia dalam lebih dari 70 bahasa.'],
     ['Prangko dari setiap negara', 'Negara yang berkirim surat denganmu diwarnai di bola dunia dan prangkonya masuk album. Ada juga undian prangko piksel acak.'],
     ['Karakter sebagai ganti foto', 'Profil dimulai sebagai karakter piksel. Enam belas gratis; gambarkan penampilanmu dengan kata-kata dan kami menggambarnya dengan gaya yang sama.'],
     ['Perkenalan hari ini, tanpa geser', 'Hanya beberapa kartu perkenalan sehari. Tanpa skor, tanpa geser tanpa akhir. Kalau ada yang menarik, mulai dengan satu surat.'],
@@ -36,7 +39,7 @@ export const id: HomeCopy = {
   cmpHead: ['', 'Lettie', 'Slowly'],
   cmpRows: [
     ['Surat pertama', 'Memungut surat yang dilepas orang lain (Temukan)', 'Pencocokan minat · surat terbuka'],
-    ['Terjemahan', 'Di dalam aplikasi, sekali ketuk, 28 bahasa, gratis', 'Alat eksternal atau fitur berbayar'],
+    ['Terjemahan', 'Di dalam aplikasi, sekali ketuk, lebih dari 70 bahasa, gratis', 'Alat eksternal atau fitur berbayar'],
     ['Profil', 'Karakter piksel; kamu gambarkan, kami gambar', 'Penyusun avatar'],
     ['Perkenalan', 'Beberapa kartu sehari', 'Tidak ada (pencarian sahabat pena)'],
     ['Prangko', 'Per negara + undian prangko piksel, bisa ditempel di surat', 'Koleksi prangko per negara'],
@@ -47,7 +50,7 @@ export const id: HomeCopy = {
   faqs: [
     { q: 'Apakah Lettie gratis?', a: 'Ya. Menulis, memungut surat, terjemahan, dan enam belas karakter dasar semuanya gratis. Permata hanya untuk tambahan seperti percakapan tanpa batas, undian prangko, atau karakter khusus.' },
     { q: 'Berapa lama surat sampai?', a: 'Dihitung dari jarak sebenarnya antara dua kota. Satu sampai dua jam di dalam negeri, beberapa jam ke negara tetangga, hampir sehari ke belahan dunia lain. Sambil menunggu, kamu bisa melihat amplopnya di bola dunia.' },
-    { q: 'Bisa punya sahabat pena tanpa bisa bahasanya?', a: 'Bisa. Setiap surat punya tombol terjemahkan, dan teks aslinya tetap di samping terjemahan. Dengan 28 bahasa, kamu menulis dalam bahasamu dan dia membaca dalam bahasanya.' },
+    { q: 'Bisa punya sahabat pena tanpa bisa bahasanya?', a: 'Bisa. Setiap surat punya tombol terjemahkan, dan teks aslinya tetap di samping terjemahan. Dengan lebih dari 70 bahasa, kamu menulis dalam bahasamu dan dia membaca dalam bahasanya.' },
     { q: 'Bagaimana mengenal orang tanpa foto?', a: 'Profil terdiri dari karakter piksel, beberapa minat, dan surat-suratnya sendiri. Gambarkan penampilanmu dengan kata-kata dan kami menggambar karakter dengan gaya yang sama. Kamu tahu cara seseorang berpikir sebelum tahu rupanya.' },
   ],
   blogTitle: 'Bacaan',

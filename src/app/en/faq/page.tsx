@@ -21,7 +21,7 @@ const faqCategories = [
     questions: [
       {
         q: 'What is Lettie?',
-        a: 'Lettie is a global pen pal app for exchanging letters with people around the world. Letters fly across a globe and take as long as the distance to arrive, and you can read them translated into 28 languages. Profiles start as pixel characters instead of photos, so the focus is on what someone writes.'
+        a: 'Lettie is a global pen pal app for exchanging letters with people around the world. Letters fly across a globe and take as long as the distance to arrive, and you can read them translated into 70+ languages. Profiles start as pixel characters instead of photos, so the focus is on what someone writes.'
       },
       {
         q: 'How do I get started?',
@@ -83,7 +83,7 @@ const faqCategories = [
       },
       {
         q: 'What is Discover?',
-        a: 'Discover is where letters other people released float as envelopes. On the free plan three new envelopes arrive every eight hours, and you can get more with gems or by watching an advert once a day. Lettie Plus swipes through every letter that is floating.'
+        a: 'Discover is where letters other people released float as envelopes. On the free plan three new envelopes arrive once a day, and you can get more with gems or by watching an advert once a day. Lettie Plus swipes through every letter that is floating.'
       },
       {
         q: 'What are stamps for?',

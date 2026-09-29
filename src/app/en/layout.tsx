@@ -35,11 +35,11 @@ export const metadata: Metadata = {
     absolute: "Lettie: Pen Pal App With Letters That Fly Across a Globe",
     template: "%s | Lettie"
   },
-  description: "A free pen pal app where each letter flies the real distance across a globe. Pick up letters strangers released and read them in 28 languages. iOS & Android.",
+  description: "A free pen pal app where each letter flies the real distance across a globe. Pick up letters strangers released and read them in 70+ languages. iOS & Android.",
   keywords: [
     "penpal", "letter", "penpal app", "letter app", "global penpal", "global friend", "global", "friend", "communication", "cultural exchange", "language exchange", 
     "international friend", "overseas friend", "Lettie", "pen pal app with translation", "pen pal for adults", "find a pen pal", "pen pal website",
-    "slow letters", "letter translation app", "28 languages", "stamp collecting app", "pen pal without photos", "pen pal not dating", "snail mail app", "write to strangers"
+    "slow letters", "letter translation app", "70+ languages", "stamp collecting app", "pen pal without photos", "pen pal not dating", "snail mail app", "write to strangers"
   ],
   authors: [{ name: "Lettie Team" }],
   creator: "Lettie Team",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     url: baseUrl,
     siteName: "Lettie",
     title: "Lettie — Slow Letters That Fly Across a Globe | Penpal App",
-    description: "A free pen pal app where each letter flies the real distance across a globe. Pick up letters strangers released and read them in 28 languages. iOS & Android.",
+    description: "A free pen pal app where each letter flies the real distance across a globe. Pick up letters strangers released and read them in 70+ languages. iOS & Android.",
     images: [
       {
         url: ogImageUrl,
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     site: "@lettie_app",
     creator: "@lettie_app",
     title: "Lettie — Slow Letters That Fly Across a Globe | Penpal App",
-    description: "A free pen pal app where each letter flies the real distance across a globe. Pick up letters strangers released and read them in 28 languages. iOS & Android.",
+    description: "A free pen pal app where each letter flies the real distance across a globe. Pick up letters strangers released and read them in 70+ languages. iOS & Android.",
     images: [ogImageUrl],
   },
   alternates: {
