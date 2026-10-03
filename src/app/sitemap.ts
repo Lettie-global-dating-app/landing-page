@@ -4,6 +4,8 @@ import { blogPosts } from '@/data/blogPosts';
 import { LOCALES } from '@/i18n/config';
 import { localizedPosts } from '@/data/localizedPosts';
 import { FAQ_LOCALES } from '@/data/localizedFaq';
+import { ARTICLE_PATH, ARTICLE_SLUGS, articleLocales } from '@/data/articles/lookup';
+import { ARTICLE_DATE } from '@/data/articles/types';
 
 // 영어는 위 STATIC_PATHS 에서 이미 다루므로 제외한다.
 const NEW_LOCALES = LOCALES.filter((l) => l !== 'en');
@@ -99,5 +101,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticRoutes, ...localeHomes, ...localeFaqs, ...blogRoutes, ...localizedRoutes];
+  // 다국어로 새로 쓴 글 다섯 편 (src/data/articles) — 실제로 있는 언어만
+  const articleRoutes = ARTICLE_SLUGS.flatMap((slug) =>
+    articleLocales(slug).map((locale) => ({
+      url: `${baseUrl}/${locale}${ARTICLE_PATH[slug]}`,
+      lastModified: ARTICLE_DATE,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
+  );
+
+  return [...staticRoutes, ...localeHomes, ...localeFaqs, ...blogRoutes, ...localizedRoutes, ...articleRoutes];
 }

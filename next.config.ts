@@ -89,9 +89,9 @@ const nextConfig: NextConfig = {
       { source: '/:lang(en|es|pt|ja|fr|zh|de|hi|id|ru|it|bn|fil|tr|vi|th|ms|sw|pl|nl|uk|ro|el|cs|ar|fa|ur)-:region([a-zA-Z]{2,4})', destination: '/:lang', permanent: true },
       { source: '/:lang(en|es|pt|ja|fr|zh|de|hi|id|ru|it|bn|fil|tr|vi|th|ms|sw|pl|nl|uk|ro|el|cs|ar|fa|ur)-:region([a-zA-Z]{2,4})/:path*', destination: '/:lang/:path*', permanent: true },
       { source: '/:lang(es|pt|ja|fr|zh|de|hi|id|ru|it|bn|fil|tr|vi|th|ms|sw|pl|nl|uk|ro|el|cs|ar|fa|ur)/blog', destination: '/en/blog', permanent: false },
-      { source: '/:lang(es|pt|ja|fr|zh|de|hi|id|ru|it|bn|fil|tr|vi|th|ms|sw|pl|nl|uk|ro|el|cs|ar|fa|ur)/guide/:path*', destination: '/en/guide/:path*', permanent: false },
+      // 다국어로 쓴 가이드 두 편(getting-started·writing-tips)은 제외 — 그 언어 페이지가 있다 (2026-10-04)
+      { source: '/:lang(es|pt|ja|fr|zh|de|hi|id|ru|it|bn|fil|tr|vi|th|ms|sw|pl|nl|uk|ro|el|cs|ar|fa|ur)/guide/:slug((?!getting-started|writing-tips)[^/]+)', destination: '/en/guide/:slug', permanent: false },
       { source: '/:lang(es|pt|ja|fr|zh|de|hi|id|ru|it|bn|fil|tr|vi|th|ms|sw|pl|nl|uk|ro|el|cs|ar|fa|ur)/guide', destination: '/en/guide', permanent: false },
-      { source: '/:lang(es|pt|ja|fr|zh|de|hi|id|ru|it|bn|fil|tr|vi|th|ms|sw|pl|nl|uk|ro|el|cs|ar|fa|ur)/penpal-app', destination: '/en/penpal-app', permanent: false },
       { source: '/:lang(es|pt|ja|fr|zh|de|hi|id|ru|it|bn|fil|tr|vi|th|ms|sw|pl|nl|uk|ro|el|cs|ar|fa|ur)/letter-map', destination: '/en/letter-map', permanent: false },
       // 연도가 낡은 글을 같은 주제의 최신 글로 합친다 (2026-09-24, 순위 신호를 넘긴다)
       { source: '/blog/2025-best-penpal-app', destination: '/blog/best-penpal-apps-2026', permanent: true },

@@ -7,6 +7,7 @@ import { getHomeCopy } from '@/i18n/home'
 import { LOCALES, LOCALE_NAMES, ROOT_LOCALE, urlFor } from '@/i18n/config'
 import { FAQ_LOCALES } from '@/data/localizedFaq'
 import { listLocalizedPosts } from '@/data/localizedPosts'
+import { localizedPathIfExists } from '@/data/articles/lookup'
 import type { Locale } from '@/i18n/config'
 
 /**
@@ -242,8 +243,9 @@ export default function Home2({ lang }: { lang: string }) {
           </div>
           <p className="mt-4 text-sm text-ink3">{t.cmpNote}</p>
           <div className="mt-6 text-center">
-            <Link href={`${contentBase}/blog/lettie-vs-slowly`} className="inline-flex items-center gap-2 text-star font-semibold hover:underline">
-              {t.cmpLink}{foreignContent && <span className="text-ink3 font-normal text-sm">({t.inEnglish})</span>} <ArrowRight className="w-4 h-4 rtl:-scale-x-100" />
+            {/* 그 언어로 쓴 「Slowly 대안」 글이 있으면 그쪽으로 (2026-10-04), 없으면 영어 비교 글 */}
+            <Link href={localizedPathIfExists(lang, '/blog/slowly-alternatives-2026') ?? `${contentBase}/blog/lettie-vs-slowly`} className="inline-flex items-center gap-2 text-star font-semibold hover:underline">
+              {t.cmpLink}{foreignContent && !localizedPathIfExists(lang, '/blog/slowly-alternatives-2026') && <span className="text-ink3 font-normal text-sm">({t.inEnglish})</span>} <ArrowRight className="w-4 h-4 rtl:-scale-x-100" />
             </Link>
           </div>
         </div>
@@ -299,7 +301,7 @@ export default function Home2({ lang }: { lang: string }) {
           <h2 className="text-2xl font-bold tracking-tight mb-5">{t.guideTitle}{foreignContent && <span className="ms-2 text-sm font-normal text-ink3">({t.inEnglish})</span>}</h2>
           <div className="flex flex-wrap gap-3">
             {t.guides.map(([slug, label]) => (
-              <Link key={slug} href={`${contentBase}/guide/${slug}`} className="rounded-full border border-line px-4 py-2 text-sm text-ink2 hover:text-paper hover:border-paper/40 transition-colors">{label}</Link>
+              <Link key={slug} href={localizedPathIfExists(lang, `/guide/${slug}`) ?? `${contentBase}/guide/${slug}`} className="rounded-full border border-line px-4 py-2 text-sm text-ink2 hover:text-paper hover:border-paper/40 transition-colors">{label}</Link>
             ))}
           </div>
         </div>
@@ -325,7 +327,7 @@ export default function Home2({ lang }: { lang: string }) {
             <Link href={`${contentBase}/guide`} className="hover:text-paper">{t.nav.guide}</Link>
             <Link href={faqHref} className="hover:text-paper">{t.nav.faq}</Link>
             <Link href={`${contentBase}/letter-map`} className="hover:text-paper">{t.footer.letterMap}</Link>
-            <Link href={`${contentBase}/penpal-app`} className="hover:text-paper">{t.footer.penpalApp}</Link>
+            <Link href={localizedPathIfExists(lang, '/penpal-app') ?? `${contentBase}/penpal-app`} className="hover:text-paper">{t.footer.penpalApp}</Link>
             <a href={APP_STORE} target="_blank" rel="noopener noreferrer" className="hover:text-paper">App Store</a>
             <a href={PLAY} target="_blank" rel="noopener noreferrer" className="hover:text-paper">Google Play</a>
             <a href={PRIVACY} target="_blank" rel="noopener noreferrer" className="hover:text-paper">{t.footer.privacy}</a>

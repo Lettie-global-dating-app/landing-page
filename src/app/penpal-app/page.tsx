@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 import { Mail } from 'lucide-react';
 import { koEnAlternates } from '@/i18n/config';
+import { localizedArticleAlternatesForPath } from '@/data/articles/lookup';
 import { APP_ID, SITE_ID } from '@/lib/schema';
 import { COMMUNITY } from '@/data/letterMap';
 import { koDate } from '@/data/facts';
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
   title: { absolute: TITLE },
   description: DESC,
   keywords: ['펜팔 앱', '펜팔 어플', '펜팔 어플 추천', '펜팔앱', '외국인 펜팔', '번역 펜팔 앱'],
-  alternates: { canonical: URL, languages: koEnAlternates('/penpal-app') },
+  alternates: { canonical: URL, languages: { ...koEnAlternates('/penpal-app'), ...localizedArticleAlternatesForPath('/penpal-app') } },
   openGraph: {
     title: TITLE,
     description: DESC,

@@ -42,7 +42,8 @@ export default function LanguageSwitcher() {
     ((l === ROOT_LOCALE || l === "en") && base.startsWith("/blog/") ? (l === "en" ? "/en/blog" : "/blog") : pickTarget(base, l, ROOT_LOCALE));
 
   return (
-    <div style={{ position: "fixed", top: 24, right: 24, zIndex: 50 }}>
+    <div style={{ position: "fixed", top: 24, insetInlineEnd: 24, zIndex: 50 }}>
+      {/* 논리 속성 — 오른쪽에서 왼쪽 언어에선 왼쪽 위로 간다(오른쪽에 붙으면 제목·경로와 겹쳤다) */}
       <details style={{ position: "relative" }}>
         <summary
           aria-label="Language"
@@ -71,7 +72,7 @@ export default function LanguageSwitcher() {
         <ul
           style={{
             position: "absolute",
-            right: 0,
+            insetInlineEnd: 0,
             marginTop: 8,
             width: 200,
             maxHeight: 360,

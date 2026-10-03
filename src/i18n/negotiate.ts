@@ -13,8 +13,12 @@
 export const LANG_COOKIE = 'lettie_lang';
 export const LANG_COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
 
-/** 모든 언어에 같은 경로가 있는 한국어 루트 페이지. 나머지 하위 페이지는 한국어·영어 두 벌뿐이다. */
-export const FULLY_LOCALIZED_PATHS = ['/', '/faq'] as const;
+/** 모든 언어에 같은 경로가 있는 한국어 루트 페이지. 나머지 하위 페이지는 한국어·영어 두 벌뿐이다(번역 없는 언어는 영어판으로). */
+export const FULLY_LOCALIZED_PATHS = [
+  '/', '/faq',
+  // 2026-10-04 모든 언어로 새로 쓴 글 다섯 편 (src/data/articles)
+  '/penpal-app', '/blog/best-penpal-apps-2026', '/blog/slowly-alternatives-2026', '/guide/getting-started', '/guide/writing-tips',
+] as const;
 
 const BOT_UA =
   /bot\b|bot\/|crawl|spider|slurp|google|bing|yandex|baidu|yeti|daum|duckduck|facebookexternalhit|meta-externalagent|embedly|preview|kakaotalk-scrap|whatsapp|headless|lighthouse|pagespeed|gptbot|claude|perplexity|anthropic|curl\/|wget|python|node-fetch|go-http|axios/i;

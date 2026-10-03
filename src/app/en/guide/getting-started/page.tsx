@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { koEnAlternates } from '@/i18n/config';
+import { localizedArticleAlternatesForPath } from '@/data/articles/lookup';
 import Image from 'next/image';
 import { ArrowLeft, Mail, User, Heart, Shield, CheckCircle } from 'lucide-react';
 import { Metadata } from 'next';
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   keywords: ['starting penpal', 'first letter', 'penpal profile', 'penpal etiquette', 'Lettie guide'],
   alternates: {
     canonical: 'https://lettie-dating.com/en/guide/getting-started',
-    languages: koEnAlternates('/guide/getting-started'),
+    languages: { ...koEnAlternates('/guide/getting-started'), ...localizedArticleAlternatesForPath('/guide/getting-started') },
   },
   openGraph: {
     title: 'Getting Started with Pen Pals - Complete Guide | Lettie',

@@ -10,6 +10,7 @@ import remarkGfm from 'remark-gfm';
 import { articleMdComponents, stripLeadingH1 } from '@/lib/markdown';
 import { blogPosts } from '@/data/blogPosts';
 import { koEnAlternates } from '@/i18n/config';
+import { localizedArticleAlternatesForPath } from '@/data/articles/lookup';
 import { localizedAlternatesFor } from '@/data/localizedPosts';
 
 type Props = {
@@ -44,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     alternates: {
       canonical: `https://lettie-dating.com/blog/${slug}`,
-      languages: { ...koEnAlternates(`/blog/${slug}`), ...localizedAlternatesFor(slug) },
+      languages: { ...koEnAlternates(`/blog/${slug}`), ...localizedAlternatesFor(slug), ...localizedArticleAlternatesForPath(`/blog/${slug}`) },
     },
   };
 }

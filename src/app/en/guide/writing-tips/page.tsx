@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { koEnAlternates } from '@/i18n/config';
+import { localizedArticleAlternatesForPath } from '@/data/articles/lookup';
 import { BookOpen, PenLine, MessageCircleQuestion, Repeat } from 'lucide-react';
 import { Metadata } from 'next';
 import GuideArticle, { GuideSection, GuideTable, GuideCallout } from '@/components/GuideArticle';
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://lettie-dating.com/en/guide/writing-tips',
-    languages: koEnAlternates('/guide/writing-tips'),
+    languages: { ...koEnAlternates('/guide/writing-tips'), ...localizedArticleAlternatesForPath('/guide/writing-tips') },
   },
   openGraph: {
     title: 'What to Write in a Pen Pal Letter - Writing Tips | Lettie',

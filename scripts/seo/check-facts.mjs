@@ -17,7 +17,7 @@ const STALE = [
   // 2026-09-27 부터 발견에 AI 계정의 편지도 나온다 → 홈 하단 문구로 "진짜 사람"을 약속하지 않는다
   ['홈 하단 "진짜 사람" (발견에 AI 계정 편지가 섞인다)', /tag: '[^']*(진짜 사람|real people|personas reales|pessoas reais|本物の人|vraies personnes|真人|echte Menschen|असली लोग|orang sungguhan|настоящие люди|persone vere)/],
   // 레티는 펜팔 앱이다 (2026-09-21 대표 지시). 홈·FAQ 문구에 데이팅·연애 매칭 표현을 쓰지 않는다
-  ['홈·FAQ 에 데이팅 표현 (펜팔 앱이다)', /(데이팅|소개팅|\bdating\b|\bflört|hẹn hò|หาคู่|\bdaten\b|seznamk|randk[ai]|побачен|γνωριμί|întâlniri romantice|kencan|cita romántica|encontro amoroso|rencontres amoureuses|出会い系|约会)/i, /src[\/](i18n[\/]home|data[\/]faq)[\/]/],
+  ['홈·FAQ 에 데이팅 표현 (펜팔 앱이다)', /(데이팅|소개팅|\bdating\b|\bflört|hẹn hò|หาคู่|\bdaten\b|seznamk|randk[ai]|побачен|γνωριμί|întâlniri romantice|kencan|cita romántica|encontro amoroso|rencontres amoureuses|出会い系|约会)/i, /src[\/](i18n[\/]home|data[\/](faq|articles))[\/]/],
 ];
 // 과거 시점을 설명하는 문장은 허용 (예: llms.txt 의 "every eight hours until 2026-09-21")
 const ALLOW = [/until 2026-09-21/];

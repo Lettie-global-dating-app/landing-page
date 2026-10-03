@@ -5,6 +5,13 @@ import { notFound } from 'next/navigation';
 import { ArrowLeft } from 'lucide-react';
 import { HREFLANG, LOCALES, OG_LOCALE, SITE_URL, isLocale, urlFor } from '@/i18n/config';
 import { localizedPosts, getLocalizedPost } from '@/data/localizedPosts';
+import LocalizedArticle from '@/components/LocalizedArticle';
+import { articleLocales, getArticle } from '@/data/articles/lookup';
+import { articleMetadata } from '@/lib/articleMeta';
+import type { ArticleSlug } from '@/data/articles/types';
+
+/** 다국어로 새로 쓴 블로그 글 두 편 (src/data/articles). localizedPosts 와 슬러그가 겹치지 않는다. */
+const ARTICLE_BLOG: ArticleSlug[] = ['best-penpal-apps-2026', 'slowly-alternatives-2026'];
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
 
@@ -17,12 +24,14 @@ export function generateStaticParams() {
       if (entry.translations[locale]) params.push({ locale, slug });
     }
   }
+  for (const slug of ARTICLE_BLOG) for (const locale of articleLocales(slug)) params.push({ locale, slug });
   return params;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
   if (!isLocale(locale)) return {};
+  if (ARTICLE_BLOG.includes(slug as ArticleSlug)) return articleMetadata(locale, slug as ArticleSlug);
   const post = getLocalizedPost(slug, locale);
   if (!post) return {};
 
@@ -139,6 +148,12 @@ function renderMarkdown(md: string) {
 export default async function LocalizedBlogPost({ params }: Props) {
   const { locale, slug } = await params;
   if (!isLocale(locale) || locale === 'en') notFound();
+
+  if (ARTICLE_BLOG.includes(slug as ArticleSlug)) {
+    const article = getArticle(locale, slug);
+    if (!article) notFound();
+    return <LocalizedArticle locale={locale} slug={slug as ArticleSlug} article={article} />;
+  }
 
   const post = getLocalizedPost(slug, locale);
   const entry = localizedPosts[slug];
