@@ -1,5 +1,5 @@
 /**
- * 홈(랜딩) 문구 — 12개 언어가 같은 구조를 공유한다.
+ * 홈(랜딩) 문구 — 25개 언어가 같은 구조를 공유한다.
  * 한국어 사전이 형태의 기준이다. 키를 빠뜨리면 컴파일러가 잡는다.
  *
  * 원칙: Lettie 는 **펜팔 앱**이다. "데이팅"이라는 말은 쓰지 않는다 (2026-09-21 대표 지시).
@@ -18,10 +18,26 @@ import { hi } from './home/hi';
 import { id } from './home/id';
 import { ru } from './home/ru';
 import { it } from './home/it';
+import { bn } from './home/bn';
+import { fil } from './home/fil';
+import { tr } from './home/tr';
+import { vi } from './home/vi';
+import { th } from './home/th';
+import { ms } from './home/ms';
+import { sw } from './home/sw';
+import { pl } from './home/pl';
+import { nl } from './home/nl';
+import { uk } from './home/uk';
+import { ro } from './home/ro';
+import { el } from './home/el';
+import { cs } from './home/cs';
 
 export type HomeCopy = typeof ko;
 
-const COPY: Record<string, HomeCopy> = { ko, en, es, pt, ja, fr, zh, de, hi, id, ru, it };
+const COPY: Record<string, HomeCopy> = {
+  ko, en, es, pt, ja, fr, zh, de, hi, id, ru, it,
+  bn, fil, tr, vi, th, ms, sw, pl, nl, uk, ro, el, cs,
+};
 
 export function getHomeCopy(lang: string): HomeCopy {
   return COPY[lang] ?? en;

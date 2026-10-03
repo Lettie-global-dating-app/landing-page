@@ -29,6 +29,9 @@ export function isBot(userAgent: string | null | undefined): boolean {
  * 지원 언어가 하나도 안 맞으면 [fallback].
  * 예: "ja-JP,ja;q=0.9,en;q=0.8" → ja, "zh-TW" → zh, "th-TH" → en
  */
+/** 브라우저가 다른 코드로 보내는 같은 언어. 타갈로그(tl)는 필리피노(fil) 페이지로. */
+const ALIASES: Record<string, string> = { tl: 'fil' };
+
 export function pickLocale(
   acceptLanguage: string | null | undefined,
   supported: readonly string[],
@@ -41,7 +44,8 @@ export function pickLocale(
       const [tag, ...params] = part.trim().split(';');
       const q = params.map((p) => p.trim()).find((p) => p.startsWith('q='));
       const weight = q ? Number(q.slice(2)) : 1;
-      return { lang: tag.trim().toLowerCase().split('-')[0], weight: Number.isFinite(weight) ? weight : 0, i };
+      const primary = tag.trim().toLowerCase().split('-')[0];
+      return { lang: ALIASES[primary] ?? primary, weight: Number.isFinite(weight) ? weight : 0, i };
     })
     .filter((t) => t.lang && t.lang !== '*' && t.weight > 0)
     .sort((a, b) => b.weight - a.weight || a.i - b.i);
@@ -61,7 +65,7 @@ export function autoTarget(koPath: string, locale: string, rootLocale = 'ko'): s
 /** 지금 경로에서 언어 접두사를 떼어 한국어 루트 기준 경로로. "/ja/faq" → "/faq", "/en" → "/" */
 export function basePath(pathname: string, locales: readonly string[]): string {
   const trimmed = pathname.replace(/\/+$/, '') || '/';
-  const m = trimmed.match(/^\/([a-z]{2})(\/.*)?$/);
+  const m = trimmed.match(/^\/([a-z]{2,3})(\/.*)?$/);
   if (m && locales.includes(m[1])) return m[2] || '/';
   return trimmed;
 }

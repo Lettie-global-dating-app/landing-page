@@ -1,3 +1,5 @@
+import { extraFaq } from '@/data/faq';
+import { HREFLANG } from '@/i18n/config';
 /**
  * 언어별 FAQ.
  *
@@ -375,6 +377,9 @@ export const localizedFaq: Record<string, FaqContent> = {
   },
 };
 
+// 2026-10-04 추가 13개 언어는 언어별 파일에서 합친다 (src/data/faq/<lang>.ts)
+Object.assign(localizedFaq, extraFaq);
+
 /**
  * FAQ 의 hreflang. **FAQ 가 실제로 있는 언어끼리만** 잇는다.
  * 한국어는 `/faq`, 영어는 `/en/faq` 로 기존 라우트가 담당하고
@@ -386,7 +391,7 @@ export function faqAlternates(): Record<string, string> {
     ko: `${SITE}/faq`,
     en: `${SITE}/en/faq`,
   };
-  for (const l of Object.keys(localizedFaq)) map[l] = `${SITE}/${l}/faq`;
+  for (const l of Object.keys(localizedFaq)) map[HREFLANG[l] ?? l] = `${SITE}/${l}/faq`;
   map['x-default'] = `${SITE}/en/faq`;
   return map;
 }

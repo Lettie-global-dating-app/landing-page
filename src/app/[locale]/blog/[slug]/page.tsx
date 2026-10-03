@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { stripLeadingH1 } from '@/lib/markdown';
 import { notFound } from 'next/navigation';
 import { ArrowLeft } from 'lucide-react';
-import { LOCALES, OG_LOCALE, SITE_URL, isLocale, urlFor } from '@/i18n/config';
+import { HREFLANG, LOCALES, OG_LOCALE, SITE_URL, isLocale, urlFor } from '@/i18n/config';
 import { localizedPosts, getLocalizedPost } from '@/data/localizedPosts';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // 존재하지 않는 언어를 hreflang 으로 가리키면 404 를 가리키는 셈이다.
   const available = localizedPosts[slug]?.translations ?? {};
   const languages: Record<string, string> = {};
-  for (const l of Object.keys(available)) languages[l] = urlFor(l, `/blog/${slug}`);
+  for (const l of Object.keys(available)) languages[HREFLANG[l] ?? l] = urlFor(l, `/blog/${slug}`);
   // 같은 질문의 한국어·영어 글이 있으면 그것과도 잇는다 (슬러그가 다르다)
   const koEn = localizedPosts[slug]?.koEnSlug;
   if (koEn) {

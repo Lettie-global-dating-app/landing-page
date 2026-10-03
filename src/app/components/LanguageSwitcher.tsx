@@ -30,7 +30,7 @@ export default function LanguageSwitcher() {
   // 서버 렌더링 시에는 아무것도 표시하지 않음
   if (path === null) return null;
   const trimmed = path.replace(/\/$/, "");
-  if (trimmed === "" || /^\/[a-z]{2}$/.test(trimmed)) return null;
+  if (trimmed === "" || /^\/[a-z]{2,3}$/.test(trimmed)) return null;
 
   const base = basePath(path, LOCALES);
   const seg = trimmed.split("/")[1];

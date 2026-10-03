@@ -5,7 +5,12 @@
  * 기존 순위를 버리게 된다. 나머지 언어는 `/[locale]` 아래로 붙인다.
  * `/en` 도 기존 경로 그대로 유지되므로 색인 손실이 없다.
  */
-export const LOCALES = ['en', 'es', 'pt', 'ja', 'fr', 'zh', 'de', 'hi', 'id', 'ru', 'it'] as const;
+// 2026-10-04: 홍보 영상이 있는 13개 언어 추가(bn·fil·tr·vi·th·ms·sw·pl·nl·uk·ro·el·cs). 오른쪽에서 왼쪽으로 쓰는 ar·fa·ur 은 dir 처리 전까지 보류.
+// 새 언어를 넣으면 netlify/edge-functions/html-lang.mjs 목록과 next.config.ts 리다이렉트 정규식에도 넣는다.
+export const LOCALES = [
+  'en', 'es', 'pt', 'ja', 'fr', 'zh', 'de', 'hi', 'id', 'ru', 'it',
+  'bn', 'fil', 'tr', 'vi', 'th', 'ms', 'sw', 'pl', 'nl', 'uk', 'ro', 'el', 'cs',
+] as const;
 export type Locale = (typeof LOCALES)[number];
 
 /** 루트(`/`)가 담당하는 언어. 경로 접두사가 없다. */
@@ -17,11 +22,15 @@ export const SITE_URL = 'https://lettie-dating.com';
 export const HREFLANG: Record<string, string> = {
   ko: 'ko', en: 'en', es: 'es', pt: 'pt', ja: 'ja', fr: 'fr',
   zh: 'zh', de: 'de', hi: 'hi', id: 'id', ru: 'ru', it: 'it',
+  // 구글 hreflang 은 ISO 639-1 — 필리피노는 tl(타갈로그)로 표기한다. 경로·html lang 은 앱과 같은 fil.
+  bn: 'bn', fil: 'tl', tr: 'tr', vi: 'vi', th: 'th', ms: 'ms', sw: 'sw', pl: 'pl', nl: 'nl', uk: 'uk', ro: 'ro', el: 'el', cs: 'cs',
 };
 
 export const OG_LOCALE: Record<string, string> = {
   ko: 'ko_KR', en: 'en_US', es: 'es_ES', pt: 'pt_BR', ja: 'ja_JP', fr: 'fr_FR',
   zh: 'zh_CN', de: 'de_DE', hi: 'hi_IN', id: 'id_ID', ru: 'ru_RU', it: 'it_IT',
+  bn: 'bn_BD', fil: 'fil_PH', tr: 'tr_TR', vi: 'vi_VN', th: 'th_TH', ms: 'ms_MY', sw: 'sw_KE',
+  pl: 'pl_PL', nl: 'nl_NL', uk: 'uk_UA', ro: 'ro_RO', el: 'el_GR', cs: 'cs_CZ',
 };
 
 /** 언어 전환 링크에 쓰는 표기. 각 언어를 그 언어로 적는다. */
@@ -29,6 +38,8 @@ export const LOCALE_NAMES: Record<string, string> = {
   ko: '한국어', en: 'English', es: 'Español', pt: 'Português', ja: '日本語',
   fr: 'Français', zh: '中文', de: 'Deutsch', hi: 'हिन्दी', id: 'Bahasa Indonesia',
   ru: 'Русский', it: 'Italiano',
+  bn: 'বাংলা', fil: 'Filipino', tr: 'Türkçe', vi: 'Tiếng Việt', th: 'ไทย', ms: 'Bahasa Melayu', sw: 'Kiswahili',
+  pl: 'Polski', nl: 'Nederlands', uk: 'Українська', ro: 'Română', el: 'Ελληνικά', cs: 'Čeština',
 };
 
 export function isLocale(value: string): value is Locale {
@@ -46,7 +57,7 @@ export function urlFor(locale: string, path = ''): string {
 /** 모든 언어의 대체 링크. Next 의 alternates.languages 에 그대로 넣는다. */
 export function languageAlternates(path = ''): Record<string, string> {
   const map: Record<string, string> = { [ROOT_LOCALE]: urlFor(ROOT_LOCALE, path) };
-  for (const l of LOCALES) map[l] = urlFor(l, path);
+  for (const l of LOCALES) map[HREFLANG[l] ?? l] = urlFor(l, path);
   // 검색 유입의 주력이 영어권이라 언어 불일치 방문자는 영어로 보낸다.
   map['x-default'] = urlFor('en', path);
   return map;

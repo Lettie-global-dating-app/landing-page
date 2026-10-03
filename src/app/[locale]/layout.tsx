@@ -1,3 +1,4 @@
+import { extraHomeKeywords } from '@/data/faq';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { LOCALES, OG_LOCALE, SITE_URL, isLocale, languageAlternates, urlFor } from '@/i18n/config';
@@ -35,7 +36,7 @@ export async function generateMetadata({
     metadataBase: new URL(SITE_URL),
     title: { absolute: title, template: `%s | Lettie` },
     description,
-    keywords: [...t.meta.keywords],
+    keywords: [...(extraHomeKeywords[locale] ?? t.meta.keywords)],
     alternates: {
       canonical: url,
       languages: languageAlternates(),

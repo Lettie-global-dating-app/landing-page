@@ -11,7 +11,8 @@ import { id } from './id';
 import { ru } from './ru';
 import { it } from './it';
 
-const DICTIONARIES: Record<Locale, Dictionary> = {
+// 2026-10-04 이후 추가된 언어는 사전이 없다 — 이 사전에서 쓰는 것은 메타 키워드뿐이고 그건 src/data/faq/<lang>.ts 의 homeKeywords 가 맡는다.
+const DICTIONARIES: Partial<Record<Locale, Dictionary>> = {
   en, es, pt, ja, fr, zh, de, hi, id, ru, it,
 };
 

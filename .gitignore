@@ -44,3 +44,4 @@ next-env.d.ts
 .omc/
 scripts/.sitemap-snapshot.txt
 scripts/.gsc-pending.txt
+scripts/og/.card.html
