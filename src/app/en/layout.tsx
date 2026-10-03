@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { languageAlternates } from "@/i18n/config";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
-import LanguageSwitcher from "../components/LanguageSwitcher";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -154,7 +153,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <LanguageSwitcher />
+        {/* 언어 메뉴는 루트 레이아웃이 그린다 — 여기서도 그리면 /en 하위 페이지에 메뉴가 두 개 겹쳤다 */}
         {children}
       </body>
     </html>

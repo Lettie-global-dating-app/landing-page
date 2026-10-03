@@ -33,6 +33,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const available = localizedPosts[slug]?.translations ?? {};
   const languages: Record<string, string> = {};
   for (const l of Object.keys(available)) languages[l] = urlFor(l, `/blog/${slug}`);
+  // 같은 질문의 한국어·영어 글이 있으면 그것과도 잇는다 (슬러그가 다르다)
+  const koEn = localizedPosts[slug]?.koEnSlug;
+  if (koEn) {
+    languages.ko = urlFor('ko', `/blog/${koEn}`);
+    languages.en = urlFor('en', `/blog/${koEn}`);
+    languages['x-default'] = urlFor('en', `/blog/${koEn}`);
+  }
 
   return {
     metadataBase: new URL(SITE_URL),

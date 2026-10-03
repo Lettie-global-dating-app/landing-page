@@ -1,3 +1,4 @@
+import { SITE_URL } from '@/i18n/config';
 import type { Locale } from '@/i18n/config';
 
 /**
@@ -22,6 +23,8 @@ export type LocalizedEntry = {
   id: string;
   date: string;
   image: string;
+  /** 같은 질문을 다루는 한국어·영어 글의 슬러그(blogPosts). 있으면 서로 hreflang 으로 잇는다. */
+  koEnSlug?: string;
   translations: Partial<Record<Locale, LocalizedPost>>;
 };
 
@@ -29,6 +32,7 @@ export const localizedPosts: Record<string, LocalizedEntry> = {
   'find-a-pen-pal': {
     id: 'find-a-pen-pal',
     date: '2026-08-01',
+    koEnSlug: 'how-to-find-a-pen-pal',
     image: '/letter-writing.png',
     translations: {
       es: {
@@ -375,6 +379,19 @@ Du wirst mehreren Menschen schreiben, bevor eine Korrespondenz trägt. Eine, die
     },
   },
 };
+
+/**
+ * 한국어·영어 글(blogPosts 슬러그)과 같은 질문을 다루는 다국어 글의 hreflang 대체 링크.
+ * 한/영 글 페이지가 이걸 자기 대체 링크에 더해야 양방향이 된다(한쪽만 가리키면 검색엔진이 무시한다).
+ */
+export function localizedAlternatesFor(koEnSlug: string): Record<string, string> {
+  const out: Record<string, string> = {};
+  for (const [slug, entry] of Object.entries(localizedPosts)) {
+    if (entry.koEnSlug !== koEnSlug) continue;
+    for (const l of Object.keys(entry.translations)) out[l] = `${SITE_URL}/${l}/blog/${slug}`;
+  }
+  return out;
+}
 
 export function getLocalizedPost(slug: string, locale: Locale): LocalizedPost | null {
   return localizedPosts[slug]?.translations[locale] ?? null;

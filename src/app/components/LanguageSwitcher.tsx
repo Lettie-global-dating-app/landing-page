@@ -12,9 +12,19 @@ import { basePath, langCookie, pickTarget } from "@/i18n/negotiate";
  */
 export default function LanguageSwitcher() {
   const [path, setPath] = useState<string | null>(null);
+  // 이 페이지가 <head> 에 내보낸 hreflang 대체 링크 — 어느 언어로 같은 글이 있는지의 정답이다(데이터에서 생성).
+  // 슬러그가 언어마다 다른 글(/ja/blog/find-a-pen-pal ↔ /en/blog/how-to-find-a-pen-pal)도 이걸로 맞게 간다.
+  const [alts, setAlts] = useState<Record<string, string>>({});
 
   useEffect(() => {
     setPath(window.location.pathname);
+    const found: Record<string, string> = {};
+    document.querySelectorAll('link[rel="alternate"][hreflang]').forEach((el) => {
+      const lang = el.getAttribute("hreflang");
+      const href = el.getAttribute("href");
+      if (lang && href && lang !== "x-default") found[lang] = new URL(href, window.location.origin).pathname;
+    });
+    setAlts(found);
   }, []);
 
   // 서버 렌더링 시에는 아무것도 표시하지 않음
@@ -26,6 +36,10 @@ export default function LanguageSwitcher() {
   const seg = trimmed.split("/")[1];
   const current = (LOCALES as readonly string[]).includes(seg) ? seg : ROOT_LOCALE;
   const all = [ROOT_LOCALE, ...LOCALES];
+  // 대체 링크가 있으면 그 페이지, 블로그 글인데 한/영판이 없으면 블로그 목록, 그 밖엔 그 언어의 같은 페이지나 홈
+  const targetFor = (l: string) =>
+    alts[l] ??
+    ((l === ROOT_LOCALE || l === "en") && base.startsWith("/blog/") ? (l === "en" ? "/en/blog" : "/blog") : pickTarget(base, l, ROOT_LOCALE));
 
   return (
     <div style={{ position: "fixed", top: 24, right: 24, zIndex: 50 }}>
@@ -73,7 +87,7 @@ export default function LanguageSwitcher() {
           {all.map((l) => (
             <li key={l}>
               <a
-                href={pickTarget(base, l, ROOT_LOCALE)}
+                href={targetFor(l)}
                 hrefLang={l}
                 lang={l}
                 onClick={() => {
