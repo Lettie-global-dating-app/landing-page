@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, ChevronDown } from 'lucide-react'
 import MobileMenu from '@/components/MobileMenu'
+import LangCookie from '@/app/components/LangCookie'
 import { getHomeCopy } from '@/i18n/home'
 import { LOCALES, LOCALE_NAMES, ROOT_LOCALE, urlFor } from '@/i18n/config'
 import { FAQ_LOCALES } from '@/data/localizedFaq'
@@ -56,7 +57,7 @@ function LanguageMenu({ current, label }: { current: string; label: string }) {
       <ul className="absolute right-0 mt-2 w-48 max-h-80 overflow-auto rounded-2xl border border-line bg-sky1 p-2 shadow-[0_30px_60px_-20px_rgba(0,0,0,0.8)] z-50">
         {all.map((l) => (
           <li key={l}>
-            <a href={l === ROOT_LOCALE ? '/' : `/${l}`} hrefLang={l} lang={l} className={`block rounded-xl px-3 py-2 text-sm hover:bg-sky2 ${l === current ? 'text-star font-semibold' : 'text-ink2 hover:text-paper'}`}>
+            <a href={l === ROOT_LOCALE ? '/' : `/${l}`} hrefLang={l} lang={l} data-set-lang={l} className={`block rounded-xl px-3 py-2 text-sm hover:bg-sky2 ${l === current ? 'text-star font-semibold' : 'text-ink2 hover:text-paper'}`}>
               {LOCALE_NAMES[l]}
             </a>
           </li>
@@ -332,10 +333,11 @@ export default function Home2({ lang }: { lang: string }) {
           {/* 언어 — 크롤러가 따라갈 수 있는 실제 링크로 둔다 */}
           <nav aria-label={t.footer.languages} className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-ink3 max-w-2xl mx-auto">
             {[ROOT_LOCALE, ...LOCALES].map((l) => (
-              <a key={l} href={urlFor(l)} hrefLang={l} lang={l} className={l === lang ? 'text-paper' : 'hover:text-paper'}>{LOCALE_NAMES[l]}</a>
+              <a key={l} href={urlFor(l)} hrefLang={l} lang={l} data-set-lang={l} className={l === lang ? 'text-paper' : 'hover:text-paper'}>{LOCALE_NAMES[l]}</a>
             ))}
           </nav>
           <p className="text-ink3">© 2026 Lettie · {t.footer.dev}</p>
+          <LangCookie />
         </div>
       </footer>
     </div>
