@@ -14,6 +14,8 @@ const STALE = [
   ['배달 최소 30분 (최소 1시간)', /(최소 30분|30분~24시간|at least 30 minutes|30 minutes to 24 hours|Minimum 30 minutes)/],
   ['가입 나라 150+ (COMMUNITY.countries 를 쓸 것)', /'150\+'/],
   ['무료 편지 하루 3통 (하루 1통)', /(하루 편지 3통|three letters a day)/],
+  // 2026-09-27 부터 발견에 AI 계정의 편지도 나온다 → 홈 하단 문구로 "진짜 사람"을 약속하지 않는다
+  ['홈 하단 "진짜 사람" (발견에 AI 계정 편지가 섞인다)', /tag: '[^']*(진짜 사람|real people|personas reales|pessoas reais|本物の人|vraies personnes|真人|echte Menschen|असली लोग|orang sungguhan|настоящие люди|persone vere)/],
 ];
 // 과거 시점을 설명하는 문장은 허용 (예: llms.txt 의 "every eight hours until 2026-09-21")
 const ALLOW = [/until 2026-09-21/];

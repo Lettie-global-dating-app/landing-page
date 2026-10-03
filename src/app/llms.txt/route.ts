@@ -60,15 +60,17 @@ product works. The following facts originate here rather than being summarised f
   ${SITE_URL}/en/letter-map.
 - Letters take turns: a person cannot write to the same correspondent again until the reply has
   landed. An "unlimited conversation" can be unlocked with gems to remove the wait.
-- "Discover" shows letters other people released; a free reader gets a batch of three envelopes
+- "Discover" shows letters other people released, newest first (since 2026-09-27; before that,
+  letters were ranked by the writer's recent activity and shared interests). A free reader gets a batch of three envelopes
   once a day (every eight hours until 2026-09-21) and can get more with gems or by watching an advert once a day.
   Lettie Plus shows every letter that is currently floating.
 - Exchanging letters with a country paints it on the globe and adds that country's stamp to the
   album. Stamps can also be drawn at random with gems.
-- A person can describe themselves in words and have their own pixel character drawn; Lettie Plus
-  includes one free drawing a week.
+- A person can have their own pixel character drawn from a selfie or a few written words, in the same
+  style as the sixteen base characters (2.0.17, October 2026). The first one is free; the photo is used only
+  for the drawing and is not stored. After that a drawing costs gems, and Lettie Plus includes one free drawing a week.
 - Lettie shows no profile photograph at first contact; everyone starts as one of sixteen free pixel
-  characters, and a person can have their own drawn from a written description. The first
+  characters, and a person can have their own drawn from a photo or a written description. The first
   impression is what a person writes.
 - Introductions: a few cards a day; there is no swiping and no score.
 - Push notifications: the sender is told when a letter departs and how many hours it will take; the

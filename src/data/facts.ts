@@ -7,15 +7,21 @@
  * - 발견: 서버 lettie.discover batch-size 3 · batch-hours 24 — 2026-09-21 부터 무료 봉투는 하루 한 번 3장 (그 전엔 8시간 주기).
  * - 배달: 서버 DeliveryTimeService — 가장 짧은 구간이 같은 나라 1~2시간이라 최소 1시간, 최대 24시간.
  * - 띄우기: 무료 하루 1통 (lettie.letters.per-day). 답장은 한도와 무관.
+ * - 발견 순서: 2026-09-27 부터 최신순 (그 전엔 작성자 활동·관심사 점수). Plus 작성자 편지만 하루 앞당긴다.
+ * - 나만의 캐릭터: 2.0.17(2026-10) 부터 사진 한 장이나 글 몇 줄로. 첫 캐릭터 무료, 사진은 그리는 데만 쓰고 저장하지 않는다.
+ *   그다음은 젬(서버 가격표), Plus 는 주 1회 무료. 기본 캐릭터 16종은 계속 무료.
  */
 export const FACTS = {
-  asOf: '2026-09-30',
+  asOf: '2026-10-03',
   languages: 73,
   languagesRounded: '70+',
   discoverEnvelopesPerDay: 3,
   deliveryHours: { min: 1, max: 24 },
   freeLettersPerDay: 1,
   baseCharacters: 16,
+  /** 첫 나만의 캐릭터(사진·글) 무료 — 2.0.17 */
+  firstOwnCharacterFree: true,
+  ownCharacterFromPhoto: true,
 };
 
 /** 앱 화면·편지 번역 언어 — [앱 코드, 영어 이름, 한국어 이름], 앱 kAppLanguageCodes 순서. */

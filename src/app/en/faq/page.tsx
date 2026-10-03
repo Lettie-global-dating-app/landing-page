@@ -91,7 +91,7 @@ const faqCategories = [
       },
       {
         q: 'Can I make my own character?',
-        a: 'Yes. Describe how you look in words — no photograph — and Lettie draws it in the same art style. It costs gems, and Lettie Plus includes one free drawing a week. The 16 default characters are always free to switch between.'
+        a: 'Yes. Upload a selfie or describe how you look in a few words, and Lettie draws you in the same pixel style. Your first character is free, and the photo is used only for the drawing — it is not stored or shown to anyone. After that a drawing costs gems, and Lettie Plus includes one free drawing a week. The 16 default characters are always free to switch between.'
       },
       {
         q: 'What is a stopover greeting?',

@@ -30,7 +30,7 @@ export type FaqContent = {
  * 제품 사실(모든 언어 공통, 2026-09-30 기준 — 숫자의 정본은 src/data/facts.ts)
  * - 편지는 읽는 사람이 번역 버튼을 누르면 그 사람의 앱 언어로 번역된다(앱 언어 70개 넘음). 보낼 때 번역되는 게 아니다
  * - 연락처 교환에 정해진 통수 규칙은 없다(5통 규칙은 1.x 때 것, 2.0 에서 없어짐)
- * - 프로필 사진 대신 픽셀 캐릭터로 시작한다(기본 16종 무료, 글로 적으면 그려 준다). 1.x 의 "사진이 점차 드러난다"는 없어졌다
+ * - 프로필 사진 대신 픽셀 캐릭터로 시작한다(기본 16종 무료, 사진이나 글로 내 캐릭터를 그려 준다 — 첫 캐릭터 무료, 2.0.17). 1.x 의 "사진이 점차 드러난다"는 없어졌다
  * - iOS · Android, 다운로드 무료
  */
 export const localizedFaq: Record<string, FaqContent> = {
@@ -59,7 +59,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: '¿Por qué no se ven fotos al principio?',
-        a: 'Lettie empieza sin fotografía de perfil para que la primera impresión sea lo que alguien escribe. En lugar de una foto, cada persona empieza con un personaje de píxeles: hay 16 gratuitos y puedes describir tu aspecto con palabras para que se dibuje el tuyo.',
+        a: 'Lettie empieza sin fotografía de perfil para que la primera impresión sea lo que alguien escribe. En lugar de una foto, cada persona empieza con un personaje de píxeles: hay 16 gratuitos y, con una foto o unas palabras sobre tu aspecto, se dibuja el tuyo (el primero es gratis y la foto no se guarda).',
       },
       {
         q: '¿Es seguro escribir a desconocidos?',

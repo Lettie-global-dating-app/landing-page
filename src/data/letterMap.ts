@@ -4,31 +4,39 @@
  * 다시 뽑기: scripts/seo/letter-map.sql (운영 DB) → flows.tsv → tools/reddit/viz/flows_map.py. 숫자를 바꾸면 asOf 도 바꾼다.
  */
 export const LETTER_MAP = {
-  asOf: '2026-09-30',
-  period: { from: '2025-06', to: '2026-09' },
-  letters: 271,
-  countries: 41,
-  international: 224,
-  domestic: 47,
-  image: '/data/letter-map-2026-09-30.png',
+  asOf: '2026-10-03',
+  period: { from: '2025-06', to: '2026-10' },
+  letters: 313,
+  countries: 42,
+  international: 265,
+  domestic: 48,
+  image: '/data/letter-map-2026-10-03.png',
   routes: [
-    ['KR', 'US', 20], ['AE', 'TR', 19], ['KR', 'TR', 19], ['GB', 'US', 10], ['IN', 'US', 7],
-    ['TR', 'US', 7], ['GH', 'US', 6], ['NG', 'US', 6], ['PH', 'US', 6], ['AE', 'KR', 5],
+    ['KR', 'US', 20], ['KR', 'TR', 19], ['AE', 'TR', 19], ['TW', 'US', 14], ['GB', 'US', 10],
+    ['JP', 'TW', 10], ['TR', 'US', 8], ['IN', 'US', 7], ['PH', 'US', 7], ['NG', 'US', 6],
   ] as [string, string, number][],
   byCountry: [
-    ['US', 126], ['KR', 68], ['TR', 57], ['GB', 34], ['AE', 31], ['IN', 28], ['NG', 25], ['PH', 18], ['CI', 12], ['GH', 12],
+    ['US', 139], ['KR', 70], ['TR', 58], ['TW', 37], ['GB', 35], ['IN', 30], ['AE', 29], ['PH', 27], ['NG', 25], ['CI', 19],
   ] as [string, number][],
-  within: [['US', 34], ['KR', 4], ['IN', 3], ['NG', 3], ['GB', 2], ['TR', 1]] as [string, number][],
+  within: [['US', 35], ['KR', 4], ['IN', 3], ['NG', 3], ['GB', 2], ['TR', 1]] as [string, number][],
 };
+
+/** 집계 기간 'YYYY-MM' → '2025년 6월' / 'June 2025' */
+export const koMonth = (ym: string) => { const [y, m] = ym.split('-').map(Number); return `${y}년 ${m}월`; };
+export const enMonth = (ym: string) =>
+  new Date(`${ym}-01T00:00:00Z`).toLocaleDateString('en-US', { year: 'numeric', month: 'long', timeZone: 'UTC' });
+
+/** 가장 많이 오간 경로들 (공동 1위가 있으면 전부). FAQ 가 손으로 쓴 숫자와 표가 어긋나지 않게 데이터에서 뽑는다. */
+export const topRoutes = () => LETTER_MAP.routes.filter(([, , n]) => n === LETTER_MAP.routes[0][2]);
 
 export const COUNTRY_EN: Record<string, string> = {
   US: 'United States', KR: 'South Korea', TR: 'Türkiye', GB: 'United Kingdom', AE: 'United Arab Emirates', NG: 'Nigeria',
-  IN: 'India', PH: 'Philippines', GH: 'Ghana', CI: "Côte d'Ivoire", MA: 'Morocco',
+  IN: 'India', PH: 'Philippines', GH: 'Ghana', CI: "Côte d'Ivoire", MA: 'Morocco', TW: 'Taiwan', JP: 'Japan', HK: 'Hong Kong',
 };
 export const COUNTRY_KO: Record<string, string> = {
   US: '미국', KR: '한국', TR: '튀르키예', GB: '영국', AE: '아랍에미리트', NG: '나이지리아', IN: '인도', PH: '필리핀', GH: '가나',
-  CI: '코트디부아르', MA: '모로코',
+  CI: '코트디부아르', MA: '모로코', TW: '대만', JP: '일본', HK: '홍콩',
 };
 
 /** 가입자 규모 — 운영 DB users(탈퇴·AI 계정 제외)·가입 나라 수(두 글자 ISO 코드만 — '+5997' 같은 전화 국가번호가 섞여 있다). 숫자를 바꾸면 asOf 도 바꾼다. */
-export const COMMUNITY = { asOf: '2026-09-30', users: 885, countries: 78 };
+export const COMMUNITY = { asOf: '2026-10-03', users: 917, countries: 79 };

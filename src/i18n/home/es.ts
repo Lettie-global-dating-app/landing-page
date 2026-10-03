@@ -31,7 +31,7 @@ export const es: HomeCopy = {
     ['Descubrir: recoger cartas lanzadas', 'Cada día se acercan tres sobres nuevos. Gratis es más que suficiente; con un anuncio al día recibes más.'],
     ['Traducción con IA, más de 70 idiomas', 'Al abrir una carta hay un botón de traducir, con original y traducción lado a lado. La app también habla más de 70 idiomas.'],
     ['Un sello de cada país', 'Los países con los que te escribes se pintan en el globo y sus sellos van a tu álbum. También hay sellos pixelados al azar.'],
-    ['Un personaje en lugar de una foto', 'El perfil empieza como un personaje pixelado. Dieciséis son gratis; describe tu aspecto con palabras y dibujamos el tuyo con el mismo estilo.'],
+    ['Un personaje en lugar de una foto', 'El perfil empieza como un personaje pixelado. Dieciséis son gratis, y con una foto o unas palabras sobre tu aspecto dibujamos el tuyo con el mismo estilo. El primero es gratis y no guardamos la foto.'],
     ['Presentaciones del día, sin deslizar', 'Unas pocas tarjetas de presentación al día. Sin puntuaciones ni deslizar sin fin. Si alguien te interesa, empiezas con una carta.'],
   ],
   cmpTitle: '¿En qué se diferencia de Slowly?',
@@ -40,7 +40,7 @@ export const es: HomeCopy = {
   cmpRows: [
     ['Primera carta', 'Recoges cartas que otros lanzaron (Descubrir)', 'Emparejar por intereses · cartas abiertas'],
     ['Traducción', 'Dentro de la app, un toque, más de 70 idiomas, gratis', 'Herramientas externas o función de pago'],
-    ['Perfil', 'Personaje pixelado; lo describes y lo dibujamos', 'Creador de avatares'],
+    ['Perfil', 'Personaje pixelado; el tuyo desde una foto o palabras', 'Creador de avatares'],
     ['Presentaciones', 'Unas pocas tarjetas al día', 'No hay (búsqueda de amigos)'],
     ['Sellos', 'Por país + sellos pixelados al azar, se pegan en las cartas', 'Colección de sellos por país'],
   ],
@@ -48,10 +48,10 @@ export const es: HomeCopy = {
   cmpNote: 'Basado en información pública a septiembre de 2026. Slowly es una app estupenda: prueba las dos y quédate con la que te encaje.',
   faqTitle: 'Preguntas frecuentes',
   faqs: [
-    { q: '¿Lettie es gratis?', a: 'Sí. Escribir, recoger cartas, traducir y los dieciséis personajes básicos son gratis. Las gemas solo sirven para extras como conversaciones sin límite, sacar sellos o un personaje propio.' },
+    { q: '¿Lettie es gratis?', a: 'Sí. Escribir, recoger cartas, traducir, los dieciséis personajes básicos y tu primer personaje propio son gratis. Las gemas solo sirven para extras como conversaciones sin límite, sacar sellos o un segundo personaje.' },
     { q: '¿Cuánto tarda en llegar una carta?', a: 'Se calcula con la distancia real entre dos ciudades. De una a dos horas dentro del país, unas horas hasta un país vecino y casi un día hasta el otro lado del mundo. Mientras esperas puedes ver el sobre en el globo.' },
     { q: '¿Puedo tener un amigo por carta sin hablar su idioma?', a: 'Sí. Cada carta tiene un botón de traducir y el original queda junto a la traducción. Con más de 70 idiomas, tú escribes en el tuyo y la otra persona lee en el suyo.' },
-    { q: '¿Cómo conozco a alguien sin fotos?', a: 'El perfil es un personaje pixelado, unos intereses y las propias cartas. Si describes tu aspecto con palabras, dibujamos un personaje con el mismo estilo. Sabes cómo piensa alguien antes de saber cómo es.' },
+    { q: '¿Cómo conozco a alguien sin fotos?', a: 'El perfil es un personaje pixelado, unos intereses y las propias cartas. Con una foto o unas palabras sobre tu aspecto dibujamos un personaje con el mismo estilo (no guardamos la foto). Sabes cómo piensa alguien antes de saber cómo es.' },
   ],
   blogTitle: 'Para leer',
   blog: [
@@ -67,5 +67,5 @@ export const es: HomeCopy = {
   inEnglish: 'en inglés',
   ctaTitle: 'Una carta esta noche',
   ctaSub: 'Mañana por la mañana alguien la lee al otro lado del mundo.',
-  footer: { tag: 'Cartas lentas, personas reales', privacy: 'Política de privacidad', terms: 'Términos del servicio', dev: 'Desarrollador: junhyeong kim', languages: 'Idiomas' },
+  footer: { tag: 'Cartas lentas, amigos lejanos', privacy: 'Política de privacidad', terms: 'Términos del servicio', dev: 'Desarrollador: junhyeong kim', languages: 'Idiomas' },
 };

@@ -4,11 +4,14 @@ import { Metadata } from 'next';
 import { Globe } from 'lucide-react';
 import { koEnAlternates } from '@/i18n/config';
 import GuideArticle, { GuideSection, GuideTable } from '@/components/GuideArticle';
-import { COUNTRY_KO as C, LETTER_MAP as D } from '@/data/letterMap';
+import { COUNTRY_KO as C, LETTER_MAP as D, koMonth, topRoutes } from '@/data/letterMap';
+
+const PERIOD = `${koMonth(D.period.from)}부터 ${koMonth(D.period.to)}까지`;
+const TOP = topRoutes();
 
 const URL = 'https://lettie-dating.com/letter-map';
 const TITLE = `레티 편지 지도: ${D.countries}개국 사이 편지 ${D.letters}통`;
-const DESC = `2025년 6월부터 2026년 9월까지 레티에서 사람끼리 주고받은 편지 ${D.letters}통이 ${D.countries}개 나라 사이를 어떻게 오갔는지, 가장 많이 오간 경로와 집계 방법.`;
+const DESC = `${PERIOD} 레티에서 사람끼리 주고받은 편지 ${D.letters}통이 ${D.countries}개 나라 사이를 어떻게 오갔는지, 가장 많이 오간 경로와 집계 방법.`;
 
 export const metadata: Metadata = {
   title: { absolute: `${TITLE} | Lettie` },
@@ -20,9 +23,9 @@ export const metadata: Metadata = {
 };
 
 const FAQS = [
-  { q: '레티에서 사람들이 주고받은 편지는 몇 통인가요?', a: `2025년 6월부터 2026년 9월까지 사람끼리 주고받은 편지는 ${D.letters}통입니다(${D.asOf} 집계). 앱의 AI 캐릭터가 쓴 편지와 개발자 테스트 계정은 뺐습니다.` },
+  { q: '레티에서 사람들이 주고받은 편지는 몇 통인가요?', a: `${PERIOD} 사람끼리 주고받은 편지는 ${D.letters}통입니다(${D.asOf} 집계). 앱의 AI 캐릭터가 쓴 편지와 개발자 테스트 계정은 뺐습니다.` },
   { q: '레티에서 편지를 가장 많이 쓰는 나라는 어디인가요?', a: `${D.asOf} 기준 미국(보내거나 받은 편지 ${D.byCountry[0][1]}통), 한국(${D.byCountry[1][1]}통), 튀르키예(${D.byCountry[2][1]}통) 순입니다.` },
-  { q: '가장 많이 오간 경로는 어디인가요?', a: `${D.asOf} 기준 아랍에미리트–튀르키예와 한국–미국이 양방향 합쳐 각각 17통으로 가장 많습니다.` },
+  { q: '가장 많이 오간 경로는 어디인가요?', a: `${D.asOf} 기준 ${TOP.map(([a, b]) => `${C[a] ?? a}–${C[b] ?? b}`).join(', ')}${TOP.length > 1 ? '이 각각' : '이'} 양방향 합쳐 ${TOP[0][2]}통으로 가장 많습니다.` },
 ];
 
 export default function LetterMapPage() {
@@ -32,8 +35,8 @@ export default function LetterMapPage() {
       path="/letter-map"
       parent={null}
       title="레티 편지 지도"
-      subtitle={`${D.countries}개 나라 사람들이 주고받은 편지 ${D.letters}통, 2025년 6월 ~ 2026년 9월.`}
-      answer={<><strong>2025년 6월부터 2026년 9월까지 레티에서 사람끼리 주고받은 편지는 {D.countries}개 나라 사이 {D.letters}통입니다.</strong> 나라와 나라 사이 {D.international}통, 같은 나라 안 {D.domestic}통이며, {D.asOf}에 앱 데이터베이스에서 집계했습니다.</>}
+      subtitle={`${D.countries}개 나라 사람들이 주고받은 편지 ${D.letters}통, ${koMonth(D.period.from)} ~ ${koMonth(D.period.to)}.`}
+      answer={<><strong>{PERIOD} 레티에서 사람끼리 주고받은 편지는 {D.countries}개 나라 사이 {D.letters}통입니다.</strong> 나라와 나라 사이 {D.international}통, 같은 나라 안 {D.domestic}통이며, {D.asOf}에 앱 데이터베이스에서 집계했습니다.</>}
       icon={<Globe className="w-8 h-8" />}
       accent="from-blue-500 to-indigo-500"
       updated={D.asOf}

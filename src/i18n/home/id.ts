@@ -31,7 +31,7 @@ export const id: HomeCopy = {
     ['Temukan: memungut surat yang dilepas', 'Setiap hari, tiga amplop baru mendekat. Gratis sudah lebih dari cukup; tonton satu iklan sehari untuk dapat lebih.'],
     ['Terjemahan AI, lebih dari 70 bahasa', 'Saat membuka surat ada tombol terjemahkan, teks asli dan terjemahan berdampingan. Aplikasinya sendiri juga tersedia dalam lebih dari 70 bahasa.'],
     ['Prangko dari setiap negara', 'Negara yang berkirim surat denganmu diwarnai di bola dunia dan prangkonya masuk album. Ada juga undian prangko piksel acak.'],
-    ['Karakter sebagai ganti foto', 'Profil dimulai sebagai karakter piksel. Enam belas gratis; gambarkan penampilanmu dengan kata-kata dan kami menggambarnya dengan gaya yang sama.'],
+    ['Karakter sebagai ganti foto', 'Profil dimulai sebagai karakter piksel. Enam belas gratis, dan dari satu foto atau beberapa kata tentang penampilanmu kami menggambar karaktermu dengan gaya yang sama. Yang pertama gratis dan fotonya tidak disimpan.'],
     ['Perkenalan hari ini, tanpa geser', 'Hanya beberapa kartu perkenalan sehari. Tanpa skor, tanpa geser tanpa akhir. Kalau ada yang menarik, mulai dengan satu surat.'],
   ],
   cmpTitle: 'Apa bedanya dengan Slowly?',
@@ -40,7 +40,7 @@ export const id: HomeCopy = {
   cmpRows: [
     ['Surat pertama', 'Memungut surat yang dilepas orang lain (Temukan)', 'Pencocokan minat · surat terbuka'],
     ['Terjemahan', 'Di dalam aplikasi, sekali ketuk, lebih dari 70 bahasa, gratis', 'Alat eksternal atau fitur berbayar'],
-    ['Profil', 'Karakter piksel; kamu gambarkan, kami gambar', 'Penyusun avatar'],
+    ['Profil', 'Karakter piksel; milikmu dari foto atau kata-kata', 'Penyusun avatar'],
     ['Perkenalan', 'Beberapa kartu sehari', 'Tidak ada (pencarian sahabat pena)'],
     ['Prangko', 'Per negara + undian prangko piksel, bisa ditempel di surat', 'Koleksi prangko per negara'],
   ],
@@ -48,10 +48,10 @@ export const id: HomeCopy = {
   cmpNote: 'Berdasarkan informasi publik per September 2026. Slowly aplikasi yang bagus; coba keduanya dan pilih yang cocok.',
   faqTitle: 'Pertanyaan yang sering diajukan',
   faqs: [
-    { q: 'Apakah Lettie gratis?', a: 'Ya. Menulis, memungut surat, terjemahan, dan enam belas karakter dasar semuanya gratis. Permata hanya untuk tambahan seperti percakapan tanpa batas, undian prangko, atau karakter khusus.' },
+    { q: 'Apakah Lettie gratis?', a: 'Ya. Menulis, memungut surat, terjemahan, enam belas karakter dasar, dan karakter khusus pertamamu semuanya gratis. Permata hanya untuk tambahan seperti percakapan tanpa batas, undian prangko, atau karakter kedua.' },
     { q: 'Berapa lama surat sampai?', a: 'Dihitung dari jarak sebenarnya antara dua kota. Satu sampai dua jam di dalam negeri, beberapa jam ke negara tetangga, hampir sehari ke belahan dunia lain. Sambil menunggu, kamu bisa melihat amplopnya di bola dunia.' },
     { q: 'Bisa punya sahabat pena tanpa bisa bahasanya?', a: 'Bisa. Setiap surat punya tombol terjemahkan, dan teks aslinya tetap di samping terjemahan. Dengan lebih dari 70 bahasa, kamu menulis dalam bahasamu dan dia membaca dalam bahasanya.' },
-    { q: 'Bagaimana mengenal orang tanpa foto?', a: 'Profil terdiri dari karakter piksel, beberapa minat, dan surat-suratnya sendiri. Gambarkan penampilanmu dengan kata-kata dan kami menggambar karakter dengan gaya yang sama. Kamu tahu cara seseorang berpikir sebelum tahu rupanya.' },
+    { q: 'Bagaimana mengenal orang tanpa foto?', a: 'Profil terdiri dari karakter piksel, beberapa minat, dan surat-suratnya sendiri. Dari satu foto atau beberapa kata tentang penampilanmu, kami menggambar karakter dengan gaya yang sama (fotonya tidak disimpan). Kamu tahu cara seseorang berpikir sebelum tahu rupanya.' },
   ],
   blogTitle: 'Bacaan',
   blog: [
@@ -67,5 +67,5 @@ export const id: HomeCopy = {
   inEnglish: 'dalam bahasa Inggris',
   ctaTitle: 'Satu surat malam ini',
   ctaSub: 'Besok pagi seseorang membacanya di belahan dunia lain.',
-  footer: { tag: 'Surat pelan, orang sungguhan', privacy: 'Kebijakan privasi', terms: 'Ketentuan layanan', dev: 'Pengembang: junhyeong kim', languages: 'Bahasa' },
+  footer: { tag: 'Surat pelan, teman jauh', privacy: 'Kebijakan privasi', terms: 'Ketentuan layanan', dev: 'Pengembang: junhyeong kim', languages: 'Bahasa' },
 };

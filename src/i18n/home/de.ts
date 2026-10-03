@@ -31,7 +31,7 @@ export const de: HomeCopy = {
     ['Entdecken: losgelassene Briefe aufheben', 'Jeden Tag kommen drei neue Umschläge näher. Kostenlos reicht völlig; mit einer Werbung am Tag bekommst du mehr.'],
     ['KI-Übersetzung, über 70 Sprachen', 'Beim Öffnen eines Briefs gibt es einen Übersetzen-Knopf, Original und Übersetzung nebeneinander. Die App selbst spricht ebenfalls über 70 Sprachen.'],
     ['Eine Briefmarke aus jedem Land', 'Länder, mit denen du schreibst, werden auf dem Globus eingefärbt, ihre Marken wandern ins Album. Dazu zufällige Pixel-Marken.'],
-    ['Ein Charakter statt Foto', 'Das Profil beginnt als Pixel-Charakter. Sechzehn sind kostenlos; beschreib dein Aussehen in Worten, und wir zeichnen deinen im selben Stil.'],
+    ['Ein Charakter statt Foto', 'Das Profil beginnt als Pixel-Charakter. Sechzehn sind kostenlos, und aus einem Foto oder ein paar Worten über dein Aussehen zeichnen wir deinen im selben Stil. Der erste ist kostenlos, das Foto wird nicht gespeichert.'],
     ['Vorstellungen des Tages, ohne Wischen', 'Ein paar Vorstellungskarten am Tag. Keine Punkte, kein endloses Wischen. Klingt jemand interessant, fängst du mit einem Brief an.'],
   ],
   cmpTitle: 'Was unterscheidet Lettie von Slowly?',
@@ -40,7 +40,7 @@ export const de: HomeCopy = {
   cmpRows: [
     ['Erster Brief', 'Du hebst Briefe auf, die andere losgelassen haben (Entdecken)', 'Interessen-Matching · offene Briefe'],
     ['Übersetzung', 'In der App, ein Tipp, über 70 Sprachen, kostenlos', 'Externe Tools oder Bezahlfunktion'],
-    ['Profil', 'Pixel-Charakter; du beschreibst, wir zeichnen', 'Avatar-Baukasten'],
+    ['Profil', 'Pixel-Charakter; deiner aus Foto oder Worten', 'Avatar-Baukasten'],
     ['Vorstellungen', 'Ein paar Karten am Tag', 'Keine (Brieffreund-Suche)'],
     ['Briefmarken', 'Pro Land + Pixel-Marken ziehen, auf Briefe kleben', 'Markensammlung pro Land'],
   ],
@@ -48,10 +48,10 @@ export const de: HomeCopy = {
   cmpNote: 'Nach öffentlichen Informationen, Stand September 2026. Slowly ist eine schöne App – probier beide und behalte die, die passt.',
   faqTitle: 'Häufige Fragen',
   faqs: [
-    { q: 'Ist Lettie kostenlos?', a: 'Ja. Schreiben, Briefe aufheben, Übersetzen und die sechzehn Basis-Charaktere sind kostenlos. Edelsteine braucht man nur für Extras wie unbegrenzte Gespräche, Markenziehungen oder einen eigenen Charakter.' },
+    { q: 'Ist Lettie kostenlos?', a: 'Ja. Schreiben, Briefe aufheben, Übersetzen, die sechzehn Basis-Charaktere und dein erster eigener Charakter sind kostenlos. Edelsteine braucht man nur für Extras wie unbegrenzte Gespräche, Markenziehungen oder einen zweiten Charakter.' },
     { q: 'Wie lange braucht ein Brief?', a: 'Die Zeit wird aus der echten Entfernung zwischen zwei Städten berechnet. Ein bis zwei Stunden im eigenen Land, ein paar Stunden ins Nachbarland, fast ein Tag ans andere Ende der Welt. Während du wartest, siehst du den Umschlag auf dem Globus.' },
     { q: 'Geht ein Brieffreund auch ohne dessen Sprache?', a: 'Ja. Jeder Brief hat einen Übersetzen-Knopf, und das Original bleibt neben der Übersetzung. Mit über 70 Sprachen schreibst du in deiner und der andere liest in seiner.' },
-    { q: 'Wie lerne ich jemanden ohne Fotos kennen?', a: 'Ein Profil besteht aus einem Pixel-Charakter, ein paar Interessen und den Briefen selbst. Beschreib dein Aussehen in Worten, und wir zeichnen einen Charakter im selben Stil. Du erfährst, wie jemand denkt, bevor du weißt, wie er aussieht.' },
+    { q: 'Wie lerne ich jemanden ohne Fotos kennen?', a: 'Ein Profil besteht aus einem Pixel-Charakter, ein paar Interessen und den Briefen selbst. Aus einem Foto oder ein paar Worten über dein Aussehen zeichnen wir einen Charakter im selben Stil (das Foto wird nicht gespeichert). Du erfährst, wie jemand denkt, bevor du weißt, wie er aussieht.' },
   ],
   blogTitle: 'Zum Lesen',
   blog: [
@@ -67,5 +67,5 @@ export const de: HomeCopy = {
   inEnglish: 'auf Englisch',
   ctaTitle: 'Heute Abend ein Brief',
   ctaSub: 'Morgen früh liest ihn jemand am anderen Ende der Welt.',
-  footer: { tag: 'Langsame Briefe, echte Menschen', privacy: 'Datenschutz', terms: 'Nutzungsbedingungen', dev: 'Entwickler: junhyeong kim', languages: 'Sprachen' },
+  footer: { tag: 'Langsame Briefe, ferne Freunde', privacy: 'Datenschutz', terms: 'Nutzungsbedingungen', dev: 'Entwickler: junhyeong kim', languages: 'Sprachen' },
 };

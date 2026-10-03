@@ -31,7 +31,7 @@ export const en: HomeCopy = {
     ['Discover — pick up released letters', 'Three new envelopes drift close once a day. Free is plenty; watch one ad a day for more.'],
     ['AI translation, 70+ languages', 'Open a letter and there’s a translate button, original and translation side by side. The app itself speaks 70+ languages too.'],
     ['A stamp from every country', 'Countries you exchange with get painted on the globe and their stamps go in your album. Random pixel stamps too.'],
-    ['A character instead of a photo', 'Profiles start as pixel characters. Sixteen are free; describe your look in words and we draw yours in the same style.'],
+    ['A character instead of a photo', 'Profiles start as pixel characters. Sixteen are free, and a selfie or a few words about your look becomes your own character in the same style. Your first one is free, and the photo isn’t kept.'],
     ['Today’s introductions — no swiping', 'A few introduction cards a day. No scores, no endless swiping. If someone sounds interesting, you start with one letter.'],
   ],
   cmpTitle: 'How is this different from Slowly?',
@@ -40,7 +40,7 @@ export const en: HomeCopy = {
   cmpRows: [
     ['First letter', 'Pick up letters strangers released (Discover)', 'Interest matching · open letters'],
     ['Translation', 'In-app, one tap, 70+ languages, free', 'External tools or a paid feature'],
-    ['Profile', 'Pixel character; describe it and we draw it', 'Avatar builder'],
+    ['Profile', 'Pixel character; yours drawn from a photo or words', 'Avatar builder'],
     ['Introductions', 'A few introduction cards a day', 'None (pen-pal search)'],
     ['Stamps', 'Per country + pixel stamp draws, stick them on letters', 'Per-country stamp collecting'],
   ],
@@ -48,10 +48,10 @@ export const en: HomeCopy = {
   cmpNote: 'Based on public information as of September 2026. Slowly is a lovely app — try both and keep the one that fits.',
   faqTitle: 'Questions people ask',
   faqs: [
-    { q: 'Is Lettie free?', a: 'Yes. Writing, picking up letters, translation and the sixteen base characters are all free. Gems are only for extras like unlimited conversations, stamp draws or a custom character.' },
+    { q: 'Is Lettie free?', a: 'Yes. Writing, picking up letters, translation, the sixteen base characters and your first custom character are all free. Gems are only for extras like unlimited conversations, stamp draws or a second character.' },
     { q: 'How long does a letter take to arrive?', a: 'It comes from the distance between the two countries. One to two hours within a country, a few hours to a neighbouring one, close to a day for the other side of the world. You can watch the envelope on the globe while you wait.' },
     { q: 'Can I have a pen pal without speaking their language?', a: 'Yes. Every letter has a translate button, and the original sits next to the translation. With 70+ languages, you write in yours and they read in theirs.' },
-    { q: 'How do I get to know someone without photos?', a: 'A profile is a pixel character, a few interests and the letters themselves. Describe your look in words and we draw a character in the same style. You learn how someone thinks before what they look like.' },
+    { q: 'How do I get to know someone without photos?', a: 'A profile is a pixel character, a few interests and the letters themselves. A selfie or a few words about your look can become a character in the same style (the photo isn’t kept). You learn how someone thinks before what they look like.' },
   ],
   blogTitle: 'Reading',
   blog: [
@@ -67,5 +67,5 @@ export const en: HomeCopy = {
   inEnglish: 'English',
   ctaTitle: 'One letter tonight',
   ctaSub: 'Someone on the other side of the world reads it tomorrow morning.',
-  footer: { tag: 'Slow letters, real people', privacy: 'Privacy Policy', terms: 'Terms of Service', dev: 'Developer: junhyeong kim', languages: 'Languages' },
+  footer: { tag: 'Slow letters, faraway friends', privacy: 'Privacy Policy', terms: 'Terms of Service', dev: 'Developer: junhyeong kim', languages: 'Languages' },
 };

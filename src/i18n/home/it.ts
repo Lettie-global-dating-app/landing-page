@@ -31,7 +31,7 @@ export const it: HomeCopy = {
     ['Scopri: raccogliere lettere lanciate', 'Ogni giorno si avvicinano tre buste nuove. Il gratuito basta e avanza; con una pubblicità al giorno ne ricevi altre.'],
     ['Traduzione IA, oltre 70 lingue', 'Aprendo una lettera c’è un pulsante per tradurre, con originale e traduzione affiancati. Anche l’app parla oltre 70 lingue.'],
     ['Un francobollo da ogni paese', 'I paesi con cui ti scrivi si colorano sul mappamondo e i loro francobolli vanno nell’album. Ci sono anche francobolli pixel casuali.'],
-    ['Un personaggio al posto della foto', 'Il profilo parte da un personaggio pixel. Sedici sono gratis; descrivi il tuo aspetto a parole e disegniamo il tuo nello stesso stile.'],
+    ['Un personaggio al posto della foto', 'Il profilo parte da un personaggio pixel. Sedici sono gratis, e da una foto o poche parole sul tuo aspetto disegniamo il tuo nello stesso stile. Il primo è gratis e la foto non viene conservata.'],
     ['Le presentazioni del giorno, senza swipe', 'Poche carte di presentazione al giorno. Niente punteggi, niente scorrimento infinito. Se qualcuno ti incuriosisce, inizi con una lettera.'],
   ],
   cmpTitle: 'In cosa è diverso da Slowly?',
@@ -40,7 +40,7 @@ export const it: HomeCopy = {
   cmpRows: [
     ['Prima lettera', 'Raccogli lettere lanciate da altri (Scopri)', 'Abbinamento per interessi · lettere aperte'],
     ['Traduzione', 'Nell’app, un tocco, oltre 70 lingue, gratis', 'Strumenti esterni o funzione a pagamento'],
-    ['Profilo', 'Personaggio pixel; lo descrivi e lo disegniamo', 'Editor di avatar'],
+    ['Profilo', 'Personaggio pixel; il tuo da una foto o da parole', 'Editor di avatar'],
     ['Presentazioni', 'Poche carte al giorno', 'Nessuna (ricerca di corrispondenti)'],
     ['Francobolli', 'Per paese + pesca di francobolli pixel, da attaccare alle lettere', 'Collezione di francobolli per paese'],
   ],
@@ -48,10 +48,10 @@ export const it: HomeCopy = {
   cmpNote: 'In base a informazioni pubbliche a settembre 2026. Slowly è un’ottima app: provale entrambe e tieni quella che fa per te.',
   faqTitle: 'Domande frequenti',
   faqs: [
-    { q: 'Lettie è gratis?', a: 'Sì. Scrivere, raccogliere lettere, tradurre e i sedici personaggi base sono gratis. Le gemme servono solo per gli extra: conversazioni illimitate, pesca di francobolli o un personaggio personalizzato.' },
+    { q: 'Lettie è gratis?', a: 'Sì. Scrivere, raccogliere lettere, tradurre, i sedici personaggi base e il tuo primo personaggio personalizzato sono gratis. Le gemme servono solo per gli extra: conversazioni illimitate, pesca di francobolli o un secondo personaggio.' },
     { q: 'Quanto ci mette una lettera ad arrivare?', a: 'Si calcola sulla distanza reale tra due città. Da una a due ore nello stesso paese, qualche ora verso un paese vicino, quasi un giorno per l’altra parte del mondo. Mentre aspetti vedi la busta sul mappamondo.' },
     { q: 'Posso avere un amico di penna senza parlare la sua lingua?', a: 'Sì. Ogni lettera ha un pulsante per tradurre e l’originale resta accanto alla traduzione. Con oltre 70 lingue, tu scrivi nella tua e l’altro legge nella sua.' },
-    { q: 'Come conosco qualcuno senza foto?', a: 'Un profilo è un personaggio pixel, qualche interesse e le lettere stesse. Descrivi il tuo aspetto a parole e disegniamo un personaggio nello stesso stile. Scopri come pensa una persona prima di sapere com’è fatta.' },
+    { q: 'Come conosco qualcuno senza foto?', a: 'Un profilo è un personaggio pixel, qualche interesse e le lettere stesse. Da una foto o poche parole sul tuo aspetto disegniamo un personaggio nello stesso stile (la foto non viene conservata). Scopri come pensa una persona prima di sapere com’è fatta.' },
   ],
   blogTitle: 'Da leggere',
   blog: [
@@ -67,5 +67,5 @@ export const it: HomeCopy = {
   inEnglish: 'in inglese',
   ctaTitle: 'Una lettera stasera',
   ctaSub: 'Domani mattina qualcuno la legge dall’altra parte del mondo.',
-  footer: { tag: 'Lettere lente, persone vere', privacy: 'Informativa sulla privacy', terms: 'Termini di servizio', dev: 'Sviluppatore: junhyeong kim', languages: 'Lingue' },
+  footer: { tag: 'Lettere lente, amici lontani', privacy: 'Informativa sulla privacy', terms: 'Termini di servizio', dev: 'Sviluppatore: junhyeong kim', languages: 'Lingue' },
 };
