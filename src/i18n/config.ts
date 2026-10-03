@@ -5,12 +5,16 @@
  * 기존 순위를 버리게 된다. 나머지 언어는 `/[locale]` 아래로 붙인다.
  * `/en` 도 기존 경로 그대로 유지되므로 색인 손실이 없다.
  */
-// 2026-10-04: 홍보 영상이 있는 13개 언어 추가(bn·fil·tr·vi·th·ms·sw·pl·nl·uk·ro·el·cs). 오른쪽에서 왼쪽으로 쓰는 ar·fa·ur 은 dir 처리 전까지 보류.
+// 2026-10-04: 홍보 영상이 있는 16개 언어 추가(bn·fil·tr·vi·th·ms·sw·pl·nl·uk·ro·el·cs + 오른쪽에서 왼쪽 ar·fa·ur).
 // 새 언어를 넣으면 netlify/edge-functions/html-lang.mjs 목록과 next.config.ts 리다이렉트 정규식에도 넣는다.
 export const LOCALES = [
   'en', 'es', 'pt', 'ja', 'fr', 'zh', 'de', 'hi', 'id', 'ru', 'it',
   'bn', 'fil', 'tr', 'vi', 'th', 'ms', 'sw', 'pl', 'nl', 'uk', 'ro', 'el', 'cs',
+  'ar', 'fa', 'ur',
 ] as const;
+
+/** 오른쪽에서 왼쪽으로 쓰는 언어. 엣지 함수가 <html dir="rtl"> 을 붙이고, 컴포넌트는 논리 속성(ms·me·start·end)을 쓴다. */
+export const RTL_LOCALES: readonly string[] = ['ar', 'fa', 'ur'];
 export type Locale = (typeof LOCALES)[number];
 
 /** 루트(`/`)가 담당하는 언어. 경로 접두사가 없다. */
@@ -24,6 +28,7 @@ export const HREFLANG: Record<string, string> = {
   zh: 'zh', de: 'de', hi: 'hi', id: 'id', ru: 'ru', it: 'it',
   // 구글 hreflang 은 ISO 639-1 — 필리피노는 tl(타갈로그)로 표기한다. 경로·html lang 은 앱과 같은 fil.
   bn: 'bn', fil: 'tl', tr: 'tr', vi: 'vi', th: 'th', ms: 'ms', sw: 'sw', pl: 'pl', nl: 'nl', uk: 'uk', ro: 'ro', el: 'el', cs: 'cs',
+  ar: 'ar', fa: 'fa', ur: 'ur',
 };
 
 export const OG_LOCALE: Record<string, string> = {
@@ -31,6 +36,7 @@ export const OG_LOCALE: Record<string, string> = {
   zh: 'zh_CN', de: 'de_DE', hi: 'hi_IN', id: 'id_ID', ru: 'ru_RU', it: 'it_IT',
   bn: 'bn_BD', fil: 'fil_PH', tr: 'tr_TR', vi: 'vi_VN', th: 'th_TH', ms: 'ms_MY', sw: 'sw_KE',
   pl: 'pl_PL', nl: 'nl_NL', uk: 'uk_UA', ro: 'ro_RO', el: 'el_GR', cs: 'cs_CZ',
+  ar: 'ar_AR', fa: 'fa_IR', ur: 'ur_PK',
 };
 
 /** 언어 전환 링크에 쓰는 표기. 각 언어를 그 언어로 적는다. */
@@ -40,6 +46,7 @@ export const LOCALE_NAMES: Record<string, string> = {
   ru: 'Русский', it: 'Italiano',
   bn: 'বাংলা', fil: 'Filipino', tr: 'Türkçe', vi: 'Tiếng Việt', th: 'ไทย', ms: 'Bahasa Melayu', sw: 'Kiswahili',
   pl: 'Polski', nl: 'Nederlands', uk: 'Українська', ro: 'Română', el: 'Ελληνικά', cs: 'Čeština',
+  ar: 'العربية', fa: 'فارسی', ur: 'اردو',
 };
 
 export function isLocale(value: string): value is Locale {

@@ -46,7 +46,8 @@ const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
 function html(lang, c) {
   const file = (p) => pathToFileURL(join(ROOT, 'public', p)).href;
   const stat = ([v, l]) => `<div class="stat"><b>${esc(v)}</b><span>${esc(l)}</span></div>`;
-  return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><style>
+  const rtl = ['ar', 'fa', 'ur'].includes(lang);
+  return `<!doctype html><html lang="${lang}"${rtl ? ' dir="rtl"' : ''}><head><meta charset="utf-8"><style>
   *{box-sizing:border-box;margin:0}
   html,body{width:1200px;height:630px;overflow:hidden}
   body{background:radial-gradient(120% 90% at 30% 20%,#1B3160 0%,#102040 45%,#0A142C 100%);color:#F5ECD8;
@@ -68,6 +69,9 @@ function html(lang, c) {
   .phone{position:absolute;right:58px;top:52px;width:300px;height:620px;border-radius:44px;background:#0B1530;border:2px solid #2B3D68;
     box-shadow:0 30px 80px -20px #000c;transform:rotate(-5deg);overflow:hidden;padding:10px}
   .phone img{width:100%;height:100%;object-fit:cover;border-radius:34px}
+  [dir=rtl] .left{left:auto;right:72px}
+  [dir=rtl] .phone{right:auto;left:58px;transform:rotate(5deg)}
+  [dir=rtl] .stat b{direction:ltr;text-align:right}
   </style></head><body><div class="stars"></div>
   <div class="left">
     <div class="brand"><img src="${file('lettie-icon.png')}">Lettie</div>

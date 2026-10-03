@@ -6,7 +6,9 @@
 const LOCALES = [
   'en', 'es', 'pt', 'ja', 'fr', 'zh', 'de', 'hi', 'id', 'ru', 'it',
   'bn', 'fil', 'tr', 'vi', 'th', 'ms', 'sw', 'pl', 'nl', 'uk', 'ro', 'el', 'cs',
+  'ar', 'fa', 'ur',
 ];
+const RTL = ['ar', 'fa', 'ur'];
 
 export default async (request, context) => {
   const res = await context.next();
@@ -16,7 +18,8 @@ export default async (request, context) => {
   if (!LOCALES.includes(seg)) return res;
   const html = await res.text();
   if (!html.includes('<html lang="ko"')) return new Response(html, res);
-  const out = new Response(html.replace('<html lang="ko"', `<html lang="${seg}"`), res);
+  const attrs = RTL.includes(seg) ? `lang="${seg}" dir="rtl"` : `lang="${seg}"`;
+  const out = new Response(html.replace('<html lang="ko"', `<html ${attrs}`), res);
   out.headers.set('content-language', seg);
   out.headers.delete('content-length');
   out.headers.delete('content-encoding');
@@ -30,6 +33,7 @@ export const config = {
     '/de', '/de/*', '/hi', '/hi/*', '/id', '/id/*', '/ru', '/ru/*', '/it', '/it/*',
     '/bn', '/bn/*', '/fil', '/fil/*', '/tr', '/tr/*', '/vi', '/vi/*', '/th', '/th/*', '/ms', '/ms/*', '/sw', '/sw/*',
     '/pl', '/pl/*', '/nl', '/nl/*', '/uk', '/uk/*', '/ro', '/ro/*', '/el', '/el/*', '/cs', '/cs/*',
+    '/ar', '/ar/*', '/fa', '/fa/*', '/ur', '/ur/*',
   ],
   onError: 'bypass',
 };

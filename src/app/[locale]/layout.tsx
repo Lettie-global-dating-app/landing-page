@@ -1,7 +1,7 @@
 import { extraHomeKeywords } from '@/data/faq';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { LOCALES, OG_LOCALE, SITE_URL, isLocale, languageAlternates, urlFor } from '@/i18n/config';
+import { LOCALES, OG_LOCALE, RTL_LOCALES, SITE_URL, isLocale, languageAlternates, urlFor } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionaries';
 import { getHomeCopy } from '@/i18n/home';
 import { seoDesc } from '@/lib/seo';
@@ -96,7 +96,7 @@ export default async function LocaleLayout({
         언어 판별의 실제 신호는 hreflang 과 본문이 담당한다.
       */}
       <script
-        dangerouslySetInnerHTML={{ __html: `document.documentElement.lang='${locale}';` }}
+        dangerouslySetInnerHTML={{ __html: `document.documentElement.lang='${locale}';document.documentElement.dir='${RTL_LOCALES.includes(locale) ? 'rtl' : 'ltr'}';` }}
       />
       <script
         type="application/ld+json"

@@ -54,7 +54,7 @@ function LanguageMenu({ current, label }: { current: string; label: string }) {
         {LOCALE_NAMES[current]}
         <ChevronDown className="w-3.5 h-3.5 transition-transform group-open:rotate-180" />
       </summary>
-      <ul className="absolute right-0 mt-2 w-48 max-h-80 overflow-auto rounded-2xl border border-line bg-sky1 p-2 shadow-[0_30px_60px_-20px_rgba(0,0,0,0.8)] z-50">
+      <ul className="absolute end-0 mt-2 w-48 max-h-80 overflow-auto rounded-2xl border border-line bg-sky1 p-2 shadow-[0_30px_60px_-20px_rgba(0,0,0,0.8)] z-50">
         {all.map((l) => (
           <li key={l}>
             <a href={l === ROOT_LOCALE ? '/' : `/${l}`} hrefLang={l} lang={l} data-set-lang={l} className={`block rounded-xl px-3 py-2 text-sm hover:bg-sky2 ${l === current ? 'text-star font-semibold' : 'text-ink2 hover:text-paper'}`}>
@@ -127,7 +127,7 @@ export default function Home2({ lang }: { lang: string }) {
       <section className="relative container mx-auto px-4 pt-10 pb-20 md:pt-16 md:pb-28 overflow-hidden">
         <div className="stars pointer-events-none" aria-hidden />
         <div className="relative grid lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-16 items-center max-w-6xl mx-auto">
-          <div className="text-center lg:text-left">
+          <div className="text-center lg:text-start">
             <Eyebrow>{t.eyebrow}</Eyebrow>
             <h1 className="text-[2.6rem] leading-[1.08] sm:text-5xl md:text-6xl xl:text-7xl font-bold md:leading-[1.05] tracking-tight mb-7 text-balance">
               {t.h1a}
@@ -163,7 +163,8 @@ export default function Home2({ lang }: { lang: string }) {
         <dl className="relative mt-16 md:mt-20 grid grid-cols-3 gap-3 md:gap-4 max-w-3xl mx-auto text-center">
           {t.stats.map(([n, l]) => (
             <div key={l} className="rounded-2xl border border-line bg-sky2/40 px-2 py-4 md:px-3 md:py-5">
-              <dt className="font-mono text-xl sm:text-2xl md:text-4xl font-bold text-star whitespace-nowrap">{n}</dt>
+              {/* 숫자·단위는 오른쪽에서 왼쪽 언어에서도 왼→오로 (안 그러면 "1–24h" 가 "24h-1", "70+" 가 "+70" 로 보인다) */}
+              <dt dir="ltr" className="font-mono text-xl sm:text-2xl md:text-4xl font-bold text-star whitespace-nowrap">{n}</dt>
               <dd className="mt-1 text-[11px] sm:text-xs md:text-sm text-ink2 leading-snug">{l}</dd>
             </div>
           ))}
@@ -224,7 +225,7 @@ export default function Home2({ lang }: { lang: string }) {
             <p className="text-lg text-ink2 text-pretty">{t.cmpSub}</p>
           </div>
           <div className="overflow-x-auto rounded-2xl border border-line">
-            <table className="w-full text-left text-[15px] min-w-[560px]">
+            <table className="w-full text-start text-[15px] min-w-[560px]">
               <thead className="bg-sky2/60 text-ink2">
                 <tr>{t.cmpHead.map((h, i) => <th key={i} className={`px-5 py-4 font-semibold ${i === 1 ? 'text-star' : ''}`}>{h}</th>)}</tr>
               </thead>
@@ -242,7 +243,7 @@ export default function Home2({ lang }: { lang: string }) {
           <p className="mt-4 text-sm text-ink3">{t.cmpNote}</p>
           <div className="mt-6 text-center">
             <Link href={`${contentBase}/blog/lettie-vs-slowly`} className="inline-flex items-center gap-2 text-star font-semibold hover:underline">
-              {t.cmpLink}{foreignContent && <span className="text-ink3 font-normal text-sm">({t.inEnglish})</span>} <ArrowRight className="w-4 h-4" />
+              {t.cmpLink}{foreignContent && <span className="text-ink3 font-normal text-sm">({t.inEnglish})</span>} <ArrowRight className="w-4 h-4 rtl:-scale-x-100" />
             </Link>
           </div>
         </div>
@@ -268,7 +269,7 @@ export default function Home2({ lang }: { lang: string }) {
           </div>
           <div className="mt-6 text-center">
             <Link href={faqHref} className="inline-flex items-center gap-2 text-star font-semibold hover:underline">
-              {t.nav.faq} <ArrowRight className="w-4 h-4" />
+              {t.nav.faq} <ArrowRight className="w-4 h-4 rtl:-scale-x-100" />
             </Link>
           </div>
         </div>
@@ -295,7 +296,7 @@ export default function Home2({ lang }: { lang: string }) {
               </Link>
             ))}
           </div>
-          <h2 className="text-2xl font-bold tracking-tight mb-5">{t.guideTitle}{foreignContent && <span className="ml-2 text-sm font-normal text-ink3">({t.inEnglish})</span>}</h2>
+          <h2 className="text-2xl font-bold tracking-tight mb-5">{t.guideTitle}{foreignContent && <span className="ms-2 text-sm font-normal text-ink3">({t.inEnglish})</span>}</h2>
           <div className="flex flex-wrap gap-3">
             {t.guides.map(([slug, label]) => (
               <Link key={slug} href={`${contentBase}/guide/${slug}`} className="rounded-full border border-line px-4 py-2 text-sm text-ink2 hover:text-paper hover:border-paper/40 transition-colors">{label}</Link>

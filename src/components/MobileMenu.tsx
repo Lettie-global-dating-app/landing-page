@@ -32,7 +32,7 @@ export default function MobileMenu({
     <div className="lg:hidden">
       <button
         onClick={() => setIsOpen((v) => !v)}
-        className="p-2 -mr-2 text-current hover:opacity-80 transition-opacity"
+        className="p-2 -me-2 text-current hover:opacity-80 transition-opacity"
         aria-label={isOpen ? 'close menu' : 'open menu'}
         aria-expanded={isOpen}
       >
