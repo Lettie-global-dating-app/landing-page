@@ -65,5 +65,5 @@ export const ko = {
   inEnglish: '영어',
   ctaTitle: '오늘 밤, 편지 한 통',
   ctaSub: '내일 아침 지구 반대편에서 누군가 읽습니다.',
-  footer: { tag: '느린 편지, 먼 곳의 친구', privacy: '개인정보 처리방침', terms: '서비스 이용약관', dev: '개발자: junhyeong kim', languages: '언어' },
+  footer: { tag: '느린 편지, 먼 곳의 친구', privacy: '개인정보 처리방침', terms: '서비스 이용약관', dev: '개발자: junhyeong kim', languages: '언어', letterMap: '편지 지도', penpalApp: '펜팔 앱' },
 };

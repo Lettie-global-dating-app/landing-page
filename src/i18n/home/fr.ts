@@ -67,5 +67,5 @@ export const fr: HomeCopy = {
   inEnglish: 'en anglais',
   ctaTitle: 'Une lettre ce soir',
   ctaSub: 'Demain matin, quelqu’un la lit à l’autre bout du monde.',
-  footer: { tag: 'Lettres lentes, amis lointains', privacy: 'Politique de confidentialité', terms: 'Conditions d’utilisation', dev: 'Développeur : junhyeong kim', languages: 'Langues' },
+  footer: { tag: 'Lettres lentes, amis lointains', privacy: 'Politique de confidentialité', terms: 'Conditions d’utilisation', dev: 'Développeur : junhyeong kim', languages: 'Langues', letterMap: 'Carte des lettres', penpalApp: 'Appli de correspondants' },
 };

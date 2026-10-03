@@ -67,5 +67,5 @@ export const id: HomeCopy = {
   inEnglish: 'dalam bahasa Inggris',
   ctaTitle: 'Satu surat malam ini',
   ctaSub: 'Besok pagi seseorang membacanya di belahan dunia lain.',
-  footer: { tag: 'Surat pelan, teman jauh', privacy: 'Kebijakan privasi', terms: 'Ketentuan layanan', dev: 'Pengembang: junhyeong kim', languages: 'Bahasa' },
+  footer: { tag: 'Surat pelan, teman jauh', privacy: 'Kebijakan privasi', terms: 'Ketentuan layanan', dev: 'Pengembang: junhyeong kim', languages: 'Bahasa', letterMap: 'Peta surat', penpalApp: 'Aplikasi sahabat pena' },
 };

@@ -147,8 +147,6 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="mobile-web-app-capable" content="yes" />
         {/* Region and language info */}
-        <meta name="geo.region" content="US" />
-        <meta name="geo.country" content="United States" />
         <meta name="language" content="English" />
         {/* App Store Smart Banner */}
         <meta name="apple-itunes-app" content="app-id=6746454876" />

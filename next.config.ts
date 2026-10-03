@@ -39,6 +39,13 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      // 한국어 루트 페이지. 언어별 페이지(/en, /ja …)는 엣지 함수 html-lang 이 그 언어로 붙인다.
+      { source: '/', headers: [{ key: 'Content-Language', value: 'ko' }] },
+      { source: '/faq', headers: [{ key: 'Content-Language', value: 'ko' }] },
+      { source: '/blog/:path*', headers: [{ key: 'Content-Language', value: 'ko' }] },
+      { source: '/guide/:path*', headers: [{ key: 'Content-Language', value: 'ko' }] },
+      { source: '/penpal-app', headers: [{ key: 'Content-Language', value: 'ko' }] },
+      { source: '/letter-map', headers: [{ key: 'Content-Language', value: 'ko' }] },
       {
         source: '/favicon.ico',
         headers: [

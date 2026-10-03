@@ -67,5 +67,5 @@ export const it: HomeCopy = {
   inEnglish: 'in inglese',
   ctaTitle: 'Una lettera stasera',
   ctaSub: 'Domani mattina qualcuno la legge dall’altra parte del mondo.',
-  footer: { tag: 'Lettere lente, amici lontani', privacy: 'Informativa sulla privacy', terms: 'Termini di servizio', dev: 'Sviluppatore: junhyeong kim', languages: 'Lingue' },
+  footer: { tag: 'Lettere lente, amici lontani', privacy: 'Informativa sulla privacy', terms: 'Termini di servizio', dev: 'Sviluppatore: junhyeong kim', languages: 'Lingue', letterMap: 'Mappa delle lettere', penpalApp: 'App di amici di penna' },
 };

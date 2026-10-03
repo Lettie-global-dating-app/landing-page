@@ -67,5 +67,5 @@ export const en: HomeCopy = {
   inEnglish: 'English',
   ctaTitle: 'One letter tonight',
   ctaSub: 'Someone on the other side of the world reads it tomorrow morning.',
-  footer: { tag: 'Slow letters, faraway friends', privacy: 'Privacy Policy', terms: 'Terms of Service', dev: 'Developer: junhyeong kim', languages: 'Languages' },
+  footer: { tag: 'Slow letters, faraway friends', privacy: 'Privacy Policy', terms: 'Terms of Service', dev: 'Developer: junhyeong kim', languages: 'Languages', letterMap: 'Letter map', penpalApp: 'Pen pal app' },
 };

@@ -133,7 +133,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
+    <html lang="ko" suppressHydrationWarning>
       <head>
         {/* Favicon - 실제 Lettie 로고 사용 */}
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
@@ -157,10 +157,8 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="mobile-web-app-capable" content="yes" />
 
-        {/* 지역 및 언어 정보 */}
-        <meta name="geo.region" content="KR" />
-        <meta name="geo.country" content="Korea" />
-        <meta name="language" content="Korean" />
+        {/* 지역·언어 메타(geo.region KR · language Korean)는 뺐다 — 루트 레이아웃이 /en·/ja … 모든 페이지에 그려서
+            일본어 페이지가 "Korean · KR" 이라고 말하고 있었다. 언어 신호는 hreflang·Content-Language·html lang(엣지에서 고침)이 맡는다. */}
 
         {/* 앱 스토어 스마트 배너 */}
         <meta name="apple-itunes-app" content="app-id=6746454876" />

@@ -67,5 +67,5 @@ export const de: HomeCopy = {
   inEnglish: 'auf Englisch',
   ctaTitle: 'Heute Abend ein Brief',
   ctaSub: 'Morgen früh liest ihn jemand am anderen Ende der Welt.',
-  footer: { tag: 'Langsame Briefe, ferne Freunde', privacy: 'Datenschutz', terms: 'Nutzungsbedingungen', dev: 'Entwickler: junhyeong kim', languages: 'Sprachen' },
+  footer: { tag: 'Langsame Briefe, ferne Freunde', privacy: 'Datenschutz', terms: 'Nutzungsbedingungen', dev: 'Entwickler: junhyeong kim', languages: 'Sprachen', letterMap: 'Briefkarte', penpalApp: 'Brieffreund-App' },
 };

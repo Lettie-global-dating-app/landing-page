@@ -67,5 +67,5 @@ export const zh: HomeCopy = {
   inEnglish: '英文',
   ctaTitle: '今晚，写一封信',
   ctaSub: '明天早上，地球另一端有人读到它。',
-  footer: { tag: '慢信，远方的朋友', privacy: '隐私政策', terms: '服务条款', dev: '开发者：junhyeong kim', languages: '语言' },
+  footer: { tag: '慢信，远方的朋友', privacy: '隐私政策', terms: '服务条款', dev: '开发者：junhyeong kim', languages: '语言', letterMap: '书信地图', penpalApp: '笔友应用' },
 };

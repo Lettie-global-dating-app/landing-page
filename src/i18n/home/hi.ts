@@ -67,5 +67,5 @@ export const hi: HomeCopy = {
   inEnglish: 'अंग्रेज़ी में',
   ctaTitle: 'आज रात, एक चिट्ठी',
   ctaSub: 'कल सुबह दुनिया के दूसरे छोर पर कोई उसे पढ़ेगा।',
-  footer: { tag: 'धीमी चिट्ठियाँ, दूर के दोस्त', privacy: 'गोपनीयता नीति', terms: 'सेवा की शर्तें', dev: 'डेवलपर: junhyeong kim', languages: 'भाषाएँ' },
+  footer: { tag: 'धीमी चिट्ठियाँ, दूर के दोस्त', privacy: 'गोपनीयता नीति', terms: 'सेवा की शर्तें', dev: 'डेवलपर: junhyeong kim', languages: 'भाषाएँ', letterMap: 'चिट्ठियों का नक्शा', penpalApp: 'पेन पाल ऐप' },
 };

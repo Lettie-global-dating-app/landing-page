@@ -67,5 +67,5 @@ export const es: HomeCopy = {
   inEnglish: 'en inglés',
   ctaTitle: 'Una carta esta noche',
   ctaSub: 'Mañana por la mañana alguien la lee al otro lado del mundo.',
-  footer: { tag: 'Cartas lentas, amigos lejanos', privacy: 'Política de privacidad', terms: 'Términos del servicio', dev: 'Desarrollador: junhyeong kim', languages: 'Idiomas' },
+  footer: { tag: 'Cartas lentas, amigos lejanos', privacy: 'Política de privacidad', terms: 'Términos del servicio', dev: 'Desarrollador: junhyeong kim', languages: 'Idiomas', letterMap: 'Mapa de cartas', penpalApp: 'App de amigos por carta' },
 };

@@ -67,5 +67,5 @@ export const ja: HomeCopy = {
   inEnglish: '英語',
   ctaTitle: '今夜、手紙を一通',
   ctaSub: '明日の朝、地球の裏側で誰かが読みます。',
-  footer: { tag: 'ゆっくり届く手紙、遠くの友だち', privacy: 'プライバシーポリシー', terms: '利用規約', dev: '開発者: junhyeong kim', languages: '言語' },
+  footer: { tag: 'ゆっくり届く手紙、遠くの友だち', privacy: 'プライバシーポリシー', terms: '利用規約', dev: '開発者: junhyeong kim', languages: '言語', letterMap: '手紙マップ', penpalApp: '文通アプリ' },
 };
