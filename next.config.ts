@@ -82,6 +82,17 @@ const nextConfig: NextConfig = {
         destination: 'https://lettie-dating.com/:path*',
         permanent: true,
       },
+      // 언어 주소 오타·관습형 (2026-10-04): /ko 는 루트, /pt-br·/zh-cn 같은 지역 코드는 언어로, 번역 없는 하위 경로는 영어판으로
+      { source: '/ko', destination: '/', permanent: true },
+      { source: '/ko/:path*', destination: '/:path*', permanent: true },
+      { source: '/ko-:region', destination: '/', permanent: true },
+      { source: '/:lang(en|es|pt|ja|fr|zh|de|hi|id|ru|it)-:region([a-zA-Z]{2,4})', destination: '/:lang', permanent: true },
+      { source: '/:lang(en|es|pt|ja|fr|zh|de|hi|id|ru|it)-:region([a-zA-Z]{2,4})/:path*', destination: '/:lang/:path*', permanent: true },
+      { source: '/:lang(es|pt|ja|fr|zh|de|hi|id|ru|it)/blog', destination: '/en/blog', permanent: false },
+      { source: '/:lang(es|pt|ja|fr|zh|de|hi|id|ru|it)/guide/:path*', destination: '/en/guide/:path*', permanent: false },
+      { source: '/:lang(es|pt|ja|fr|zh|de|hi|id|ru|it)/guide', destination: '/en/guide', permanent: false },
+      { source: '/:lang(es|pt|ja|fr|zh|de|hi|id|ru|it)/penpal-app', destination: '/en/penpal-app', permanent: false },
+      { source: '/:lang(es|pt|ja|fr|zh|de|hi|id|ru|it)/letter-map', destination: '/en/letter-map', permanent: false },
       // 연도가 낡은 글을 같은 주제의 최신 글로 합친다 (2026-09-24, 순위 신호를 넘긴다)
       { source: '/blog/2025-best-penpal-app', destination: '/blog/best-penpal-apps-2026', permanent: true },
       { source: '/en/blog/2025-best-penpal-app', destination: '/en/blog/best-penpal-apps-2026', permanent: true },
