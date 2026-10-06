@@ -5627,7 +5627,7 @@ Slowly는 펜팔 검색으로 상대를 찾습니다. Lettie는 하루 몇 장�
 | 번역 | 앱 안에서 한 번에, 70개 넘는 언어, 무료 | 외부 도구 또는 유료 |
 | 프로필 | 픽셀 캐릭터, 사진이나 글로 내 캐릭터 | 아바타 조합 |
 | 소개 | 하루 몇 장의 소개 카드 | 없음 (펜팔 검색) |
-| 우표 | 나라별 우표 + 픽셀 우표 뽑기 | 나라별·기념 우표 |
+| 우표 | 나라별 우표 + 뽑을 때마다 새로 그리는 우표 + 우표 가게 103개 나라 | 나라별·기념 우표 |
 | 가격 | 무료, Plus 구독·젬 | 무료, 코인 |
 
 ## 그래서 누구에게 무엇이 맞나
@@ -5692,7 +5692,7 @@ Slowly finds pen pals through search and matching. Lettie sends a few introducti
 | Translation | In-app, one tap, 70+ languages, free | External tools or paid |
 | Profile | Pixel character; yours drawn from a photo or words | Avatar builder |
 | Introductions | A few introduction cards a day | None (pen-pal search) |
-| Stamps | Country stamps + random pixel stamps | Country & seasonal stamps |
+| Stamps | Country stamps + stamps painted fresh for each draw + a 103-country stamp shop | Country & seasonal stamps |
 | Price | Free; Plus subscription & gems | Free; coins |
 
 ## So who should use what

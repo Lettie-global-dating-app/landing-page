@@ -8,11 +8,12 @@
  * - 배달: 서버 DeliveryTimeService — 가장 짧은 구간이 같은 나라 1~2시간이라 최소 1시간, 최대 24시간.
  * - 띄우기: 무료 하루 1통 (lettie.letters.per-day). 답장은 한도와 무관.
  * - 발견 순서: 2026-09-27 부터 최신순 (그 전엔 작성자 활동·관심사 점수). Plus 작성자 편지만 하루 앞당긴다.
+ * - 우표: 2.0.18(2026-10-04) 부터 뽑을 때마다 Gemini 가 새로 그린다(같은 우표 없음). 우표 가게에 나라 우표 103장(서버 CountryStamps.SHOP).
  * - 나만의 캐릭터: 2.0.17(2026-10) 부터 사진 한 장이나 글 몇 줄로. 첫 캐릭터 무료, 사진은 그리는 데만 쓰고 저장하지 않는다.
  *   그다음은 젬(서버 가격표), Plus 는 주 1회 무료. 기본 캐릭터 16종은 계속 무료.
  */
 export const FACTS = {
-  asOf: '2026-10-03',
+  asOf: '2026-10-07',
   languages: 73,
   languagesRounded: '70+',
   discoverEnvelopesPerDay: 3,
@@ -22,6 +23,9 @@ export const FACTS = {
   /** 첫 나만의 캐릭터(사진·글) 무료 — 2.0.17 */
   firstOwnCharacterFree: true,
   ownCharacterFromPhoto: true,
+  /** 우표 가게의 나라 우표 수 · 뽑기 우표는 매번 새로 그린다 — 2.0.18 */
+  countryStamps: 103,
+  drawnStampsUnique: true,
 };
 
 /** 앱 화면·편지 번역 언어 — [앱 코드, 영어 이름, 한국어 이름], 앱 kAppLanguageCodes 순서. */

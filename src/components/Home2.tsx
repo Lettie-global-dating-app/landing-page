@@ -9,6 +9,7 @@ import { FAQ_LOCALES } from '@/data/localizedFaq'
 import { listLocalizedPosts } from '@/data/localizedPosts'
 import { localizedPathIfExists } from '@/data/articles/lookup'
 import type { Locale } from '@/i18n/config'
+import { STORE_SHOTS } from '@/data/storeShots'
 
 /**
  * 2.0 「하늘의 편지」 홈. 12개 언어가 같은 구조를 쓰고 문구만 `src/i18n/home/<lang>.ts` 에서 온다.
@@ -80,6 +81,8 @@ export default function Home2({ lang }: { lang: string }) {
   const localizedPosts = foreignContent ? listLocalizedPosts(lang as Locale) : []
   const blogIndexHref = foreignContent && localizedPosts.length ? `/${lang}/blog/${localizedPosts[0].id}` : `${contentBase}/blog`
   const videoLang = lang
+  // 스토어 스크린샷 v3 (2026-10-07) — 그 언어 것이 없으면 영어
+  const shotLang = STORE_SHOTS[lang] ? lang : 'en'
   const faqJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -170,6 +173,24 @@ export default function Home2({ lang }: { lang: string }) {
             </div>
           ))}
         </dl>
+      </section>
+
+      {/* 스토어 스크린샷 v3 — 앱스토어·플레이와 같은 여덟 장을 옆으로 넘겨 본다 (한 장의 밤하늘로 이어진다) */}
+      <section className="relative py-10 md:py-14 border-t border-line/60">
+        <ul className="flex gap-4 md:gap-5 overflow-x-auto snap-x snap-mandatory px-4 lg:px-[max(1rem,calc((100vw-72rem)/2))] pb-4" aria-label="Lettie">
+          {STORE_SHOTS[shotLang].map((alt, i) => (
+            <li key={i} className="snap-start shrink-0">
+              <Image
+                src={`/v2/store/${shotLang}-${i + 1}.webp`}
+                alt={alt}
+                width={645}
+                height={1398}
+                className="w-[62vw] sm:w-[250px] h-auto rounded-[1.4rem] border border-line/70 shadow-[0_30px_60px_-30px_rgba(0,0,0,0.8)]"
+                loading="lazy"
+              />
+            </li>
+          ))}
+        </ul>
       </section>
 
       {/* How it works — 실제 앱 화면 */}

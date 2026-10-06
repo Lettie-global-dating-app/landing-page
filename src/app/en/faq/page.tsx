@@ -87,7 +87,7 @@ const faqCategories = [
       },
       {
         q: 'What are stamps for?',
-        a: 'Every country you exchange letters with adds its stamp to your album. You can also draw a random pixel stamp with gems, and the stamp you pick is the one that appears on the letters you send and on the greetings you leave.'
+        a: 'Every country you exchange letters with adds its stamp to your album. Draw a stamp with gems and it’s painted fresh just for you (no one else has the same one), or buy any of 103 country stamps in the stamp shop. The stamp you pick is the one that appears on the letters you send and on the greetings you leave.'
       },
       {
         q: 'Can I make my own character?',
