@@ -1,7 +1,7 @@
 
 # 6 Slowly alternatives compared (2026)
 
-People leave Slowly for one of three reasons: **the language gap**, **wanting more than friendship**, or **replies drying up**. Different reasons, different answers. Here are six apps sorted by reason. Lettie is ours — read that part accordingly.
+People leave Slowly for one of three reasons: **the language gap**, **finding someone to write to feels like work**, or **replies drying up**. Different reasons, different answers. Here are six apps sorted by reason. Lettie is ours — read that part accordingly.
 
 ## At a glance
 
@@ -23,7 +23,7 @@ The most common complaint about Slowly is translation: copy the letter out to a 
 - **HelloTalk** is chat, but sentence-level corrections and translation make it the most efficient tool if learning is the goal. No letter rhythm, though.
 - **Ablo** auto-translates every message. Good for casually talking to people in many countries; don't expect depth.
 
-## 2. If you want more than friendship → Lettie
+## 2. If finding someone to write to felt like work → Lettie
 
 Slowly finds pen pals through search and interest matching. Lettie starts with **picking up a letter a stranger released** and replying, plus a few introduction cards a day. No photos, no swiping. It's for people who found "photo first" dating apps uncomfortable.
 
@@ -43,7 +43,7 @@ One note, because this follows you to the next app: replies die mostly because t
 ## Summary
 
 - Translation is the point → **Lettie** (letters) or **HelloTalk** (chat)
-- You want the door open to meeting someone → **Lettie**
+- You'd rather letters come to you than search for someone → **Lettie**
 - Numbers matter most → **InterPals**
 - Speaking practice → **Tandem**
 - You like slow letters and share a language → keep **Slowly**

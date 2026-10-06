@@ -326,7 +326,7 @@ Du wirst mehreren Menschen schreiben, bevor eine Korrespondenz trägt. Eine, die
 `,
       },
       zh: {
-        title: '2026年怎么找到笔友',
+        title: '2026年怎么找到笔友：去哪找、第一封信写什么',
         description: '去哪里找、第一封信写什么，以及怎样让对话撑过第三条消息。',
         keywords: ['找笔友', '笔友应用', '国际笔友', '交外国朋友', '语言交换'],
         readTime: '6 分钟',

@@ -8,7 +8,7 @@ There's no single answer to "which pen-pal app is best" — the person who wants
 | Goal | First pick | Second |
 |---|---|---|
 | Slow letters, relationships that take time | Lettie | Slowly |
-| Meeting someone through letters | Lettie | — |
+| Letters that come to you, no searching | Lettie | — |
 | Regardless of language | Lettie | Ablo |
 | Writing corrections, language learning | HelloTalk | Tandem |
 | Speaking, video | Tandem | HelloTalk |
@@ -19,7 +19,7 @@ There's no single answer to "which pen-pal app is best" — the person who wants
 
 Letters take as long as the distance between two cities (1–24 hours). You pick up letters strangers released in **Discover**, reply, and a conversation begins; a translate button inside the letter covers 70+ languages. Pixel characters instead of photos, a few matching cards a day instead of swiping. **Free tier**: three Discover envelopes a day, one released letter a day (replies are not limited), unlimited translation, sixteen characters. Watch an ad for more envelopes and letters.
 
-For: people who like the rhythm of letters, want to meet people regardless of language, and want the door open to friendship or more.
+For: people who like the rhythm of letters, want pen pals regardless of language, and would rather start from one letter than search a directory.
 
 ## 2. Slowly — the original slow-letter app
 
@@ -51,7 +51,7 @@ Profile-based matching that's been around forever. Free is plenty if you can liv
 
 1. Decide **letters vs chat** first. The rhythm is different.
 2. If languages differ, check **where translation lives** — in the app (Lettie · HelloTalk · Ablo) or a round trip.
-3. Decide whether you want **the door open to meeting someone.** Open → Lettie; friendship only → Slowly · InterPals.
+3. Decide whether you want to **search for pen pals or have letters come to you.** Letters come to you → Lettie; search → Slowly · InterPals.
 
 Whichever app, a first letter that gets a reply is a reaction to what they wrote, not a bio. Start with [7 first-letter examples](/en/blog/first-letter-examples-discover).
 

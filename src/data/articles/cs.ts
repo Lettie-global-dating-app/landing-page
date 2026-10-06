@@ -76,7 +76,7 @@ Aplikace se hodí pro lidi, kteří mají rádi rytmus psaní dopisů, chtějí 
 | Cíl | První volba | Druhá volba |
 |---|---|---|
 | Pomalé dopisy, vztahy, co potřebují čas | Lettie | Slowly |
-| Poznat někoho přes dopisy | Lettie | — |
+| Dopisy, které k vám přijdou, bez hledání | Lettie | — |
 | Bez ohledu na jazyk | Lettie | Ablo |
 | Opravy psaní, výuka jazyka | HelloTalk | Tandem |
 | Mluvení, video | Tandem | HelloTalk |
@@ -87,7 +87,7 @@ Aplikace se hodí pro lidi, kteří mají rádi rytmus psaní dopisů, chtějí 
 
 Dopis letí tak dlouho, jak je vzdálenost mezi dvěma městy (1–24 hodin). Sbíráte dopisy, které cizí lidé vypustili do sekce **Objevování**, odpovídáte na ně a začíná konverzace; tlačítko překladu uvnitř dopisu pokrývá 70+ jazyků. Pixelové postavy místo fotek, pár seznamovacích karet denně místo švihání. **Bezplatná verze**: tři obálky v Objevování denně, jeden vypuštěný dopis denně (odpovědi nejsou omezené), neomezený překlad, šestnáct postav. Za zhlédnutí reklamy získáte víc obálek a dopisů.
 
-Pro: lidi, kterým se líbí rytmus dopisování, chtějí poznávat lidi bez ohledu na jazyk a chtějí prostor pro přátelství.
+Pro: lidi, kterým se líbí rytmus dopisování, chtějí korespondenční přátele bez ohledu na jazyk a raději začnou jedním dopisem než hledáním v adresáři.
 
 ## 2. Slowly — původní aplikace na pomalé dopisy
 
@@ -123,8 +123,8 @@ Rytmus je úplně jiný.
 ### Pokud se jazyky liší, zkontrolujte, kde žije překlad
 V aplikaci (Lettie · HelloTalk · Ablo), nebo musíte kopírovat text ven a zpět.
 
-### Rozhodněte se, jestli chcete prostor pro poznání někoho nového
-Ano → Lettie; jen přátelství → Slowly · InterPals.
+### Rozhodněte se, jestli chcete hledat korespondenční přátele, nebo chcete, aby k vám dopisy přišly
+Dopisy přijdou k vám → Lettie; hledání → Slowly · InterPals.
 
 Ať zvolíte kteroukoli aplikaci, první dopis, na který dostanete odpověď, reaguje na to, co druhá strana napsala, ne na vaše bio.
 
@@ -152,11 +152,11 @@ Ať zvolíte kteroukoli aplikaci, první dopis, na který dostanete odpověď, r
   'slowly-alternatives-2026': {
     title: 'Alternativy ke Slowly v roce 2026: srovnání šesti aplikací',
     description:
-      'Lidé odcházejí od Slowly ze tří důvodů: jazyková bariéra, chtějí víc než přátelství, nebo odpovědi přestaly chodit. Šest aplikací podle důvodu, včetně Lettie.',
+      'Lidé odcházejí od Slowly ze tří důvodů: jazyková bariéra, hledání korespondenčního přítele je jim na obtíž, nebo odpovědi přestaly chodit. Šest aplikací podle důvodu, včetně Lettie.',
     keywords: ['alternativy ke Slowly', 'Slowly alternativa', 'aplikace jako Slowly', 'Lettie vs Slowly 2026'],
     subtitle: 'Podle důvodu, proč odcházíte — ne podle jednoho žebříčku.',
     answer:
-      'Lidé odcházejí od Slowly obvykle ze tří důvodů: jazyková bariéra, touha po víc než přátelství, nebo odpovědi, které přestaly chodit. Tento přehled seřazuje šest aplikací podle důvodu. Lettie je naše — berte tu část s tímto na paměti.',
+      'Lidé odcházejí od Slowly obvykle ze tří důvodů: jazyková bariéra, hledání korespondenčního přítele je jim na obtíž, nebo odpovědi, které přestaly chodit. Tento přehled seřazuje šest aplikací podle důvodu. Lettie je naše — berte tu část s tímto na paměti.',
     body: `## Na první pohled
 
 | Aplikace | Jedna věta | Překlad | Zpoždění dopisu | Účel |
@@ -177,7 +177,7 @@ Nejčastější stížnost na Slowly je překlad: musíte dopis zkopírovat do p
 - **HelloTalk** je chat, ale opravy na úrovni vět a překlad z něj dělají nejefektivnější nástroj, pokud je cílem výuka. Chybí mu ale rytmus dopisů.
 - **Ablo** automaticky překládá každou zprávu. Dobré na občasnou konverzaci s lidmi z mnoha zemí; nečekejte hloubku.
 
-## 2. Pokud chcete víc než přátelství → Lettie
+## 2. Pokud je vám hledání korespondenčního přítele na obtíž → Lettie
 
 Slowly hledá korespondenční přátele přes vyhledávání a párování podle zájmů. Lettie začíná **sebráním dopisu, který vypustil cizí člověk**, a odpovědí na něj, plus pár seznamovacích karet denně. Žádné fotky, žádné švihání. Je to pro lidi, kterým bylo nepříjemné u seznamovacích aplikací, kde je na prvním místě fotka.
 
@@ -197,7 +197,7 @@ Jedna poznámka, protože tohle vás bude sledovat i v další aplikaci: odpově
 ## Shrnutí
 
 - Překlad je klíčový → **Lettie** (dopisy) nebo **HelloTalk** (chat)
-- Chcete prostor pro poznání někoho nového → **Lettie**
+- Chcete, aby k vám dopisy přišly, ne hledat sami → **Lettie**
 - Záleží na číslech → **InterPals**
 - Mluvená praxe → **Tandem**
 - Máte rádi pomalé dopisy a sdílíte jazyk → zůstaňte u **Slowly**
@@ -206,7 +206,7 @@ Jedna poznámka, protože tohle vás bude sledovat i v další aplikaci: odpově
     faqs: [
       {
         q: 'Proč lidé odcházejí od Slowly?',
-        a: 'Nejčastěji ze tří důvodů: jazyková bariéra bez vestavěného překladu, touha po víc než jen přátelství, nebo odpovědi, které postupně přestanou chodit.',
+        a: 'Nejčastěji ze tří důvodů: jazyková bariéra bez vestavěného překladu, hledání korespondenčního přítele jim bylo na obtíž, nebo odpovědi, které postupně přestanou chodit.',
       },
       {
         q: 'Je Lettie dobrá alternativa ke Slowly?',

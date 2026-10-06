@@ -93,7 +93,7 @@ Lettie dan Slowly sama-sama menghantar surat mengikut jarak. Bezanya, Lettie men
 | Tujuan | Pilihan pertama | Pilihan kedua |
 |---|---|---|
 | Surat santai, hubungan yang ambil masa | Lettie | Slowly |
-| Mencari rakan pena baharu melalui surat | Lettie | — |
+| Surat datang kepada kamu, tanpa perlu mencari | Lettie | — |
 | Tidak kira perbezaan bahasa | Lettie | Ablo |
 | Pembetulan tulisan, belajar bahasa | HelloTalk | Tandem |
 | Latihan bercakap, video | Tandem | HelloTalk |
@@ -104,7 +104,7 @@ Lettie dan Slowly sama-sama menghantar surat mengikut jarak. Bezanya, Lettie men
 
 Surat mengambil masa mengikut jarak antara dua bandar, sekitar 1–2 jam dalam satu negara sehingga lebih kurang sehari (1–24 jam) ke hujung dunia. Kamu ambil surat yang dilepaskan orang asing di Discover, balas, dan perbualan pun bermula; butang terjemahan dalam surat merangkumi 70+ bahasa. Watak piksel menggantikan gambar, dan ada beberapa kad pengenalan setiap hari berbanding swipe. Tahap percuma: tiga sampul Discover sehari, satu surat yang boleh dilepaskan sehari (balasan tidak dihadkan), terjemahan tanpa had, enam belas watak. Tonton iklan untuk sampul dan surat tambahan.
 
-Untuk: orang yang suka rentak surat, mahu mencari rakan pena merentasi bahasa, dan mencari persahabatan baharu merentasi negara.
+Untuk: orang yang suka rentak surat, mahu rakan pena tanpa mengira bahasa, dan lebih suka bermula daripada satu surat berbanding mencari dalam direktori.
 
 ## 2. Slowly — aplikasi surat perlahan yang asal
 
@@ -136,7 +136,7 @@ Padanan berasaskan profil yang sudah lama wujud. Tahap percuma sudah memadai jik
 
 - Tentukan dahulu **surat atau sembang**. Rentaknya berbeza.
 - Jika bahasa berbeza, semak **di mana terjemahan berada** — dalam aplikasi (Lettie, HelloTalk, Ablo) atau perlu bolak-balik sendiri.
-- Tentukan sama ada kamu mahu **mencari rakan pena baharu secara rawak** melalui Discover, atau carian berasaskan profil seperti Slowly dan InterPals.
+- Tentukan sama ada kamu mahu **mencari rakan pena** atau **biarkan surat datang kepada kamu**. Surat datang kepada kamu → Lettie; mencari → Slowly · InterPals.
 
 Surat pertama yang dibalas biasanya adalah reaksi kepada apa yang mereka tulis, bukan bio kamu.
 
@@ -165,9 +165,9 @@ Surat pertama yang dibalas biasanya adalah reaksi kepada apa yang mereka tulis, 
     ],
   },
   'slowly-alternatives-2026': {
-    title: '6 Alternatif Slowly 2026, Dibandingkan',
+    title: '6 Pilihan Selain Slowly pada 2026: Perbandingan',
     description:
-      'Sebab orang tinggalkan Slowly: bahasa, mahu lebih daripada persahabatan, atau balasan yang terhenti. Ini 6 alternatif Slowly 2026 mengikut sebab kamu, termasuk Lettie.',
+      'Sebab orang tinggalkan Slowly: bahasa, mencari rakan surat yang rasa seperti kerja, atau balasan yang terhenti. Ini 6 alternatif Slowly 2026 mengikut sebab kamu, termasuk Lettie.',
     keywords: [
       'alternatif slowly',
       'alternatif slowly 2026',
@@ -177,7 +177,7 @@ Surat pertama yang dibalas biasanya adalah reaksi kepada apa yang mereka tulis, 
     ],
     subtitle: 'Enam aplikasi, disusun mengikut sebab kamu tinggalkan Slowly.',
     answer:
-      'Orang tinggalkan Slowly atas salah satu daripada tiga sebab: **halangan bahasa**, **mahu lebih daripada sekadar persahabatan**, atau **balasan yang terhenti**. Berikut enam alternatif Slowly disusun mengikut sebab itu; Lettie ada dalam senarai ini dan kami yang membuatnya.',
+      'Orang tinggalkan Slowly atas salah satu daripada tiga sebab: **halangan bahasa**, **mencari rakan surat terasa seperti kerja**, atau **balasan yang terhenti**. Berikut enam alternatif Slowly disusun mengikut sebab itu; Lettie ada dalam senarai ini dan kami yang membuatnya.',
     body: `## Sepintas lalu
 
 | Aplikasi | Satu ayat | Terjemahan | Lambat surat | Tujuan |
@@ -198,7 +198,7 @@ Aduan paling biasa tentang Slowly adalah terjemahan: salin surat ke alat terjema
 - HelloTalk adalah sembang, tetapi pembetulan setiap ayat dan terjemahan menjadikannya alat paling efisien jika belajar adalah tujuannya. Tiada rentak surat, walaupun.
 - Ablo menterjemah setiap mesej secara automatik. Sesuai untuk berbual santai dengan orang di banyak negara; jangan harap kedalaman.
 
-## 2. Jika kamu mahu mencari rakan pena baharu di luar carian profil → Lettie
+## 2. Jika mencari seseorang untuk ditulis surat terasa seperti kerja → Lettie
 
 Slowly mencari rakan pena melalui carian dan padanan minat. Lettie bermula dengan **mengambil surat yang dilepaskan orang asing** dan membalasnya, ditambah beberapa kad pengenalan setiap hari. Tiada gambar, tiada swipe. Sesuai untuk orang yang rasa tidak selesa dengan aplikasi yang mengutamakan gambar.
 
@@ -218,7 +218,7 @@ Satu catatan, kerana ini akan berulang di aplikasi seterusnya: balasan terhenti 
 ## Ringkasan
 
 - Terjemahan adalah fokus → Lettie (surat) atau HelloTalk (sembang)
-- Mahu mencari rakan pena baharu, bukan sekadar cari profil → Lettie
+- Kamu lebih suka surat datang kepada kamu berbanding mencari seseorang → Lettie
 - Bilangan paling penting → InterPals
 - Latihan bercakap → Tandem
 - Suka surat perlahan dan berkongsi bahasa dengan pasangan surat → kekal di Slowly

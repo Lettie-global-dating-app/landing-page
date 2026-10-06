@@ -89,7 +89,7 @@ Comme Slowly, Lettie fait voyager les lettres selon la distance réelle entre de
 | Objectif | Premier choix | Second choix |
 |---|---|---|
 | Lettres lentes, relations qui prennent du temps | Lettie | Slowly |
-| Se faire des amis à travers les lettres | Lettie | - |
+| Des lettres qui viennent à vous, sans chercher | Lettie | - |
 | Peu importe la langue | Lettie | Ablo |
 | Corrections d'écriture, apprentissage des langues | HelloTalk | Tandem |
 | Pratique orale, vidéo | Tandem | HelloTalk |
@@ -100,7 +100,7 @@ Comme Slowly, Lettie fait voyager les lettres selon la distance réelle entre de
 
 Une lettre met le temps réel de la distance pour arriver, de 1 à 24 heures selon les deux pays. Vous ramassez des lettres que des inconnus ont lâchées dans Découverte, vous répondez, et une correspondance commence ; un bouton de traduction à l'intérieur de la lettre couvre plus de 70 langues, gratuitement. Des personnages pixel remplacent les photos, et quelques cartes de présentation par jour remplacent le glissement d'écran. Découverte propose trois nouvelles enveloppes par jour, gratuites, et une publicité par jour pour en avoir plus.
 
-Pour : les personnes qui aiment le rythme des lettres, veulent se faire des amis peu importe la langue, et préfèrent une correspondance qui prend son temps.
+Pour : les personnes qui aiment le rythme des lettres, veulent des correspondants peu importe la langue, et préfèrent commencer par une seule lettre plutôt que de chercher dans un répertoire.
 
 ## 2. Slowly - l'appli de lettres lentes originale
 
@@ -132,7 +132,7 @@ Correspondance par profils qui existe depuis longtemps. Le gratuit suffit si vou
 
 - Décidez d'abord entre **lettres et chat** : le rythme n'est pas le même.
 - Si les langues diffèrent, vérifiez **où vit la traduction** : dans l'appli (Lettie, HelloTalk, Ablo) ou via un aller-retour externe.
-- Décidez si vous cherchez **l'amitié seulement** (Slowly, InterPals) ou si vous êtes **ouvert à faire de nouvelles rencontres amicales** à travers les lettres (Lettie).
+- Décidez si vous préférez **chercher des correspondants** (Slowly, InterPals) ou **laisser les lettres venir à vous** (Lettie).
 
 Quelle que soit l'appli, une première lettre qui obtient une réponse réagit à ce que l'autre a écrit, pas à une biographie.
 
@@ -163,7 +163,7 @@ Quelle que soit l'appli, une première lettre qui obtient une réponse réagit �
   'slowly-alternatives-2026': {
     title: '6 alternatives à Slowly comparées en 2026',
     description:
-      "Comparatif 2026 de six alternatives à Slowly selon la raison de votre départ : écart de langue, envie de nouvelles rencontres amicales, ou réponses qui s'arrêtent.",
+      "Comparatif 2026 de six alternatives à Slowly selon la raison de votre départ : écart de langue, difficulté à trouver quelqu'un à qui écrire, ou réponses qui s'arrêtent.",
     keywords: [
       'alternative à Slowly',
       'Slowly alternative 2026',
@@ -172,7 +172,7 @@ Quelle que soit l'appli, une première lettre qui obtient une réponse réagit �
     ],
     subtitle: 'Classées par raison de quitter Slowly, pas par popularité.',
     answer:
-      "On quitte Slowly pour l'une de trois raisons : l'écart de langue, l'envie d'aller au-delà d'une correspondance figée, ou des réponses qui se tarissent. Six applications sont comparées ici selon la raison, avec Lettie, Slowly, InterPals, HelloTalk, Tandem, Penpal World et Ablo jugées sur la traduction, le délai des lettres et l'objectif.",
+      "On quitte Slowly pour l'une de trois raisons : l'écart de langue, la difficulté à trouver quelqu'un à qui écrire, ou des réponses qui se tarissent. Six applications sont comparées ici selon la raison, avec Lettie, Slowly, InterPals, HelloTalk, Tandem, Penpal World et Ablo jugées sur la traduction, le délai des lettres et l'objectif.",
     body: `## En un coup d'œil
 
 | Application | En une ligne | Traduction | Délai de la lettre | Objectif |
@@ -193,7 +193,7 @@ La plainte la plus fréquente envers Slowly concerne la traduction : copier la l
 - **HelloTalk** est un chat, mais les corrections au niveau de la phrase et la traduction en font l'outil le plus efficace si apprendre est l'objectif. Pas de rythme de lettres, en revanche.
 - **Ablo** traduit automatiquement chaque message. Pratique pour parler légèrement avec des gens de nombreux pays ; n'en attendez pas de profondeur.
 
-## 2. Si vous voulez sortir du tri par centres d'intérêt -> Lettie
+## 2. Si trouver quelqu'un à qui écrire ressemblait à une corvée -> Lettie
 
 Slowly trouve des correspondants par recherche et par centres d'intérêt communs. Lettie commence en vous faisant **ramasser une lettre qu'un inconnu a lâchée**, puis en répondant, avec en plus quelques cartes de présentation par jour. Pas de photo, pas de glissement d'écran. L'appli convient à celles et ceux qui se sentent mal à l'aise avec les applications où la photo passe avant tout.
 
@@ -213,7 +213,7 @@ Une remarque, car elle vous suivra dans la prochaine appli : les réponses meure
 ## En résumé
 
 - La traduction est la priorité -> **Lettie** (lettres) ou **HelloTalk** (chat)
-- Vous voulez sortir du tri par profils -> **Lettie**
+- Vous préférez que les lettres viennent à vous plutôt que de chercher -> **Lettie**
 - Le nombre compte avant tout -> **InterPals**
 - La pratique orale -> **Tandem**
 - Vous aimez les lettres lentes et partagez déjà une langue -> gardez **Slowly**

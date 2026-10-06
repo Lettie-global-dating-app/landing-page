@@ -5591,9 +5591,9 @@ Get past letter three and the correspondence usually finds its own momentum.
 
 여기까지 보면 비슷해 보입니다. 실제로 갈라지는 건 아래 다섯 가지입니다.
 
-## 1. 목적 — 펜팔 우정 vs 편지로 시작하는 만남
+## 1. 시작 방식 — 내가 찾아 나서기 vs 편지가 찾아오기
 
-Slowly는 처음부터 끝까지 **펜팔** 앱입니다. 취미가 맞는 사람과 오래 편지를 주고받는 것이 목적이고, 그래서 연애나 만남을 전제로 한 장치가 없습니다.
+Slowly는 처음부터 끝까지 **펜팔** 앱입니다. 관심사 매칭과 공개 편지로 취미가 맞는 사람을 직접 찾아 오래 편지를 주고받습니다.
 
 Lettie도 **펜팔 앱**입니다. 다른 점은 첫 편지를 남이 띄운 편지를 주워서 시작한다는 것, 번역이 앱 안에서 무료라는 것, 그리고 하루 몇 장의 소개 카드가 온다는 것입니다. 스와이프와 점수는 없습니다. 검색해서 상대를 고르기보다 편지 한 통을 읽고 마음이 움직이면 답장하는 쪽을 원하는 사람을 위한 자리입니다.
 
@@ -5621,12 +5621,12 @@ Slowly는 펜팔 검색으로 상대를 찾습니다. Lettie는 하루 몇 장�
 
 | | Lettie | Slowly |
 |---|---|---|
-| 목적 | 편지로 시작하는 만남 | 펜팔 우정 |
+| 시작 방식 | 편지가 찾아온다 (발견·소개 카드) | 직접 찾는다 (관심사 매칭·공개 편지) |
 | 첫 편지 | 남이 띄운 편지를 골라 줍는다 | 관심사 매칭·공개 편지 |
 | 배달 | 실제 거리 기준 1~24시간 | 실제 거리 기준 |
 | 번역 | 앱 안에서 한 번에, 70개 넘는 언어, 무료 | 외부 도구 또는 유료 |
 | 프로필 | 픽셀 캐릭터, 사진이나 글로 내 캐릭터 | 아바타 조합 |
-| 매칭 | 하루 몇 장, 상대 성별 선택 | 없음 |
+| 소개 | 하루 몇 장의 소개 카드 | 없음 (펜팔 검색) |
 | 우표 | 나라별 우표 + 픽셀 우표 뽑기 | 나라별·기념 우표 |
 | 가격 | 무료, Plus 구독·젬 | 무료, 코인 |
 
@@ -5656,11 +5656,11 @@ Full disclosure first: **Lettie is ours.** So this isn't "we're better" — it's
 
 From here they diverge on five things.
 
-## 1. Purpose — pen-pal friendship vs meeting someone through letters
+## 1. How it starts — you search vs letters come to you
 
 Slowly is a **pen-pal** app end to end. The goal is a long correspondence with someone who shares your interests, found through interest matching and open letters.
 
-Lettie is a pen-pal app too. What differs is how it starts: you pick up a letter a stranger released into the sky and reply, translation is free inside the app, and a few introduction cards arrive each day. No swiping, no scores. It's for people who would rather read one letter and answer it than search a directory and found "friends only" pen-pal apps not quite enough.
+Lettie is a pen-pal app too. What differs is how it starts: you pick up a letter a stranger released into the sky and reply, translation is free inside the app, and a few introduction cards arrive each day. No swiping, no scores. It's for people who would rather read one letter and answer it than search a directory for someone to write to.
 
 ## 2. How you meet your first letter — matching vs Discover
 
@@ -5686,12 +5686,12 @@ Slowly finds pen pals through search and matching. Lettie sends a few introducti
 
 | | Lettie | Slowly |
 |---|---|---|
-| Purpose | Meeting someone through letters | Pen-pal friendship |
+| How it starts | Letters come to you (Discover, introduction cards) | You search (interest matching, open letters) |
 | First letter | Pick up letters strangers released | Interest matching · open letters |
 | Delivery | 1–24 h by real distance | By real distance |
 | Translation | In-app, one tap, 70+ languages, free | External tools or paid |
 | Profile | Pixel character; yours drawn from a photo or words | Avatar builder |
-| Matching | A few cards a day, choose who you meet | None |
+| Introductions | A few introduction cards a day | None (pen-pal search) |
 | Stamps | Country stamps + random pixel stamps | Country & seasonal stamps |
 | Price | Free; Plus subscription & gems | Free; coins |
 
@@ -5740,7 +5740,7 @@ Lettie is smaller than Slowly. If you need to find someone in a specific small c
         content: `
 # Slowly 대안 앱 6가지 비교 (2026)
 
-Slowly를 쓰다가 다른 앱을 찾는 이유는 대개 셋 중 하나입니다. **언어가 안 맞아서**, **친구 이상을 기대해서**, 아니면 **답장이 끊겨서**. 이유가 다르면 답도 다릅니다. 아래는 이유별로 고른 여섯 앱입니다. Lettie는 저희 앱이라 그 부분은 그렇게 읽어 주세요.
+Slowly를 쓰다가 다른 앱을 찾는 이유는 대개 셋 중 하나입니다. **언어가 안 맞아서**, **편지할 상대를 찾는 게 일이라서**, 아니면 **답장이 끊겨서**. 이유가 다르면 답도 다릅니다. 아래는 이유별로 고른 여섯 앱입니다. Lettie는 저희 앱이라 그 부분은 그렇게 읽어 주세요.
 
 ## 한눈에
 
@@ -5762,7 +5762,7 @@ Slowly에서 가장 자주 나오는 아쉬움이 번역입니다. 편지를 복
 - **HelloTalk**는 채팅이지만 문장 단위 교정과 번역이 붙어 있어 언어 학습 목적이면 가장 효율이 좋습니다. 대신 "편지"의 호흡은 없습니다.
 - **Ablo**는 모든 메시지가 자동 번역되는 채팅입니다. 가볍게 여러 나라 사람과 이야기해 보고 싶을 때. 깊이는 기대하지 않는 게 좋습니다.
 
-## 2. 친구 이상을 기대한다면 → Lettie
+## 2. 상대를 찾는 게 일이었다면 → Lettie
 
 Slowly는 펜팔 검색과 관심사 매칭으로 상대를 찾습니다. Lettie는 **남이 띄운 편지를 주워 답장하는 것**으로 시작하고, 하루 몇 장의 소개 카드가 옵니다. 사진과 스와이프는 없습니다. 상대를 검색해 고르기보다 편지 한 통에서 시작하고 싶은 사람을 위한 자리입니다.
 
@@ -5782,7 +5782,7 @@ Slowly는 펜팔 검색과 관심사 매칭으로 상대를 찾습니다. Lettie
 ## 정리
 
 - 번역이 핵심이면 **Lettie**(편지) 또는 **HelloTalk**(채팅)
-- 만남까지 열어 두고 싶으면 **Lettie**
+- 상대를 찾아다니기보다 편지가 찾아오길 원하면 **Lettie**
 - 사람 수가 핵심이면 **InterPals**
 - 말하기 연습이면 **Tandem**
 - 느린 편지 자체가 좋고 언어가 같다면 **Slowly**를 계속 쓰는 게 맞습니다
@@ -5792,7 +5792,7 @@ Slowly는 펜팔 검색과 관심사 매칭으로 상대를 찾습니다. Lettie
         contentEn: `
 # 6 Slowly alternatives compared (2026)
 
-People leave Slowly for one of three reasons: **the language gap**, **wanting more than friendship**, or **replies drying up**. Different reasons, different answers. Here are six apps sorted by reason. Lettie is ours — read that part accordingly.
+People leave Slowly for one of three reasons: **the language gap**, **finding someone to write to feels like work**, or **replies drying up**. Different reasons, different answers. Here are six apps sorted by reason. Lettie is ours — read that part accordingly.
 
 ## At a glance
 
@@ -5814,7 +5814,7 @@ The most common complaint about Slowly is translation: copy the letter out to a 
 - **HelloTalk** is chat, but sentence-level corrections and translation make it the most efficient tool if learning is the goal. No letter rhythm, though.
 - **Ablo** auto-translates every message. Good for casually talking to people in many countries; don't expect depth.
 
-## 2. If you want more than friendship → Lettie
+## 2. If finding someone to write to felt like work → Lettie
 
 Slowly finds pen pals through search and interest matching. Lettie starts with **picking up a letter a stranger released** and replying, plus a few introduction cards a day. No photos, no swiping. It's for people who found "photo first" dating apps uncomfortable.
 
@@ -5834,7 +5834,7 @@ One note, because this follows you to the next app: replies die mostly because t
 ## Summary
 
 - Translation is the point → **Lettie** (letters) or **HelloTalk** (chat)
-- You want the door open to meeting someone → **Lettie**
+- You'd rather letters come to you than search for someone → **Lettie**
 - Numbers matter most → **InterPals**
 - Speaking practice → **Tandem**
 - You like slow letters and share a language → keep **Slowly**
@@ -6252,7 +6252,7 @@ You do, naturally, once letters are flowing. You can attach photos to a letter, 
 
 - You're tired of being judged by a photo
 - Longer conversations feel easier to you, not harder
-- You're open to meeting someone abroad (the app does the translating)
+- You'd like a friend abroad (the app does the translating)
 
 If that's you, open one envelope in Discover tonight. You won't know the writer's face, but you'll know how they think. On face-first apps it's usually the other way round.
 `,
@@ -6262,7 +6262,7 @@ If that's you, open one envelope in Discover tonight. You won't know the writer'
         title: '2026 펜팔 앱 추천 7가지 — 목적별로 고르는 법 (무료 기준)',
         titleEn: 'Best pen-pal apps in 2026 — 7 picks by what you want (free tiers compared)',
         seoTitleEn: 'Best Pen Pal Apps in 2026: 7 Picks Compared',
-        description: '느린 편지, 언어 교환, 실제 만남, 익명 대화 — 목적이 다르면 맞는 펜팔 앱도 다릅니다. Lettie, Slowly, InterPals, HelloTalk, Tandem, Ablo, Penpal World를 무료 범위 기준으로 정리했습니다.',
+        description: '느린 편지, 언어 교환, 말하기 연습, 익명 대화 — 목적이 다르면 맞는 펜팔 앱도 다릅니다. Lettie, Slowly, InterPals, HelloTalk, Tandem, Ablo, Penpal World를 무료 범위 기준으로 정리했습니다.',
         descriptionEn: 'The 7 best pen pal apps in 2026: Lettie, Slowly, InterPals, HelloTalk, Tandem, Ablo and Penpal World, compared on what each free tier gives you.',
         date: '2026-09-21',
         updated: '2026-09-30',
@@ -6294,7 +6294,7 @@ If that's you, open one envelope in Discover tonight. You won't know the writer'
 | 목적 | 1순위 | 2순위 |
 |---|---|---|
 | 느린 편지, 시간이 걸리는 관계 | Lettie | Slowly |
-| 편지로 시작하는 만남 | Lettie | — |
+| 찾지 않아도 편지가 오는 곳 | Lettie | — |
 | 언어가 달라도 상관없이 | Lettie | Ablo |
 | 글쓰기 교정·언어 학습 | HelloTalk | Tandem |
 | 말하기·화상 | Tandem | HelloTalk |
@@ -6305,7 +6305,7 @@ If that's you, open one envelope in Discover tonight. You won't know the writer'
 
 편지는 두 도시 거리만큼 시간이 걸려 도착합니다(1~24시간). 남이 띄운 편지를 **발견**에서 주워 읽고 답장하며 대화가 시작되고, 편지 안 번역 버튼이 70개 넘는 언어를 처리합니다. 사진 대신 픽셀 캐릭터, 스와이프 없는 하루 몇 장의 매칭. **무료 범위**: 발견 봉투 하루 3장, 편지 띄우기 하루 1통(답장은 제한 없음), 번역 무제한, 캐릭터 16종. 광고를 보면 봉투와 편지를 더 받습니다.
 
-맞는 사람: 편지의 호흡이 좋고, 언어가 다른 사람도 만나고 싶고, 우정이든 만남이든 열어 두고 싶은 사람.
+맞는 사람: 편지의 호흡이 좋고, 언어가 달라도 펜팔을 사귀고 싶고, 상대를 검색하기보다 편지 한 통에서 시작하고 싶은 사람.
 
 ## 2. Slowly — 느린 편지의 원조
 
@@ -6337,7 +6337,7 @@ If that's you, open one envelope in Discover tonight. You won't know the writer'
 
 1. **편지 vs 채팅**부터 정하세요. 호흡이 다릅니다.
 2. **언어가 다르면** 번역이 어디에 있는지 보세요 — 앱 안(Lettie·HelloTalk·Ablo)인지, 왕복인지.
-3. **만남까지 열어 둘지** 정하세요. 열어 두면 Lettie, 우정만이면 Slowly·InterPals.
+3. **상대를 직접 찾을지, 편지가 찾아오게 할지** 정하세요. 편지가 찾아오게 하려면 Lettie, 직접 찾으려면 Slowly·InterPals.
 
 어느 앱이든 첫 편지는 자기소개가 아니라 상대 글에 대한 반응이어야 답장이 옵니다. [첫 편지 예문 7가지](/blog/first-letter-examples-discover)를 보고 시작하세요.
 
@@ -6353,7 +6353,7 @@ There's no single answer to "which pen-pal app is best" — the person who wants
 | Goal | First pick | Second |
 |---|---|---|
 | Slow letters, relationships that take time | Lettie | Slowly |
-| Meeting someone through letters | Lettie | — |
+| Letters that come to you, no searching | Lettie | — |
 | Regardless of language | Lettie | Ablo |
 | Writing corrections, language learning | HelloTalk | Tandem |
 | Speaking, video | Tandem | HelloTalk |
@@ -6364,7 +6364,7 @@ There's no single answer to "which pen-pal app is best" — the person who wants
 
 Letters take as long as the distance between two cities (1–24 hours). You pick up letters strangers released in **Discover**, reply, and a conversation begins; a translate button inside the letter covers 70+ languages. Pixel characters instead of photos, a few matching cards a day instead of swiping. **Free tier**: three Discover envelopes a day, one released letter a day (replies are not limited), unlimited translation, sixteen characters. Watch an ad for more envelopes and letters.
 
-For: people who like the rhythm of letters, want to meet people regardless of language, and want the door open to friendship or more.
+For: people who like the rhythm of letters, want pen pals regardless of language, and would rather start from one letter than search a directory.
 
 ## 2. Slowly — the original slow-letter app
 
@@ -6396,7 +6396,7 @@ Profile-based matching that's been around forever. Free is plenty if you can liv
 
 1. Decide **letters vs chat** first. The rhythm is different.
 2. If languages differ, check **where translation lives** — in the app (Lettie · HelloTalk · Ablo) or a round trip.
-3. Decide whether you want **the door open to meeting someone.** Open → Lettie; friendship only → Slowly · InterPals.
+3. Decide whether you want to **search for pen pals or have letters come to you.** Letters come to you → Lettie; search → Slowly · InterPals.
 
 Whichever app, a first letter that gets a reply is a reaction to what they wrote, not a bio. Start with [7 first-letter examples](/en/blog/first-letter-examples-discover).
 

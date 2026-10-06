@@ -101,7 +101,7 @@ Si estás decidiendo entre varias apps, lo que distingue a Lettie es la combinac
 | Objetivo | Primera opción | Segunda |
 |---|---|---|
 | Cartas lentas, vínculos que toman su tiempo | Lettie | Slowly |
-| Conocer gente por carta, sin descartar algo más | Lettie | — |
+| Cartas que llegan a ti, sin buscar | Lettie | — |
 | Sin que el idioma importe | Lettie | Ablo |
 | Correcciones de escritura, aprender idiomas | HelloTalk | Tandem |
 | Hablar, videollamada | Tandem | HelloTalk |
@@ -112,7 +112,7 @@ Si estás decidiendo entre varias apps, lo que distingue a Lettie es la combinac
 
 Las cartas tardan según la distancia real entre dos ciudades (1 a 24 horas). Recoges cartas que otras personas soltaron en **Descubrir**, respondes, y empieza una conversación; un botón de traducción dentro de la carta cubre más de 70 idiomas. Personajes pixel en vez de fotos, unas pocas tarjetas de presentación al día en vez de deslizar perfiles. **Plan gratis**: tres sobres de Descubrir al día, una carta nueva soltada al día (las respuestas no tienen límite), traducción ilimitada, dieciséis personajes. Ver un anuncio da acceso a más sobres y cartas.
 
-Para quién: a quien le gusta el ritmo de las cartas, quiere conocer gente sin que el idioma sea un obstáculo, y prefiere dejar la puerta abierta a una amistad o a algo más.
+Para quién: a quien le gusta el ritmo de las cartas, quiere amigos por correspondencia sin que el idioma importe, y prefiere empezar por una carta antes que buscar en un directorio.
 
 ## 2. Slowly — la app original de cartas lentas
 
@@ -148,8 +148,8 @@ El ritmo es distinto y conviene elegirlo antes de comparar apps.
 ### Si los idiomas no coinciden, mira dónde vive la traducción
 Dentro de la propia carta (Lettie, HelloTalk, Ablo) o a mano, por fuera.
 
-### Decide si quieres dejar la puerta abierta a conocer a alguien
-Abierta → Lettie. Solo amistad → Slowly o InterPals.
+### Decide si quieres buscar amigos por correspondencia o que las cartas lleguen a ti
+Las cartas llegan a ti → Lettie; buscar → Slowly · InterPals.
 
 Sea la app que elijas, una primera carta que recibe respuesta reacciona a lo que la otra persona escribió, no repite una biografía genérica.`,
     faqs: [
@@ -178,7 +178,7 @@ Sea la app que elijas, una primera carta que recibe respuesta reacciona a lo que
   'slowly-alternatives-2026': {
     title: '6 alternativas a Slowly comparadas en 2026',
     description:
-      'Seis alternativas a Slowly ordenadas por el motivo por el que la gente la deja: la barrera del idioma, querer algo más que amistad, o respuestas que se apagan.',
+      'Seis alternativas a Slowly ordenadas por el motivo por el que la gente la deja: la barrera del idioma, que encontrar con quién escribirse se sienta como trabajo, o respuestas que se apagan.',
     keywords: [
       'alternativas a Slowly 2026',
       'apps como Slowly',
@@ -186,9 +186,9 @@ Sea la app que elijas, una primera carta que recibe respuesta reacciona a lo que
       'Slowly vs Lettie',
       'amigos por correspondencia online',
     ],
-    subtitle: 'Según el motivo por el que dejas Slowly: idioma, algo más que amistad, o respuestas que se apagan.',
+    subtitle: 'Según el motivo por el que dejas Slowly: idioma, encontrar con quién escribirte como trabajo, o respuestas que se apagan.',
     answer:
-      'La gente deja Slowly por tres motivos típicos: la barrera del idioma, querer algo más que amistad, o respuestas que dejan de llegar. Aquí hay seis apps ordenadas por motivo. Lettie es la nuestra; lee esa parte con esa salvedad.',
+      'La gente deja Slowly por tres motivos típicos: la barrera del idioma, que encontrar con quién escribirse se siente como trabajo, o respuestas que dejan de llegar. Aquí hay seis apps ordenadas por motivo. Lettie es la nuestra; lee esa parte con esa salvedad.',
     body: `## De un vistazo
 
 | App | En una frase | Traducción | Demora de la carta | Propósito |
@@ -211,7 +211,7 @@ La queja más común sobre Slowly es la traducción: copiar la carta, pegarla en
 
 **Ablo** traduce automáticamente cada mensaje. Buena para hablar casualmente con gente de muchos países; no esperes profundidad.
 
-## 2. Si quieres algo más que amistad → Lettie
+## 2. Si encontrar con quién escribirte se sentía como trabajo → Lettie
 
 Slowly encuentra amigos por correspondencia mediante búsqueda y coincidencia de intereses. Lettie empieza con **recoger una carta que soltó un desconocido** y responderla, además de unas pocas tarjetas de presentación al día. Sin fotos, sin deslizar. Pensada para quien se sintió incómodo con apps de citas centradas en la foto.
 
@@ -232,7 +232,7 @@ Un apunte, porque te va a seguir a la próxima app: las respuestas suelen apagar
 ## Resumen
 
 - La traducción es lo importante → **Lettie** (cartas) o **HelloTalk** (chat)
-- Quieres dejar la puerta abierta a conocer a alguien → **Lettie**
+- Prefieres que las cartas lleguen a ti en vez de buscar a alguien → **Lettie**
 - Los números importan más → **InterPals**
 - Practicar al hablar → **Tandem**
 - Te gustan las cartas lentas y compartes idioma → sigue con **Slowly**`,

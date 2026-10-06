@@ -76,7 +76,7 @@ Programu hii inafaa watu wanaopenda mdundo wa kuandika barua, wanaotaka kufahami
 | Lengo | Chaguo la kwanza | La pili |
 |---|---|---|
 | Barua za polepole, mahusiano yanayochukua muda | Lettie | Slowly |
-| Kufahamiana na mtu kupitia barua | Lettie | — |
+| Barua zinakujia wewe, bila kutafuta | Lettie | — |
 | Bila kujali lugha | Lettie | Ablo |
 | Marekebisho ya maandishi, kujifunza lugha | HelloTalk | Tandem |
 | Kuongea, video | Tandem | HelloTalk |
@@ -87,7 +87,7 @@ Programu hii inafaa watu wanaopenda mdundo wa kuandika barua, wanaotaka kufahami
 
 Barua huchukua muda kulingana na umbali kati ya miji miwili (saa 1-24). Unaokota barua ambazo watu wasiowajua wameacha katika **Gundua**, unajibu, na mazungumzo huanza; kitufe cha tafsiri ndani ya barua kinafunika lugha zaidi ya 70. Wahusika wa pikseli badala ya picha, kadi chache za utangulizi kila siku badala ya kusogeza. **Kiwango cha bure**: bahasha tatu za Gundua kila siku, barua moja iliyotolewa kila siku (majibu hayana kikomo), tafsiri bila kikomo, wahusika kumi na sita. Tazama tangazo kupata bahasha na barua zaidi.
 
-Inafaa kwa: watu wanaopenda mdundo wa kuandikiana barua, wanaotaka kufahamiana na watu bila kujali lugha, na wanaotaka fursa ya urafiki.
+Inafaa kwa: watu wanaopenda mdundo wa kuandikiana barua, wanaotaka rafiki wa kalamu bila kujali lugha, na wanaopendelea kuanzia barua moja badala ya kutafuta kwenye orodha.
 
 ## 2. Slowly — programu asili ya barua za polepole
 
@@ -123,8 +123,8 @@ Mdundo ni tofauti kabisa.
 ### Kama lugha zinatofautiana, angalia tafsiri inapo
 Ndani ya programu (Lettie · HelloTalk · Ablo), au unahitaji kutafsiri nje.
 
-### Amua kama unataka fursa ya kufahamiana na mtu mpya
-Wazi → Lettie; urafiki tu → Slowly · InterPals.
+### Amua kama unataka kutafuta rafiki wa kalamu au unataka barua zikujie
+Zikujie → Lettie; kutafuta → Slowly · InterPals.
 
 Haijalishi programu gani utumie, barua ya kwanza inayopata jibu ni mwitikio kwa kile mtu mwingine aliandika, si wasifu wako.
 
@@ -152,11 +152,11 @@ Haijalishi programu gani utumie, barua ya kwanza inayopata jibu ni mwitikio kwa 
   'slowly-alternatives-2026': {
     title: 'Mbadala wa Slowly Mwaka 2026: Ulinganisho wa Programu Sita',
     description:
-      'Watu huacha kutumia Slowly kwa sababu tatu kuu: kizuizi cha lugha, kutaka zaidi ya urafiki, au majibu yanayopungua. Linganisha programu sita kwa sababu, ikijumuisha Lettie.',
+      'Watu huacha kutumia Slowly kwa sababu tatu kuu: kizuizi cha lugha, kutafuta rafiki wa kalamu kunahisi kama kazi ngumu, au majibu yanayopungua. Linganisha programu sita kwa sababu, ikijumuisha Lettie.',
     keywords: ['mbadala wa Slowly', 'programu kama Slowly', 'Lettie vs Slowly 2026', 'chaguo badala ya Slowly'],
     subtitle: 'Kwa sababu unayoacha — si orodha moja tu.',
     answer:
-      'Watu huacha kutumia Slowly kwa kawaida kwa sababu tatu: kizuizi cha lugha, kutaka zaidi ya urafiki, au majibu yanayopungua. Orodha hii inapanga programu sita kwa sababu. Lettie ni yetu — soma sehemu hiyo ukizingatia hilo.',
+      'Watu huacha kutumia Slowly kwa kawaida kwa sababu tatu: kizuizi cha lugha, kutafuta rafiki wa kalamu kunahisi kama kazi ngumu, au majibu yanayopungua. Orodha hii inapanga programu sita kwa sababu. Lettie ni yetu — soma sehemu hiyo ukizingatia hilo.',
     body: `## Kwa muhtasari
 
 | Programu | Mstari mmoja | Tafsiri | Kuchelewa kwa barua | Lengo |
@@ -177,7 +177,7 @@ Malalamiko ya kawaida zaidi kuhusu Slowly ni tafsiri: unahitaji kunakili barua n
 - **HelloTalk** ni mazungumzo, lakini marekebisho ya kiwango cha sentensi na tafsiri yanaifanya chombo bora zaidi ikiwa lengo ni kujifunza. Haina mdundo wa barua, hata hivyo.
 - **Ablo** inatafsiri kila ujumbe kiotomatiki. Nzuri kwa kuongea kwa kawaida na watu kutoka nchi nyingi; usitegemee undani.
 
-## 2. Kama unataka zaidi ya urafiki → Lettie
+## 2. Kama kutafuta rafiki wa kalamu kunahisi kama kazi ngumu → Lettie
 
 Slowly inapata rafiki wa kalamu kupitia utafutaji na kuoanisha kwa vipendwa. Lettie inaanza na **kuokota barua ambayo mtu asiyemjua ameitoa**, na kujibu, pamoja na kadi chache za utangulizi kila siku. Hakuna picha, hakuna kusogeza. Ni kwa watu waliohisi wasiwasi na programu za uchumba zinazoanza na picha.
 
@@ -197,7 +197,7 @@ Kumbuka moja, kwa sababu itakufuata kwenye programu inayokuja: majibu yanakoma h
 ## Muhtasari
 
 - Tafsiri ni jambo muhimu → **Lettie** (barua) au **HelloTalk** (mazungumzo)
-- Unataka fursa ya kufahamiana na mtu mpya → **Lettie**
+- Unapendelea barua zikujie badala ya kutafuta → **Lettie**
 - Idadi ni muhimu zaidi → **InterPals**
 - Mazoezi ya kuongea → **Tandem**
 - Unapenda barua za polepole na mnashiriki lugha → baki na **Slowly**
@@ -206,7 +206,7 @@ Kumbuka moja, kwa sababu itakufuata kwenye programu inayokuja: majibu yanakoma h
     faqs: [
       {
         q: 'Kwa nini watu wanaacha kutumia Slowly?',
-        a: 'Kwa kawaida kwa sababu tatu: kizuizi cha lugha bila tafsiri iliyojengwa ndani, kutaka zaidi ya urafiki tu, au majibu yanayopungua pole pole.',
+        a: 'Kwa kawaida kwa sababu tatu: kizuizi cha lugha bila tafsiri iliyojengwa ndani, kutafuta rafiki wa kalamu kunahisi kama kazi ngumu, au majibu yanayopungua pole pole.',
       },
       {
         q: 'Je, Lettie ni mbadala mzuri wa Slowly?',

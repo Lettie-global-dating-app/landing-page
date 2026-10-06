@@ -75,7 +75,7 @@ Nếu bạn đang so sánh với các ứng dụng khác như Slowly, có thể 
 | Mục đích | Lựa chọn số 1 | Lựa chọn số 2 |
 |---|---|---|
 | Thư chậm, mối quan hệ cần thời gian | Lettie | Slowly |
-| Quen biết ai đó qua những lá thư | Lettie | — |
+| Thư tự đến, không cần tìm kiếm | Lettie | — |
 | Không giới hạn ngôn ngữ | Lettie | Ablo |
 | Sửa lỗi viết, học ngoại ngữ | HelloTalk | Tandem |
 | Luyện nói, gọi video | Tandem | HelloTalk |
@@ -86,7 +86,7 @@ Nếu bạn đang so sánh với các ứng dụng khác như Slowly, có thể 
 
 Thư mất thời gian tương đương khoảng cách giữa hai thành phố (1-24 giờ). Bạn nhặt những lá thư người lạ thả ra trong Discover, trả lời, và một cuộc trò chuyện bắt đầu; nút dịch trong thư hỗ trợ hơn 70 ngôn ngữ. Nhân vật pixel thay cho ảnh thật, vài thẻ giới thiệu mỗi ngày thay cho vuốt chọn. Gói miễn phí: ba lá thư Discover mỗi ngày, một lá thư tự thả mỗi ngày (trả lời thì không giới hạn), dịch không giới hạn, mười sáu nhân vật. Xem quảng cáo để có thêm thư và lá thư Discover.
 
-Phù hợp với: người thích nhịp điệu của thư, muốn quen biết ai đó bất kể ngôn ngữ, và muốn để ngỏ khả năng tình bạn sẽ đi xa hơn.
+Phù hợp với: người thích nhịp điệu của thư, muốn tìm bạn qua thư bất kể ngôn ngữ, và thích bắt đầu từ một lá thư hơn là tìm kiếm trong một danh sách.
 
 ## 2. Slowly - ứng dụng thư chậm nguyên bản
 
@@ -118,7 +118,7 @@ Ghép nối dựa trên hồ sơ cá nhân, đã tồn tại rất lâu. Gói mi
 
 - Quyết định trước giữa **thư và chat**. Nhịp điệu của hai kiểu này rất khác nhau.
 - Nếu ngôn ngữ khác nhau, xem **bản dịch nằm ở đâu** - trong ứng dụng (Lettie, HelloTalk, Ablo) hay bạn phải tự chuyển qua lại.
-- Quyết định có muốn **để ngỏ khả năng quen biết ai đó** hay không. Muốn để ngỏ thì chọn Lettie; chỉ muốn tình bạn thì chọn Slowly hoặc InterPals.
+- Quyết định bạn muốn **tự tìm bạn qua thư hay để thư tự đến với mình**. Thư tự đến → Lettie; tự tìm kiếm → Slowly · InterPals.
 
 Dù dùng ứng dụng nào, lá thư đầu tiên nhận được hồi âm thường là phản hồi cho những gì người kia đã viết, không phải một đoạn giới thiệu bản thân.
 
@@ -148,10 +148,10 @@ Dù dùng ứng dụng nào, lá thư đầu tiên nhận được hồi âm th�
   },
   'slowly-alternatives-2026': {
     title: `6 ứng dụng thay thế Slowly đáng thử năm 2026`,
-    description: `So sánh 6 ứng dụng có thể thay thế Slowly theo lý do rời đi: rào cản ngôn ngữ, muốn quen biết nhiều người hơn, hoặc hồi âm thưa dần.`,
+    description: `So sánh 6 ứng dụng có thể thay thế Slowly theo lý do rời đi: rào cản ngôn ngữ, tìm người để viết thư cảm thấy như một công việc, hoặc hồi âm thưa dần.`,
     keywords: ['thay thế Slowly', 'ứng dụng giống Slowly', 'app kết bạn qua thư', 'Slowly alternatives 2026', 'app dịch thư tự động'],
     subtitle: `Mỗi lý do rời bỏ Slowly cần một lựa chọn khác nhau`,
-    answer: `**Người ta rời Slowly chủ yếu vì ba lý do: rào cản ngôn ngữ, muốn nhiều hơn tình bạn, hoặc hồi âm thưa dần.** Mỗi lý do cần một hướng đi khác. Dưới đây là 6 ứng dụng xếp theo lý do. Lettie là ứng dụng của chúng tôi.`,
+    answer: `**Người ta rời Slowly chủ yếu vì ba lý do: rào cản ngôn ngữ, tìm người để viết thư cảm thấy như một công việc, hoặc hồi âm thưa dần.** Mỗi lý do cần một hướng đi khác. Dưới đây là 6 ứng dụng xếp theo lý do. Lettie là ứng dụng của chúng tôi.`,
     body: `## Tổng quan
 
 | Ứng dụng | Một câu mô tả | Dịch thuật | Thời gian thư đến | Mục đích |
@@ -172,7 +172,7 @@ Phàn nàn phổ biến nhất về Slowly là dịch thuật: phải chép lá 
 - **HelloTalk** là ứng dụng chat, nhưng việc sửa lỗi từng câu và dịch thuật khiến đây là công cụ hiệu quả nhất nếu mục đích là học tập. Không có nhịp điệu của thư.
 - **Ablo** tự động dịch mọi tin nhắn. Phù hợp để trò chuyện nhẹ nhàng với người ở nhiều nước, đừng mong đợi sự sâu sắc.
 
-## 2. Nếu bạn muốn nhiều hơn tình bạn → Lettie
+## 2. Nếu việc tìm người để viết thư cảm thấy như công việc → Lettie
 
 Slowly tìm bạn qua thư bằng tìm kiếm và ghép theo sở thích. Lettie bắt đầu bằng việc **nhặt một lá thư người lạ thả ra** và trả lời, cộng thêm vài thẻ giới thiệu mỗi ngày. Không ảnh, không vuốt chọn. Phù hợp với người từng cảm thấy không thoải mái với các ứng dụng đặt ảnh lên trước.
 
@@ -192,7 +192,7 @@ Một lưu ý, vì điều này sẽ theo bạn sang ứng dụng tiếp theo: h
 ## Tổng kết
 
 - Dịch thuật là trọng tâm → **Lettie** (viết thư) hoặc **HelloTalk** (chat)
-- Muốn để ngỏ khả năng quen biết ai đó → **Lettie**
+- Muốn thư tự đến hơn là phải tìm kiếm → **Lettie**
 - Số lượng là quan trọng nhất → **InterPals**
 - Luyện nói → **Tandem**
 - Thích thư chậm và chung ngôn ngữ → tiếp tục dùng **Slowly**
@@ -201,7 +201,7 @@ Một lưu ý, vì điều này sẽ theo bạn sang ứng dụng tiếp theo: h
     faqs: [
       {
         q: `Vì sao nhiều người tìm ứng dụng thay thế Slowly?`,
-        a: `Chủ yếu vì ba lý do: phải tự dịch qua lại tốn công (rào cản ngôn ngữ), muốn nhiều hơn tình bạn, và hồi âm thưa dần. Mỗi lý do dẫn đến một lựa chọn thay thế khác nhau.`,
+        a: `Chủ yếu vì ba lý do: phải tự dịch qua lại tốn công (rào cản ngôn ngữ), tìm người để viết thư cảm thấy như công việc, và hồi âm thưa dần. Mỗi lý do dẫn đến một lựa chọn thay thế khác nhau.`,
       },
       {
         q: `Nếu rời Slowly vì vấn đề dịch thuật, nên chọn ứng dụng nào?`,

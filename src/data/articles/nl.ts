@@ -89,7 +89,7 @@ Net als Slowly laat Lettie brieven reizen op basis van de echte afstand tussen t
 | Doel | Eerste keuze | Tweede keuze |
 |---|---|---|
 | Trage brieven, relaties die tijd nemen | Lettie | Slowly |
-| Vriendschappen sluiten via brieven | Lettie | - |
+| Brieven die naar je toe komen, niet zoeken | Lettie | - |
 | Taal maakt niet uit | Lettie | Ablo |
 | Schrijfcorrecties, talen leren | HelloTalk | Tandem |
 | Spreken, video | Tandem | HelloTalk |
@@ -100,7 +100,7 @@ Net als Slowly laat Lettie brieven reizen op basis van de echte afstand tussen t
 
 Een brief doet er zo lang over als de werkelijke afstand, 1 tot 24 uur afhankelijk van de twee landen. Je raapt in Ontdekken brieven op die vreemden hebben losgelaten, reageert, en er begint een correspondentie; een vertaalknop in de brief dekt meer dan 70 talen, gratis. Pixelkarakters vervangen foto's, een paar introductiekaarten per dag vervangen het swipen. Ontdekken geeft drie nieuwe enveloppen per dag gratis, en een advertentie per dag voor meer.
 
-Voor: mensen die het ritme van brieven waarderen, vriendschap willen sluiten ongeacht de taal, en een correspondentie willen die de tijd neemt.
+Voor: mensen die het ritme van brieven waarderen, penvrienden willen ongeacht de taal, en liever beginnen met één brief dan een directory doorzoeken.
 
 ## 2. Slowly - de originele trage-brievenapp
 
@@ -132,7 +132,7 @@ Profielgebaseerde matching die al heel lang bestaat. Gratis is ruim voldoende al
 
 - Kies eerst tussen **brieven en chat**. Het ritme is anders.
 - Als de talen verschillen, check **waar de vertaling plaatsvindt** - in de app (Lettie, HelloTalk, Ablo) of via een omweg.
-- Bepaal of je **alleen vriendschap** zoekt (Slowly, InterPals) of **openstaat om nieuwe mensen te leren kennen** via brieven (Lettie).
+- Bepaal of je **penvrienden wilt zoeken** of liever **brieven naar je toe laat komen**. Brieven komen naar je toe -> Lettie; zoeken -> Slowly, InterPals.
 
 Welke app je ook kiest: een eerste brief die een reactie krijgt, reageert op wat de ander geschreven heeft, niet op een bio.
 
@@ -163,7 +163,7 @@ Welke app je ook kiest: een eerste brief die een reactie krijgt, reageert op wat
   'slowly-alternatives-2026': {
     title: '6 alternatieven voor Slowly vergeleken in 2026',
     description:
-      'Vergelijking 2026 van zes alternatieven voor Slowly op basis van je reden om te stoppen: taalbarrière, meer dan vaste penvriendschappen, of reacties die uitblijven.',
+      'Vergelijking 2026 van zes alternatieven voor Slowly op basis van je reden om te stoppen: taalbarrière, iemand zoeken om naar te schrijven dat als werk voelt, of reacties die uitblijven.',
     keywords: [
       'alternatief voor Slowly',
       'Slowly alternatief 2026',
@@ -172,7 +172,7 @@ Welke app je ook kiest: een eerste brief die een reactie krijgt, reageert op wat
     ],
     subtitle: 'Gesorteerd op de reden om Slowly te verlaten, niet op populariteit.',
     answer:
-      'Mensen verlaten Slowly om een van drie redenen: de taalbarrière, de wens voor meer dan vaste penvriendschappen, of reacties die uitblijven. Zes apps worden hier per reden vergeleken, waarbij Lettie, Slowly, InterPals, HelloTalk, Tandem, Penpal World en Ablo beoordeeld worden op vertaling, briefvertraging en doel.',
+      'Mensen verlaten Slowly om een van drie redenen: de taalbarrière, het gevoel dat iemand zoeken om naar te schrijven werk is, of reacties die uitblijven. Zes apps worden hier per reden vergeleken, waarbij Lettie, Slowly, InterPals, HelloTalk, Tandem, Penpal World en Ablo beoordeeld worden op vertaling, briefvertraging en doel.',
     body: `## In één oogopslag
 
 | App | In één zin | Vertaling | Briefvertraging | Doel |
@@ -193,7 +193,7 @@ De meest gehoorde klacht over Slowly gaat over vertaling: de brief naar een exte
 - **HelloTalk** is chat, maar correcties op zinsniveau en vertaling maken het de meest efficiënte tool als leren het doel is. Wel zonder briefritme.
 - **Ablo** vertaalt elk bericht automatisch. Goed om losjes te praten met mensen uit veel landen; verwacht geen diepgang.
 
-## 2. Als je verder wilt dan profielmatching -> Lettie
+## 2. Als iemand zoeken om naar te schrijven voelde als werk -> Lettie
 
 Slowly vindt penvrienden via zoeken en gedeelde interesses. Lettie begint ermee dat je **een brief oppakt die een vreemde heeft losgelaten**, erop reageert, plus een paar introductiekaarten per dag. Geen foto's, geen swipen. Dit past bij mensen die zich oncomfortabel voelden bij apps waar de foto op de eerste plaats staat.
 
@@ -213,7 +213,7 @@ Een opmerking, want die volgt je naar de volgende app: reacties blijven meestal 
 ## Samenvatting
 
 - Vertaling staat voorop -> **Lettie** (brieven) of **HelloTalk** (chat)
-- Je wilt verder dan profielmatching -> **Lettie**
+- Je wilt dat brieven naar je toe komen in plaats van zoeken -> **Lettie**
 - Aantallen zijn het belangrijkst -> **InterPals**
 - Spreekvaardigheid -> **Tandem**
 - Je houdt van trage brieven en deelt al een taal -> blijf bij **Slowly**
@@ -222,7 +222,7 @@ Een opmerking, want die volgt je naar de volgende app: reacties blijven meestal 
     faqs: [
       {
         q: 'Wat zijn de beste alternatieven voor Slowly in 2026?',
-        a: 'Lettie voor gratis, ingebouwde vertaling en om verder te gaan dan profielmatching, HelloTalk en Tandem voor talen leren, InterPals en Penpal World voor de grootste penvriendencommunity.',
+        a: 'Lettie voor gratis, ingebouwde vertaling en brieven die naar je toe komen in plaats van zoeken, HelloTalk en Tandem voor talen leren, InterPals en Penpal World voor de grootste penvriendencommunity.',
       },
       {
         q: 'Welk alternatief voor Slowly vertaalt brieven automatisch?',

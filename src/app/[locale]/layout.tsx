@@ -5,7 +5,6 @@ import { LOCALES, OG_LOCALE, RTL_LOCALES, SITE_URL, isLocale, languageAlternates
 import { getDictionary } from '@/i18n/dictionaries';
 import { getHomeCopy } from '@/i18n/home';
 import { seoDesc } from '@/lib/seo';
-import { APP_ID, SITE_ID } from '@/lib/schema';
 
 // 한국어(루트)와 영어(/en)는 기존 라우트가 그대로 담당한다.
 // 이미 색인된 경로를 건드리지 않기 위해서다. 여기서는 새로 추가하는 언어만 만든다.
@@ -97,21 +96,6 @@ export default async function LocaleLayout({
       */}
       <script
         dangerouslySetInnerHTML={{ __html: `document.documentElement.lang='${locale}';document.documentElement.dir='${RTL_LOCALES.includes(locale) ? 'rtl' : 'ltr'}';` }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'WebPage',
-            '@id': `${urlFor(locale)}#webpage`,
-            url: urlFor(locale),
-            name: `Lettie — ${getHomeCopy(locale).h1a} ${getHomeCopy(locale).h1b}`,
-            inLanguage: locale,
-            isPartOf: { '@id': SITE_ID },
-            about: { '@id': APP_ID },
-          }),
-        }}
       />
       {children}
     </>

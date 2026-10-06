@@ -93,7 +93,7 @@ Pareho ang Lettie at Slowly sa pagpapadala ng sulat base sa distansya. Ang pagka
 | Layunin | Unang pili | Pangalawa |
 |---|---|---|
 | Relaxed na sulat, relasyon na kailangan ng oras | Lettie | Slowly |
-| Paghahanap ng bagong pen pal sa pamamagitan ng sulat | Lettie | — |
+| Dumarating sa iyo ang sulat, walang paghahanap | Lettie | — |
 | Kahit magkaiba ang wika | Lettie | Ablo |
 | Pagwawasto ng sulat, pag-aaral ng wika | HelloTalk | Tandem |
 | Pag-practice mag-speak, video | Tandem | HelloTalk |
@@ -104,7 +104,7 @@ Pareho ang Lettie at Slowly sa pagpapadala ng sulat base sa distansya. Ang pagka
 
 Tumatagal ang sulat ayon sa distansya ng dalawang lungsod, humigit-kumulang 1–2 oras kung sa loob ng bansa hanggang humigit-kumulang isang araw (1–24 oras) sa kabilang mundo. Kinukuha mo ang sulat na pinakawalan ng stranger sa Discover, sasagutin mo, at magsisimula ang usapan; may translate button ang sulat na sumasaklaw sa 70+ wika. Pixel characters sa halip ng litrato, at may ilang introduction card kada araw sa halip ng swipe. Free tier: tatlong Discover envelopes kada araw, isang sulat na maaaring ipakawala kada araw (walang limit ang mga sagot), unlimited translation, labing-anim na character. Panoorin ang ad para sa extra envelopes at letters.
 
-Para kanino: mga taong gustong-gusto ang rhythm ng sulat, gustong makahanap ng pen pal kahit magkaiba ang wika, at naghahanap ng bagong friendship sa ibang bansa.
+Para kanino: mga taong gustong-gusto ang rhythm ng sulat, gustong makahanap ng pen pal kahit magkaiba ang wika, at mas gustong magsimula sa isang sulat kaysa maghanap sa isang directory.
 
 ## 2. Slowly — ang orihinal na slow-letter app
 
@@ -136,7 +136,7 @@ Profile-based matching na matagal na nandiyan. Sapat ang free tier kung okay ka 
 
 - Decide muna kung **sulat o chat**. Iba ang rhythm.
 - Kung magkaiba ang wika, tingnan kung **saan nasa app ang translation** — built-in (Lettie, HelloTalk, Ablo) o kailangan mong gumamit ng hiwalay na tool.
-- Decide kung gusto mo ng **random na bagong pen pal** via Discover, o profile-based search tulad ng Slowly at InterPals.
+- Decide kung gusto mong **maghanap ng pen pal** o **hayaang dumating sa iyo ang sulat**. Dumarating sa iyo ang sulat → Lettie; paghahanap → Slowly · InterPals.
 
 Ang unang sulat na nasasagot ay karaniwang reaction sa nilalaman ng sulat, hindi sa bio mo.
 
@@ -167,7 +167,7 @@ Ang unang sulat na nasasagot ay karaniwang reaction sa nilalaman ng sulat, hindi
   'slowly-alternatives-2026': {
     title: '6 Alternatibo sa Slowly 2026, Inihambing',
     description:
-      'Dahilan kung bakit lumilipat ang mga tao mula sa Slowly: language barrier, gustong higit pa sa friendship, o namamatay na reply. Ito ang 6 alternatibo 2026, kasama ang Lettie.',
+      'Dahilan kung bakit lumilipat ang mga tao mula sa Slowly: language barrier, mahirap maghanap ng taong susulatan, o namamatay na reply. Ito ang 6 alternatibo 2026, kasama ang Lettie.',
     keywords: [
       'alternatibo sa slowly',
       'slowly alternatives 2026',
@@ -177,7 +177,7 @@ Ang unang sulat na nasasagot ay karaniwang reaction sa nilalaman ng sulat, hindi
     ],
     subtitle: 'Anim na app, pinagsunod-sunod ayon sa dahilan kung bakit ka nag-iwan ng Slowly.',
     answer:
-      'Umaalis ang mga tao sa Slowly dahil sa isa sa tatlong dahilan: **language gap**, **gusto ng higit pa sa friendship**, o **namamatay na reply**. Narito ang anim na alternatibo sa Slowly, nahati base sa dahilan; kasama dito ang Lettie, at kami ang gumawa nito.',
+      'Umaalis ang mga tao sa Slowly dahil sa isa sa tatlong dahilan: **language gap**, **mahirap maghanap ng taong susulatan**, o **namamatay na reply**. Narito ang anim na alternatibo sa Slowly, nahati base sa dahilan; kasama dito ang Lettie, at kami ang gumawa nito.',
     body: `## Sa isang tingin
 
 | App | One liner | Translation | Letter delay | Purpose |
@@ -198,7 +198,7 @@ Ang pinakakaraniwang reklamo sa Slowly ay ang translation: kopyahin ang sulat sa
 - Ang HelloTalk ay chat, pero ang sentence-level corrections at translation nito ang gumagawa itong pinaka-efficient na tool kung learning ang goal. Walang letter rhythm, pero.
 - Ang Ablo ay auto-translate ang bawat message. Maganda para sa casual chat sa mga tao mula sa ibang bansa; huwag asahan ang depth.
 
-## 2. Kung gusto mo ng bagong pen pal sa labas ng profile search → Lettie
+## 2. Kung pakiramdam mo trabaho na ang maghanap ng taong susulatan → Lettie
 
 Ang Slowly ay naghahanap ng pen pal via search at interest matching. Ang Lettie ay nagsisimula sa **pagkuha ng sulat na pinakawalan ng isang stranger** at sinasagot ito, plus ilang introduction card kada araw. Walang litrato, walang swipe. Para sa mga taong hindi comfortable sa mga app na "photo first".
 
@@ -218,7 +218,7 @@ Isang bagay na dapat tandaan, dahil mangyayari ito ulit sa susunod na app: namam
 ## Summary
 
 - Translation ang focus → Lettie (sulat) o HelloTalk (chat)
-- Gustong makahanap ng bagong pen pal, hindi lang hanap ng profile → Lettie
+- Mas gusto mong dumating sa iyo ang sulat kaysa maghanap ng susulatan → Lettie
 - Numbers matter most → InterPals
 - Speaking practice → Tandem
 - Gustong slow letters at sabay ang wika sa kausap mo → manatili sa Slowly

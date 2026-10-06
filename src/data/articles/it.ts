@@ -101,7 +101,7 @@ Se stai scegliendo tra diverse app, ciò che distingue Lettie è la combinazione
 | Obiettivo | Prima scelta | Seconda |
 |---|---|---|
 | Lettere lente, legami che richiedono tempo | Lettie | Slowly |
-| Conoscere persone per lettera, senza escludere altro | Lettie | — |
+| Le lettere arrivano a te, senza bisogno di cercare | Lettie | — |
 | Senza che la lingua sia un problema | Lettie | Ablo |
 | Correzioni di scrittura, imparare lingue | HelloTalk | Tandem |
 | Parlare, videochiamata | Tandem | HelloTalk |
@@ -112,7 +112,7 @@ Se stai scegliendo tra diverse app, ciò che distingue Lettie è la combinazione
 
 Le lettere impiegano un tempo legato alla distanza reale tra due città (1-24 ore). Raccogli lettere che altre persone hanno lasciato andare in **Scopri**, rispondi, e inizia una conversazione; un pulsante di traduzione dentro la lettera copre oltre 70 lingue. Personaggi pixel invece di foto, poche schede di presentazione al giorno invece di scorrere profili. **Piano gratis**: tre buste di Scopri al giorno, una lettera nuova lasciata andare al giorno (le risposte non hanno limiti), traduzione illimitata, sedici personaggi. Guardare una pubblicità sblocca più buste e lettere.
 
-Per chi: a chi piace il ritmo delle lettere, vuole conoscere persone senza che la lingua sia un ostacolo, e preferisce lasciare la porta aperta a un'amicizia o a qualcosa di più.
+Per chi: a chi piace il ritmo delle lettere, vuole amici di penna indipendentemente dalla lingua, e preferisce partire da una lettera piuttosto che cercare in una directory.
 
 ## 2. Slowly — l'app originale delle lettere lente
 
@@ -148,8 +148,8 @@ Il ritmo è diverso, ed è bene deciderlo prima di confrontare le app.
 ### Se le lingue sono diverse, guarda dove vive la traduzione
 Dentro la lettera stessa (Lettie, HelloTalk, Ablo) oppure a mano, all'esterno.
 
-### Decidi se vuoi lasciare la porta aperta a conoscere qualcuno
-Aperta → Lettie. Solo amicizia → Slowly o InterPals.
+### Decidi se vuoi cercare amici di penna o avere lettere che arrivano a te
+Le lettere arrivano a te → Lettie; cercare → Slowly · InterPals.
 
 Qualunque app scegli, una prima lettera che riceve risposta reagisce a quello che l'altra persona ha scritto, non ripete una bio generica.`,
     faqs: [
@@ -178,7 +178,7 @@ Qualunque app scegli, una prima lettera che riceve risposta reagisce a quello ch
   'slowly-alternatives-2026': {
     title: '6 alternative a Slowly confrontate nel 2026',
     description:
-      'Sei alternative a Slowly ordinate in base al motivo per cui le persone lo lasciano: la barriera linguistica, volere più dell’amicizia, o risposte che si spengono.',
+      'Sei alternative a Slowly ordinate in base al motivo per cui le persone lo lasciano: la barriera linguistica, il fatto che trovare qualcuno a cui scrivere sembra un lavoro, o risposte che si spengono.',
     keywords: [
       'alternative a Slowly 2026',
       'app come Slowly',
@@ -186,9 +186,9 @@ Qualunque app scegli, una prima lettera che riceve risposta reagisce a quello ch
       'Slowly vs Lettie',
       'amici di penna online',
     ],
-    subtitle: 'In base al motivo per cui lasci Slowly: lingua, qualcosa più dell’amicizia, o risposte che si spengono.',
+    subtitle: 'In base al motivo per cui lasci Slowly: lingua, trovare qualcuno a cui scrivere sembra un lavoro, o risposte che si spengono.',
     answer:
-      'Le persone lasciano Slowly per tre motivi tipici: la barriera linguistica, il voler qualcosa più dell’amicizia, o risposte che smettono di arrivare. Ecco sei app ordinate per motivo. Lettie è la nostra; leggi quella parte con questa riserva.',
+      'Le persone lasciano Slowly per tre motivi tipici: la barriera linguistica, il fatto che trovare qualcuno a cui scrivere sembra un lavoro, o risposte che smettono di arrivare. Ecco sei app ordinate per motivo. Lettie è la nostra; leggi quella parte con questa riserva.',
     body: `## A colpo d'occhio
 
 | App | In una frase | Traduzione | Ritardo della lettera | Scopo |
@@ -211,7 +211,7 @@ La lamentela più comune su Slowly è la traduzione: copiare la lettera, incolla
 
 **Ablo** traduce automaticamente ogni messaggio. Buona per parlare in modo informale con persone di molti paesi; non aspettarti profondità.
 
-## 2. Se vuoi qualcosa più dell'amicizia → Lettie
+## 2. Se trovare qualcuno a cui scrivere ti sembrava un lavoro → Lettie
 
 Slowly trova amici di penna tramite ricerca e abbinamento per interessi. Lettie inizia con **raccogliere una lettera che uno straniero ha lasciato andare** e risponderle, oltre a poche schede di presentazione al giorno. Niente foto, niente da scorrere. Pensata per chi si è sentito a disagio con app di incontri centrate sulla foto.
 
@@ -232,7 +232,7 @@ Una nota, perché ti segue nella prossima app: le risposte di solito si spengono
 ## In sintesi
 
 - La traduzione è il punto → **Lettie** (lettere) o **HelloTalk** (chat)
-- Vuoi lasciare la porta aperta a conoscere qualcuno → **Lettie**
+- Preferisci che le lettere arrivino a te piuttosto che cercare qualcuno → **Lettie**
 - I numeri contano di più → **InterPals**
 - Praticare il parlato → **Tandem**
 - Ti piacciono le lettere lente e condividi la lingua → resta con **Slowly**`,

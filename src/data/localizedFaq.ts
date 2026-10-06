@@ -173,7 +173,7 @@ export const localizedFaq: Record<string, FaqContent> = {
   },
 
   de: {
-    title: 'Häufige Fragen zu Lettie',
+    title: 'Häufige Fragen zu Lettie, der Brieffreund-App',
     description:
       'Was Lettie ist, ob die App kostenlos ist, wie die Übersetzung der Briefe funktioniert und wann man Kontaktdaten mit einem Brieffreund austauschen kann.',
     subtitle: 'Was Leute fragen, bevor sie den ersten Brief schreiben',
@@ -207,7 +207,7 @@ export const localizedFaq: Record<string, FaqContent> = {
   },
 
   zh: {
-    title: 'Lettie 常见问题',
+    title: 'Lettie 常见问题：笔友App是否免费、怎么翻译',
     description:
       'Lettie 是什么、是否免费、信件如何自动翻译，以及与笔友交换联系方式的时机。写第一封信之前最常被问到的问题。',
     subtitle: '写第一封信之前，大家最常问的事',
@@ -275,7 +275,7 @@ export const localizedFaq: Record<string, FaqContent> = {
   },
 
   ru: {
-    title: 'Частые вопросы о Lettie',
+    title: 'Частые вопросы о Lettie — приложении для переписки',
     description:
       'Что такое Lettie, бесплатно ли приложение, как работает перевод писем и когда можно обменяться контактами с другом по переписке.',
     subtitle: 'О чём спрашивают до того, как написать первое письмо',

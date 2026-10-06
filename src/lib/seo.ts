@@ -20,13 +20,15 @@ export function seoTitle(title: string, max = 60): string {
 export function seoDesc(text: string, max = 160): string {
   const t = text.replace(/\s+/g, ' ').trim();
   if (visualWidth(t) <= max) return t;
-  const sentences = t.match(/[^.!?。！？]+[.!?。！？]+["')\]]*\s*/g) ?? [t];
+  // 힌디·벵골어 । · 우르두 ۔ · 아랍·페르시아어 ؟ 도 문장 끝 (없으면 힌디 설명이 문장 중간에서 잘렸다)
+  const sentences = t.match(/[^.!?。！？।۔؟]+[.!?。！？।۔؟]+["')\]]*\s*/g) ?? [t];
   let out = '';
   for (const s of sentences) {
     if (visualWidth(out + s) > max) break;
     out += s;
   }
-  if (out.trim()) return out.trim();
+  // 첫 문장만 들어가고 너무 짧으면(그리스어 홈이 56자였다) 아래 단어 경계 자르기로 더 채운다
+  if (out.trim() && visualWidth(out.trim()) >= max * 0.4) return out.trim();
   let cut = '';
   for (const ch of t) {
     if (visualWidth(cut + ch) > max - 1) break;

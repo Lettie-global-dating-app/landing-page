@@ -75,7 +75,7 @@ Aplicații precum Slowly livrează și ele scrisori în funcție de distanță. 
     keywords: ['cele mai bune aplicații de corespondenți', 'aplicații de scrisori 2026', 'alternative Slowly', 'Lettie', 'prieten prin corespondență'],
     subtitle: 'Aplicația potrivită pentru tine depinde de ce cauți.',
     answer:
-      'Nu există un singur răspuns la "care este cea mai bună aplicație de corespondenți". Pentru scrisori lente și o corespondență deschisă spre prietenie, Lettie este alegerea; pentru o prietenie lungă cu o limbă comună, Slowly; pentru învățarea unei limbi, HelloTalk sau Tandem.',
+      'Nu există un singur răspuns la "care este cea mai bună aplicație de corespondenți". Pentru scrisori lente care vin direct la tine, Lettie este alegerea; pentru o prietenie lungă cu o limbă comună, Slowly; pentru învățarea unei limbi, HelloTalk sau Tandem.',
     body: `Persoana care vrea să scrie scrisori și cea care vrea exercițiu de conversație nu au nevoie de aceeași recomandare. Lista de mai jos este ordonată după scop și judecată după **ce oferă versiunea gratuită** a fiecărei aplicații. Lettie este a noastră.
 
 ## Rezumat
@@ -83,7 +83,7 @@ Aplicații precum Slowly livrează și ele scrisori în funcție de distanță. 
 | Scop | Prima alegere | A doua |
 |---|---|---|
 | Scrisori lente, relații care au nevoie de timp | Lettie | Slowly |
-| Cunoașterea unor necunoscuți prin scrisori | Lettie | — |
+| Scrisori care vin la tine, fără căutare | Lettie | — |
 | Indiferent de limbă | Lettie | Ablo |
 | Corectare scrisă, învățarea unei limbi | HelloTalk | Tandem |
 | Conversație, video | Tandem | HelloTalk |
@@ -94,7 +94,7 @@ Aplicații precum Slowly livrează și ele scrisori în funcție de distanță. 
 
 Durează cât distanța dintre două orașe (1-24 ore). În Discover culegi scrisori lăsate de necunoscuți, răspunzi și începe o corespondență; butonul de traducere din scrisoare acoperă peste 70 de limbi. Personaje pixelate în loc de fotografii, câteva carduri de prezentare pe zi în loc de glisare. **Versiune gratuită**: plicuri noi în fiecare zi în Discover, traducere nelimitată, șaisprezece personaje; mai multe plicuri urmărind o reclamă.
 
-Pentru cei care iubesc ritmul scrisorilor, vor să cunoască oameni indiferent de limbă și sunt deschiși spre prietenie (sau mai mult).
+Pentru cei care iubesc ritmul scrisorilor, vor corespondenți indiferent de limbă și preferă să înceapă de la o scrisoare decât să caute într-un director.
 
 ## 2. Slowly — aplicația originală de scrisori lente
 
@@ -126,7 +126,7 @@ Asociere pe bază de profil, prezentă de mult timp. Versiunea gratuită este su
 
 - Decide mai întâi dacă vrei **scrisori sau conversație**; ritmul este diferit.
 - Dacă limbile diferă, verifică **unde se face traducerea** — în aplicație (Lettie, HelloTalk, Ablo) sau cu un drum dus-întors manual.
-- Decide dacă vrei **ușa deschisă spre a cunoaște pe cineva mai mult decât ca prieten**. Deschisă → Lettie; doar prietenie → Slowly, InterPals.
+- Decide dacă vrei **să cauți corespondenți sau să vină scrisorile la tine**. Scrisorile vin la tine → Lettie; căutare → Slowly, InterPals.
 
 Indiferent de aplicație, o primă scrisoare care primește răspuns este o reacție la ce a scris celălalt, nu la o biografie.
 
@@ -134,7 +134,7 @@ Indiferent de aplicație, o primă scrisoare care primește răspuns este o reac
     faqs: [
       {
         q: 'Care este cea mai bună aplicație de corespondenți pentru 2026?',
-        a: 'Nu există un singur răspuns. Pentru scrisori lente și o corespondență deschisă spre prietenie, Lettie este alegerea; pentru o prietenie lungă cu o limbă comună, Slowly; pentru învățarea unei limbi, HelloTalk sau Tandem.',
+        a: 'Nu există un singur răspuns. Pentru scrisori lente care vin direct la tine, Lettie este alegerea; pentru o prietenie lungă cu o limbă comună, Slowly; pentru învățarea unei limbi, HelloTalk sau Tandem.',
       },
       {
         q: 'Aplicațiile de corespondenți sunt gratuite?',
@@ -153,12 +153,12 @@ Indiferent de aplicație, o primă scrisoare care primește răspuns este o reac
   'slowly-alternatives-2026': {
     title: '6 Alternative la Slowly: Comparație 2026',
     description:
-      'Șase alternative la Slowly în funcție de motivul plecării: bariera de limbă → Lettie, HelloTalk; deschis spre mai mult decât prietenie → Lettie; comunitate mare → InterPals; conversație → Tandem.',
+      'Șase alternative la Slowly în funcție de motivul plecării: bariera de limbă → Lettie, HelloTalk; când găsirea unui corespondent pare o corvoadă → Lettie; comunitate mare → InterPals; conversație → Tandem.',
     keywords: ['alternative Slowly', 'aplicații asemănătoare Slowly', 'aplicație de corespondenți', 'Lettie', 'InterPals'],
     subtitle: 'Șase direcții diferite, în funcție de motivul plecării.',
     answer:
-      'Oamenii renunță la Slowly dintr-unul din trei motive: bariera de limbă, dorința de mai mult decât prietenie sau răspunsurile care se opresc. Pentru bariera de limbă și deschiderea spre mai mult decât prietenie, Lettie este alegerea; pentru comunitate mare, InterPals; pentru exercițiu de conversație, Tandem.',
-    body: `Oamenii renunță la Slowly dintr-unul din trei motive: **bariera de limbă**, **dorința de mai mult decât prietenie** sau **răspunsurile care se opresc**. Motive diferite, răspunsuri diferite. Iată șase aplicații ordonate după motiv. Lettie este a noastră — citește partea respectivă în consecință.
+      'Oamenii renunță la Slowly dintr-unul din trei motive: bariera de limbă, găsirea unui corespondent pare o corvoadă, sau răspunsurile care se opresc. Pentru bariera de limbă și pentru când găsirea unui corespondent pare o corvoadă, Lettie este alegerea; pentru comunitate mare, InterPals; pentru exercițiu de conversație, Tandem.',
+    body: `Oamenii renunță la Slowly dintr-unul din trei motive: **bariera de limbă**, **găsirea unui corespondent pare o corvoadă**, sau **răspunsurile care se opresc**. Motive diferite, răspunsuri diferite. Iată șase aplicații ordonate după motiv. Lettie este a noastră — citește partea respectivă în consecință.
 
 ## Dintr-o privire
 
@@ -180,7 +180,7 @@ Cea mai frecventă plângere despre Slowly este traducerea: copiezi scrisoarea �
 - **HelloTalk** este o aplicație de chat, dar corectările la nivel de propoziție și traducerea o fac cel mai eficient instrument dacă scopul este învățarea. Nu are, totuși, ritmul scrisorilor.
 - **Ablo** traduce automat fiecare mesaj. Bun pentru conversații ușoare cu oameni din multe țări; nu te aștepta la profunzime.
 
-## 2. Dacă vrei mai mult decât prietenie → Lettie
+## 2. Dacă găsirea unui corespondent pare o corvoadă → Lettie
 
 Slowly găsește corespondenți prin căutare și asociere de interese. Lettie începe prin a **culege o scrisoare** pe care un necunoscut a lăsat-o, a răspunde, și adaugă câteva carduri de prezentare pe zi. Fără fotografii, fără glisare. Este pentru cei care s-au simțit incomod în aplicațiile unde fotografia vine prima dată.
 
@@ -200,7 +200,7 @@ O observație, pentru că te va urma în următoarea aplicație: răspunsurile s
 ## Rezumat
 
 - Traducerea este prioritatea → **Lettie** (scrisori) sau **HelloTalk** (chat)
-- Vrei ușa deschisă spre mai mult decât prietenie → **Lettie**
+- Preferi ca scrisorile să vină la tine decât să cauți → **Lettie**
 - Numerele contează cel mai mult → **InterPals**
 - Exercițiu de conversație → **Tandem**
 - Îți plac scrisorile lente și ai o limbă comună → rămâi la **Slowly**
@@ -209,7 +209,7 @@ O observație, pentru că te va urma în următoarea aplicație: răspunsurile s
     faqs: [
       {
         q: 'Care este cea mai bună alternativă la Slowly?',
-        a: 'Depinde de motivul plecării. Pentru bariera de limbă și o corespondență deschisă spre mai mult decât prietenie, Lettie este alegerea; pentru cea mai mare comunitate, InterPals; pentru exercițiu de conversație, Tandem.',
+        a: 'Depinde de motivul plecării. Pentru bariera de limbă și pentru scrisori care vin la tine fără căutare, Lettie este alegerea; pentru cea mai mare comunitate, InterPals; pentru exercițiu de conversație, Tandem.',
       },
       {
         q: 'Lettie este diferit de Slowly?',

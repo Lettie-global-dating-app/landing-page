@@ -89,7 +89,7 @@ Wie Slowly lässt Lettie Briefe nach der echten Entfernung zwischen zwei Länder
 | Ziel | Erste Wahl | Zweite Wahl |
 |---|---|---|
 | Langsame Briefe, Beziehungen, die Zeit brauchen | Lettie | Slowly |
-| Freundschaften über Briefe schließen | Lettie | - |
+| Briefe kommen zu dir, kein Suchen | Lettie | - |
 | Egal welche Sprache | Lettie | Ablo |
 | Schreibkorrekturen, Sprachenlernen | HelloTalk | Tandem |
 | Sprechen, Video | Tandem | HelloTalk |
@@ -100,7 +100,7 @@ Wie Slowly lässt Lettie Briefe nach der echten Entfernung zwischen zwei Länder
 
 Ein Brief braucht so lange wie die tatsächliche Entfernung, 1 bis 24 Stunden je nach den beiden Ländern. Du hebst in Entdecken Briefe auf, die Fremde losgelassen haben, antwortest, und eine Konversation beginnt; ein Übersetzungsknopf im Brief deckt über 70 Sprachen ab, kostenlos. Pixelfiguren ersetzen Fotos, ein paar Vorstellungskarten pro Tag ersetzen das Wischen. Entdecken bietet drei neue Briefumschläge pro Tag kostenlos, und eine Werbeanzeige pro Tag für mehr.
 
-Für: Menschen, die den Rhythmus von Briefen mögen, die sich unabhängig von der Sprache anfreunden wollen, und die eine Korrespondenz bevorzugen, die sich Zeit nimmt.
+Für: Menschen, die den Rhythmus von Briefen mögen, sich unabhängig von der Sprache mit Brieffreunden anfreunden wollen, und lieber mit einem Brief anfangen, als ein Verzeichnis zu durchsuchen.
 
 ## 2. Slowly - die ursprüngliche Langsam-Brief-App
 
@@ -132,7 +132,7 @@ Profilbasierte Vermittlung, die es schon ewig gibt. Die kostenlose Version reich
 
 - Entscheide zuerst zwischen **Briefen und Chat**. Der Rhythmus ist unterschiedlich.
 - Wenn sich die Sprachen unterscheiden, prüfe, **wo die Übersetzung lebt** - in der App (Lettie, HelloTalk, Ablo) oder über einen Umweg.
-- Entscheide, ob du **nur Freundschaft** suchst (Slowly, InterPals) oder **offen für neue Bekanntschaften** über Briefe bist (Lettie).
+- Entscheide, ob du **Brieffreunde suchen** möchtest oder lieber **Briefe zu dir kommen lässt**. Briefe kommen zu dir -> Lettie; Suchen -> Slowly, InterPals.
 
 Egal welche App: Ein erster Brief, der eine Antwort bekommt, reagiert auf das, was die andere Person geschrieben hat, nicht auf eine Biografie.
 
@@ -140,7 +140,7 @@ Egal welche App: Ein erster Brief, der eine Antwort bekommt, reagiert auf das, w
     faqs: [
       {
         q: 'Was ist die beste Brieffreund-App 2026?',
-        a: 'Das hängt vom Ziel ab: Lettie für langsame Briefe und Freundschaften unabhängig von der Sprache, Slowly für eine lange Korrespondenz, wenn ihr bereits eine Sprache teilt, HelloTalk oder Tandem zum Lernen, InterPals oder Penpal World für die größte Community.',
+        a: 'Das hängt vom Ziel ab: Lettie, wenn du Briefe lieber zu dir kommen lässt, statt einen Brieffreund zu suchen, unabhängig von der Sprache, Slowly für eine lange Korrespondenz, wenn ihr bereits eine Sprache teilt, HelloTalk oder Tandem zum Lernen, InterPals oder Penpal World für die größte Community.',
       },
       {
         q: 'Welche Brieffreund-App übersetzt Briefe automatisch?',
@@ -163,7 +163,7 @@ Egal welche App: Ein erster Brief, der eine Antwort bekommt, reagiert auf das, w
   'slowly-alternatives-2026': {
     title: '6 Alternativen zu Slowly im Vergleich 2026',
     description:
-      'Vergleich 2026 von sechs Alternativen zu Slowly nach dem Grund für den Wechsel: Sprachbarriere, mehr als feste Brieffreundschaften, oder ausbleibende Antworten.',
+      'Vergleich 2026 von sechs Alternativen zu Slowly nach dem Grund für den Wechsel: Sprachbarriere, das Gefühl, dass Briefpartner finden sich wie Arbeit anfühlt, oder ausbleibende Antworten.',
     keywords: [
       'Alternative zu Slowly',
       'Slowly Alternative 2026',
@@ -172,7 +172,7 @@ Egal welche App: Ein erster Brief, der eine Antwort bekommt, reagiert auf das, w
     ],
     subtitle: 'Sortiert nach dem Grund für den Wechsel von Slowly, nicht nach Beliebtheit.',
     answer:
-      'Menschen verlassen Slowly aus einem von drei Gründen: der Sprachbarriere, dem Wunsch nach mehr als festgelegten Brieffreundschaften, oder ausbleibenden Antworten. Sechs Apps werden hier nach Grund sortiert verglichen, wobei Lettie, Slowly, InterPals, HelloTalk, Tandem, Penpal World und Ablo nach Übersetzung, Briefverzögerung und Zweck bewertet werden.',
+      'Menschen verlassen Slowly aus einem von drei Gründen: der Sprachbarriere, dem Gefühl, dass das Finden eines Briefpartners sich wie Arbeit anfühlt, oder ausbleibenden Antworten. Sechs Apps werden hier nach Grund sortiert verglichen, wobei Lettie, Slowly, InterPals, HelloTalk, Tandem, Penpal World und Ablo nach Übersetzung, Briefverzögerung und Zweck bewertet werden.',
     body: `## Auf einen Blick
 
 | App | Kurz gesagt | Übersetzung | Briefverzögerung | Zweck |
@@ -193,7 +193,7 @@ Die häufigste Beschwerde über Slowly betrifft die Übersetzung: den Brief zu e
 - **HelloTalk** ist Chat, aber Korrekturen auf Satzebene und Übersetzung machen es zum effizientesten Werkzeug, wenn Lernen das Ziel ist. Allerdings kein Briefrhythmus.
 - **Ablo** übersetzt jede Nachricht automatisch. Gut, um locker mit Menschen aus vielen Ländern zu reden; keine Tiefe erwarten.
 
-## 2. Wenn du über das reine Profil-Matching hinauswillst -> Lettie
+## 2. Wenn das Finden eines Briefpartners sich wie Arbeit angefühlt hat -> Lettie
 
 Slowly findet Brieffreunde über Suche und gemeinsame Interessen. Lettie beginnt damit, dass du **einen Brief aufhebst, den ein Fremder losgelassen hat**, und darauf antwortest, plus ein paar Vorstellungskarten pro Tag. Keine Fotos, kein Wischen. Das passt zu Leuten, die sich bei "Foto zuerst"-Apps unwohl gefühlt haben.
 
@@ -213,7 +213,7 @@ Eine Anmerkung, denn sie begleitet dich in die nächste App: Antworten bleiben m
 ## Zusammenfassung
 
 - Übersetzung steht an erster Stelle -> **Lettie** (Briefe) oder **HelloTalk** (Chat)
-- Du willst über reines Profil-Matching hinaus -> **Lettie**
+- Du lässt Briefe lieber zu dir kommen, statt jemanden zu suchen -> **Lettie**
 - Zahlen zählen am meisten -> **InterPals**
 - Sprechpraxis -> **Tandem**
 - Du magst langsame Briefe und teilst bereits eine Sprache -> bleib bei **Slowly**
@@ -222,7 +222,7 @@ Eine Anmerkung, denn sie begleitet dich in die nächste App: Antworten bleiben m
     faqs: [
       {
         q: 'Was sind die besten Alternativen zu Slowly 2026?',
-        a: 'Lettie für kostenlose, eingebaute Übersetzung und um über reines Profil-Matching hinauszugehen, HelloTalk und Tandem zum Sprachenlernen, InterPals und Penpal World für die größte Brieffreund-Community.',
+        a: 'Lettie für kostenlose, eingebaute Übersetzung und um Briefe zu dir kommen zu lassen, statt einen Brieffreund zu suchen, HelloTalk und Tandem zum Sprachenlernen, InterPals und Penpal World für die größte Brieffreund-Community.',
       },
       {
         q: 'Welche Alternative zu Slowly übersetzt Briefe automatisch?',

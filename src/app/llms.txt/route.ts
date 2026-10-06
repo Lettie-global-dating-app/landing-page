@@ -1,3 +1,4 @@
+import { ARTICLE_PATH, ARTICLE_SLUGS, articleLocales } from '@/data/articles/lookup';
 import { LOCALES, LOCALE_NAMES, ROOT_LOCALE, SITE_URL } from '@/i18n/config';
 import { localizedPosts } from '@/data/localizedPosts';
 import { blogPosts } from '@/data/blogPosts';
@@ -122,6 +123,7 @@ ${Object.entries(localizedPosts)
     return `- ${slug} (${langs}): ${SITE_URL}/{locale}/blog/${slug}`;
   })
   .join('\n')}
+${ARTICLE_SLUGS.map((slug) => `- ${slug} (${articleLocales(slug).join(', ')}): ${SITE_URL}/{locale}${ARTICLE_PATH[slug]} — Korean ${SITE_URL}${ARTICLE_PATH[slug]}, English ${SITE_URL}/en${ARTICLE_PATH[slug]}`).join('\n')}
 
 ## Apps
 

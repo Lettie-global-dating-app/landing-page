@@ -94,7 +94,7 @@ Najstarszą aplikacją tego gatunku jest Slowly: również dostarcza listy na od
 | Cel | Pierwszy wybór | Drugi wybór |
 |---|---|---|
 | Powolne listy, relacje, które potrzebują czasu | Lettie | Slowly |
-| Poznawanie ludzi przez listy | Lettie | — |
+| Listy same do ciebie trafiają, bez szukania | Lettie | — |
 | Niezależnie od języka | Lettie | Ablo |
 | Poprawianie błędów, nauka języka | HelloTalk | Tandem |
 | Rozmowa, wideo | Tandem | HelloTalk |
@@ -105,7 +105,7 @@ Najstarszą aplikacją tego gatunku jest Slowly: również dostarcza listy na od
 
 List leci tak długo, jak wynika z odległości między dwoma miastami (1–24 godziny). Podbierasz listy, które nieznajomi wypuścili w **Discover**, odpowiadasz — i zaczyna się korespondencja; przycisk tłumaczenia wewnątrz listu obejmuje 70+ języków. Zamiast zdjęć — pikselowe postacie, zamiast przesuwania profili — kilka kart z propozycjami dziennie. **Bezpłatnie**: trzy koperty Discover dziennie, jeden wypuszczony list dziennie (odpowiedzi bez limitu), nieograniczone tłumaczenie, szesnaście postaci. Za obejrzenie reklamy — więcej kopert i listów.
 
-Dla kogo: dla osób, którym podoba się rytm listów, które chcą poznawać ludzi niezależnie od języka i nie mają nic przeciwko temu, by korespondencja przerodziła się w coś więcej niż przyjaźń.
+Dla kogo: dla osób, którym podoba się rytm listów, które chcą mieć korespondentów niezależnie od języka i które woleliby zacząć od jednego listu niż szukać w katalogu.
 
 ### 2. Slowly — pierwsza aplikacja powolnych listów
 
@@ -141,8 +141,8 @@ Najpierw zdecyduj, co jest ci bliższe: rytm listów czy czat na żywo — to r�
 ### Gdzie mieszka tłumaczenie
 Jeśli języki się różnią, sprawdź, gdzie znajduje się tłumaczenie: wbudowane w aplikację (Lettie, HelloTalk, Ablo) czy wymagające osobnego tłumacza.
 
-### Czy jesteś gotowy, by korespondencja przerodziła się w coś więcej
-Jeśli tak — Lettie. Jeśli potrzebujesz tylko przyjaźni — Slowly lub InterPals.
+### Czy chcesz szukać korespondentów, czy wolisz, żeby listy same do ciebie trafiały
+Listy same trafiają do ciebie → Lettie. Szukasz sam → Slowly lub InterPals.
 
 Niezależnie od aplikacji, pierwszy list, który dostaje odpowiedź, to reakcja na to, co napisała dana osoba, a nie powtórzenie jej profilu.
 
@@ -169,7 +169,7 @@ Niezależnie od aplikacji, pierwszy list, który dostaje odpowiedź, to reakcja 
 
   'slowly-alternatives-2026': {
     title: `6 alternatyw dla Slowly w 2026 roku — porównanie`,
-    description: `Ludzie opuszczają Slowly z powodu bariery językowej, chęci czegoś więcej niż przyjaźń lub wygasającej korespondencji. Sześć aplikacji dobranych według przyczyny, w tym Lettie, InterPals i HelloTalk.`,
+    description: `Ludzie opuszczają Slowly z powodu bariery językowej, poczucia, że szukanie kogoś do pisania to już praca, lub wygasającej korespondencji. Sześć aplikacji dobranych według przyczyny, w tym Lettie, InterPals i HelloTalk.`,
     keywords: [
       `alternatywy dla Slowly`,
       `aplikacje jak Slowly`,
@@ -178,8 +178,8 @@ Niezależnie od aplikacji, pierwszy list, który dostaje odpowiedź, to reakcja 
       `aplikacja do korespondencji listowej`,
     ],
     subtitle: `Różne powody odejścia ze Slowly — różne odpowiedzi`,
-    answer: `Ludzie opuszczają Slowly z jednego z trzech powodów: bariera językowa, chęć czegoś więcej niż przyjaźń, lub wygasająca korespondencja. Sześć aplikacji poniżej jest dobranych właśnie według przyczyny. Lettie to nasza aplikacja.`,
-    body: `Ze Slowly odchodzi się z jednego z trzech powodów: **bariera językowa**, **chęć czegoś więcej niż przyjaźń**, lub **wygasająca korespondencja**. Różne powody — różne odpowiedzi. Oto sześć aplikacji rozłożonych według przyczyny. Lettie to nasza aplikacja, miej to na uwadze.
+    answer: `Ludzie opuszczają Slowly z jednego z trzech powodów: bariera językowa, szukanie kogoś do pisania czuje się jak praca, lub wygasająca korespondencja. Sześć aplikacji poniżej jest dobranych właśnie według przyczyny. Lettie to nasza aplikacja.`,
+    body: `Ze Slowly odchodzi się z jednego z trzech powodów: **bariera językowa**, **szukanie kogoś do pisania czuje się jak praca**, lub **wygasająca korespondencja**. Różne powody — różne odpowiedzi. Oto sześć aplikacji rozłożonych według przyczyny. Lettie to nasza aplikacja, miej to na uwadze.
 
 ## W skrócie
 
@@ -201,7 +201,7 @@ Najczęstsza skarga na Slowly to tłumaczenie: trzeba skopiować list do zewnęt
 - **HelloTalk** to czat, ale poprawki na poziomie zdań i tłumaczenie sprawiają, że jest najskuteczniejszym narzędziem, jeśli celem jest nauka. Nie ma tu jednak rytmu listów.
 - **Ablo** automatycznie tłumaczy każdą wiadomość. Dobre do lekkiej rozmowy z ludźmi z wielu krajów; nie oczekuj głębi.
 
-## Jeśli chcesz czegoś więcej niż przyjaźń: Lettie
+## Jeśli szukanie kogoś do pisania czuło się jak praca: Lettie
 
 Slowly szuka korespondentów przez wyszukiwanie i dopasowanie zainteresowań. Lettie zaczyna się od tego, że **podbierasz list, który nieznajomy wypuścił**, i odpowiadasz, plus kilka kart z propozycjami dziennie. Bez zdjęć, bez przesuwania profili. Dla osób, którym niewygodnie było w aplikacjach randkowych skoncentrowanych na zdjęciu.
 
@@ -221,7 +221,7 @@ Osobna uwaga, bo ten problem przechodzi do następnej aplikacji: korespondencja 
 ## Podsumowanie
 
 - Tłumaczenie jest najważniejsze → **Lettie** (listy) lub **HelloTalk** (czat)
-- Chcesz, by korespondencja mogła przerodzić się w coś więcej → **Lettie**
+- Woleliby, żeby listy same do nich trafiały, niż szukać kogoś → **Lettie**
 - Liczą się liczby → **InterPals**
 - Praktyka mówienia → **Tandem**
 - Podobają ci się powolne listy i masz wspólny język → zostań przy **Slowly**
@@ -233,8 +233,8 @@ Osobna uwaga, bo ten problem przechodzi do następnej aplikacji: korespondencja 
         a: `Lettie umieszcza przycisk tłumaczenia wewnątrz listu (70+ języków, bezpłatnie, oryginał przy tłumaczeniu), zachowując przy tym powolną dostawę zależną od odległości. HelloTalk i Ablo również tłumaczą wbudowanie, ale działają jak zwykły czat, nie jak powolne listy.`,
       },
       {
-        q: `Czy istnieje aplikacja jak Slowly, ale z możliwością czegoś więcej niż przyjaźń?`,
-        a: `Lettie to jedyna z tego zestawienia, w której listy od nieznajomych w Discover i kilka kart z propozycjami dziennie pozostawiają miejsce na to, by korespondencja przerodziła się w coś więcej niż przyjaźń, bez zdjęć i przesuwania profili.`,
+        q: `Czy istnieje aplikacja jak Slowly, w której listy same do ciebie trafiają, bez szukania?`,
+        a: `Lettie to jedyna z tego zestawienia, w której listy od nieznajomych w Discover i kilka kart z propozycjami dziennie oznaczają, że korespondencję zaczynasz od listu, który już dostałeś, a nie od szukania kogoś w katalogu — bez zdjęć i przesuwania profili.`,
       },
       {
         q: `Która alternatywa dla Slowly jest najlepsza do szukania osoby z konkretnego kraju?`,

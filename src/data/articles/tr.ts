@@ -75,7 +75,7 @@ Slowly gibi uygulamalar da mesafeye göre teslimat yapar. Lettie'yi ayıran, yab
     keywords: ['en iyi mektup arkadaşı uygulamaları', 'mektup arkadaşı uygulamaları 2026', 'Slowly alternatifi', 'Lettie', 'mektup arkadaşı bul'],
     subtitle: 'Hangi uygulamanın size uygun olduğu, ne aradığınıza bağlı.',
     answer:
-      "\"En iyi mektup arkadaşı uygulaması\" tek bir cevabı yoktur. Yavaş mektuplar ve tanışmaya açık bir yazışma için Lettie, ortak bir dili paylaşan uzun bir arkadaşlık için Slowly, dil öğrenimi için HelloTalk veya Tandem öne çıkar.",
+      "\"En iyi mektup arkadaşı uygulaması\" tek bir cevabı yoktur. Yavaş mektuplar ve mektupların size gelmesi için Lettie, ortak bir dili paylaşan uzun bir arkadaşlık için Slowly, dil öğrenimi için HelloTalk veya Tandem öne çıkar.",
     body: `Mektup arkadaşı yazışmasıyla konuşma pratiği yapmak isteyen kişiye aynı öneri uymaz. Aşağıdaki liste hedefe göre sıralanmıştır ve her uygulamanın **ücretsiz sürümünün ne verdiğine** bakılarak değerlendirilmiştir. Lettie bizim uygulamamızdır.
 
 ## Özet
@@ -83,7 +83,7 @@ Slowly gibi uygulamalar da mesafeye göre teslimat yapar. Lettie'yi ayıran, yab
 | Hedef | İlk seçim | İkinci seçim |
 |---|---|---|
 | Yavaş mektuplar, zaman isteyen yazışmalar | Lettie | Slowly |
-| Yabancılarla mektuplaşarak tanışmak | Lettie | — |
+| Mektuplar size gelir, arama yok | Lettie | — |
 | Dil farkı önemli değilse | Lettie | Ablo |
 | Yazım düzeltmeleri, dil öğrenimi | HelloTalk | Tandem |
 | Konuşma, görüntülü sohbet | Tandem | HelloTalk |
@@ -94,7 +94,7 @@ Slowly gibi uygulamalar da mesafeye göre teslimat yapar. Lettie'yi ayıran, yab
 
 İki şehir arasındaki mesafe kadar sürer (1-24 saat). Keşfet bölümünde yabancıların gönderdiği mektupları toplar, yanıtlarsınız ve yazışma başlar; mektubun içindeki çeviri düğmesi 70'in üzerinde dili kapsar. Fotoğraf yerine piksel karakterler, kaydırma yerine günde birkaç tanışma kartı vardır. **Ücretsiz sürüm**: Keşfet'te her gün yeni zarflar, sınırsız çeviri, on altı karakter; daha fazla zarf için reklam izlenebilir.
 
-Kimin için: mektup ritmini seven, dil farkına bakmaksızın tanışmak isteyen ve arkadaşlığa (ve ötesine) açık olanlar için.
+Kimin için: mektup ritmini seven, dil farkına bakmaksızın mektup arkadaşı isteyen ve bir dizin aramak yerine tek bir mektuptan başlamayı tercih edenler için.
 
 ## 2. Slowly — orijinal yavaş mektup uygulaması
 
@@ -126,7 +126,7 @@ Uzun süredir var olan, profil tabanlı bir eşleştirme. Reklamlara ve eski bir
 
 - Önce **mektup mu, sohbet mi** olduğuna karar verin; ikisinin ritmi farklıdır.
 - Diller farklıysa **çevirinin nerede yapıldığına** bakın: uygulama içinde (Lettie, HelloTalk, Ablo) ya da elle gidip gelerek.
-- **Tanışmaya açık olmak isteyip istemediğinize** karar verin: açıksa Lettie; sadece arkadaşlıksa Slowly veya InterPals.
+- **Mektup arkadaşı aramak mı istediğinize, yoksa mektupların size gelmesini mi istediğinize** karar verin. Mektuplar size gelsin → Lettie; arama → Slowly, InterPals.
 
 Hangi uygulamayı seçerseniz seçin, yanıt alan bir ilk mektup, bir biyografiye değil karşı tarafın yazdığına verilen bir tepkidir.
 
@@ -134,7 +134,7 @@ Hangi uygulamayı seçerseniz seçin, yanıt alan bir ilk mektup, bir biyografiy
     faqs: [
       {
         q: '2026 için en iyi mektup arkadaşı uygulaması hangisi?',
-        a: "Tek bir cevabı yok. Yavaş mektuplar ve tanışmaya açık bir yazışma için Lettie, ortak dili paylaşan uzun bir arkadaşlık için Slowly, dil öğrenimi için HelloTalk veya Tandem öne çıkıyor.",
+        a: "Tek bir cevabı yok. Yavaş mektuplar ve mektupların size gelmesi için Lettie, ortak dili paylaşan uzun bir arkadaşlık için Slowly, dil öğrenimi için HelloTalk veya Tandem öne çıkıyor.",
       },
       {
         q: 'Mektup arkadaşı uygulamaları ücretsiz mi?',
@@ -153,12 +153,12 @@ Hangi uygulamayı seçerseniz seçin, yanıt alan bir ilk mektup, bir biyografiy
   'slowly-alternatives-2026': {
     title: "Slowly'ye 6 Alternatif: 2026 Karşılaştırması",
     description:
-      "Slowly'den ayrılma sebebinize göre altı alternatif: dil engeli için Lettie ve HelloTalk, tanışmaya açıklık için Lettie, kalabalık için InterPals, konuşma için Tandem.",
+      "Slowly'den ayrılma sebebinize göre altı alternatif: dil engeli için Lettie ve HelloTalk, mektup arkadaşı bulmanın iş gibi gelmesi için Lettie, kalabalık için InterPals, konuşma için Tandem.",
     keywords: ["Slowly alternatifi", 'Slowly benzeri uygulamalar', 'mektup arkadaşı uygulaması', 'Lettie', 'InterPals'],
     subtitle: 'Ayrılma sebebinize göre altı farklı yön.',
     answer:
-      "İnsanlar Slowly'den genelde üç sebepten ayrılır: dil engeli, arkadaşlıktan fazlasını istemek ya da yanıtların kesilmesi. Dil engeli ve tanışmaya açıklık için Lettie, kalabalık için InterPals, konuşma pratiği için Tandem öne çıkıyor.",
-    body: `İnsanlar Slowly'den üç sebepten birinden ayrılır: **dil engeli**, **arkadaşlıktan fazlasını istemek** veya **yanıtların kesilmesi**. Farklı sebepler, farklı cevaplar gerektirir. Aşağıda sebebe göre sıralanmış altı uygulama var. Lettie bizim uygulamamız — ona göre okuyun.
+      "İnsanlar Slowly'den genelde üç sebepten ayrılır: dil engeli, mektup arkadaşı bulmanın iş gibi gelmesi ya da yanıtların kesilmesi. Dil engeli ve mektupların size gelmesi için Lettie, kalabalık için InterPals, konuşma pratiği için Tandem öne çıkıyor.",
+    body: `İnsanlar Slowly'den üç sebepten birinden ayrılır: **dil engeli**, **mektup arkadaşı bulmanın iş gibi gelmesi** veya **yanıtların kesilmesi**. Farklı sebepler, farklı cevaplar gerektirir. Aşağıda sebebe göre sıralanmış altı uygulama var. Lettie bizim uygulamamız — ona göre okuyun.
 
 ## Genel bakış
 
@@ -180,7 +180,7 @@ Slowly hakkındaki en yaygın şikayet çeviri: mektubu dışarı kopyalayıp ç
 - HelloTalk bir sohbet uygulaması ama cümle bazlı düzeltmeler ve çeviri, öğrenme hedefleniyorsa burayı en verimli araç yapar. Mektup ritmi yoktur.
 - Ablo her mesajı otomatik çevirir. Çok sayıda ülkeden insanla rahatça sohbet etmek için iyidir; derinlik beklemeyin.
 
-## 2. Arkadaşlıktan fazlasını istiyorsanız → Lettie
+## 2. Mektup arkadaşı bulmak iş gibi geliyorsa → Lettie
 
 Slowly, arama ve ilgi alanı eşleştirmesiyle mektup arkadaşı bulur. Lettie, bir yabancının gökyüzüne saldığı bir mektubu toplayıp yanıtlamakla başlar, buna ek olarak günde birkaç tanışma kartı sunar. Fotoğraf yok, kaydırma yok. Fotoğrafın her şeyden önce geldiği uygulamalarda rahatsız olanlar için.
 
@@ -200,7 +200,7 @@ Bir not, çünkü bu bir sonraki uygulamaya da taşınır: yanıtların kesilmes
 ## Özet
 
 - Çeviri önceliğinizse → Lettie (mektup) veya HelloTalk (sohbet)
-- Tanışmaya açık olmak istiyorsanız → Lettie
+- Arama yapmak yerine mektupların size gelmesini istiyorsanız → Lettie
 - Sayı önemliyse → InterPals
 - Konuşma pratiği → Tandem
 - Yavaş mektupları seviyor ve bir dili paylaşıyorsanız → Slowly'de kalın
@@ -209,7 +209,7 @@ Bir not, çünkü bu bir sonraki uygulamaya da taşınır: yanıtların kesilmes
     faqs: [
       {
         q: "Slowly'ye en iyi alternatif hangisi?",
-        a: "Ayrılma sebebinize bağlı. Dil engeli ve tanışmaya açık bir yazışma için Lettie, en büyük topluluk için InterPals, konuşma pratiği için Tandem öne çıkıyor.",
+        a: "Ayrılma sebebinize bağlı. Dil engeli ve mektupların size gelmesi için Lettie, en büyük topluluk için InterPals, konuşma pratiği için Tandem öne çıkıyor.",
       },
       {
         q: "Lettie Slowly'den farklı mı?",
