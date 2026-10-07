@@ -7,7 +7,7 @@ import { getHomeCopy } from '@/i18n/home'
 import { LOCALES, LOCALE_NAMES, ROOT_LOCALE, urlFor } from '@/i18n/config'
 import { FAQ_LOCALES } from '@/data/localizedFaq'
 import { listLocalizedPosts } from '@/data/localizedPosts'
-import { localizedPathIfExists } from '@/data/articles/lookup'
+import { getArticle, localizedPathIfExists } from '@/data/articles/lookup'
 import type { Locale } from '@/i18n/config'
 import { STORE_SHOTS } from '@/data/storeShots'
 
@@ -80,6 +80,17 @@ export default function Home2({ lang }: { lang: string }) {
   const faqHref = isKo ? '/faq' : isEn ? '/en/faq' : FAQ_LOCALES.includes(lang) ? `/${lang}/faq` : '/en/faq'
   const localizedPosts = foreignContent ? listLocalizedPosts(lang as Locale) : []
   const blogIndexHref = foreignContent && localizedPosts.length ? `/${lang}/blog/${localizedPosts[0].id}` : `${contentBase}/blog`
+  // 다른 언어 홈의 글 카드: 그 언어로 쓴 글을 먼저, 모자라면 영어 글. 전에는 「2026 추천」 다국어판이 어디서도 링크되지 않았다 (2026-10-07)
+  const localCards: { href: string; title: string; sub: string }[] = foreignContent
+    ? [
+        ...(['best-penpal-apps-2026', 'slowly-alternatives-2026'] as const).flatMap((slug) => {
+          const a = getArticle(lang, slug)
+          return a ? [{ href: `/${lang}/blog/${slug}`, title: a.title, sub: a.subtitle }] : []
+        }),
+        ...localizedPosts.map((p) => ({ href: `/${lang}/blog/${p.id}`, title: p.post.title, sub: p.post.description })),
+      ].slice(0, 3)
+    : []
+  const englishCards = t.blog.slice(0, 3 - localCards.length)
   const videoLang = lang
   // 스토어 스크린샷 v3 (2026-10-07) — 그 언어 것이 없으면 영어
   const shotLang = STORE_SHOTS[lang] ? lang : 'en'
@@ -303,16 +314,16 @@ export default function Home2({ lang }: { lang: string }) {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex items-baseline justify-between gap-4 mb-8">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">{t.blogTitle}</h2>
-            {foreignContent && <span className="text-sm text-ink3">{t.inEnglish}</span>}
+            {foreignContent && englishCards.length > 0 && <span className="text-sm text-ink3">{t.inEnglish}</span>}
           </div>
           <div className="grid md:grid-cols-3 gap-5 mb-14">
-            {localizedPosts.slice(0, 1).map((p) => (
-              <Link key={p.id} href={`/${lang}/blog/${p.id}`} className="rounded-2xl border border-star/40 bg-sky2/40 p-6 hover:bg-sky2/70 transition-colors group">
-                <h3 className="text-lg font-bold leading-snug group-hover:text-star text-balance">{p.post.title}</h3>
-                <p className="mt-2 text-sm text-ink2">{p.post.description}</p>
+            {localCards.map((c) => (
+              <Link key={c.href} href={c.href} className="rounded-2xl border border-star/40 bg-sky2/40 p-6 hover:bg-sky2/70 transition-colors group">
+                <h3 className="text-lg font-bold leading-snug group-hover:text-star text-balance">{c.title}</h3>
+                <p className="mt-2 text-sm text-ink2">{c.sub}</p>
               </Link>
             ))}
-            {t.blog.slice(0, localizedPosts.length ? 2 : 3).map(([slug, title, sub]) => (
+            {englishCards.map(([slug, title, sub]) => (
               <Link key={slug} href={`${contentBase}/blog/${slug}`} className="rounded-2xl border border-line bg-sky2/40 p-6 hover:bg-sky2/70 transition-colors group">
                 <h3 className="text-lg font-bold leading-snug group-hover:text-star text-balance">{title}</h3>
                 <p className="mt-2 text-sm text-ink2">{sub}</p>

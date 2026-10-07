@@ -4,6 +4,7 @@ import { localizedArticleAlternatesForPath } from '@/data/articles/lookup';
 import Image from 'next/image';
 import { ArrowLeft, BookOpen, PenTool, Heart, Sparkles, CheckCircle } from 'lucide-react';
 import { Metadata } from 'next';
+import ReadNext from '@/components/ReadNext';
 
 export const metadata: Metadata = {
   title: { absolute: '펜팔 편지 쓰는 법과 소재 | Lettie' },
@@ -298,6 +299,8 @@ export default function WritingTipsGuidePage() {
           </Link>
         </div>
       </section>
+
+      <ReadNext locale="ko" path="/guide/writing-tips" />
     </div>
   );
 }

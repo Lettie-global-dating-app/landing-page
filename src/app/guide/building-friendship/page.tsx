@@ -3,6 +3,7 @@ import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { ArrowLeft, Heart, Users, Sparkles, MessageSquare, CheckCircle } from 'lucide-react';
 import { Metadata } from 'next';
+import ReadNext from '@/components/ReadNext';
 
 export const metadata: Metadata = {
   title: { absolute: '펜팔 우정 오래 이어가는 법 | Lettie' },
@@ -339,6 +340,8 @@ export default function BuildingFriendshipGuidePage() {
           </Link>
         </div>
       </section>
+
+      <ReadNext locale="ko" path="/guide/building-friendship" />
     </div>
   );
 }

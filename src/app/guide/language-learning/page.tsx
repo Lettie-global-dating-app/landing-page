@@ -3,6 +3,7 @@ import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { ArrowLeft, Languages, BookOpen, MessageCircle, Target, CheckCircle } from 'lucide-react';
 import { Metadata } from 'next';
+import ReadNext from '@/components/ReadNext';
 
 export const metadata: Metadata = {
   title: { absolute: '펜팔로 외국어 배우기, 효과 있을까' },
@@ -337,6 +338,8 @@ export default function LanguageLearningGuidePage() {
           </Link>
         </div>
       </section>
+
+      <ReadNext locale="ko" path="/guide/language-learning" />
     </div>
   );
 }

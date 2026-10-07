@@ -12,6 +12,7 @@ import { blogPosts } from '@/data/blogPosts';
 import { koEnAlternates } from '@/i18n/config';
 import { localizedArticleAlternatesForPath } from '@/data/articles/lookup';
 import { localizedAlternatesFor } from '@/data/localizedPosts';
+import { relatedPostIds } from '@/data/readNext';
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -270,9 +271,8 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {Object.values(blogPosts)
-              .filter(p => p.id !== post.id)
-              .slice(0, 3)
+            {relatedPostIds(post.id)
+              .map((id) => blogPosts[id])
               .map((relatedPost) => {
                 const categoryIcons: Record<string, React.ReactNode> = {
                   '감성': <Feather className="w-6 h-6" />,

@@ -3,6 +3,7 @@ import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { ArrowLeft, Shield, Lock, AlertTriangle, Eye, CheckCircle } from 'lucide-react';
 import { Metadata } from 'next';
+import ReadNext from '@/components/ReadNext';
 
 export const metadata: Metadata = {
   title: { absolute: '펜팔은 안전할까? 개인정보 지키는 법' },
@@ -396,6 +397,8 @@ export default function SafetyPrivacyGuidePage() {
           </Link>
         </div>
       </section>
+
+      <ReadNext locale="ko" path="/guide/safety-privacy" />
     </div>
   );
 }

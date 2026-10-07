@@ -4,7 +4,11 @@ import { SITE_URL, urlFor } from '@/i18n/config';
 import { getHomeCopy } from '@/i18n/home';
 import { ORG_ID } from '@/lib/schema';
 import { inline, renderMiniMarkdown } from '@/lib/miniMarkdown';
-import { ARTICLE_DATE, ARTICLE_PATH, type Article, type ArticleSlug } from '@/data/articles/types';
+import { ARTICLE_DATE, ARTICLE_PATH, ARTICLE_SLUGS, type Article, type ArticleSlug } from '@/data/articles/types';
+import { getArticle } from '@/data/articles/lookup';
+import { listLocalizedPosts } from '@/data/localizedPosts';
+import { FAQ_LOCALES } from '@/data/localizedFaq';
+import type { Locale } from '@/i18n/config';
 
 const APP_STORE = 'https://apps.apple.com/app/id6746454876';
 const PLAY = 'https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe';
@@ -19,6 +23,15 @@ export default function LocalizedArticle({ locale, slug, article }: { locale: st
   const path = ARTICLE_PATH[slug];
   const url = urlFor(locale, path);
   const section = path.startsWith('/guide') ? t.nav.guide : path.startsWith('/blog') ? t.nav.blog : null;
+
+  // 같은 언어의 다른 글 — 전에는 글끼리 서로 링크가 없어 「2026 추천」 26개 언어판은 들어오는 링크가 0이었다 (2026-10-07)
+  const more = [
+    ...ARTICLE_SLUGS.filter((s) => s !== slug)
+      .map((s) => ({ href: `/${locale}${ARTICLE_PATH[s]}`, title: getArticle(locale, s)?.title }))
+      .filter((l): l is { href: string; title: string } => !!l.title),
+    ...listLocalizedPosts(locale as Locale).map((p) => ({ href: `/${locale}/blog/${p.id}`, title: p.post.title })),
+    ...(FAQ_LOCALES.includes(locale) ? [{ href: `/${locale}/faq`, title: t.faqTitle }] : []),
+  ];
 
   const ld = [
     {
@@ -86,6 +99,21 @@ export default function LocalizedArticle({ locale, slug, article }: { locale: st
               ))}
             </dl>
           </section>
+
+          {more.length > 0 && (
+            <nav aria-labelledby="read-more" className="mt-14">
+              <h2 id="read-more" className="text-2xl font-bold text-foreground mb-5">{t.blogTitle}</h2>
+              <ul className="grid sm:grid-cols-2 gap-3">
+                {more.map((l) => (
+                  <li key={l.href}>
+                    <Link href={l.href} className="block rounded-xl border border-border px-4 py-3 text-foreground hover:border-primary hover:text-primary transition-colors">
+                      {l.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
 
           <div className="mt-14 pt-8 border-t border-border flex flex-wrap items-center gap-4 justify-between">
             <time dateTime={ARTICLE_DATE} className="text-sm text-muted-foreground">{ARTICLE_DATE}</time>

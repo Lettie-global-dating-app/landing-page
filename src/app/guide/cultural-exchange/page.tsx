@@ -3,6 +3,7 @@ import { koEnAlternates } from '@/i18n/config';
 import Image from 'next/image';
 import { ArrowLeft, Globe, Heart, Users, Calendar, CheckCircle } from 'lucide-react';
 import { Metadata } from 'next';
+import ReadNext from '@/components/ReadNext';
 
 export const metadata: Metadata = {
   title: { absolute: '펜팔 문화 교류, 무엇을 물을까 | Lettie' },
@@ -343,6 +344,8 @@ export default function CulturalExchangeGuidePage() {
           </Link>
         </div>
       </section>
+
+      <ReadNext locale="ko" path="/guide/cultural-exchange" />
     </div>
   );
 }

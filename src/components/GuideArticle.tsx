@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { ArrowLeft } from 'lucide-react';
 import type { ReactNode } from 'react';
 import { ORG_ID } from '@/lib/schema';
+import ReadNext from '@/components/ReadNext';
 
 /**
  * 가이드 상세 페이지의 공용 셸.
@@ -183,6 +184,8 @@ export default function GuideArticle({
           <p className="mt-12 text-sm text-gray-400">
             {t.updated}: {updated}
           </p>
+
+          <ReadNext locale={locale} path={`${prefix}${path}`} className="mt-12 border-t border-gray-200 pt-12" />
         </div>
       </section>
     </div>

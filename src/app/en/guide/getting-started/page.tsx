@@ -4,6 +4,7 @@ import { localizedArticleAlternatesForPath } from '@/data/articles/lookup';
 import Image from 'next/image';
 import { ArrowLeft, Mail, User, Heart, Shield, CheckCircle } from 'lucide-react';
 import { Metadata } from 'next';
+import ReadNext from '@/components/ReadNext';
 
 export const metadata: Metadata = {
   title: { absolute: 'How to Start With a Pen Pal, Step by Step | Lettie' },
@@ -298,6 +299,8 @@ export default function GettingStartedGuidePage() {
           </div>
         </div>
       </section>
+
+      <ReadNext locale="en" path="/en/guide/getting-started" />
     </div>
   );
 }

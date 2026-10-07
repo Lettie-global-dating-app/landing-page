@@ -4,6 +4,7 @@ import { localizedArticleAlternatesForPath } from '@/data/articles/lookup';
 import Image from 'next/image';
 import { ArrowLeft, Mail, User, Heart, Shield, CheckCircle } from 'lucide-react';
 import { Metadata } from 'next';
+import ReadNext from '@/components/ReadNext';
 
 export const metadata: Metadata = {
   title: { absolute: '펜팔 시작하는 법: 첫 편지까지 | Lettie' },
@@ -258,6 +259,8 @@ export default function GettingStartedGuidePage() {
           </Link>
         </div>
       </section>
+
+      <ReadNext locale="ko" path="/guide/getting-started" />
     </div>
   );
 }
