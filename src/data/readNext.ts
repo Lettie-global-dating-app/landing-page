@@ -12,18 +12,18 @@ import { blogPosts } from '@/data/blogPosts';
 export const TOPICS: string[][] = [
   // 앱 고르기
   ['best-penpal-apps-2026', 'slowly-alternatives-2026', 'lettie-vs-slowly', 'penpal-app-with-translation', 'interpals-alternatives',
-    'apps-to-make-friends-online', 'slowly-app-alternatives', 'no-photo-dating-pixel-character'],
+    'apps-to-make-friends-online', 'no-photo-dating-pixel-character'],
   // 시작하기·편지 쓰기
   ['what-is-a-pen-pal', 'how-to-start-penpal', 'first-letter-examples-discover', 'what-to-write-to-a-pen-pal', 'how-to-find-a-pen-pal',
-    'keep-a-pen-pal-conversation-going', 'first-penpal-letter', 'letter-delivery-time-by-distance'],
+    'keep-a-pen-pal-conversation-going', 'letter-delivery-time-by-distance'],
   // 언어·문화
   ['language-exchange-tips', 'pen-pal-for-language-learning', 'korean-pen-pals', 'japanese-pen-pals', 'writing-across-languages',
     'language-exchange-friendship', 'penpal-culture-guide', 'cultural-understanding-global-etiquette', 'international-friendship-guide',
     'making-global-friends', 'armchair-world-travel'],
   // 안전
-  ['pen-pal-safety-guide', 'safe-penpaling-guide'],
+  ['pen-pal-safety-guide'],
   // 느린 삶·수필
-  ['slow-letter-beauty', 'digital-detox-penpal', 'digital-detox-slow-living', 'digital-detox-2025', 'self-growth-through-penpal',
+  ['slow-letter-beauty', 'digital-detox-penpal', 'self-growth-through-penpal',
     'winter-letter-warmth', 'autumn-morning-mist', 'dear-stranger', 'dearest-friend', 'halloween-connections', 'marcus-introduction'],
 ];
 

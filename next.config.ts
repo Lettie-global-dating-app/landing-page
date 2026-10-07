@@ -96,6 +96,17 @@ const nextConfig: NextConfig = {
       // 연도가 낡은 글을 같은 주제의 최신 글로 합친다 (2026-09-24, 순위 신호를 넘긴다)
       { source: '/blog/2025-best-penpal-app', destination: '/blog/best-penpal-apps-2026', permanent: true },
       { source: '/en/blog/2025-best-penpal-app', destination: '/en/blog/best-penpal-apps-2026', permanent: true },
+      // 같은 주제로 겹치던 글을 하나로 (2026-10-07 대표 결정 — 서로 순위를 깎아 먹었고 옛 글은 대부분 색인도 안 됐다)
+      { source: '/blog/slowly-app-alternatives', destination: '/blog/slowly-alternatives-2026', permanent: true },
+      { source: '/en/blog/slowly-app-alternatives', destination: '/en/blog/slowly-alternatives-2026', permanent: true },
+      { source: '/blog/safe-penpaling-guide', destination: '/blog/pen-pal-safety-guide', permanent: true },
+      { source: '/en/blog/safe-penpaling-guide', destination: '/en/blog/pen-pal-safety-guide', permanent: true },
+      { source: '/blog/digital-detox-2025', destination: '/blog/digital-detox-penpal', permanent: true },
+      { source: '/en/blog/digital-detox-2025', destination: '/en/blog/digital-detox-penpal', permanent: true },
+      { source: '/blog/digital-detox-slow-living', destination: '/blog/digital-detox-penpal', permanent: true },
+      { source: '/en/blog/digital-detox-slow-living', destination: '/en/blog/digital-detox-penpal', permanent: true },
+      { source: '/blog/first-penpal-letter', destination: '/blog/how-to-start-penpal', permanent: true },
+      { source: '/en/blog/first-penpal-letter', destination: '/en/blog/how-to-start-penpal', permanent: true },
       // 이야기 페이지의 후기 6편은 실제 사용자 것이 아니었다(편지 수 합 316 > 사람 간 편지 전체 208). 내리고 블로그로.
       { source: '/stories', destination: '/blog', permanent: true },
       { source: '/en/stories', destination: '/en/blog', permanent: true },

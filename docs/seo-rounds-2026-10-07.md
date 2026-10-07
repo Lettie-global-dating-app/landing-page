@@ -62,9 +62,20 @@ GSC 28일(10/7 조회): 클릭 63 · 노출 1,630 · CTR 3.9% · 평균 순위 7
 
 ## 하지 않은 것과 이유
 
-- **겹치는 글 합치기(301)** — 대표 결정 필요. 같은 주제가 두세 편씩 있어 서로 깎아 먹는다:
-  `slowly-app-alternatives`→`slowly-alternatives-2026`, `safe-penpaling-guide`→`pen-pal-safety-guide`,
-  `digital-detox-2025`·`digital-detox-slow-living`→`digital-detox-penpal`, `first-penpal-letter`→`how-to-start-penpal`.
-  옛 글은 대부분 "발견됨 - 색인 안 됨"이라 잃을 순위는 거의 없다.
+- ~~겹치는 글 합치기(301)~~ → 같은 날 대표 승인("할거해")으로 했다. 아래 「합친 글」.
 - 오늘 GSC 색인 요청 — 하루 한도가 이미 찼다(대기열로 내일부터).
 - 백링크 — 사지 않는다.
+
+## 합친 글 (10/7 대표 승인)
+
+같은 주제가 두세 편씩 있어 서로 순위를 깎아 먹었다. 옛 글은 대부분 "발견됨 - 색인 안 됨"이라 잃을 순위가 거의 없었다.
+ko·en 둘 다 308(영구) — `next.config.ts`. 블로그 40 → 35편, 사이트맵 292 → 282쪽.
+
+| 옛 글 | 합친 곳 |
+|---|---|
+| slowly-app-alternatives | slowly-alternatives-2026 |
+| safe-penpaling-guide | pen-pal-safety-guide |
+| digital-detox-2025 · digital-detox-slow-living | digital-detox-penpal |
+| first-penpal-letter | how-to-start-penpal |
+
+로컬 빌드 확인: 열 개 주소 모두 308 → 합친 글, 사이트맵에서 빠짐, 고아 0, 옛 주소로 가는 내부 링크 0.
