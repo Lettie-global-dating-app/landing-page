@@ -66,13 +66,16 @@ export default async function BlogPostPage({ params }: Props) {
     notFound();
   }
 
+  // 영어 글에 한국어 앱 화면을 쓰지 않는다 — 같은 장면의 영어판(key-en-s*)이 있다 (2026-10-09)
+  const heroImage = post.image.replace('/v2/key-ko-', '/v2/key-en-');
+
   // JSON-LD structured data - BlogPosting
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: post.titleEn,
     description: post.descriptionEn,
-    image: `https://lettie-dating.com${post.image}`,
+    image: `https://lettie-dating.com${heroImage}`,
     datePublished: post.date,
     dateModified: post.updated ?? post.date,
     author: { '@id': ORG_ID },
@@ -200,7 +203,7 @@ export default async function BlogPostPage({ params }: Props) {
         <div className="relative mb-12">
           {post.image?.startsWith('/v2/') ? (
             <div className="relative h-72 md:h-96 rounded-3xl overflow-hidden night">
-              <Image src={post.image} alt={post.title} fill sizes="(max-width: 768px) 100vw, 900px" className="object-cover object-top" priority />
+              <Image src={heroImage} alt={post.titleEn} fill sizes="(max-width: 768px) 100vw, 900px" className="object-cover object-top" priority />
             </div>
           ) : (
           <div className="relative h-64 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-3xl overflow-hidden">

@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     siteName: 'Lettie',
     locale: 'en_US',
     type: 'article',
+    images: ['/og/en.png'],
   },
 };
 

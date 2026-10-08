@@ -27,8 +27,9 @@ export function seoDesc(text: string, max = 160): string {
     if (visualWidth(out + s) > max) break;
     out += s;
   }
-  // 첫 문장만 들어가고 너무 짧으면(그리스어 홈이 56자였다) 아래 단어 경계 자르기로 더 채운다
-  if (out.trim() && visualWidth(out.trim()) >= max * 0.4) return out.trim();
+  // 첫 문장만 들어가고 너무 짧으면 아래 단어 경계 자르기로 더 채운다 — 그리스어 홈이 56자였고(10/6, 0.4),
+  // 「편지 시작 문구」 글(구글 노출 210)은 첫 문장 32자에서 끊겨 "부모님·친구·연인…" 상황 목록이 빠졌다(10/9, 0.6)
+  if (out.trim() && visualWidth(out.trim()) >= max * 0.6) return out.trim();
   let cut = '';
   for (const ch of t) {
     if (visualWidth(cut + ch) > max - 1) break;

@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     title: "Lettie 블로그 - 펜팔 가이드와 글로벌 소통 팁",
     description: "펜팔을 시작하는 방법, 편지 작성 팁, 문화 교류 가이드 등 Lettie와 함께하는 글로벌 소통의 모든 것",
     type: "website",
+    images: ['/og/ko.png'],
   },
 };
 

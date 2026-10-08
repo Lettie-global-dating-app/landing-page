@@ -136,10 +136,10 @@ export default function RootLayout({
   return (
     <html lang="ko" suppressHydrationWarning>
       <head>
-        {/* Favicon - 실제 Lettie 로고 사용 */}
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
-        <link rel="shortcut icon" href="/favicon.png" />
+        {/* Favicon — 512px favicon.png(151KB)를 16·32 칸에 걸어 모든 페이지가 받아 갔다 (2026-10-09).
+            검색 결과 아이콘은 48의 배수를 권하므로 48px 하나 + 16·32·48 이 든 ico */}
+        <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
         {/* 사이트 전역 구조화 데이터.

@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     title: "Lettie Blog - Penpal Guides & Global Communication Tips",
     description: "Discover how to start penpalling, letter writing tips, cultural exchange guides, and everything about global communication with Lettie",
     type: "website",
+    images: ['/og/en.png'],
   },
 };
 

@@ -111,6 +111,8 @@ export default function GuideArticle({
     // 조직은 루트 @graph 의 엔티티를 참조만 한다 (엔티티 분열 방지)
     author: { '@id': ORG_ID },
     publisher: { '@id': ORG_ID },
+    // 구글 기사 리치 결과는 image 를 요구한다 — 없던 9쪽(펜팔 앱·편지 지도·영어 가이드) (2026-10-09)
+    image: `${base}/og/${locale}.png`,
   };
 
   return (
