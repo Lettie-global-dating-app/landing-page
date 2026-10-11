@@ -17,9 +17,11 @@ const URL = 'https://lettie-dating.com/en/penpal-app';
 const APP_STORE = 'https://apps.apple.com/app/id6746454876';
 const PLAY = 'https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe';
 
-const TITLE = 'Pen Pal App: Free Download for iOS & Android | Lettie';
+// 10/9 기준 GSC 7일: 노출 116 · CTR 0.9% · 순위 8.1 ("pen pal app free" 5.8 · "download" 8.0). 2026-10-11 제목·설명을
+// 검색어(Free·iPhone·Android)를 앞에, 다른 앱과 다른 점(사진 대신 캐릭터·시간 걸려 도착)을 설명에 넣어 다시 썼다. 재측정 10/25.
+const TITLE = 'Free Pen Pal App for iPhone & Android: Slow Letters | Lettie';
 const DESC =
-  'Free pen pal app for iPhone and Android. Letters fly across a globe, arrive in 1–24 hours depending on distance, and translate into 70+ languages.';
+  'Free pen pal app for iPhone and Android. Letters reach someone abroad in 1–24 hours, translated into 70+ languages, with a pixel character instead of a photo.';
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },

@@ -20,6 +20,7 @@ const STATIC_PATHS = [
   '/guide',
   '/penpal-app',
   '/letter-map',
+  '/letter-stats',
   '/guide/getting-started',
   '/guide/writing-tips',
   '/guide/building-friendship',
@@ -66,7 +67,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const blogRoutes = posts.flatMap((post) =>
     ['', '/en'].map((prefix) => ({
       url: `${baseUrl}${prefix}/blog/${post.id}`,
-      lastModified: post.updated ?? post.date,
+      lastModified: (prefix === '/en' ? post.updatedEn : undefined) ?? post.updated ?? post.date,
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     })),

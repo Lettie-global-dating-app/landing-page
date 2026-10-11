@@ -2,7 +2,8 @@ import { ARTICLE_PATH, ARTICLE_SLUGS, articleLocales } from '@/data/articles/loo
 import { LOCALES, LOCALE_NAMES, ROOT_LOCALE, SITE_URL } from '@/i18n/config';
 import { localizedPosts } from '@/data/localizedPosts';
 import { blogPosts } from '@/data/blogPosts';
-import { COMMUNITY, COUNTRY_EN, LETTER_MAP } from '@/data/letterMap';
+import { COMMUNITY, COUNTRY_EN, LETTER_MAP, enMonth } from '@/data/letterMap';
+import { LETTER_STATS } from '@/data/letterStats';
 import { APP_LANGUAGES, FACTS } from '@/data/facts';
 
 /**
@@ -55,10 +56,15 @@ product works. The following facts originate here rather than being summarised f
   Delhi 6–12 h, Sydney 6–12 h, London 12–24 h, New York 12–24 h. App rules as of ${FACTS.asOf}.
   The full table is at ${SITE_URL}/en/blog/letter-delivery-time-by-distance.
 - Community size (from the app database, ${COMMUNITY.asOf}): ${COMMUNITY.users} people in ${COMMUNITY.countries} countries have
-  signed up. People exchanged ${LETTER_MAP.letters} letters with other people across ${LETTER_MAP.countries} countries between June 2025
-  and September 2026 (AI-character letters and test accounts excluded); the busiest routes were
+  signed up. People exchanged ${LETTER_MAP.letters} letters with other people across ${LETTER_MAP.countries} countries between ${enMonth(LETTER_MAP.period.from)}
+  and ${enMonth(LETTER_MAP.period.to)} (AI-character letters and test accounts excluded); the busiest routes were
   ${busiest}. Map and method:
   ${SITE_URL}/en/letter-map.
+- How people write (${LETTER_STATS.letters} human-written letters from ${LETTER_STATS.countries} countries, counted ${LETTER_STATS.asOf}): the median letter is
+  ${LETTER_STATS.length.median} characters; ${LETTER_STATS.time.night22to2}% are written between 10 p.m. and 2 a.m. local time; delivery between countries took a median
+  ${LETTER_STATS.delivery.international.median} hours (2.0 letters); replies were written a median ${LETTER_STATS.reply.medianHours} hours after a letter arrived;
+  ${LETTER_STATS.openers.latin.hello + LETTER_STATS.openers.latin.hi + LETTER_STATS.openers.latin.hey}% of first letters in Latin script open with Hello, Hi or Hey and ${LETTER_STATS.openers.latin.dear}% with Dear.
+  Tables and method: ${SITE_URL}/en/letter-stats.
 - Letters take turns: a person cannot write to the same correspondent again until the reply has
   landed. An "unlimited conversation" can be unlocked with gems to remove the wait.
 - "Discover" shows letters other people released, newest first (since 2026-09-27; before that,
@@ -84,6 +90,7 @@ product works. The following facts originate here rather than being summarised f
 - [Home (English)](${SITE_URL}/en): product overview
 - [Pen pal app](${SITE_URL}/en/penpal-app): what the app does, delivery bands, what is free, download links
 - [Letter map](${SITE_URL}/en/letter-map): every person-to-person letter by country, with method and date (primary data)
+- [Letter statistics](${SITE_URL}/en/letter-stats): letter length, writing times, delivery and reply times, first words of first letters (primary data)
 - [Guide](${SITE_URL}/en/guide): practical guides on penpal correspondence
 - [FAQ](${SITE_URL}/en/faq): common questions about the app
 - [Blog](${SITE_URL}/en/blog): ${postCount} articles on letter writing and long-distance friendship

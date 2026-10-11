@@ -58,7 +58,7 @@ export default function LetterMapPage() {
           Lines on the map are great-circle routes between country centre points. The community is small, and this page is updated as it grows.
         </p>
         <p>
-          How long each of these letters took depends on distance: see <Link href="/en/blog/letter-delivery-time-by-distance" className="text-blue-600 underline">delivery times by city</Link>.
+          How long each of these letters took depends on distance: see <Link href="/en/blog/letter-delivery-time-by-distance" className="text-blue-600 underline">delivery times by city</Link>. How long the letters are and when people write them: <Link href="/en/letter-stats" className="text-blue-600 underline">letter statistics</Link>.
         </p>
       </GuideSection>
     </GuideArticle>

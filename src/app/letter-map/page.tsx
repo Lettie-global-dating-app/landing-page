@@ -57,7 +57,7 @@ export default function LetterMapPage() {
           삭제된 편지, 나라가 잘못 저장된 계정의 편지는 뺐기 때문에 숫자가 작습니다. 지도의 선은 나라 중심점 사이의 대권 경로입니다. 커뮤니티가 커지면 이 페이지를 갱신합니다.
         </p>
         <p>
-          각 편지가 걸린 시간은 거리에 따라 다릅니다. <Link href="/blog/letter-delivery-time-by-distance" className="text-blue-600 underline">도시별 편지 배달 시간표</Link>를 보세요.
+          각 편지가 걸린 시간은 거리에 따라 다릅니다. <Link href="/blog/letter-delivery-time-by-distance" className="text-blue-600 underline">도시별 편지 배달 시간표</Link>를 보세요. 편지 길이와 쓰는 시간은 <Link href="/letter-stats" className="text-blue-600 underline">편지 통계</Link>에 있습니다.
         </p>
       </GuideSection>
     </GuideArticle>

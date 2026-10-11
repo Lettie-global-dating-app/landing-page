@@ -77,7 +77,7 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.descriptionEn,
     image: `https://lettie-dating.com${heroImage}`,
     datePublished: post.date,
-    dateModified: post.updated ?? post.date,
+    dateModified: post.updatedEn ?? post.updated ?? post.date,
     author: { '@id': ORG_ID },
     publisher: { '@id': ORG_ID },
     mainEntityOfPage: {

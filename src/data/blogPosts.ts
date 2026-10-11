@@ -1,5 +1,6 @@
 import { APP_LANGUAGES, FACTS, enDate, koDate } from '@/data/facts';
 import { LETTER_MAP } from '@/data/letterMap';
+import { LETTER_STATS } from '@/data/letterStats';
 
 export type BlogPost = {
     id: string;
@@ -24,6 +25,8 @@ export type BlogPost = {
     faqEn?: { q: string; a: string }[];
     /** 내용을 실제로 고친 날 (YYYY-MM-DD). dateModified 로 나간다. 내용 변경 없이 올리지 않는다. */
     updated?: string;
+    /** 영어 본문만 고친 날 — 없으면 updated. 영어 페이지 dateModified 로 나간다 */
+    updatedEn?: string;
     /** 검색 결과용 짧은 제목 (60칸 안). 화면 제목은 title 그대로. */
     seoTitle?: string;
     seoTitleEn?: string;
@@ -1239,18 +1242,19 @@ Let's meet on Lettie. Looking forward to the start of our conversation.
         id: 'how-to-start-penpal',
         title: '편지 첫 문장 쓰는 법: 상황별 예시 30개',
         seoTitle: '편지 시작하는 법: 첫 문장·시작 문구 예시 30개',
-        titleEn: 'How to Start a Pen Pal Letter: 12 First Lines That Work',
+        titleEn: 'How to Start a Pen Pal Letter: 30 First Lines That Work',
         description: '편지를 어떻게 시작할지 막힐 때 쓰는 첫 문장·시작 문구 예시 30개. 부모님, 친구, 선생님, 연인, 군대, 생일, 감사·사과·위로 편지, 외국인 펜팔까지 상황별로 정리했습니다.',
-        descriptionEn: 'Stuck on the first line? 12 openers for a first letter to a new pen pal, a friend, family or someone abroad, plus what to avoid in the first sentence.',
+        descriptionEn: '30 first lines for a pen pal letter, by situation: a new pen pal, a letter you picked up, someone abroad, a language partner, family. Plus a formula to reuse.',
         date: '2025-01-18',
         readTime: '5분',
-        readTimeEn: '5 min',
+        readTimeEn: '8 min',
         category: '가이드',
         categoryEn: 'Guide',
         image: '/letter-writing.png',
         author: 'Lettie',
         keywords: ['편지 첫 문장', '편지 시작', '편지 시작하는 법', '편지 첫 문장 예시', '편지 시작 문구', '편지 첫문장', '편지 인사말', '첫 편지', '펜팔 첫 편지'],
-        updated: '2026-10-03',
+        updated: '2026-10-11',
+        updatedEn: '2026-10-11',
         keywordsEn: ['how to start a pen pal letter', 'how to start a pen pal', 'first letter to a pen pal', 'how to start a letter', 'first line of a letter examples', 'pen pal first letter'],
         faq: [
             { q: '편지 첫 문장은 어떻게 시작하나요?', a: '인사말보다 지금 이 편지를 쓰게 된 장면이나 이유 하나로 시작하세요. "오늘 퇴근길에 네가 좋아하던 빵집이 문을 닫은 걸 봤어."처럼 구체적인 한 장면이 첫 줄로 가장 잘 읽힙니다.' },
@@ -1264,12 +1268,15 @@ Let's meet on Lettie. Looking forward to the start of our conversation.
             { q: 'How do you start a letter to a pen pal?', a: 'Start with the moment or reason that made you write rather than a greeting. One concrete scene from your day, such as a street you walked down or something you saw, reads better as a first line than "How are you?".' },
             { q: 'What should the first line of a first letter say?', a: 'Point to one thing you noticed in their profile or letter and say why it made you write. Save your self-introduction for the second sentence.' },
             { q: 'How do you start a letter after a long time?', a: 'Keep the apology to one line and go straight to your news. Naming what made you pick up the pen, like a birthday or a move, takes the awkwardness out.' },
+            { q: 'How long should a first pen pal letter be?', a: 'Long enough for one scene, a few things about you and one question, which is usually somewhere around 150 to 300 words. A short letter that is specific beats a long one that is general.' },
             { q: 'How do you start a letter to someone in another country?', a: 'Describe one thing happening in your city right now and ask one question about theirs. On Lettie letters are translated into 70+ languages, so you can write in your own language.' },
         ],
         content: `
 # 편지 첫 문장 쓰는 법
 
 **결론부터: 편지의 첫 문장은 인사말보다 '지금 이 편지를 쓰게 된 장면' 하나로 시작하면 됩니다.** "잘 지내?" 대신 "오늘 퇴근길에 네가 좋아하던 빵집이 문을 닫은 걸 봤어."처럼 쓰면, 읽는 사람은 첫 줄부터 당신의 하루 안으로 들어옵니다.
+
+레티에서 한글로 쓴 첫 편지의 ${LETTER_STATS.openers.ko.annyeonghaseyo}%는 "안녕하세요"로 시작합니다(첫 편지 ${LETTER_STATS.openers.ko.n}통, [펜팔 편지 통계](/letter-stats)). 인사말 다음에 장면 하나만 있어도 다른 편지들 사이에서 눈에 띕니다.
 
 ## 상황별 첫 문장 예시
 
@@ -1409,22 +1416,52 @@ Lettie에서는 내 편지가 도착하고 상대의 답장이 올 때까지 다
 
 **Short answer: start with the moment that made you write, not with a greeting.** Instead of "Hi, how are you?", try "I walked past the bakery you told me about today, and it had closed." The reader steps into your day from the first line.
 
-## 12 first lines, by situation
+That also makes your letter stand out: on Lettie, ${LETTER_STATS.openers.latin.hello + LETTER_STATS.openers.latin.hi + LETTER_STATS.openers.latin.hey}% of first letters written in English and other Latin-script languages open with "Hello", "Hi" or "Hey", and only ${LETTER_STATS.openers.latin.dear}% with "Dear" (${LETTER_STATS.openers.latin.n} first letters, [pen pal letter statistics](/en/letter-stats)).
+
+## 30 first lines, by situation
 
 | Writing to | First line |
 |---|---|
 | A new pen pal | I read your line about taking the bus on purpose when it rains, and I started this letter right after. |
 | A new pen pal | I cross a bridge over the Han River every morning in Seoul. Today the fog hid the other side. |
-| A friend | I just walked past the place where we always got noodles, so I'm writing to you from the bench outside. |
-| A friend | I finally finished the book you gave me. You were in my head for the whole last chapter. |
-| Family | Mum, I made your soup on my own for the first time tonight. It came out about half as good as yours. |
-| Family | Dad, the fountain pen you gave me sits on my desk now, and I'm writing this with it. |
-| After a long silence | It's been a while. I moved, and the first view from the new window is the thing I wanted to tell you first. |
-| After a long silence | I turned the calendar page and saw your birthday is next week, so I picked up a pen. |
-| A thank-you | I still think about the coffee you handed me in the hallway the day my presentation fell apart. |
-| A thank-you | I played the guitar in front of people for the first time today, and it started with your lessons. |
+| A new pen pal | You said you're learning to bake bread, so I have to tell you about the loaf I burned on Sunday. |
+| A new pen pal | Your profile mentions a cat called Pickle, and I need to know how a cat ends up with that name. |
+| A new pen pal | I've never written to a stranger before, so I'll start with the view from my desk: a car park and one very stubborn tree. |
+| A letter you picked up | Your letter about a train that never came found me while I was, of all things, waiting for a bus. |
+| A letter you picked up | I picked up your envelope this morning and read it twice. The part about your grandmother's garden stayed with me. |
+| A letter you picked up | You asked whoever found your letter to describe their street. Mine smells of fried chicken after 6 p.m. |
+| A letter you picked up | You wrote that nobody in your town sends letters anymore. Somebody on the other side of the world just did. |
 | Someone abroad | It's 11 p.m. here in Seoul and only the convenience store lights are on. What time is it where you are? |
 | Someone abroad | What do people eat on rainy days where you live? Here a lot of us make green-onion pancakes. |
+| Someone abroad | It's a public holiday here, so the streets are empty and I finally have time to write properly. |
+| Someone abroad | I looked up your city on a map before writing this, and now I want to know why the river bends like that. |
+| Someone abroad | It was the first cold morning of the year here. What's the first sign of autumn where you are? |
+| A language partner | I'm writing the first two lines in Spanish and the rest in English, so please forgive what happens next. |
+| A language partner | I learned the word for "drizzle" in your language this week, and it has drizzled every day since. |
+| A language partner | My textbook says this is a polite way to say hello. Tell me if I just sounded like an old radio presenter. |
+| After a long silence | It's been a while. I moved, and the first view from the new window is the thing I wanted to tell you first. |
+| After a long silence | I turned the calendar page and saw your birthday is next week, so I picked up a pen. |
+| After a long silence | Sorry for the long gap: exams ate October. Here's the one good thing that happened in the middle of them. |
+| A friend | I just walked past the place where we always got noodles, so I'm writing to you from the bench outside. |
+| A friend | I finally finished the book you gave me. You were in my head for the whole last chapter. |
+| A friend | Someone on the train was humming the song we played to death in school, and I had to write to you. |
+| Family | Mum, I made your soup on my own for the first time tonight. It came out about half as good as yours. |
+| Family | Dad, the fountain pen you gave me sits on my desk now, and I'm writing this with it. |
+| Family | Grandma, I found your handwriting on the back of an old recipe card today, so here is my reply, twenty years late. |
+| A thank-you | I still think about the coffee you handed me in the hallway the day my presentation fell apart. |
+| A thank-you | I played the guitar in front of people for the first time today, and it started with your lessons. |
+| A thank-you | Your last letter arrived on a bad day, and it turned the whole evening around. |
+| A thank-you | I copied one sentence from your letter onto a sticky note, and it has been on my fridge all week. |
+
+## A formula you can reuse
+
+Most of the lines above have the same three parts:
+
+1. **A moment.** Something that happened today or that you can see right now ("the first cold morning of the year").
+2. **One detail.** The specific thing that makes it yours ("only the convenience store lights are on").
+3. **A door.** A question or a hook the other person can walk through ("What time is it where you are?").
+
+If you are stuck, finish one of these: *Today I noticed…*, *Right now I can hear…*, *The reason I'm writing is…*
 
 ## What to avoid in the first sentence
 
@@ -1433,73 +1470,31 @@ Lettie에서는 내 편지가 도착하고 상대의 답장이 올 때까지 다
 - **A list of questions.** One question is enough, and it lands better after you've shared something of your own.
 - **Weather alone.** If you mention the weather, say what you did in it.
 
-## Writing a first letter to a pen pal
+## The rest of a first letter
 
-Letters are not just writing. They're like gifts sent with your heart. A special experience of building genuine relationships by exchanging letters with people from diverse cultures and backgrounds around the world. Start the joy of letter writing with Lettie.
+A first letter does not need to be long. One scene, a few things about you, and one question is a complete letter, usually somewhere around 150 to 300 words.
 
-## 1. The Importance of Your First Letter
+- **About you:** two or three things that invite a question back (what you're learning, a place you love, what your week looks like), rather than a full profile.
+- **One question:** ask about something you actually want to know. "What's a normal Tuesday like for you?" gets a better answer than "Tell me about yourself."
+- **An ending:** a line that leaves the door open. For example: *Write back when the weather changes over there.* · *Tell me one thing that made you laugh this week.* · *No rush, good letters are worth the wait.* · *Until the next envelope,* · *Yours, from a rainy Seoul.*
 
-They say you don't get a second chance at a first impression. The same applies to letters. Your first letter is the first window through which you show your heart to the other person.
+For what to say in the letters after the first one, see [What to Write to a Pen Pal](/en/blog/what-to-write-to-a-pen-pal) and [how to keep a pen pal conversation going](/en/blog/keep-a-pen-pal-conversation-going).
 
-### Components of a Good First Letter
+## How first letters work on Lettie
 
-**Self-introduction**: Start with a brief yet interesting introduction. It's good to mention your name, age, location along with one or two traits that make you special.
+- **Letters take time to arrive.** A letter flies across a globe and lands in ${FACTS.deliveryHours.min} to ${FACTS.deliveryHours.max} hours depending on the distance between the two countries, so the first line is the first thing someone opens after a wait.
+- **Write in your own language.** Letters are translated into the reader's language (${FACTS.languagesRounded} languages), so the scene matters more than perfect grammar.
+- **You take turns.** After you send a letter, you write again once their reply arrives.
+- **No profile photos.** People see a pixel character instead of a face, so your first line does more of the introducing.
+- **You can answer a stranger's letter.** Discover hands you envelopes other people released; replying to one is the easiest first letter there is. See [7 first-letter examples for replying to a letter you picked up](/en/blog/first-letter-examples-discover).
 
-**Sharing interests**: Share your hobbies, favorite music, movies, books, etc. Common interests are a great starting point for continuing the conversation.
+## Pen pal etiquette
 
-**Asking questions**: Express genuine curiosity about the other person. Questions like "What's your favorite season in your country?" naturally continue the conversation.
+**Do:** reply when you can, even briefly; ask about their world as much as you share yours; be curious about cultural differences rather than judging them.
 
-## 2. Developing Cultural Sensitivity
+**Don't:** ask for personal contact details or photos early; push political or religious views; disappear without a word. A one-line "busy month, writing soon" is kinder than silence.
 
-### Respecting Diversity
-
-The greatest charm of letters is experiencing diverse cultures in depth. Write letters with an open mind about the other person's culture, religion, and lifestyle.
-
-### Overcoming Language Barriers
-
-- Use simple and clear sentences
-- Avoid slang or idioms, or add explanations
-- Learn greetings in the other person's language
-
-## 3. Building Sustainable Penpal Relationships
-
-### Regular Communication
-
-It's important to exchange letters at regular intervals. Rather than sending too frequently, one carefully written letter with sufficient time invested makes a bigger impression.
-
-### Genuine Conversation
-
-Go beyond superficial conversation to share deep stories. From small daily tales to life goals, honest dialogue deepens relationships.
-
-## 4. Using Lettie's Special Features
-
-### The 5-Letter Rule
-
-On Lettie you can't write again until your letter has landed and their reply has come back. That wait guarantees time to get to know each other.
-
-### Privacy Protection
-
-Letter exchange starting without photos allows you to focus on inner qualities, not appearance. Create true connections of the heart.
-
-## 5. Penpal Etiquette
-
-### Things to Do
-- Maintain a polite and respectful attitude
-- Respond faithfully to your penpal's letters
-- Understand and accept cultural differences
-- Have positive and constructive conversations
-
-### Things Not to Do
-- Don't rush to request personal information
-- Don't impose political or religious views
-- Avoid negative or critical attitudes
-- Don't ignore your penpal or suddenly cut off contact
-
-## Conclusion
-
-Letters are a window to seeing the world more broadly. With Lettie, you can create safe and meaningful global letter friendships. Write your first letter right now!
-
-**Meet friends from around the world waiting for you on Lettie.**
+**Start your first letter on [Lettie](/en/penpal-app). Free on iPhone and Android.**
     `
     },
     'penpal-culture-guide': {

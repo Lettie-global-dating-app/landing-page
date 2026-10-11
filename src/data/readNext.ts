@@ -69,12 +69,14 @@ export function readNextLinks(locale: 'ko' | 'en', currentPath: string): ReadNex
           { href: '/en/penpal-app', title: 'Lettie: a free pen pal app for iPhone and Android' },
           { href: '/en/guide/getting-started', title: 'How to start with a pen pal, step by step' },
           { href: '/en/guide/writing-tips', title: 'What to write in a pen pal letter' },
+          { href: '/en/letter-stats', title: 'Pen pal letter statistics: length, writing times, replies' },
           { href: '/en/faq', title: 'Questions people ask about Lettie' },
         ]
       : [
           { href: '/penpal-app', title: 'Lettie: 아이폰·안드로이드 무료 펜팔 앱' },
           { href: '/guide/getting-started', title: '펜팔 시작하기 — 단계별 가이드' },
           { href: '/guide/writing-tips', title: '펜팔 편지에 무엇을 쓸까' },
+          { href: '/letter-stats', title: '펜팔 편지 통계: 길이·쓰는 시간·답장' },
           { href: '/faq', title: 'Lettie 자주 묻는 질문' },
         ];
   return [...PILLAR_POSTS.filter((id) => blogPosts[id]).map(post), ...fixed].filter((l) => l.href !== currentPath);
