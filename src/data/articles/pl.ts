@@ -25,9 +25,9 @@ Lettie opiera się na tej idei, ale dodaje coś, czego nie miały starsze aplika
 |---|---|
 | Listy na odległość | List leci przez globus i dociera w 1–24 godziny — zależnie od odległości między krajami |
 | Discover | Podbierasz listy, które nieznajomi wypuścili „w niebo", i odpowiadasz na te, które cię zainteresowały |
-| Tłumaczenie | Przycisk tłumaczenia w każdym liście, 70+ języków, bezpłatnie, oryginał widoczny przy tłumaczeniu |
+| Tłumaczenie | Przycisk tłumaczenia w każdym liście, 70+ języków, bezpłatnie, tekst tłumaczy się w tym samym miejscu |
 | Profile | Zamiast zdjęcia — pikselowa postać (16 bezpłatnych); własną postać można narysować na podstawie selfie lub opisu (pierwsza bezpłatna, zdjęcie nie jest zapisywane) |
-| Znaczki | Za każdy kraj, z którym korespondujesz, na globusie pojawia się znaczek |
+| Znaczki | Kraje, z którymi korespondujesz, kolorują się na globusie; znaczek kraju trafia do paszportu po co najmniej 5 listach łącznie (min. 2 od Ciebie, 2 od nich) |
 | Poznawanie | Kilka kart z propozycjami dziennie, bez przesuwania profili i bez punktów |
 
 ## Ile leci list
@@ -43,7 +43,7 @@ Czas dostawy zależy od odległości między krajami, nie od losowego licznika.
 
 | Bezpłatnie | Opcjonalnie (gemy lub Lettie Plus) |
 |---|---|
-| Pisanie, czytanie i odpowiadanie na listy | Nieograniczona korespondencja z jedną osobą |
+| Pisanie, czytanie i odpowiadanie na listy | Pisanie dalej bez czekania na odpowiedź (Lettie Plus) |
 | Tłumaczenie na 70+ języków | Losowanie znaczków |
 | 16 podstawowych postaci + własna pierwsza (ze zdjęcia lub opisu) | Druga własna postać i kolejne |
 | Discover: trzy nowe koperty dziennie, bezpłatnie | Więcej kopert — za obejrzenie reklamy lub gemy |
@@ -54,7 +54,7 @@ Najstarszą aplikacją tego gatunku jest Slowly: również dostarcza listy na od
     faqs: [
       {
         q: `Czy Lettie jest bezpłatną aplikacją do korespondencji?`,
-        a: `Tak. Pisanie, czytanie i odpowiadanie na listy, ich tłumaczenie, 16 podstawowych postaci i pierwsza własna postać są bezpłatne na iOS i Androidzie. Gemy i subskrypcja Lettie Plus dodają opcjonalne funkcje: więcej listów dziennie, nieograniczoną korespondencję z jedną osobą, losowanie znaczków i drugą postać.`,
+        a: `Tak. Pisanie, czytanie i odpowiadanie na listy, ich tłumaczenie, 16 podstawowych postaci i pierwsza własna postać są bezpłatne na iOS i Androidzie. Gemy dodają opcjonalne funkcje: więcej listów dziennie, losowanie znaczków, znaczki krajów i drugą postać; dzięki subskrypcji Lettie Plus piszesz dalej bez czekania na odpowiedź.`,
       },
       {
         q: `Gdzie można pobrać Lettie?`,
@@ -66,7 +66,7 @@ Najstarszą aplikacją tego gatunku jest Slowly: również dostarcza listy na od
       },
       {
         q: `Czy trzeba znać język rozmówcy, aby pisać w Lettie?`,
-        a: `Nie. Każdy list ma przycisk tłumaczenia obejmujący ponad 70 języków, a oryginał pozostaje widoczny przy tłumaczeniu — można pisać w swoim własnym języku.`,
+        a: `Nie. Każdy list ma przycisk tłumaczenia obejmujący ponad 70 języków, a jedno dotknięcie tłumaczy tekst w tym samym miejscu (kolejne przywraca oryginał) — można pisać w swoim własnym języku.`,
       },
       {
         q: `Czym Lettie różni się od Slowly?`,
@@ -197,7 +197,7 @@ Niezależnie od aplikacji, pierwszy list, który dostaje odpowiedź, to reakcja 
 
 Najczęstsza skarga na Slowly to tłumaczenie: trzeba skopiować list do zewnętrznego tłumacza, wkleić odpowiedź z powrotem, i tak przy każdym liście.
 
-- **Lettie** umieszcza przycisk tłumaczenia wewnątrz listu — 70+ języków, oryginał przy tłumaczeniu, bezpłatnie. Powolna dostawa zależna od odległości to ten sam pomysł co w Slowly.
+- **Lettie** umieszcza przycisk tłumaczenia wewnątrz listu — 70+ języków, tłumaczenie w tym samym miejscu, bezpłatnie. Powolna dostawa zależna od odległości to ten sam pomysł co w Slowly.
 - **HelloTalk** to czat, ale poprawki na poziomie zdań i tłumaczenie sprawiają, że jest najskuteczniejszym narzędziem, jeśli celem jest nauka. Nie ma tu jednak rytmu listów.
 - **Ablo** automatycznie tłumaczy każdą wiadomość. Dobre do lekkiej rozmowy z ludźmi z wielu krajów; nie oczekuj głębi.
 
@@ -230,7 +230,7 @@ Osobna uwaga, bo ten problem przechodzi do następnej aplikacji: korespondencja 
     faqs: [
       {
         q: `Która alternatywa dla Slowly najlepiej rozwiązuje problem tłumaczenia?`,
-        a: `Lettie umieszcza przycisk tłumaczenia wewnątrz listu (70+ języków, bezpłatnie, oryginał przy tłumaczeniu), zachowując przy tym powolną dostawę zależną od odległości. HelloTalk i Ablo również tłumaczą wbudowanie, ale działają jak zwykły czat, nie jak powolne listy.`,
+        a: `Lettie umieszcza przycisk tłumaczenia wewnątrz listu (70+ języków, bezpłatnie, tłumaczenie w tym samym miejscu), zachowując przy tym powolną dostawę zależną od odległości. HelloTalk i Ablo również tłumaczą wbudowanie, ale działają jak zwykły czat, nie jak powolne listy.`,
       },
       {
         q: `Czy istnieje aplikacja jak Slowly, w której listy same do ciebie trafiają, bez szukania?`,

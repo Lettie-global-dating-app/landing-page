@@ -21,9 +21,9 @@ export const articles: ArticleSet = {
 |---|---|
 | Brieven op afstand | Een brief vliegt over een wereldbol en komt afhankelijk van de afstand tussen twee landen aan in 1 tot 24 uur. |
 | Ontdekken | Raap brieven op die vreemden in de lucht hebben losgelaten en reageer op degene die je aanspreken. |
-| Vertaling | Een vertaalknop in elke brief, meer dan 70 talen, gratis, met het origineel direct ernaast. |
+| Vertaling | Een vertaalknop in elke brief, meer dan 70 talen, gratis, vertaald op de plek zelf. |
 | Profielen | Je begint als pixelkarakter (16 gratis) in plaats van met een foto. Een selfie of een paar woorden over je uiterlijk worden je eigen karakter (het eerste is gratis, de foto wordt niet bewaard). |
-| Postzegels | Elk land dat je brieven bereikt, voegt een postzegel toe aan je album en kleurt de wereldbol. |
+| Postzegels | Landen waarmee je brieven uitwisselt kleuren de wereldbol; de postzegel van een land komt in je paspoort na minstens 5 brieven samen (minstens 2 van jou, 2 van hen). |
 | Introductiekaarten | Een paar introductiekaarten per dag. Geen swipen, geen scores. |
 
 ## Hoe lang een brief erover doet
@@ -39,7 +39,7 @@ De duur hangt af van de afstand tussen de twee landen.
 
 | Gratis | Optioneel (gems of Lettie Plus) |
 |---|---|
-| Brieven schrijven, lezen en beantwoorden | Onbeperkte gesprekken met één persoon |
+| Brieven schrijven, lezen en beantwoorden | Blijven schrijven zonder op een antwoord te wachten (Lettie Plus) |
 | Elke brief vertalen in meer dan 70 talen | Postzegeltrekkingen |
 | 16 basis-pixelkarakters + je eerste eigen karakter (foto of woorden) | Een tweede eigen karakter |
 | Ontdekken: drie nieuwe enveloppen per dag, plus een advertentie per dag voor meer | - |
@@ -50,7 +50,7 @@ Net als Slowly laat Lettie brieven reizen op basis van de echte afstand tussen t
     faqs: [
       {
         q: 'Is Lettie een gratis penvriendenapp?',
-        a: 'Ja. Brieven schrijven, lezen en beantwoorden, ze vertalen, de 16 basiskarakters en je eerste eigen karakter zijn gratis op iOS en Android. Optionele gems en het Lettie Plus-abonnement voegen extra\'s toe, zoals onbeperkte gesprekken met één persoon, postzegeltrekkingen en een tweede eigen karakter.',
+        a: 'Ja. Brieven schrijven, lezen en beantwoorden, ze vertalen, de 16 basiskarakters en je eerste eigen karakter zijn gratis op iOS en Android. Optionele gems voegen extra\'s toe, zoals postzegeltrekkingen, landenpostzegels en een tweede eigen karakter; met het Lettie Plus-abonnement blijf je schrijven zonder op een antwoord te wachten.',
       },
       {
         q: 'Waar kan ik de Lettie penvriendenapp downloaden?',
@@ -62,7 +62,7 @@ Net als Slowly laat Lettie brieven reizen op basis van de echte afstand tussen t
       },
       {
         q: 'Moet ik Engels spreken om Lettie te gebruiken?',
-        a: 'Nee. Elke brief heeft een vertaalknop die meer dan 70 talen dekt, en het origineel blijft naast de vertaling staan, zodat je in je eigen taal kunt schrijven.',
+        a: 'Nee. Elke brief heeft een vertaalknop die meer dan 70 talen dekt, en met één tik wordt de tekst ter plekke vertaald (met nog een tik is het origineel terug), zodat je in je eigen taal kunt schrijven.',
       },
       {
         q: 'Hoe verschilt Lettie van Slowly?',
@@ -144,7 +144,7 @@ Welke app je ook kiest: een eerste brief die een reactie krijgt, reageert op wat
       },
       {
         q: 'Welke penvriendenapp vertaalt brieven automatisch?',
-        a: 'Lettie vertaalt elke brief gratis in meer dan 70 talen, met het origineel direct ernaast. HelloTalk en Ablo bieden ook ingebouwde vertaling, maar als chat in plaats van trage brieven.',
+        a: 'Lettie vertaalt elke brief gratis in meer dan 70 talen, ter plekke. HelloTalk en Ablo bieden ook ingebouwde vertaling, maar als chat in plaats van trage brieven.',
       },
       {
         q: 'Welke app heeft de grootste penvriendencommunity?',
@@ -189,7 +189,7 @@ Welke app je ook kiest: een eerste brief die een reactie krijgt, reageert op wat
 
 De meest gehoorde klacht over Slowly gaat over vertaling: de brief naar een externe vertaler kopiëren, teruglimen, en dat herhalen voor elke brief.
 
-- **Lettie** zet de vertaalknop direct in de brief - meer dan 70 talen, het origineel naast de vertaling, gratis. Het trage, op afstand gebaseerde tempo blijft hetzelfde idee als Slowly.
+- **Lettie** zet de vertaalknop direct in de brief - meer dan 70 talen, ter plekke vertaald, gratis. Het trage, op afstand gebaseerde tempo blijft hetzelfde idee als Slowly.
 - **HelloTalk** is chat, maar correcties op zinsniveau en vertaling maken het de meest efficiënte tool als leren het doel is. Wel zonder briefritme.
 - **Ablo** vertaalt elk bericht automatisch. Goed om losjes te praten met mensen uit veel landen; verwacht geen diepgang.
 
@@ -226,7 +226,7 @@ Een opmerking, want die volgt je naar de volgende app: reacties blijven meestal 
       },
       {
         q: 'Welk alternatief voor Slowly vertaalt brieven automatisch?',
-        a: 'Lettie vertaalt elke brief gratis in meer dan 70 talen, met het origineel direct ernaast. HelloTalk en Ablo vertalen ook automatisch, maar als chat in plaats van trage brieven.',
+        a: 'Lettie vertaalt elke brief gratis in meer dan 70 talen, ter plekke. HelloTalk en Ablo vertalen ook automatisch, maar als chat in plaats van trage brieven.',
       },
       {
         q: 'Bestaat er een alternatief voor Slowly zonder profielfoto?',
@@ -395,7 +395,7 @@ Als jij en je penvriend geen eerste taal delen, maken een paar gewoontes een gro
 
 Concrete zelfstandige naamwoorden reizen verder dan abstracte. Het beschrijven van een specifieke maaltijd, straat of voorwerp geeft de lezer iets dat in elke taal overkomt, terwijl het beschrijven van een gevoel dat vaak niet doet.
 
-Op Lettie wordt elke brief met één tik vertaald in meer dan 70 talen, met het origineel direct naast de vertaling. Zo kun je schrijven in de taal waarin je denkt, en gelezen worden in de taal waarin de ander denkt. Dat neemt de grammaticastraf weg, maar niet het idioomprobleem - gewoon helder schrijven helpt nog steeds het meest.
+Op Lettie wordt elke brief met één tik vertaald in meer dan 70 talen, ter plekke, en met nog een tik is het origineel terug. Zo kun je schrijven in de taal waarin je denkt, en gelezen worden in de taal waarin de ander denkt. Dat neemt de grammaticastraf weg, maar niet het idioomprobleem - gewoon helder schrijven helpt nog steeds het meest.
 
 ## Doorgaan na de derde brief
 

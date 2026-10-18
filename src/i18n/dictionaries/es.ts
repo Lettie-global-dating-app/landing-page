@@ -48,7 +48,7 @@ export const es: Dictionary = {
       'La sensibilidad analógica de escribir cartas, reinterpretada como experiencia digital',
     translation: {
       title: 'Cartas que se traducen solas',
-      body: 'Escribe en tu propio idioma. Cada carta y cada respuesta se traduce a más de 70 idiomas, y puedes leer el original junto a la traducción.',
+      body: 'Escribe en tu propio idioma. Cada carta y cada respuesta se traduce a más de 70 idiomas, y con un toque cambias en el mismo lugar entre la traducción y el original.',
     },
     letters: {
       title: 'Sistema de intercambio de cartas',

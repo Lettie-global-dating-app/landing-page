@@ -19,9 +19,9 @@ O aplicație de corespondenți este o aplicație în care oameni din țări dife
 |---|---|
 | Livrare în funcție de distanță | Scrisoarea zboară pe glob și ajunge în 1 până la 24 de ore, în funcție de distanța dintre cele două țări. |
 | Discover | Culegi scrisori pe care necunoscuți le-au lăsat să zboare pe cer și răspunzi celor care îți atrag atenția. |
-| Traducere | Fiecare scrisoare are un buton de traducere: peste 70 de limbi, gratuit, cu originalul afișat lângă traducere. |
+| Traducere | Fiecare scrisoare are un buton de traducere: peste 70 de limbi, gratuit, cu traducere chiar pe loc. |
 | Profiluri | Începi cu personaje pixelate în loc de fotografie (16 personaje de bază, gratuite). Îți poți crea propriul personaj dintr-un selfie sau din câteva cuvinte de descriere; primul este gratuit și fotografia nu este păstrată. |
-| Timbre | Fiecare țară cu care ai corespondat adaugă un timbru în colecția ta și colorează globul. |
+| Timbre | Țările cu care ai corespondat colorează globul; timbrul unei țări intră în pașaport după cel puțin 5 scrisori în total (cel puțin 2 de la tine și 2 de la ei). |
 | Carduri de prezentare | Câteva carduri de prezentare pe zi. Fără glisare, fără scoruri. |
 
 ## Cât durează o scrisoare
@@ -35,7 +35,7 @@ O aplicație de corespondenți este o aplicație în care oameni din țări dife
 
 | Gratuit | Opțional (geme sau Lettie Plus) |
 |---|---|
-| Scrisul, citirea și răspunsul la scrisori | Corespondență nelimitată cu o persoană |
+| Scrisul, citirea și răspunsul la scrisori | Scrii mai departe fără să aștepți un răspuns (Lettie Plus) |
 | Traducere gratuită în peste 70 de limbi | Extrageri de timbre |
 | 16 personaje pixelate de bază + primul tău personaj propriu | Al doilea personaj propriu și următoarele |
 | În Discover, scrisori noi în fiecare zi, mai multe urmărind o reclamă | Plicuri suplimentare |
@@ -48,7 +48,7 @@ Aplicații precum Slowly livrează și ele scrisori în funcție de distanță. 
     faqs: [
       {
         q: 'Lettie este o aplicație gratuită de corespondenți?',
-        a: 'Da. Scrisul, citirea și răspunsul la scrisori, traducerea, cele 16 personaje de bază și primul tău personaj propriu sunt gratuite pe iPhone și Android. Gemele opționale și Lettie Plus adaugă extra, precum corespondență nelimitată cu o persoană, extrageri de timbre și un al doilea personaj propriu.',
+        a: 'Da. Scrisul, citirea și răspunsul la scrisori, traducerea, cele 16 personaje de bază și primul tău personaj propriu sunt gratuite pe iPhone și Android. Gemele opționale adaugă extra, precum extrageri de timbre, timbre de țări și un al doilea personaj propriu; cu Lettie Plus poți scrie mai departe fără să aștepți un răspuns.',
       },
       {
         q: 'De unde pot descărca Lettie?',
@@ -60,7 +60,7 @@ Aplicații precum Slowly livrează și ele scrisori în funcție de distanță. 
       },
       {
         q: 'Trebuie să vorbesc engleză pentru a folosi Lettie?',
-        a: 'Nu. Fiecare scrisoare are un buton de traducere care acoperă peste 70 de limbi, cu originalul afișat lângă traducere, astfel încât poți scrie în propria ta limbă.',
+        a: 'Nu. Fiecare scrisoare are un buton de traducere care acoperă peste 70 de limbi, iar o atingere traduce textul chiar pe loc (o nouă atingere te întoarce la original), astfel încât poți scrie în propria ta limbă.',
       },
       {
         q: 'Când ar trebui să fac schimb de date de contact?',
@@ -176,7 +176,7 @@ Indiferent de aplicație, o primă scrisoare care primește răspuns este o reac
 
 Cea mai frecventă plângere despre Slowly este traducerea: copiezi scrisoarea în afară, o lipești într-un traducător, repeți pentru fiecare scrisoare.
 
-- **Lettie** pune butonul de traducere chiar în scrisoare — peste 70 de limbi, originalul lângă traducere, gratuit. Livrarea lentă, bazată pe distanță, este aceeași idee ca la Slowly.
+- **Lettie** pune butonul de traducere chiar în scrisoare — peste 70 de limbi, traducere chiar pe loc, gratuit. Livrarea lentă, bazată pe distanță, este aceeași idee ca la Slowly.
 - **HelloTalk** este o aplicație de chat, dar corectările la nivel de propoziție și traducerea o fac cel mai eficient instrument dacă scopul este învățarea. Nu are, totuși, ritmul scrisorilor.
 - **Ablo** traduce automat fiecare mesaj. Bun pentru conversații ușoare cu oameni din multe țări; nu te aștepta la profunzime.
 

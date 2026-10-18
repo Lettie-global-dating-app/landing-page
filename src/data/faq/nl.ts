@@ -17,7 +17,7 @@ export const faq: FaqContent = {
     },
     {
       q: 'Moet ik in het Engels schrijven?',
-      a: 'Nee. Je schrijft in je eigen taal en de ander leest in zijn eigen taal, want elke brief kan met één tik vertaald worden. Je kunt het origineel ook naast de vertaling bekijken.',
+      a: 'Nee. Je schrijft in je eigen taal en de ander leest in zijn eigen taal, want elke brief kan met één tik vertaald worden. De tekst wordt ter plekke vertaald en met nog een tik is het origineel terug.',
     },
     {
       q: 'Wanneer kan ik contactgegevens uitwisselen met iemand?',

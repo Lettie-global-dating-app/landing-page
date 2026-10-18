@@ -17,7 +17,7 @@ export const faq: FaqContent = {
     },
     {
       q: 'Je, ninahitaji kuandika kwa Kiingereza?',
-      a: 'Hapana. Unaandika kwa lugha yako na mtu mwingine anasoma kwa lugha yake, kwa sababu kila barua inaweza kutafsiriwa kwa mbofyo mmoja. Unaweza pia kuona maandishi asilia kando ya tafsiri.',
+      a: 'Hapana. Unaandika kwa lugha yako na mtu mwingine anasoma kwa lugha yake, kwa sababu kila barua inaweza kutafsiriwa kwa mbofyo mmoja. Tafsiri inaonekana palepale yalipo maandishi, na mbofyo mwingine unarudisha maandishi asilia.',
     },
     {
       q: 'Ni wakati gani naweza kubadilishana maelezo ya mawasiliano na mtu?',

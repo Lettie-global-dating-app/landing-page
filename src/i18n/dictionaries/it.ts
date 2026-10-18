@@ -48,7 +48,7 @@ export const it: Dictionary = {
       'La sensibilità analogica dello scrivere lettere, reinterpretata come esperienza digitale',
     translation: {
       title: 'Lettere che si traducono da sole',
-      body: 'Scrivi nella tua lingua. Ogni lettera e risposta viene tradotta in oltre 70 lingue, e puoi leggere l\'originale accanto alla traduzione.',
+      body: 'Scrivi nella tua lingua. Ogni lettera e risposta viene tradotta in oltre 70 lingue, e con un tocco passi dalla traduzione all\'originale restando nello stesso punto.',
     },
     letters: {
       title: 'Scambio di lettere',

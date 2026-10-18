@@ -48,7 +48,7 @@ export const fr: Dictionary = {
       "La sensibilité analogique de l'écriture de lettres, réinterprétée en expérience numérique",
     translation: {
       title: 'Des lettres qui se traduisent seules',
-      body: 'Écrivez dans votre langue. Chaque lettre et chaque réponse est traduite en plus de 70 langues, et vous pouvez lire l\'original à côté de la traduction.',
+      body: 'Écrivez dans votre langue. Chaque lettre et chaque réponse est traduite en plus de 70 langues, et un geste suffit pour passer, sur place, de la traduction à l\'original.',
     },
     letters: {
       title: 'Système d\'échange de lettres',

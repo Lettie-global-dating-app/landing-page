@@ -100,9 +100,9 @@ export function mobileAppSchema(locale: 'ko' | 'en') {
         ? [
             '지구본 위를 날아가는 편지 — 거리만큼 걸려서 도착',
             '남들이 띄운 편지를 주워 읽고 답장하는 발견',
-            '70개 넘는 언어 자동 번역 (원문과 나란히 보기)',
+            '70개 넘는 언어 자동 번역 (그 자리에서 원문과 번역 전환)',
             '사진 없이 캐릭터로 시작하는 프로필',
-            '나라마다 모이는 우표와 지구본 색칠',
+            '우표 뽑기·나라 우표·기념일 우표, 나라 도장과 칭호를 모으는 여권',
             '글로 적으면 그려 주는 나만의 캐릭터',
             '하루 몇 장씩 오는 소개 카드',
             'iOS · Android 지원',
@@ -110,9 +110,9 @@ export function mobileAppSchema(locale: 'ko' | 'en') {
         : [
             'Letters that fly across a globe and take real time to arrive',
             'Discover — pick up letters other people released',
-            'Automatic translation across 70+ languages, shown beside the original',
+            'Automatic translation across 70+ languages, switched in place with the original',
             'Profiles that start with a character instead of a photograph',
-            'A stamp for every country you reach, painting the globe',
+            'Stamps to collect — drawn, country and holiday stamps — and a passport of country stamps and titles',
             'Your own character, drawn from a written description',
             'A few introduction cards a day — no swiping',
             'Available on iOS and Android',

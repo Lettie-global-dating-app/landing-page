@@ -13,9 +13,9 @@ export const articles: ArticleSet = {
 |---|---|
 | Thư bay theo khoảng cách | Lá thư bay qua một địa cầu và đến nơi sau 1 đến 24 giờ, tùy khoảng cách giữa hai nước |
 | Discover (Khám phá) | Nhặt những lá thư người lạ thả ra và trả lời lá thư nào khiến bạn thấy đồng cảm |
-| Dịch thuật | Mỗi lá thư đều có nút dịch, hỗ trợ hơn 70 ngôn ngữ, miễn phí, bản gốc hiện song song với bản dịch |
+| Dịch thuật | Mỗi lá thư đều có nút dịch, hỗ trợ hơn 70 ngôn ngữ, miễn phí, dịch ngay tại chỗ |
 | Hồ sơ | Bạn bắt đầu bằng một nhân vật pixel thay vì ảnh thật (16 nhân vật cơ bản miễn phí). Một tấm ảnh selfie hoặc vài dòng mô tả cũng tạo ra nhân vật riêng của bạn (nhân vật đầu tiên miễn phí, ảnh không được lưu lại) |
-| Tem | Mỗi quốc gia bạn từng trao đổi thư sẽ thêm một con tem vào album và tô màu lên địa cầu |
+| Tem | Các quốc gia bạn trao đổi thư sẽ tô màu địa cầu; tem của một quốc gia vào hộ chiếu sau ít nhất 5 lá thư (ít nhất 2 lá của bạn, 2 lá của họ) |
 | Thẻ giới thiệu | Mỗi ngày nhận vài thẻ giới thiệu. Không vuốt, không chấm điểm |
 
 ## Thư mất bao lâu để đến nơi
@@ -32,7 +32,7 @@ export const articles: ArticleSet = {
 | Miễn phí | Tùy chọn (đá quý hoặc Lettie Plus) |
 |---|---|
 | Viết, đọc và trả lời thư | Tăng số thư thả ra mỗi ngày |
-| Dịch bất kỳ lá thư nào sang hơn 70 ngôn ngữ | Trò chuyện không giới hạn với một người |
+| Dịch bất kỳ lá thư nào sang hơn 70 ngôn ngữ | Viết tiếp mà không cần chờ thư trả lời (Lettie Plus) |
 | 16 nhân vật pixel cơ bản + nhân vật riêng đầu tiên (từ ảnh hoặc mô tả) | Nhân vật riêng thứ hai trở đi |
 | Discover: ba lá thư mới mỗi ngày (miễn phí) | Quay tem và thêm thư |
 
@@ -44,7 +44,7 @@ Nếu bạn đang so sánh với các ứng dụng khác như Slowly, có thể 
     faqs: [
       {
         q: `Lettie có phải ứng dụng kết bạn qua thư miễn phí không?`,
-        a: `Có. Viết, đọc, trả lời thư, dịch thư, 16 nhân vật pixel cơ bản và nhân vật riêng đầu tiên đều miễn phí trên cả iPhone và Android. Đá quý và Lettie Plus là các tùy chọn thêm, giúp tăng số thư mỗi ngày, trò chuyện không giới hạn với một người, hoặc mở khóa quay tem và nhân vật riêng thứ hai.`,
+        a: `Có. Viết, đọc, trả lời thư, dịch thư, 16 nhân vật pixel cơ bản và nhân vật riêng đầu tiên đều miễn phí trên cả iPhone và Android. Đá quý là tùy chọn thêm, giúp tăng số thư mỗi ngày, mở khóa quay tem, tem các nước và nhân vật riêng thứ hai; còn Lettie Plus cho phép bạn viết tiếp mà không cần chờ thư trả lời.`,
       },
       {
         q: `Tải Lettie ở đâu?`,
@@ -56,7 +56,7 @@ Nếu bạn đang so sánh với các ứng dụng khác như Slowly, có thể 
       },
       {
         q: `Tôi có cần biết ngoại ngữ để dùng Lettie không?`,
-        a: `Không. Mỗi lá thư đều có nút dịch sang hơn 70 ngôn ngữ, và bản gốc luôn hiện bên cạnh bản dịch, nên bạn có thể viết bằng ngôn ngữ của mình.`,
+        a: `Không. Mỗi lá thư đều có nút dịch sang hơn 70 ngôn ngữ, và chạm một cái là văn bản được dịch ngay tại chỗ (chạm lần nữa là về bản gốc), nên bạn có thể viết bằng ngôn ngữ của mình.`,
       },
       {
         q: `Lettie khác Slowly ở điểm nào?`,
@@ -168,7 +168,7 @@ Dù dùng ứng dụng nào, lá thư đầu tiên nhận được hồi âm th�
 
 Phàn nàn phổ biến nhất về Slowly là dịch thuật: phải chép lá thư ra một công cụ dịch, dán lại, và lặp lại việc này cho mỗi lá thư.
 
-- **Lettie** đặt nút dịch ngay trong lá thư - hơn 70 ngôn ngữ, bản gốc hiện bên cạnh bản dịch, miễn phí. Cách gửi thư chậm theo khoảng cách vẫn giữ tinh thần giống Slowly.
+- **Lettie** đặt nút dịch ngay trong lá thư - hơn 70 ngôn ngữ, dịch ngay tại chỗ, miễn phí. Cách gửi thư chậm theo khoảng cách vẫn giữ tinh thần giống Slowly.
 - **HelloTalk** là ứng dụng chat, nhưng việc sửa lỗi từng câu và dịch thuật khiến đây là công cụ hiệu quả nhất nếu mục đích là học tập. Không có nhịp điệu của thư.
 - **Ablo** tự động dịch mọi tin nhắn. Phù hợp để trò chuyện nhẹ nhàng với người ở nhiều nước, đừng mong đợi sự sâu sắc.
 
@@ -205,7 +205,7 @@ Một lưu ý, vì điều này sẽ theo bạn sang ứng dụng tiếp theo: h
       },
       {
         q: `Nếu rời Slowly vì vấn đề dịch thuật, nên chọn ứng dụng nào?`,
-        a: `Lettie có nút dịch ngay trong lá thư, hỗ trợ hơn 70 ngôn ngữ, miễn phí và bản gốc hiện song song bản dịch. Nếu mục tiêu là học ngôn ngữ, HelloTalk cũng rất hiệu quả.`,
+        a: `Lettie có nút dịch ngay trong lá thư, hỗ trợ hơn 70 ngôn ngữ, miễn phí và dịch ngay tại chỗ. Nếu mục tiêu là học ngôn ngữ, HelloTalk cũng rất hiệu quả.`,
       },
       {
         q: `Muốn tìm nhiều bạn qua thư nhanh nhất thì dùng gì?`,

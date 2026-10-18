@@ -25,9 +25,9 @@ Aplikasi rakan pena menghubungkan kamu dengan orang di negara lain untuk bertuka
 |---|---|
 | Surat mengikut jarak | Surat terbang merentasi dunia dan tiba dalam 1 hingga 24 jam, bergantung pada jarak antara dua negara. |
 | Discover | Ambil surat yang dilepaskan oleh orang asing ke udara, dan balas yang menarik perhatian kamu. |
-| Terjemahan | Ada butang terjemahan dalam setiap surat, 70+ bahasa, percuma, dengan teks asal kekal di sebelahnya. |
+| Terjemahan | Ada butang terjemahan dalam setiap surat, 70+ bahasa, percuma, dan teks terus diterjemah di tempatnya. |
 | Profil | Kamu mula sebagai watak piksel (16 watak percuma), bukan gambar. Selfie atau beberapa ayat tentang rupa kamu boleh jadi watak sendiri (yang pertama percuma, gambar tidak disimpan). |
-| Setem | Setiap negara yang kamu bertukar surat dengannya menambah setem dalam album dan mewarnakan globe kamu. |
+| Setem | Negara tempat kamu bertukar surat mewarnakan globe kamu; setem negara itu masuk ke pasport selepas sekurang-kurangnya 5 surat (sekurang-kurangnya 2 daripadamu, 2 daripada mereka). |
 | Kad pengenalan | Beberapa kad pengenalan setiap hari. Tiada swipe, tiada skor. |
 
 ## Berapa lama surat sampai
@@ -43,7 +43,7 @@ Masa penghantaran dikira daripada jarak antara dua negara.
 
 | Percuma | Pilihan (gem atau Lettie Plus) |
 |---|---|
-| Menulis, membaca, dan membalas surat | Perbualan tanpa had dengan seorang |
+| Menulis, membaca, dan membalas surat | Terus menulis tanpa menunggu balasan (Lettie Plus) |
 | Menterjemah surat ke 70+ bahasa | Cabutan setem piksel |
 | 16 watak piksel asas + watak sendiri yang pertama (dari gambar atau kata-kata) | Watak sendiri kedua dan seterusnya |
 | Discover: tiga sampul baharu setiap hari, percuma (tonton iklan untuk tambahan) | Sampul dan surat tambahan |
@@ -54,7 +54,7 @@ Lettie dan Slowly sama-sama menghantar surat mengikut jarak. Bezanya, Lettie men
     faqs: [
       {
         q: 'Adakah Lettie aplikasi rakan pena percuma?',
-        a: 'Ya. Menulis, membaca, membalas, dan menterjemah surat, 16 watak asas, dan watak sendiri yang pertama percuma di iOS dan Android. Gem dan Lettie Plus pilihan menambah perbualan tanpa had, cabutan setem, dan watak kedua.',
+        a: 'Ya. Menulis, membaca, membalas, dan menterjemah surat, 16 watak asas, dan watak sendiri yang pertama percuma di iOS dan Android. Gem pilihan menambah cabutan setem, setem negara, dan watak kedua; dengan Lettie Plus, kamu boleh terus menulis tanpa menunggu balasan.',
       },
       {
         q: 'Di mana saya boleh muat turun aplikasi Lettie?',
@@ -66,7 +66,7 @@ Lettie dan Slowly sama-sama menghantar surat mengikut jarak. Bezanya, Lettie men
       },
       {
         q: 'Perlukah saya tahu bahasa Inggeris untuk guna Lettie?',
-        a: 'Tidak. Setiap surat ada butang terjemahan yang merangkumi 70+ bahasa, dan teks asal kekal di sebelah terjemahan, jadi kamu boleh menulis dalam bahasa sendiri.',
+        a: 'Tidak. Setiap surat ada butang terjemahan yang merangkumi 70+ bahasa, dan satu ketukan menterjemah teks di tempatnya (satu ketukan lagi kembali kepada teks asal), jadi kamu boleh menulis dalam bahasa sendiri.',
       },
       {
         q: 'Bilakah masa yang sesuai untuk bertukar maklumat peribadi dengan rakan pena?',
@@ -194,7 +194,7 @@ Surat pertama yang dibalas biasanya adalah reaksi kepada apa yang mereka tulis, 
 
 Aduan paling biasa tentang Slowly adalah terjemahan: salin surat ke alat terjemahan, tampal semula, ulang untuk setiap surat.
 
-- Lettie meletakkan butang terjemahan dalam surat — 70+ bahasa, teks asal kekal di sebelah terjemahan, percuma. Penghantaran perlahan mengikut jarak sama seperti Slowly.
+- Lettie meletakkan butang terjemahan dalam surat — 70+ bahasa, teks diterjemah di tempatnya, percuma. Penghantaran perlahan mengikut jarak sama seperti Slowly.
 - HelloTalk adalah sembang, tetapi pembetulan setiap ayat dan terjemahan menjadikannya alat paling efisien jika belajar adalah tujuannya. Tiada rentak surat, walaupun.
 - Ablo menterjemah setiap mesej secara automatik. Sesuai untuk berbual santai dengan orang di banyak negara; jangan harap kedalaman.
 
@@ -227,7 +227,7 @@ Satu catatan, kerana ini akan berulang di aplikasi seterusnya: balasan terhenti 
     faqs: [
       {
         q: 'Apa alternatif Slowly terbaik jika masalahnya bahasa?',
-        a: 'Lettie, kerana butang terjemahan ada dalam surat (70+ bahasa, percuma, teks asal kekal di sebelahnya), jadi tidak perlu bolak-balik ke alat terjemahan berasingan seperti di Slowly.',
+        a: 'Lettie, kerana butang terjemahan ada dalam surat (70+ bahasa, percuma, teks diterjemah di tempatnya), jadi tidak perlu bolak-balik ke alat terjemahan berasingan seperti di Slowly.',
       },
       {
         q: 'Apa alternatif Slowly yang paling serupa tetapi menambah cara baharu mencari rakan pena?',

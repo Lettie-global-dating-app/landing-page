@@ -25,9 +25,9 @@ Ang pen pal app ay nag-connect sayo sa mga tao sa ibang bansa para mag-exchange 
 |---|---|
 | Sulat ayon sa distansya | Lumilipad ang sulat papuntang kabilang bansa at dumarating sa 1 hanggang 24 oras, depende sa distansya ng dalawang bansa. |
 | Discover | Kunin ang mga sulat na pinakawalan ng mga stranger sa langit, at sagutin ang mga nakaka-connect sayo. |
-| Translate | May translate button sa bawat sulat, 70+ wika, libre, kasama ang orihinal na teksto sa tabi. |
+| Translate | May translate button sa bawat sulat, 70+ wika, libre, at nagta-translate ang teksto mismo sa kinaroroonan nito. |
 | Profile | Magsisimula ka bilang pixel character (16 free characters), hindi litrato. Ang selfie mo o konting salita tungkol sa itsura mo ay magiging sariling character mo (libre ang una, hindi sine-save ang litrato). |
-| Stamps | Bawat bansang nakapag-exchange ka ng sulat ay nagdadagdag ng stamp sa album at kumukulay sa globe mo. |
+| Stamps | Napipintahan ang globe ng mga bansang kapalitan mo ng sulat; napupunta sa passport mo ang stamp ng isang bansa kapag may hindi bababa sa 5 sulat kayo sa kabuuan (kahit 2 mula sa iyo at 2 mula sa kanila). |
 | Introduction cards | May ilang introduction card araw-araw. Walang swipe, walang score. |
 
 ## Gaano katagal ang sulat
@@ -43,7 +43,7 @@ Base ang delivery time sa distansya ng dalawang bansa.
 
 | Libre | Optional (gems o Lettie Plus) |
 |---|---|
-| Magsulat, magbasa, at sagutin ang mga sulat | Unlimited back-and-forth sa isang tao |
+| Magsulat, magbasa, at sagutin ang mga sulat | Magsulat nang hindi naghihintay ng sagot (Lettie Plus) |
 | I-translate ang mga sulat sa 70+ wika | Stamp draws |
 | 16 basic pixel characters + sariling character mo na una (mula sa litrato o salita) | Pangalawang sariling character pataas |
 | Discover: tatlong bagong envelope araw-araw, libre (panoorin ang ad para sa extra) | Extra envelopes at letters |
@@ -54,7 +54,7 @@ Pareho ang Lettie at Slowly sa pagpapadala ng sulat base sa distansya. Ang pagka
     faqs: [
       {
         q: 'Libre ba ang Lettie bilang pen pal app?',
-        a: 'Oo. Libre ang pagsulat, pagbasa, pagsagot, pag-translate ng sulat, ang 16 basic characters, at ang unang sariling character mo, sa iOS at Android. Optional ang gems at Lettie Plus para sa unlimited back-and-forth, stamp draws, at pangalawang character.',
+        a: 'Oo. Libre ang pagsulat, pagbasa, pagsagot, pag-translate ng sulat, ang 16 basic characters, at ang unang sariling character mo, sa iOS at Android. Optional ang gems at Lettie Plus para sa stamp draws, country stamps, at pangalawang character; sa Lettie Plus, puwede kang magsulat nang hindi naghihintay ng sagot.',
       },
       {
         q: 'Saan ma-download ang Lettie app?',
@@ -66,7 +66,7 @@ Pareho ang Lettie at Slowly sa pagpapadala ng sulat base sa distansya. Ang pagka
       },
       {
         q: 'Kailangan ko bang marunong mag-Ingles para gamitin ang Lettie?',
-        a: 'Hindi. May translate button ang bawat sulat na sumasaklaw sa 70+ wika, at nakikita mo rin ang orihinal na teksto sa tabi ng translation, kaya pwede kang sumulat sa sariling wika mo.',
+        a: 'Hindi. May translate button ang bawat sulat na sumasaklaw sa 70+ wika, at isang tap lang ay nagta-translate ang teksto mismo sa kinaroroonan nito (isa pang tap, balik sa orihinal), kaya pwede kang sumulat sa sariling wika mo.',
       },
       {
         q: 'Kailan ang tamang panahon para mag-exchange ng personal contact details sa pen pal?',
@@ -194,7 +194,7 @@ Ang unang sulat na nasasagot ay karaniwang reaction sa nilalaman ng sulat, hindi
 
 Ang pinakakaraniwang reklamo sa Slowly ay ang translation: kopyahin ang sulat sa translator, i-paste pabalik, ulit-ulit kada sulat.
 
-- Ang Lettie ay naglalagay ng translate button mismo sa sulat — 70+ wika, nakikita ang orihinal sa tabi ng translation, libre. Ang mabagal, distance-based delivery pareho ng idea ng Slowly.
+- Ang Lettie ay naglalagay ng translate button mismo sa sulat — 70+ wika, nagta-translate ang teksto mismo sa kinaroroonan nito, libre. Ang mabagal, distance-based delivery pareho ng idea ng Slowly.
 - Ang HelloTalk ay chat, pero ang sentence-level corrections at translation nito ang gumagawa itong pinaka-efficient na tool kung learning ang goal. Walang letter rhythm, pero.
 - Ang Ablo ay auto-translate ang bawat message. Maganda para sa casual chat sa mga tao mula sa ibang bansa; huwag asahan ang depth.
 
@@ -227,7 +227,7 @@ Isang bagay na dapat tandaan, dahil mangyayari ito ulit sa susunod na app: namam
     faqs: [
       {
         q: 'Ano ang best alternative sa Slowly kung ang problema ay wika?',
-        a: 'Lettie, dahil nasa loob mismo ng sulat ang translate button (70+ wika, libre, nakikita ang orihinal sa tabi), kaya hindi mo na kailangang gumamit ng hiwalay na translator na parang sa Slowly.',
+        a: 'Lettie, dahil nasa loob mismo ng sulat ang translate button (70+ wika, libre, nagta-translate ang teksto mismo sa kinaroroonan nito), kaya hindi mo na kailangang gumamit ng hiwalay na translator na parang sa Slowly.',
       },
       {
         q: 'Ano ang alternative sa Slowly na pareho ang concept pero may bagong paraan ng paghanap ng pen pal?',

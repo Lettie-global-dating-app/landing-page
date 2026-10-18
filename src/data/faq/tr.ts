@@ -13,11 +13,11 @@ export const faq: FaqContent = {
     },
     {
       q: 'Lettie ücretsiz mi?',
-      a: 'İndirme ve temel kullanım ücretsizdir: mektup yazabilir, alabilir ve cevaplayabilirsin, ödeme gerekmez. Sınırsız sohbet, pul çekilişi veya ikinci bir karakter gibi isteğe bağlı ekstralar için elmaslar kullanılır.',
+      a: 'İndirme ve temel kullanım ücretsizdir: mektup yazabilir, alabilir ve cevaplayabilirsin, ödeme gerekmez. Pul çekilişi, ülke pulları veya ikinci bir karakter gibi isteğe bağlı ekstralar için elmaslar kullanılır.',
     },
     {
       q: 'İngilizce yazmak zorunda mıyım?',
-      a: 'Hayır. Kendi dilinde yazarsın ve karşı taraf kendi dilinde okur, çünkü her mektup bir dokunuşla çevrilebilir. Orijinal metni çevirinin yanında da görebilirsin.',
+      a: 'Hayır. Kendi dilinde yazarsın ve karşı taraf kendi dilinde okur, çünkü her mektup bir dokunuşla çevrilebilir. Çeviri metnin olduğu yerde belirir ve bir dokunuşla orijinale dönebilirsin.',
     },
     {
       q: 'Biriyle iletişim bilgimi ne zaman paylaşabilirim?',

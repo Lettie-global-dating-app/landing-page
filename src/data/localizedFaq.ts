@@ -53,7 +53,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: '¿Tengo que escribir en inglés?',
-        a: 'No. Escribes en tu idioma y la otra persona lo lee en el suyo, porque cada carta se puede traducir con un toque. También puedes ver el texto original junto a la traducción.',
+        a: 'No. Escribes en tu idioma y la otra persona lo lee en el suyo, porque cada carta se puede traducir con un toque. La traducción aparece en el mismo lugar del texto y con otro toque vuelves al original.',
       },
       {
         q: '¿Cuándo puedo intercambiar mi contacto con alguien?',
@@ -87,7 +87,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: 'Preciso escrever em inglês?',
-        a: 'Não. Você escreve no seu idioma e a outra pessoa lê no idioma dela, porque cada carta é traduzida ao ser enviada. Também é possível ver o texto original ao lado da tradução.',
+        a: 'Não. Você escreve no seu idioma e a outra pessoa lê no idioma dela, porque cada carta pode ser traduzida com um toque, ali mesmo onde está. Com outro toque, você volta ao texto original.',
       },
       {
         q: 'Quando posso trocar contatos com alguém?',
@@ -121,7 +121,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: '英語で書かなければいけませんか。',
-        a: 'いいえ。自分の言語で書けば、相手は相手の言語で読みます。手紙は送信時に翻訳され、原文と訳文を並べて確認することもできます。',
+        a: 'いいえ。自分の言語で書けば、相手は相手の言語で読みます。手紙はタップするとその場で翻訳に切り替わり、もう一度タップすると原文に戻せます。',
       },
       {
         q: '連絡先はいつ交換できますか。',
@@ -155,7 +155,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: 'Dois-je écrire en anglais ?',
-        a: 'Non. Vous écrivez dans votre langue et votre correspondant lit dans la sienne, car chaque lettre est traduite à l’envoi. Le texte original reste consultable à côté de la traduction.',
+        a: 'Non. Vous écrivez dans votre langue et votre correspondant lit dans la sienne, car chaque lettre se traduit d’un geste, sur place. Un autre geste ramène le texte original.',
       },
       {
         q: 'Quand puis-je échanger mes coordonnées ?',
@@ -189,7 +189,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: 'Muss ich auf Englisch schreiben?',
-        a: 'Nein. Sie schreiben in Ihrer Sprache, und Ihr Gegenüber liest in seiner, weil jeder Brief beim Senden übersetzt wird. Den Originaltext können Sie neben der Übersetzung weiterhin einsehen.',
+        a: 'Nein. Sie schreiben in Ihrer Sprache, und Ihr Gegenüber liest in seiner, weil sich jeder Brief mit einem Tipp direkt an Ort und Stelle übersetzen lässt. Mit einem weiteren Tipp sehen Sie wieder den Originaltext.',
       },
       {
         q: 'Wann kann ich Kontaktdaten austauschen?',
@@ -223,7 +223,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: '必须用英语写信吗？',
-        a: '不需要。你用自己的语言写，对方用自己的语言读，因为每封信在发送时都会被翻译。你也可以在译文旁边查看原文。',
+        a: '不需要。你用自己的语言写，对方用自己的语言读，因为每封信点一下就能在原处翻译。再点一下，就回到原文。',
       },
       {
         q: '什么时候可以交换联系方式？',
@@ -257,7 +257,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: 'Devo scrivere in inglese?',
-        a: 'No. Tu scrivi nella tua lingua e l’altra persona legge nella sua, perché ogni lettera viene tradotta all’invio. Il testo originale resta consultabile accanto alla traduzione.',
+        a: 'No. Tu scrivi nella tua lingua e l’altra persona legge nella sua, perché ogni lettera si traduce con un tocco, proprio dov’è. Con un altro tocco torni al testo originale.',
       },
       {
         q: 'Quando posso scambiare i contatti?',
@@ -291,7 +291,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: 'Нужно ли писать по-английски?',
-        a: 'Нет. Вы пишете на своём языке, а собеседник читает на своём, потому что письмо переводится при отправке. Оригинал можно посмотреть рядом с переводом.',
+        a: 'Нет. Вы пишете на своём языке, а собеседник читает на своём, потому что письмо переводится одним касанием прямо на месте. Ещё одно касание возвращает оригинал.',
       },
       {
         q: 'Когда можно обменяться контактами?',
@@ -325,7 +325,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: 'क्या अंग्रेज़ी में लिखना ज़रूरी है?',
-        a: 'नहीं। आप अपनी भाषा में लिखते हैं और सामने वाला अपनी भाषा में पढ़ता है, क्योंकि हर चिट्ठी भेजते समय अनुवादित हो जाती है। मूल पाठ को अनुवाद के साथ देखा भी जा सकता है।',
+        a: 'नहीं। आप अपनी भाषा में लिखते हैं और सामने वाला अपनी भाषा में पढ़ता है, क्योंकि हर चिट्ठी एक टैप में वहीं अनुवादित हो जाती है। दूसरे टैप से मूल पाठ वापस देखा जा सकता है।',
       },
       {
         q: 'संपर्क विवरण कब साझा किए जा सकते हैं?',
@@ -359,7 +359,7 @@ export const localizedFaq: Record<string, FaqContent> = {
       },
       {
         q: 'Apakah saya harus menulis dalam bahasa Inggris?',
-        a: 'Tidak. Anda menulis dalam bahasa Anda dan lawan bicara membacanya dalam bahasanya, karena setiap surat diterjemahkan saat dikirim. Teks aslinya tetap bisa dilihat di samping terjemahan.',
+        a: 'Tidak. Anda menulis dalam bahasa Anda dan lawan bicara membacanya dalam bahasanya, karena setiap surat bisa diterjemahkan dengan satu ketukan, langsung di tempatnya. Satu ketukan lagi mengembalikannya ke teks asli.',
       },
       {
         q: 'Kapan saya boleh bertukar kontak?',

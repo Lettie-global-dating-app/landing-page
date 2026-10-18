@@ -21,15 +21,15 @@ export const es: HomeCopy = {
   how: [
     { t: 'Lanza una carta al cielo', d: 'Un sobre despega del globo y vuela durante el tiempo que marca la distancia real hasta la otra ciudad. Mientras esperas, ves en el globo por dónde va.', alt: 'Una carta volando sobre el globo' },
     { t: 'Recoge la carta de un desconocido', d: 'Las cartas lanzadas sin destinatario flotan como sobres. Abre el que te llame, léelo, responde, y empieza una correspondencia entre dos.', alt: 'Pantalla Descubrir con sobres flotando' },
-    { t: 'Traduce con un toque', d: 'Ellos escriben en su idioma y tú lees en el tuyo. Más de 70 idiomas, con el original justo al lado de la traducción.', alt: 'Lectura de una carta con el botón de traducir' },
-    { t: 'Colecciona un sello de cada país', d: 'Los países a los que llegan tus cartas se pintan en el globo y sus sellos van a tu álbum. Dibuja un sello y se pintará solo para ti, o elige entre los 103 sellos de países en la tienda de sellos.', alt: 'Oficina de correos: álbum de sellos y globo' },
+    { t: 'Traduce con un toque', d: 'Ellos escriben en su idioma y tú lees en el tuyo. Más de 70 idiomas, y el texto se traduce justo donde está.', alt: 'Lectura de una carta con el botón de traducir' },
+    { t: 'Colecciona un sello de cada país', d: 'Los países con los que intercambias cartas se pintan en el globo, y el sello de un país entra en tu pasaporte Lettie tras al menos 5 cartas en total, 2 como mínimo tuyas y 2 suyas. Dibuja un sello y se pintará solo para ti, o elige entre los 103 sellos de países en la tienda de sellos.', alt: 'Oficina de correos: álbum de sellos y globo' },
   ],
   newTitle: 'Novedades de la 2.0',
   newSub: 'Rehicimos la app entera y dejamos una sola regla: una carta tiene que tardar.',
   news: [
     ['Entrega según la distancia', 'La llegada se calcula con la distancia real entre dos ciudades. Una o dos horas dentro del país, cerca de un día hasta el otro lado del mundo. Sigue tu carta en el globo mientras esperas.'],
     ['Descubrir: recoger cartas lanzadas', 'Cada día se acercan tres sobres nuevos. Gratis es más que suficiente; con un anuncio al día recibes más.'],
-    ['Traducción con IA, más de 70 idiomas', 'Al abrir una carta hay un botón de traducir, con original y traducción lado a lado. La app también habla más de 70 idiomas.'],
+    ['Traducción con IA, más de 70 idiomas', 'Al abrir una carta hay un botón de traducir que traduce el texto justo donde está, y con otro toque vuelve al original. La app también habla más de 70 idiomas.'],
     ['Sellos pintados solo para ti', 'Cada sello que dibujas se pinta al momento, por lo que nadie más tendrá el mismo. La tienda de sellos tiene sellos de 103 países para pegar en tus cartas.'],
     ['Un personaje en lugar de una foto', 'El perfil empieza como un personaje pixelado. Dieciséis son gratis, y con una foto o unas palabras sobre tu aspecto dibujamos el tuyo con el mismo estilo. El primero es gratis y no guardamos la foto.'],
     ['Presentaciones del día, sin deslizar', 'Unas pocas tarjetas de presentación al día. Sin puntuaciones ni deslizar sin fin. Si alguien te interesa, empiezas con una carta.'],
@@ -50,7 +50,7 @@ export const es: HomeCopy = {
   faqs: [
     { q: '¿Lettie es gratis?', a: 'Sí. Escribir, recoger cartas, traducir, los dieciséis personajes básicos y tu primer personaje propio son gratis. Las gemas solo sirven para extras como conversaciones sin límite, sacar sellos o un segundo personaje.' },
     { q: '¿Cuánto tarda en llegar una carta?', a: 'Se calcula con la distancia real entre dos ciudades. De una a dos horas dentro del país, unas horas hasta un país vecino y casi un día hasta el otro lado del mundo. Mientras esperas puedes ver el sobre en el globo.' },
-    { q: '¿Puedo tener un amigo por carta sin hablar su idioma?', a: 'Sí. Cada carta tiene un botón de traducir y el original queda junto a la traducción. Con más de 70 idiomas, tú escribes en el tuyo y la otra persona lee en el suyo.' },
+    { q: '¿Puedo tener un amigo por carta sin hablar su idioma?', a: 'Sí. Cada carta tiene un botón de traducir que traduce el texto justo donde está, y con otro toque vuelve al original. Con más de 70 idiomas, tú escribes en el tuyo y la otra persona lee en el suyo.' },
     { q: '¿Cómo conozco a alguien sin fotos?', a: 'El perfil es un personaje pixelado, unos intereses y las propias cartas. Con una foto o unas palabras sobre tu aspecto dibujamos un personaje con el mismo estilo (no guardamos la foto). Sabes cómo piensa alguien antes de saber cómo es.' },
   ],
   blogTitle: 'Para leer',

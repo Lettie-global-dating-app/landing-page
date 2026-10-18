@@ -13,11 +13,11 @@ export const faq: FaqContent = {
     },
     {
       q: 'Lettie có miễn phí không?',
-      a: 'Tải xuống và sử dụng cơ bản đều miễn phí: bạn có thể viết, nhận và trả lời thư mà không cần trả tiền. Có các tính năng bổ sung theo lựa chọn dùng đá quý, như trò chuyện không giới hạn, rút tem hoặc một nhân vật thứ hai.',
+      a: 'Tải xuống và sử dụng cơ bản đều miễn phí: bạn có thể viết, nhận và trả lời thư mà không cần trả tiền. Có các tính năng bổ sung theo lựa chọn dùng đá quý, như rút tem, tem các nước hoặc một nhân vật thứ hai.',
     },
     {
       q: 'Tôi có phải viết bằng tiếng Anh không?',
-      a: 'Không. Bạn viết bằng ngôn ngữ của mình và người kia đọc bằng ngôn ngữ của họ, vì mỗi lá thư có thể được dịch chỉ bằng một chạm. Bạn cũng có thể xem bản gốc nằm cạnh bản dịch.',
+      a: 'Không. Bạn viết bằng ngôn ngữ của mình và người kia đọc bằng ngôn ngữ của họ, vì mỗi lá thư có thể được dịch chỉ bằng một chạm. Bản dịch hiện ngay tại chỗ, và chạm thêm một lần là quay về bản gốc.',
     },
     {
       q: 'Khi nào tôi có thể trao đổi thông tin liên hệ với ai đó?',

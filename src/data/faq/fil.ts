@@ -17,7 +17,7 @@ export const faq: FaqContent = {
     },
     {
       q: 'Kailangan ko bang sumulat sa Ingles?',
-      a: 'Hindi. Sumusulat ka sa iyong wika at babasahin ito ng kabilang tao sa kanyang wika, dahil bawat sulat ay maaaring i-translate sa isang tap. Makikita mo rin ang orihinal na teksto sa tabi ng translation.',
+      a: 'Hindi. Sumusulat ka sa iyong wika at babasahin ito ng kabilang tao sa kanyang wika, dahil bawat sulat ay maaaring i-translate sa isang tap. Nagiging translation ang teksto mismo sa kinaroroonan nito, at isang tap lang ay balik sa orihinal.',
     },
     {
       q: 'Kailan ko maipalit ang contact details ko sa iba?',

@@ -21,9 +21,9 @@ export const articles: ArticleSet = {
 |---|---|
 | Cartas por distancia | Una carta vuela sobre un globo y llega entre 1 y 24 horas después, según la distancia entre los dos países. |
 | Descubrir | Cada día se acercan tres sobres nuevos de cartas que otras personas soltaron en el aire; recógelos y responde a los que te llamen la atención. Gratis; ver un anuncio da acceso a más. |
-| Traducción | Un botón de traducir en cada carta, más de 70 idiomas, gratis, con el texto original junto a la traducción. |
+| Traducción | Un botón de traducir en cada carta, más de 70 idiomas, gratis, y el texto se traduce en el mismo lugar con un toque. |
 | Perfiles | Empiezas como un personaje pixel (16 gratis) en vez de con una foto. Una selfie o unas palabras sobre tu aspecto se convierten en tu propio personaje; el primero es gratis y la foto no se guarda. |
-| Sellos | Cada país con el que intercambias cartas suma un sello a tu álbum y pinta el globo. |
+| Sellos | Los países con los que intercambias cartas pintan el globo; el sello de un país entra en tu pasaporte tras al menos 5 cartas en total (mínimo 2 tuyas y 2 suyas). |
 | Presentaciones | Unas pocas tarjetas de presentación al día. Sin deslizar, sin puntuaciones. |
 
 ## Cuánto tarda una carta en llegar
@@ -41,7 +41,7 @@ La demora depende de la distancia entre los puntos centrales de los dos países.
 
 | Gratis | Opcional (gemas) |
 |---|---|
-| Escribir, leer y responder cartas | Conversaciones ilimitadas con una persona |
+| Escribir, leer y responder cartas | Seguir escribiendo sin esperar respuesta (Lettie Plus) |
 | Traducir cualquier carta a más de 70 idiomas | Tiradas de sellos de colección |
 | 16 personajes pixel base + tu primer personaje propio | Un segundo personaje propio en adelante |
 | Descubrir: tres sobres nuevos cada día | Sobres adicionales |
@@ -62,7 +62,7 @@ Si estás decidiendo entre varias apps, lo que distingue a Lettie es la combinac
     faqs: [
       {
         q: '¿Lettie es una app gratis de amigos por correspondencia?',
-        a: 'Sí. Escribir, leer y responder cartas, traducirlas, los 16 personajes base y tu primer personaje propio son gratis en iOS y Android. Las gemas opcionales y la suscripción Lettie Plus añaden extras como más cartas al día, conversaciones ilimitadas con una persona, tiradas de sellos y un segundo personaje propio.',
+        a: 'Sí. Escribir, leer y responder cartas, traducirlas, los 16 personajes base y tu primer personaje propio son gratis en iOS y Android. Las gemas opcionales añaden extras como más cartas al día, tiradas de sellos, sellos de países y un segundo personaje propio; con la suscripción Lettie Plus puedes seguir escribiendo sin esperar respuesta.',
       },
       {
         q: '¿Dónde se descarga la app de amigos por correspondencia Lettie?',
@@ -74,7 +74,7 @@ Si estás decidiendo entre varias apps, lo que distingue a Lettie es la combinac
       },
       {
         q: '¿Necesito hablar inglés para usar Lettie?',
-        a: 'No. Cada carta tiene un botón de traducir que cubre más de 70 idiomas, y el texto original queda junto a la traducción, así que puedes escribir en tu propio idioma.',
+        a: 'No. Cada carta tiene un botón de traducir que cubre más de 70 idiomas, y con un toque el texto se traduce en el mismo lugar (y con otro vuelve al original), así que puedes escribir en tu propio idioma.',
       },
       {
         q: '¿En qué se diferencia Lettie de Slowly?',
@@ -159,7 +159,7 @@ Sea la app que elijas, una primera carta que recibe respuesta reacciona a lo que
       },
       {
         q: '¿Lettie es gratis?',
-        a: 'Sí. Escribir, leer y responder cartas, la traducción a más de 70 idiomas, los 16 personajes base y tu primer personaje propio son gratis. Las gemas opcionales añaden extras como conversaciones ilimitadas o tiradas de sellos.',
+        a: 'Sí. Escribir, leer y responder cartas, la traducción a más de 70 idiomas, los 16 personajes base y tu primer personaje propio son gratis. Las gemas opcionales añaden extras como tiradas de sellos o sellos de países.',
       },
       {
         q: '¿Qué diferencia a Lettie de Slowly?',
@@ -205,7 +205,7 @@ Sea la app que elijas, una primera carta que recibe respuesta reacciona a lo que
 
 La queja más común sobre Slowly es la traducción: copiar la carta, pegarla en un traductor aparte, y repetir con cada carta.
 
-**Lettie** pone el botón de traducir dentro de la propia carta, más de 70 idiomas, el original junto a la traducción, gratis. La entrega lenta por distancia sigue la misma idea que Slowly.
+**Lettie** pone el botón de traducir dentro de la propia carta, más de 70 idiomas, traducción en el mismo lugar, gratis. La entrega lenta por distancia sigue la misma idea que Slowly.
 
 **HelloTalk** es chat, pero las correcciones a nivel de frase y la traducción la hacen la herramienta más eficiente si el objetivo es aprender. No tiene el ritmo de las cartas, eso sí.
 
@@ -239,7 +239,7 @@ Un apunte, porque te va a seguir a la próxima app: las respuestas suelen apagar
     faqs: [
       {
         q: '¿Cuál es la mejor alternativa a Slowly si el idioma es el problema?',
-        a: 'Lettie pone la traducción dentro de la propia carta, en más de 70 idiomas y gratis, con el original junto a la traducción. HelloTalk es otra opción si prefieres chat con correcciones de hablantes nativos.',
+        a: 'Lettie pone la traducción dentro de la propia carta, en más de 70 idiomas y gratis, traduciendo el texto en el mismo lugar. HelloTalk es otra opción si prefieres chat con correcciones de hablantes nativos.',
       },
       {
         q: '¿Lettie es como Slowly pero con traducción incluida?',
@@ -393,7 +393,7 @@ Cuando tú y tu amigo por correspondencia no comparten idioma, unos pocos hábit
 
 Los sustantivos concretos viajan mejor que las ideas abstractas. Describir una comida, una calle o un objeto le da al lector algo que aterriza en cualquier idioma; describir un estado de ánimo, muchas veces, no.
 
-En Lettie cada carta se traduce gratis a más de 70 idiomas, con el original junto a la traducción, así que puedes escribir en el idioma en el que piensas y ser leído en el idioma en el que piensa la otra persona. Eso elimina la penalización por errores de gramática, pero no el problema de los modismos: escribir de forma sencilla sigue siendo lo que más ayuda.
+En Lettie cada carta se traduce gratis a más de 70 idiomas, con la traducción en el mismo lugar con un toque, así que puedes escribir en el idioma en el que piensas y ser leído en el idioma en el que piensa la otra persona. Eso elimina la penalización por errores de gramática, pero no el problema de los modismos: escribir de forma sencilla sigue siendo lo que más ayuda.
 
 ## Mantenerla viva más allá de la tercera carta
 

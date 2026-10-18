@@ -17,7 +17,7 @@ export const faq: FaqContent = {
     },
     {
       q: 'Czy muszę pisać po angielsku?',
-      a: 'Nie. Piszesz w swoim języku, a druga osoba czyta w swoim, ponieważ każdy list można przetłumaczyć jednym dotknięciem po otwarciu. Oryginał zawsze widać przy tłumaczeniu.',
+      a: 'Nie. Piszesz w swoim języku, a druga osoba czyta w swoim, ponieważ każdy list można przetłumaczyć jednym dotknięciem po otwarciu. Tłumaczenie pojawia się w tym samym miejscu, a kolejne dotknięcie przywraca oryginał.',
     },
     {
       q: 'Kiedy mogę wymienić dane kontaktowe z kimś?',

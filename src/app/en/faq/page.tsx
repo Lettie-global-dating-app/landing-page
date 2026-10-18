@@ -87,7 +87,15 @@ const faqCategories = [
       },
       {
         q: 'What are stamps for?',
-        a: 'Every country you exchange letters with adds its stamp to your album. Draw a stamp with gems and it’s painted fresh just for you (no one else has the same one), or buy any of 103 country stamps in the stamp shop. The stamp you pick is the one that appears on the letters you send and on the greetings you leave.'
+        a: 'The stamp you pick goes on the letters you send and on your stopover greetings, and arrives with them. You start with your country’s stamp and a season stamp, and collect more from the stamp draw (10 gems, newly painted each time), the shop’s 103 country stamps (15 gems), holiday stamps (free for sending one letter in the window), passport stamps and reply rewards.'
+      },
+      {
+        q: 'How do I get a stamp in my Lettie passport?',
+        a: 'Exchange at least 5 letters in total with people from one country, with at least 2 from you and 2 from them, and you get that country’s passport stamp and its postage stamp. There are 20 titles, and you can wear one under your name.'
+      },
+      {
+        q: 'When can I get holiday stamps?',
+        a: 'Send one letter during a holiday window such as Halloween, Diwali, Christmas, Lunar New Year, Valentine’s Day or White Day and a free stamp arrives. The 2026–2027 dates are in the holiday stamp calendar on our blog.'
       },
       {
         q: 'Can I make my own character?',
@@ -99,7 +107,7 @@ const faqCategories = [
       },
       {
         q: 'Why do we have to take turns?',
-        a: 'By default a conversation takes turns: you write again once your letter has been answered. Once two people have exchanged more than five letters they can unlock unlimited conversation with gems, and Lettie Plus has every conversation unlimited from the start.'
+        a: 'By default a conversation takes turns: you write again once your letter has been answered. If three days pass after your letter arrives with no reply, you can send one more, and Lettie Plus lets you keep writing without waiting.'
       }
     ]
   },
@@ -109,7 +117,7 @@ const faqCategories = [
     questions: [
       {
         q: 'What countries can I pen pal with?',
-        a: 'Letters are not limited by country. Discover shows envelopes people in other countries have released; pick one up, reply, and a conversation starts. Every country you exchange letters with is painted on your globe and adds its stamp to your album.'
+        a: 'Letters are not limited by country. Discover shows envelopes people in other countries have released; pick one up, reply, and a conversation starts. Every country you exchange letters with is painted on your globe, and 5+ letters with people from one country (2+ each way) put that country’s stamp in your passport.'
       },
       {
         q: 'How do I find pen pals with similar interests?',

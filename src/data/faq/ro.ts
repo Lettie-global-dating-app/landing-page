@@ -17,7 +17,7 @@ export const faq: FaqContent = {
     },
     {
       q: 'Trebuie să scriu în engleză?',
-      a: 'Nu. Scrii în limba ta, iar celălalt citește în limba lui, pentru că fiecare scrisoare poate fi tradusă dintr-o atingere. Poți vedea și textul original lângă traducere.',
+      a: 'Nu. Scrii în limba ta, iar celălalt citește în limba lui, pentru că fiecare scrisoare poate fi tradusă dintr-o atingere. Traducerea apare chiar pe loc, iar cu o nouă atingere revii la textul original.',
     },
     {
       q: 'Când pot face schimb de date de contact cu cineva?',

@@ -21,9 +21,9 @@ export const articles: ArticleSet = {
 |---|---|
 | Lettere per distanza | Una lettera vola su un globo e arriva da 1 a 24 ore dopo, in base alla distanza tra i due paesi. |
 | Scopri | Ogni giorno si avvicinano tre nuove buste con lettere che altre persone hanno lasciato andare; le raccogli e rispondi a quelle che ti colpiscono. Gratis; guardare una pubblicità ne sblocca altre. |
-| Traduzione | Un pulsante di traduzione in ogni lettera, oltre 70 lingue, gratis, con il testo originale mostrato insieme alla traduzione. |
+| Traduzione | Un pulsante di traduzione in ogni lettera, oltre 70 lingue, gratis, con il testo tradotto proprio dov’è. |
 | Profili | Inizi come personaggio pixel (16 gratis) invece che con una foto. Un selfie o poche parole sul tuo aspetto diventano il tuo personaggio personale; il primo è gratis e la foto non viene conservata. |
-| Francobolli | Ogni paese con cui scambi lettere aggiunge un francobollo al tuo album e colora il globo. |
+| Francobolli | I paesi con cui scambi lettere colorano il globo; il francobollo di un paese entra nel passaporto dopo almeno 5 lettere in tutto (almeno 2 tue e 2 loro). |
 | Presentazioni | Poche schede di presentazione al giorno. Niente da scorrere, niente punteggi. |
 
 ## Quanto tempo impiega una lettera
@@ -41,7 +41,7 @@ Il tempo di consegna dipende dalla distanza tra i punti centrali dei due paesi. 
 
 | Gratis | Opzionale (gemme) |
 |---|---|
-| Scrivere, leggere e rispondere alle lettere | Conversazioni illimitate con una persona |
+| Scrivere, leggere e rispondere alle lettere | Continuare a scrivere senza aspettare una risposta (Lettie Plus) |
 | Tradurre qualsiasi lettera in oltre 70 lingue | Estrazioni di francobolli |
 | 16 personaggi pixel base + il tuo primo personaggio personale | Un secondo personaggio personale in poi |
 | Scopri: tre nuove buste al giorno | Buste aggiuntive |
@@ -62,7 +62,7 @@ Se stai scegliendo tra diverse app, ciò che distingue Lettie è la combinazione
     faqs: [
       {
         q: 'Lettie è un’app gratuita di amici di penna?',
-        a: 'Sì. Scrivere, leggere e rispondere alle lettere, tradurle, i 16 personaggi base e il tuo primo personaggio personale sono gratuiti su iOS e Android. Le gemme opzionali e l’abbonamento Lettie Plus aggiungono extra come più lettere al giorno, conversazioni illimitate con una persona, estrazioni di francobolli e un secondo personaggio personale.',
+        a: 'Sì. Scrivere, leggere e rispondere alle lettere, tradurle, i 16 personaggi base e il tuo primo personaggio personale sono gratuiti su iOS e Android. Le gemme opzionali aggiungono extra come più lettere al giorno, estrazioni di francobolli, francobolli dei paesi e un secondo personaggio personale; con l’abbonamento Lettie Plus puoi continuare a scrivere senza aspettare una risposta.',
       },
       {
         q: 'Dove si scarica l’app di amici di penna Lettie?',
@@ -74,7 +74,7 @@ Se stai scegliendo tra diverse app, ciò che distingue Lettie è la combinazione
       },
       {
         q: 'Devo parlare inglese per usare Lettie?',
-        a: 'No. Ogni lettera ha un pulsante di traduzione che copre oltre 70 lingue, e il testo originale resta accanto alla traduzione, così puoi scrivere nella tua lingua.',
+        a: 'No. Ogni lettera ha un pulsante di traduzione che copre oltre 70 lingue, e con un tocco il testo si traduce proprio dov’è (con un altro torni all’originale), così puoi scrivere nella tua lingua.',
       },
       {
         q: 'In cosa Lettie è diversa da Slowly?',
@@ -159,7 +159,7 @@ Qualunque app scegli, una prima lettera che riceve risposta reagisce a quello ch
       },
       {
         q: 'Lettie è gratis?',
-        a: 'Sì. Scrivere, leggere e rispondere alle lettere, la traduzione in oltre 70 lingue, i 16 personaggi base e il tuo primo personaggio personale sono gratuiti. Le gemme opzionali aggiungono extra come conversazioni illimitate o estrazioni di francobolli.',
+        a: 'Sì. Scrivere, leggere e rispondere alle lettere, la traduzione in oltre 70 lingue, i 16 personaggi base e il tuo primo personaggio personale sono gratuiti. Le gemme opzionali aggiungono extra come estrazioni di francobolli o francobolli dei paesi.',
       },
       {
         q: 'Cosa differenzia Lettie da Slowly?',
@@ -205,7 +205,7 @@ Qualunque app scegli, una prima lettera che riceve risposta reagisce a quello ch
 
 La lamentela più comune su Slowly è la traduzione: copiare la lettera, incollarla in un traduttore separato, e ripetere per ogni lettera.
 
-**Lettie** inserisce il pulsante di traduzione dentro la lettera stessa, oltre 70 lingue, l'originale accanto alla traduzione, gratis. La consegna lenta in base alla distanza segue la stessa idea di Slowly.
+**Lettie** inserisce il pulsante di traduzione dentro la lettera stessa, oltre 70 lingue, tradotto proprio dov’è, gratis. La consegna lenta in base alla distanza segue la stessa idea di Slowly.
 
 **HelloTalk** è una chat, ma le correzioni a livello di frase e la traduzione la rendono lo strumento più efficiente se l'obiettivo è imparare. Non ha però il ritmo delle lettere.
 
@@ -239,7 +239,7 @@ Una nota, perché ti segue nella prossima app: le risposte di solito si spengono
     faqs: [
       {
         q: 'Qual è la migliore alternativa a Slowly se la lingua è il problema?',
-        a: 'Lettie inserisce la traduzione dentro la lettera stessa, in oltre 70 lingue e gratis, con l’originale accanto alla traduzione. HelloTalk è un’altra opzione se preferisci una chat con correzioni di madrelingua.',
+        a: 'Lettie inserisce la traduzione dentro la lettera stessa, in oltre 70 lingue e gratis, traducendo il testo proprio dov’è. HelloTalk è un’altra opzione se preferisci una chat con correzioni di madrelingua.',
       },
       {
         q: 'Lettie è come Slowly ma con la traduzione integrata?',
@@ -393,7 +393,7 @@ Quando tu e il tuo amico di penna non condividete la stessa lingua, poche abitud
 
 I sostantivi concreti viaggiano meglio delle idee astratte. Descrivere un pasto specifico, una strada o un oggetto dà al lettore qualcosa che funziona in qualunque lingua; descrivere uno stato d'animo, spesso, non funziona.
 
-Su Lettie ogni lettera si traduce gratis in oltre 70 lingue, con l'originale mostrato accanto alla traduzione, così puoi scrivere nella lingua in cui pensi ed essere letto nella lingua in cui pensa l'altra persona. Questo elimina la penalità grammaticale, ma non il problema dei modi di dire: scrivere in modo semplice resta ciò che aiuta di più.
+Su Lettie ogni lettera si traduce gratis in oltre 70 lingue, con la traduzione proprio dov’è con un tocco, così puoi scrivere nella lingua in cui pensi ed essere letto nella lingua in cui pensa l'altra persona. Questo elimina la penalità grammaticale, ma non il problema dei modi di dire: scrivere in modo semplice resta ciò che aiuta di più.
 
 ## Mantenerla viva oltre la terza lettera
 

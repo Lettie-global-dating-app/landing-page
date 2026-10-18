@@ -17,7 +17,7 @@ export const faq: FaqContent = {
     },
     {
       q: 'Perlukah saya menulis dalam bahasa Inggeris?',
-      a: 'Tidak. Kamu menulis dalam bahasa kamu dan orang lain membacanya dalam bahasa mereka, kerana setiap surat boleh diterjemah dengan satu ketukan. Teks asal juga boleh dilihat di sebelah terjemahan.',
+      a: 'Tidak. Kamu menulis dalam bahasa kamu dan orang lain membacanya dalam bahasa mereka, kerana setiap surat boleh diterjemah dengan satu ketukan. Teks bertukar kepada terjemahan di tempatnya, dan satu ketukan lagi kembali kepada teks asal.',
     },
     {
       q: 'Bila saya boleh bertukar maklumat hubungan dengan seseorang?',

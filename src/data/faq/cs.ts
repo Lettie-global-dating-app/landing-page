@@ -17,7 +17,7 @@ export const faq: FaqContent = {
     },
     {
       q: 'Musím psát anglicky?',
-      a: 'Ne. Píšete ve své řeči a druhá osoba čte ve své, protože každý dopis lze po otevření přeložit jedním dotykem. Originál vždy zůstává vedle překladu.',
+      a: 'Ne. Píšete ve své řeči a druhá osoba čte ve své, protože každý dopis lze po otevření přeložit jedním dotykem. Překlad se zobrazí přímo na místě textu a jedním klepnutím se vrátíte k originálu.',
     },
     {
       q: 'Kdy si můžu s někým vyměnit kontakt?',

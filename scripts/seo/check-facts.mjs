@@ -16,6 +16,12 @@ const STALE = [
   ['무료 편지 하루 3통 (하루 1통)', /(하루 편지 3통|three letters a day)/],
   // 2026-09-27 부터 발견에 AI 계정의 편지도 나온다 → 홈 하단 문구로 "진짜 사람"을 약속하지 않는다
   ['홈 하단 "진짜 사람" (발견에 AI 계정 편지가 섞인다)', /tag: '[^']*(진짜 사람|real people|personas reales|pessoas reais|本物の人|vraies personnes|真人|echte Menschen|असली लोग|orang sungguhan|настоящие люди|persone vere)/],
+  // 2.0.31 부터 번역은 그 자리에서 바뀐다(예전엔 원문 아래 상자). "나란히"는 둘 다 틀린 말이다 (2026-10-18)
+  ['번역을 원문과 나란히 (그 자리에서 바뀐다)', /(원문과 번역(문)?을 나란히|원문과 나란히 보|original and (the )?translation (are )?(shown )?side by side|both versions sit (side by side|next to each other)|shown beside the original|with the original shown beside it)/i],
+  // 나라 우표는 여권 도장(5통·각자 2통)과 함께 온다. 편지가 닿기만 해서 모이지 않는다 (2026-10-18)
+  ['나라마다 우표가 모인다 (여권 규칙: 5통·각자 2통)', /(편지가 닿은 나라마다 우표|나라마다 모이는 우표|그 나라의 우표가 우표첩에 모입니다|adds its stamp to your album|A stamp for every country you reach)/],
+  // 젬으로 여는 무제한 대화는 없어졌다(2026-10-07 「한 번 더 보내기」, Plus 는 기다림 없음) (2026-10-18)
+  ['젬으로 무제한 대화 (없어진 기능)', /(젬으로 (\*\*)?무제한 대화|무제한 대화를 열|unlock (an )?(\*\*)?unlimited conversation|unlimited conversation can be unlocked|unlimited back-and-forth|unlimited conversations, stamp draws)/i],
   // 레티는 펜팔 앱이다 (2026-09-21 대표 지시). 홈·FAQ 문구에 데이팅·연애 매칭 표현을 쓰지 않는다
   ['홈·FAQ 에 데이팅 표현 (펜팔 앱이다)', /(데이팅|소개팅|\bdating\b|\bflört|hẹn hò|หาคู่|\bdaten\b|seznamk|randk[ai]|побачен|γνωριμί|întâlniri romantice|kencan|cita romántica|encontro amoroso|rencontres amoureuses|出会い系|约会)/i, /src[\/](i18n[\/]home|data[\/](faq|articles))[\/]/],
 ];

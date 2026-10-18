@@ -47,7 +47,7 @@ export const zh: Dictionary = {
     subheading: '把写信的模拟质感，重新诠释为数字体验',
     translation: {
       title: '会自动翻译的信',
-      body: '用你自己的语言写就好。每封信和回信都会翻译成 70 多种语言，还能对照原文一起阅读。',
+      body: '用你自己的语言写就好。每封信和回信都会翻译成 70 多种语言，点一下就在原处切换译文和原文。',
     },
     letters: {
       title: '书信往来',

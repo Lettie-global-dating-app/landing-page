@@ -17,9 +17,9 @@ Lettie imejengwa juu ya wazo rahisi: barua inapaswa kusafiri. Badala ya ujumbe w
 |---|---|
 | Uwasilishaji kwa umbali | Barua huruka juu ya dunia na kufika ndani ya saa 1 hadi 24, kulingana na umbali kati ya nchi mbili |
 | Gundua (Discover) | Bahasha tatu mpya za barua kutoka watu wasiowajua zinakaribia kwako kila siku bila malipo; tazama tangazo kupata zaidi |
-| Tafsiri | Kitufe cha tafsiri kwenye kila barua, lugha zaidi ya 70, bila malipo, na barua ya asili inaonekana karibu na tafsiri |
+| Tafsiri | Kitufe cha tafsiri kwenye kila barua, lugha zaidi ya 70, bila malipo, na maandishi hutafsiriwa palepale yalipo |
 | Wasifu | Chagua mhusika wa pikseli badala ya picha (wahusika 16 wa msingi bila malipo), au tengeneza mhusika wako kutoka selfie au maneno machache ya maelezo (wa kwanza ni bure, picha haihifadhiwi) |
-| Stempu | Kila nchi unayobadilishana barua nayo inaongeza stempu na kupamba dunia yako |
+| Stempu | Nchi unazobadilishana nazo barua hupakwa rangi kwenye dunia yako; stempu ya nchi huingia kwenye pasipoti baada ya barua zisizopungua 5 kwa jumla (angalau 2 kutoka kwako na 2 kutoka kwao) |
 | Kadi za utangulizi | Kadi chache za utangulizi kila siku, hakuna kusogeza, hakuna alama |
 
 ## Barua inachukua muda gani kufika
@@ -30,7 +30,7 @@ Muda wa uwasilishaji unategemea umbali kati ya vituo vya nchi mbili. Ndani ya nc
 
 Kuandika, kusoma, na kujibu barua ni bure, kama vile tafsiri ya lugha zaidi ya 70, wahusika 16 wa msingi, na mhusika wako wa kwanza binafsi. Gundua inakupa bahasha tatu mpya bila malipo kila siku, na unaweza kutazama tangazo kupata zaidi.
 
-Almasi (gems) za hiari, au usajili wa Lettie Plus, zinafungua vitu vya ziada: mazungumzo yasiyo na kikomo na mtu mmoja, michezo ya kubahatisha stempu, na mhusika wa pili wa ziada. Hakuna kipengele hicho kinachohitajika kuandika barua na kufahamiana na watu wapya — ni ziada tu kwa wale wanaotaka zaidi.
+Almasi (gems) za hiari zinafungua vitu vya ziada: michezo ya kubahatisha stempu, stempu za nchi, na mhusika wa pili wa ziada. Usajili wa Lettie Plus hukuruhusu kuendelea kuandika bila kusubiri jibu. Hakuna kipengele hicho kinachohitajika kuandika barua na kufahamiana na watu wapya — ni ziada tu kwa wale wanaotaka zaidi.
 
 ## Hakuna sheria maalum ya wakati wa kubadilishana mawasiliano
 
@@ -42,7 +42,7 @@ Programu hii inafaa watu wanaopenda mdundo wa kuandika barua, wanaotaka kufahami
     faqs: [
       {
         q: 'Je Lettie ni bure?',
-        a: 'Ndiyo. Kuandika, kusoma, na kujibu barua, tafsiri ya lugha zaidi ya 70, wahusika 16 wa msingi, na mhusika wako wa kwanza binafsi ni bure kwenye iOS na Android. Almasi za hiari na usajili wa Lettie Plus huongeza vitu vya ziada kama mazungumzo yasiyo na kikomo na mtu mmoja, michezo ya kubahatisha stempu, na mhusika wa pili.',
+        a: 'Ndiyo. Kuandika, kusoma, na kujibu barua, tafsiri ya lugha zaidi ya 70, wahusika 16 wa msingi, na mhusika wako wa kwanza binafsi ni bure kwenye iOS na Android. Almasi za hiari huongeza vitu vya ziada kama michezo ya kubahatisha stempu, stempu za nchi, na mhusika wa pili; kwa usajili wa Lettie Plus unaweza kuendelea kuandika bila kusubiri jibu.',
       },
       {
         q: 'Naweza kupakua Lettie wapi?',
@@ -54,7 +54,7 @@ Programu hii inafaa watu wanaopenda mdundo wa kuandika barua, wanaotaka kufahami
       },
       {
         q: 'Je, lazima niongee Kiingereza kutumia Lettie?',
-        a: 'Hapana. Kila barua ina kitufe cha tafsiri kinachofunika lugha zaidi ya 70, na barua ya asili inabaki karibu na tafsiri — hivyo unaweza kuandika kwa lugha yako mwenyewe.',
+        a: 'Hapana. Kila barua ina kitufe cha tafsiri kinachofunika lugha zaidi ya 70, na mbofyo mmoja hutafsiri maandishi palepale yalipo (mbofyo mwingine unarudisha asili) — hivyo unaweza kuandika kwa lugha yako mwenyewe.',
       },
       {
         q: 'Lettie inatofautiana na Slowly jinsi gani?',
@@ -173,7 +173,7 @@ Haijalishi programu gani utumie, barua ya kwanza inayopata jibu ni mwitikio kwa 
 
 Malalamiko ya kawaida zaidi kuhusu Slowly ni tafsiri: unahitaji kunakili barua nje kwenye programu ya tafsiri, kuibandika tena, na kurudia kwa kila barua.
 
-- **Lettie** inaweka kitufe cha tafsiri ndani ya barua yenyewe — lugha zaidi ya 70, barua ya asili karibu na tafsiri, bila malipo. Uwasilishaji wa polepole kwa umbali ni wazo lile lile kama Slowly.
+- **Lettie** inaweka kitufe cha tafsiri ndani ya barua yenyewe — lugha zaidi ya 70, tafsiri palepale yalipo maandishi, bila malipo. Uwasilishaji wa polepole kwa umbali ni wazo lile lile kama Slowly.
 - **HelloTalk** ni mazungumzo, lakini marekebisho ya kiwango cha sentensi na tafsiri yanaifanya chombo bora zaidi ikiwa lengo ni kujifunza. Haina mdundo wa barua, hata hivyo.
 - **Ablo** inatafsiri kila ujumbe kiotomatiki. Nzuri kwa kuongea kwa kawaida na watu kutoka nchi nyingi; usitegemee undani.
 

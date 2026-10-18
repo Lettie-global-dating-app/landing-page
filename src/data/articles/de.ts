@@ -21,9 +21,9 @@ export const articles: ArticleSet = {
 |---|---|
 | Briefe nach Entfernung | Ein Brief fliegt über einen Globus und kommt je nach Entfernung zwischen zwei Ländern in 1 bis 24 Stunden an. |
 | Entdecken | Hol dir Briefe, die Fremde in den Himmel losgelassen haben, und antworte auf die, die dich ansprechen. |
-| Übersetzung | Ein Übersetzungsknopf in jedem Brief, über 70 Sprachen, kostenlos, mit dem Original direkt daneben. |
+| Übersetzung | Ein Übersetzungsknopf in jedem Brief, über 70 Sprachen, kostenlos, mit Übersetzung direkt an Ort und Stelle. |
 | Profile | Du startest als Pixel-Figur (16 kostenlose) statt mit einem Foto. Ein Selfie oder ein paar Worte über dein Aussehen werden zu deiner eigenen Figur (die erste ist kostenlos, das Foto wird nicht gespeichert). |
-| Briefmarken | Jedes Land, das deine Briefe erreichen, fügt deinem Album eine Briefmarke hinzu und färbt den Globus. |
+| Briefmarken | Länder, mit denen du Briefe tauschst, färben den Globus; die Marke eines Landes kommt in deinen Pass, sobald ihr mindestens 5 Briefe gewechselt habt (mindestens 2 von dir, 2 von ihnen). |
 | Vorstellungskarten | Ein paar Vorstellungskarten pro Tag. Kein Wischen, keine Punktzahlen. |
 
 ## Wie lange ein Brief braucht
@@ -39,7 +39,7 @@ Die Dauer richtet sich nach der Entfernung zwischen den beiden Ländern.
 
 | Kostenlos | Optional (Gems oder Lettie Plus) |
 |---|---|
-| Briefe schreiben, lesen und beantworten | Unbegrenzte Konversation mit einer Person |
+| Briefe schreiben, lesen und beantworten | Weiterschreiben, ohne auf eine Antwort zu warten (Lettie Plus) |
 | Jeden Brief in über 70 Sprachen übersetzen | Briefmarken-Ziehungen |
 | 16 Basis-Pixelfiguren + deine erste eigene Figur (Foto oder Worte) | Eine zweite eigene Figur |
 | Entdecken: drei neue Briefumschläge pro Tag, plus eine Werbeanzeige pro Tag für mehr | - |
@@ -50,7 +50,7 @@ Wie Slowly lässt Lettie Briefe nach der echten Entfernung zwischen zwei Länder
     faqs: [
       {
         q: 'Ist Lettie eine kostenlose Brieffreund-App?',
-        a: 'Ja. Briefe schreiben, lesen und beantworten, sie übersetzen, die 16 Basisfiguren und deine erste eigene Figur sind auf iOS und Android kostenlos. Optionale Gems und das Lettie-Plus-Abo fügen Extras wie unbegrenzte Konversation mit einer Person, Briefmarken-Ziehungen und eine zweite eigene Figur hinzu.',
+        a: 'Ja. Briefe schreiben, lesen und beantworten, sie übersetzen, die 16 Basisfiguren und deine erste eigene Figur sind auf iOS und Android kostenlos. Optionale Gems fügen Extras wie Briefmarken-Ziehungen, Länder-Briefmarken und eine zweite eigene Figur hinzu; mit dem Lettie-Plus-Abo schreibst du weiter, ohne auf eine Antwort zu warten.',
       },
       {
         q: 'Wo kann ich die Lettie Brieffreund-App herunterladen?',
@@ -62,7 +62,7 @@ Wie Slowly lässt Lettie Briefe nach der echten Entfernung zwischen zwei Länder
       },
       {
         q: 'Muss ich Englisch sprechen, um Lettie zu nutzen?',
-        a: 'Nein. Jeder Brief hat einen Übersetzungsknopf, der über 70 Sprachen abdeckt, und das Original bleibt neben der Übersetzung stehen, sodass du in deiner eigenen Sprache schreiben kannst.',
+        a: 'Nein. Jeder Brief hat einen Übersetzungsknopf, der über 70 Sprachen abdeckt, und mit einem Tipp wird der Text direkt an Ort und Stelle übersetzt, sodass du in deiner eigenen Sprache schreiben kannst.',
       },
       {
         q: 'Wie unterscheidet sich Lettie von Slowly?',
@@ -144,7 +144,7 @@ Egal welche App: Ein erster Brief, der eine Antwort bekommt, reagiert auf das, w
       },
       {
         q: 'Welche Brieffreund-App übersetzt Briefe automatisch?',
-        a: 'Lettie übersetzt jeden Brief kostenlos in über 70 Sprachen, mit dem Original direkt daneben. HelloTalk und Ablo bieten ebenfalls eingebaute Übersetzung, allerdings als Chat statt als langsame Briefe.',
+        a: 'Lettie übersetzt jeden Brief kostenlos in über 70 Sprachen, direkt an Ort und Stelle. HelloTalk und Ablo bieten ebenfalls eingebaute Übersetzung, allerdings als Chat statt als langsame Briefe.',
       },
       {
         q: 'Welche App hat die größte Brieffreund-Community?',
@@ -189,7 +189,7 @@ Egal welche App: Ein erster Brief, der eine Antwort bekommt, reagiert auf das, w
 
 Die häufigste Beschwerde über Slowly betrifft die Übersetzung: den Brief zu einem externen Übersetzer kopieren, zurück einfügen, für jeden Brief wiederholen.
 
-- **Lettie** setzt den Übersetzungsknopf direkt in den Brief - über 70 Sprachen, das Original neben der Übersetzung, kostenlos. Das langsame, entfernungsbasierte Tempo bleibt dieselbe Idee wie bei Slowly.
+- **Lettie** setzt den Übersetzungsknopf direkt in den Brief - über 70 Sprachen, direkt an Ort und Stelle, kostenlos. Das langsame, entfernungsbasierte Tempo bleibt dieselbe Idee wie bei Slowly.
 - **HelloTalk** ist Chat, aber Korrekturen auf Satzebene und Übersetzung machen es zum effizientesten Werkzeug, wenn Lernen das Ziel ist. Allerdings kein Briefrhythmus.
 - **Ablo** übersetzt jede Nachricht automatisch. Gut, um locker mit Menschen aus vielen Ländern zu reden; keine Tiefe erwarten.
 
@@ -226,7 +226,7 @@ Eine Anmerkung, denn sie begleitet dich in die nächste App: Antworten bleiben m
       },
       {
         q: 'Welche Alternative zu Slowly übersetzt Briefe automatisch?',
-        a: 'Lettie übersetzt jeden Brief kostenlos in über 70 Sprachen, mit dem Original direkt daneben. HelloTalk und Ablo übersetzen ebenfalls automatisch, allerdings als Chat statt als langsame Briefe.',
+        a: 'Lettie übersetzt jeden Brief kostenlos in über 70 Sprachen, direkt an Ort und Stelle. HelloTalk und Ablo übersetzen ebenfalls automatisch, allerdings als Chat statt als langsame Briefe.',
       },
       {
         q: 'Gibt es eine Alternative zu Slowly ohne Profilfoto?',
@@ -395,7 +395,7 @@ Wenn du und dein Brieffreund keine gemeinsame Muttersprache habt, machen ein paa
 
 Konkrete Substantive tragen weiter als abstrakte. Ein bestimmtes Essen, eine Straße oder einen Gegenstand zu beschreiben, gibt dem Leser etwas, das in jeder Sprache ankommt, während die Beschreibung einer Stimmung das oft nicht tut.
 
-Auf Lettie wird jeder Brief mit einem Tipp in über 70 Sprachen übersetzt, mit dem Original direkt neben der Übersetzung. So kannst du in der Sprache schreiben, in der du denkst, und in der Sprache gelesen werden, in der die andere Person denkt. Das nimmt die Grammatik-Strafe weg, aber nicht das Problem mit Redewendungen - klar zu schreiben hilft immer noch am meisten.
+Auf Lettie wird jeder Brief mit einem Tipp in über 70 Sprachen übersetzt, direkt an Ort und Stelle, und mit einem weiteren Tipp ist das Original zurück. So kannst du in der Sprache schreiben, in der du denkst, und in der Sprache gelesen werden, in der die andere Person denkt. Das nimmt die Grammatik-Strafe weg, aber nicht das Problem mit Redewendungen - klar zu schreiben hilft immer noch am meisten.
 
 ## Über den dritten Brief hinaus weitermachen
 

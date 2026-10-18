@@ -48,7 +48,7 @@ export const de: Dictionary = {
       'Das analoge Gefühl des Briefeschreibens, neu gedacht als digitales Erlebnis',
     translation: {
       title: 'Briefe, die sich selbst übersetzen',
-      body: 'Schreib in deiner eigenen Sprache. Jeder Brief und jede Antwort wird in über 70 Sprachen übersetzt, und du kannst das Original neben der Übersetzung lesen.',
+      body: 'Schreib in deiner eigenen Sprache. Jeder Brief und jede Antwort wird in über 70 Sprachen übersetzt, und mit einem Tipp wechselst du an Ort und Stelle zwischen Übersetzung und Original.',
     },
     letters: {
       title: 'Briefwechsel',

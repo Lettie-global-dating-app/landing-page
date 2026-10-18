@@ -19,9 +19,9 @@ Mektup arkadaşı uygulaması, farklı ülkelerden insanların mektup yazarak ta
 |---|---|
 | Mesafeye göre teslimat | Mektup küre üzerinde uçar, iki ülke arasındaki mesafeye göre 1 ile 24 saat arasında ulaşır. |
 | Keşfet | Yabancıların gökyüzüne saldığı mektupları toplar, size yakın gelenlere yanıt verirsiniz. |
-| Çeviri | Her mektupta bir çeviri düğmesi vardır: 70'in üzerinde dil, ücretsiz, orijinal metin çevirinin yanında durur. |
+| Çeviri | Her mektupta bir çeviri düğmesi vardır: 70'in üzerinde dil, ücretsiz, metin olduğu yerde çevrilir. |
 | Profiller | Fotoğraf yerine piksel karakterlerle başlarsınız (16 ücretsiz temel karakter). Bir selfie ya da birkaç kelimelik tarifle kendi karakterinizi çizdirebilirsiniz; ilki ücretsizdir, fotoğraf saklanmaz. |
-| Pullar | Mektup gönderdiğiniz her ülkeden bir pul koleksiyonunuza eklenir ve küreyi renklendirir. |
+| Pullar | Mektuplaştığınız ülkeler küreyi renklendirir; bir ülkenin pulu, o ülkeden insanlarla toplam en az 5 mektup (en az 2’si sizden, 2’si onlardan) olunca pasaportunuza girer. |
 | Tanışma kartları | Günde birkaç tanışma kartı gösterilir. Kaydırma yok, puanlama yok. |
 
 ## Mektup ne kadar sürede ulaşır
@@ -35,7 +35,7 @@ Mektup arkadaşı uygulaması, farklı ülkelerden insanların mektup yazarak ta
 
 | Ücretsiz | İsteğe bağlı (gem veya Lettie Plus) |
 |---|---|
-| Mektup yazma, okuma, yanıtlama | Sınırsız karşılıklı yazışma |
+| Mektup yazma, okuma, yanıtlama | Yanıt beklemeden yazmaya devam etme (Lettie Plus) |
 | 70'in üzerinde dile ücretsiz çeviri | Pul çekilişleri |
 | 16 temel piksel karakter + ilk özel karakteriniz | İkinci özel karakterden itibaren |
 | Keşfet'te her gün yeni mektuplar, reklam izleyerek daha fazlası | Ekstra mektup zarfları |
@@ -48,7 +48,7 @@ Slowly gibi uygulamalar da mesafeye göre teslimat yapar. Lettie'yi ayıran, yab
     faqs: [
       {
         q: 'Lettie ücretsiz bir mektup arkadaşı uygulaması mı?',
-        a: "Evet. Mektup yazmak, okumak, yanıtlamak, çeviri yapmak, 16 temel karakter ve ilk özel karakteriniz iPhone ve Android'de ücretsizdir. İsteğe bağlı gemler ve Lettie Plus, bir kişiyle sınırsız yazışma, pul çekilişleri ve ikinci bir özel karakter gibi ekstralar ekler.",
+        a: "Evet. Mektup yazmak, okumak, yanıtlamak, çeviri yapmak, 16 temel karakter ve ilk özel karakteriniz iPhone ve Android'de ücretsizdir. İsteğe bağlı gemler pul çekilişleri, ülke pulları ve ikinci bir özel karakter gibi ekstralar ekler; Lettie Plus ile yanıt beklemeden yazmaya devam edebilirsiniz.",
       },
       {
         q: 'Lettie mektup arkadaşı uygulamasını nereden indirebilirim?',
@@ -60,7 +60,7 @@ Slowly gibi uygulamalar da mesafeye göre teslimat yapar. Lettie'yi ayıran, yab
       },
       {
         q: "Lettie'yi kullanmak için İngilizce bilmem gerekir mi?",
-        a: "Hayır. Her mektupta 70'in üzerinde dili kapsayan bir çeviri düğmesi vardır ve orijinal metin çevirinin yanında kalır, böylece kendi dilinizde yazabilirsiniz.",
+        a: "Hayır. Her mektupta 70'in üzerinde dili kapsayan bir çeviri düğmesi vardır ve metin bir dokunuşla olduğu yerde çevrilir, bir dokunuşla orijinale döner, böylece kendi dilinizde yazabilirsiniz.",
       },
       {
         q: 'İletişim bilgilerimi ne zaman paylaşmalıyım?',
@@ -176,7 +176,7 @@ Hangi uygulamayı seçerseniz seçin, yanıt alan bir ilk mektup, bir biyografiy
 
 Slowly hakkındaki en yaygın şikayet çeviri: mektubu dışarı kopyalayıp çeviriciye yapıştırmak, her mektup için tekrarlamak.
 
-- Lettie çeviri düğmesini mektubun içine koyar: 70'in üzerinde dil, orijinal metin çevirinin yanında, ücretsiz. Yavaş, mesafeye dayalı teslimat Slowly ile aynı fikirdir.
+- Lettie çeviri düğmesini mektubun içine koyar: 70'in üzerinde dil, metin olduğu yerde çevrilir, ücretsiz. Yavaş, mesafeye dayalı teslimat Slowly ile aynı fikirdir.
 - HelloTalk bir sohbet uygulaması ama cümle bazlı düzeltmeler ve çeviri, öğrenme hedefleniyorsa burayı en verimli araç yapar. Mektup ritmi yoktur.
 - Ablo her mesajı otomatik çevirir. Çok sayıda ülkeden insanla rahatça sohbet etmek için iyidir; derinlik beklemeyin.
 

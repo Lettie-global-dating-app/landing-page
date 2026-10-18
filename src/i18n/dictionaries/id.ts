@@ -48,7 +48,7 @@ export const id: Dictionary = {
       'Rasa analog menulis surat, ditafsirkan ulang sebagai pengalaman digital',
     translation: {
       title: 'Surat yang menerjemahkan dirinya',
-      body: 'Tulis dalam bahasamu sendiri. Setiap surat dan balasan diterjemahkan ke lebih dari 70 bahasa, dan kamu bisa membaca versi aslinya berdampingan dengan terjemahannya.',
+      body: 'Tulis dalam bahasamu sendiri. Setiap surat dan balasan diterjemahkan ke lebih dari 70 bahasa, dan dengan satu ketukan kamu bisa beralih antara terjemahan dan teks asli di tempat yang sama.',
     },
     letters: {
       title: 'Sistem bertukar surat',

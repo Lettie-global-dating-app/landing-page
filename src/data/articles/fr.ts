@@ -21,9 +21,9 @@ export const articles: ArticleSet = {
 |---|---|
 | Lettres selon la distance | Une lettre traverse un globe et arrive en 1 à 24 heures selon la distance entre les deux pays. |
 | Découverte | Ramassez des lettres que des inconnus ont lâchées dans le ciel et répondez à celles qui vous parlent. |
-| Traduction | Un bouton de traduction dans chaque lettre, plus de 70 langues, gratuit, avec l'original affiché juste à côté. |
+| Traduction | Un bouton de traduction dans chaque lettre, plus de 70 langues, gratuit, traduit sur place. |
 | Profils | Vous commencez avec un personnage pixel (16 gratuits) plutôt qu'une photo. Un selfie ou quelques mots sur votre allure donnent naissance à votre propre personnage (le premier est gratuit, la photo n'est pas conservée). |
-| Timbres | Chaque pays atteint par vos lettres ajoute un timbre à votre album et colore le globe. |
+| Timbres | Les pays avec lesquels vous échangez des lettres colorent le globe ; le timbre d’un pays rejoint votre passeport après au moins 5 lettres échangées (au moins 2 de vous, 2 d’eux). |
 | Présentations | Quelques cartes de présentation par jour. Pas de glissement d'écran, pas de score. |
 
 ## Combien de temps met une lettre
@@ -39,7 +39,7 @@ La durée dépend de la distance entre les deux pays.
 
 | Gratuit | Optionnel (gemmes ou Lettie Plus) |
 |---|---|
-| Écrire, lire et répondre aux lettres | Conversations illimitées avec une même personne |
+| Écrire, lire et répondre aux lettres | Continuer à écrire sans attendre de réponse (Lettie Plus) |
 | Traduire n'importe quelle lettre dans plus de 70 langues | Tirages de timbres |
 | 16 personnages pixel de base + votre premier personnage personnalisé (photo ou mots) | Un second personnage personnalisé |
 | Découverte : trois nouvelles enveloppes par jour, et une publicité par jour pour en avoir plus | - |
@@ -50,7 +50,7 @@ Comme Slowly, Lettie fait voyager les lettres selon la distance réelle entre de
     faqs: [
       {
         q: 'Est-ce que Lettie est une application de correspondance gratuite ?',
-        a: "Oui. Écrire, lire et répondre aux lettres, les traduire, les 16 personnages de base et votre premier personnage personnalisé sont gratuits sur iOS et Android. Des gemmes optionnelles et l'abonnement Lettie Plus ajoutent des extras comme les conversations illimitées avec une personne, les tirages de timbres et un second personnage personnalisé.",
+        a: "Oui. Écrire, lire et répondre aux lettres, les traduire, les 16 personnages de base et votre premier personnage personnalisé sont gratuits sur iOS et Android. Des gemmes optionnelles ajoutent des extras comme les tirages de timbres, les timbres de pays et un second personnage personnalisé ; avec l'abonnement Lettie Plus, vous pouvez continuer à écrire sans attendre de réponse.",
       },
       {
         q: "Où télécharger l'application Lettie ?",
@@ -62,7 +62,7 @@ Comme Slowly, Lettie fait voyager les lettres selon la distance réelle entre de
       },
       {
         q: 'Dois-je parler anglais pour utiliser Lettie ?',
-        a: "Non. Chaque lettre a un bouton de traduction qui couvre plus de 70 langues, et l'original reste affiché à côté de la traduction, donc vous pouvez écrire dans votre propre langue.",
+        a: "Non. Chaque lettre a un bouton de traduction qui couvre plus de 70 langues, et un geste suffit pour traduire le texte sur place, puis revenir à l'original, donc vous pouvez écrire dans votre propre langue.",
       },
       {
         q: 'En quoi Lettie est différent de Slowly ?',
@@ -144,7 +144,7 @@ Quelle que soit l'appli, une première lettre qui obtient une réponse réagit �
       },
       {
         q: "Quelle application de correspondance traduit automatiquement les lettres ?",
-        a: "Lettie traduit chaque lettre gratuitement dans plus de 70 langues, avec l'original affiché à côté. HelloTalk et Ablo proposent aussi une traduction intégrée, mais sous forme de chat plutôt que de lettres.",
+        a: "Lettie traduit chaque lettre gratuitement dans plus de 70 langues, directement sur place. HelloTalk et Ablo proposent aussi une traduction intégrée, mais sous forme de chat plutôt que de lettres.",
       },
       {
         q: "Quelle est la plus grande communauté de correspondants ?",
@@ -189,7 +189,7 @@ Quelle que soit l'appli, une première lettre qui obtient une réponse réagit �
 
 La plainte la plus fréquente envers Slowly concerne la traduction : copier la lettre vers un traducteur externe, la coller à nouveau, répéter pour chaque lettre.
 
-- **Lettie** place le bouton de traduction directement dans la lettre : plus de 70 langues, l'original à côté de la traduction, gratuit. Le rythme lent, basé sur la distance, reprend la même idée que Slowly.
+- **Lettie** place le bouton de traduction directement dans la lettre : plus de 70 langues, traduit sur place, gratuit. Le rythme lent, basé sur la distance, reprend la même idée que Slowly.
 - **HelloTalk** est un chat, mais les corrections au niveau de la phrase et la traduction en font l'outil le plus efficace si apprendre est l'objectif. Pas de rythme de lettres, en revanche.
 - **Ablo** traduit automatiquement chaque message. Pratique pour parler légèrement avec des gens de nombreux pays ; n'en attendez pas de profondeur.
 
@@ -226,7 +226,7 @@ Une remarque, car elle vous suivra dans la prochaine appli : les réponses meure
       },
       {
         q: 'Quelle alternative à Slowly traduit automatiquement les lettres ?',
-        a: "Lettie traduit chaque lettre gratuitement dans plus de 70 langues avec l'original affiché à côté. HelloTalk et Ablo traduisent aussi automatiquement, mais en mode chat plutôt qu'en lettres lentes.",
+        a: "Lettie traduit chaque lettre gratuitement dans plus de 70 langues directement sur place. HelloTalk et Ablo traduisent aussi automatiquement, mais en mode chat plutôt qu'en lettres lentes.",
       },
       {
         q: 'Existe-t-il une alternative à Slowly sans photo de profil ?',
@@ -395,7 +395,7 @@ Quand vous et votre correspondant ne partagez pas la même langue maternelle, qu
 
 Les noms concrets voyagent mieux que les notions abstraites. Décrire un repas, une rue ou un objet précis donne au lecteur quelque chose qui fonctionne dans n'importe quelle langue, alors que décrire une humeur fonctionne souvent moins bien.
 
-Sur Lettie, chaque lettre se traduit en un geste dans plus de 70 langues, avec l'original affiché à côté de la traduction : vous pouvez écrire dans la langue dans laquelle vous pensez, et être lu dans celle de l'autre. Cela retire la pénalité de grammaire, mais pas le problème des expressions idiomatiques : écrire simplement reste ce qui aide le plus.
+Sur Lettie, chaque lettre se traduit en un geste dans plus de 70 langues, sur place, avec un autre geste pour revenir à l'original : vous pouvez écrire dans la langue dans laquelle vous pensez, et être lu dans celle de l'autre. Cela retire la pénalité de grammaire, mais pas le problème des expressions idiomatiques : écrire simplement reste ce qui aide le plus.
 
 ## Continuer après la troisième lettre
 

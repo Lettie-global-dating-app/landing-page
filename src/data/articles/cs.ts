@@ -17,7 +17,7 @@ Lettie staví na jednoduché myšlence: dopis by měl cestovat. Místo okamžit�
 |---|---|
 | Doručení podle vzdálenosti | Dopis letí přes glóbus a doručí se za 1 až 24 hodin, podle vzdálenosti mezi zeměmi |
 | Objevování (Discover) | Každý den se k vám přiblíží tři nové obálky s dopisy od cizích lidí zdarma; za zhlédnutí reklamy jich můžete získat víc |
-| Překlad | Tlačítko překladu u každého dopisu, 70+ jazyků, zdarma, originál se zobrazí hned vedle překladu |
+| Překlad | Tlačítko překladu u každého dopisu, 70+ jazyků, zdarma, text se přeloží přímo na místě |
 | Profily | Místo fotky si vyberete pixelovou postavu (16 základních zdarma) nebo si vytvoříte vlastní z selfie či pár slov o vzhledu (první zdarma, fotka se neukládá) |
 | Razítka | Za každou zemi, se kterou si dopisy vyměníte, přibude razítko a vybarví se kousek glóbu |
 | Seznamovací karty | Pár úvodních karet denně, žádné švihání prstem, žádné skóre |
@@ -30,7 +30,7 @@ Doba doručení závisí na vzdálenosti mezi středy obou zemí. V rámci jedn�
 
 Psaní, čtení a odpovídání na dopisy je zdarma, stejně jako překlad do 70+ jazyků, šestnáct základních postav a vaše první vlastní postava. Objevování vám denně přinese tři nové obálky zdarma, další získáte zhlédnutím reklamy.
 
-Volitelné drahokamy (nebo předplatné Lettie Plus) odemykají extra věci: neomezené psaní s jedním člověkem, losování razítek a druhou vlastní postavu navíc. Žádná z těchto funkcí není potřeba k tomu, abyste si psali a poznávali nové lidi — jsou to jen doplňky pro ty, kdo chtějí víc.
+Volitelné drahokamy odemykají extra věci: losování razítek, razítka zemí a druhou vlastní postavu navíc. S předplatným Lettie Plus můžete psát dál, aniž byste čekali na odpověď. Žádná z těchto funkcí není potřeba k tomu, abyste si psali a poznávali nové lidi — jsou to jen doplňky pro ty, kdo chtějí víc.
 
 ## Žádné pevné pravidlo, kdy si vyměnit kontakt
 
@@ -42,7 +42,7 @@ Aplikace se hodí pro lidi, kteří mají rádi rytmus psaní dopisů, chtějí 
     faqs: [
       {
         q: 'Je Lettie zdarma?',
-        a: 'Ano. Psaní, čtení a odpovídání na dopisy, překlad do 70+ jazyků, 16 základních postav a vaše první vlastní postava jsou zdarma na iOS i Androidu. Volitelné drahokamy a předplatné Lettie Plus přidávají extra věci, jako neomezené psaní s jedním člověkem, losování razítek a druhou vlastní postavu.',
+        a: 'Ano. Psaní, čtení a odpovídání na dopisy, překlad do 70+ jazyků, 16 základních postav a vaše první vlastní postava jsou zdarma na iOS i Androidu. Volitelné drahokamy přidávají extra věci, jako losování razítek, razítka zemí a druhou vlastní postavu; s předplatným Lettie Plus můžete psát dál, aniž byste čekali na odpověď.',
       },
       {
         q: 'Kde si můžu Lettie stáhnout?',
@@ -54,7 +54,7 @@ Aplikace se hodí pro lidi, kteří mají rádi rytmus psaní dopisů, chtějí 
       },
       {
         q: 'Musím umět anglicky, abych mohl/a používat Lettie?',
-        a: 'Ne. Každý dopis má tlačítko překladu, které pokrývá 70+ jazyků, a originál zůstává vedle překladu — takže můžete psát ve svém vlastním jazyce.',
+        a: 'Ne. Každý dopis má tlačítko překladu, které pokrývá 70+ jazyků, a jedním klepnutím se text přeloží přímo na místě a dalším se vrátí originál — takže můžete psát ve svém vlastním jazyce.',
       },
       {
         q: 'Jak se Lettie liší od Slowly?',
@@ -173,7 +173,7 @@ Ať zvolíte kteroukoli aplikaci, první dopis, na který dostanete odpověď, r
 
 Nejčastější stížnost na Slowly je překlad: musíte dopis zkopírovat do překladače, vložit zpátky, a opakovat u každého dopisu.
 
-- **Lettie** má tlačítko překladu přímo uvnitř dopisu — 70+ jazyků, originál vedle překladu, zdarma. Pomalé doručení podle vzdálenosti je stejná myšlenka jako u Slowly.
+- **Lettie** má tlačítko překladu přímo uvnitř dopisu — 70+ jazyků, překlad přímo na místě, zdarma. Pomalé doručení podle vzdálenosti je stejná myšlenka jako u Slowly.
 - **HelloTalk** je chat, ale opravy na úrovni vět a překlad z něj dělají nejefektivnější nástroj, pokud je cílem výuka. Chybí mu ale rytmus dopisů.
 - **Ablo** automaticky překládá každou zprávu. Dobré na občasnou konverzaci s lidmi z mnoha zemí; nečekejte hloubku.
 

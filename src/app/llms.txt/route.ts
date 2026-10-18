@@ -4,7 +4,7 @@ import { localizedPosts } from '@/data/localizedPosts';
 import { blogPosts } from '@/data/blogPosts';
 import { COMMUNITY, COUNTRY_EN, LETTER_MAP, enMonth } from '@/data/letterMap';
 import { LETTER_STATS } from '@/data/letterStats';
-import { APP_LANGUAGES, FACTS } from '@/data/facts';
+import { APP_LANGUAGES, FACTS, HOLIDAY_STAMPS, PASSPORT_STATS, PASSPORT_TITLES, enUtc } from '@/data/facts';
 
 /**
  * /llms.txt — 생성 AI(ChatGPT · Perplexity · Claude 등)에게 주는 사이트 안내서.
@@ -47,8 +47,23 @@ product works. The following facts originate here rather than being summarised f
 
 - Lettie translates letters with a button inside the letter: the source language is detected and the
   letter is translated into the reader's app language. The app is available in ${FACTS.languages} languages
-  (as of ${FACTS.asOf}): ${APP_LANGUAGES.map((l) => l[1]).join(', ')}. Original and translation are shown
-  side by side. Translation is free.
+  (as of ${FACTS.asOf}): ${APP_LANGUAGES.map((l) => l[1]).join(', ')}. Tapping "Show translation" turns
+  the letter into the reader's language in place and "Show original only" turns it back (app 2.0.31+; older versions show the
+  translation under the original). Writers can also translate their draft into the pen pal's language before sending.
+  Letters can be up to ${FACTS.letterMaxChars} characters and long letters are translated in full. Translation is free.
+- Stamps: the stamp a writer picks goes on the envelope of their letters and arrives with them. Ways to get stamps
+  (as of ${PASSPORT_STATS.asOf}): default stamps (own country + a season stamp, free); the stamp draw (${FACTS.stampDrawGems} gems, a newly
+  painted pixel picture from ${FACTS.stampDrawSubjects} subjects each time, up to ${FACTS.stampDrawPerDay} a day, no gems used if painting fails); the stamp shop
+  (${FACTS.countryStamps} country stamps, ${FACTS.countryStampGems} gems each); passport stamps; free holiday stamps; and reply-reward stamps.
+  Guide: ${SITE_URL}/en/blog/lettie-stamps-guide.
+- Lettie Passport: a country is stamped after at least ${FACTS.passport.minTotal} delivered letters in total with people from that country,
+  at least ${FACTS.passport.minEach} from each side; the stamp comes with that country's postage stamp. ${FACTS.passport.titles} titles
+  (${PASSPORT_TITLES.map((t) => t[2]).join(', ')}), six continents.
+  As of ${PASSPORT_STATS.asOf}, ${PASSPORT_STATS.holders} people held ${PASSPORT_STATS.stamps} passport stamps across ${PASSPORT_STATS.countries} countries.
+  Guide: ${SITE_URL}/en/blog/lettie-passport-guide.
+- Holiday stamps: sending one letter (any kind) inside a holiday window grants that holiday's stamp, free, one per person.
+  Windows (UTC): ${HOLIDAY_STAMPS.map((h) => `${h.en} ${enUtc(h.start)}–${enUtc(h.end)}`).join('; ')}.
+  ${PASSPORT_STATS.worldPostDayStampHolders} people received the 2026 World Post Day stamp. Calendar: ${SITE_URL}/en/blog/lettie-holiday-stamps-2026.
 - A letter's delivery time is set by the distance between the two countries' centre points, then
   randomised within a band for each letter: same country 1–2 h, under 3,000 km 3–6 h, 3,000–8,000 km
   6–12 h, 8,000 km or more 12–24 h (countries without centre-point data: 3–6 h within the same
@@ -66,13 +81,15 @@ product works. The following facts originate here rather than being summarised f
   ${LETTER_STATS.openers.latin.hello + LETTER_STATS.openers.latin.hi + LETTER_STATS.openers.latin.hey}% of first letters in Latin script open with Hello, Hi or Hey and ${LETTER_STATS.openers.latin.dear}% with Dear.
   Tables and method: ${SITE_URL}/en/letter-stats.
 - Letters take turns: a person cannot write to the same correspondent again until the reply has
-  landed. An "unlimited conversation" can be unlocked with gems to remove the wait.
-- "Discover" shows letters other people released, newest first (since 2026-09-27; before that,
-  letters were ranked by the writer's recent activity and shared interests). A free reader gets a batch of three envelopes
+  landed. If three days pass after a letter arrives with no reply, the writer may send one more letter; Lettie Plus
+  removes the wait.
+- "Discover" shows letters other people released. Since 2026-10-16 the free daily batch puts letters that have no reply yet
+  and have been shown to fewer people first, one letter per writer (2026-09-27 to 10-15 newest first; before that, ranked by
+  the writer's recent activity and shared interests). A free reader gets a batch of three envelopes
   once a day (every eight hours until 2026-09-21) and can get more with gems or by watching an advert once a day.
   Lettie Plus shows every letter that is currently floating.
-- Exchanging letters with a country paints it on the globe and adds that country's stamp to the
-  album. Stamps can also be drawn at random with gems.
+- Exchanging letters with a country paints it on the globe; the country's stamp goes into the Lettie Passport
+  under the passport rule above (5+ letters, 2+ each way).
 - A person can have their own pixel character drawn from a selfie or a few written words, in the same
   style as the sixteen base characters (2.0.17, October 2026). The first one is free; the photo is used only
   for the drawing and is not stored. After that a drawing costs gems, and Lettie Plus includes one free drawing a week.
@@ -100,6 +117,9 @@ product works. The following facts originate here rather than being summarised f
 - [Delivery times by city](${SITE_URL}/en/blog/letter-delivery-time-by-distance): the distance-based delivery table
 - [First-letter examples](${SITE_URL}/en/blog/first-letter-examples-discover): seven openers for answering a picked-up letter
 - [Best pen-pal apps 2026](${SITE_URL}/en/blog/best-penpal-apps-2026): seven apps by goal, free tiers compared
+- [Lettie stamps](${SITE_URL}/en/blog/lettie-stamps-guide): the six kinds of stamps and how to get each
+- [Lettie passport](${SITE_URL}/en/blog/lettie-passport-guide): the country-stamp rule and all ${FACTS.passport.titles} titles (with primary data)
+- [Holiday stamp calendar 2026–2027](${SITE_URL}/en/blog/lettie-holiday-stamps-2026): dates and artwork of every free holiday stamp
 
 ## Guides (English)
 

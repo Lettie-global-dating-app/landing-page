@@ -20,6 +20,8 @@ export const TOPICS: string[][] = [
   ['language-exchange-tips', 'pen-pal-for-language-learning', 'korean-pen-pals', 'japanese-pen-pals', 'writing-across-languages',
     'language-exchange-friendship', 'penpal-culture-guide', 'cultural-understanding-global-etiquette', 'international-friendship-guide',
     'making-global-friends', 'armchair-world-travel'],
+  // 우표·여권·기념일 (2026-10-18)
+  ['lettie-passport-guide', 'lettie-stamps-guide', 'lettie-holiday-stamps-2026', 'penpal-app-with-translation'],
   // 안전
   ['pen-pal-safety-guide'],
   // 느린 삶·수필

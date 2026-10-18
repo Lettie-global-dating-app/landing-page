@@ -1,4 +1,4 @@
-import { APP_LANGUAGES, FACTS, enDate, koDate } from '@/data/facts';
+import { APP_LANGUAGES, FACTS, HOLIDAY_STAMPS, PASSPORT_STATS, PASSPORT_TITLES, enDate, enUtc, koDate, koKst } from '@/data/facts';
 import { LETTER_MAP } from '@/data/letterMap';
 import { LETTER_STATS } from '@/data/letterStats';
 
@@ -3924,7 +3924,7 @@ Most people who write across languages do one of three things:
 
 **Send both.** Your original and the translation together. This is the most robust option — if the translation garbles something, the original is right there, and over months the person starts recognizing patterns in your language.
 
-That last approach is why some apps show original and translation side by side by default. On Lettie, every letter and reply translates across 70+ languages and both versions sit next to each other, so nothing gets hidden behind the machine. A lot of people report picking up their pen pal's language gradually without ever deciding to study it.
+That last approach is why it matters that the original is always one tap away. On Lettie, every letter and reply translates across 70+ languages and you can switch between the translation and the original with one tap, so nothing gets hidden behind the machine.
 
 ## When something lands wrong
 
@@ -4188,7 +4188,7 @@ The strongest setup for most people is a pen pal correspondence for consistency,
 
 **Read the original next to the translation.** If your app shows both, this is the highest-value habit available. Seeing the source sentence beside its meaning, repeatedly, in a context you care about, builds pattern recognition that flashcards don't.
 
-On Lettie both versions sit side by side across 70+ languages, so you see your pen pal's own words every time you read a translation. That exposure adds up, but slowly — this isn't a substitute for a course if you need results by a deadline.
+On Lettie you can switch between the translation and your pen pal's own words with one tap, across 70+ languages, so the original is never far away. That exposure adds up, but slowly — this isn't a substitute for a course if you need results by a deadline.
 
 ## A realistic timeline
 
@@ -4734,13 +4734,13 @@ Get past letter three and the correspondence usually finds its own momentum.
         faq: [
             { q: 'Lettie와 Slowly의 가장 큰 차이는 무엇인가요?', a: '첫 편지를 시작하는 방식입니다. Slowly는 관심사 매칭과 공개 편지로 상대를 찾고, Lettie는 남이 하늘에 띄운 편지를 발견에서 주워 답장하는 데서 시작합니다. 여기에 앱 안 무료 번역(70개 넘는 언어), 사진이나 글로 그려 주는 픽셀 캐릭터, 하루 몇 장의 소개 카드가 더해집니다.' },
             { q: 'Lettie에도 Slowly처럼 편지가 거리만큼 걸려 도착하나요?', a: '네. 두 나라 사이 거리로 구간을 정해 최소 1시간, 최대 24시간이 걸립니다. 서울에서 도쿄는 3~6시간, 뉴욕은 12~24시간입니다.' },
-            { q: 'Lettie의 번역은 유료인가요?', a: '아니요. 편지 안의 번역 버튼으로 70개 넘는 언어를 무료로 번역하며, 원문과 번역문을 나란히 보여 줍니다.' },
+            { q: 'Lettie의 번역은 유료인가요?', a: '아니요. 편지 안의 번역 버튼으로 70개 넘는 언어를 무료로 번역하며, 그 자리에서 번역으로 바뀌고 버튼 하나로 원문과 오갑니다.' },
             { q: 'Slowly에서 Lettie로 옮기면 무엇이 달라지나요?', a: '첫 편지를 매칭 카드로 받는 대신, 발견 탭에서 남이 하늘에 띄운 편지를 주워 읽고 답장할 수 있습니다. 프로필은 사진 대신 16종의 픽셀 캐릭터로 시작합니다.' },
         ],
         faqEn: [
             { q: 'What is the biggest difference between Lettie and Slowly?', a: 'How the first letter starts. Slowly finds you a pen pal through interest matching and open letters; Lettie starts with picking up a letter a stranger released into the sky (Discover) and replying. On top of that: free in-app translation in 70+ languages, a pixel character drawn from your description, and a few introduction cards a day. Photo-free character profiles and turn-taking letters.' },
             { q: 'Do letters in Lettie take time to arrive like in Slowly?', a: 'Yes. Delivery time comes from the distance between the two countries: at least 1 hour, at most 24 hours. Seoul to Tokyo takes 3–6 hours; Seoul to New York 12–24 hours.' },
-            { q: 'Is translation in Lettie paid?', a: 'No. A translate button inside each letter covers 70+ languages for free and shows the original and the translation side by side.' },
+            { q: 'Is translation in Lettie paid?', a: 'No. A translate button inside each letter covers 70+ languages for free; the letter turns into your language in place and switches back to the original with one tap.' },
             { q: 'What changes if I move from Slowly to Lettie?', a: 'Instead of only receiving match cards, you can pick up letters strangers released into the sky in the Discover tab and reply. Profiles start as one of sixteen pixel characters instead of a photo.' },
         ],
         content: `
@@ -4770,7 +4770,7 @@ Lettie의 첫 편지는 대부분 **발견**에서 시작합니다. 누구에게
 
 ## 3. 번역 — 언어의 벽을 어디서 넘느냐
 
-이 차이가 가장 큽니다. Lettie는 편지를 열면 **번역 버튼이 앱 안에 있고, 70개 넘는 언어**를 한 번에 번역해 원문과 나란히 보여 줍니다. 무료 사용자도 씁니다. 상대는 자기 말로 쓰고 나는 내 말로 읽는 것이 기본 경험입니다.
+이 차이가 가장 큽니다. Lettie는 편지를 열면 **번역 버튼이 앱 안에 있고, 70개 넘는 언어**를 한 번에 번역해 그 자리에서 보여 주고, 버튼 하나로 원문과 오갑니다. 무료 사용자도 씁니다. 상대는 자기 말로 쓰고 나는 내 말로 읽는 것이 기본 경험입니다.
 
 Slowly는 편지 번역이 기본 경험에 들어 있지 않습니다. 외부 번역기를 오가거나 유료 기능을 쓰게 됩니다. 같은 언어권 펜팔이라면 전혀 문제가 아니지만, "언어가 달라도 상관없이" 사람을 만나고 싶다면 체감 차이가 큽니다.
 
@@ -4894,12 +4894,12 @@ Lettie is smaller than Slowly. If you need to find someone in a specific small c
         keywordsEn: ['Slowly alternatives', 'apps like Slowly', 'Slowly app alternative 2026', 'best pen pal apps', 'slow letter apps', 'language exchange apps', 'InterPals alternative', 'HelloTalk vs Tandem'],
         faq: [
             { q: 'Slowly와 가장 비슷한 앱은 무엇인가요?', a: '편지가 거리만큼 걸려 도착한다는 핵심이 같은 앱은 Lettie입니다. 언어 교환이 목적이면 HelloTalk·Tandem, 이메일 펜팔이면 InterPals가 가깝습니다.' },
-            { q: 'Slowly 대안 앱들은 무료인가요?', a: '이 글의 여섯 앱 모두 무료로 시작할 수 있습니다. 차이는 유료 항목입니다. Lettie는 번역이 무료이고 우표·캐릭터·무제한 대화가 유료 항목입니다.' },
+            { q: 'Slowly 대안 앱들은 무료인가요?', a: '이 글의 여섯 앱 모두 무료로 시작할 수 있습니다. 차이는 유료 항목입니다. Lettie는 번역과 기념일·여권 우표가 무료이고 우표 뽑기·나라 우표·두 번째 캐릭터·Lettie Plus가 유료 항목입니다.' },
             { q: '사진 없이 시작할 수 있는 펜팔 앱이 있나요?', a: 'Lettie는 사진 대신 픽셀 캐릭터로 시작하며, 처음 만나는 사람에게 사진이 보이지 않습니다.' },
         ],
         faqEn: [
             { q: 'Which app is most similar to Slowly?', a: 'Lettie keeps the same core: letters take time to arrive based on distance. For language exchange HelloTalk and Tandem are closer; for email-style pen pals, InterPals.' },
-            { q: 'Are the Slowly alternatives free?', a: 'All six apps in this article are free to start. The difference is what is paid: in Lettie translation is free, while stamps, custom characters and unlimited conversation are paid extras.' },
+            { q: 'Are the Slowly alternatives free?', a: 'All six apps in this article are free to start. The difference is what is paid: in Lettie translation and holiday and passport stamps are free, while stamp draws, country stamps, a second custom character and Lettie Plus are paid extras.' },
             { q: 'Is there a pen-pal app that works without photos?', a: 'Lettie starts every profile as a pixel character, and no photograph is shown to someone you meet for the first time.' },
         ],
         content: `
@@ -4923,7 +4923,7 @@ Slowly를 쓰다가 다른 앱을 찾는 이유는 대개 셋 중 하나입니�
 
 Slowly에서 가장 자주 나오는 아쉬움이 번역입니다. 편지를 복사해 번역기에 붙였다가 다시 돌아오는 왕복이 편지 한 통마다 반복됩니다.
 
-- **[Lettie](/penpal-app)**는 편지를 열면 번역 버튼이 그 자리에 있습니다. 70개 넘는 언어, 원문과 번역을 나란히. 무료 사용자도 씁니다. 편지가 거리만큼 시간이 걸려 도착하는 느린 구조는 Slowly와 같습니다.
+- **[Lettie](/penpal-app)**는 편지를 열면 번역 버튼이 그 자리에 있습니다. 70개 넘는 언어, 버튼 하나로 번역과 원문을 오갑니다. 무료 사용자도 씁니다. 편지가 거리만큼 시간이 걸려 도착하는 느린 구조는 Slowly와 같습니다.
 - **HelloTalk**는 채팅이지만 문장 단위 교정과 번역이 붙어 있어 언어 학습 목적이면 가장 효율이 좋습니다. 대신 "편지"의 호흡은 없습니다.
 - **Ablo**는 모든 메시지가 자동 번역되는 채팅입니다. 가볍게 여러 나라 사람과 이야기해 보고 싶을 때. 깊이는 기대하지 않는 게 좋습니다.
 
@@ -5076,7 +5076,7 @@ Lettie에서 편지를 보내면 바로 도착하지 않습니다. 봉투가 지
 
 - **지구본**에서 내 편지가 어디쯤 가는지 봅니다. 도착하면 알림이 옵니다. 2.0.6부터는 도착 1시간 전에 "곧 도착해요" 알림도 옵니다.
 - **발견**에서 남이 띄운 편지를 읽습니다. 하루 한 번 새 봉투 세 장이 다가옵니다.
-- 답장이 오기 전까지 같은 사람에게 다음 편지는 쓸 수 없습니다(번갈아 쓰기). 기다리지 않고 쓰고 싶으면 젬으로 **무제한 대화**를 열 수 있습니다.
+- 답장이 오기 전까지 같은 사람에게 다음 편지는 쓸 수 없습니다(번갈아 쓰기). 내 편지가 도착하고 3일이 지나도 답이 없으면 **한 통을 더** 보낼 수 있고, Lettie Plus는 기다리지 않고 이어 쓸 수 있습니다.
 
 ## Slowly와 같은가요?
 
@@ -5133,7 +5133,7 @@ This isn't a story we made up; it's what the letters look like. One from Hanoi o
 
 - Watch the envelope on the **globe**. You get a notification when it lands, and from 2.0.6 a "landing soon" notification an hour before.
 - Read letters strangers released in **Discover** — three new envelopes drift close once a day.
-- You can't write the same person again until their reply lands (turn-taking). If you'd rather not wait, gems unlock an **unlimited conversation.**
+- You can't write the same person again until their reply lands (turn-taking). If three days pass after your letter arrives with no reply, you can send **one more**, and Lettie Plus lets you keep writing without waiting.
 
 ## Is this the same as Slowly?
 
@@ -5261,7 +5261,7 @@ After you send, the envelope lifts off the globe. It takes hours to land, and th
         description: '언어가 다른 사람과 편지를 주고받으려면 번역이 어디에 붙어 있느냐가 전부입니다. 앱 안 번역·외부 번역기·유료 번역의 차이, 번역이 잘 되게 쓰는 법, Lettie가 70개 넘는 언어를 처리하는 방식.',
         descriptionEn: 'Writing to a pen pal in another language? In-app, external and paid translation compared, how to write so it translates well, and Lettie\'s 70+ languages.',
         date: '2026-09-21',
-        updated: '2026-09-30',
+        updated: '2026-10-18',
         readTime: '6분',
         readTimeEn: '6 min',
         category: '가이드',
@@ -5277,7 +5277,7 @@ After you send, the envelope lifts off the globe. It takes hours to land, and th
 
 ## 세 가지 방식
 
-**① 앱 안, 편지 안에 번역 버튼이 있다.** 편지를 열고 한 번 누르면 원문 옆에 번역이 뜹니다. 왕복이 없습니다. [Lettie 펜팔 앱](/penpal-app)이 이 방식이고, 70개 넘는 언어를 무료로 처리합니다.
+**① 앱 안, 편지 안에 번역 버튼이 있다.** 편지를 열고 「번역 보기」를 누르면 글자가 그 자리에서 번역으로 바뀌고, 「원문만 보기」로 되돌립니다. 왕복이 없습니다. [Lettie 펜팔 앱](/penpal-app)이 이 방식이고, 70개 넘는 언어를 무료로 처리합니다.
 
 **② 외부 번역기로 왕복한다.** 편지를 복사 → 번역기 → 답장을 쓰고 → 다시 번역 → 붙여넣기. 편지 한 통에 네 번 앱을 오갑니다. 처음엔 괜찮다가 세 통째부터 귀찮아지고, 귀찮음은 답장 지연으로, 지연은 관계 종료로 이어집니다.
 
@@ -5287,8 +5287,16 @@ After you send, the envelope lifts off the globe. It takes hours to land, and th
 
 Lettie 기준으로 두 가지를 뜻합니다.
 
-- **편지 번역**: 상대가 어느 언어로 썼든 언어를 알아서 알아내고, 내 앱 언어로 번역합니다. 원문과 번역을 나란히 보여 주기 때문에 상대의 표현을 그대로 배울 수도 있습니다.
+- **편지 번역**: 상대가 어느 언어로 썼든 언어를 알아서 알아내고, 내 앱 언어로 번역합니다. 번역과 원문을 버튼 하나로 오갈 수 있어 상대의 표현을 그대로 배울 수도 있습니다. 봉투에 적힌 질문도 내 언어로 보입니다.
 - **앱 화면**: 메뉴·버튼·알림이 ${FACTS.languages}개 언어로 나옵니다(${koDate(FACTS.asOf)} 기준). 편지도 이 언어들로 번역됩니다 — ${APP_LANGUAGES.map((l) => l[2]).join(', ')}.
+
+## 쓰면서 번역하기
+
+답장이나 띄우는 편지를 쓰다가 「번역하기 · 언어」를 누르면 쓴 글이 그 언어로 바뀝니다. 언어는 상대 편지에서 알아낸 언어가 기본이고, ${FACTS.languages}개 언어 중에서 고를 수도 있습니다. 「원문으로 되돌리기」를 누르면 내가 쓴 글로 돌아옵니다.
+
+## 아주 긴 편지도 끝까지
+
+편지는 ${FACTS.letterMaxChars.toLocaleString('ko-KR')}자까지 쓸 수 있습니다(2026년 10월부터). 4,500자가 넘는 편지는 줄바꿈을 기준으로 나눠 번역한 뒤 이어 붙이기 때문에 문단 나눔이 그대로 남습니다. 편지 한 통에 하루를 다 담아도 끝까지 번역됩니다.
 
 ## 번역이 잘 되게 쓰는 다섯 가지
 
@@ -5300,7 +5308,7 @@ Lettie 기준으로 두 가지를 뜻합니다.
 
 ## 그래도 언어를 배우고 싶다면
 
-번역을 켜 두고도 실력은 늡니다. 원문과 번역을 나란히 보는 습관 때문입니다. 상대가 쓴 문장 중 마음에 드는 표현 하나를 다음 편지에 그대로 써 보세요. 그게 가장 오래 남는 학습입니다. 더 구체적인 방법은 [펜팔로 외국어 늘리기](/blog/language-exchange-tips)에 있습니다.
+번역을 켜 두고도 실력은 늡니다. 번역과 원문을 오가며 보는 습관 때문입니다. 상대가 쓴 문장 중 마음에 드는 표현 하나를 다음 편지에 그대로 써 보세요. 그게 가장 오래 남는 학습입니다. 더 구체적인 방법은 [펜팔로 외국어 늘리기](/blog/language-exchange-tips)에 있습니다.
 `,
         contentEn: `
 # How to choose a pen-pal app with translation
@@ -5309,7 +5317,7 @@ Lettie 기준으로 두 가지를 뜻합니다.
 
 ## Three ways apps do it
 
-**① A translate button inside the letter.** Open the letter, tap once, the translation appears next to the original. No round trip. Lettie works this way, with 70+ languages, free.
+**① A translate button inside the letter.** Open the letter, tap "Show translation" and the text turns into your language right where it is; "Show original only" turns it back. No round trip. Lettie works this way, with 70+ languages, free.
 
 **② Round-tripping through an external translator.** Copy the letter → translator → write a reply → translate again → paste. Four app switches per letter. Fine at first, tedious by the third letter, and tedium becomes late replies, and late replies become the end.
 
@@ -5319,8 +5327,16 @@ Lettie 기준으로 두 가지를 뜻합니다.
 
 On Lettie it means two things.
 
-- **Letter translation**: whatever language they wrote in, the language is detected and the letter is translated into your app language. Original and translation sit side by side, so you can also pick up their phrasing.
+- **Letter translation**: whatever language they wrote in, the language is detected and the letter is translated into your app language. You can switch between the translation and the original with one button, so you can also pick up their phrasing. The question written on the envelope shows in your language too.
 - **The app itself**: menus, buttons and notifications in ${FACTS.languages} languages (as of ${enDate(FACTS.asOf)}), and letters translate into any of them — ${APP_LANGUAGES.map((l) => l[1]).join(', ')}.
+
+## Translating while you write
+
+While writing a reply or a floated letter, tap "Translate · [language]" and your draft turns into that language. The default is the language detected from your pen pal's letter, and you can pick any of the ${FACTS.languages} languages. "Undo translation" brings back what you wrote.
+
+## Very long letters translate all the way
+
+A letter can be up to ${FACTS.letterMaxChars.toLocaleString('en-US')} characters (since October 2026). Letters over 4,500 characters are translated in pieces split at line breaks and joined back, so your paragraphs stay where you put them. You can pour a whole day into one letter and it still translates to the end.
 
 ## Five habits that make translation work
 
@@ -5332,7 +5348,7 @@ On Lettie it means two things.
 
 ## If you still want to learn the language
 
-You'll still improve with translation on, because you keep seeing the original next to it. Take one phrase you liked from their letter and use it in your next one. That's the learning that sticks. More in [language exchange through letters](/en/blog/language-exchange-tips).
+You'll still improve with translation on, because you keep switching between the original and the translation. Take one phrase you liked from their letter and use it in your next one. That's the learning that sticks. More in [language exchange through letters](/en/blog/language-exchange-tips).
 `,
     },
     'no-photo-dating-pixel-character': {
@@ -5704,6 +5720,342 @@ Lettie is the [pen pal app](/en/penpal-app) we make. Moving pen pals into an app
 ---
 
 *Sources: Online Etymology Dictionary, "pen-pal"; Wikipedia, "Pen pal". Lettie figures are counted from the app database (${enDate(LETTER_MAP.asOf)}).*
+`,
+    },
+    'lettie-stamps-guide': {
+        id: 'lettie-stamps-guide',
+        title: '펜팔 앱 우표 모으는 법 — 레티 우표 6가지와 얻는 법',
+        titleEn: 'Pen pal app stamps: the 6 kinds of Lettie stamps and how to get each',
+        seoTitle: '레티 우표 모으는 법 — 우표 6가지와 얻는 법 (2026)',
+        seoTitleEn: 'Lettie Stamps: 6 Kinds and How to Get Each (2026)',
+        description: '레티 편지에 붙는 우표는 여섯 가지 길로 모입니다. 무료 기본 우표, 젬 10개 우표 뽑기, 103개 나라 우표 가게, 여권 도장 우표, 편지 한 통이면 받는 기념일 우표, 답장 보상 우표까지 정리했습니다.',
+        descriptionEn: 'Lettie stamps come six ways: free default stamps, the 10-gem stamp draw, a shop of 103 country stamps, passport stamps, free holiday stamps and reply rewards.',
+        date: '2026-10-18',
+        readTime: '5분',
+        readTimeEn: '5 min',
+        category: '가이드',
+        categoryEn: 'Guide',
+        image: '/v2/stamps-hero.jpg',
+        author: 'Lettie',
+        keywords: ['펜팔 우표', '우표 모으기 앱', '레티 우표', '우표 뽑기', '우표 가게', '기념 우표', '편지 우표 앱', 'Lettie 우표'],
+        keywordsEn: ['pen pal app stamps', 'stamp collecting app', 'Lettie stamps', 'digital stamps letters', 'stamp draw', 'country stamps pen pal', 'holiday stamps'],
+        faq: [
+            { q: '레티 우표는 돈을 내야 하나요?', a: `아니요. 기본 우표, 기념일 우표, 여권 도장과 함께 받는 나라 우표, 답장 보상 우표는 무료입니다. 우표 뽑기(젬 ${FACTS.stampDrawGems}개)와 우표 가게의 나라 우표(젬 ${FACTS.countryStampGems}개)만 젬을 씁니다.` },
+            { q: '같은 우표가 또 나오나요?', a: '우표 뽑기는 뽑을 때마다 그림을 새로 그립니다. 우표 가게의 나라 우표는 나라마다 한 가지 그림이고, 이미 가진 나라 우표는 다시 살 수 없습니다.' },
+            { q: '상대도 내가 붙인 우표를 보나요?', a: '네. 고른 우표는 내가 보내는 편지 봉투에 붙어 함께 도착하고, 상대의 「받은 우표」 앨범에 남습니다.' },
+            { q: '우표를 뽑았는데 그림이 나오지 않았어요.', a: '그림을 만들지 못하면 젬은 쓰이지 않습니다. 잠시 뒤 다시 뽑아 보세요. 그림 우표는 최신 버전 앱에서 그림으로 보입니다.' },
+        ],
+        faqEn: [
+            { q: 'Do Lettie stamps cost money?', a: `No. Default stamps, holiday stamps, the country stamp that comes with a passport stamp, and reply-reward stamps are free. Only the stamp draw (${FACTS.stampDrawGems} gems) and country stamps from the shop (${FACTS.countryStampGems} gems) use gems.` },
+            { q: 'Can I get the same stamp twice?', a: 'The stamp draw paints a new picture every time. Shop stamps have one design per country, and you can’t buy a country stamp you already own.' },
+            { q: 'Does my pen pal see the stamp I chose?', a: 'Yes. The stamp you pick goes on the envelope of the letters you send, arrives with them, and stays in your pen pal’s “Stamps received” album.' },
+            { q: 'I drew a stamp but no picture appeared.', a: 'If the picture can’t be made, no gems are used. Try again in a moment. Picture stamps show as pictures in the latest version of the app.' },
+        ],
+        content: `
+# 펜팔 앱 우표 모으는 법 — 레티 우표 6가지
+
+레티(Lettie)의 우표는 편지 봉투에 붙어 상대에게 함께 도착합니다. 모으는 길은 여섯 가지입니다. 처음부터 가진 **기본 우표**, 젬 ${FACTS.stampDrawGems}개로 뽑는 **그림 우표**, 우표 가게의 **나라 우표**(${FACTS.countryStamps}개 나라·젬 ${FACTS.countryStampGems}개), 여권 도장과 함께 받는 **여권 우표**, 편지 한 통이면 받는 **기념일 우표**, 그리고 **답장 보상 우표**입니다.
+
+## 한눈에 보기
+
+| 우표 | 얻는 법 | 비용 |
+|---|---|---|
+| 기본 우표 | 가입하면 내 나라 우표와 계절 우표가 있습니다 | 무료 |
+| 뽑기 우표 | 우표 가게 첫 칸 「우표 뽑기」 — 뽑을 때마다 새로 그린 픽셀 그림 | 젬 ${FACTS.stampDrawGems}개 |
+| 나라 우표 | 우표 가게에서 ${FACTS.countryStamps}개 나라 중 골라 사기 | 젬 ${FACTS.countryStampGems}개 |
+| 여권 우표 | 한 나라 사람들과 ${FACTS.passport.minTotal}통 이상(각자 ${FACTS.passport.minEach}통 이상) 주고받으면 [여권 도장](/blog/lettie-passport-guide)과 함께 | 무료 |
+| 기념일 우표 | [기념일 기간](/blog/lettie-holiday-stamps-2026)에 편지 한 통 보내기 | 무료 |
+| 답장 보상 우표 | 첫 정성 답장 · 정성 답장 10통 · 5개 나라에 정성 답장 | 무료 |
+
+## 우표는 어디에 쓰이나
+
+- **편지에 붙습니다.** 고른 우표가 내가 보내는 편지와 경유지 인사에 붙고, 받는 사람은 봉투에서 그 우표를 봅니다.
+- **받은 우표가 쌓입니다.** 받은 편지에 붙어 온 우표는 「받은 우표」 앨범에 모이고, 같은 우표를 몇 번 받았는지도 보입니다.
+- **칭호가 됩니다.** 우표로 얻는 [여권 칭호](/blog/lettie-passport-guide)가 네 개 있습니다(아래).
+
+## 우표 뽑기
+
+우표 가게의 첫 칸입니다. 젬 ${FACTS.stampDrawGems}개로 한 장을 뽑으면 ${FACTS.stampDrawSubjects}가지 소재 가운데 하나를 픽셀 그림으로 새로 그려 줍니다. 그림에는 글자·숫자·국기·로고를 넣지 않습니다. 그림을 만들지 못하면 젬은 쓰이지 않고, 하루 ${FACTS.stampDrawPerDay}번까지 뽑을 수 있습니다. 뽑은 우표는 다음 편지부터 붙습니다.
+
+## 우표 가게의 나라 우표
+
+${FACTS.countryStamps}개 나라의 우표를 젬 ${FACTS.countryStampGems}개씩에 팝니다. 이미 가진 나라 우표는 다시 살 수 없고, 산 우표는 다음 편지부터 붙습니다. 친구가 사는 나라의 우표를 붙여 보내는 사람이 많습니다.
+
+## 젬 없이 모으는 법
+
+1. **기념일 우표** — 할로윈·크리스마스·설날 같은 기념일 기간에 편지 한 통을 보내면 한 장씩 무료로 들어옵니다. 일정은 [2026~2027 기념일 우표 달력](/blog/lettie-holiday-stamps-2026)에 있습니다.
+2. **여권 우표** — 한 나라 사람들과 편지를 ${FACTS.passport.minTotal}통 넘게 주고받으면 여권 도장과 함께 그 나라 우표가 옵니다.
+3. **답장 보상** — 상대 편지에 처음 정성 들여 답하면(공백 빼고 40자 이상, 한중일 글자가 절반 이상이면 20자 이상) 젬을 받고, 첫 정성 답장·정성 답장 10통·5개 나라에 정성 답장을 채우면 기념 우표가 하나씩 옵니다. 모은 젬으로 우표를 뽑을 수도 있습니다.
+
+## 우표로 얻는 칭호
+
+${PASSPORT_TITLES.filter((t) => t[5] === '우표').map((t) => `- **${t[1]}** — ${t[3]}`).join('\n')}
+
+모은 우표로 세는 칭호(우표 수집가·작은 우표 박물관)는 뽑기·가게·기념일·답장 보상·여권으로 받은 우표만 셉니다. 처음부터 가진 기본 우표는 세지 않습니다.
+
+## 숫자로 보는 기념 우표
+
+2026년 세계 우편의 날(10월 9일 전후 일주일) 기념 우표는 **${PASSPORT_STATS.worldPostDayStampHolders}명**이 받았습니다(${koDate(PASSPORT_STATS.asOf)} 레티 집계).
+
+---
+
+*우표 가격과 한도는 ${koDate(PASSPORT_STATS.asOf)} 앱 기준입니다. 레티가 처음이라면 [레티 펜팔 앱 소개](/penpal-app)부터 보세요.*
+`,
+        contentEn: `
+# Pen pal app stamps: the 6 kinds of Lettie stamps
+
+On Lettie, the stamp you choose goes on your letter's envelope and arrives with it. There are six ways to collect stamps: the **default stamps** you start with, **picture stamps** from the ${FACTS.stampDrawGems}-gem draw, **country stamps** from the shop (${FACTS.countryStamps} countries, ${FACTS.countryStampGems} gems each), **passport stamps** that come with a country stamp in your passport, free **holiday stamps** for sending one letter, and **reply-reward stamps**.
+
+## At a glance
+
+| Stamp | How to get it | Cost |
+|---|---|---|
+| Default stamps | Your own country's stamp and a season stamp, from sign-up | Free |
+| Drawn stamps | "Draw a stamp", the first cell of the stamp shop — a newly painted pixel picture each time | ${FACTS.stampDrawGems} gems |
+| Country stamps | Pick from ${FACTS.countryStamps} countries in the stamp shop | ${FACTS.countryStampGems} gems |
+| Passport stamps | Exchange ${FACTS.passport.minTotal}+ letters with people from one country (at least ${FACTS.passport.minEach} each way) and it comes with your [passport stamp](/en/blog/lettie-passport-guide) | Free |
+| Holiday stamps | Send one letter during a [holiday window](/en/blog/lettie-holiday-stamps-2026) | Free |
+| Reply-reward stamps | Your first thoughtful reply · 10 thoughtful replies · thoughtful replies to 5 countries | Free |
+
+## What stamps are for
+
+- **They go on your letters.** Your chosen stamp goes on the letters you send and on your stopover greetings, and your pen pal sees it on the envelope.
+- **Stamps you receive pile up.** Stamps on letters you receive collect in your "Stamps received" album, with a count for each.
+- **They earn titles.** Four [passport titles](/en/blog/lettie-passport-guide) come from stamps (below).
+
+## The stamp draw
+
+It's the first cell of the stamp shop. For ${FACTS.stampDrawGems} gems you get one stamp, newly painted in pixel art from one of ${FACTS.stampDrawSubjects} subjects. The pictures never contain words, numbers, flags or logos. If the picture can't be made, no gems are used. You can draw up to ${FACTS.stampDrawPerDay} times a day, and a drawn stamp goes on your letters from the next one on.
+
+## Country stamps in the shop
+
+The shop sells stamps for ${FACTS.countryStamps} countries at ${FACTS.countryStampGems} gems each. You can't buy one you already own, and a bought stamp goes on your letters from the next one on. Many people send the stamp of the country their pen pal lives in.
+
+## Collecting stamps without gems
+
+1. **Holiday stamps** — send one letter during a holiday window such as Halloween, Christmas or Lunar New Year and a stamp arrives for free. Dates are in the [2026–2027 holiday stamp calendar](/en/blog/lettie-holiday-stamps-2026).
+2. **Passport stamps** — exchange more than ${FACTS.passport.minTotal} letters with people from one country and that country's stamp arrives with your passport stamp.
+3. **Reply rewards** — your first thoughtful reply in a conversation (at least 40 characters not counting spaces, or 20 if half or more of the characters are Chinese, Japanese or Korean) earns gems, and reaching your first thoughtful reply, 10 thoughtful replies and thoughtful replies to 5 countries each brings a commemorative stamp. You can also spend the gems on the draw.
+
+## Titles you earn with stamps
+
+${PASSPORT_TITLES.filter((t) => t[5] === '우표').map((t) => `- **${t[2]}** — ${t[4]}`).join('\n')}
+
+The collection titles (Stamp Collector, Little Stamp Museum) count stamps from the draw, the shop, holidays, reply rewards and the passport. The default stamps you start with don't count.
+
+## Holiday stamps in numbers
+
+**${PASSPORT_STATS.worldPostDayStampHolders} people** received the 2026 World Post Day stamp (the week around October 9), counted by Lettie on ${enDate(PASSPORT_STATS.asOf)}.
+
+---
+
+*Prices and limits are as of the app on ${enDate(PASSPORT_STATS.asOf)}. New to Lettie? Start with [the Lettie pen pal app](/en/penpal-app).*
+`,
+    },
+    'lettie-passport-guide': {
+        id: 'lettie-passport-guide',
+        title: '레티 여권 — 나라 도장 받는 법과 칭호 20개 총정리',
+        titleEn: 'Lettie Passport: how to earn country stamps and all 20 titles',
+        seoTitle: '레티 여권 도장 받는 법과 칭호 20개 (2026)',
+        seoTitleEn: 'Lettie Passport: Country Stamps and 20 Titles (2026)',
+        description: `레티 여권 도장은 한 나라 사람들과 편지를 ${FACTS.passport.minTotal}통 이상, 각자 ${FACTS.passport.minEach}통 이상 주고받으면 찍히고 그 나라 우표도 함께 옵니다. 여섯 대륙, 칭호 20개의 조건과 등급, 실제로 도장이 찍힌 나라 순위까지.`,
+        descriptionEn: 'A Lettie passport stamp needs 5+ letters with people from one country, at least 2 each way, and brings that country’s stamp. All 20 titles, six continents and real stamp counts.',
+        date: '2026-10-18',
+        readTime: '5분',
+        readTimeEn: '5 min',
+        category: '가이드',
+        categoryEn: 'Guide',
+        image: '/v2/app-passport-ko.jpg',
+        author: 'Lettie',
+        keywords: ['레티 여권', '펜팔 여권', '나라 도장', '펜팔 칭호', '외국 친구 나라 모으기', 'Lettie 여권', '펜팔 앱 여권 도장'],
+        keywordsEn: ['Lettie passport', 'pen pal passport', 'pen pal country stamps', 'pen pal app titles', 'collect countries pen pal', 'Lettie titles'],
+        faq: [
+            { q: '몇 통을 주고받아야 여권 도장이 찍히나요?', a: `한 나라 사람들과 편지를 합계 ${FACTS.passport.minTotal}통 이상, 그중 내가 ${FACTS.passport.minEach}통 이상·상대가 ${FACTS.passport.minEach}통 이상 주고받으면 그 나라 도장이 찍힙니다. 도착한 편지만 셉니다.` },
+            { q: '같은 나라의 다른 사람과 쓴 편지도 합쳐지나요?', a: '네. 같은 나라 사람이라면 여러 사람과 주고받은 편지를 모두 합해 셉니다.' },
+            { q: '칭호는 어디에 보이나요?', a: '얻은 칭호 가운데 하나를 골라 달면 편지와 프로필의 이름 아래에 보입니다. 칭호는 살 수 없고 모으기만 할 수 있습니다.' },
+            { q: '칭호가 7개만 보여요.', a: '앱 2.0.26보다 옛 버전에서는 칭호 7개만 보이고 나머지 13개는 주어지지 않습니다. 앱을 최신 버전으로 업데이트하세요.' },
+        ],
+        faqEn: [
+            { q: 'How many letters does a passport stamp take?', a: `Exchange at least ${FACTS.passport.minTotal} letters in total with people from one country, with at least ${FACTS.passport.minEach} from you and ${FACTS.passport.minEach} from them, and that country is stamped. Only delivered letters count.` },
+            { q: 'Do letters with different people from the same country add up?', a: 'Yes. Letters with everyone from the same country count together.' },
+            { q: 'Where does my title show?', a: 'Pick one of the titles you’ve earned and it shows under your name on your letters and profile. Titles can’t be bought, only earned.' },
+            { q: 'I only see 7 titles.', a: 'App versions older than 2.0.26 show only 7 titles and don’t award the other 13. Update the app to the latest version.' },
+        ],
+        content: `
+# 레티 여권 — 나라 도장 받는 법과 칭호 20개
+
+레티(Lettie) 여권에는 편지를 주고받은 나라의 도장이 찍힙니다. **한 나라 사람들과 편지를 합계 ${FACTS.passport.minTotal}통 이상, 그중 내가 ${FACTS.passport.minEach}통 이상·상대가 ${FACTS.passport.minEach}통 이상** 주고받으면 그 나라 도장과 그 나라 우표를 함께 받습니다. 칭호는 모두 ${FACTS.passport.titles}개이고, 하나를 골라 이름 아래에 달 수 있습니다.
+
+## 도장이 찍히는 규칙
+
+- **나라 단위로 합칩니다.** 같은 나라 사람이라면 여러 사람과 주고받은 편지를 모두 더합니다.
+- **도착한 편지만 셉니다.** 아직 날아가는 편지는 도착한 뒤에 들어갑니다.
+- **발견에서 시작한 대화**는 상대가 띄운 첫 편지도 한 통으로 셉니다.
+- **내 나라는 도장이 없습니다.** 외국 사람과의 편지만 셉니다.
+- **사라지지 않습니다.** 여권을 열 때 계산되고, 한 번 찍힌 도장은 계속 남습니다.
+- **그 나라 우표가 함께 옵니다.** 그림이 있는 ${FACTS.countryStamps}개 나라는 도장과 함께 우표도 들어옵니다(이미 가진 우표면 도장만). 우표 이야기는 [레티 우표 모으는 법](/blog/lettie-stamps-guide)에 있습니다.
+
+## 여섯 대륙
+
+여권에는 아시아·유럽·아프리카·북아메리카·남아메리카·오세아니아 여섯 칸이 있습니다. 그 대륙 나라의 도장이 하나라도 있으면 칸에 불이 켜지고, 세 대륙이면 「대륙을 잇는 사람」, 여섯 대륙을 모두 채우면 「여섯 대륙의 친구」 칭호를 받습니다.
+
+## 칭호 ${FACTS.passport.titles}개
+
+| 분류 | 칭호 | 조건 | 등급 |
+|---|---|---|---|
+${PASSPORT_TITLES.map((t) => `| ${t[5]} | ${t[1]} | ${t[3]} | ${t[6]} |`).join('\n')}
+
+칭호는 살 수 없고 모으기만 합니다. 얻은 칭호 가운데 하나를 달면 편지와 프로필의 이름 아래에 보입니다. 앱 2.0.26보다 옛 버전에서는 칭호가 7개만 보이니 업데이트하세요.
+
+## 여권을 카드로 공유하기
+
+최신 버전 앱에서는 여권 표지의 공유 버튼으로 내 도장·칭호·편지 수를 담은 카드를 만들어 SNS에 올릴 수 있습니다. 편지 내용이나 상대 이름은 들어가지 않습니다.
+
+## 도장을 모으는 현실적인 방법
+
+1. **여러 나라 편지에 답하기** — 발견에서 줍는 편지는 여러 나라에서 옵니다. 한 나라에 몰리지 않게 답해 보세요.
+2. **세 통째를 넘기기** — 도장은 각자 두 통 이상이 필요합니다. 대화가 세 통째에 끊기지 않게 하는 법은 [펜팔 대화를 이어 가는 법](/blog/keep-a-pen-pal-conversation-going)에 있습니다.
+3. **기다리는 쪽이라면 한 번 더** — 내 편지가 도착하고 3일이 지나도 답이 없으면 한 통을 더 보낼 수 있습니다.
+
+## 숫자로 보는 레티 여권
+
+${koDate(PASSPORT_STATS.asOf)} 기준 **${PASSPORT_STATS.holders}명**이 **${PASSPORT_STATS.countries}개 나라**에서 여권 도장 **${PASSPORT_STATS.stamps}개**를 받았습니다. 도장이 가장 많이 찍힌 나라는 ${PASSPORT_STATS.top.map((t) => `${t[1]}(${t[2]}개)`).join(', ')} 순입니다.
+
+---
+
+*규칙과 칭호는 ${koDate(PASSPORT_STATS.asOf)} 앱·서버 기준이고, 숫자는 레티 데이터베이스 집계(운영·시험 계정 제외)입니다.*
+`,
+        contentEn: `
+# Lettie Passport: how to earn country stamps and all 20 titles
+
+Your Lettie passport is stamped with the countries you exchange letters with. **Exchange at least ${FACTS.passport.minTotal} letters in total with people from one country — at least ${FACTS.passport.minEach} from you and ${FACTS.passport.minEach} from them** — and you get that country's passport stamp along with its postage stamp. There are ${FACTS.passport.titles} titles, and you can wear one under your name.
+
+## How a country gets stamped
+
+- **It adds up by country.** Letters with everyone from the same country count together.
+- **Only delivered letters count.** A letter still in flight counts once it arrives.
+- **Conversations started in Discover** count the floated letter that started them as one letter.
+- **Your own country isn't stamped.** Only letters with people abroad count.
+- **Stamps are permanent.** The passport is updated when you open it, and a stamp stays once it's there.
+- **The country's postage stamp comes with it.** For the ${FACTS.countryStamps} countries with stamp art, the stamp arrives with the passport stamp (if you already own it, you get the passport stamp only). More in [Lettie stamps](/en/blog/lettie-stamps-guide).
+
+## Six continents
+
+The passport has six cells: Asia, Europe, Africa, North America, South America and Oceania. A cell lights up with any stamp from that continent. Three continents earn "Continent Connector"; all six earn "Friend of Six Continents".
+
+## The ${FACTS.passport.titles} titles
+
+| Group | Title | How to earn it | Tier |
+|---|---|---|---|
+${PASSPORT_TITLES.map((t) => `| ${({ '여행': 'Travel', '우정': 'Friendship', '편지': 'Letters', '우표': 'Stamps' } as Record<string, string>)[t[5]]} | ${t[2]} | ${t[4]} | ${t[6]} |`).join('\n')}
+
+Titles can't be bought, only earned. The one you wear shows under your name on your letters and profile. App versions older than 2.0.26 show only 7 titles, so update the app.
+
+## Share your passport as a card
+
+In the latest version of the app, the share button on the passport cover makes a card with your stamps, title and letter count to post on social media. It never includes letter text or anyone's name.
+
+## Realistic ways to collect stamps
+
+1. **Reply to letters from different countries** — envelopes in Discover come from all over. Spread your replies instead of staying with one country.
+2. **Get past the third letter** — a stamp needs at least two letters from each side. See [how to keep a pen pal conversation going](/en/blog/keep-a-pen-pal-conversation-going).
+3. **If you're the one waiting, send one more** — if three days pass after your letter arrives with no reply, you can send one more letter.
+
+## Lettie passports in numbers
+
+As of ${enDate(PASSPORT_STATS.asOf)}, **${PASSPORT_STATS.holders} people** have earned **${PASSPORT_STATS.stamps} passport stamps** across **${PASSPORT_STATS.countries} countries**. The most-stamped countries so far: ${PASSPORT_STATS.top.map((t) => `${t[0]} (${t[2]})`).join(', ')}.
+
+---
+
+*Rules and titles reflect the app and server on ${enDate(PASSPORT_STATS.asOf)}; numbers are counted from Lettie's database (staff and test accounts excluded).*
+`,
+    },
+    'lettie-holiday-stamps-2026': {
+        id: 'lettie-holiday-stamps-2026',
+        title: '2026~2027 레티 기념일 우표 달력 — 편지 한 통이면 받는 무료 우표 13가지',
+        titleEn: 'Lettie holiday stamp calendar 2026–2027: 13 free stamps for sending one letter',
+        seoTitle: '레티 기념일 우표 달력 2026~2027 — 무료 우표 13가지',
+        seoTitleEn: 'Lettie Holiday Stamp Calendar 2026–2027: 13 Free Stamps',
+        description: '할로윈·디왈리·크리스마스·설날·밸런타인데이·화이트데이까지, 기간 안에 편지 한 통만 보내면 무료로 받는 레티 기념일 우표 13가지의 날짜와 그림, 받는 법을 정리했습니다.',
+        descriptionEn: 'Halloween, Diwali, Christmas, Lunar New Year, Valentine’s, White Day: dates, artwork and how to get all 13 free Lettie holiday stamps by sending one letter.',
+        date: '2026-10-18',
+        readTime: '4분',
+        readTimeEn: '4 min',
+        category: '가이드',
+        categoryEn: 'Guide',
+        image: '/v2/holiday-stamps-hero.jpg',
+        author: 'Lettie',
+        keywords: ['기념일 우표', '할로윈 우표', '크리스마스 편지 우표', '펜팔 이벤트', '레티 이벤트', '무료 우표', '설날 편지', '세계 우편의 날'],
+        keywordsEn: ['holiday stamps', 'Halloween stamp', 'Christmas letter stamp', 'pen pal app events', 'Lettie events', 'free stamps', 'World Post Day stamp', 'Diwali letter'],
+        faq: [
+            { q: '기념일 우표는 유료인가요?', a: '무료입니다. 기념일 기간에 편지를 한 통 보내면 한 사람에 한 장씩 자동으로 들어옵니다.' },
+            { q: '몇 통을 보내야 하나요?', a: '한 통이면 됩니다. 하늘에 띄우는 편지, 답장, 소개 편지 모두 됩니다.' },
+            { q: '기간이 지난 기념일 우표를 나중에 받을 수 있나요?', a: '아니요. 기간 안에 보낸 편지에만 우표가 들어옵니다. 기간은 이 글의 달력을 보세요.' },
+            { q: '우표를 받았는지 어떻게 아나요?', a: '받았다는 알림은 따로 없습니다. 편지를 보내고 10분쯤 뒤 우표첩에서 확인하세요. 그림 우표는 최신 버전 앱에서 그림으로 보입니다.' },
+        ],
+        faqEn: [
+            { q: 'Do holiday stamps cost anything?', a: 'No. Send one letter during the holiday window and one stamp per person arrives automatically.' },
+            { q: 'How many letters do I need to send?', a: 'One. A floated letter, a reply or an intro letter all count.' },
+            { q: 'Can I get a holiday stamp after the window closes?', a: 'No. Only letters sent inside the window earn the stamp. The calendar in this article has the dates.' },
+            { q: 'How do I know I received it?', a: 'There’s no separate notification. Check your stamp album about 10 minutes after sending. Picture stamps show as pictures in the latest version of the app.' },
+        ],
+        content: `
+# 2026~2027 레티 기념일 우표 달력
+
+레티(Lettie) 기념일 우표는 **정해진 기간에 편지를 한 통만 보내면 무료로, 한 사람에 한 장씩** 자동으로 들어옵니다. 2026년 할로윈(10월 24일 밤 시작)부터 2027년 화이트데이(3월 15일)까지 ${HOLIDAY_STAMPS.filter((h) => h.end > PASSPORT_STATS.asOf).length}번이 남았습니다.
+
+## 달력 (한국 시간)
+
+| 기념일 | 기간 | 우표 그림 | 안내 알림 |
+|---|---|---|---|
+${HOLIDAY_STAMPS.map((h) => `| ${h.ko} | ${koKst(h.start)} ~ ${koKst(h.end)} | ${h.artKo} | ${h.key === 'g_10097a99' ? `끝남 · ${PASSPORT_STATS.worldPostDayStampHolders}명이 받았어요` : h.countries ? h.countries.join('·') : '전체'} |`).join('\n')}
+
+기간은 서버가 쓰는 세계 표준시(UTC)를 한국 시간으로 옮긴 것입니다. 「안내 알림」은 그 나라 사람에게 기념일 당일 현지 오전 10시에 알림이 간다는 뜻이고, 우표는 나라와 상관없이 누구나 받습니다.
+
+## 받는 법
+
+1. **기간 안에 편지 한 통** — [하늘에 띄우는 편지](/blog/first-letter-examples-discover), 답장, 소개 편지 모두 됩니다.
+2. **10분쯤 기다리기** — 10분마다 확인해 우표첩에 넣어 줍니다. 받았다는 알림은 따로 없습니다.
+3. **우표 붙이기** — 받은 우표를 골라 다음 편지에 붙여 보내세요. 편지는 거리에 따라 1~${FACTS.deliveryHours.max}시간 걸려 도착합니다. 크리스마스에 맞춰 닿게 하려면 크리스마스이브쯤 보내세요.
+
+## 알아 둘 것
+
+- 그림 우표는 앱 2.0.18 이상에서 그림으로 보입니다. 옛 버전에서는 계절 우표로 보입니다.
+- 기념일 우표를 서로 다른 세 가지 모으면 [여권 칭호](/blog/lettie-passport-guide) 「기념일 수집가」를 받습니다.
+- 다른 우표를 모으는 길은 [레티 우표 모으는 법](/blog/lettie-stamps-guide)에 정리했습니다.
+
+---
+
+*날짜는 ${koDate(PASSPORT_STATS.asOf)} 서버 설정 기준이고, 세계 우편의 날 숫자는 레티 집계입니다.*
+`,
+        contentEn: `
+# Lettie holiday stamp calendar 2026–2027
+
+Lettie holiday stamps are **free, one per person, and arrive automatically when you send one letter during the holiday window**. From Halloween 2026 (starting October 24) to White Day 2027 (March 15), there are ${HOLIDAY_STAMPS.filter((h) => h.end > PASSPORT_STATS.asOf).length} still to come.
+
+## Calendar (UTC)
+
+| Holiday | Window | Stamp art | Reminder sent to |
+|---|---|---|---|
+${HOLIDAY_STAMPS.map((h) => `| ${h.en} | ${enUtc(h.start)} – ${enUtc(h.end)} | ${h.artEn} | ${h.key === 'g_10097a99' ? `Ended · ${PASSPORT_STATS.worldPostDayStampHolders} people received it` : h.countries ? h.countries.join(', ') : 'Everyone'} |`).join('\n')}
+
+"Reminder sent to" means people in those countries get a notification at 10:00 local time on the holiday. Anyone, anywhere, can earn the stamp.
+
+## How to get one
+
+1. **Send one letter in the window** — a [floated letter](/en/blog/first-letter-examples-discover), a reply or an intro letter all count.
+2. **Wait about 10 minutes** — stamps are added every 10 minutes. There's no separate notification.
+3. **Put it on a letter** — choose the stamp for your next letter. Letters take 1–${FACTS.deliveryHours.max} hours to arrive depending on distance, so to have a letter arrive on Christmas, send it around Christmas Eve.
+
+## Good to know
+
+- Picture stamps show as pictures in app version 2.0.18 and later; older versions show the season stamp.
+- Collect three different holiday stamps to earn the "Holiday Collector" [passport title](/en/blog/lettie-passport-guide).
+- Other ways to collect stamps are in [Lettie stamps](/en/blog/lettie-stamps-guide).
+
+---
+
+*Dates are the server settings as of ${enDate(PASSPORT_STATS.asOf)}; the World Post Day count is Lettie's own.*
 `,
     },
 };
