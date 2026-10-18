@@ -32,3 +32,16 @@
 ## 하지 않은 것
 - 다국어(26개 언어) 새 글은 이번엔 안 씀 — ko/en 반응을 보고 11/1 뒤 결정.
 - AI 편지 관련 문구는 손대지 않음(대표 결정: 사이트에 공개하지 않음). 단 llms.txt 지역 통계 줄의 "(AI-character letters … excluded)" 는 이전부터 있던 표현 — 대표 확인 필요.
+
+## 2차 (같은 날, 대표 "새 글 더 써도 되지 않아?")
+- 원칙: 양은 벌점이 아니다. 문제는 찍어 낸 글·겹치는 글·색인 속도. → 주 3~5편, 검색 의도가 서로 다른 글만.
+- 새 글 5편(ko/en, 커밋 296379d·머지 da2c656):
+  - `/blog/halloween-letter-to-pen-pal` — 나라별 할로윈 표, 쓸거리 7, 예시(한·영), 우표 기간 `holiday('p_ee103126')`
+  - `/blog/diwali-wishes-for-friends` — 2026-11-08, 인사말 표, "쇠니?" 먼저, 인도까지 6~12시간
+  - `/blog/thanksgiving-letter-to-a-friend` — 2026-11-26(캐나다 10/12), 세 줄 구조, 추석과 함께
+  - `/blog/christmas-letter-to-a-pen-pal` — 영어 문구 20, 호주·필리핀·일본·한국, 23~24일에 보내기
+  - `/blog/pen-pal-not-replying` — LETTER_STATS(답장 중앙값 4.8h·87% 24h 안·국제 배달 중앙값 10h), 3일 뒤 한 번 더 보내기, 발견은 답 없는 편지 먼저
+- 연결: 기념일 우표 달력 → 네 편, readNext 「기념일 편지」 묶음, 답장 글은 「시작하기」 묶음.
+- 운영 확인: 10쪽 200·h1 1·FAQPage 1·index,follow, 사이트맵 10건, IndexNow 300건 200.
+- GSC: en/pen-pal-not-replying 1건 요청 후 하루 한도 → 나머지 9건을 `scripts/.gsc-pending.txt` 맨 앞에(10/19 10:20 gsc-drain).
+- 다음 주: 새해 편지(p_ee010127), 설날 편지 후보.
