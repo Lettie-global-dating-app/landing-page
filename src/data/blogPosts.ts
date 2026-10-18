@@ -6558,12 +6558,12 @@ Lettie letters take 1–${FACTS.deliveryHours.max} hours depending on distance: 
         faq: [
             { q: '펜팔 답장은 보통 얼마나 걸리나요?', a: `레티 기준으로 편지는 거리에 따라 1~${FACTS.deliveryHours.max}시간 걸려 도착하고, 답장이 이어진 경우 편지가 도착한 뒤 중앙값 ${LETTER_STATS.reply.medianHours}시간 만에 쓰였습니다. ${LETTER_STATS.reply.within24h}%가 도착 24시간 안에 쓰였습니다.` },
             { q: '답장이 없으면 다시 보내도 되나요?', a: '네. 레티에서는 내 편지가 도착하고 3일이 지나도 답이 없으면 한 통을 더 보낼 수 있습니다. 가벼운 질문 하나를 담은 짧은 편지가 좋습니다.' },
-            { q: '띄운 편지에 아무도 답하지 않아요.', a: '레티 발견은 아직 답장을 못 받은 편지·덜 보인 편지를 먼저 다른 사람들에게 보여 줍니다(2026년 10월부터). 첫 문장에 장면 하나와 질문 하나를 넣으면 답장을 받기 쉽습니다.' },
+            { q: '띄운 편지에 아무도 답하지 않아요.', a: '레티 발견은 새로 띄운 편지를 첫날 먼저 보여 주고, 하루가 지나도 답이 없으면 2주 동안 「답을 기다리는 편지」로 덜 보인 것부터 먼저 보여 줍니다. 몇 줄은 정성껏 써야 하고, 그동안 앱을 가끔 열어야 이 자리에 남습니다. 첫 문장에 장면 하나와 질문 하나를 넣으면 답장을 받기 쉽습니다.' },
         ],
         faqEn: [
             { q: 'How long does a pen pal reply usually take?', a: `On Lettie, letters take 1–${FACTS.deliveryHours.max} hours to arrive depending on distance, and replies were written a median ${LETTER_STATS.reply.medianHours} hours after the letter arrived; ${LETTER_STATS.reply.within24h}% within 24 hours.` },
             { q: 'Can I write again if they haven’t replied?', a: 'Yes. On Lettie, if three days pass after your letter arrives with no reply, you can send one more letter. A short one with a single light question works best.' },
-            { q: 'Nobody answered the letter I floated.', a: 'Since October 2026, Lettie’s Discover shows letters that have no reply yet, and have been seen by fewer people, first. A scene and a question in your opening lines make a reply much more likely.' },
+            { q: 'Nobody answered the letter I floated.', a: 'Lettie’s Discover shows newly floated letters first on their first day; if a day passes with no reply, the letter is shown ahead of others as a “waiting” letter for two weeks, least-seen first. It needs a few real sentences, and you need to open the app now and then to keep that spot. A scene and a question in your opening lines make a reply much more likely.' },
         ],
         content: `
 # 펜팔이 답장을 안 할 때
@@ -6605,7 +6605,7 @@ Lettie letters take 1–${FACTS.deliveryHours.max} hours depending on distance: 
 
 ## 띄운 편지에 아무도 답하지 않을 때
 
-레티 발견은 2026년 10월부터 **아직 답장을 못 받은 편지와 덜 보인 편지를 먼저** 다른 사람들에게 보여 줍니다. 그래도 답이 없다면 첫 문장을 바꿔 보세요. 자기소개보다 장면 하나와 질문 하나가 답장을 부릅니다 — [발견에서 답장 받는 첫 편지 예시](/blog/first-letter-examples-discover).
+레티 발견은 **새로 띄운 편지를 첫날 먼저** 보여 주고, 하루가 지나도 답이 없으면 2주 동안 **「답을 기다리는 편지」로 덜 보인 것부터 먼저** 보여 줍니다. 단 이 자리는 몇 줄이라도 정성껏 쓴 편지, 그리고 그동안 앱을 가끔 여는 사람의 편지에 돌아갑니다(2026년 10월 19일부터). 그래도 답이 없다면 첫 문장을 바꿔 보세요. 자기소개보다 장면 하나와 질문 하나가 답장을 부릅니다 — [발견에서 답장 받는 첫 편지 예시](/blog/first-letter-examples-discover).
 
 ---
 
@@ -6651,7 +6651,7 @@ With a friend far away, more than a day between sending and receiving is normal.
 
 ## When nobody answers a letter you floated
 
-Since October 2026, Lettie's Discover shows **letters that have no reply yet, and that fewer people have seen, first**. If there's still no reply, change your opening: one scene and one question bring more replies than a self-introduction — see [first-letter examples](/en/blog/first-letter-examples-discover).
+Lettie's Discover shows **newly floated letters first on their first day**; if a day passes with no reply, the letter is shown ahead of others for two weeks as a **"waiting" letter, least-seen first**. That spot goes to letters with a few real sentences, from people who open the app now and then (since October 19, 2026). If there's still no reply, change your opening: one scene and one question bring more replies than a self-introduction — see [first-letter examples](/en/blog/first-letter-examples-discover).
 
 ---
 

@@ -83,9 +83,11 @@ product works. The following facts originate here rather than being summarised f
 - Letters take turns: a person cannot write to the same correspondent again until the reply has
   landed. If three days pass after a letter arrives with no reply, the writer may send one more letter; Lettie Plus
   removes the wait.
-- "Discover" shows letters other people released. Since 2026-10-16 the free daily batch puts letters that have no reply yet
-  and have been shown to fewer people first, one letter per writer (2026-09-27 to 10-15 newest first; before that, ranked by
-  the writer's recent activity and shared interests). A free reader gets a batch of three envelopes
+- "Discover" shows letters other people released, one letter per writer. Since 2026-10-19 the free daily batch puts new
+  letters (first 24 hours) first, then letters still waiting for a first reply (up to two weeks, least-seen first; only
+  letters with a few real sentences, from writers who opened the app in the last three days), then letters with one reply,
+  then everything else newest first (2026-10-16 to 10-18: unanswered letters least-seen first; 2026-09-27 to 10-15 newest
+  first; before that, ranked by the writer's recent activity and shared interests). A free reader gets a batch of three envelopes
   once a day (every eight hours until 2026-09-21) and can get more with gems or by watching an advert once a day.
   Lettie Plus shows every letter that is currently floating.
 - Exchanging letters with a country paints it on the globe; the country's stamp goes into the Lettie Passport
