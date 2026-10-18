@@ -77,6 +77,9 @@ export const HOLIDAY_STAMPS: HolidayStamp[] = [
   { key: 'p_ee031427', ko: '화이트데이', en: 'White Day', start: '2027-03-11T12:00Z', end: '2027-03-15T12:00Z', artKo: '흰 선물 상자', artEn: 'a white gift box', countries: ['KR', 'JP', 'TW', 'CN'] },
 ];
 
+/** 키로 기념일 우표 찾기 (글에서 기간을 읽을 때) */
+export const holiday = (key: string) => HOLIDAY_STAMPS.find((h) => h.key === key)!;
+
 /** '2026-10-24T12:00Z' → 한국 시간 '10월 24일 21시' */
 export const koKst = (utc: string) => {
   const d = new Date(new Date(utc).getTime() + 9 * 3600_000);

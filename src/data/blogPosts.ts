@@ -1,4 +1,4 @@
-import { APP_LANGUAGES, FACTS, HOLIDAY_STAMPS, PASSPORT_STATS, PASSPORT_TITLES, enDate, enUtc, koDate, koKst } from '@/data/facts';
+import { APP_LANGUAGES, FACTS, HOLIDAY_STAMPS, PASSPORT_STATS, PASSPORT_TITLES, enDate, enUtc, holiday, koDate, koKst } from '@/data/facts';
 import { LETTER_MAP } from '@/data/letterMap';
 import { LETTER_STATS } from '@/data/letterStats';
 
@@ -6024,6 +6024,13 @@ ${HOLIDAY_STAMPS.map((h) => `| ${h.ko} | ${koKst(h.start)} ~ ${koKst(h.end)} | $
 - 기념일 우표를 서로 다른 세 가지 모으면 [여권 칭호](/blog/lettie-passport-guide) 「기념일 수집가」를 받습니다.
 - 다른 우표를 모으는 길은 [레티 우표 모으는 법](/blog/lettie-stamps-guide)에 정리했습니다.
 
+## 기념일마다 무엇을 쓸까
+
+- [할로윈에 펜팔에게 편지 쓰기](/blog/halloween-letter-to-pen-pal) — 쓸거리 7가지와 예시
+- [인도 친구에게 디왈리 인사 편지 쓰기](/blog/diwali-wishes-for-friends) — 인사말과 조심할 점
+- [추수감사절 감사 편지 쓰는 법](/blog/thanksgiving-letter-to-a-friend) — 세 줄 구조와 영어 문구
+- [외국 친구에게 크리스마스 편지 쓰기](/blog/christmas-letter-to-a-pen-pal) — 영어 문구 20개와 도착 시간 맞추기
+
 ---
 
 *날짜는 ${koDate(PASSPORT_STATS.asOf)} 서버 설정 기준이고, 세계 우편의 날 숫자는 레티 집계입니다.*
@@ -6053,9 +6060,602 @@ ${HOLIDAY_STAMPS.map((h) => `| ${h.en} | ${enUtc(h.start)} – ${enUtc(h.end)} |
 - Collect three different holiday stamps to earn the "Holiday Collector" [passport title](/en/blog/lettie-passport-guide).
 - Other ways to collect stamps are in [Lettie stamps](/en/blog/lettie-stamps-guide).
 
+## What to write for each holiday
+
+- [Halloween letter to a pen pal](/en/blog/halloween-letter-to-pen-pal) — 7 ideas and an example
+- [Diwali wishes for a friend abroad](/en/blog/diwali-wishes-for-friends) — greetings and what to avoid
+- [Thanksgiving letter to a friend](/en/blog/thanksgiving-letter-to-a-friend) — a three-line structure and phrases
+- [Christmas letter to a pen pal](/en/blog/christmas-letter-to-a-pen-pal) — 20 phrases and timing it to arrive on the 25th
+
 ---
 
 *Dates are the server settings as of ${enDate(PASSPORT_STATS.asOf)}; the World Post Day count is Lettie's own.*
+`,
+    },
+    'halloween-letter-to-pen-pal': {
+        id: 'halloween-letter-to-pen-pal',
+        title: '할로윈에 펜팔에게 편지 쓰기 — 쓸거리 7가지와 예시 편지',
+        titleEn: 'Halloween letter to a pen pal: 7 things to write about and an example',
+        seoTitle: '할로윈 편지 쓰기 — 펜팔에게 보낼 쓸거리 7가지와 예시',
+        seoTitleEn: 'Halloween Letter to a Pen Pal: 7 Ideas and an Example',
+        description: '할로윈 편지는 무섭게 쓰기보다 "너희 동네의 10월 31일은 어때?"를 묻는 편지가 답장을 잘 받습니다. 나라마다 다른 할로윈, 쓸거리 7가지, 한·영 예시 편지, 할로윈 우표 받는 법.',
+        descriptionEn: 'A Halloween letter that asks how your pen pal’s town spends October 31 gets more replies than a scary one. 7 ideas, an example letter and how to get the Halloween stamp.',
+        date: '2026-10-18',
+        readTime: '5분',
+        readTimeEn: '5 min',
+        category: '편지 쓰기',
+        categoryEn: 'Letter writing',
+        image: '/v2/halloween-hero.jpg',
+        author: 'Lettie',
+        keywords: ['할로윈 편지', '할로윈 펜팔', '할로윈 영어 편지', '외국 친구 할로윈', '할로윈 편지 예시', '할로윈 우표'],
+        keywordsEn: ['Halloween letter to a pen pal', 'Halloween letter ideas', 'what to write for Halloween', 'Halloween pen pal', 'Halloween letter example', 'Halloween stamp'],
+        faq: [
+            { q: '할로윈 편지에는 뭘 쓰면 좋나요?', a: '무서운 이야기보다 상대 동네의 할로윈 풍경을 묻는 편지가 답장을 잘 받습니다. 내 동네의 10월 31일 장면 하나와 질문 하나면 충분합니다.' },
+            { q: '할로윈을 쇠지 않는 친구에게도 써도 되나요?', a: '네. 할로윈을 안 하는 나라나 사람도 많으니 "너희는 이맘때 어떤 날이 있어?"처럼 비슷한 날을 묻는 편지로 쓰면 됩니다.' },
+            { q: '레티 할로윈 우표는 어떻게 받나요?', a: `${koKst(holiday('p_ee103126').start)}부터 ${koKst(holiday('p_ee103126').end)}까지(한국 시간) 편지를 한 통 보내면 무료로 한 장 들어옵니다.` },
+        ],
+        faqEn: [
+            { q: 'What should I write in a Halloween letter?', a: 'Letters that ask how your pen pal’s town spends Halloween get more replies than scary stories. One scene from your own October 31 plus one question is enough.' },
+            { q: 'Can I write to a friend who doesn’t celebrate Halloween?', a: 'Yes. Many countries and people don’t celebrate it, so ask about a similar day in their calendar instead.' },
+            { q: 'How do I get the Lettie Halloween stamp?', a: `Send one letter between ${enUtc(holiday('p_ee103126').start)} and ${enUtc(holiday('p_ee103126').end)} and a free stamp arrives.` },
+        ],
+        content: `
+# 할로윈에 펜팔에게 편지 쓰기
+
+할로윈 편지는 무섭게 쓰는 것보다 **"너희 동네의 10월 31일은 어때?"를 묻는 편지**가 답장을 잘 받습니다. 나라마다 이날을 보내는 방식이 꽤 다르기 때문입니다. 레티(Lettie)에서는 ${koKst(holiday('p_ee103126').start)}부터 ${koKst(holiday('p_ee103126').end)}까지(한국 시간) 편지를 한 통 보내면 할로윈 우표를 무료로 받습니다.
+
+## 나라마다 다른 할로윈
+
+| 어디 | 이맘때 모습 |
+|---|---|
+| 미국·캐나다 | 아이들이 분장하고 집집마다 사탕을 받으러 다닙니다(trick-or-treat). 호박에 얼굴을 새겨 잭오랜턴을 만듭니다 |
+| 아일랜드·영국 | 할로윈은 켈트족의 가을 축제 삼하인(Samhain)에서 왔다고 알려져 있습니다 |
+| 멕시코 | 할로윈 바로 뒤 11월 1~2일이 죽은 이를 기리는 「죽은 자의 날」입니다 |
+| 한국·일본 | 주로 젊은 사람들이 분장을 즐기는 날입니다. 쇠지 않는 사람도 많습니다 |
+
+## 쓸거리 7가지
+
+1. **우리 동네의 10월 31일** — 가게 장식, 길에서 본 분장, 아무 일도 없는 평범한 저녁이라도 좋습니다.
+2. **어릴 때 무서웠던 것 하나** — 가볍게. 상대도 하나 들려주게 됩니다.
+3. **해 봤던 분장, 해 보고 싶은 분장** — 사진 대신 글로 묘사하면 편지다워집니다.
+4. **가을 음식** — 호박, 밤, 고구마처럼 이맘때 먹는 것.
+5. **한 줄씩 이어 쓰는 이야기** — "문을 열었더니…"로 시작해 상대에게 다음 문장을 맡겨 보세요.
+6. **비슷한 날 묻기** — 할로윈이 없는 나라라면 이맘때 어떤 날이 있는지.
+7. **편지에 붙인 우표** — 할로윈 우표(주황 달 아래 검은 고양이와 잭오랜턴)를 붙였다면 그 이야기로 시작해도 좋습니다.
+
+## 예시 편지
+
+> 안녕! 오늘 퇴근길에 빵집 창문에 호박 장식이 붙어 있었어. 한국은 할로윈을 크게 쇠지는 않는데, 이맘때만 되면 가게들이 슬쩍 주황색이 돼. 나는 어릴 때 할로윈을 몰라서, 처음 본 잭오랜턴이 무서웠던 기억이 있어. 너희 동네는 10월 31일에 어떤 모습이야? 너도 어릴 때 무서웠던 게 있었어?
+
+영어로 쓰고 싶다면 이렇게 시작해도 됩니다: *"Hi! On my way home today, the bakery window had paper pumpkins on it. Halloween isn't a big thing here, but every October the shops quietly turn orange."* 상대 말로 바꾸는 건 편지 쓰는 화면의 번역 버튼이 해 줍니다.
+
+## 주의할 점
+
+- **잔인한 묘사는 피하세요.** 번역을 거치면 더 세게 읽힐 수 있습니다.
+- **종교나 집안 사정으로 할로윈을 쇠지 않는 사람도 있습니다.** 묻되 권하지는 마세요.
+- **31일에 맞추려면 하루 전에.** 편지는 거리에 따라 1~${FACTS.deliveryHours.max}시간 걸려 도착합니다.
+
+---
+
+*다른 기념일 우표는 [2026~2027 기념일 우표 달력](/blog/lettie-holiday-stamps-2026)에, 첫 편지를 여는 법은 [펜팔 첫 편지 쓰는 법](/blog/how-to-start-penpal)에 있습니다.*
+`,
+        contentEn: `
+# Halloween letter to a pen pal
+
+A Halloween letter that **asks how your pen pal's town spends October 31** gets more replies than a scary one, because the day looks very different from country to country. On Lettie, sending one letter between ${enUtc(holiday('p_ee103126').start)} and ${enUtc(holiday('p_ee103126').end)} earns a free Halloween stamp.
+
+## Halloween looks different everywhere
+
+| Where | What the day looks like |
+|---|---|
+| US & Canada | Kids dress up and go trick-or-treating; pumpkins become jack-o'-lanterns |
+| Ireland & UK | Halloween is usually traced back to Samhain, a Celtic autumn festival |
+| Mexico | Right after Halloween, November 1–2 is the Day of the Dead, honouring those who have died |
+| Korea & Japan | Mostly a costume night for young people; many people don't mark it at all |
+
+## 7 things to write about
+
+1. **October 31 where you live** — shop decorations, a costume you saw, or an ordinary evening.
+2. **Something that scared you as a kid** — keep it light. They'll tell you one back.
+3. **A costume you wore, or want to wear** — describing it in words feels more like a letter than a photo.
+4. **Autumn food** — pumpkin, chestnuts, sweet potatoes, whatever this season tastes like for you.
+5. **A one-line-each story** — start with "When I opened the door…" and leave the next sentence to them.
+6. **A similar day** — if Halloween isn't a thing there, ask what day comes around this time of year.
+7. **The stamp on your letter** — if you used the Halloween stamp (a black cat beside a jack-o'-lantern under an orange moon), start there.
+
+## Example letter
+
+> Hi! On my way home today, the bakery window had paper pumpkins on it. Halloween isn't a big thing here, but every October the shops quietly turn orange. I didn't know Halloween as a kid, and the first jack-o'-lantern I saw honestly scared me. What does October 31 look like where you are? Was there something that scared you as a kid?
+
+If your pen pal reads another language, the translate button on the writing screen turns your draft into theirs.
+
+## A few cautions
+
+- **Skip gore.** Translation can make it read harsher than you meant.
+- **Some people don't celebrate Halloween** for religious or family reasons. Ask, don't push.
+- **Send a day early to land on the 31st.** Letters take 1–${FACTS.deliveryHours.max} hours depending on distance.
+
+---
+
+*Other holiday stamps are in the [2026–2027 holiday stamp calendar](/en/blog/lettie-holiday-stamps-2026); for openers, see [how to start a pen pal letter](/en/blog/how-to-start-penpal).*
+`,
+    },
+    'diwali-wishes-for-friends': {
+        id: 'diwali-wishes-for-friends',
+        title: '인도 친구에게 디왈리 인사 편지 쓰기 — 인사말과 예시',
+        titleEn: 'Diwali wishes for a friend abroad: greetings and an example letter',
+        seoTitle: '디왈리 인사말과 편지 예시 — 인도 친구에게 보내기',
+        seoTitleEn: 'Diwali Wishes for a Friend: Greetings and a Letter Example',
+        description: '2026년 디왈리는 11월 8일입니다. Happy Diwali·Shubh Deepavali 같은 인사말, 물어보면 좋은 것, 조심할 점, 한·영 예시 편지, 레티 디왈리 우표 받는 법까지.',
+        descriptionEn: 'Diwali falls on November 8, 2026. Greetings like Happy Diwali and Shubh Deepavali, what to ask, what to avoid, an example letter and the Lettie Diwali stamp.',
+        date: '2026-10-18',
+        readTime: '5분',
+        readTimeEn: '5 min',
+        category: '편지 쓰기',
+        categoryEn: 'Letter writing',
+        image: '/v2/diwali-hero.jpg',
+        author: 'Lettie',
+        keywords: ['디왈리', '디왈리 인사말', '인도 친구 편지', '디왈리 편지', 'Happy Diwali 뜻', '인도 펜팔'],
+        keywordsEn: ['Diwali wishes for a friend', 'Diwali greetings', 'Diwali letter', 'Happy Diwali message', 'Shubh Deepavali meaning', 'Indian pen pal'],
+        faq: [
+            { q: '2026년 디왈리는 언제인가요?', a: '2026년 디왈리의 중심인 날은 11월 8일입니다. 디왈리는 앞뒤 며칠에 걸쳐 이어지는 축제입니다.' },
+            { q: '디왈리 인사는 뭐라고 하나요?', a: '영어로 "Happy Diwali!"가 가장 무난합니다. 힌디어로는 "Shubh Deepavali(शुभ दीपावली)", 타밀어권에서는 "Deepavali"라는 이름을 씁니다.' },
+            { q: '인도 친구가 모두 디왈리를 쇠나요?', a: '아닙니다. 힌두교도를 중심으로 시크교도·자이나교도도 쇠지만, 쇠지 않는 사람도 많습니다. "디왈리 쇠니?"라고 먼저 물어보세요.' },
+        ],
+        faqEn: [
+            { q: 'When is Diwali in 2026?', a: 'The main day of Diwali in 2026 is November 8. The festival runs over several days around it.' },
+            { q: 'How do you wish someone a happy Diwali?', a: '"Happy Diwali!" works everywhere. In Hindi, "Shubh Deepavali" (शुभ दीपावली); in Tamil-speaking regions the festival is called Deepavali.' },
+            { q: 'Does everyone in India celebrate Diwali?', a: 'No. It is celebrated mainly by Hindus, and also by Sikhs and Jains, but many people don’t. Ask first: “Do you celebrate Diwali?”' },
+        ],
+        content: `
+# 인도 친구에게 디왈리 인사 편지 쓰기
+
+**2026년 디왈리는 11월 8일**입니다. 등불을 밝히는 빛의 축제로, 인도뿐 아니라 네팔·싱가포르·말레이시아 등에서도 쇱니다. 인사는 영어로 **"Happy Diwali!"**면 충분하고, 힌디어로 **"Shubh Deepavali(शुभ दीपावली)"**라고 쓰면 더 반가워합니다. 레티(Lettie)에서는 ${koKst(holiday('p_ee110826').start)}부터 ${koKst(holiday('p_ee110826').end)}까지(한국 시간) 편지 한 통을 보내면 디왈리 우표를 무료로 받습니다.
+
+## 디왈리, 짧게
+
+- **빛의 축제** — 집 안팎에 작은 흙 등잔(디야)과 전등을 켜고, 문 앞 바닥에 색 가루로 무늬(랑골리)를 그립니다.
+- **여러 날에 걸친 축제** — 중심이 되는 날 앞뒤로 며칠 이어집니다.
+- **쇠는 사람** — 힌두교도를 중심으로 시크교도·자이나교도도 쇱니다. 인도 사람이라고 모두 쇠는 것은 아닙니다.
+- **이름** — 타밀어권에서는 "Deepavali(디파발리)"라고 부릅니다.
+
+## 인사말
+
+| 인사 | 뜻 | 언제 |
+|---|---|---|
+| Happy Diwali! | 즐거운 디왈리 | 어디서나 무난 |
+| Shubh Deepavali (शुभ दीपावली) | 상서로운 디왈리 | 힌디어 |
+| Wishing you and your family a bright Diwali | 가족 모두 환한 디왈리 보내길 | 편지 끝인사 |
+| May the lights bring you joy | 등불이 기쁨을 가져다주길 | 조금 더 정성스럽게 |
+
+## 물어보면 좋은 것
+
+1. **"디왈리 쇠니?"** — 먼저 묻는 게 예의입니다.
+2. **집을 어떻게 꾸미는지** — 디야, 랑골리, 전등.
+3. **이맘때 먹는 단것** — 디왈리에는 단과자(미타이)를 나눠 먹습니다.
+4. **가족 모임** — 누가 오고 어디로 가는지.
+5. **불꽃놀이** — 동네마다 분위기가 다릅니다(대기 오염 때문에 막는 도시도 있습니다).
+
+## 예시 편지
+
+> Happy Diwali! 너희 동네는 지금 등불로 가득하겠다. 한국에도 등을 밝히는 날이 있어. 봄에 부처님오신날이 되면 절과 거리에 연등이 걸리거든. 디왈리에는 집을 어떻게 꾸며? 가족들이랑 먹는 단 음식 중에 제일 좋아하는 게 뭐야? Shubh Deepavali!
+
+영어로: *"Happy Diwali! I imagine your street is full of little lights right now. We have a lantern day in Korea too — in spring, temples and streets fill with lotus lanterns for Buddha's Birthday. How do you decorate your home for Diwali? What's your favourite sweet this time of year?"*
+
+## 조심할 점
+
+- **종교를 단정하지 마세요.** "인도 사람이니 디왈리를 쇠겠지"가 아니라 "쇠니?"라고 물어보세요.
+- **음식 이야기에서 고기·술은 피하는 편이 안전합니다.** 축제 기간에 채식하는 집이 많습니다.
+- **8일에 맞추려면 하루 전에 보내세요.** 한국에서 인도까지 편지는 보통 6~12시간 걸립니다.
+
+---
+
+*레티 디왈리 우표 그림은 랑골리 위의 흙 등잔입니다. 다른 기념일은 [2026~2027 기념일 우표 달력](/blog/lettie-holiday-stamps-2026)에 있습니다.*
+`,
+        contentEn: `
+# Diwali wishes for a friend abroad
+
+**Diwali falls on November 8, 2026.** It's a festival of lights celebrated in India and also in Nepal, Singapore, Malaysia and elsewhere. **"Happy Diwali!"** works everywhere, and **"Shubh Deepavali" (शुभ दीपावली)** in Hindi is a warm touch. On Lettie, sending one letter between ${enUtc(holiday('p_ee110826').start)} and ${enUtc(holiday('p_ee110826').end)} earns a free Diwali stamp.
+
+## Diwali in brief
+
+- **A festival of lights** — small clay lamps (diyas) and string lights inside and outside the home, and colourful patterns (rangoli) on the floor by the door.
+- **Several days long** — the festival runs over a few days around the main day.
+- **Who celebrates** — mainly Hindus, and also Sikhs and Jains. Not everyone in India celebrates it.
+- **The name** — in Tamil-speaking regions it's called Deepavali.
+
+## Greetings
+
+| Greeting | Meaning | When |
+|---|---|---|
+| Happy Diwali! | — | Works everywhere |
+| Shubh Deepavali (शुभ दीपावली) | Auspicious Diwali | In Hindi |
+| Wishing you and your family a bright Diwali | — | A letter sign-off |
+| May the lights bring you joy | — | A little more heartfelt |
+
+## Good things to ask
+
+1. **"Do you celebrate Diwali?"** — ask before assuming.
+2. **How they decorate** — diyas, rangoli, lights.
+3. **Festival sweets** — sweets (mithai) are shared at Diwali.
+4. **Family plans** — who visits, where they go.
+5. **Fireworks** — every town is different, and some cities restrict them because of air pollution.
+
+## Example letter
+
+> Happy Diwali! I imagine your street is full of little lights right now. We have a lantern day in Korea too — in spring, temples and streets fill with lotus lanterns for Buddha's Birthday. How do you decorate your home for Diwali? What's your favourite sweet this time of year? Shubh Deepavali!
+
+## A few cautions
+
+- **Don't assume someone's religion.** Ask "Do you celebrate?" rather than "You must be celebrating".
+- **Keep food talk away from meat and alcohol.** Many families eat vegetarian during the festival.
+- **Send a day early to land on the 8th.** A letter from Korea to India usually takes 6–12 hours.
+
+---
+
+*The Lettie Diwali stamp shows clay oil lamps on a rangoli. Other holidays are in the [2026–2027 holiday stamp calendar](/en/blog/lettie-holiday-stamps-2026).*
+`,
+    },
+    'thanksgiving-letter-to-a-friend': {
+        id: 'thanksgiving-letter-to-a-friend',
+        title: '추수감사절 감사 편지 쓰는 법 — 미국 친구에게 보내는 예시',
+        titleEn: 'How to write a Thanksgiving letter to a friend (with an example)',
+        seoTitle: '추수감사절 감사 편지 쓰는 법 — 영어 예시와 문구',
+        seoTitleEn: 'Thanksgiving Letter to a Friend: How to Write It + Example',
+        description: '2026년 미국 추수감사절은 11월 26일 목요일입니다. 고마운 일 하나를 구체적으로 쓰는 감사 편지의 구조, 영어 문구, 한·영 예시 편지, 레티 추수감사절 우표 받는 법.',
+        descriptionEn: 'US Thanksgiving is Thursday, November 26, 2026. How to structure a thank-you letter around one specific thing, phrases, an example letter and the Lettie Thanksgiving stamp.',
+        date: '2026-10-18',
+        readTime: '4분',
+        readTimeEn: '4 min',
+        category: '편지 쓰기',
+        categoryEn: 'Letter writing',
+        image: '/v2/thanksgiving-hero.jpg',
+        author: 'Lettie',
+        keywords: ['추수감사절 편지', '감사 편지 영어', '미국 친구 편지', 'Thanksgiving 편지', '감사 편지 예시', '추수감사절 2026'],
+        keywordsEn: ['Thanksgiving letter to a friend', 'thank you letter to a friend', 'Thanksgiving message for a pen pal', 'Thanksgiving 2026', 'gratitude letter example'],
+        faq: [
+            { q: '2026년 추수감사절은 언제인가요?', a: '미국 추수감사절은 11월 넷째 목요일이라 2026년에는 11월 26일입니다. 캐나다 추수감사절은 10월 둘째 월요일(2026년 10월 12일)이었습니다.' },
+            { q: '감사 편지에는 뭘 써야 하나요?', a: '"모든 게 고마워"보다 고마운 장면 하나를 구체적으로 쓰는 편지가 마음에 남습니다. 장면 하나, 그게 나에게 준 것, 상대의 식탁을 묻는 질문 하나면 됩니다.' },
+            { q: '레티 추수감사절 우표는 어떻게 받나요?', a: `${koKst(holiday('p_ee112626').start)}부터 ${koKst(holiday('p_ee112626').end)}까지(한국 시간) 편지를 한 통 보내면 무료로 한 장 들어옵니다.` },
+        ],
+        faqEn: [
+            { q: 'When is Thanksgiving in 2026?', a: 'US Thanksgiving is the fourth Thursday of November: November 26, 2026. Canadian Thanksgiving was the second Monday of October (October 12, 2026).' },
+            { q: 'What should a Thanksgiving letter say?', a: 'One specific moment you’re grateful for beats “thanks for everything”. One scene, what it meant to you, and a question about their table is enough.' },
+            { q: 'How do I get the Lettie Thanksgiving stamp?', a: `Send one letter between ${enUtc(holiday('p_ee112626').start)} and ${enUtc(holiday('p_ee112626').end)} and a free stamp arrives.` },
+        ],
+        content: `
+# 추수감사절 감사 편지 쓰는 법
+
+**2026년 미국 추수감사절은 11월 26일 목요일**입니다. 이날 보내는 감사 편지는 "모든 게 고마워"보다 **고마운 장면 하나를 구체적으로** 쓸 때 오래 남습니다. 레티(Lettie)에서는 ${koKst(holiday('p_ee112626').start)}부터 ${koKst(holiday('p_ee112626').end)}까지(한국 시간) 편지 한 통을 보내면 추수감사절 우표(가을 수확 바구니)를 무료로 받습니다.
+
+## 감사 편지의 세 줄 구조
+
+1. **장면 하나** — "네가 지난번 편지에 써 준 할머니 레시피 이야기"처럼 구체적으로.
+2. **그게 나에게 준 것** — "그 편지를 읽고 나도 엄마한테 전화했어."
+3. **상대의 식탁 묻기** — "너희 집 추수감사절 식탁에는 뭐가 올라와?"
+
+## 영어 문구
+
+| 문구 | 뜻 |
+|---|---|
+| Happy Thanksgiving! | 즐거운 추수감사절 |
+| I'm grateful for our letters this year. | 올해 우리가 주고받은 편지가 고마워 |
+| Your last letter made my week. | 지난 편지 덕분에 한 주가 좋았어 |
+| What's on your table this year? | 올해 식탁엔 뭐가 올라와? |
+| Wishing you a warm Thanksgiving with the people you love. | 사랑하는 사람들과 따뜻한 추수감사절 보내길 |
+
+## 예시 편지
+
+> Happy Thanksgiving! 지난번에 네가 써 준, 할머니가 매년 굽는 호박파이 이야기가 계속 생각났어. 그 편지를 읽고 나도 오랜만에 엄마한테 전화해서 어릴 때 먹던 송편 이야기를 했거든. 한국에도 가을에 수확에 감사하는 추석이 있어. 올해 너희 집 식탁에는 뭐가 올라와? 고마워, 편지 친구.
+
+영어로: *"Happy Thanksgiving! I keep thinking about the pumpkin pie your grandma bakes every year — after your letter, I called my mom and we talked about the rice cakes we used to make for Chuseok, our autumn harvest holiday. What's on your table this year? Thank you for being my letter friend."*
+
+## 추석과 함께 쓰기
+
+한국의 추석, 중국·베트남의 중추절처럼 수확에 감사하는 날은 여러 나라에 있습니다. 내 나라의 가을 명절을 한 줄 소개하면 상대도 자기 이야기를 꺼내기 쉬워집니다.
+
+## 알아 둘 것
+
+- **추수감사절 우표 안내 알림은 미국 사용자에게 갑니다.** 우표는 나라와 상관없이 누구나 받을 수 있습니다.
+- **26일에 맞추려면 하루 전에.** 한국에서 미국까지 편지는 보통 12~24시간 걸립니다.
+
+---
+
+*고마운 마음을 담은 편지가 두 번째, 세 번째 편지로 이어지게 하려면 [펜팔 대화를 이어 가는 법](/blog/keep-a-pen-pal-conversation-going)을 보세요.*
+`,
+        contentEn: `
+# How to write a Thanksgiving letter to a friend
+
+**US Thanksgiving is Thursday, November 26, 2026.** A Thanksgiving letter lands best when it names **one specific thing you're grateful for**, not "thanks for everything". On Lettie, sending one letter between ${enUtc(holiday('p_ee112626').start)} and ${enUtc(holiday('p_ee112626').end)} earns a free Thanksgiving stamp (an autumn harvest basket).
+
+## A three-line structure
+
+1. **One scene** — "the story about your grandma's recipe in your last letter".
+2. **What it gave you** — "after reading it, I called my mom".
+3. **A question about their table** — "what's on your Thanksgiving table?"
+
+## Phrases
+
+| Phrase | Use |
+|---|---|
+| Happy Thanksgiving! | Opening |
+| I'm grateful for our letters this year. | The heart of the letter |
+| Your last letter made my week. | Naming a specific moment |
+| What's on your table this year? | The question |
+| Wishing you a warm Thanksgiving with the people you love. | Sign-off |
+
+## Example letter
+
+> Happy Thanksgiving! I keep thinking about the pumpkin pie your grandma bakes every year. After your letter, I called my mom and we talked about the rice cakes we used to make for Chuseok, our autumn harvest holiday in Korea. What's on your table this year? Thank you for being my letter friend.
+
+## Pair it with your own harvest holiday
+
+Korea's Chuseok and the Mid-Autumn Festival in China and Vietnam are also about giving thanks for the harvest. One line about your own autumn holiday makes it easy for your pen pal to share theirs.
+
+## Good to know
+
+- **The Thanksgiving stamp reminder goes to people in the US**, but anyone anywhere can earn the stamp.
+- **Send a day early to land on the 26th.** A letter from Korea to the US usually takes 12–24 hours.
+
+---
+
+*To turn a thank-you letter into a second and third letter, see [how to keep a pen pal conversation going](/en/blog/keep-a-pen-pal-conversation-going).*
+`,
+    },
+    'christmas-letter-to-a-pen-pal': {
+        id: 'christmas-letter-to-a-pen-pal',
+        title: '외국 친구에게 크리스마스 편지 쓰기 — 영어 문구 20개와 예시',
+        titleEn: 'Christmas letter to a pen pal: 20 phrases and an example',
+        seoTitle: '외국 친구 크리스마스 편지 영어 문구 20개와 예시',
+        seoTitleEn: 'Christmas Letter to a Pen Pal: 20 Phrases and an Example',
+        description: '외국 친구에게 보내는 크리스마스 편지 — Merry Christmas와 Happy Holidays 중 무엇을 쓸지, 영어 문구 20개, 나라마다 다른 크리스마스, 한·영 예시 편지, 25일에 맞춰 도착하게 보내는 법.',
+        descriptionEn: 'Writing a Christmas letter to a friend abroad: Merry Christmas or Happy Holidays, 20 phrases, how Christmas differs by country, an example letter and timing it to arrive on the 25th.',
+        date: '2026-10-18',
+        readTime: '6분',
+        readTimeEn: '6 min',
+        category: '편지 쓰기',
+        categoryEn: 'Letter writing',
+        image: '/v2/christmas-hero.jpg',
+        author: 'Lettie',
+        keywords: ['크리스마스 편지 영어', '외국 친구 크리스마스 편지', '크리스마스 카드 문구 영어', '메리 크리스마스 영어 문장', '펜팔 크리스마스', '크리스마스 편지 예시'],
+        keywordsEn: ['Christmas letter to a pen pal', 'Christmas message for a friend abroad', 'Christmas card phrases', 'Merry Christmas or Happy Holidays', 'Christmas letter example', 'holiday letter to a friend'],
+        faq: [
+            { q: 'Merry Christmas와 Happy Holidays 중 무엇을 써야 하나요?', a: '상대가 크리스마스를 쇠는 걸 알면 Merry Christmas, 모르면 Happy Holidays가 무난합니다. 크리스마스를 쇠지 않는 사람도 많기 때문입니다.' },
+            { q: '크리스마스에 맞춰 도착하게 하려면 언제 보내야 하나요?', a: `레티 편지는 거리에 따라 1~${FACTS.deliveryHours.max}시간 걸립니다. 먼 나라면 23~24일에 보내면 25일 즈음 도착합니다.` },
+            { q: '레티 크리스마스 우표는 어떻게 받나요?', a: `${koKst(holiday('g_12255152').start)}부터 ${koKst(holiday('g_12255152').end)}까지(한국 시간) 편지를 한 통 보내면 무료로 한 장 들어옵니다.` },
+        ],
+        faqEn: [
+            { q: 'Should I write Merry Christmas or Happy Holidays?', a: 'Merry Christmas if you know they celebrate it; Happy Holidays if you don’t, since many people don’t celebrate Christmas.' },
+            { q: 'When should I send a letter so it arrives on Christmas?', a: `Lettie letters take 1–${FACTS.deliveryHours.max} hours depending on distance. For a faraway country, send on the 23rd or 24th.` },
+            { q: 'How do I get the Lettie Christmas stamp?', a: `Send one letter between ${enUtc(holiday('g_12255152').start)} and ${enUtc(holiday('g_12255152').end)} and a free stamp arrives.` },
+        ],
+        content: `
+# 외국 친구에게 크리스마스 편지 쓰기
+
+외국 친구에게 보내는 크리스마스 편지는 **상대가 크리스마스를 쇠는지에 맞춰 첫 인사를 고르는 것**에서 시작합니다. 쇠는 걸 알면 "Merry Christmas", 모르면 "Happy Holidays"가 무난합니다. 레티(Lettie)에서는 ${koKst(holiday('g_12255152').start)}부터 ${koKst(holiday('g_12255152').end)}까지(한국 시간) 편지 한 통을 보내면 크리스마스 우표(초록 바탕의 금빛 별)를 무료로 받습니다.
+
+## 영어 문구 20개
+
+| 문구 | 뜻 |
+|---|---|
+| Merry Christmas! | 메리 크리스마스 |
+| Happy Holidays! | 즐거운 연말 보내 (종교와 상관없이) |
+| Season's greetings! | 연말 인사드려요 |
+| Wishing you a warm and peaceful Christmas. | 따뜻하고 평안한 크리스마스 보내길 |
+| Hope your holidays are full of rest and good food. | 쉬고 맛있는 것 많이 먹는 연말 되길 |
+| I'm so glad we started writing this year. | 올해 너랑 편지를 시작해서 정말 좋아 |
+| Your letters were one of the best parts of my year. | 네 편지는 올해 가장 좋았던 것 중 하나야 |
+| What does Christmas look like where you are? | 너희 동네 크리스마스는 어떤 모습이야? |
+| Do you have a holiday tradition you love? | 좋아하는 연말 전통 있어? |
+| Here, it's freezing and the streets are full of lights. | 여긴 엄청 춥고 거리가 불빛으로 가득해 |
+| I'm spending Christmas Eve with my family. | 크리스마스이브는 가족이랑 보내 |
+| I wish I could send you a real card. | 진짜 카드를 보낼 수 있으면 좋겠다 |
+| Thinking of you this season. | 이맘때 네 생각이 나 |
+| Sending you a little light from Seoul. | 서울에서 작은 불빛 하나 보낼게 |
+| May the new year bring you good things. | 새해엔 좋은 일들이 가득하길 |
+| Take care and stay warm. | 몸 조심하고 따뜻하게 지내 |
+| Can't wait to read your next letter. | 다음 편지가 기다려져 |
+| Cheers to another year of letters! | 편지로 함께할 또 한 해를 위하여 |
+| With love from Korea, | 한국에서, 마음을 담아 |
+| Warm wishes, | 따뜻한 마음을 담아 (끝인사) |
+
+## 나라마다 다른 크리스마스
+
+| 어디 | 이맘때 모습 |
+|---|---|
+| 호주·뉴질랜드 | 한여름 크리스마스입니다. 바닷가나 바비큐로 보내는 집이 많습니다 |
+| 필리핀 | 9월부터 크리스마스 분위기가 시작돼 아주 길게 이어집니다 |
+| 일본 | 공휴일은 아니고, 크리스마스에 치킨이나 케이크를 먹는 풍습이 널리 알려져 있습니다 |
+| 한국 | 25일이 공휴일입니다. 거리 장식과 케이크가 이맘때 풍경입니다 |
+
+이 차이를 묻는 것만으로도 좋은 편지가 됩니다.
+
+## 예시 편지
+
+> Merry Christmas! 서울은 지금 무척 춥고, 집 앞 가로수에 작은 전구가 감겨 있어. 올해 너랑 편지를 시작한 게 내게는 올해 가장 좋았던 일 중 하나야. 너희 동네 크리스마스는 어떤 모습이야? 너희 집만의 연말 전통도 궁금해. 따뜻한 연말 보내!
+
+영어로: *"Merry Christmas! Seoul is freezing right now, and the trees outside my building are wrapped in tiny lights. Starting to write to you this year was one of the best parts of my year. What does Christmas look like where you are? I'd love to hear about your family's traditions. Warm wishes!"*
+
+## 25일에 맞춰 도착하게
+
+레티 편지는 거리에 따라 1~${FACTS.deliveryHours.max}시간 걸려 도착합니다. 같은 나라면 1~2시간, 먼 나라면 12~24시간이니 **먼 나라 친구에게는 23~24일에 보내세요.** 받은 사람은 크리스마스 아침에 우체통을 엽니다. 도시별 시간은 [거리별 편지 도착 시간](/blog/letter-delivery-time-by-distance)에 있습니다.
+
+---
+
+*크리스마스 다음 기념일 우표는 새해 우표(바다 위 첫 해돋이)입니다. 일정은 [2026~2027 기념일 우표 달력](/blog/lettie-holiday-stamps-2026)에 있습니다.*
+`,
+        contentEn: `
+# Christmas letter to a pen pal
+
+A Christmas letter to a friend abroad starts with **picking the greeting that fits whether they celebrate Christmas**: "Merry Christmas" if you know they do, "Happy Holidays" if you're not sure. On Lettie, sending one letter between ${enUtc(holiday('g_12255152').start)} and ${enUtc(holiday('g_12255152').end)} earns a free Christmas stamp (a gold star on green).
+
+## 20 phrases
+
+| Phrase | Use |
+|---|---|
+| Merry Christmas! | When you know they celebrate |
+| Happy Holidays! | When you're not sure |
+| Season's greetings! | Formal-friendly |
+| Wishing you a warm and peaceful Christmas. | Opening line |
+| Hope your holidays are full of rest and good food. | Opening line |
+| I'm so glad we started writing this year. | The heart of the letter |
+| Your letters were one of the best parts of my year. | The heart of the letter |
+| What does Christmas look like where you are? | A question |
+| Do you have a holiday tradition you love? | A question |
+| Here, it's freezing and the streets are full of lights. | Your scene |
+| I'm spending Christmas Eve with my family. | Your plans |
+| I wish I could send you a real card. | A warm aside |
+| Thinking of you this season. | Short and kind |
+| Sending you a little light from Seoul. | Swap in your city |
+| May the new year bring you good things. | Looking ahead |
+| Take care and stay warm. | Sign-off |
+| Can't wait to read your next letter. | Sign-off |
+| Cheers to another year of letters! | Sign-off |
+| With love from Korea, | Closing (swap in your country) |
+| Warm wishes, | Closing |
+
+## Christmas is different everywhere
+
+| Where | What the season looks like |
+|---|---|
+| Australia & New Zealand | Christmas in midsummer — beaches and barbecues |
+| Philippines | The Christmas mood starts in September and runs for months |
+| Japan | Not a public holiday; eating fried chicken or cake at Christmas is a well-known custom |
+| Korea | December 25 is a public holiday; street lights and Christmas cake set the scene |
+
+Asking about these differences makes a good letter on its own.
+
+## Example letter
+
+> Merry Christmas! Seoul is freezing right now, and the trees outside my building are wrapped in tiny lights. Starting to write to you this year was one of the best parts of my year. What does Christmas look like where you are? I'd love to hear about your family's traditions. Warm wishes!
+
+## Timing it to arrive on the 25th
+
+Lettie letters take 1–${FACTS.deliveryHours.max} hours depending on distance: 1–2 hours within a country, 12–24 hours to faraway countries. **For a friend far away, send on the 23rd or 24th** so the letter is waiting on Christmas morning. City-by-city times are in [letter delivery time by distance](/en/blog/letter-delivery-time-by-distance).
+
+---
+
+*After Christmas comes the New Year stamp (the first sunrise over the sea). Dates are in the [2026–2027 holiday stamp calendar](/en/blog/lettie-holiday-stamps-2026).*
+`,
+    },
+    'pen-pal-not-replying': {
+        id: 'pen-pal-not-replying',
+        title: '펜팔이 답장을 안 할 때 — 얼마나 기다리고, 어떻게 다시 쓸까',
+        titleEn: 'Pen pal not replying? How long to wait and what to write next',
+        seoTitle: '펜팔 답장이 안 올 때 — 기다릴 시간과 다시 쓰는 법',
+        seoTitleEn: 'Pen Pal Not Replying? How Long to Wait and What to Do',
+        description: `펜팔 답장은 보통 편지가 도착한 날 옵니다. 레티 편지 통계로 답장의 ${LETTER_STATS.reply.within24h}%가 도착 24시간 안에 쓰였습니다. 이틀 기다려야 하는 이유, 답이 없을 때 한 통 더 보내는 법과 예시, 하지 말아야 할 것.`,
+        descriptionEn: `Most pen pal replies come the day a letter arrives: on Lettie, ${LETTER_STATS.reply.within24h}% were written within 24 hours. Why to wait two days, how to send one gentle follow-up, and what not to do.`,
+        date: '2026-10-18',
+        readTime: '5분',
+        readTimeEn: '5 min',
+        category: '가이드',
+        categoryEn: 'Guide',
+        image: '/v2/app-letter.png',
+        author: 'Lettie',
+        keywords: ['펜팔 답장 안 옴', '펜팔 답장', '편지 답장 안 올 때', '펜팔 연락 끊김', '펜팔 다시 연락', '답장 기다리기'],
+        keywordsEn: ['pen pal not replying', 'pen pal stopped writing', 'how long to wait for a pen pal reply', 'follow up letter pen pal', 'pen pal ghosting'],
+        faq: [
+            { q: '펜팔 답장은 보통 얼마나 걸리나요?', a: `레티 기준으로 편지는 거리에 따라 1~${FACTS.deliveryHours.max}시간 걸려 도착하고, 답장이 이어진 경우 편지가 도착한 뒤 중앙값 ${LETTER_STATS.reply.medianHours}시간 만에 쓰였습니다. ${LETTER_STATS.reply.within24h}%가 도착 24시간 안에 쓰였습니다.` },
+            { q: '답장이 없으면 다시 보내도 되나요?', a: '네. 레티에서는 내 편지가 도착하고 3일이 지나도 답이 없으면 한 통을 더 보낼 수 있습니다. 가벼운 질문 하나를 담은 짧은 편지가 좋습니다.' },
+            { q: '띄운 편지에 아무도 답하지 않아요.', a: '레티 발견은 아직 답장을 못 받은 편지·덜 보인 편지를 먼저 다른 사람들에게 보여 줍니다(2026년 10월부터). 첫 문장에 장면 하나와 질문 하나를 넣으면 답장을 받기 쉽습니다.' },
+        ],
+        faqEn: [
+            { q: 'How long does a pen pal reply usually take?', a: `On Lettie, letters take 1–${FACTS.deliveryHours.max} hours to arrive depending on distance, and replies were written a median ${LETTER_STATS.reply.medianHours} hours after the letter arrived; ${LETTER_STATS.reply.within24h}% within 24 hours.` },
+            { q: 'Can I write again if they haven’t replied?', a: 'Yes. On Lettie, if three days pass after your letter arrives with no reply, you can send one more letter. A short one with a single light question works best.' },
+            { q: 'Nobody answered the letter I floated.', a: 'Since October 2026, Lettie’s Discover shows letters that have no reply yet, and have been seen by fewer people, first. A scene and a question in your opening lines make a reply much more likely.' },
+        ],
+        content: `
+# 펜팔이 답장을 안 할 때
+
+펜팔 답장은 대부분 **편지가 도착한 날** 옵니다. 레티(Lettie) 편지 통계(${koDate(LETTER_STATS.asOf)})로 답장이 이어진 경우 편지가 도착한 뒤 **중앙값 ${LETTER_STATS.reply.medianHours}시간** 만에 쓰였고, **${LETTER_STATS.reply.within24h}%가 24시간 안**이었습니다. 그러니 이틀은 기다려 보고, 3일이 지나도 답이 없으면 **가벼운 편지를 한 통 더** 보내 보세요. 레티는 내 편지가 도착하고 3일이 지나면 한 통을 더 보낼 수 있습니다.
+
+## 답장이 오기까지의 시간
+
+| 단계 | 걸리는 시간 (레티) |
+|---|---|
+| 내 편지가 날아가는 시간 | 같은 나라 1~2시간, 다른 나라 중앙값 ${LETTER_STATS.delivery.international.median}시간 (최대 ${FACTS.deliveryHours.max}시간) |
+| 상대가 앱을 열 때까지 | 사람마다 다릅니다 |
+| 답장을 쓰기까지 | 중앙값 ${LETTER_STATS.reply.medianHours}시간, ${LETTER_STATS.reply.within1h}%는 1시간 안 |
+| 답장이 날아오는 시간 | 다시 1~${FACTS.deliveryHours.max}시간 |
+
+먼 나라 친구라면 편지를 보내고 답장을 받기까지 하루를 넘기는 게 자연스럽습니다. 느린 것이 이 방식의 일부입니다.
+
+## 답이 없는 흔한 이유
+
+1. **아직 앱을 열지 않았다** — 편지가 온 걸 모를 수 있습니다.
+2. **바쁜 주간** — 시험, 출장, 명절.
+3. **답할 거리가 없다** — 질문 없이 끝난 편지는 답하기 어렵습니다.
+4. **무엇을 써야 할지 고민 중** — 정성 들여 쓰는 사람일수록 늦습니다.
+5. **관심사가 맞지 않았다** — 누구의 잘못도 아닙니다.
+
+## 한 통 더 보내는 법
+
+- **짧게** — 서너 줄이면 충분합니다.
+- **장면 하나 + 질문 하나** — "오늘 여긴 첫눈이 왔어. 너희 동네는 지금 무슨 계절이야?"
+- **재촉하지 않기** — "왜 답장 안 해?" 대신 "바쁠 땐 천천히 써도 돼."
+
+> 안녕! 오늘 여긴 첫눈이 왔어. 버스 창문에 눈이 붙는 걸 보다가 네 생각이 났어. 너희 동네는 지금 무슨 계절이야? 바쁠 땐 천천히 답해도 돼.
+
+## 하지 말아야 할 것
+
+- **여러 통을 연달아 보내기** — 부담이 됩니다(레티도 답을 기다리는 동안은 한 통만 더 보낼 수 있습니다).
+- **연락처를 달라고 하기** — 답이 없는 상대에게 메신저 아이디를 묻는 건 대개 대화를 끝냅니다. 안전 이야기는 [펜팔 안전 가이드](/blog/pen-pal-safety-guide)에 있습니다.
+- **한 사람만 기다리기** — 그사이 발견에서 다른 편지에도 답해 보세요. 편지는 여러 통이 오갈 때 덜 외롭습니다.
+
+## 띄운 편지에 아무도 답하지 않을 때
+
+레티 발견은 2026년 10월부터 **아직 답장을 못 받은 편지와 덜 보인 편지를 먼저** 다른 사람들에게 보여 줍니다. 그래도 답이 없다면 첫 문장을 바꿔 보세요. 자기소개보다 장면 하나와 질문 하나가 답장을 부릅니다 — [발견에서 답장 받는 첫 편지 예시](/blog/first-letter-examples-discover).
+
+---
+
+*답장이 온 뒤 대화를 세 통째 넘기는 법은 [펜팔 대화를 이어 가는 법](/blog/keep-a-pen-pal-conversation-going)에, 숫자의 출처는 [레티 편지 통계](/letter-stats)에 있습니다.*
+`,
+        contentEn: `
+# Pen pal not replying?
+
+Most pen pal replies come **the day a letter arrives**. In Lettie's letter statistics (${enDate(LETTER_STATS.asOf)}), when a reply came, it was written a **median ${LETTER_STATS.reply.medianHours} hours** after the letter arrived, and **${LETTER_STATS.reply.within24h}% within 24 hours**. So give it two days, and if three days pass with no reply, send **one light follow-up**. On Lettie you can send one more letter once three days have passed since yours arrived.
+
+## How long a reply takes
+
+| Step | Time on Lettie |
+|---|---|
+| Your letter in flight | 1–2 hours within a country; median ${LETTER_STATS.delivery.international.median} hours between countries (max ${FACTS.deliveryHours.max}) |
+| Until they open the app | Varies by person |
+| Writing the reply | Median ${LETTER_STATS.reply.medianHours} hours; ${LETTER_STATS.reply.within1h}% within an hour |
+| The reply in flight | Another 1–${FACTS.deliveryHours.max} hours |
+
+With a friend far away, more than a day between sending and receiving is normal. The slowness is part of how it works.
+
+## Common reasons for silence
+
+1. **They haven't opened the app yet** — they may not know your letter arrived.
+2. **A busy week** — exams, travel, holidays.
+3. **Nothing to answer** — a letter that ends without a question is hard to reply to.
+4. **They're still thinking** — careful writers are often the slow ones.
+5. **Different interests** — nobody's fault.
+
+## How to send one more letter
+
+- **Keep it short** — three or four lines.
+- **One scene + one question** — "It snowed for the first time here today. What season is it where you are?"
+- **No pressure** — instead of "why haven't you written?", try "no rush if you're busy".
+
+> Hi! We had our first snow today. I watched it stick to the bus window and thought of you. What season is it where you are now? No rush if you're busy.
+
+## What not to do
+
+- **Send several letters in a row** — it feels like pressure (Lettie only allows one extra letter while you wait).
+- **Ask for their contact details** — asking someone who hasn't replied for a messenger ID usually ends things. More in our [pen pal safety guide](/en/blog/pen-pal-safety-guide).
+- **Wait on just one person** — answer other letters in Discover meanwhile. Letters feel less lonely when several are in flight.
+
+## When nobody answers a letter you floated
+
+Since October 2026, Lettie's Discover shows **letters that have no reply yet, and that fewer people have seen, first**. If there's still no reply, change your opening: one scene and one question bring more replies than a self-introduction — see [first-letter examples](/en/blog/first-letter-examples-discover).
+
+---
+
+*To get past the third letter once they reply, see [keeping a pen pal conversation going](/en/blog/keep-a-pen-pal-conversation-going); the numbers come from [Lettie letter statistics](/en/letter-stats).*
 `,
     },
 };
