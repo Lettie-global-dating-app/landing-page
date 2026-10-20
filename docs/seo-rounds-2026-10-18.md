@@ -45,3 +45,12 @@
 - 운영 확인: 10쪽 200·h1 1·FAQPage 1·index,follow, 사이트맵 10건, IndexNow 300건 200.
 - GSC: en/pen-pal-not-replying 1건 요청 후 하루 한도 → 나머지 9건을 `scripts/.gsc-pending.txt` 맨 앞에(10/19 10:20 gsc-drain).
 - 다음 주: 새해 편지(p_ee010127), 설날 편지 후보.
+
+## 3차 (2026-10-20, 대표 "이어서")
+- 새 글 4편(ko/en, 0991cec·머지 0911d68):
+  - `/blog/new-year-letter-to-a-pen-pal` — 20개 언어 새해 인사, 일본 연하장·스페인 포도·필리핀 둥근 과일·한국 해돋이, 시차(서울은 런던보다 9h·뉴욕보다 14h 먼저)
+  - `/blog/world-hello-day-letter` — 11/21 유래(1973 매코맥 형제), 20개 언어 인사(존댓말·반말), 레티 첫 편지 인사말 통계(Hello 20%·Hi 19%·Dear 2%)
+  - `/blog/lunar-new-year-letter` — 2027-02-06 양의 해, 한국·중국·홍콩·베트남·싱가포르/말레이시아, "상대가 부르는 이름으로"
+  - `/blog/how-to-end-a-letter-to-a-pen-pal` — **1차 데이터 LETTER_ENDINGS**(letterStats.ts, scripts/seo/letter-endings.*): 영어 편지 532통 중 61% 끝인사 없음·16% 질문·7% 이름 / 한글 102통 54%·17%·좋은 하루 15%. 답장률과는 엮지 않음.
+- 운영 확인: 8쪽 200·h1 1·FAQPage 1·index,follow, 사이트맵 8건, IndexNow 308건 200. GSC 는 오늘 한도를 대기열이 써서 8건을 `.gsc-pending.txt` 맨 앞(10/21 10:20).
+- **노출 9 문의(대표)**: GSC 「최근 24시간」(10/19 16시~10/20 14시 KST)은 잠정치. 날짜별 확정치는 10/17 까지이고 하루 노출 주평균 26~44(8~9월) → 79 → 97 → 182 → **251(10/12 주)**. 수동 조치·보안 문제 없음, 구글봇 UA 로 주요 쪽 200·index. `scripts/seo/gsc-days.mjs` 추가, 10/22 11:00 launchd `com.lettie.seo-gsc-check-1022` 가 10/18~19 확정치를 알림.
