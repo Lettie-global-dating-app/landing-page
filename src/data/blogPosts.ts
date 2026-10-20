@@ -1,6 +1,6 @@
 import { APP_LANGUAGES, FACTS, HOLIDAY_STAMPS, PASSPORT_STATS, PASSPORT_TITLES, enDate, enUtc, holiday, koDate, koKst } from '@/data/facts';
 import { LETTER_MAP } from '@/data/letterMap';
-import { LETTER_STATS } from '@/data/letterStats';
+import { LETTER_ENDINGS, LETTER_STATS } from '@/data/letterStats';
 
 export type BlogPost = {
     id: string;
@@ -6029,7 +6029,10 @@ ${HOLIDAY_STAMPS.map((h) => `| ${h.ko} | ${koKst(h.start)} ~ ${koKst(h.end)} | $
 - [할로윈에 펜팔에게 편지 쓰기](/blog/halloween-letter-to-pen-pal) — 쓸거리 7가지와 예시
 - [인도 친구에게 디왈리 인사 편지 쓰기](/blog/diwali-wishes-for-friends) — 인사말과 조심할 점
 - [추수감사절 감사 편지 쓰는 법](/blog/thanksgiving-letter-to-a-friend) — 세 줄 구조와 영어 문구
+- [세계 인사의 날 — 20개 언어 "안녕"](/blog/world-hello-day-letter) — 낯선 사람에게 첫 편지
 - [외국 친구에게 크리스마스 편지 쓰기](/blog/christmas-letter-to-a-pen-pal) — 영어 문구 20개와 도착 시간 맞추기
+- [외국 친구에게 새해 편지 쓰기](/blog/new-year-letter-to-a-pen-pal) — 20개 언어 새해 인사
+- [설날·춘절·뗏에 보내는 새해 편지](/blog/lunar-new-year-letter) — 나라별 인사말
 
 ---
 
@@ -6065,7 +6068,10 @@ ${HOLIDAY_STAMPS.map((h) => `| ${h.en} | ${enUtc(h.start)} – ${enUtc(h.end)} |
 - [Halloween letter to a pen pal](/en/blog/halloween-letter-to-pen-pal) — 7 ideas and an example
 - [Diwali wishes for a friend abroad](/en/blog/diwali-wishes-for-friends) — greetings and what to avoid
 - [Thanksgiving letter to a friend](/en/blog/thanksgiving-letter-to-a-friend) — a three-line structure and phrases
+- [World Hello Day](/en/blog/world-hello-day-letter) — hello in 20 languages and a first letter
 - [Christmas letter to a pen pal](/en/blog/christmas-letter-to-a-pen-pal) — 20 phrases and timing it to arrive on the 25th
+- [New Year letter to a pen pal](/en/blog/new-year-letter-to-a-pen-pal) — Happy New Year in 20 languages
+- [Lunar New Year letter](/en/blog/lunar-new-year-letter) — greetings for Seollal, Spring Festival and Tết
 
 ---
 
@@ -6482,7 +6488,7 @@ Korea's Chuseok and the Mid-Autumn Festival in China and Vietnam are also about 
 
 ---
 
-*크리스마스 다음 기념일 우표는 새해 우표(바다 위 첫 해돋이)입니다. 일정은 [2026~2027 기념일 우표 달력](/blog/lettie-holiday-stamps-2026)에 있습니다.*
+*크리스마스 다음 기념일 우표는 새해 우표(바다 위 첫 해돋이)입니다 — [외국 친구에게 새해 편지 쓰기](/blog/new-year-letter-to-a-pen-pal). 일정은 [2026~2027 기념일 우표 달력](/blog/lettie-holiday-stamps-2026)에 있습니다.*
 `,
         contentEn: `
 # Christmas letter to a pen pal
@@ -6535,7 +6541,7 @@ Lettie letters take 1–${FACTS.deliveryHours.max} hours depending on distance: 
 
 ---
 
-*After Christmas comes the New Year stamp (the first sunrise over the sea). Dates are in the [2026–2027 holiday stamp calendar](/en/blog/lettie-holiday-stamps-2026).*
+*After Christmas comes the New Year stamp (the first sunrise over the sea) — see [New Year letter to a pen pal](/en/blog/new-year-letter-to-a-pen-pal). Dates are in the [2026–2027 holiday stamp calendar](/en/blog/lettie-holiday-stamps-2026).*
 `,
     },
     'pen-pal-not-replying': {
@@ -6656,6 +6662,565 @@ Lettie's Discover shows **newly floated letters first on their first day**; if a
 ---
 
 *To get past the third letter once they reply, see [keeping a pen pal conversation going](/en/blog/keep-a-pen-pal-conversation-going); the numbers come from [Lettie letter statistics](/en/letter-stats).*
+`,
+    },
+    'new-year-letter-to-a-pen-pal': {
+        id: 'new-year-letter-to-a-pen-pal',
+        title: '외국 친구에게 새해 편지 쓰기 — 20개 언어 새해 인사와 예시',
+        titleEn: 'New Year letter to a pen pal: "Happy New Year" in 20 languages and an example',
+        seoTitle: '20개 언어 새해 인사와 외국 친구 새해 편지 예시',
+        seoTitleEn: 'Happy New Year in 20 Languages + a Letter to a Pen Pal',
+        description: '외국 친구에게 보내는 새해 편지 — 20개 언어 새해 인사표, 나라마다 다른 새해 풍습(연하장·포도 열두 알·해돋이), 시차에 맞춰 보내는 법, 한·영 예시 편지, 레티 새해 우표 받는 법.',
+        descriptionEn: 'A New Year letter to a friend abroad: "Happy New Year" in 20 languages, New Year customs by country, timing it across time zones, an example letter and the Lettie New Year stamp.',
+        date: '2026-10-20',
+        readTime: '6분',
+        readTimeEn: '6 min',
+        category: '편지 쓰기',
+        categoryEn: 'Letter writing',
+        image: '/v2/new-year-hero.jpg',
+        author: 'Lettie',
+        keywords: ['새해 인사 외국어', '외국어 새해 인사', '새해 편지 영어', '외국 친구 새해 편지', '새해 인사말 영어', 'Happy New Year 외국어'],
+        keywordsEn: ['Happy New Year in different languages', 'New Year letter to a pen pal', 'New Year message for a friend abroad', 'New Year greetings', 'New Year letter example'],
+        faq: [
+            { q: '여러 나라 말로 "새해 복 많이 받으세요"는 어떻게 말하나요?', a: '영어 Happy New Year, 일본어 あけましておめでとうございます(아케마시테 오메데토 고자이마스), 중국어 新年快乐(신녠 콰이러), 스페인어 ¡Feliz Año Nuevo!, 프랑스어 Bonne année! 등입니다. 본문 표에 20개 언어를 정리했습니다.' },
+            { q: '새해 편지는 언제 보내야 하나요?', a: `레티 편지는 거리에 따라 1~${FACTS.deliveryHours.max}시간 걸립니다. 먼 나라 친구라면 12월 31일에 보내면 대개 상대의 새해 전후에 닿습니다.` },
+            { q: '레티 새해 우표는 어떻게 받나요?', a: `${koKst(holiday('p_ee010127').start)}부터 ${koKst(holiday('p_ee010127').end)}까지(한국 시간) 편지를 한 통 보내면 무료로 한 장 들어옵니다.` },
+        ],
+        faqEn: [
+            { q: 'How do you say Happy New Year in other languages?', a: 'Japanese あけましておめでとうございます (akemashite omedetō gozaimasu), Chinese 新年快乐 (xīnnián kuàilè), Spanish ¡Feliz Año Nuevo!, French Bonne année!, Korean 새해 복 많이 받으세요 (saehae bok mani badeuseyo). The table below covers 20 languages.' },
+            { q: 'When should I send a New Year letter?', a: `Lettie letters take 1–${FACTS.deliveryHours.max} hours depending on distance. For a friend far away, sending on December 31 usually lands around their New Year.` },
+            { q: 'How do I get the Lettie New Year stamp?', a: `Send one letter between ${enUtc(holiday('p_ee010127').start)} and ${enUtc(holiday('p_ee010127').end)} and a free stamp arrives.` },
+        ],
+        content: `
+# 외국 친구에게 새해 편지 쓰기
+
+외국 친구에게 보내는 새해 편지는 **상대 말로 된 새해 인사 한 줄**로 시작하면 반가움이 두 배가 됩니다. 나머지는 내 말로 써도 번역 버튼이 상대 말로 바꿔 줍니다. 레티(Lettie)에서는 ${koKst(holiday('p_ee010127').start)}부터 ${koKst(holiday('p_ee010127').end)}까지(한국 시간) 편지 한 통을 보내면 새해 우표(${holiday('p_ee010127').artKo})를 무료로 받습니다.
+
+## 20개 언어 새해 인사
+
+| 언어 | 새해 인사 | 읽는 법 |
+|---|---|---|
+| 한국어 | 새해 복 많이 받으세요 | — |
+| 영어 | Happy New Year! | 해피 뉴 이어 |
+| 일본어 | あけましておめでとうございます | 아케마시테 오메데토 고자이마스 |
+| 중국어 | 新年快乐 | 신녠 콰이러 |
+| 스페인어 | ¡Feliz Año Nuevo! | 펠리스 아뇨 누에보 |
+| 프랑스어 | Bonne année ! | 본 아네 |
+| 독일어 | Frohes neues Jahr! | 프로에스 노이에스 야르 |
+| 이탈리아어 | Buon anno! | 부온 안노 |
+| 포르투갈어 | Feliz Ano Novo! | 펠리스 아누 노부 |
+| 러시아어 | С Новым годом! | 스 노빔 고담 |
+| 튀르키예어 | Mutlu yıllar! | 무틀루 이을라르 |
+| 베트남어 | Chúc mừng năm mới | 쭉 믕 남 머이 |
+| 인도네시아어 | Selamat Tahun Baru | 슬라맛 타훈 바루 |
+| 태국어 | สวัสดีปีใหม่ | 사왓디 삐 마이 |
+| 힌디어 | नया साल मुबारक | 나야 살 무바락 |
+| 아랍어 | سنة سعيدة | 사나 사이다 |
+| 필리핀어 | Manigong Bagong Taon! | 마니공 바공 타온 |
+| 폴란드어 | Szczęśliwego Nowego Roku! | 슈쳉실리베고 노베고 로쿠 |
+| 네덜란드어 | Gelukkig nieuwjaar! | 헬루키흐 니우야르 |
+| 스와힐리어 | Heri ya Mwaka Mpya! | 헤리 야 므와카 음피야 |
+
+읽는 법은 한글로 가깝게 옮긴 것입니다. 편지에는 원래 글자 그대로 붙여 넣으면 됩니다.
+
+## 나라마다 다른 새해
+
+| 어디 | 새해 풍경 |
+|---|---|
+| 일본 | 연말에는 「良いお年を(요이 오토시오, 좋은 새해 맞으세요)」, 해가 바뀐 뒤에는 「あけましておめでとう」라고 인사합니다. 연하장(年賀状)을 미리 부치면 1월 1일 아침에 한꺼번에 배달됩니다 |
+| 스페인 | 자정 종소리에 맞춰 포도를 한 알씩, 열두 알 먹습니다 |
+| 필리핀 | 둥근 과일을 여러 개 차려 놓고 한 해의 풍요를 빕니다 |
+| 한국 | 1월 1일 해돋이를 보러 바다나 산에 갑니다. 큰 새해 명절은 음력 설날입니다 |
+
+모든 나라가 1월 1일에 새해를 크게 쇠는 것은 아닙니다. 중국·베트남·한국은 [음력 설](/blog/lunar-new-year-letter)을, 이란은 3월 춘분 무렵의 노루즈를, 태국은 4월 송끄란을 큰 새해로 칩니다. "너희는 새해를 언제 크게 쇠어?"는 그 자체로 좋은 질문입니다.
+
+## 시차에 맞춰 보내기
+
+새해는 나라마다 다른 시각에 옵니다. 키리바시 라인 제도가 가장 먼저 맞고, 서울은 런던보다 9시간, 뉴욕보다 14시간 먼저 맞습니다. 레티 편지는 거리에 따라 1~${FACTS.deliveryHours.max}시간 걸려 도착하니(같은 나라 1~2시간, 먼 나라 12~24시간), **먼 나라 친구에게는 12월 31일에 보내면** 대개 상대의 새해 전후에 닿습니다. 도시별 시간은 [거리별 편지 도착 시간](/blog/letter-delivery-time-by-distance)에 있습니다.
+
+## 예시 편지
+
+> 새해 복 많이 받으세요! Happy New Year! 서울은 방금 새해가 됐어. 너희 동네는 아직 12월 31일이겠지? 올해 너랑 주고받은 편지 중에 네가 할머니 집 이야기를 해 준 편지가 제일 기억에 남아. 새해에 꼭 해 보고 싶은 거 하나만 알려 줄래? 나는 일주일에 한 번 편지 쓰기!
+
+영어로: *"Happy New Year! It just turned midnight in Seoul — I guess it's still December 31 where you are. Of all our letters this year, the one about your grandma's house stayed with me the most. What's one thing you want to try this year? Mine is writing a letter every week!"*
+
+## 쓸거리
+
+1. **올해 주고받은 편지 중 기억에 남는 한 통** — 구체적으로.
+2. **새해에 해 보고 싶은 것 하나** — 거창하지 않아도 됩니다.
+3. **우리 동네의 12월 31일 밤** — 카운트다운, 종소리, 조용한 집.
+4. **새해 음식** — 한국의 떡국처럼.
+
+---
+
+*새해 다음 기념일 우표는 손글씨의 날(1월 23일 무렵)입니다. 전체 일정은 [2026~2027 기념일 우표 달력](/blog/lettie-holiday-stamps-2026)에 있습니다.*
+`,
+        contentEn: `
+# New Year letter to a pen pal
+
+A New Year letter to a friend abroad lands twice as warmly when it **opens with one New Year greeting in their language**. Write the rest in your own language; the translate button turns it into theirs. On Lettie, sending one letter between ${enUtc(holiday('p_ee010127').start)} and ${enUtc(holiday('p_ee010127').end)} earns a free New Year stamp (${holiday('p_ee010127').artEn}).
+
+## "Happy New Year" in 20 languages
+
+| Language | Greeting | Pronunciation |
+|---|---|---|
+| Korean | 새해 복 많이 받으세요 | saehae bok mani badeuseyo |
+| English | Happy New Year! | — |
+| Japanese | あけましておめでとうございます | akemashite omedetō gozaimasu |
+| Chinese | 新年快乐 | xīnnián kuàilè |
+| Spanish | ¡Feliz Año Nuevo! | feh-LEES AHN-yo noo-EH-vo |
+| French | Bonne année ! | bun ah-NAY |
+| German | Frohes neues Jahr! | FRO-es NOY-es yar |
+| Italian | Buon anno! | bwon AHN-no |
+| Portuguese | Feliz Ano Novo! | feh-LEES AH-noo NOH-voo |
+| Russian | С Новым годом! | s NO-vym GO-dom |
+| Turkish | Mutlu yıllar! | moot-LOO yuh-LAR |
+| Vietnamese | Chúc mừng năm mới | chook mung nam moy |
+| Indonesian | Selamat Tahun Baru | seh-LAH-mat TAH-hoon BAH-roo |
+| Thai | สวัสดีปีใหม่ | sa-wat-dee pee mai |
+| Hindi | नया साल मुबारक | na-ya saal mu-baa-rak |
+| Arabic | سنة سعيدة | sana sa'eeda |
+| Filipino | Manigong Bagong Taon! | ma-NEE-gong ba-GONG ta-ON |
+| Polish | Szczęśliwego Nowego Roku! | shchen-shlee-VEH-go no-VEH-go RO-koo |
+| Dutch | Gelukkig nieuwjaar! | kheh-LUK-kikh NEEW-yar |
+| Swahili | Heri ya Mwaka Mpya! | HEH-ree ya MWAH-ka m-PYA |
+
+Pronunciations are rough guides. In a letter, paste the greeting in its own script.
+
+## New Year looks different everywhere
+
+| Where | The New Year scene |
+|---|---|
+| Japan | People say 良いお年を (yoi otoshi o, "have a good year") before New Year and あけましておめでとう after it. New Year cards (nengajō) mailed ahead are all delivered on the morning of January 1 |
+| Spain | Twelve grapes at midnight, one for each chime |
+| Philippines | A table of round fruits for a prosperous year |
+| Korea | Watching the first sunrise of January 1 by the sea or on a mountain; the bigger New Year holiday is Seollal, the lunar new year |
+
+Not every country makes January 1 its biggest New Year. China, Vietnam and Korea celebrate the [lunar new year](/en/blog/lunar-new-year-letter), Iran celebrates Nowruz around the March equinox, and Thailand celebrates Songkran in April. "When is your big New Year?" is a good question on its own.
+
+## Timing it across time zones
+
+New Year arrives at different times. Kiribati's Line Islands see it first; Seoul gets there 9 hours before London and 14 hours before New York. Lettie letters take 1–${FACTS.deliveryHours.max} hours (1–2 hours within a country, 12–24 hours to faraway countries), so **for a friend far away, send on December 31** and it usually lands around their New Year. City-by-city times are in [letter delivery time by distance](/en/blog/letter-delivery-time-by-distance).
+
+## Example letter
+
+> Happy New Year! It just turned midnight in Seoul — I guess it's still December 31 where you are. Of all our letters this year, the one about your grandma's house stayed with me the most. What's one thing you want to try this year? Mine is writing a letter every week!
+
+## Things to write about
+
+1. **One letter from this year that stayed with you** — be specific.
+2. **One thing you want to try next year** — it doesn't have to be big.
+3. **December 31 where you live** — countdowns, bells, a quiet house.
+4. **New Year food** — like Korea's rice cake soup, tteokguk.
+
+---
+
+*After New Year comes the Handwriting Day stamp (around January 23). The full schedule is in the [2026–2027 holiday stamp calendar](/en/blog/lettie-holiday-stamps-2026).*
+`,
+    },
+    'world-hello-day-letter': {
+        id: 'world-hello-day-letter',
+        title: '세계 인사의 날(11월 21일) — 20개 언어 "안녕"과 처음 쓰는 편지',
+        titleEn: 'World Hello Day (November 21): hello in 20 languages, and a letter to someone new',
+        seoTitle: '세계 인사의 날 11월 21일 — 20개 언어 인사말과 첫 편지',
+        seoTitleEn: 'World Hello Day (Nov 21): Hello in 20 Languages',
+        description: `11월 21일 세계 인사의 날 — 1973년 시작된 유래, 20개 언어 인사말(존댓말·반말까지), 레티 첫 편지 ${LETTER_STATS.openers.latin.n}통이 실제로 어떻게 인사했는지, 낯선 사람에게 보내는 첫 편지 예시.`,
+        descriptionEn: `World Hello Day is November 21: where it came from, hello in 20 languages (formal and casual), how ${LETTER_STATS.openers.latin.n} real first letters on Lettie said hello, and a first letter to someone new.`,
+        date: '2026-10-20',
+        readTime: '5분',
+        readTimeEn: '5 min',
+        category: '편지 쓰기',
+        categoryEn: 'Letter writing',
+        image: '/v2/world-hello-day-hero.jpg',
+        author: 'Lettie',
+        keywords: ['세계 인사의 날', '11월 21일 세계 인사의 날', '외국어 인사말', '나라별 인사말', '세계 여러 나라 인사', '안녕 외국어'],
+        keywordsEn: ['World Hello Day', 'World Hello Day 2026', 'hello in different languages', 'how to say hello in 20 languages', 'greetings around the world'],
+        faq: [
+            { q: '세계 인사의 날은 언제, 왜 생겼나요?', a: '매년 11월 21일입니다. 1973년 제4차 중동전쟁 뒤 미국의 매코맥 형제(브라이언·마이클)가 "갈등은 대화로 풀자"는 뜻으로 시작했고, 이날 최소 열 사람에게 인사하자고 권합니다.' },
+            { q: '여러 나라 말로 "안녕하세요"는 어떻게 말하나요?', a: '일본어 こんにちは(곤니치와), 중국어 你好(니하오), 스페인어 Hola(올라), 프랑스어 Bonjour(봉주르), 힌디어 नमस्ते(나마스테), 아랍어 مرحبا(마르하바) 등입니다. 본문 표에 20개 언어와 반말·존댓말 차이를 정리했습니다.' },
+            { q: '레티 세계 인사의 날 우표는 어떻게 받나요?', a: `${koKst(holiday('p_ee112126').start)}부터 ${koKst(holiday('p_ee112126').end)}까지(한국 시간) 편지를 한 통 보내면 무료로 한 장 들어옵니다.` },
+        ],
+        faqEn: [
+            { q: 'When is World Hello Day and why did it start?', a: 'Every November 21. Brothers Brian and Michael McCormack started it in 1973, after the Yom Kippur War, to encourage solving conflict through communication. The idea is to greet at least ten people that day.' },
+            { q: 'How do you say hello in other languages?', a: 'Japanese こんにちは (konnichiwa), Chinese 你好 (nǐ hǎo), Spanish Hola, French Bonjour, Hindi नमस्ते (namaste), Arabic مرحبا (marhaban), Korean 안녕하세요 (annyeonghaseyo). The table below covers 20 languages, with formal and casual forms.' },
+            { q: 'How do I get the Lettie World Hello Day stamp?', a: `Send one letter between ${enUtc(holiday('p_ee112126').start)} and ${enUtc(holiday('p_ee112126').end)} and a free stamp arrives.` },
+        ],
+        content: `
+# 세계 인사의 날 — 20개 언어 "안녕"과 처음 쓰는 편지
+
+**세계 인사의 날은 매년 11월 21일**입니다. 1973년 제4차 중동전쟁 뒤 미국의 매코맥 형제가 "갈등은 대화로 풀자"는 뜻으로 시작했고, 이날 최소 열 사람에게 인사해 보자고 권합니다. 낯선 사람에게 첫 편지를 띄우기 딱 좋은 날입니다. 레티(Lettie)에서는 ${koKst(holiday('p_ee112126').start)}부터 ${koKst(holiday('p_ee112126').end)}까지(한국 시간) 편지 한 통을 보내면 세계 인사의 날 우표(${holiday('p_ee112126').artKo})를 무료로 받습니다.
+
+## 레티 첫 편지는 어떻게 인사할까
+
+레티 편지 통계(${koDate(LETTER_STATS.asOf)})로 라틴 문자로 쓴 첫 편지 ${LETTER_STATS.openers.latin.n}통을 보면 **Hello로 시작한 편지가 ${LETTER_STATS.openers.latin.hello}%, Hi가 ${LETTER_STATS.openers.latin.hi}%, Hey가 ${LETTER_STATS.openers.latin.hey}%**였고, 편지다운 "Dear"는 ${LETTER_STATS.openers.latin.dear}%뿐이었습니다. 한글 첫 편지 ${LETTER_STATS.openers.ko.n}통은 ${LETTER_STATS.openers.ko.annyeongAny}%가 "안녕"으로 시작했습니다. 둘에 하나는 같은 인사로 시작하니, **상대 말로 된 인사 한 줄**만으로도 첫 줄이 눈에 띕니다.
+
+## 20개 언어 인사말
+
+| 언어 | 인사 | 읽는 법 | 알아 둘 것 |
+|---|---|---|---|
+| 한국어 | 안녕하세요 / 안녕 | — | 처음엔 안녕하세요, 친해지면 안녕 |
+| 영어 | Hello / Hi | 헬로 / 하이 | Hi가 더 가볍다 |
+| 일본어 | こんにちは | 곤니치와 | 낮 인사. 아침은 おはよう(오하요) |
+| 중국어 | 你好 | 니하오 | 윗사람에겐 您好(닌하오) |
+| 스페인어 | ¡Hola! | 올라 | h는 소리 내지 않는다 |
+| 프랑스어 | Bonjour / Salut | 봉주르 / 살뤼 | Salut는 친구 사이 |
+| 독일어 | Hallo / Guten Tag | 할로 / 구텐 탁 | Guten Tag가 더 격식 |
+| 이탈리아어 | Ciao / Buongiorno | 차오 / 부온조르노 | Ciao는 친구 사이, 헤어질 때도 |
+| 포르투갈어 | Olá / Oi | 올라 / 오이 | 브라질에선 Oi를 많이 쓴다 |
+| 러시아어 | Здравствуйте / Привет | 즈드라스트부이쩨 / 프리베트 | 앞이 존댓말, 뒤가 반말 |
+| 튀르키예어 | Merhaba | 메르하바 | 누구에게나 무난 |
+| 베트남어 | Xin chào | 신 짜오 | 누구에게나 무난 |
+| 인도네시아어 | Halo / Hai | 할로 / 하이 | 시간대 인사 Selamat pagi(아침)도 많이 쓴다 |
+| 태국어 | สวัสดี | 사왓디 | 말하는 사람이 남자면 끝에 ครับ(크랍), 여자면 ค่ะ(카) |
+| 힌디어 | नमस्ते | 나마스테 | 두 손을 모으며 하는 인사 |
+| 아랍어 | مرحبا / السلام عليكم | 마르하바 / 앗살라무 알라이쿰 | 뒤의 인사엔 وعليكم السلام(와 알라이쿰 앗살람)으로 답한다 |
+| 필리핀어 | Kumusta | 쿠무스타 | "잘 지내?"라는 뜻 |
+| 폴란드어 | Dzień dobry / Cześć | 젠 도브리 / 체시치 | 앞이 격식, 뒤가 친구 사이 |
+| 스와힐리어 | Habari / Jambo | 하바리 / 잠보 | Habari는 "소식 어때?" |
+| 페르시아어 | سلام | 살람 | 누구에게나 무난 |
+
+## 처음 쓰는 편지 예시
+
+> नमस्ते! 안녕, 나는 서울에 사는 직장인이야. 오늘이 세계 인사의 날이라길래 모르는 사람에게 인사를 건네 보고 싶었어. 여긴 은행잎이 다 떨어져서 길이 노래. 너희 동네는 지금 어떤 계절이야? 오늘 너에게 인사한 사람이 나 말고 또 있었으면 좋겠다.
+
+첫 줄의 인사만 상대 말로 쓰고, 나머지는 내 말로 써도 됩니다. 편지 쓰는 화면의 번역 버튼이 상대 말로 바꿔 주고, 받는 사람은 「번역 보기」로 자기 말로 읽습니다.
+
+## 세계 인사의 날에 해 볼 것
+
+1. **하늘에 편지 한 통 띄우기** — 누가 받을지 모르는 편지. [발견에서 답장 받는 첫 편지 예시](/blog/first-letter-examples-discover)를 참고하세요.
+2. **오래 답장 못 한 친구에게 인사** — 짧아도 됩니다. [펜팔이 답장을 안 할 때](/blog/pen-pal-not-replying)에 다시 쓰는 법이 있습니다.
+3. **열 사람에게 인사하기** — 원래 취지대로. 편지 열 통이 아니어도 괜찮습니다.
+
+---
+
+*세계 인사의 날 다음 기념일 우표는 추수감사절입니다 — [추수감사절 감사 편지 쓰는 법](/blog/thanksgiving-letter-to-a-friend). 전체 일정은 [기념일 우표 달력](/blog/lettie-holiday-stamps-2026)에 있습니다.*
+`,
+        contentEn: `
+# World Hello Day: hello in 20 languages, and a letter to someone new
+
+**World Hello Day is every November 21.** Brothers Brian and Michael McCormack started it in 1973, after the Yom Kippur War, to encourage people to solve conflict by talking, and the idea is to greet at least ten people that day. It's a perfect day to send a first letter to a stranger. On Lettie, sending one letter between ${enUtc(holiday('p_ee112126').start)} and ${enUtc(holiday('p_ee112126').end)} earns a free World Hello Day stamp (${holiday('p_ee112126').artEn}).
+
+## How first letters on Lettie say hello
+
+In Lettie's letter statistics (${enDate(LETTER_STATS.asOf)}), of ${LETTER_STATS.openers.latin.n} first letters written in Latin script, **${LETTER_STATS.openers.latin.hello}% opened with "Hello", ${LETTER_STATS.openers.latin.hi}% with "Hi" and ${LETTER_STATS.openers.latin.hey}% with "Hey"**. The letter-like "Dear" opened just ${LETTER_STATS.openers.latin.dear}%. Of ${LETTER_STATS.openers.ko.n} first letters in Korean, ${LETTER_STATS.openers.ko.annyeongAny}% began with "annyeong". With half of all letters starting the same way, **one line of hello in their language** makes your opening stand out.
+
+## Hello in 20 languages
+
+| Language | Hello | Pronunciation | Good to know |
+|---|---|---|---|
+| Korean | 안녕하세요 / 안녕 | annyeonghaseyo / annyeong | The short form is for friends |
+| English | Hello / Hi | — | "Hi" is lighter |
+| Japanese | こんにちは | konnichiwa | A daytime greeting; mornings are おはよう (ohayō) |
+| Chinese | 你好 | nǐ hǎo | 您好 (nín hǎo) for elders |
+| Spanish | ¡Hola! | OH-la | The h is silent |
+| French | Bonjour / Salut | bon-ZHOOR / sa-LOO | Salut is for friends |
+| German | Hallo / Guten Tag | HA-lo / GOO-ten tahk | Guten Tag is more formal |
+| Italian | Ciao / Buongiorno | chow / bwon-JOR-no | Ciao is casual, and also means bye |
+| Portuguese | Olá / Oi | oh-LAH / oy | Oi is everywhere in Brazil |
+| Russian | Здравствуйте / Привет | ZDRAST-vooy-tye / pree-VYET | Formal, then casual |
+| Turkish | Merhaba | MEHR-ha-ba | Works with anyone |
+| Vietnamese | Xin chào | sin chow | Works with anyone |
+| Indonesian | Halo / Hai | HA-lo / hi | Time-of-day greetings like Selamat pagi (good morning) are common |
+| Thai | สวัสดี | sa-wat-DEE | Men add ครับ (khrap), women add ค่ะ (kha) |
+| Hindi | नमस्ते | na-ma-STAY | Often said with palms pressed together |
+| Arabic | مرحبا / السلام عليكم | MAR-ha-ban / as-sa-LAA-mu a-LAY-kum | Answer the second with وعليكم السلام (wa alaykum as-salaam) |
+| Filipino | Kumusta | koo-MOOS-ta | Means "how are you?" |
+| Polish | Dzień dobry / Cześć | jen DOB-ry / cheshch | Formal, then casual |
+| Swahili | Habari / Jambo | ha-BAH-ree / JAHM-bo | Habari means "what's the news?" |
+| Persian | سلام | sa-LAAM | Works with anyone |
+
+## A first letter to someone new
+
+> नमस्ते! I'm an office worker in Seoul. Today is World Hello Day, so I wanted to say hello to someone I don't know yet. The ginkgo leaves have all fallen here and the streets are yellow. What season is it where you are? I hope I'm not the only one who said hello to you today.
+
+Write just the greeting in their language and the rest in yours. The translate button on the writing screen turns it into their language, and they can tap "Show translation" to read it in their own.
+
+## Three things to do on World Hello Day
+
+1. **Float one letter into the sky** — to someone you don't know yet. See [first-letter examples](/en/blog/first-letter-examples-discover).
+2. **Say hello to a pen pal who went quiet** — short is fine. See [pen pal not replying?](/en/blog/pen-pal-not-replying)
+3. **Greet ten people** — the original idea. They don't all have to be letters.
+
+---
+
+*Next on the holiday stamp calendar is Thanksgiving — see [how to write a Thanksgiving letter](/en/blog/thanksgiving-letter-to-a-friend). The full schedule is in the [holiday stamp calendar](/en/blog/lettie-holiday-stamps-2026).*
+`,
+    },
+    'lunar-new-year-letter': {
+        id: 'lunar-new-year-letter',
+        title: '설날·춘절·뗏에 보내는 새해 편지 — 나라별 인사말과 예시 (2027)',
+        titleEn: 'Lunar New Year letter to a friend: greetings for Seollal, Spring Festival and Tết (2027)',
+        seoTitle: '설날·춘절·뗏 인사말과 새해 편지 예시 — 2027년 2월 6일',
+        seoTitleEn: 'Lunar New Year 2027 Greetings and a Letter to a Friend',
+        description: '2027년 음력 설은 2월 6일, 양의 해입니다. 한국 설날·중국 춘절·베트남 뗏·싱가포르와 말레이시아의 인사말과 풍습, 이름을 부를 때 조심할 점, 한·영 예시 편지, 레티 설날 우표 받는 법.',
+        descriptionEn: 'Lunar New Year 2027 falls on February 6, the Year of the Goat. Greetings and customs for Korea, China, Vietnam, Singapore and Malaysia, what to call the holiday, an example letter and the Lettie stamp.',
+        date: '2026-10-20',
+        readTime: '6분',
+        readTimeEn: '6 min',
+        category: '편지 쓰기',
+        categoryEn: 'Letter writing',
+        image: '/v2/lunar-new-year-hero.jpg',
+        author: 'Lettie',
+        keywords: ['설날 인사 외국어', '춘절 인사말', '중국 설날 인사', '베트남 설날 뗏', '2027 설날', '새해 복 많이 받으세요 중국어'],
+        keywordsEn: ['Lunar New Year 2027', 'Lunar New Year greetings', 'Chinese New Year greetings', 'Seollal greeting', 'Tet greeting Vietnamese', 'Lunar New Year letter'],
+        faq: [
+            { q: '2027년 설날은 언제인가요?', a: '음력 1월 1일인 2027년 2월 6일입니다. 정미년, 양(염소)의 해입니다.' },
+            { q: '중국어·베트남어로 새해 인사는 어떻게 하나요?', a: '중국어는 新年快乐(신녠 콰이러)나 恭喜发财(궁시파차이), 광둥어는 恭喜發財(쿵헤이팟초이), 베트남어는 Chúc mừng năm mới(쭉 믕 남 머이)입니다.' },
+            { q: '레티 설날 우표는 어떻게 받나요?', a: `${koKst(holiday('p_ee020627').start)}부터 ${koKst(holiday('p_ee020627').end)}까지(한국 시간) 편지를 한 통 보내면 무료로 한 장 들어옵니다.` },
+        ],
+        faqEn: [
+            { q: 'When is Lunar New Year 2027?', a: 'February 6, 2027, the first day of the lunar calendar. It begins the Year of the Goat (or Sheep).' },
+            { q: 'How do you say Happy New Year in Chinese, Korean and Vietnamese?', a: 'Mandarin 新年快乐 (xīnnián kuàilè) or 恭喜发财 (gōngxǐ fācái), Cantonese 恭喜發財 (kung hei fat choi), Korean 새해 복 많이 받으세요 (saehae bok mani badeuseyo), Vietnamese Chúc mừng năm mới.' },
+            { q: 'How do I get the Lettie Lunar New Year stamp?', a: `Send one letter between ${enUtc(holiday('p_ee020627').start)} and ${enUtc(holiday('p_ee020627').end)} and a free stamp arrives.` },
+        ],
+        content: `
+# 설날·춘절·뗏에 보내는 새해 편지
+
+**2027년 음력 설은 2월 6일**, 정미년 양(염소)의 해가 시작됩니다. 한국은 설날, 중국은 춘절, 베트남은 뗏(Tết)이라 부르고 싱가포르·말레이시아에서도 크게 쇱니다. 레티(Lettie)에서는 ${koKst(holiday('p_ee020627').start)}부터 ${koKst(holiday('p_ee020627').end)}까지(한국 시간) 편지 한 통을 보내면 설날 우표(${holiday('p_ee020627').artKo})를 무료로 받습니다.
+
+## 나라별 인사말과 풍습
+
+| 어디 | 인사 | 이맘때 |
+|---|---|---|
+| 한국 설날 | 새해 복 많이 받으세요 | 어른께 세배하고 세뱃돈을 받습니다. 떡국을 먹으면 한 살 더 먹는다고 합니다 |
+| 중국·대만 춘절 | 新年快乐(신녠 콰이러) · 恭喜发财(궁시파차이, 부자 되세요) | 섣달그믐 밤에 온 가족이 모여 저녁(年夜饭)을 먹고, 붉은 봉투(红包)에 돈을 넣어 줍니다. 귀성 행렬(春运)이 세계에서 가장 큰 이동으로 꼽힙니다 |
+| 홍콩 | 恭喜發財(쿵헤이팟초이, 광둥어) | 꽃시장과 붉은 봉투(利是) |
+| 베트남 뗏 | Chúc mừng năm mới(쭉 믕 남 머이) | 세뱃돈 lì xì, 네모난 찹쌀떡 bánh chưng, 북부는 복숭아꽃, 남부는 노란 매화(hoa mai) |
+| 싱가포르·말레이시아 | Gong Xi Fa Cai(궁시파차이) | 여럿이 젓가락으로 생선회 샐러드를 높이 버무리는 로헤이(撈起) |
+
+## 이름을 부를 때
+
+같은 명절이라도 나라마다 이름이 다릅니다. 한국 친구에게는 「설날」, 베트남 친구에게는 「Tết」, 중국 친구에게는 「春节(춘절)」처럼 **상대가 부르는 이름**으로 써 주세요. 영어로는 "Lunar New Year"가 무난하고, 중국 친구에게는 "Chinese New Year"나 "Spring Festival"도 자연스럽습니다. 잘 모르겠다면 "너희는 이 명절을 뭐라고 불러?"라고 물어보는 것도 좋은 편지 거리입니다.
+
+## 예시 편지
+
+> 새해 복 많이 받으세요! 新年快乐! 여긴 어제 온 가족이 모여 떡국을 먹었어. 떡국을 먹으면 한 살 더 먹는 거라서, 나는 오늘부로 한 살 늘었어. 너희 집은 섣달그믐 밤에 뭘 먹어? 붉은 봉투에는 보통 얼마쯤 넣는지도 궁금해. 양의 해에는 좋은 일만 있길!
+
+영어로: *"Happy Lunar New Year! My whole family gathered yesterday for tteokguk, rice cake soup. In Korea, eating it means you're officially a year older, so I aged a year overnight. What does your family eat on New Year's Eve? I'm also curious how much usually goes into a red envelope. Wishing you a wonderful Year of the Goat!"*
+
+## 알아 둘 것
+
+- **설날 우표 안내 알림은 ${holiday('p_ee020627').countries!.join('·')} 사용자에게 갑니다.** 우표는 나라와 상관없이 누구나 받을 수 있습니다.
+- **같은 아시아 안이라면 편지는 보통 몇 시간 안에 닿습니다.** 한국에서 도쿄·타이베이·마닐라는 3~6시간, 하노이·방콕은 6~12시간 구간입니다([거리별 도착 시간](/blog/letter-delivery-time-by-distance)).
+- **양력 새해 편지**는 [외국 친구에게 새해 편지 쓰기](/blog/new-year-letter-to-a-pen-pal)에 있습니다.
+
+---
+
+*설날 다음 기념일 우표는 밸런타인데이입니다. 전체 일정은 [2026~2027 기념일 우표 달력](/blog/lettie-holiday-stamps-2026)에 있습니다.*
+`,
+        contentEn: `
+# Lunar New Year letter to a friend
+
+**Lunar New Year 2027 falls on February 6**, the start of the Year of the Goat (or Sheep). Korea calls it Seollal, China calls it the Spring Festival (春节), Vietnam calls it Tết, and it's a major holiday in Singapore and Malaysia too. On Lettie, sending one letter between ${enUtc(holiday('p_ee020627').start)} and ${enUtc(holiday('p_ee020627').end)} earns a free Lunar New Year stamp (${holiday('p_ee020627').artEn}).
+
+## Greetings and customs by country
+
+| Where | Greeting | The season |
+|---|---|---|
+| Korea (Seollal) | 새해 복 많이 받으세요 (saehae bok mani badeuseyo) | Bowing to elders (sebae) for New Year money; eating rice cake soup (tteokguk) makes you a year older |
+| China & Taiwan (Spring Festival) | 新年快乐 (xīnnián kuàilè) · 恭喜发财 (gōngxǐ fācái, "wishing you prosperity") | A family reunion dinner on New Year's Eve and red envelopes (hóngbāo); the travel rush (chūnyùn) is often called the largest annual migration on Earth |
+| Hong Kong | 恭喜發財 (kung hei fat choi, Cantonese) | Flower markets and red packets (lai see) |
+| Vietnam (Tết) | Chúc mừng năm mới | Lucky money (lì xì), square sticky rice cakes (bánh chưng), peach blossoms in the north and yellow apricot blossoms (hoa mai) in the south |
+| Singapore & Malaysia | Gong Xi Fa Cai | Lo hei: tossing a raw-fish salad high with chopsticks, together |
+
+## What to call the holiday
+
+The same holiday goes by different names. Call it what your friend calls it: "Seollal" for a Korean friend, "Tết" for a Vietnamese friend, "Spring Festival" or "Chinese New Year" for a friend in China. "Lunar New Year" is a safe default in English, and "What do you call this holiday?" is a good question for a letter in itself.
+
+## Example letter
+
+> Happy Lunar New Year! My whole family gathered yesterday for tteokguk, rice cake soup. In Korea, eating it means you're officially a year older, so I aged a year overnight. What does your family eat on New Year's Eve? I'm also curious how much usually goes into a red envelope. Wishing you a wonderful Year of the Goat!
+
+## Good to know
+
+- **The Lunar New Year stamp reminder goes to people in ${holiday('p_ee020627').countries!.join(', ')}**, but anyone anywhere can earn the stamp.
+- **Within Asia, letters usually arrive within hours.** From Seoul, Tokyo, Taipei and Manila are in the 3–6 hour band; Hanoi and Bangkok are 6–12 hours ([delivery time by distance](/en/blog/letter-delivery-time-by-distance)).
+- **For January 1**, see [New Year letter to a pen pal](/en/blog/new-year-letter-to-a-pen-pal).
+
+---
+
+*After Lunar New Year comes the Valentine's Day stamp. The full schedule is in the [2026–2027 holiday stamp calendar](/en/blog/lettie-holiday-stamps-2026).*
+`,
+    },
+    'how-to-end-a-letter-to-a-pen-pal': {
+        id: 'how-to-end-a-letter-to-a-pen-pal',
+        title: '펜팔 편지 끝인사 쓰는 법 — 영어 맺음말 25개와 실제 편지 데이터',
+        titleEn: 'How to end a letter to a pen pal: 25 sign-offs and how real letters end',
+        seoTitle: '편지 끝인사·맺음말 쓰는 법 — 영어 표현 25개와 예시',
+        seoTitleEn: 'How to End a Letter to a Pen Pal: 25 Sign-offs',
+        description: `레티 영어 편지 ${LETTER_ENDINGS.en.n}통 중 ${LETTER_ENDINGS.en.none}%는 끝인사 없이 끝났습니다. 마지막 세 줄(질문·따뜻한 한 줄·맺음말)로 편지를 닫는 법, 영어 맺음말 25개, 한국어 끝인사, 피해야 할 것.`,
+        descriptionEn: `${LETTER_ENDINGS.en.none}% of ${LETTER_ENDINGS.en.n} English letters on Lettie ended with no sign-off at all. How to close with three lines (a question, a warm line, a sign-off), 25 sign-offs by tone, and what to avoid.`,
+        date: '2026-10-20',
+        readTime: '5분',
+        readTimeEn: '5 min',
+        category: '편지 쓰기',
+        categoryEn: 'Letter writing',
+        image: '/v2/app-letter.png',
+        author: 'Lettie',
+        keywords: ['편지 끝인사', '편지 맺음말', '영어 편지 끝인사', '펜팔 편지 마무리', '편지 마지막 인사', '영어 편지 맺음말 표현'],
+        keywordsEn: ['how to end a letter to a pen pal', 'letter sign-offs', 'how to end a letter to a friend', 'letter closings', 'pen pal letter ending', 'friendly letter closing'],
+        faq: [
+            { q: '펜팔 편지는 어떻게 끝내면 좋나요?', a: '상대가 답할 질문 하나, 따뜻한 한 줄, 맺음말과 이름 — 이 세 줄이면 됩니다. 예: "너희 동네는 지금 무슨 계절이야? 오늘도 좋은 하루 보내. Take care, 민지"' },
+            { q: '영어 편지 맺음말은 뭐가 무난한가요?', a: '펜팔에게는 Take care, Talk soon, Best wishes, Warm wishes가 무난합니다. Sincerely·Kind regards는 업무 편지 느낌이고, Love·Hugs는 친해진 뒤에 쓰는 편이 좋습니다.' },
+            { q: '실제 편지는 어떻게 끝나나요?', a: `레티 편지 데이터(${LETTER_ENDINGS.asOf})로 영어 편지 ${LETTER_ENDINGS.en.n}통 중 ${LETTER_ENDINGS.en.none}%는 끝인사가 없었고, ${LETTER_ENDINGS.en.question}%는 질문으로, ${LETTER_ENDINGS.en.nameSign}%는 이름으로 끝났습니다.` },
+        ],
+        faqEn: [
+            { q: 'How should I end a letter to a pen pal?', a: 'Three lines: a question for them to answer, one warm line, and a sign-off with your name. For example: "What season is it where you are now? Have a lovely week. Take care, Minji"' },
+            { q: 'What sign-off works for a pen pal?', a: 'Take care, Talk soon, Best wishes and Warm wishes all work. Sincerely and Kind regards feel like work email; save Love and Hugs for once you know each other well.' },
+            { q: 'How do real pen pal letters end?', a: `In Lettie letter data (${LETTER_ENDINGS.asOf}), ${LETTER_ENDINGS.en.none}% of ${LETTER_ENDINGS.en.n} English letters had no sign-off, ${LETTER_ENDINGS.en.question}% ended with a question and ${LETTER_ENDINGS.en.nameSign}% ended with the writer's name.` },
+        ],
+        content: `
+# 펜팔 편지 끝인사 쓰는 법
+
+펜팔 편지는 **질문 하나 → 따뜻한 한 줄 → 맺음말과 이름**, 이 세 줄로 닫으면 됩니다. 레티(Lettie) 편지를 세어 보니 끝인사를 쓰는 사람은 생각보다 적었습니다. 마지막 세 줄만 챙겨도 편지가 눈에 띄게 편지다워집니다.
+
+## 실제 편지는 어떻게 끝날까
+
+레티 운영 데이터(${koDate(LETTER_ENDINGS.asOf)}, 사람이 쓴 40자 이상 편지의 마지막 80자)를 셌습니다.
+
+| 끝맺음 | 영어 편지 ${LETTER_ENDINGS.en.n}통 | 한글 편지 ${LETTER_ENDINGS.ko.n}통 |
+|---|---|---|
+| 끝인사 없이 끝남 | ${LETTER_ENDINGS.en.none}% | ${LETTER_ENDINGS.ko.none}% |
+| 질문으로 끝남 | ${LETTER_ENDINGS.en.question}% | ${LETTER_ENDINGS.ko.question}% |
+| 답장 기다림 (looking forward… / 답장 기다릴게) | ${LETTER_ENDINGS.en.lookingForward}% | ${LETTER_ENDINGS.ko.askReply}% |
+| 좋은 하루 보내 | ${LETTER_ENDINGS.en.niceDay}% | ${LETTER_ENDINGS.ko.niceDay}% |
+| 고마워 | ${LETTER_ENDINGS.en.thanks}% | ${LETTER_ENDINGS.ko.thanks}% |
+| Take care | ${LETTER_ENDINGS.en.takeCare}% | — |
+| Best wishes·Regards 같은 맺음말 | ${LETTER_ENDINGS.en.regards}% | — |
+| 이름으로 서명 | ${LETTER_ENDINGS.en.nameSign}% | ${LETTER_ENDINGS.ko.nameSign}% |
+
+한 편지가 여러 갈래에 들 수 있어 합은 100%가 넘습니다. 영어 편지 10통 중 6통이 그냥 끝나고, 맺음말과 이름까지 쓴 편지는 열에 하나도 안 됩니다. 메신저처럼 쓰는 습관 때문일 겁니다.
+
+## 마지막 세 줄
+
+1. **질문 하나** — 상대가 답장을 시작할 자리를 남깁니다. "너희 동네는 지금 무슨 계절이야?"
+2. **따뜻한 한 줄** — "오늘도 좋은 하루 보내", "감기 조심해".
+3. **맺음말과 이름** — "Take care, 민지". 이름 한 단어가 편지를 편지로 만듭니다.
+
+## 영어 맺음말 25개
+
+| 맺음말 | 느낌 |
+|---|---|
+| Take care, | 가장 무난 |
+| Talk soon, | 가볍고 친근 |
+| Write soon, | 답장을 기다린다는 뜻을 부드럽게 |
+| Looking forward to your next letter, | 정성스럽게 |
+| Can't wait to hear from you, | 반가움을 크게 |
+| Until next time, | 다음 편지를 기약 |
+| Best wishes, | 처음 편지에도 무난 |
+| All the best, | 무난 |
+| Warm wishes, | 따뜻하게 |
+| Warmly, | 짧고 따뜻하게 |
+| Cheers, | 영국·호주식 가벼운 인사 |
+| Stay well, | 안부를 담아 |
+| Stay warm, | 겨울에 |
+| Have a lovely week, | 요일을 바꿔 쓰기 좋다 |
+| Wishing you a great day, | 밝게 |
+| Sending good vibes from Seoul, | 도시 이름만 바꿔 쓰기 |
+| Greetings from Korea, | 나라 이름을 넣어 |
+| Your friend from Busan, | 몇 통 주고받은 뒤 |
+| Your pen pal, | 펜팔다운 서명 |
+| Keep in touch, | 오래 이어 가자는 뜻 |
+| With gratitude, | 고마운 일이 있었을 때 |
+| Bye for now, | 아주 가볍게 |
+| Hugs, | 친해진 뒤에 |
+| Love, | 아주 친해진 뒤에 |
+| Kind regards, | 격식 — 펜팔에겐 딱딱하게 느껴질 수 있다 |
+
+## 한국어 끝인사
+
+- 친구에게: "좋은 하루 보내!", "답장 기다릴게", "또 편지할게", "감기 조심해", 그리고 "민지가" 또는 "민지 씀"
+- 처음이거나 윗사람에게: "좋은 하루 보내세요", "건강하세요", 그리고 "민지 드림"
+
+## 피해야 할 것
+
+- **처음 편지에 Love·Hugs** — 친해지기 전엔 부담스러울 수 있습니다.
+- **"빨리 답장해 줘"** — 재촉으로 읽힙니다. "천천히 답해도 돼"가 낫습니다.
+- **서명에 연락처 넣기** — 전화번호·메신저 아이디는 편지에 쓰지 마세요. [펜팔 안전 가이드](/blog/pen-pal-safety-guide)를 참고하세요.
+
+## 예시
+
+> …그래서 이번 주말엔 처음으로 김장을 도와 봤어. 너희 집에도 겨울을 준비하는 음식이 있어? 추워지는데 따뜻하게 지내.
+> Take care,
+> 민지
+
+---
+
+*편지 첫 줄은 [펜팔 첫 편지 쓰는 법](/blog/how-to-start-penpal)에, 무엇을 쓸지는 [펜팔에게 무엇을 쓸까](/blog/what-to-write-to-a-pen-pal)에 있습니다. 숫자는 [레티 편지 통계](/letter-stats)와 같은 기준(AI·운영자·시험 계정 제외)으로 셌고, 편지 내용은 공개하지 않습니다.*
+`,
+        contentEn: `
+# How to end a letter to a pen pal
+
+Close a pen pal letter with three lines: **a question → one warm line → a sign-off and your name**. When we counted how letters on Lettie actually end, far fewer people sign off than you might think, so those last three lines make a letter feel like a letter.
+
+## How real letters end
+
+We counted the last 80 characters of every human-written letter over 40 characters in Lettie's data (${enDate(LETTER_ENDINGS.asOf)}).
+
+| Ending | ${LETTER_ENDINGS.en.n} English letters | ${LETTER_ENDINGS.ko.n} Korean letters |
+|---|---|---|
+| No sign-off at all | ${LETTER_ENDINGS.en.none}% | ${LETTER_ENDINGS.ko.none}% |
+| Ends with a question | ${LETTER_ENDINGS.en.question}% | ${LETTER_ENDINGS.ko.question}% |
+| Waiting for a reply ("looking forward…") | ${LETTER_ENDINGS.en.lookingForward}% | ${LETTER_ENDINGS.ko.askReply}% |
+| "Have a nice day" | ${LETTER_ENDINGS.en.niceDay}% | ${LETTER_ENDINGS.ko.niceDay}% |
+| Thanks | ${LETTER_ENDINGS.en.thanks}% | ${LETTER_ENDINGS.ko.thanks}% |
+| Take care | ${LETTER_ENDINGS.en.takeCare}% | — |
+| Best wishes, Regards and similar | ${LETTER_ENDINGS.en.regards}% | — |
+| Signed with a name | ${LETTER_ENDINGS.en.nameSign}% | ${LETTER_ENDINGS.ko.nameSign}% |
+
+A letter can fall into more than one row, so columns add up to more than 100%. Six in ten English letters simply stop, and fewer than one in ten signs off with a name. Messaging-app habits, probably.
+
+## The last three lines
+
+1. **One question** — it gives them a place to start their reply. "What season is it where you are?"
+2. **One warm line** — "Have a lovely week." "Stay warm."
+3. **A sign-off and your name** — "Take care, Minji." One word of name turns a message into a letter.
+
+## 25 sign-offs
+
+| Sign-off | Tone |
+|---|---|
+| Take care, | The safest choice |
+| Talk soon, | Light and friendly |
+| Write soon, | A gentle "please reply" |
+| Looking forward to your next letter, | Thoughtful |
+| Can't wait to hear from you, | Excited |
+| Until next time, | Looking ahead |
+| Best wishes, | Fine even for a first letter |
+| All the best, | Neutral |
+| Warm wishes, | Warm |
+| Warmly, | Short and warm |
+| Cheers, | Casual, British or Australian flavour |
+| Stay well, | Caring |
+| Stay warm, | For winter |
+| Have a lovely week, | Swap in any day |
+| Wishing you a great day, | Bright |
+| Sending good vibes from Seoul, | Swap in your city |
+| Greetings from Korea, | Swap in your country |
+| Your friend from Busan, | After a few letters |
+| Your pen pal, | Classic |
+| Keep in touch, | For the long run |
+| With gratitude, | When they did something kind |
+| Bye for now, | Very casual |
+| Hugs, | Once you're close |
+| Love, | Once you're very close |
+| Kind regards, | Formal; can feel stiff with a pen pal |
+
+## What to avoid
+
+- **Love or Hugs in a first letter** — it can feel like too much too soon.
+- **"Reply ASAP"** — it reads as pressure. "No rush" works better.
+- **Contact details in your signature** — keep phone numbers and messenger IDs out of letters. See our [pen pal safety guide](/en/blog/pen-pal-safety-guide).
+
+## Example
+
+> …so this weekend I helped make kimchi for the winter for the first time. Does your family make any food to get ready for winter? It's getting cold, so stay warm.
+> Take care,
+> Minji
+
+---
+
+*For opening lines, see [how to start a pen pal letter](/en/blog/how-to-start-penpal); for what to write, see [what to write to a pen pal](/en/blog/what-to-write-to-a-pen-pal). The numbers use the same rules as [Lettie letter statistics](/en/letter-stats) (AI, operator and test accounts excluded), and no letter text is published.*
 `,
     },
 };

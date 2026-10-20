@@ -15,7 +15,7 @@ export const TOPICS: string[][] = [
     'apps-to-make-friends-online', 'no-photo-dating-pixel-character'],
   // 시작하기·편지 쓰기
   ['what-is-a-pen-pal', 'how-to-start-penpal', 'first-letter-examples-discover', 'what-to-write-to-a-pen-pal', 'how-to-find-a-pen-pal',
-    'keep-a-pen-pal-conversation-going', 'pen-pal-not-replying', 'letter-delivery-time-by-distance'],
+    'keep-a-pen-pal-conversation-going', 'pen-pal-not-replying', 'how-to-end-a-letter-to-a-pen-pal', 'letter-delivery-time-by-distance'],
   // 언어·문화
   ['language-exchange-tips', 'pen-pal-for-language-learning', 'korean-pen-pals', 'japanese-pen-pals', 'writing-across-languages',
     'language-exchange-friendship', 'penpal-culture-guide', 'cultural-understanding-global-etiquette', 'international-friendship-guide',
@@ -23,7 +23,8 @@ export const TOPICS: string[][] = [
   // 우표·여권·기념일 (2026-10-18)
   ['lettie-passport-guide', 'lettie-stamps-guide', 'lettie-holiday-stamps-2026', 'penpal-app-with-translation'],
   // 기념일 편지 (2026-10-18)
-  ['halloween-letter-to-pen-pal', 'diwali-wishes-for-friends', 'thanksgiving-letter-to-a-friend', 'christmas-letter-to-a-pen-pal'],
+  ['halloween-letter-to-pen-pal', 'diwali-wishes-for-friends', 'world-hello-day-letter', 'thanksgiving-letter-to-a-friend', 'christmas-letter-to-a-pen-pal',
+    'new-year-letter-to-a-pen-pal', 'lunar-new-year-letter'],
   // 안전
   ['pen-pal-safety-guide'],
   // 느린 삶·수필
