@@ -24,7 +24,7 @@ export const TOPICS: string[][] = [
   ['lettie-passport-guide', 'lettie-stamps-guide', 'lettie-holiday-stamps-2026', 'penpal-app-with-translation'],
   // 기념일 편지 (2026-10-18)
   ['halloween-letter-to-pen-pal', 'diwali-wishes-for-friends', 'world-hello-day-letter', 'thanksgiving-letter-to-a-friend', 'christmas-letter-to-a-pen-pal',
-    'new-year-letter-to-a-pen-pal', 'lunar-new-year-letter'],
+    'new-year-letter-to-a-pen-pal', 'handwriting-day-letter', 'lunar-new-year-letter', 'valentines-letter-to-a-friend', 'cat-day-letter'],
   // 안전
   ['pen-pal-safety-guide'],
   // 느린 삶·수필
