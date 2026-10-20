@@ -37,6 +37,10 @@ export const LETTER_ENDINGS = {
   ko: { n: 102, question: 17, niceDay: 15, askReply: 12, thanks: 9, nameSign: 2, none: 54 },
 };
 
+/** 고양이·강아지 이야기와 사진 동봉 (1차 소스, 2026-10-20) — scripts/seo/letter-pets.sql, 여러 언어 낱말로 센 대략값 */
+export const LETTER_PETS = { asOf: '2026-10-20', letters: 1099, cat: 35, dog: 10 };
+export const LETTER_PHOTOS = { asOf: '2026-10-20', since: '2026-09-15', letters: 844, withPhoto: 51 };
+
 export const WEEKDAY_EN = ['', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 export const WEEKDAY_KO = ['', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일', '일요일'];
 /** 가장 많이 쓴 요일 */

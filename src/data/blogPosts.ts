@@ -1,6 +1,6 @@
 import { APP_LANGUAGES, FACTS, HOLIDAY_STAMPS, PASSPORT_STATS, PASSPORT_TITLES, enDate, enUtc, holiday, koDate, koKst } from '@/data/facts';
 import { LETTER_MAP } from '@/data/letterMap';
-import { LETTER_ENDINGS, LETTER_STATS } from '@/data/letterStats';
+import { LETTER_ENDINGS, LETTER_PETS, LETTER_PHOTOS, LETTER_STATS } from '@/data/letterStats';
 
 export type BlogPost = {
     id: string;
@@ -6033,6 +6033,9 @@ ${HOLIDAY_STAMPS.map((h) => `| ${h.ko} | ${koKst(h.start)} ~ ${koKst(h.end)} | $
 - [외국 친구에게 크리스마스 편지 쓰기](/blog/christmas-letter-to-a-pen-pal) — 영어 문구 20개와 도착 시간 맞추기
 - [외국 친구에게 새해 편지 쓰기](/blog/new-year-letter-to-a-pen-pal) — 20개 언어 새해 인사
 - [설날·춘절·뗏에 보내는 새해 편지](/blog/lunar-new-year-letter) — 나라별 인사말
+- [손글씨의 날](/blog/handwriting-day-letter) — 펜팔과 손글씨를 주고받는 5가지 방법
+- [친구에게 보내는 밸런타인 편지](/blog/valentines-letter-to-a-friend) — 우정의 날로 쇠는 나라들
+- [고양이의 날](/blog/cat-day-letter) — 나라별 날짜와 고양이 편지
 
 ---
 
@@ -6072,6 +6075,9 @@ ${HOLIDAY_STAMPS.map((h) => `| ${h.en} | ${enUtc(h.start)} – ${enUtc(h.end)} |
 - [Christmas letter to a pen pal](/en/blog/christmas-letter-to-a-pen-pal) — 20 phrases and timing it to arrive on the 25th
 - [New Year letter to a pen pal](/en/blog/new-year-letter-to-a-pen-pal) — Happy New Year in 20 languages
 - [Lunar New Year letter](/en/blog/lunar-new-year-letter) — greetings for Seollal, Spring Festival and Tết
+- [National Handwriting Day](/en/blog/handwriting-day-letter) — 5 ways to share handwriting
+- [Valentine's letter to a friend](/en/blog/valentines-letter-to-a-friend) — where February 14 is Friendship Day
+- [Cat Day](/en/blog/cat-day-letter) — dates by country and a letter about your cat
 
 ---
 
@@ -6753,7 +6759,7 @@ Lettie's Discover shows **newly floated letters first on their first day**; if a
 
 ---
 
-*새해 다음 기념일 우표는 손글씨의 날(1월 23일 무렵)입니다. 전체 일정은 [2026~2027 기념일 우표 달력](/blog/lettie-holiday-stamps-2026)에 있습니다.*
+*새해 다음 기념일 우표는 [손글씨의 날](/blog/handwriting-day-letter)(1월 23일 무렵)입니다. 전체 일정은 [2026~2027 기념일 우표 달력](/blog/lettie-holiday-stamps-2026)에 있습니다.*
 `,
         contentEn: `
 # New Year letter to a pen pal
@@ -6815,7 +6821,7 @@ New Year arrives at different times. Kiribati's Line Islands see it first; Seoul
 
 ---
 
-*After New Year comes the Handwriting Day stamp (around January 23). The full schedule is in the [2026–2027 holiday stamp calendar](/en/blog/lettie-holiday-stamps-2026).*
+*After New Year comes the [Handwriting Day](/en/blog/handwriting-day-letter) stamp (around January 23). The full schedule is in the [2026–2027 holiday stamp calendar](/en/blog/lettie-holiday-stamps-2026).*
 `,
     },
     'world-hello-day-letter': {
@@ -7006,7 +7012,7 @@ Write just the greeting in their language and the rest in yours. The translate b
 
 ---
 
-*설날 다음 기념일 우표는 밸런타인데이입니다. 전체 일정은 [2026~2027 기념일 우표 달력](/blog/lettie-holiday-stamps-2026)에 있습니다.*
+*설날 다음 기념일 우표는 밸런타인데이입니다 — [친구에게 보내는 밸런타인 편지](/blog/valentines-letter-to-a-friend). 전체 일정은 [2026~2027 기념일 우표 달력](/blog/lettie-holiday-stamps-2026)에 있습니다.*
 `,
         contentEn: `
 # Lunar New Year letter to a friend
@@ -7039,7 +7045,7 @@ The same holiday goes by different names. Call it what your friend calls it: "Se
 
 ---
 
-*After Lunar New Year comes the Valentine's Day stamp. The full schedule is in the [2026–2027 holiday stamp calendar](/en/blog/lettie-holiday-stamps-2026).*
+*After Lunar New Year comes the Valentine's Day stamp — see [a Valentine's letter to a friend](/en/blog/valentines-letter-to-a-friend). The full schedule is in the [2026–2027 holiday stamp calendar](/en/blog/lettie-holiday-stamps-2026).*
 `,
     },
     'how-to-end-a-letter-to-a-pen-pal': {
@@ -7221,6 +7227,348 @@ A letter can fall into more than one row, so columns add up to more than 100%. S
 ---
 
 *For opening lines, see [how to start a pen pal letter](/en/blog/how-to-start-penpal); for what to write, see [what to write to a pen pal](/en/blog/what-to-write-to-a-pen-pal). The numbers use the same rules as [Lettie letter statistics](/en/letter-stats) (AI, operator and test accounts excluded), and no letter text is published.*
+`,
+    },
+    'valentines-letter-to-a-friend': {
+        id: 'valentines-letter-to-a-friend',
+        title: '친구에게 보내는 밸런타인 편지 — 2월 14일을 우정의 날로 쇠는 나라들과 예시',
+        titleEn: "Valentine's letter to a friend: where February 14 is Friendship Day, plus an example",
+        seoTitle: '친구에게 밸런타인 편지 — 우정의 날로 쇠는 나라와 예시',
+        seoTitleEn: "Valentine's Letter to a Friend: Friendship Day Ideas",
+        description: '밸런타인데이는 친구에게 고마움을 전하는 날이기도 합니다. 핀란드·에스토니아의 우정의 날, 멕시코의 사랑과 우정의 날, 일본의 친구 초콜릿, 친구에게 쓰는 편지 구조와 한·영 예시, 레티 밸런타인 우표.',
+        descriptionEn: "Valentine's Day is also a day to thank a friend. Friendship Day in Finland and Estonia, Mexico's Day of Love and Friendship, Japan's friend chocolate, how to write a friendship letter and the Lettie stamp.",
+        date: '2026-10-20',
+        readTime: '5분',
+        readTimeEn: '5 min',
+        category: '편지 쓰기',
+        categoryEn: 'Letter writing',
+        image: '/v2/friendship-letter-hero.jpg',
+        author: 'Lettie',
+        keywords: ['밸런타인데이 친구 편지', '친구에게 밸런타인', '우정 편지', '밸런타인 우정의 날', '친구 초콜릿 편지', '밸런타인 편지 예시'],
+        keywordsEn: ["Valentine's letter to a friend", "Valentine's message for a friend", 'friendship day February 14', "Galentine's Day letter", 'friendship letter example'],
+        faq: [
+            { q: '밸런타인데이에 친구에게 편지를 써도 되나요?', a: '네. 핀란드와 에스토니아는 2월 14일을 아예 「친구의 날」로 쇠고, 멕시코 등에서는 「사랑과 우정의 날」이라고 부릅니다. 일본에는 친구끼리 주고받는 초콜릿(토모초코)도 있습니다.' },
+            { q: '친구에게 쓰는 밸런타인 편지에는 뭘 쓰나요?', a: '고마웠던 순간 하나, 상대의 좋은 점 하나, 앞으로 함께하고 싶은 것 하나면 충분합니다. 막 알게 된 펜팔에게는 사랑 고백처럼 읽히는 표현을 피하세요.' },
+            { q: '레티 밸런타인 우표는 어떻게 받나요?', a: `${koKst(holiday('g_02145020').start)}부터 ${koKst(holiday('g_02145020').end)}까지(한국 시간) 편지를 한 통 보내면 무료로 한 장 들어옵니다.` },
+        ],
+        faqEn: [
+            { q: "Can I send a Valentine's letter to a friend?", a: "Yes. Finland and Estonia celebrate February 14 as Friend's Day, Mexico and other countries call it the Day of Love and Friendship, and in Japan friends swap “tomo-choco” (friend chocolate)." },
+            { q: "What should a Valentine's letter to a friend say?", a: 'One moment you were grateful for, one thing you like about them, and one thing you want to do together. With a pen pal you just met, avoid lines that read like a love letter.' },
+            { q: "How do I get the Lettie Valentine's stamp?", a: `Send one letter between ${enUtc(holiday('g_02145020').start)} and ${enUtc(holiday('g_02145020').end)} and a free stamp arrives.` },
+        ],
+        content: `
+# 친구에게 보내는 밸런타인 편지
+
+밸런타인데이는 **친구에게 고마움을 전하는 날**이기도 합니다. 핀란드와 에스토니아는 2월 14일을 아예 「친구의 날」로 쇱니다. 레티(Lettie)에서는 ${koKst(holiday('g_02145020').start)}부터 ${koKst(holiday('g_02145020').end)}까지(한국 시간) 편지 한 통을 보내면 밸런타인 우표(${holiday('g_02145020').artKo})를 무료로 받습니다.
+
+## 2월 14일을 우정의 날로 쇠는 곳
+
+| 어디 | 2월 14일 | 인사 |
+|---|---|---|
+| 핀란드 | 친구의 날(ystävänpäivä). 친구에게 카드를 보냅니다 | Hyvää ystävänpäivää! |
+| 에스토니아 | 친구의 날(sõbrapäev) | Head sõbrapäeva! |
+| 멕시코 등 중남미 | 사랑과 우정의 날(Día del Amor y la Amistad). 콜롬비아는 9월에 쇱니다 | ¡Feliz Día del Amor y la Amistad! |
+| 일본 | 친구끼리 주고받는 토모초코(友チョコ). 답례는 3월 14일 화이트데이 | 友チョコどうぞ! |
+| 미국 | 2월 13일을 친구끼리 챙기는 「갤런타인데이」라고 부르기도 합니다 | Happy Galentine's Day! |
+
+모든 나라·집에서 밸런타인데이를 쇠는 것은 아닙니다. "너희는 2월 14일에 뭐 해?"라고 먼저 물어보세요.
+
+## 친구에게 쓰는 세 줄
+
+1. **고마웠던 순간 하나** — "지난달 내가 시험 때문에 힘들다고 했을 때 네가 보내 준 편지".
+2. **상대의 좋은 점 하나** — "너는 늘 질문을 하나씩 남겨 줘서 답장 쓰기가 즐거워".
+3. **함께하고 싶은 것 하나** — "올해는 서로 동네 사진을 한 장씩 보내 보자".
+
+## 예시 편지
+
+> 우정의 날 축하해! 핀란드에선 오늘이 친구의 날이래서 너에게 편지를 쓰고 싶었어. 지난달 내가 시험 때문에 힘들다고 했을 때 네가 보내 준 편지, 아직도 가끔 꺼내 읽어. 너는 늘 질문을 하나씩 남겨 줘서 답장 쓰는 게 즐거워. 올해는 서로 동네 사진을 한 장씩 보내 볼까?
+
+영어로: *"Happy Friendship Day! In Finland today is Friend's Day, so I wanted to write to you. I still reread the letter you sent last month when I told you exams were wearing me down. You always leave me a question, which makes writing back a joy. Shall we swap a photo of our neighbourhoods this year?"*
+
+## 조심할 점
+
+- **막 알게 된 펜팔에게 사랑 고백처럼 읽히는 문장은 피하세요.** 번역을 거치면 더 진하게 읽힐 수 있습니다. "고마워", "네 편지가 좋아"면 충분합니다.
+- **답례를 기대하지 마세요.** 편지는 선물이지 교환이 아닙니다.
+- **화이트데이(3월 14일)에도 기념일 우표가 있습니다.** 안내 알림은 ${holiday('p_ee031427').countries!.join('·')} 사용자에게 갑니다.
+
+---
+
+*밸런타인 앞뒤 기념일은 [설날 편지](/blog/lunar-new-year-letter)와 [고양이의 날](/blog/cat-day-letter)입니다. 전체 일정은 [기념일 우표 달력](/blog/lettie-holiday-stamps-2026)에, 고마운 마음을 담는 법은 [추수감사절 감사 편지](/blog/thanksgiving-letter-to-a-friend)에 있습니다.*
+`,
+        contentEn: `
+# Valentine's letter to a friend
+
+Valentine's Day is also **a day to thank a friend**. In Finland and Estonia, February 14 is officially Friend's Day. On Lettie, sending one letter between ${enUtc(holiday('g_02145020').start)} and ${enUtc(holiday('g_02145020').end)} earns a free Valentine's stamp (${holiday('g_02145020').artEn}).
+
+## Where February 14 is about friendship
+
+| Where | February 14 | Greeting |
+|---|---|---|
+| Finland | Friend's Day (ystävänpäivä); people send cards to friends | Hyvää ystävänpäivää! |
+| Estonia | Friend's Day (sõbrapäev) | Head sõbrapäeva! |
+| Mexico and much of Latin America | Day of Love and Friendship (Día del Amor y la Amistad); Colombia marks it in September | ¡Feliz Día del Amor y la Amistad! |
+| Japan | Friends swap "tomo-choco" (友チョコ, friend chocolate); the return gift comes on White Day, March 14 | 友チョコどうぞ! |
+| United States | Some celebrate February 13 as "Galentine's Day", a day for friends | Happy Galentine's Day! |
+
+Not every country or family celebrates Valentine's Day. Ask first: "What do you do on February 14?"
+
+## Three lines for a friend
+
+1. **One moment you were grateful for** — "the letter you sent last month when exams were wearing me down".
+2. **One thing you like about them** — "you always leave me a question, so writing back is fun".
+3. **One thing to do together** — "let's each send a photo of our neighbourhood this year".
+
+## Example letter
+
+> Happy Friendship Day! In Finland today is Friend's Day, so I wanted to write to you. I still reread the letter you sent last month when I told you exams were wearing me down. You always leave me a question, which makes writing back a joy. Shall we swap a photo of our neighbourhoods this year?
+
+## A few cautions
+
+- **With a pen pal you just met, skip lines that read like a love letter.** Translation can make them sound stronger. "Thank you" and "I love your letters" are plenty.
+- **Don't expect anything back.** A letter is a gift, not a trade.
+- **White Day (March 14) has a holiday stamp too.** The reminder goes to people in ${holiday('p_ee031427').countries!.join(', ')}.
+
+---
+
+*The holidays around Valentine's are [Lunar New Year](/en/blog/lunar-new-year-letter) and [Cat Day](/en/blog/cat-day-letter). The full schedule is in the [holiday stamp calendar](/en/blog/lettie-holiday-stamps-2026); for thank-you letters, see [Thanksgiving letter to a friend](/en/blog/thanksgiving-letter-to-a-friend).*
+`,
+    },
+    'handwriting-day-letter': {
+        id: 'handwriting-day-letter',
+        title: '손글씨의 날(1월 23일) — 펜팔과 손글씨를 주고받는 5가지 방법',
+        titleEn: 'National Handwriting Day (January 23): 5 ways to share handwriting with a pen pal',
+        seoTitle: '손글씨의 날 1월 23일 — 펜팔과 손글씨 주고받는 법',
+        seoTitleEn: 'National Handwriting Day (Jan 23): Ideas for Pen Pals',
+        description: '1월 23일 손글씨의 날 — 유래, 나라마다 다른 글씨 문화(서예·書道·아랍 서예), 디지털 편지에 손글씨를 담는 5가지 방법(사진 동봉), 주소가 찍히지 않게 조심할 점, 레티 손글씨의 날 우표.',
+        descriptionEn: 'National Handwriting Day is January 23: where it came from, handwriting traditions around the world, 5 ways to put handwriting into a digital letter with one enclosed photo, and the Lettie stamp.',
+        date: '2026-10-20',
+        readTime: '5분',
+        readTimeEn: '5 min',
+        category: '편지 쓰기',
+        categoryEn: 'Letter writing',
+        image: '/v2/handwriting-day-hero.jpg',
+        author: 'Lettie',
+        keywords: ['손글씨의 날', '1월 23일 손글씨의 날', '손편지', '펜팔 손글씨', '세계 서예', '손글씨 편지'],
+        keywordsEn: ['National Handwriting Day', 'National Handwriting Day 2027', 'handwriting day activities', 'handwritten letter pen pal', 'handwriting around the world'],
+        faq: [
+            { q: '손글씨의 날은 언제, 왜 생겼나요?', a: '매년 1월 23일입니다. 미국 독립선언서에 크게 서명한 존 핸콕의 생일로, 1977년 미국 필기구 제조사 협회가 손글씨의 가치를 알리려고 정했습니다.' },
+            { q: '디지털 편지로 손글씨를 어떻게 보내나요?', a: '손으로 쓴 짧은 글을 사진으로 찍어 동봉하면 됩니다. 레티 편지에는 사진을 한 장(5MB 이하) 넣을 수 있습니다. 주소·전화번호가 찍히지 않게 하세요.' },
+            { q: '레티 손글씨의 날 우표는 어떻게 받나요?', a: `${koKst(holiday('p_ee012327').start)}부터 ${koKst(holiday('p_ee012327').end)}까지(한국 시간) 편지를 한 통 보내면 무료로 한 장 들어옵니다.` },
+        ],
+        faqEn: [
+            { q: 'When is National Handwriting Day and why?', a: 'Every January 23, the birthday of John Hancock, whose large signature on the US Declaration of Independence became famous. The Writing Instrument Manufacturers Association created the day in 1977.' },
+            { q: 'How can I share handwriting in a digital letter?', a: 'Write a few lines by hand, take a photo and enclose it. Lettie letters can carry one photo (up to 5MB). Keep addresses and phone numbers out of the shot.' },
+            { q: 'How do I get the Lettie Handwriting Day stamp?', a: `Send one letter between ${enUtc(holiday('p_ee012327').start)} and ${enUtc(holiday('p_ee012327').end)} and a free stamp arrives.` },
+        ],
+        content: `
+# 손글씨의 날 — 펜팔과 손글씨를 주고받는 5가지 방법
+
+**손글씨의 날은 매년 1월 23일**입니다. 미국 독립선언서에 큼직하게 서명한 존 핸콕의 생일로, 1977년 미국 필기구 제조사 협회가 정했습니다. 레티(Lettie) 편지는 화면으로 쓰지만, **손으로 쓴 몇 줄을 사진 한 장으로 동봉**하면 손편지의 온기를 그대로 보낼 수 있습니다. ${koKst(holiday('p_ee012327').start)}부터 ${koKst(holiday('p_ee012327').end)}까지(한국 시간) 편지 한 통을 보내면 손글씨의 날 우표(${holiday('p_ee012327').artKo})를 무료로 받습니다.
+
+## 손글씨를 주고받는 5가지 방법
+
+1. **내 이름을 내 글자로** — 한글, 한자, 아랍 문자, 데바나가리… 상대는 처음 보는 글자일 수 있습니다.
+2. **서로의 글자로 "안녕" 써 보기** — 상대 글자로 인사를 따라 써서 보내고, 상대는 내 글자로. 획순이 틀려도 그게 재미입니다.
+3. **숫자 1과 7 써 보기** — 유럽 대륙에서는 7에 가로줄을 긋고 1을 꺾어 쓰는 사람이 많습니다. 같은 숫자도 나라마다 다르게 생겼습니다.
+4. **집에 있는 오래된 손글씨** — 할머니의 요리법 쪽지, 어릴 적 일기장의 한 줄.
+5. **편지 한 통을 통째로 손으로** — 다 쓰고 사진을 찍어 동봉하고, 본문에는 같은 내용을 타자로 쳐 두면 상대가 번역해서 읽을 수 있습니다.
+
+레티 편지에는 **사진을 한 장(5MB 이하)** 넣을 수 있습니다. ${koDate(LETTER_PHOTOS.since)} 이후 쓴 편지 ${LETTER_PHOTOS.letters}통 중 사진이 든 편지는 ${LETTER_PHOTOS.withPhoto}통(${Math.round((LETTER_PHOTOS.withPhoto / LETTER_PHOTOS.letters) * 100)}%)뿐이라, 손글씨 사진 한 장은 그것만으로 눈에 띕니다.
+
+## 나라마다 다른 글씨 문화
+
+| 어디 | 글씨 문화 |
+|---|---|
+| 한국 | 붓으로 쓰는 서예, 그리고 요즘의 캘리그라피 |
+| 일본 | 서도(書道). 새해 첫 글씨를 쓰는 카키조메(書き初め) 풍습이 있습니다 |
+| 중국 | 서법(书法). 설날 문에 붙이는 춘련(春联)도 본래 붓으로 씁니다 |
+| 아랍권 | 아랍 서예. 글자를 그림처럼 엮어 씁니다 |
+| 유럽·미주 | 펜으로 쓰는 캘리그라피, 이어 쓰는 필기체(cursive) |
+
+일본 우체국은 매달 23일을 「편지의 날(ふみの日)」로 정해 두었습니다. 1월 23일은 손글씨의 날과 편지의 날이 겹치는 날입니다.
+
+## 조심할 점
+
+- **사진에 주소·전화번호·얼굴이 찍히지 않게** 하세요. 봉투나 공책 표지에 적힌 정보도 확인하세요. [펜팔 안전 가이드](/blog/pen-pal-safety-guide)
+- **손글씨는 번역이 안 됩니다.** 본문에 같은 내용을 타자로 한 번 더 적어 두세요.
+
+## 예시 편지
+
+> 오늘은 손글씨의 날이래! 그래서 내 이름을 한글로 써서 사진으로 동봉했어. 왼쪽부터 "민", "지"야. 너도 네 이름을 네 글자로 써서 보내 줄래? 그리고 7에 가로줄 긋는 거, 너희 나라도 그래?
+
+---
+
+*레티 편지 한 통은 글자 수 중앙값이 ${LETTER_STATS.length.median}자로, 손으로 쓰면 엽서 한 장 정도입니다. 숫자는 [레티 편지 통계](/letter-stats)에 있습니다. 다른 기념일은 [기념일 우표 달력](/blog/lettie-holiday-stamps-2026)에서 보세요.*
+`,
+        contentEn: `
+# National Handwriting Day: 5 ways to share handwriting with a pen pal
+
+**National Handwriting Day is every January 23**, the birthday of John Hancock, whose large signature on the US Declaration of Independence became famous. The Writing Instrument Manufacturers Association created the day in 1977. Lettie letters are written on screen, but **a few handwritten lines enclosed as one photo** carry the warmth of a handwritten letter. Send one letter between ${enUtc(holiday('p_ee012327').start)} and ${enUtc(holiday('p_ee012327').end)} and a free Handwriting Day stamp (${holiday('p_ee012327').artEn}) arrives.
+
+## 5 ways to share handwriting
+
+1. **Your name in your own script** — Hangul, Chinese characters, Arabic, Devanagari… it may be a script they've never seen.
+2. **Write "hello" in each other's script** — copy their greeting in their script, and they copy yours. Wrong stroke order is half the fun.
+3. **Write the numbers 1 and 7** — in much of continental Europe, people cross the 7 and give the 1 a long upstroke. The same number looks different around the world.
+4. **Old handwriting at home** — a grandparent's recipe card, a line from a childhood diary.
+5. **A whole letter by hand** — photograph it and enclose it, and type the same text in the body so they can translate it.
+
+Lettie letters can carry **one photo (up to 5MB)**. Of ${LETTER_PHOTOS.letters} letters written since ${enDate(LETTER_PHOTOS.since)}, only ${LETTER_PHOTOS.withPhoto} (${Math.round((LETTER_PHOTOS.withPhoto / LETTER_PHOTOS.letters) * 100)}%) had a photo, so a photo of your handwriting stands out on its own.
+
+## Handwriting traditions
+
+| Where | Tradition |
+|---|---|
+| Korea | Brush calligraphy (seoye) and modern lettering |
+| Japan | Shodō (書道); kakizome (書き初め), the first calligraphy of the new year |
+| China | Shūfǎ (书法); the couplets pasted on doors at Spring Festival are traditionally brush-written |
+| Arabic-speaking world | Arabic calligraphy, letters woven together like art |
+| Europe & the Americas | Pen calligraphy and cursive |
+
+Japan Post marks the 23rd of every month as "letter day" (ふみの日, fumi no hi), so January 23 is both Handwriting Day and letter day there.
+
+## A few cautions
+
+- **Keep addresses, phone numbers and faces out of the photo**, including what's written on envelopes and notebook covers. See our [pen pal safety guide](/en/blog/pen-pal-safety-guide).
+- **Handwriting can't be translated.** Type the same words in the body of the letter.
+
+## Example letter
+
+> It's Handwriting Day today! So I wrote my name in Hangul and enclosed a photo — from the left, it says "Min" and "ji". Would you write your name in your script for me? And do people cross their 7s where you live?
+
+---
+
+*The median Lettie letter is ${LETTER_STATS.length.median} characters, about one postcard by hand; the numbers are in [Lettie letter statistics](/en/letter-stats). Other holidays are in the [holiday stamp calendar](/en/blog/lettie-holiday-stamps-2026).*
+`,
+    },
+    'cat-day-letter': {
+        id: 'cat-day-letter',
+        title: '고양이의 날은 언제? 나라별 날짜와 펜팔에게 고양이 편지 쓰기',
+        titleEn: 'When is Cat Day? Dates by country, and writing to a pen pal about your cat',
+        seoTitle: '고양이의 날 언제? 나라별 날짜·여러 나라 말 "고양이"',
+        seoTitleEn: 'When Is Cat Day? Dates by Country + Cat in 15 Languages',
+        description: `고양이의 날은 나라마다 다릅니다 — 일본 2월 22일, 세계 고양이의 날 8월 8일, 미국 10월 29일, 러시아 3월 1일. 15개 언어 "고양이"와 울음소리, 레티 편지 ${LETTER_PETS.letters.toLocaleString('en-US')}통 속 고양이 vs 강아지, 고양이 소개 편지 예시.`,
+        descriptionEn: `Cat Day depends on where you are: February 22 in Japan, August 8 worldwide, October 29 in the US, March 1 in Russia. "Cat" and "meow" in 15 languages, cats vs dogs in ${LETTER_PETS.letters.toLocaleString('en-US')} Lettie letters, and an example letter.`,
+        date: '2026-10-20',
+        readTime: '5분',
+        readTimeEn: '5 min',
+        category: '편지 쓰기',
+        categoryEn: 'Letter writing',
+        image: '/v2/cat-day-hero.jpg',
+        author: 'Lettie',
+        keywords: ['고양이의 날', '고양이의 날 언제', '세계 고양이의 날', '일본 고양이의 날 2월 22일', '고양이 외국어', '고양이 울음소리 나라별'],
+        keywordsEn: ['when is cat day', 'International Cat Day', 'Japan cat day February 22', 'National Cat Day', 'cat in different languages', 'meow in different languages'],
+        faq: [
+            { q: '고양이의 날은 언제인가요?', a: '나라마다 다릅니다. 세계 고양이의 날은 8월 8일, 일본은 2월 22일(냥냥냥), 미국은 10월 29일, 러시아는 3월 1일입니다.' },
+            { q: '일본 고양이의 날이 2월 22일인 이유는?', a: '고양이 울음소리 「냥」이 일본어 숫자 2(니)와 비슷해 2·2·2를 「냥냥냥」으로 읽기 때문입니다. 1987년 정해졌습니다.' },
+            { q: '레티 고양이의 날 우표는 어떻게 받나요?', a: `${koKst(holiday('p_ee022227').start)}부터 ${koKst(holiday('p_ee022227').end)}까지(한국 시간) 편지를 한 통 보내면 무료로 한 장 들어옵니다.` },
+        ],
+        faqEn: [
+            { q: 'When is Cat Day?', a: 'It depends on the country: International Cat Day is August 8, Japan celebrates February 22, the US has National Cat Day on October 29, and Russia marks March 1.' },
+            { q: 'Why is Japan’s Cat Day February 22?', a: 'In Japanese, 2 (ni) sounds like a cat’s “nyan”, so 2/22 reads as “nyan nyan nyan”. The day was set in 1987.' },
+            { q: 'How do I get the Lettie Cat Day stamp?', a: `Send one letter between ${enUtc(holiday('p_ee022227').start)} and ${enUtc(holiday('p_ee022227').end)} and a free stamp arrives.` },
+        ],
+        content: `
+# 고양이의 날은 언제? 나라별 날짜와 고양이 편지
+
+고양이의 날은 **나라마다 다릅니다.** 세계 고양이의 날은 8월 8일, 일본은 2월 22일, 미국은 10월 29일, 러시아는 3월 1일입니다. 레티(Lettie) 고양이의 날 우표는 일본 날짜에 맞춰 ${koKst(holiday('p_ee022227').start)}부터 ${koKst(holiday('p_ee022227').end)}까지(한국 시간) 편지 한 통을 보내면 무료로 받습니다. 우표 그림은 ${holiday('p_ee022227').artKo}입니다.
+
+## 나라별 고양이의 날
+
+| 날짜 | 어디 | 유래 |
+|---|---|---|
+| 2월 22일 | 일본 | 숫자 2(니)가 울음소리 「냥」과 비슷해 「냥냥냥」. 1987년 정해졌습니다 |
+| 3월 1일 | 러시아 | 봄이 오는 3월을 고양이의 달로 여겨서 |
+| 8월 8일 | 세계 | 2002년 국제동물복지기금(IFAW)이 시작했습니다 |
+| 10월 29일 | 미국 | 보호소 고양이 입양을 알리려고 2005년 시작했습니다 |
+
+## 15개 언어 "고양이"와 울음소리
+
+| 언어 | 고양이 | 야옹 |
+|---|---|---|
+| 한국어 | 고양이 | 야옹 |
+| 영어 | cat | meow |
+| 일본어 | 猫 (네코) | ニャー (냐) |
+| 중국어 | 猫 (마오) | 喵 (먀오) |
+| 스페인어 | gato | miau |
+| 프랑스어 | chat | miaou |
+| 독일어 | Katze | miau |
+| 이탈리아어 | gatto | miao |
+| 러시아어 | кошка (코시카) | мяу (먀우) |
+| 튀르키예어 | kedi | miyav |
+| 베트남어 | mèo | meo meo |
+| 인도네시아어 | kucing | meong |
+| 태국어 | แมว (매우) | เหมียว (미야우) |
+| 힌디어 | बिल्ली (빌리) | म्याऊँ (먀운) |
+| 아랍어 | قطة (낏따) | مواء (무와) — 울음소리를 부르는 말 |
+
+## 레티 편지 속 고양이 vs 강아지
+
+레티 편지 ${LETTER_PETS.letters.toLocaleString('ko-KR')}통(${koDate(LETTER_PETS.asOf)}, 사람이 쓴 편지)을 여러 언어 낱말로 세어 보니 **고양이 이야기가 나온 편지는 ${LETTER_PETS.cat}통, 강아지는 ${LETTER_PETS.dog}통**이었습니다. 편지 속에서는 고양이가 ${(LETTER_PETS.cat / LETTER_PETS.dog).toFixed(1)}배 더 자주 등장합니다. 낱말로 센 대략값입니다.
+
+## 고양이 소개 편지 쓰는 법
+
+1. **이름과 이름의 이유** — "치즈색이라 치즈야".
+2. **하루 중 가장 좋아하는 자리** — 창턱, 노트북 위, 이불 속.
+3. **사진 한 장 동봉** — 레티 편지에는 사진을 한 장(5MB 이하) 넣을 수 있습니다. 창밖 풍경이나 집 주소가 보이지 않게 찍으세요.
+4. **상대에게 묻기** — "너희 동네엔 길고양이가 많아?", "너는 고양이파야, 강아지파야?"
+
+> 고양이의 날이라서 우리 고양이를 소개할게! 이름은 치즈야. 털이 치즈색이라서. 하루 대부분을 창턱에서 자는데, 오늘 사진도 창턱에서 찍었어. 일본에선 오늘이 「냥냥냥」의 날이래. 너희 나라 말로는 고양이가 어떻게 울어? 너는 고양이파야, 강아지파야?
+
+---
+
+*고양이 다음 기념일 우표는 화이트데이입니다. 친구에게 보내는 [밸런타인 편지](/blog/valentines-letter-to-a-friend)와 전체 [기념일 우표 달력](/blog/lettie-holiday-stamps-2026)도 보세요.*
+`,
+        contentEn: `
+# When is Cat Day? Dates by country, and a letter about your cat
+
+Cat Day **depends on where you are**: International Cat Day is August 8, Japan celebrates February 22, the US has National Cat Day on October 29, and Russia marks March 1. Lettie's Cat Day stamp follows Japan's date: send one letter between ${enUtc(holiday('p_ee022227').start)} and ${enUtc(holiday('p_ee022227').end)} and a free stamp (${holiday('p_ee022227').artEn}) arrives.
+
+## Cat Day by country
+
+| Date | Where | Why |
+|---|---|---|
+| February 22 | Japan | 2 (ni) sounds like a cat's "nyan", so 2/22 is "nyan nyan nyan"; set in 1987 |
+| March 1 | Russia | March, the start of spring, is thought of as the cats' month |
+| August 8 | Worldwide | Started in 2002 by the International Fund for Animal Welfare (IFAW) |
+| October 29 | United States | Started in 2005 to encourage adopting shelter cats |
+
+## "Cat" and "meow" in 15 languages
+
+| Language | Cat | Meow |
+|---|---|---|
+| Korean | 고양이 (goyangi) | 야옹 (yaong) |
+| English | cat | meow |
+| Japanese | 猫 (neko) | ニャー (nyā) |
+| Chinese | 猫 (māo) | 喵 (miāo) |
+| Spanish | gato | miau |
+| French | chat | miaou |
+| German | Katze | miau |
+| Italian | gatto | miao |
+| Russian | кошка (koshka) | мяу (myau) |
+| Turkish | kedi | miyav |
+| Vietnamese | mèo | meo meo |
+| Indonesian | kucing | meong |
+| Thai | แมว (maeo) | เหมียว (miao) |
+| Hindi | बिल्ली (billi) | म्याऊँ (myaun) |
+| Arabic | قطة (qitta) | مواء (muwa') — the word for a meow |
+
+## Cats vs dogs in Lettie letters
+
+Counting words in several languages across ${LETTER_PETS.letters.toLocaleString('en-US')} human-written Lettie letters (${enDate(LETTER_PETS.asOf)}), **${LETTER_PETS.cat} letters mentioned a cat and ${LETTER_PETS.dog} mentioned a dog**. In letters, cats come up ${(LETTER_PETS.cat / LETTER_PETS.dog).toFixed(1)} times as often. It's a rough word count.
+
+## How to introduce your cat in a letter
+
+1. **Their name, and why** — "she's called Cheese because she's cheese-coloured".
+2. **Their favourite spot** — the windowsill, your laptop, under the blanket.
+3. **Enclose one photo** — Lettie letters can carry one photo (up to 5MB). Keep the view from your window and your address out of the shot.
+4. **Ask them back** — "Are there many street cats where you live?" "Cat person or dog person?"
+
+> It's Cat Day, so let me introduce my cat! Her name is Cheese, because she's cheese-coloured. She sleeps on the windowsill most of the day, which is where I took the photo. In Japan today is "nyan nyan nyan" day. How does a cat meow in your language? Are you a cat person or a dog person?
+
+---
+
+*After Cat Day comes the White Day stamp. See also a [Valentine's letter to a friend](/en/blog/valentines-letter-to-a-friend) and the full [holiday stamp calendar](/en/blog/lettie-holiday-stamps-2026).*
 `,
     },
 };
