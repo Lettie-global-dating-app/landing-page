@@ -27,6 +27,16 @@ export const LETTER_STATS = {
     ko: { n: 36, annyeonghaseyo: 36, annyeongAny: 44 } },
 };
 
+/**
+ * 편지를 어떻게 끝내나 — 40자 이상 편지의 끝 80자 (1차 소스, 2026-10-20). 정의·다시 뽑기는 scripts/seo/letter-endings.py.
+ * 갈래는 겹칠 수 있고(%), none 은 어느 끝인사·이름 서명도 없는 편지. 답장률과는 엮지 않는다(답장률은 공개하지 않음).
+ */
+export const LETTER_ENDINGS = {
+  asOf: '2026-10-20',
+  en: { n: 532, question: 16, lookingForward: 11, takeCare: 5, niceDay: 3, regards: 3, thanks: 5, nameSign: 7, none: 61 },
+  ko: { n: 102, question: 17, niceDay: 15, askReply: 12, thanks: 9, nameSign: 2, none: 54 },
+};
+
 export const WEEKDAY_EN = ['', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 export const WEEKDAY_KO = ['', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일', '일요일'];
 /** 가장 많이 쓴 요일 */
