@@ -54,3 +54,9 @@
   - `/blog/how-to-end-a-letter-to-a-pen-pal` — **1차 데이터 LETTER_ENDINGS**(letterStats.ts, scripts/seo/letter-endings.*): 영어 편지 532통 중 61% 끝인사 없음·16% 질문·7% 이름 / 한글 102통 54%·17%·좋은 하루 15%. 답장률과는 엮지 않음.
 - 운영 확인: 8쪽 200·h1 1·FAQPage 1·index,follow, 사이트맵 8건, IndexNow 308건 200. GSC 는 오늘 한도를 대기열이 써서 8건을 `.gsc-pending.txt` 맨 앞(10/21 10:20).
 - **노출 9 문의(대표)**: GSC 「최근 24시간」(10/19 16시~10/20 14시 KST)은 잠정치. 날짜별 확정치는 10/17 까지이고 하루 노출 주평균 26~44(8~9월) → 79 → 97 → 182 → **251(10/12 주)**. 수동 조치·보안 문제 없음, 구글봇 UA 로 주요 쪽 200·index. `scripts/seo/gsc-days.mjs` 추가, 10/22 11:00 launchd `com.lettie.seo-gsc-check-1022` 가 10/18~19 확정치를 알림.
+
+## 4차 (2026-10-20, 대표 "네")
+- 새 글 3편(ko/en, b1d58e3·머지 f6ba482): `valentines-letter-to-a-friend`(2/14 친구의 날 — 핀란드·에스토니아·중남미·일본 토모초코, 연애 표현 없음) · `handwriting-day-letter`(1/23, 손글씨 5가지·사진 동봉) · `cat-day-letter`(나라별 날짜 2/22·3/1·8/8·10/29, 15개 언어).
+- 1차 데이터 추가(letterStats.ts, scripts/seo/letter-pets.sql): LETTER_PETS 편지 1,099통 중 고양이 35·강아지 10, LETTER_PHOTOS 2.0(9/15~) 편지 844통 중 사진 51(6%).
+- 운영 확인 6쪽 200·h1 1·FAQPage 1·index,follow, IndexNow 314건 200, GSC 대기열 앞쪽(10/21~22).
+- 이번 주 합계 7편 — 서로 다른 검색 의도만. 다음은 11/1 재측정 뒤.
