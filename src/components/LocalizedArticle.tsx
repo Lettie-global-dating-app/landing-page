@@ -56,10 +56,11 @@ export default function LocalizedArticle({ locale, slug, article }: { locale: st
     {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
+      // 가운데 '가이드' 칸은 넣지 않는다 — 언어별 가이드 목록 쪽이 없어(/xx/guide 는 /en/guide 로 간다) 주소 없는 칸이 되고,
+      // 구글이 "'item' 입력란 누락"으로 탐색경로 전체를 무효 처리했다(서치 콘솔 66건, 2026-10-23)
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Lettie', item: urlFor(locale) },
-        ...(section ? [{ '@type': 'ListItem', position: 2, name: section }] : []),
-        { '@type': 'ListItem', position: section ? 3 : 2, name: article.title, item: url },
+        { '@type': 'ListItem', position: 2, name: article.title, item: url },
       ],
     },
   ];
