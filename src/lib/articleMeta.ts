@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { OG_LOCALE, SITE_URL, urlFor } from '@/i18n/config';
 import { ARTICLE_DATE, ARTICLE_PATH, type ArticleSlug } from '@/data/articles/types';
-import { articleAlternates, getArticle } from '@/data/articles/lookup';
+import { NOINDEX_LOCALIZED, articleAlternates, getArticle } from '@/data/articles/lookup';
 
 /** 다국어 글 페이지의 메타데이터. alternates 는 한/영 원본 + 이 글이 있는 모든 언어. */
 export function articleMetadata(locale: string, slug: ArticleSlug): Metadata {
@@ -15,7 +15,10 @@ export function articleMetadata(locale: string, slug: ArticleSlug): Metadata {
     title: { absolute: a.title.includes('Lettie') ? a.title : `${a.title} | Lettie` },
     description: a.description,
     keywords: a.keywords,
-    alternates: { canonical: url, languages: articleAlternates(slug) },
+    // 검색에서 뺀 다국어판(2026-10-23)은 noindex 이고 hreflang 묶음에도 안 들어간다
+    ...(NOINDEX_LOCALIZED.includes(slug)
+      ? { robots: { index: false, follow: true }, alternates: { canonical: url } }
+      : { alternates: { canonical: url, languages: articleAlternates(slug) } }),
     openGraph: {
       type: 'article',
       locale: OG_LOCALE[locale],

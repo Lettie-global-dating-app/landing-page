@@ -94,6 +94,8 @@ const nextConfig: NextConfig = {
       { source: '/:lang(es|pt|ja|fr|zh|de|hi|id|ru|it|bn|fil|tr|vi|th|ms|sw|pl|nl|uk|ro|el|cs|ar|fa|ur)/guide', destination: '/en/guide', permanent: false },
       { source: '/:lang(es|pt|ja|fr|zh|de|hi|id|ru|it|bn|fil|tr|vi|th|ms|sw|pl|nl|uk|ro|el|cs|ar|fa|ur)/letter-map', destination: '/en/letter-map', permanent: false },
       // 연도가 낡은 글을 같은 주제의 최신 글로 합친다 (2026-09-24, 순위 신호를 넘긴다)
+      // 2026-10-23 다국어 비교 글 25개 언어판 → 영어판 (구글 노출 급락 정리, src/data/articles/lookup.ts MERGED_TO_EN)
+      { source: '/:lang(es|pt|ja|fr|zh|de|hi|id|ru|it|bn|fil|tr|vi|th|ms|sw|pl|nl|uk|ro|el|cs|ar|fa|ur)/blog/:slug(best-penpal-apps-2026|slowly-alternatives-2026)', destination: '/en/blog/:slug', permanent: true },
       { source: '/blog/2025-best-penpal-app', destination: '/blog/best-penpal-apps-2026', permanent: true },
       { source: '/en/blog/2025-best-penpal-app', destination: '/en/blog/best-penpal-apps-2026', permanent: true },
       // 같은 주제로 겹치던 글을 하나로 (2026-10-07 대표 결정 — 서로 순위를 깎아 먹었고 옛 글은 대부분 색인도 안 됐다)

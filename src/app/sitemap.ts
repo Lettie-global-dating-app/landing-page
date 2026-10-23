@@ -2,9 +2,9 @@ import { execFileSync } from 'node:child_process';
 import { MetadataRoute } from 'next';
 import { blogPosts } from '@/data/blogPosts';
 import { LOCALES } from '@/i18n/config';
-import { localizedPosts } from '@/data/localizedPosts';
+import { LOCALIZED_POSTS_NOINDEX, localizedPosts } from '@/data/localizedPosts';
 import { FAQ_LOCALES } from '@/data/localizedFaq';
-import { ARTICLE_PATH, ARTICLE_SLUGS, articleLocales } from '@/data/articles/lookup';
+import { ARTICLE_PATH, ARTICLE_SLUGS, indexedArticleLocales } from '@/data/articles/lookup';
 import { ARTICLE_DATE } from '@/data/articles/types';
 
 // 영어는 위 STATIC_PATHS 에서 이미 다루므로 제외한다.
@@ -83,7 +83,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // 신규 언어로 번역된 글. 실제로 번역이 있는 조합만 넣는다.
-  const localizedRoutes = Object.entries(localizedPosts).flatMap(([slug, entry]) =>
+  // 2026-10-23: noindex 로 돌렸으니 사이트맵에서도 뺀다
+  const localizedRoutes = LOCALIZED_POSTS_NOINDEX ? [] : Object.entries(localizedPosts).flatMap(([slug, entry]) =>
     Object.keys(entry.translations)
       .filter((l) => l !== 'en')
       .map((locale) => ({
@@ -104,7 +105,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // 다국어로 새로 쓴 글 다섯 편 (src/data/articles) — 실제로 있는 언어만
   const articleRoutes = ARTICLE_SLUGS.flatMap((slug) =>
-    articleLocales(slug).map((locale) => ({
+    indexedArticleLocales(slug).map((locale) => ({
       url: `${baseUrl}/${locale}${ARTICLE_PATH[slug]}`,
       lastModified: ARTICLE_DATE,
       changeFrequency: 'monthly' as const,

@@ -1,6 +1,6 @@
-import { ARTICLE_PATH, ARTICLE_SLUGS, articleLocales } from '@/data/articles/lookup';
+import { ARTICLE_PATH, ARTICLE_SLUGS, indexedArticleLocales } from '@/data/articles/lookup';
 import { LOCALES, LOCALE_NAMES, ROOT_LOCALE, SITE_URL } from '@/i18n/config';
-import { localizedPosts } from '@/data/localizedPosts';
+import { LOCALIZED_POSTS_NOINDEX, localizedPosts } from '@/data/localizedPosts';
 import { blogPosts } from '@/data/blogPosts';
 import { COMMUNITY, COUNTRY_EN, LETTER_MAP, enMonth } from '@/data/letterMap';
 import { LETTER_STATS } from '@/data/letterStats';
@@ -146,13 +146,13 @@ machine translations of one original.
 
 ## Multilingual articles
 
-${Object.entries(localizedPosts)
+${(LOCALIZED_POSTS_NOINDEX ? [] : Object.entries(localizedPosts))
   .map(([slug, entry]) => {
     const langs = Object.keys(entry.translations).join(', ');
     return `- ${slug} (${langs}): ${SITE_URL}/{locale}/blog/${slug}`;
   })
   .join('\n')}
-${ARTICLE_SLUGS.map((slug) => `- ${slug} (${articleLocales(slug).join(', ')}): ${SITE_URL}/{locale}${ARTICLE_PATH[slug]} — Korean ${SITE_URL}${ARTICLE_PATH[slug]}, English ${SITE_URL}/en${ARTICLE_PATH[slug]}`).join('\n')}
+${ARTICLE_SLUGS.filter((slug) => indexedArticleLocales(slug).length).map((slug) => `- ${slug} (${indexedArticleLocales(slug).join(', ')}): ${SITE_URL}/{locale}${ARTICLE_PATH[slug]} — Korean ${SITE_URL}${ARTICLE_PATH[slug]}, English ${SITE_URL}/en${ARTICLE_PATH[slug]}`).join('\n')}
 
 ## Apps
 

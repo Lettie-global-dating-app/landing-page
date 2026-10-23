@@ -4,7 +4,7 @@ import { stripLeadingH1 } from '@/lib/markdown';
 import { notFound } from 'next/navigation';
 import { ArrowLeft } from 'lucide-react';
 import { HREFLANG, LOCALES, OG_LOCALE, SITE_URL, isLocale, urlFor } from '@/i18n/config';
-import { localizedPosts, getLocalizedPost } from '@/data/localizedPosts';
+import { LOCALIZED_POSTS_NOINDEX, localizedPosts, getLocalizedPost } from '@/data/localizedPosts';
 import LocalizedArticle from '@/components/LocalizedArticle';
 import { articleLocales, getArticle } from '@/data/articles/lookup';
 import { articleMetadata } from '@/lib/articleMeta';
@@ -55,7 +55,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: { absolute: post.title },
     description: post.description,
     keywords: post.keywords,
-    alternates: { canonical: url, languages },
+    ...(LOCALIZED_POSTS_NOINDEX
+      ? { robots: { index: false, follow: true }, alternates: { canonical: url } }
+      : { alternates: { canonical: url, languages } }),
     openGraph: {
       type: 'article',
       locale: OG_LOCALE[locale],

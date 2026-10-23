@@ -28,6 +28,9 @@ export type LocalizedEntry = {
   translations: Partial<Record<Locale, LocalizedPost>>;
 };
 
+/** 2026-10-23 사이트 노출 급락 정리: 다국어 블로그 글(한·영 밖)은 사람에게만 보이고 검색에서는 뺀다 */
+export const LOCALIZED_POSTS_NOINDEX = true;
+
 export const localizedPosts: Record<string, LocalizedEntry> = {
   'find-a-pen-pal': {
     id: 'find-a-pen-pal',
@@ -385,6 +388,8 @@ Du wirst mehreren Menschen schreiben, bevor eine Korrespondenz trägt. Eine, die
  * 한/영 글 페이지가 이걸 자기 대체 링크에 더해야 양방향이 된다(한쪽만 가리키면 검색엔진이 무시한다).
  */
 export function localizedAlternatesFor(koEnSlug: string): Record<string, string> {
+  // 2026-10-23: 다국어 블로그 글은 모두 noindex 라 hreflang 으로 잇지 않는다 (lookup.ts 의 NOINDEX_LOCALIZED 와 같은 정리)
+  if (LOCALIZED_POSTS_NOINDEX) return {};
   const out: Record<string, string> = {};
   for (const [slug, entry] of Object.entries(localizedPosts)) {
     if (entry.koEnSlug !== koEnSlug) continue;
