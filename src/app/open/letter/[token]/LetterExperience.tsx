@@ -598,7 +598,7 @@ export default function LetterExperience({ letter, token, viewerLang, ui, string
     sound.play('stamp_thud', 0.6);
   }, [phase, sound]);
 
-  if (!letter) return <Gone s={s} platform={platform} sound={sound} />;
+  if (!letter) return <Gone s={s} ui={ui} platform={platform} sound={sound} />;
 
   const showStage = phase !== 'read';
   return (
@@ -836,9 +836,9 @@ function Reply({ s, token, platform }: { s: Strings; token: string; platform: Pl
   );
 }
 
-function Gone({ s, platform, sound }: { s: Strings; platform: Platform; sound: SoundApi }) {
+function Gone({ s, ui, platform, sound }: { s: Strings; ui: string; platform: Platform; sound: SoundApi }) {
   return (
-    <main className={styles.root}>
+    <main className={styles.root} lang={ui.replace('_', '-')} dir={RTL_LANGS.includes(ui) ? 'rtl' : undefined}>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" precedence="default" />
       <StarSky />
       <div className={styles.column}>
