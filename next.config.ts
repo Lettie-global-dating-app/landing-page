@@ -1,6 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // 웹 편지 미리보기 그림(opengraph-image)이 서버 함수 안에서 읽는 글꼴·그림 (2026-10-27)
+  outputFileTracingIncludes: {
+    '/open/letter/[token]/opengraph-image': ['./src/assets/og-fonts/**', './public/letter/land-dots.json', './public/letter/char/**', './public/letter/stamps/**'],
+  },
+
   // SEO 및 성능 최적화 설정
   images: {
     formats: ['image/webp', 'image/avif'],

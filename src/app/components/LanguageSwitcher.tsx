@@ -31,6 +31,8 @@ export default function LanguageSwitcher() {
   if (path === null) return null;
   const trimmed = path.replace(/\/$/, "");
   if (trimmed === "" || /^\/[a-z]{2,3}$/.test(trimmed)) return null;
+  // 앱 링크 페이지(/open/…)는 앱 화면처럼 보이는 단독 페이지라 언어 선택을 띄우지 않는다 (웹 편지 2026-10-27)
+  if (trimmed.startsWith("/open")) return null;
 
   const base = basePath(path, LOCALES);
   const seg = trimmed.split("/")[1];

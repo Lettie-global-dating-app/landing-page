@@ -85,6 +85,9 @@ export const metadata: Metadata = {
     languages: languageAlternates(),
   },
 
+  // 앱 스토어 스마트 배너 — 메타데이터로 둬야 페이지가 덮어쓸 수 있다(웹 편지는 app-argument 로 그 편지 주소를 넘긴다)
+  itunes: { appId: "6746454876" },
+
   // App Links
   appLinks: {
     ios: {
@@ -161,8 +164,6 @@ export default function RootLayout({
         {/* 지역·언어 메타(geo.region KR · language Korean)는 뺐다 — 루트 레이아웃이 /en·/ja … 모든 페이지에 그려서
             일본어 페이지가 "Korean · KR" 이라고 말하고 있었다. 언어 신호는 hreflang·Content-Language·html lang(엣지에서 고침)이 맡는다. */}
 
-        {/* 앱 스토어 스마트 배너 */}
-        <meta name="apple-itunes-app" content="app-id=6746454876" />
 
         {/* 네이버 웹마스터 도구 인증 */}
         <meta name="naver-site-verification" content="b933370623a65bbe5779c3dfdcf094f7a2985d36" />
