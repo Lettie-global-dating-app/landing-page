@@ -7,6 +7,7 @@
  * 사용자 글이라 검색에는 내보내지 않는다(noindex) — 10/19 사이트 전체 노출 급락 뒤 얇은 글을 늘리지 않기로 했다.
  */
 import centers from './countryCenters.json';
+import { LETTER_STRINGS_I18N } from './letterShareStrings';
 
 export const API_BASE = process.env.LETTIE_API_BASE || 'https://lettie.co.kr';
 export const APP_STORE_URL = 'https://apps.apple.com/app/id6746454876';
@@ -190,11 +191,14 @@ export function viewerLangFrom(acceptLanguage: string | null): string | null {
   return null;
 }
 
-/** 화면 글자는 우선 한국어·영어 두 벌(대표 검토 뒤 72개 언어로). 나머지 언어는 영어. */
-export type UiLang = 'ko' | 'en';
-export const uiLangOf = (lang: string | null): UiLang => (lang === 'ko' ? 'ko' : 'en');
+/** 화면 글자 언어: 표에 있는 앱 언어(72개)면 그 말, 없으면 영어. */
+export type UiLang = string;
+export const uiLangOf = (lang: string | null): UiLang => (lang && STRINGS[lang] ? lang : 'en');
 
-export const STRINGS = {
+/** 오른쪽에서 왼쪽으로 쓰는 말. */
+export const RTL_LANGS = ['ar', 'fa', 'ur', 'he'];
+
+const BASE = {
   ko: {
     eyebrow: '하늘 우편 · AIR MAIL',
     title: '%name님이 %place에서 띄운 편지',
@@ -259,7 +263,12 @@ export const STRINGS = {
   },
 } as const;
 
-export type Strings = { [K in keyof (typeof STRINGS)['ko']]: string };
+export type Strings = { [K in keyof (typeof BASE)['ko']]: string };
+
+/** 한국어·영어 + 나머지 앱 언어(letterShareStrings.ts, 대표 승인 뒤 번역 2026-10-27). 빠진 칸은 영어로. */
+export const STRINGS: Record<string, Strings> = Object.fromEntries(
+  Object.entries({ ...LETTER_STRINGS_I18N, ...BASE } as Record<string, Partial<Strings>>).map(([k, v]) => [k, { ...BASE.en, ...v } as Strings]),
+);
 
 export function fill(s: string, vars: Record<string, string>): string {
   return s.replace(/%(\w+)/g, (m, k) => vars[k] ?? m);

@@ -89,7 +89,9 @@ function envelopeSvg(): string {
 export default async function OgImage({ params }: { params: Promise<{ token: string }> }) {
   const { token } = await params;
   const letter = await fetchSharedLetter(token);
-  const lang = uiLangOf(letter?.lang ?? null);
+  // 미리보기 그림 글꼴은 라틴·한글뿐 — 그 밖의 말(일본어·아랍어…)은 영어 문장으로 그린다
+  const want = uiLangOf(letter?.lang ?? null);
+  const lang = drawable(STRINGS[want].ogLine + STRINGS[want].title) ? want : 'en';
   const s = STRINGS[lang];
   const name = letter?.author.nickname ?? '';
   const place = letter ? countryName(letter.author.countryCode, lang) ?? '' : '';
@@ -109,16 +111,16 @@ export default async function OgImage({ params }: { params: Promise<{ token: str
   return new ImageResponse(
     (
       <div style={{ width: 1200, height: 630, display: 'flex', position: 'relative', background: `linear-gradient(180deg, ${C.sky1} 0%, ${C.sky0} 100%)` }}>
-        <img src={sky} width={1200} height={630} style={{ position: 'absolute', left: 0, top: 0 }} />
+        <img alt="" src={sky} width={1200} height={630} style={{ position: 'absolute', left: 0, top: 0 }} />
         <div style={{ position: "absolute", left: 72, top: 64, display: "flex", flexDirection: "column", width: 560 }}>
           <div style={{ fontFamily: 'Galmuri', fontSize: 26, letterSpacing: 4, color: C.sand }}>LETTIE · AIR MAIL</div>
           <div style={{ marginTop: 18, fontFamily: 'Pretendard', fontWeight: 700, fontSize: 60, lineHeight: 1.22, color: C.ink, letterSpacing: -1.5 }}>{title}</div>
           <div style={{ marginTop: 16, fontFamily: 'Pretendard', fontWeight: 500, fontSize: 30, color: C.ink2 }}>{s.ogLine}</div>
         </div>
-        {character && <img src={character} width={230} height={230} style={{ position: 'absolute', left: 52, top: 372 }} />}
+        {character && <img alt="" src={character} width={230} height={230} style={{ position: 'absolute', left: 52, top: 372 }} />}
         <div style={{ position: 'absolute', left: 280, top: 352, display: 'flex', transform: 'rotate(-6deg)' }}>
-          <img src={envelopeSvg()} width={400} height={280} />
-          {stamp && <img src={stamp} width={88} height={110} style={{ position: 'absolute', right: 26, top: 22, transform: 'rotate(8deg)' }} />}
+          <img alt="" src={envelopeSvg()} width={400} height={280} />
+          {stamp && <img alt="" src={stamp} width={88} height={110} style={{ position: 'absolute', right: 26, top: 22, transform: 'rotate(8deg)' }} />}
         </div>
       </div>
     ),

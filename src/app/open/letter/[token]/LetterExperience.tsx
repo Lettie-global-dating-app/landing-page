@@ -8,12 +8,14 @@
  * 3. 읽기: 크림색 편지지가 펼쳐지고 우표가 쾅 찍힌다. 번역은 앱처럼 픽셀 반짝임이 지나간 뒤 글이 바뀐다.
  * 효과음은 앱 assets/v2/sfx 그대로. 브라우저는 누르기 전에는 소리를 못 내므로 봉투를 누르는 순간 소리를 깨운다.
  */
+import Link from 'next/link';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import styles from './letter.module.css';
 import {
   APP_LANGS,
   APP_STORE_URL,
   PLAY_URL,
+  RTL_LANGS,
   type SharedLetter,
   type Strings,
   type Translated,
@@ -27,7 +29,7 @@ type Props = {
   letter: SharedLetter | null;
   token: string;
   viewerLang: string;
-  ui: 'ko' | 'en';
+  ui: string;
   strings: Strings;
   place: string | null;
   center: [number, number];
@@ -600,7 +602,7 @@ export default function LetterExperience({ letter, token, viewerLang, ui, string
 
   const showStage = phase !== 'read';
   return (
-    <main className={styles.root} lang={ui}>
+    <main className={styles.root} lang={ui.replace('_', '-')} dir={RTL_LANGS.includes(ui) ? 'rtl' : undefined}>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" precedence="default" />
       <StarSky />
       <div className={styles.column} ref={top}>
@@ -651,10 +653,10 @@ type SoundApi = ReturnType<typeof useSound>;
 function TopBar({ s, sound }: { s: Strings; sound: SoundApi }) {
   return (
     <div className={styles.topbar}>
-      <a className={styles.brand} href="/">
+      <Link className={styles.brand} href="/">
         <img src="/lettie-icon.png" alt="" />
         Lettie
-      </a>
+      </Link>
       <button type="button" className={styles.soundBtn} onClick={sound.toggle} aria-label={sound.on ? s.soundOff : s.soundOn} aria-pressed={sound.on}>
         <SoundIcon on={sound.on} />
       </button>
