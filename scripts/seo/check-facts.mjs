@@ -17,7 +17,7 @@ const STALE = [
   // 2026-09-27 부터 발견에 AI 계정의 편지도 나온다 → 홈 하단 문구로 "진짜 사람"을 약속하지 않는다
   ['홈 하단 "진짜 사람" (발견에 AI 계정 편지가 섞인다)', /tag: '[^']*(진짜 사람|real people|personas reales|pessoas reais|本物の人|vraies personnes|真人|echte Menschen|असली लोग|orang sungguhan|настоящие люди|persone vere)/],
   // 2.0.31 부터 번역은 그 자리에서 바뀐다(예전엔 원문 아래 상자). "나란히"는 둘 다 틀린 말이다 (2026-10-18)
-  ['번역을 원문과 나란히 (그 자리에서 바뀐다)', /(원문과 번역(문)?을 나란히|원문과 나란히 보|original and (the )?translation (are )?(shown )?side by side|both versions sit (side by side|next to each other)|shown beside the original|with the original shown beside it)/i],
+  ['번역을 원문과 나란히 (그 자리에서 바뀐다)', /(원문과 번역(문)?을 나란히|원문과 나란히 보|original and (the )?translation (are )?(shown )?side by side|both versions sit (side by side|next to each other)|shown beside the original|with the original shown beside it|you can read the original alongside the translation)/i],
   // 나라 우표는 여권 도장(5통·각자 2통)과 함께 온다. 편지가 닿기만 해서 모이지 않는다 (2026-10-18)
   ['나라마다 우표가 모인다 (여권 규칙: 5통·각자 2통)', /(편지가 닿은 나라마다 우표|나라마다 모이는 우표|그 나라의 우표가 우표첩에 모입니다|adds its stamp to your album|A stamp for every country you reach)/],
   // 젬으로 여는 무제한 대화는 없어졌다(2026-10-07 「한 번 더 보내기」, Plus 는 기다림 없음) (2026-10-18)

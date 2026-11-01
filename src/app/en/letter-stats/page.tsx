@@ -75,12 +75,12 @@ export default function LetterStatsPage() {
 
       <GuideSection title="How long letters are">
         <p>
-          The median letter is <strong>{S.length.median} characters</strong>. A quarter are shorter than {S.length.p25} and a quarter longer than {S.length.p75}. First letters and replies are about the same length.
-          Countries with at least 20 letters:
+          The median letter is <strong>{S.length.median} characters</strong>. A quarter are shorter than {S.length.p25} and a quarter longer than {S.length.p75}. {S.length.reply > S.length.first * 1.1 ? 'Replies run longer than first letters' : S.length.first > S.length.reply * 1.1 ? 'First letters run longer than replies' : 'First letters and replies are about the same length'} (median {S.length.first} characters for a first letter, {S.length.reply} for a reply).
+          Countries with at least 20 letters from at least five writers:
         </p>
         <GuideTable head={['Sender country', 'Median length (characters)', 'Letters']} rows={S.length.byCountry.map(([c, m, n]) => [C[c] ?? c, String(m), String(n)])} />
         <p>
-          Character counts depend on the script: Korean packs more meaning into each character than English, so a shorter Korean letter is not a shorter message.
+          Character counts depend on the script: Korean and Chinese pack more meaning into each character than English, so a shorter Korean or Chinese letter is not a shorter message.
         </p>
       </GuideSection>
 

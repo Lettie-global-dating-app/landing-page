@@ -24,6 +24,8 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const s = STRINGS[lang];
   const base: Metadata = {
     robots: { index: false, follow: false },
+    // 루트 레이아웃의 canonical(홈)을 물려받으면 noindex 와 엇갈린 신호가 된다 — 자기 주소로 (2026-11-02)
+    alternates: { canonical: `https://lettie-dating.com/open/letter/${token}` },
     // 사파리 위쪽 앱 배너: 앱이 있으면 「열기」가 이 편지 주소를 앱에 넘긴다(같은 도메인 안 링크는 유니버설 링크가 안 열린다)
     itunes: { appId: '6746454876', appArgument: `https://lettie-dating.com/open/letter/${token}` },
   };
