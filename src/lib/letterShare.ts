@@ -73,6 +73,22 @@ const DEMO: Record<string, SharedLetter> = {
     replyable: true,
     openInAppUrl: SHARE_BASE + 'demo-en',
   },
+  // 이름을 숨긴 공유 견본 (2026-11-01, 인스타 동의 편지 링크)
+  'demo-anon': {
+    token: 'demo-anon',
+    lang: 'en',
+    prompt: '',
+    body:
+      "Hi!\n\nI'm just passing through to leave a few words, and maybe meet someone new. I like getting to know different people and learning little things about their everyday lives.\n\n" +
+      'If you feel like talking, write to me. :)',
+    imageUrl: null,
+    stamp: 'season',
+    publishedAt: '2026-10-30T09:09:00',
+    language: 'en',
+    author: { nickname: '', characterKey: 'lettie_m2', characterImageUrl: null, countryCode: 'BJ', city: null, titleKey: null },
+    replyable: true,
+    openInAppUrl: SHARE_BASE + 'demo-anon',
+  },
 };
 
 const DEMO_TRANSLATIONS: Record<string, Record<string, Translated>> = {
@@ -203,6 +219,10 @@ const BASE = {
     eyebrow: '하늘 우편 · AIR MAIL',
     title: '%name님이 %place에서 띄운 편지',
     titleNoPlace: '%name님이 띄운 편지',
+    // 이름을 숨긴 공유 (2026-11-01, 인스타 동의 편지 링크 — 앱에서 「이름은 빼고」라고 알렸다): 이름 대신 나라
+    anonName: '%place의 펜팔',
+    titleAnon: '%place에서 띄운 편지',
+    ogTitleAnon: '%place에서 온 편지 · Lettie',
     tapHint: '봉투를 눌러 열어 보세요',
     openAria: '봉투 열기',
     translate: '번역 보기',
@@ -234,6 +254,9 @@ const BASE = {
     eyebrow: 'AIR MAIL',
     title: 'A letter from %name in %place',
     titleNoPlace: 'A letter from %name',
+    anonName: 'A pen pal in %place',
+    titleAnon: 'A letter from %place',
+    ogTitleAnon: 'A letter from %place · Lettie',
     tapHint: 'Tap the envelope to open it',
     openAria: 'Open the envelope',
     translate: 'Translate',

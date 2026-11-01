@@ -30,7 +30,8 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   if (!letter) return { ...base, title: { absolute: 'Lettie' } };
   const name = letter.author.nickname || 'Lettie';
   const place = countryName(letter.author.countryCode, lang) ?? letter.author.city ?? '';
-  const title = fill(s.ogTitle, { name });
+  // 이름을 숨긴 공유(인스타 동의 편지 링크, 2026-11-01): 이름 대신 나라
+  const title = !letter.author.nickname && place ? fill(s.ogTitleAnon, { place }) : fill(s.ogTitle, { name });
   const description = letter.prompt ? fill(s.ogDesc, { prompt: letter.prompt }) : fill(s.ogDescNoPrompt, { place });
   return {
     ...base,
