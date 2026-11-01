@@ -513,8 +513,10 @@ export default function LetterExperience({ letter, token, viewerLang, ui, string
   const globeBox = useRef<HTMLDivElement>(null);
   const top = useRef<HTMLDivElement>(null);
 
-  const name = letter?.author.nickname || 'Lettie';
-  const title = place ? fill(s.title, { name, place }) : fill(s.titleNoPlace, { name });
+  // 이름을 숨긴 공유(인스타 동의 편지 링크, 2026-11-01)는 이름이 빈 문자열 — 이름 대신 「나라의 펜팔」
+  const anon = !!letter && !letter.author.nickname && !!place;
+  const name = letter?.author.nickname || (anon ? fill(s.anonName, { place: place! }) : 'Lettie');
+  const title = anon ? fill(s.titleAnon, { place: place! }) : place ? fill(s.title, { name, place }) : fill(s.titleNoPlace, { name });
 
   // 도착: 지구 위 표식에서 봉투가 작게 떠올라 곡선을 그리며 앞으로 날아온다
   const fly = useCallback((m: { x: number; y: number }) => {
@@ -731,6 +733,8 @@ function LetterView({ letter, token, viewerLang, s, place, platform, sound }: { 
   const dateText = new Intl.DateTimeFormat(viewerLang.replace('_', '-'), { dateStyle: 'long' }).format(when);
   const markDate = new Intl.DateTimeFormat('en', { day: '2-digit', month: 'short' }).format(when).toUpperCase();
   const cityLine = [letter.author.city, place].filter(Boolean).join(' · ');
+  // 이름을 숨긴 공유는 이름 대신 「나라의 펜팔」 (2026-11-01)
+  const name = letter.author.nickname || (place ? fill(s.anonName, { place }) : 'Lettie');
 
   return (
     <section className={styles.letterArea}>
@@ -745,7 +749,7 @@ function LetterView({ letter, token, viewerLang, s, place, platform, sound }: { 
             <img src={characterSrc(letter.author.characterKey, letter.author.characterImageUrl)} alt="" />
           </div>
           <div>
-            <div className={styles.name}>{letter.author.nickname}</div>
+            <div className={styles.name}>{name}</div>
             {cityLine && <div className={styles.place}>{cityLine}</div>}
           </div>
         </header>

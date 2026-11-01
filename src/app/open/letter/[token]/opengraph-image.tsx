@@ -95,7 +95,16 @@ export default async function OgImage({ params }: { params: Promise<{ token: str
   const s = STRINGS[lang];
   const name = letter?.author.nickname ?? '';
   const place = letter ? countryName(letter.author.countryCode, lang) ?? '' : '';
-  const title = name && drawable(name) ? (place && drawable(place) ? fill(s.title, { name, place }) : fill(s.titleNoPlace, { name })) : lang === 'ko' ? '편지가 도착했어요' : 'A letter for you';
+  const anon = !!letter && !name && !!place && drawable(place); // 이름을 숨긴 공유(인스타 동의 편지 링크, 2026-11-01)
+  const title = anon
+    ? fill(s.titleAnon, { place })
+    : name && drawable(name)
+      ? place && drawable(place)
+        ? fill(s.title, { name, place })
+        : fill(s.titleNoPlace, { name })
+      : lang === 'ko'
+        ? '편지가 도착했어요'
+        : 'A letter for you';
   const charKey = letter?.author.characterKey ?? 'lettie_f1';
   const charSrc = letter?.author.characterImageUrl ?? (charKey.startsWith('gen_') ? `https://dearglobe.s3.ap-northeast-2.amazonaws.com/characters/${charKey}.png` : `/letter/char/${/^lettie_[fm][1-8]$/.test(charKey) ? charKey : 'lettie_f1'}.png`);
 
