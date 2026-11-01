@@ -8,6 +8,8 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: { absolute: 'Lettie' },
   robots: { index: false, follow: false },
+  // 루트 레이아웃의 canonical(홈)을 물려받지 않게 — noindex 쪽이 홈을 가리키면 엇갈린 신호 (2026-11-02)
+  alternates: { canonical: null },
 };
 
 export function generateStaticParams() {

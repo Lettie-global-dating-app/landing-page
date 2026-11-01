@@ -3834,7 +3834,7 @@ Some apps build the delay in for you. [Lettie](/en/penpal-app), for instance, ma
 
 You don't need fluent English to have a pen pal, and your pen pal doesn't need it either.
 
-Some apps translate for you. On Lettie every letter translates across 70+ languages, and you can read the original alongside the translation — which is how a fair number of people end up learning some of their pen pal's language by accident. HelloTalk takes the opposite approach: native speakers correct your writing directly, which is better if practice is the actual goal.
+Some apps translate for you. On Lettie every letter translates across 70+ languages, and one tap switches a letter between the translation and the original — which is how a fair number of people end up learning some of their pen pal's language by accident. HelloTalk takes the opposite approach: native speakers correct your writing directly, which is better if practice is the actual goal.
 
 If you're using a platform without translation, writing in short plain sentences does most of the work. Your pen pal is not grading you.
 

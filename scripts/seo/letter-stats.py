@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """letter-stats.sql 의 TSV → src/data/letterStats.ts 에 넣을 숫자(JSON). 사람이 판단할 부분이 없게 정의를 여기 고정한다.
 
-- 길이: 글자 수 중앙값. 나라별은 표본 20통 이상인 나라만.
+- 길이: 글자 수 중앙값(첫 편지·답장 따로도). 나라별은 표본 20통 이상이고 보낸 사람이 5명 이상인 나라만(한두 사람이 나라 값을 정하지 않게, 2026-11-02).
 - 쓴 시각: 보낸 사람 나라의 현지 시각. 시간대가 여러 개인 나라(미국·브라질·러시아 등)는 시각을 정할 수 없어 뺀다.
 - 배달: 2.0(2026-09-15 이후)에 쓴 대화 편지의 실제 도착 시각 - 쓴 시각. 국내/국제.
 - 답장: 상대 편지가 도착한 뒤 답장을 쓰기까지 걸린 시간(답장이 이어진 경우만).
@@ -24,10 +24,10 @@ P = lambda s: datetime.fromisoformat(s[:26]).replace(tzinfo=timezone.utc) if s a
 num = lambda x: int(x) if x not in ('', 'NULL') else None
 
 lens = [num(r['len']) for r in rows if num(r['len'])]
-by = collections.defaultdict(list)
+by = collections.defaultdict(list); senders = collections.defaultdict(set)
 for r in rows:
-    if num(r['len']): by[r['sc']].append(num(r['len']))
-length_by_country = sorted([[c, int(st.median(v)), len(v)] for c, v in by.items() if len(v) >= 20], key=lambda x: -x[1])
+    if num(r['len']): by[r['sc']].append(num(r['len'])); senders[r['sc']].add(r['uid'])
+length_by_country = sorted([[c, int(st.median(v)), len(v)] for c, v in by.items() if len(v) >= 20 and len(senders[c]) >= 5], key=lambda x: -x[1])
 
 hours = collections.Counter(); dows = collections.Counter(); n_time = 0
 for r in rows:
@@ -68,6 +68,8 @@ out = {
   'countries': len({r['sc'] for r in rows}),
   'period': {'from': min(r['created_at'] for r in rows)[:7], 'to': max(r['created_at'] for r in rows)[:7]},
   'length': {'median': int(st.median(lens)), 'p25': int(st.quantiles(lens, n=4)[0]), 'p75': int(st.quantiles(lens, n=4)[2]),
+             'first': int(st.median([num(r['len']) for r in rows if r['rep'] == '0' and num(r['len'])])),
+             'reply': int(st.median([num(r['len']) for r in rows if r['rep'] == '1' and num(r['len'])])),
              'byCountry': length_by_country},
   'time': {'sample': n_time, 'night22to2': pct(band(22, 26), n_time), 'late2to6': pct(band(2, 6), n_time),
            'morning6to12': pct(band(6, 12), n_time), 'afternoon12to18': pct(band(12, 18), n_time), 'evening18to22': pct(band(18, 22), n_time),

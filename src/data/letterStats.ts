@@ -1,30 +1,30 @@
 /**
- * 편지 통계 — 레티 운영 DB 집계 (1차 소스, 2026-10-11). /letter-stats(ko·en)·llms.txt·글 몇 편이 이 한 곳을 읽는다.
+ * 편지 통계 — 레티 운영 DB 집계 (1차 소스, 2026-10-11 처음 · 2026-11-02 갱신). /letter-stats(ko·en)·llms.txt·글 몇 편이 이 한 곳을 읽는다.
  * 다시 뽑기: scripts/seo/letter-stats.sql (운영 DB, 읽기 전용) → letters.tsv → `python3 scripts/seo/letter-stats.py letters.tsv` → 아래 숫자.
  * 정의는 letter-stats.py 맨 위 주석이 정본이다. 숫자를 바꾸면 asOf 도 바꾼다.
  * 편지 지도(letterMap.ts)는 "대화 속 사람→사람 편지"만, 여기는 공개로 띄운 편지까지 센다 — 두 숫자가 다른 이유.
  */
 export const LETTER_STATS = {
-  asOf: '2026-10-11',
-  letters: 648,
-  countries: 45,
-  period: { from: '2025-06', to: '2026-10' },
-  /** 글자 수 */
-  length: { median: 179, p25: 100, p75: 397,
-    /** [나라, 중앙값, 표본] — 20통 이상인 나라만 */
-    byCountry: [["PH", 292, 21], ["GB", 241, 25], ["NG", 204, 22], ["IN", 196, 83], ["TR", 161, 65], ["KR", 143, 88], ["US", 140, 156]] as [string, number, number][] },
+  asOf: '2026-11-02',
+  letters: 2226,
+  countries: 59,
+  period: { from: '2025-06', to: '2026-11' },
+  /** 글자 수. first·reply 는 첫 편지·답장 각각의 중앙값 */
+  length: { median: 185, p25: 71, p75: 449, first: 164, reply: 199,
+    /** [나라, 중앙값, 표본] — 20통 이상·보낸 사람 5명 이상인 나라만 */
+    byCountry: [["NG", 563, 145], ["IN", 316, 267], ["AU", 314, 45], ["PH", 299, 20], ["TR", 242, 87], ["UG", 237, 62], ["TW", 213, 87], ["BR", 192, 47], ["CA", 170, 32], ["IT", 139, 26], ["US", 136, 500], ["ES", 128, 44], ["KR", 127, 210], ["GB", 110, 59], ["CN", 28, 163]] as [string, number, number][] },
   /** 보낸 사람 현지 시각. 시간대가 하나인 나라의 편지만 (미국·브라질 등은 뺀다) */
-  time: { sample: 461, night22to2: 24, late2to6: 8, morning6to12: 25,
-    afternoon12to18: 29, evening18to22: 14, peakHour: 22,
+  time: { sample: 1410, night22to2: 24, late2to6: 8, morning6to12: 22,
+    afternoon12to18: 28, evening18to22: 18, peakHour: 22,
     /** [ISO 요일 1=월, %] */
-    weekday: [[1, 12], [2, 11], [3, 16], [4, 11], [5, 12], [6, 21], [7, 17]] as [number, number][] },
+    weekday: [[1, 14], [2, 13], [3, 14], [4, 12], [5, 12], [6, 17], [7, 19]] as [number, number][] },
   /** 2.0(2026-09-15~) 대화 편지의 실제 배달 시간(시간) */
-  delivery: { domestic: {"n": 33, "median": 1.6, "max": 1.9}, international: {"n": 266, "median": 10.0, "min": 3.0, "max": 23.8} },
+  delivery: { domestic: {"n": 204, "median": 1.6, "max": 2.0}, international: {"n": 1472, "median": 11.9, "min": 3.0, "max": 24.0} },
   /** 상대 편지가 도착한 뒤 답장을 쓰기까지(답장이 이어진 경우만) */
-  reply: { n: 101, medianHours: 4.8, within1h: 26, within24h: 87 },
+  reply: { n: 959, medianHours: 6.2, within1h: 19, within24h: 85 },
   /** 대화를 여는 편지의 첫 단어 (%) */
-  openers: { latin: { n: 246, hello: 20, hi: 19, hey: 9, i: 9, dear: 2 },
-    ko: { n: 36, annyeonghaseyo: 36, annyeongAny: 44 } },
+  openers: { latin: { n: 466, hello: 21, hi: 19, hey: 7, i: 8, dear: 2 },
+    ko: { n: 61, annyeonghaseyo: 31, annyeongAny: 38 } },
 };
 
 /**

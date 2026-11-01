@@ -8,7 +8,7 @@ import { COUNTRY_KO as C, koMonth } from '@/data/letterMap';
 import { LETTER_STATS as S, WEEKDAY_KO, busiestDay } from '@/data/letterStats';
 
 /**
- * 레티 편지 통계 (2026-10-11) — 레티 DB 에서만 나오는 숫자를 기준일·표본·정의와 함께 공개한다(1차 소스).
+ * 레티 편지 통계 (2026-10-11 처음, 2026-11-02 갱신) — 레티 DB 에서만 나오는 숫자를 기준일·표본·정의와 함께 공개한다(1차 소스).
  * 숫자는 전부 src/data/letterStats.ts 에서 읽는다. 손으로 쓴 숫자를 두지 않는다.
  */
 const URL = 'https://lettie-dating.com/letter-stats';
@@ -31,7 +31,7 @@ const FAQS = [
   { q: '펜팔 편지는 보통 얼마나 길게 쓰나요?', a: `레티에서 편지 길이의 중앙값은 ${S.length.median}자로, 짧은 문단 하나 정도입니다. 절반이 ${S.length.p25}자에서 ${S.length.p75}자 사이에 있습니다(${S.letters}통, ${S.asOf} 기준).` },
   { q: '사람들은 편지를 언제 쓰나요?', a: `편지의 ${S.time.night22to2}%가 현지 시각 밤 10시부터 새벽 2시 사이에 쓰였고, 가장 많이 쓰는 시각은 ${hourKo(S.time.peakHour)}대입니다. 요일로는 ${WEEKDAY_KO[BUSY_DAY]}이 ${BUSY_PCT}%로 가장 많습니다(시간대가 하나인 나라의 편지 ${S.time.sample}통 기준).` },
   { q: '펜팔 답장은 얼마나 빨리 오나요?', a: `레티에서 답장이 이어진 경우, 편지가 도착한 뒤 답장을 쓰기까지 중앙값 ${S.reply.medianHours}시간이 걸렸고 ${S.reply.within24h}%가 하루 안에 쓰였습니다(답장 ${S.reply.n}통 기준).` },
-  { q: '첫 편지는 보통 어떤 말로 시작하나요?', a: `한글로 쓴 첫 편지 ${S.openers.ko.n}통 중 ${S.openers.ko.annyeonghaseyo}%가 "안녕하세요"로 시작했습니다. 영어 등 라틴 문자 첫 편지 ${S.openers.latin.n}통은 "Hello" ${S.openers.latin.hello}%, "Hi" ${S.openers.latin.hi}%, "Hey" ${S.openers.latin.hey}% 순이고 "Dear"는 ${S.openers.latin.dear}%뿐입니다.` },
+  { q: '첫 편지는 보통 어떤 말로 시작하나요?', a: `한글로 쓴 첫 편지 ${S.openers.ko.n}통 중 ${S.openers.ko.annyeonghaseyo}%가 "안녕하세요"로 시작했습니다. 영어 등 라틴 문자 첫 편지 ${S.openers.latin.n}통은 "Hello" ${S.openers.latin.hello}%, "Hi" ${S.openers.latin.hi}%, "Hey" ${S.openers.latin.hey}%이고 "Dear"는 ${S.openers.latin.dear}%뿐입니다.` },
 ];
 
 const datasetLd = {
@@ -75,11 +75,11 @@ export default function LetterStatsPage() {
 
       <GuideSection title="편지 길이">
         <p>
-          편지 길이의 중앙값은 <strong>{S.length.median}자</strong>입니다. 4분의 1은 {S.length.p25}자보다 짧고, 4분의 1은 {S.length.p75}자보다 깁니다. 첫 편지와 답장의 길이는 거의 같습니다.
-          20통 이상 쓴 나라만 보면:
+          편지 길이의 중앙값은 <strong>{S.length.median}자</strong>입니다. 4분의 1은 {S.length.p25}자보다 짧고, 4분의 1은 {S.length.p75}자보다 깁니다. {S.length.reply > S.length.first * 1.1 ? '답장이 첫 편지보다 깁니다' : S.length.first > S.length.reply * 1.1 ? '첫 편지가 답장보다 깁니다' : '첫 편지와 답장의 길이는 거의 같습니다'}(중앙값 첫 편지 {S.length.first}자 · 답장 {S.length.reply}자).
+          20통 이상, 보낸 사람이 5명 이상인 나라만 보면:
         </p>
         <GuideTable head={['보낸 나라', '길이 중앙값(자)', '편지 수']} rows={S.length.byCountry.map(([c, m, n]) => [C[c] ?? c, String(m), String(n)])} />
-        <p>글자 수는 문자에 따라 다릅니다. 한글은 한 글자에 담기는 뜻이 영어 알파벳보다 많아서, 한국어 편지가 글자 수로 짧다고 내용이 짧은 것은 아닙니다.</p>
+        <p>글자 수는 문자에 따라 다릅니다. 한글·한자는 한 글자에 담기는 뜻이 영어 알파벳보다 많아서, 한국어·중국어 편지가 글자 수로 짧다고 내용이 짧은 것은 아닙니다.</p>
       </GuideSection>
 
       <GuideSection title="편지를 쓰는 시간">

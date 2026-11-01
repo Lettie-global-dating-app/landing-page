@@ -22,9 +22,12 @@ export const metadata: Metadata = {
     images: [{ url: `https://lettie-dating.com${D.image}`, width: 2400, height: 1500 }] },
 };
 
+/** 영어에서 the 를 붙이는 나라 이름 */
+const THE = ['US', 'GB', 'AE', 'PH', 'NL'];
+
 const FAQS = [
   { q: 'How many letters have people exchanged on Lettie?', a: `${D.letters} letters were sent from one person to another on Lettie between ${enMonth(D.period.from)} and ${enMonth(D.period.to)}, counted on ${D.asOf}. Letters written by the app's AI characters and developer test accounts are not included.` },
-  { q: 'Which countries write the most letters on Lettie?', a: `The United States (${D.byCountry[0][1]} letters sent or received), South Korea (${D.byCountry[1][1]}) and Türkiye (${D.byCountry[2][1]}) lead, as of ${D.asOf}.` },
+  { q: 'Which countries write the most letters on Lettie?', a: `People in ${D.byCountry.slice(0, 3).map(([c, n], i) => `${THE.includes(c) ? 'the ' : ''}${C[c] ?? c} (${n}${i === 0 ? ' letters sent or received' : ''})`).join(', ').replace(/, ([^,]*)$/, ' and $1')} write the most, as of ${D.asOf}.` },
   { q: 'What is the busiest pen pal route on Lettie?', a: `${TOP.map(([a, b]) => `${C[a] ?? a} – ${C[b] ?? b}`).join(' and ')} ${TOP.length > 1 ? `are tied at ${TOP[0][2]} letters each` : `leads with ${TOP[0][2]} letters`}, counting both directions, as of ${D.asOf}.` },
 ];
 
