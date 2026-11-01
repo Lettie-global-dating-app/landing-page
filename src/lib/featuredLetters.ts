@@ -30,7 +30,7 @@ export async function fetchFeaturedLetters(limit = 9): Promise<FeaturedLetter[]>
   }
 }
 
-/** 칸 문구 — 홈 28개 언어(src/i18n/home). 없는 말은 영어. */
+/** 칸 문구 — 홈 문구가 있는 언어(src/i18n/home)마다. 없는 말은 영어. */
 export const FEATURED_COPY: Record<string, { eyebrow: string; title: string; sub: string; read: string }> = {
   ko: {"eyebrow": "하늘 우편 · 진짜 편지", "title": "레티 하늘에 떠 있는 편지", "sub": "누군가 모르는 사람에게 띄운 진짜 편지예요. 쓴 사람이 실어도 좋다고 한 것만 보여 드려요.", "read": "읽고 답장하기"},
   en: {"eyebrow": "AIR MAIL · REAL LETTERS", "title": "Letters floating in Lettie's sky", "sub": "Real letters people sent to whoever finds them. We only show ones the writer said we could share.", "read": "Read & write back"},
