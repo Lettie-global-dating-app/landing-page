@@ -4,8 +4,11 @@ import { localizedArticleAlternatesForPath } from '@/data/articles/lookup';
 import { BookOpen, PenLine, MessageCircleQuestion, Repeat } from 'lucide-react';
 import { Metadata } from 'next';
 import GuideArticle, { GuideSection, GuideTable, GuideCallout } from '@/components/GuideArticle';
+import { LETTER_STATS } from '@/data/letterStats';
 
-const UPDATED = '2026-08-28';
+const W = LETTER_STATS.wordsEn;
+
+const UPDATED = '2026-11-02';
 
 export const metadata: Metadata = {
   title: { absolute: 'What to Write in a Pen Pal Letter | Lettie' },
@@ -37,11 +40,11 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: 'What should I write in my first pen pal letter?',
-    a: 'Write three things: one specific detail about your daily life, one thing you noticed in their profile, and one open question for them. Keep the first letter to 150–300 words. Longer first letters get fewer replies because they leave the reader nothing to ask about.',
+    a: `Write three things: one specific detail about your daily life, one thing you noticed in their profile, and one open question for them. That fits in well under 150 words: on Lettie the median first letter written in English is ${W.first.median} words, and only ${W.first.over150}% pass 150 (${W.first.n} first letters, counted ${LETTER_STATS.asOf}).`,
   },
   {
     q: 'How long should a pen pal letter be?',
-    a: 'A first letter works best at 150–300 words. Once a correspondence is established, 300–600 words is a comfortable range. Length matters less than whether the letter ends with something the other person can answer.',
+    a: `There is no set length. On Lettie, letters written in English have a median of ${W.all.median} words (${W.first.median} for a first letter, ${W.reply.median} for a reply), and half fall between ${W.all.p25} and ${W.all.p75} words (${W.all.n} letters, counted ${LETTER_STATS.asOf}). Length matters less than whether the letter ends with something the other person can answer.`,
   },
   {
     q: 'Why do my pen pal conversations die after two or three letters?',
@@ -71,8 +74,8 @@ export default function WritingTipsPage() {
       answer={
         <>
           A first pen pal letter should contain three things: one specific detail from your daily life,
-          one thing you noticed about the other person, and one open question. Keep it to{' '}
-          <strong>150–300 words</strong>. The most common reason a correspondence dies is not bad writing —
+          one thing you noticed about the other person, and one open question. Most first letters are short: on
+          Lettie the median first letter in English is <strong>{W.first.median} words</strong>. The most common reason a correspondence dies is not bad writing —
           it is a letter that leaves the reader nothing to answer.
         </>
       }

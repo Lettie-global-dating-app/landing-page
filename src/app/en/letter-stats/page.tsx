@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 };
 
 const FAQS = [
-  { q: 'How long is a typical pen pal letter?', a: `On Lettie the median letter is ${S.length.median} characters, about the length of one short paragraph. Half of all letters fall between ${S.length.p25} and ${S.length.p75} characters (${S.letters} letters, counted ${S.asOf}).` },
+  { q: 'How long is a typical pen pal letter?', a: `On Lettie the median letter is ${S.length.median} characters, about the length of one short paragraph. Half of all letters fall between ${S.length.p25} and ${S.length.p75} characters (${S.letters} letters, counted ${S.asOf}). Letters written in English have a median of ${S.wordsEn.all.median} words (${S.wordsEn.first.median} for a first letter, ${S.wordsEn.reply.median} for a reply); only ${S.wordsEn.first.over150}% of first letters pass 150 words.` },
   { q: 'When do people write pen pal letters?', a: `${S.time.night22to2}% of letters on Lettie are written between 10 p.m. and 2 a.m. local time, and the busiest single hour is ${hour12(S.time.peakHour)}. ${WEEKDAY_EN[BUSY_DAY]} is the busiest day with ${BUSY_PCT}% of letters (${S.time.sample} letters from single-time-zone countries).` },
   { q: 'How fast do pen pals reply?', a: `When a reply comes on Lettie, the median time from a letter arriving to the reply being written is ${S.reply.medianHours} hours; ${S.reply.within24h}% are written within a day (${S.reply.n} replies).` },
   { q: 'How do most people start a first letter to a pen pal?', a: `In ${S.openers.latin.n} first letters written in Latin script on Lettie, ${S.openers.latin.hello}% open with "Hello", ${S.openers.latin.hi}% with "Hi" and ${S.openers.latin.hey}% with "Hey". Only ${S.openers.latin.dear}% start with "Dear".` },
@@ -76,6 +76,7 @@ export default function LetterStatsPage() {
       <GuideSection title="How long letters are">
         <p>
           The median letter is <strong>{S.length.median} characters</strong>. A quarter are shorter than {S.length.p25} and a quarter longer than {S.length.p75}. {S.length.reply > S.length.first * 1.1 ? 'Replies run longer than first letters' : S.length.first > S.length.reply * 1.1 ? 'First letters run longer than replies' : 'First letters and replies are about the same length'} (median {S.length.first} characters for a first letter, {S.length.reply} for a reply).
+          Counted in words, letters written in English have a median of <strong>{S.wordsEn.all.median} words</strong> ({S.wordsEn.first.median} for a first letter, {S.wordsEn.reply.median} for a reply), half fall between {S.wordsEn.all.p25} and {S.wordsEn.all.p75} words, and only {S.wordsEn.first.over150}% of first letters pass 150 words ({S.wordsEn.all.n} letters).
           Countries with at least 20 letters from at least five writers:
         </p>
         <GuideTable head={['Sender country', 'Median length (characters)', 'Letters']} rows={S.length.byCountry.map(([c, m, n]) => [C[c] ?? c, String(m), String(n)])} />
@@ -136,7 +137,7 @@ export default function LetterStatsPage() {
         <p>
           Source: Lettie&apos;s own database, queried on {S.asOf}. {S.letters} letters written by people between {PERIOD}: letters in conversations and letters released for strangers to pick up.
           Letters by the app&apos;s AI characters, developer and test accounts, deleted letters and accounts without a valid country are excluded. Only the first 60 characters of first letters
-          were read, by a script, to count first words; no letter text is published.
+          were read, by a script, to count first words; no letter text is published. Word counts cover letters detected as English (almost all ASCII and containing common English words such as &ldquo;the&rdquo;, &ldquo;and&rdquo; or &ldquo;you&rdquo;), so they are approximate.
         </p>
         <p>
           Writing times use the sender&apos;s local time, so only countries with a single time zone are counted ({S.time.sample} letters). Delivery times cover letters written since Lettie 2.0

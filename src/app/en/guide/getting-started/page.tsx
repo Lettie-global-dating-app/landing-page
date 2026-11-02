@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { ArrowLeft, Mail, User, Heart, Shield, CheckCircle } from 'lucide-react';
 import { Metadata } from 'next';
 import ReadNext from '@/components/ReadNext';
+import { LETTER_STATS } from '@/data/letterStats';
 
 export const metadata: Metadata = {
   title: { absolute: 'How to Start With a Pen Pal, Step by Step | Lettie' },
@@ -154,8 +155,9 @@ export default function GettingStartedGuidePage() {
                 <div className="border-l-4 border-blue-500 pl-6 py-4 bg-gray-50 rounded-r-xl">
                   <p className="font-semibold text-gray-800 mb-2">💡 Pro Tip</p>
                   <p>
-                    Keep your first letter concise but meaningful. Aim for 150-300 words - enough to
-                    show interest without overwhelming your pen pal.
+                    Keep your first letter concise but meaningful. On Lettie the median first letter written in
+                    English is {LETTER_STATS.wordsEn.first.median} words, and only {LETTER_STATS.wordsEn.first.over150}% pass 150 words —
+                    one scene, a few things about you and one question is enough.
                   </p>
                 </div>
               </div>

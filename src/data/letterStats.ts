@@ -22,6 +22,8 @@ export const LETTER_STATS = {
   delivery: { domestic: {"n": 204, "median": 1.6, "max": 2.0}, international: {"n": 1472, "median": 11.9, "min": 3.0, "max": 24.0} },
   /** 상대 편지가 도착한 뒤 답장을 쓰기까지(답장이 이어진 경우만) */
   reply: { n: 959, medianHours: 6.2, within1h: 19, within24h: 85 },
+  /** 영어로 쓴 편지의 단어 수 — scripts/seo/letter-words-en.sql·.py. 영어 판별은 대략값(글자 95%↑ ASCII + 영어 기능어). over150 은 150단어 이상 비율(%) */
+  wordsEn: { first: { n: 362, median: 39, over150: 10 }, reply: { n: 940, median: 53, over150: 20 }, all: { n: 1302, median: 49, p25: 23, p75: 113 } },
   /** 대화를 여는 편지의 첫 단어 (%) */
   openers: { latin: { n: 466, hello: 21, hi: 19, hey: 7, i: 8, dear: 2 },
     ko: { n: 61, annyeonghaseyo: 31, annyeongAny: 38 } },

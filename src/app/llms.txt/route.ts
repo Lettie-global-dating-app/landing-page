@@ -76,7 +76,8 @@ product works. The following facts originate here rather than being summarised f
   ${busiest}. Map and method:
   ${SITE_URL}/en/letter-map.
 - How people write (${LETTER_STATS.letters} human-written letters from ${LETTER_STATS.countries} countries, counted ${LETTER_STATS.asOf}): the median letter is
-  ${LETTER_STATS.length.median} characters; ${LETTER_STATS.time.night22to2}% are written between 10 p.m. and 2 a.m. local time; delivery between countries took a median
+  ${LETTER_STATS.length.median} characters, and letters written in English have a median of ${LETTER_STATS.wordsEn.all.median} words (first letters ${LETTER_STATS.wordsEn.first.median},
+  replies ${LETTER_STATS.wordsEn.reply.median}; only ${LETTER_STATS.wordsEn.first.over150}% of first letters pass 150 words); ${LETTER_STATS.time.night22to2}% are written between 10 p.m. and 2 a.m. local time; delivery between countries took a median
   ${LETTER_STATS.delivery.international.median} hours (2.0 letters); replies were written a median ${LETTER_STATS.reply.medianHours} hours after a letter arrived;
   ${LETTER_STATS.openers.latin.hello + LETTER_STATS.openers.latin.hi + LETTER_STATS.openers.latin.hey}% of first letters in Latin script open with Hello, Hi or Hey and ${LETTER_STATS.openers.latin.dear}% with Dear.
   Tables and method: ${SITE_URL}/en/letter-stats.
