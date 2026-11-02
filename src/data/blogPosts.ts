@@ -1268,7 +1268,7 @@ Let's meet on Lettie. Looking forward to the start of our conversation.
             { q: 'How do you start a letter to a pen pal?', a: 'Start with the moment or reason that made you write rather than a greeting. One concrete scene from your day, such as a street you walked down or something you saw, reads better as a first line than "How are you?".' },
             { q: 'What should the first line of a first letter say?', a: 'Point to one thing you noticed in their profile or letter and say why it made you write. Save your self-introduction for the second sentence.' },
             { q: 'How do you start a letter after a long time?', a: 'Keep the apology to one line and go straight to your news. Naming what made you pick up the pen, like a birthday or a move, takes the awkwardness out.' },
-            { q: 'How long should a first pen pal letter be?', a: 'Long enough for one scene, a few things about you and one question, which is usually somewhere around 150 to 300 words. A short letter that is specific beats a long one that is general.' },
+            { q: 'How long should a first pen pal letter be?', a: `Long enough for one scene, a few things about you and one question. On Lettie the median first letter written in English is ${LETTER_STATS.wordsEn.first.median} words, and only ${LETTER_STATS.wordsEn.first.over150}% pass 150 words. A short letter that is specific beats a long one that is general.` },
             { q: 'How do you start a letter to someone in another country?', a: 'Describe one thing happening in your city right now and ask one question about theirs. On Lettie letters are translated into 70+ languages, so you can write in your own language.' },
         ],
         content: `
@@ -1472,7 +1472,7 @@ If you are stuck, finish one of these: *Today I noticed…*, *Right now I can he
 
 ## The rest of a first letter
 
-A first letter does not need to be long. One scene, a few things about you, and one question is a complete letter, usually somewhere around 150 to 300 words.
+A first letter does not need to be long. One scene, a few things about you, and one question is a complete letter. On Lettie the median first letter written in English is ${LETTER_STATS.wordsEn.first.median} words, and only ${LETTER_STATS.wordsEn.first.over150}% pass 150 ([pen pal letter statistics](/en/letter-stats)).
 
 - **About you:** two or three things that invite a question back (what you're learning, a place you love, what your week looks like), rather than a full profile.
 - **One question:** ask about something you actually want to know. "What's a normal Tuesday like for you?" gets a better answer than "Tell me about yourself."

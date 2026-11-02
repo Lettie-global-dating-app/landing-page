@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 };
 
 const FAQS = [
-  { q: '펜팔 편지는 보통 얼마나 길게 쓰나요?', a: `레티에서 편지 길이의 중앙값은 ${S.length.median}자로, 짧은 문단 하나 정도입니다. 절반이 ${S.length.p25}자에서 ${S.length.p75}자 사이에 있습니다(${S.letters}통, ${S.asOf} 기준).` },
+  { q: '펜팔 편지는 보통 얼마나 길게 쓰나요?', a: `레티에서 편지 길이의 중앙값은 ${S.length.median}자로, 짧은 문단 하나 정도입니다. 절반이 ${S.length.p25}자에서 ${S.length.p75}자 사이에 있습니다(${S.letters}통, ${S.asOf} 기준). 영어로 쓴 편지는 단어로 중앙값 ${S.wordsEn.all.median}단어(첫 편지 ${S.wordsEn.first.median}단어, 답장 ${S.wordsEn.reply.median}단어)이고, 첫 편지 중 150단어를 넘는 것은 ${S.wordsEn.first.over150}%뿐입니다.` },
   { q: '사람들은 편지를 언제 쓰나요?', a: `편지의 ${S.time.night22to2}%가 현지 시각 밤 10시부터 새벽 2시 사이에 쓰였고, 가장 많이 쓰는 시각은 ${hourKo(S.time.peakHour)}대입니다. 요일로는 ${WEEKDAY_KO[BUSY_DAY]}이 ${BUSY_PCT}%로 가장 많습니다(시간대가 하나인 나라의 편지 ${S.time.sample}통 기준).` },
   { q: '펜팔 답장은 얼마나 빨리 오나요?', a: `레티에서 답장이 이어진 경우, 편지가 도착한 뒤 답장을 쓰기까지 중앙값 ${S.reply.medianHours}시간이 걸렸고 ${S.reply.within24h}%가 하루 안에 쓰였습니다(답장 ${S.reply.n}통 기준).` },
   { q: '첫 편지는 보통 어떤 말로 시작하나요?', a: `한글로 쓴 첫 편지 ${S.openers.ko.n}통 중 ${S.openers.ko.annyeonghaseyo}%가 "안녕하세요"로 시작했습니다. 영어 등 라틴 문자 첫 편지 ${S.openers.latin.n}통은 "Hello" ${S.openers.latin.hello}%, "Hi" ${S.openers.latin.hi}%, "Hey" ${S.openers.latin.hey}%이고 "Dear"는 ${S.openers.latin.dear}%뿐입니다.` },
@@ -76,6 +76,7 @@ export default function LetterStatsPage() {
       <GuideSection title="편지 길이">
         <p>
           편지 길이의 중앙값은 <strong>{S.length.median}자</strong>입니다. 4분의 1은 {S.length.p25}자보다 짧고, 4분의 1은 {S.length.p75}자보다 깁니다. {S.length.reply > S.length.first * 1.1 ? '답장이 첫 편지보다 깁니다' : S.length.first > S.length.reply * 1.1 ? '첫 편지가 답장보다 깁니다' : '첫 편지와 답장의 길이는 거의 같습니다'}(중앙값 첫 편지 {S.length.first}자 · 답장 {S.length.reply}자).
+          영어로 쓴 편지를 단어로 세면 중앙값 <strong>{S.wordsEn.all.median}단어</strong>(첫 편지 {S.wordsEn.first.median}단어 · 답장 {S.wordsEn.reply.median}단어)이고, 절반이 {S.wordsEn.all.p25}~{S.wordsEn.all.p75}단어 사이이며, 첫 편지 중 150단어를 넘는 것은 {S.wordsEn.first.over150}%입니다({S.wordsEn.all.n}통).
           20통 이상, 보낸 사람이 5명 이상인 나라만 보면:
         </p>
         <GuideTable head={['보낸 나라', '길이 중앙값(자)', '편지 수']} rows={S.length.byCountry.map(([c, m, n]) => [C[c] ?? c, String(m), String(n)])} />
@@ -133,7 +134,7 @@ export default function LetterStatsPage() {
       <GuideSection title="어떻게 셌나">
         <p>
           출처: 레티 앱 데이터베이스, {S.asOf} 조회. {PERIOD} 사람이 쓴 편지 {S.letters}통 — 대화 속 편지와 낯선 사람에게 띄운 공개 편지를 함께 셉니다.
-          AI 캐릭터·개발·테스트 계정의 편지, 삭제된 편지, 나라가 올바르게 저장되지 않은 계정은 뺐습니다. 첫마디를 세려고 첫 편지의 앞 60자만 스크립트로 읽었고, 편지 내용은 공개하지 않습니다.
+          AI 캐릭터·개발·테스트 계정의 편지, 삭제된 편지, 나라가 올바르게 저장되지 않은 계정은 뺐습니다. 첫마디를 세려고 첫 편지의 앞 60자만 스크립트로 읽었고, 편지 내용은 공개하지 않습니다. 단어 수는 영어로 쓴 편지(거의 모두 영문자이고 the·and·you 같은 영어 낱말이 있는 편지)만 센 대략값입니다.
         </p>
         <p>
           쓴 시각은 보낸 사람의 현지 시각이라 시간대가 하나인 나라의 편지만 셉니다({S.time.sample}통). 배달 시간은 레티 2.0(2026년 9월 15일) 이후 편지 기준입니다.

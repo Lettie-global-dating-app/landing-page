@@ -39,3 +39,35 @@ GSC 확정치(gsc-days.mjs 40): 10/12~16 하루 노출 226~306 → 10/19 12 → 
 
 - 11/15 (launchd seo-drop-1115): 급락 재측정 + 이번 갱신 4쪽이 새 제목으로 색인됐는지, Perplexity 「pen pal letter statistics」·「how long is a pen pal letter」가 새 숫자를 인용하는지.
 - 다음 데이터 갱신: 2027-01 (분기).
+
+---
+
+# 2차 (11/2 저녁) — 레인별 진단 · 편지 길이 1차 데이터
+
+대표 「/fire-your-seo-agency」 다시. 이번엔 1차에서 안 본 레인(빙·네이버·AI 인용)을 실제 검색으로 봤다.
+
+## 진단
+
+| 레인 | 상태 | 근거 |
+|---|---|---|
+| SEO 구글 | ❌ | 230쪽 크롤 오류 0·색인 266 그대로. 확정치 10/27~31 하루 노출 4~6(더 내려감), 비브랜드 8개 검색어 1쪽 0. 브랜드는 정상 |
+| SEO 빙 | ✅ | 「pen pal letter statistics」 1위(/en/letter-stats, 제목은 옛 648통 — 1차에서 IndexNow 보냄) |
+| NEO | ✅ | 「펜팔 앱」 AI 브리핑이 레티 소개, 11/2 올린 네이버 클립 바로 노출, what-is-a-pen-pal·best-penpal-apps 웹 결과 |
+| GEO | ⚠️ | 퍼플렉시티 「How long is the average pen pal letter?」 첫 출처가 레티인데, 인용한 건 우리 데이터가 아니라 근거 없는 「150~300 words」 조언 |
+| ASO 교차 | ⚠️ | 스토어 설명 「두 도시 사이 실제 거리」「원문·번역 나란히」 — 둘 다 지금 규칙과 다르고, AI 개요·네이버 AI 브리핑이 그대로 옮김 |
+
+## 바꾼 것
+
+1. **영어 편지 단어 수 (새 1차 데이터, `LETTER_STATS.wordsEn`)** — scripts/seo/letter-words-en.sql·.py. 영어 판별은 대략값(거의 ASCII + 영어 기능어).
+   첫 편지 362통 중앙값 **39단어**, 150단어 이상 10%. 답장 940통 53단어. 전체 1,302통 49단어(사분위 23~113).
+2. 「150~300 words」 조언을 데이터로 바꿈: /en/guide/writing-tips(FAQ 2·첫 문단, 「긴 첫 편지는 답장을 덜 받는다」 근거 없는 문장 삭제, updated 11/2), /en/guide/getting-started 팁, /en/blog/how-to-start-penpal(FAQ·본문).
+3. /letter-stats(ko·en) 길이 문단·FAQ·방법에 단어 수, llms.txt 요약 한 줄.
+
+## 하지 않은 것
+
+- 다국어 글 24개 언어의 「150~300」(약 140곳): 일괄 수정 멈춤 기간이고, 11/15 에 다국어 쪽 noindex 를 정하므로 그 뒤에.
+- 새 글·IndexNow 대량 제출 없음. 바뀐 영어 쪽 6개만 제출.
+
+## 다음 측정
+
+- 11/15: 퍼플렉시티 「How long is the average pen pal letter?」가 39단어를 인용하는지, 빙 /en/letter-stats 제목이 2,226통으로 바뀌었는지.
