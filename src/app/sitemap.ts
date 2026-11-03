@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next';
 import { blogPosts } from '@/data/blogPosts';
 import { LOCALES } from '@/i18n/config';
 import { LOCALIZED_POSTS_NOINDEX, localizedPosts } from '@/data/localizedPosts';
-import { FAQ_LOCALES } from '@/data/localizedFaq';
+import { FAQ_LOCALES, LOCALIZED_FAQ_NOINDEX } from '@/data/localizedFaq';
 import { ARTICLE_PATH, ARTICLE_SLUGS, indexedArticleLocales } from '@/data/articles/lookup';
 import { ARTICLE_DATE } from '@/data/articles/types';
 
@@ -96,7 +96,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   );
 
   // 언어별 FAQ. 번역이 실제로 있는 언어만 — 없는 언어를 넣으면 404 를 제출하는 셈이다.
-  const localeFaqs = FAQ_LOCALES.map((locale) => ({
+  // 2026-11-04: 다국어 FAQ 는 noindex 라 사이트맵에서도 뺀다 (LOCALIZED_FAQ_NOINDEX)
+  const localeFaqs = (LOCALIZED_FAQ_NOINDEX ? [] : FAQ_LOCALES).map((locale) => ({
     url: `${baseUrl}/${locale}/faq`,
     lastModified: gitDate(['src/data/localizedFaq.ts']),
     changeFrequency: 'monthly' as const,

@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation';
 import { ArrowLeft } from 'lucide-react';
 import { SITE_URL, isLocale, OG_LOCALE } from '@/i18n/config';
 import { seoTitle } from '@/lib/seo';
-import { FAQ_LOCALES, faqAlternates, getFaq } from '@/data/localizedFaq';
+import { FAQ_LOCALES, LOCALIZED_FAQ_NOINDEX, faqAlternates, getFaq } from '@/data/localizedFaq';
 
 /**
  * 언어별 FAQ.
@@ -34,7 +34,7 @@ export async function generateMetadata({
     title: { absolute: seoTitle(faq.title) },
     description: faq.description,
     keywords: faq.keywords,
-    alternates: { canonical: url, languages: faqAlternates() },
+    alternates: LOCALIZED_FAQ_NOINDEX ? { canonical: url } : { canonical: url, languages: faqAlternates() },
     openGraph: {
       type: 'website',
       locale: OG_LOCALE[locale],
@@ -50,11 +50,14 @@ export async function generateMetadata({
       description: faq.description,
       images: [`${SITE_URL}/lettie-og-image.png`],
     },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
-    },
+    // 2026-11-04 다국어 FAQ 는 검색에서만 뺀다 (localizedFaq.ts LOCALIZED_FAQ_NOINDEX)
+    robots: LOCALIZED_FAQ_NOINDEX
+      ? { index: false, follow: true }
+      : {
+          index: true,
+          follow: true,
+          googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+        },
   };
 }
 
