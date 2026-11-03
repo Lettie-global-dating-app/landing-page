@@ -381,6 +381,13 @@ export const localizedFaq: Record<string, FaqContent> = {
 Object.assign(localizedFaq, extraFaq);
 
 /**
+ * 2026-11-04: 다국어 FAQ(26개 언어)는 사람에게는 그대로 보이고 검색에서만 뺀다 — noindex·사이트맵·hreflang 제외.
+ * 구글 3개월(8/4~11/2) 노출이 26쪽을 다 합쳐 6번이었다. 10/19 사이트 전체 급락 뒤 기계 번역 사본을 줄이는 정리의 1단계
+ * (docs/seo-drop-2026-10-19.md). 한국어 /faq·영어 /en/faq 는 그대로 색인.
+ */
+export const LOCALIZED_FAQ_NOINDEX = true;
+
+/**
  * FAQ 의 hreflang. **FAQ 가 실제로 있는 언어끼리만** 잇는다.
  * 한국어는 `/faq`, 영어는 `/en/faq` 로 기존 라우트가 담당하고
  * 나머지는 `/[locale]/faq` 다. 없는 언어를 가리키면 404 를 제출하는 셈이다.
@@ -391,7 +398,7 @@ export function faqAlternates(): Record<string, string> {
     ko: `${SITE}/faq`,
     en: `${SITE}/en/faq`,
   };
-  for (const l of Object.keys(localizedFaq)) map[HREFLANG[l] ?? l] = `${SITE}/${l}/faq`;
+  if (!LOCALIZED_FAQ_NOINDEX) for (const l of Object.keys(localizedFaq)) map[HREFLANG[l] ?? l] = `${SITE}/${l}/faq`;
   map['x-default'] = `${SITE}/en/faq`;
   return map;
 }
