@@ -11,6 +11,7 @@
 import Link from 'next/link';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import styles from './letter.module.css';
+import { playLink } from '@/lib/storeLinks';
 import {
   APP_LANGS,
   APP_STORE_URL,
@@ -34,6 +35,8 @@ type Props = {
   place: string | null;
   center: [number, number];
   platform: Platform;
+  /** 공유한 사람의 초대 코드(페이지 주소 ?r=, 2026-11-05). 있으면 Play 링크 referrer 에 실어 앱이 자동으로 붙인다 → 공유한 사람에게 「배달부」 우표 */
+  refCode?: string | null;
 };
 
 const C = {
@@ -502,7 +505,9 @@ function Postmark({ city, date }: { city: string; date: string }) {
 // ── 화면 ───────────────────────────────────────────────────────────────
 type Phase = 'arrive' | 'idle' | 'opening' | 'leaving' | 'read';
 
-export default function LetterExperience({ letter, token, viewerLang, ui, strings: s, place, center, platform }: Props) {
+export default function LetterExperience({ letter, token, viewerLang, ui, strings: s, place, center, platform, refCode }: Props) {
+  // 초대 코드가 있으면 Play 링크에 r= 을 싣는다(App Store 는 실을 곳이 없어 그대로 — iOS 는 앱에서 코드를 직접 넣는다)
+  const play = refCode ? playLink('share', refCode) : PLAY_URL;
   const sound = useSound();
   const [phase, setPhase] = useState<Phase>('arrive');
   const [squash, setSquash] = useState(0);
@@ -600,7 +605,7 @@ export default function LetterExperience({ letter, token, viewerLang, ui, string
     sound.play('stamp_thud', 0.6);
   }, [phase, sound]);
 
-  if (!letter) return <Gone s={s} ui={ui} platform={platform} sound={sound} />;
+  if (!letter) return <Gone s={s} ui={ui} platform={platform} sound={sound} play={play} />;
 
   const showStage = phase !== 'read';
   return (
@@ -643,7 +648,7 @@ export default function LetterExperience({ letter, token, viewerLang, ui, string
             </div>
           </section>
         ) : (
-          <LetterView letter={letter} token={token} viewerLang={viewerLang} s={s} place={place} platform={platform} sound={sound} />
+          <LetterView letter={letter} token={token} viewerLang={viewerLang} s={s} place={place} platform={platform} sound={sound} play={play} />
         )}
       </div>
     </main>
@@ -666,15 +671,15 @@ function TopBar({ s, sound }: { s: Strings; sound: SoundApi }) {
   );
 }
 
-function storeHref(platform: Platform, token: string) {
+function storeHref(platform: Platform, token: string, play: string) {
   if (platform === 'android')
     // 앱이 있으면 그 편지로 바로, 없으면 플레이 스토어로
-    return `intent://lettie-dating.com/open/letter/${token}#Intent;scheme=https;package=com.dearglobe.dearglobe;S.browser_fallback_url=${encodeURIComponent(PLAY_URL)};end`;
+    return `intent://lettie-dating.com/open/letter/${token}#Intent;scheme=https;package=com.dearglobe.dearglobe;S.browser_fallback_url=${encodeURIComponent(play)};end`;
   if (platform === 'ios') return APP_STORE_URL;
   return '#get';
 }
 
-function LetterView({ letter, token, viewerLang, s, place, platform, sound }: { letter: SharedLetter; token: string; viewerLang: string; s: Strings; place: string | null; platform: Platform; sound: SoundApi }) {
+function LetterView({ letter, token, viewerLang, s, place, platform, sound, play }: { letter: SharedLetter; token: string; viewerLang: string; s: Strings; place: string | null; platform: Platform; sound: SoundApi; play: string }) {
   const [shown, setShown] = useState<'original' | 'translated'>('original');
   const [target, setTarget] = useState(() => (letter.language && letter.language === viewerLang ? (viewerLang === 'en' ? 'ko' : 'en') : viewerLang));
   const [cache, setCache] = useState<Record<string, Translated>>({});
@@ -795,16 +800,16 @@ function LetterView({ letter, token, viewerLang, s, place, platform, sound }: { 
         {shown === 'translated' && !error && <div className={styles.note}>{fill(s.translatedNote, { lang: langName(target) })}</div>}
         <div className={styles.meta}>{fill(s.released, { date: dateText })}</div>
       </article>
-      <Reply s={s} token={token} platform={platform} />
+      <Reply s={s} token={token} platform={platform} play={play} />
     </section>
   );
 }
 
-function Reply({ s, token, platform }: { s: Strings; token: string; platform: Platform }) {
+function Reply({ s, token, platform, play }: { s: Strings; token: string; platform: Platform; play: string }) {
   return (
     <div className={styles.reply}>
       <div className={styles.eyebrow}>{s.replyEyebrow}</div>
-      <a className={styles.cta} href={storeHref(platform, token)}>
+      <a className={styles.cta} href={storeHref(platform, token, play)}>
         <TinyEnvelope />
         {s.replyCta}
       </a>
@@ -814,7 +819,7 @@ function Reply({ s, token, platform }: { s: Strings; token: string; platform: Pl
         <a className={styles.store} href={APP_STORE_URL}>
           App Store
         </a>
-        <a className={styles.store} href={PLAY_URL}>
+        <a className={styles.store} href={play}>
           Google Play
         </a>
       </div>
@@ -840,7 +845,7 @@ function Reply({ s, token, platform }: { s: Strings; token: string; platform: Pl
   );
 }
 
-function Gone({ s, ui, platform, sound }: { s: Strings; ui: string; platform: Platform; sound: SoundApi }) {
+function Gone({ s, ui, platform, sound, play }: { s: Strings; ui: string; platform: Platform; sound: SoundApi; play: string }) {
   return (
     <main className={styles.root} lang={ui.replace('_', '-')} dir={RTL_LANGS.includes(ui) ? 'rtl' : undefined}>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" precedence="default" />
@@ -853,14 +858,14 @@ function Gone({ s, ui, platform, sound }: { s: Strings; ui: string; platform: Pl
           </div>
           <h1>{s.goneTitle}</h1>
           <p>{s.goneBody}</p>
-          <a className={styles.cta} href={platform === 'android' ? PLAY_URL : platform === 'ios' ? APP_STORE_URL : '#get'}>
+          <a className={styles.cta} href={platform === 'android' ? play : platform === 'ios' ? APP_STORE_URL : '#get'}>
             {s.getApp}
           </a>
           <div className={styles.stores} id="get" style={{ width: '100%' }}>
             <a className={styles.store} href={APP_STORE_URL}>
               App Store
             </a>
-            <a className={styles.store} href={PLAY_URL}>
+            <a className={styles.store} href={play}>
               Google Play
             </a>
           </div>

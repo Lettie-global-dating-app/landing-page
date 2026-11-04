@@ -10,12 +10,13 @@ import {
   viewerLangFrom,
 } from '@/lib/letterShare';
 import LetterExperience from './LetterExperience';
+import { referralCodeOf } from '@/lib/storeLinks';
 
 /**
  * 웹으로 공유한 편지 (2026-10-27). 앱이 있으면 이 주소(앱 링크)가 앱을 열고, 없으면 여기서 봉투를 열어 읽는다.
  * 화면 언어는 보는 사람의 브라우저 언어, 미리보기(OG)는 공유한 사람의 앱 언어 — 카카오톡·메신저 봇은 언어를 안 보낸다.
  */
-type Params = { params: Promise<{ token: string }> };
+type Params = { params: Promise<{ token: string }>; searchParams?: Promise<Record<string, string | string[] | undefined>> };
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { token } = await params;
@@ -44,8 +45,11 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   };
 }
 
-export default async function SharedLetterPage({ params }: Params) {
+export default async function SharedLetterPage({ params, searchParams }: Params) {
   const { token } = await params;
+  // 앱이 만든 공유 링크는 …/open/letter/{token}?r=<공유한 사람 초대 코드> (2026-11-05, backend LetterShareService)
+  const r = (await searchParams)?.r;
+  const refCode = referralCodeOf(Array.isArray(r) ? r[0] : r);
   const [letter, h] = await Promise.all([fetchSharedLetter(token), headers()]);
   const viewerLang = viewerLangFrom(h.get('accept-language')) ?? letter?.lang ?? 'en';
   const ui = uiLangOf(viewerLang);
@@ -61,6 +65,7 @@ export default async function SharedLetterPage({ params }: Params) {
       place={letter ? countryName(letter.author.countryCode, viewerLang) ?? letter.author.city : null}
       center={countryCenter(letter?.author.countryCode ?? null)}
       platform={platform}
+      refCode={refCode}
     />
   );
 }
