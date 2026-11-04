@@ -1,4 +1,5 @@
 import { NextResponse, type NextRequest } from 'next/server';
+import { SITE_URL } from '@/i18n/config';
 import { appStoreLink, channelOf, playLink } from '@/lib/storeLinks';
 
 /**
@@ -14,7 +15,7 @@ export function GET(req: NextRequest) {
     ? appStoreLink(c)
     : /Android/i.test(ua)
       ? playLink(c)
-      : new URL('/', req.nextUrl.origin).toString();
+      : `${SITE_URL}/`; // req.nextUrl.origin 은 Netlify 에서 배포 주소(…netlify.app)가 된다 — 고정 주소로
   const res = NextResponse.redirect(to, 302);
   res.headers.set('Cache-Control', 'private, no-store, max-age=0');
   res.headers.set('Vary', 'User-Agent');
