@@ -6,12 +6,14 @@
  * 데이터는 서버 공개 API(`/api/v2/public/letters/{token}`) — 이메일·회원 번호는 오지 않는다.
  * 사용자 글이라 검색에는 내보내지 않는다(noindex) — 10/19 사이트 전체 노출 급락 뒤 얇은 글을 늘리지 않기로 했다.
  */
+import { appStoreLink, playLink } from '@/lib/storeLinks';
 import centers from './countryCenters.json';
 import { LETTER_STRINGS_I18N } from './letterShareStrings';
 
 export const API_BASE = process.env.LETTIE_API_BASE || 'https://lettie.co.kr';
-export const APP_STORE_URL = 'https://apps.apple.com/app/id6746454876';
-export const PLAY_URL = 'https://play.google.com/store/apps/details?id=com.dearglobe.dearglobe';
+// 2026-11-04: 공유 편지에서 받은 설치를 따로 세려고 채널(share) 표시가 붙은 스토어 주소를 쓴다 (src/lib/storeLinks.ts)
+export const APP_STORE_URL = appStoreLink('share');
+export const PLAY_URL = playLink('share');
 export const SHARE_BASE = 'https://lettie-dating.com/open/letter/';
 
 export type SharedLetter = {
