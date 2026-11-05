@@ -13,16 +13,20 @@ export function GET(req: NextRequest) {
   const c = channelOf(req.nextUrl.searchParams.get('c'));
   const r = referralCodeOf(req.nextUrl.searchParams.get('r'));
   const ua = req.headers.get('user-agent') ?? '';
+  // 2026-11-05: 컴퓨터·링크 미리보기 크롤러는 한국어가 첫 언어일 때만 한국어 홈, 나머지는 /en.
+  // 스레드 링크 미리보기가 한국어 카드(「오늘 쓴 편지는 내일 도착합니다」)로 떴다 — 영어 글 아래 링크인데.
+  const ko = /^\s*ko\b/i.test(req.headers.get('accept-language') ?? '');
+  const home = `${SITE_URL}${ko ? '/' : '/en'}`; // req.nextUrl.origin 은 Netlify 에서 배포 주소(…netlify.app)가 된다 — 고정 주소로
   const to = /iPhone|iPad|iPod/i.test(ua)
     ? appStoreLink(c)
     : /Android/i.test(ua)
       ? playLink(c, r)
       : r
-        ? `${SITE_URL}/?c=${c}&r=${r}`
-        : `${SITE_URL}/`; // req.nextUrl.origin 은 Netlify 에서 배포 주소(…netlify.app)가 된다 — 고정 주소로
+        ? `${home}?c=${c}&r=${r}`
+        : home;
   const res = NextResponse.redirect(to, 302);
   res.headers.set('Cache-Control', 'private, no-store, max-age=0');
-  res.headers.set('Vary', 'User-Agent');
+  res.headers.set('Vary', 'User-Agent, Accept-Language');
   res.headers.set('X-Robots-Tag', 'noindex, nofollow');
   return res;
 }
