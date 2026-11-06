@@ -1,6 +1,6 @@
 import { APP_LANGUAGES, FACTS, HOLIDAY_STAMPS, PASSPORT_STATS, PASSPORT_TITLES, enDate, enUtc, holiday, koDate, koKst } from '@/data/facts';
 import { COMMUNITY, LETTER_MAP } from '@/data/letterMap';
-import { LETTER_ENDINGS, LETTER_PETS, LETTER_PHOTOS, LETTER_STATS } from '@/data/letterStats';
+import { LETTER_ENDINGS, LETTER_LANGS, LETTER_PETS, LETTER_PHOTOS, LETTER_STATS } from '@/data/letterStats';
 
 export type BlogPost = {
     id: string;
@@ -7237,6 +7237,162 @@ A letter can fall into more than one row, so columns add up to more than 100%. S
 ---
 
 *For opening lines, see [how to start a pen pal letter](/en/blog/how-to-start-penpal); for what to write, see [what to write to a pen pal](/en/blog/what-to-write-to-a-pen-pal). The numbers use the same rules as [Lettie letter statistics](/en/letter-stats) (AI, operator and test accounts excluded), and no letter text is published.*
+`,
+    },
+    'what-language-do-pen-pals-write-in': {
+        id: 'what-language-do-pen-pals-write-in',
+        title: `펜팔은 어떤 말로 편지를 쓸까 — 영어 못해도 될까? 레티 편지 ${LETTER_LANGS.letters.toLocaleString('en-US')}통 데이터`,
+        titleEn: `What language do pen pals write in? Do you need English? Data from ${LETTER_LANGS.letters.toLocaleString('en-US')} letters`,
+        seoTitle: '펜팔은 어떤 말로 쓸까 — 영어 못해도 될까 (편지 데이터)',
+        seoTitleEn: 'What Language Do Pen Pals Write In? Letter Data',
+        description: `말이 다르고 둘 다 영어권이 아닌 두 사람 사이 편지 중 영어는 ${LETTER_LANGS.noEnglishPairs.english}%뿐, ${LETTER_LANGS.noEnglishPairs.own}%는 쓴 사람의 나라 말이었습니다. 레티 편지 ${LETTER_LANGS.letters.toLocaleString('en-US')}통(${LETTER_LANGS.countries}개 나라)의 언어를 셌습니다.`,
+        descriptionEn: `Between two people who share no language and live outside English-speaking countries, only ${LETTER_LANGS.noEnglishPairs.english}% of letters were in English; ${LETTER_LANGS.noEnglishPairs.own}% were in the writer's own language. Lettie's own data from ${LETTER_LANGS.letters.toLocaleString('en-US')} letters, ${LETTER_LANGS.countries} countries.`,
+        date: '2026-11-06',
+        readTime: '4분',
+        readTimeEn: '4 min',
+        category: '편지 쓰기',
+        categoryEn: 'Letter writing',
+        image: '/v2/app-letter.png',
+        author: 'Lettie',
+        keywords: ['펜팔 영어 못해도', '외국인 펜팔 언어', '펜팔 어떤 언어로', '영어 못해도 외국인 친구', '번역 펜팔', '펜팔 편지 언어'],
+        keywordsEn: ['what language do pen pals write in', 'do you need english for a pen pal', 'pen pal without english', 'pen pal in your own language', 'pen pal translation', 'international pen pal language'],
+        faq: [
+            { q: '영어를 못해도 외국인 펜팔을 할 수 있나요?', a: `네. 레티 편지 데이터(${koDate(LETTER_LANGS.asOf)})로 서로 말이 다르고 둘 다 영어권이 아닌 두 사람 사이 편지 ${LETTER_LANGS.noEnglishPairs.n}통 중 영어는 ${LETTER_LANGS.noEnglishPairs.english}%였고 ${LETTER_LANGS.noEnglishPairs.own}%는 쓴 사람의 나라 말이었습니다. 받는 사람은 자기 앱 언어로 번역해 읽습니다.` },
+            { q: '펜팔 편지는 주로 어떤 언어로 쓰나요?', a: `레티 편지 ${LETTER_LANGS.letters.toLocaleString('en-US')}통 중 영어가 ${LETTER_LANGS.share.en}%, 중국어 ${LETTER_LANGS.share.zh}%, 한국어 ${LETTER_LANGS.share.ko}%였습니다. 영어가 많은 건 미국·인도·나이지리아처럼 영어를 쓰는 나라 사람이 많기 때문입니다.` },
+            { q: '레티 번역은 무료인가요?', a: `편지 번역은 하루 ${FACTS.translateFreePerDay}번 무료이고 Lettie Plus는 무제한입니다. 같은 날 같은 편지를 다시 번역하면 세지 않습니다. 번역은 읽는 사람의 앱 언어(${FACTS.languagesRounded.replace('+', '개 넘는')} 언어)로 됩니다.` },
+        ],
+        faqEn: [
+            { q: 'Can I have a pen pal if I don\'t speak English?', a: `Yes. In Lettie's letter data (${enDate(LETTER_LANGS.asOf)}), of ${LETTER_LANGS.noEnglishPairs.n} letters between two people who speak different languages and live outside English-speaking countries, ${LETTER_LANGS.noEnglishPairs.english}% were in English and ${LETTER_LANGS.noEnglishPairs.own}% were in the writer's own language. The reader translates them into their app language.` },
+            { q: 'What language do most pen pals write in?', a: `Of ${LETTER_LANGS.letters.toLocaleString('en-US')} letters on Lettie, ${LETTER_LANGS.share.en}% were in English, ${LETTER_LANGS.share.zh}% Chinese and ${LETTER_LANGS.share.ko}% Korean. English leads because many writers live in English-speaking countries such as the US, India and Nigeria.` },
+            { q: 'Is translation free on Lettie?', a: `Translating letters is free ${FACTS.translateFreePerDay} times a day and unlimited with Lettie Plus. Translating the same letter again on the same day doesn't count. Letters are translated into the reader's app language (${FACTS.languagesRounded} languages).` },
+        ],
+        content: `
+# 펜팔은 어떤 말로 편지를 쓸까
+
+**영어를 못해도 펜팔은 됩니다.** 말이 다르고 둘 다 영어권에 살지 않는 두 사람 사이 편지 중 영어로 쓴 것은 ${LETTER_LANGS.noEnglishPairs.english}%뿐이었습니다. ${LETTER_LANGS.noEnglishPairs.own}%는 쓴 사람이 자기 나라 말로 썼고, 받는 사람은 번역해 읽었습니다.
+
+레티(Lettie)가 직접 센 숫자입니다. ${koDate(LETTER_LANGS.asOf)} 기준 사람이 쓴 편지 ${LETTER_LANGS.letters.toLocaleString('en-US')}통(${LETTER_LANGS.people}명, ${LETTER_LANGS.countries}개 나라)의 앞 100자로 어떤 말인지 가렸습니다. 편지 내용은 공개하지 않습니다.
+
+## 전체로는 영어가 ${LETTER_LANGS.share.en}%
+
+| 언어 | 편지 |
+|---|---|
+| 영어 | ${LETTER_LANGS.share.en}% |
+| 중국어 | ${LETTER_LANGS.share.zh}% |
+| 한국어 | ${LETTER_LANGS.share.ko}% |
+| 키릴 문자(대부분 러시아어) | ${LETTER_LANGS.share.cyr}% |
+| 튀르키예어 | ${LETTER_LANGS.share.tr}% |
+| 독일어 | ${LETTER_LANGS.share.de}% |
+| 스페인어·포르투갈어·이탈리아어·프랑스어·아랍 문자 | 각 ${LETTER_LANGS.share.es}% 안팎 |
+| 가리지 못함 | ${LETTER_LANGS.unsure}% |
+
+영어가 많은 이유는 쓰는 사람이 사는 나라입니다. 미국·인도·나이지리아·영국·우간다처럼 영어를 쓰는 나라에서 온 편지가 많습니다. 그래서 "펜팔은 영어로 한다"는 인상이 생기지만, 영어권 밖 사람들끼리만 떼어 보면 이야기가 달라집니다.
+
+## 말이 다른 두 사람 사이
+
+| 묶음 | 편지 (사람) | 영어 | 쓴 사람의 나라 말 | 받는 사람의 나라 말 | 그 밖 |
+|---|---|---|---|---|---|
+| 나라가 다른 두 사람 | ${LETTER_LANGS.cross.n}통 (${LETTER_LANGS.cross.people}명) | ${LETTER_LANGS.cross.english}% | ${LETTER_LANGS.cross.own}% | ${LETTER_LANGS.cross.theirs}% | ${LETTER_LANGS.cross.other}% |
+| 둘 다 영어권이 아니고 말이 다름 | ${LETTER_LANGS.noEnglishPairs.n}통 (${LETTER_LANGS.noEnglishPairs.people}명) | **${LETTER_LANGS.noEnglishPairs.english}%** | **${LETTER_LANGS.noEnglishPairs.own}%** | ${LETTER_LANGS.noEnglishPairs.theirs}% | ${LETTER_LANGS.noEnglishPairs.other}% |
+| 영어권이 아닌 나라 → 영어권(미국·영국 등) | ${LETTER_LANGS.toNativeEnglish.n}통 (${LETTER_LANGS.toNativeEnglish.people}명) | ${LETTER_LANGS.toNativeEnglish.english}% | ${LETTER_LANGS.toNativeEnglish.own}% | — | ${LETTER_LANGS.toNativeEnglish.other}% |
+
+- 한국 사람이 튀르키예 사람에게 쓸 때처럼 공통어가 없는 경우, 넷 중 셋은 영어가 아니었습니다.
+- 미국·영국·캐나다·호주·뉴질랜드·아일랜드에 사는 사람에게 보낼 때도 절반 가까이(${LETTER_LANGS.toNativeEnglish.own}%)는 자기 나라 말로 썼습니다.
+- 상대의 말로 쓴 편지도 ${LETTER_LANGS.noEnglishPairs.theirs}% 있었습니다. 배우는 말로 한두 문장 써 보는 사람들입니다.
+
+몇 사람이 편지를 많이 쓰면 숫자가 기울 수 있어 사람 기준으로도 셌습니다. 말이 다른 영어권 밖 두 사람 묶음에서 주로 자기 말로 쓴 사람은 ${LETTER_LANGS.noEnglishPairs.byPerson.own}%, 주로 영어로 쓴 사람은 ${LETTER_LANGS.noEnglishPairs.byPerson.english}%였습니다. 사람으로 세면 영어 쪽이 조금 늘지만, 그래도 자기 말이 더 많습니다.
+
+## 나라별로 보면
+
+영어권이 아닌 나라 중 나라 밖으로 30통 이상, 보낸 사람 5명 이상인 나라만 적었습니다.
+
+| 보낸 사람의 나라 | 나라 밖으로 보낸 편지 | 보낸 사람 | 영어 | 자기 나라 말 |
+|---|---|---|---|---|
+${LETTER_LANGS.byCountry.map(([cc, n, p, en, own]) => `| ${({ KR: '한국', CN: '중국', TR: '튀르키예', BR: '브라질' } as Record<string, string>)[cc] ?? cc} | ${n}통 | ${p}명 | ${en}% | ${own}% |`).join('\n')}
+
+한국에서 나라 밖으로 보낸 편지는 대부분 한국어였고, 영어는 ${LETTER_LANGS.byCountry[0][3]}%였습니다. 표본이 작은 나라(브라질 5명)는 몇 사람의 습관이 그대로 드러나니 가볍게 보세요.
+
+## 처음 보는 사람에게도
+
+하늘에 띄우는 공개 편지는 누가 읽을지 모르고 씁니다. 영어권이 아닌 나라 사람이 띄운 편지 ${LETTER_LANGS.publicNonEnglish.n}통(${LETTER_LANGS.publicNonEnglish.people}명) 중 영어는 ${LETTER_LANGS.publicNonEnglish.english}%였습니다. 나머지는 자기 말로 띄웠고, 주운 사람이 번역해 읽었습니다.
+
+## 그래서, 영어가 필요할까
+
+- **필요 없습니다.** 레티는 편지를 읽는 사람의 앱 언어(${FACTS.languagesRounded.replace('+', '개 넘는')} 언어)로 번역합니다. 「번역 보기」를 누르면 그 자리에서 번역으로 바뀌고, 「원문만 보기」로 되돌립니다.
+- 편지 번역은 **하루 ${FACTS.translateFreePerDay}번 무료**, Lettie Plus는 무제한입니다. 같은 날 같은 편지를 다시 번역하면 세지 않습니다.
+- 상대 말로 인사 한 줄을 써 보면 반가워합니다. 쓰는 요령은 [언어가 다른 사람에게 편지 쓰는 법](/blog/writing-across-languages)에 있습니다.
+- 영어를 연습하고 싶다면 영어로 써도 됩니다. [펜팔로 언어 배우기](/blog/pen-pal-for-language-learning)를 참고하세요.
+
+## 어떻게 셌나
+
+- **대상:** 레티에서 사람이 쓴 편지(대화 편지와 공개로 띄운 편지). AI 계정·운영자·시험 계정은 뺐고, [레티 편지 통계](/letter-stats)와 같은 기준입니다.
+- **언어 판별:** 편지 앞 100자. 한글·가나·한자·키릴·아랍·데바나가리·타이 문자는 문자로, 라틴 문자는 언어마다 자주 쓰는 낱말(the·and, que·hola, você·eu …)로 가렸습니다. 대략값이고 ${LETTER_LANGS.unsure}%는 가리지 못했습니다. 중국어는 간체와 번체를 합쳤습니다.
+- **영어권:** 미국·영국·캐나다·호주·뉴질랜드·아일랜드, 그리고 인도·나이지리아·필리핀처럼 영어가 공용어인 나라. "둘 다 영어권이 아닌" 묶음에서는 이 나라를 모두 뺐습니다.
+- 답장률 같은 대화 지표는 표본이 작아 공개하지 않습니다.
+`,
+        contentEn: `
+# What language do pen pals write in?
+
+**You don't need English to have a pen pal.** Between two people who speak different languages and both live outside English-speaking countries, only ${LETTER_LANGS.noEnglishPairs.english}% of letters were written in English. ${LETTER_LANGS.noEnglishPairs.own}% were written in the writer's own language, and the reader translated them.
+
+These are Lettie's own numbers. As of ${enDate(LETTER_LANGS.asOf)}, we looked at the first 100 characters of ${LETTER_LANGS.letters.toLocaleString('en-US')} human-written letters (${LETTER_LANGS.people} people, ${LETTER_LANGS.countries} countries) to tell which language each was written in. We don't publish letter text.
+
+## Overall, ${LETTER_LANGS.share.en}% are in English
+
+| Language | Letters |
+|---|---|
+| English | ${LETTER_LANGS.share.en}% |
+| Chinese | ${LETTER_LANGS.share.zh}% |
+| Korean | ${LETTER_LANGS.share.ko}% |
+| Cyrillic script (mostly Russian) | ${LETTER_LANGS.share.cyr}% |
+| Turkish | ${LETTER_LANGS.share.tr}% |
+| German | ${LETTER_LANGS.share.de}% |
+| Spanish, Portuguese, Italian, French, Arabic script | about ${LETTER_LANGS.share.es}% each |
+| Couldn't tell | ${LETTER_LANGS.unsure}% |
+
+English leads because of where writers live: many letters come from English-speaking countries such as the US, India, Nigeria, the UK and Uganda. That's why pen pals seem to "happen in English". Look only at people outside the English-speaking world and the picture changes.
+
+## Between people who don't share a language
+
+| Group | Letters (people) | English | Writer's own language | Reader's language | Other |
+|---|---|---|---|---|---|
+| Two people in different countries | ${LETTER_LANGS.cross.n} (${LETTER_LANGS.cross.people}) | ${LETTER_LANGS.cross.english}% | ${LETTER_LANGS.cross.own}% | ${LETTER_LANGS.cross.theirs}% | ${LETTER_LANGS.cross.other}% |
+| Neither in an English-speaking country, different languages | ${LETTER_LANGS.noEnglishPairs.n} (${LETTER_LANGS.noEnglishPairs.people}) | **${LETTER_LANGS.noEnglishPairs.english}%** | **${LETTER_LANGS.noEnglishPairs.own}%** | ${LETTER_LANGS.noEnglishPairs.theirs}% | ${LETTER_LANGS.noEnglishPairs.other}% |
+| Non-English-speaking country → US, UK, Canada, Australia, NZ, Ireland | ${LETTER_LANGS.toNativeEnglish.n} (${LETTER_LANGS.toNativeEnglish.people}) | ${LETTER_LANGS.toNativeEnglish.english}% | ${LETTER_LANGS.toNativeEnglish.own}% | — | ${LETTER_LANGS.toNativeEnglish.other}% |
+
+- When there's no shared language, say a writer in Korea writing to someone in Türkiye, three letters in four were not in English.
+- Even letters to people in the US, UK, Canada, Australia, New Zealand and Ireland were almost half (${LETTER_LANGS.toNativeEnglish.own}%) in the writer's own language.
+- ${LETTER_LANGS.noEnglishPairs.theirs}% were written in the reader's language — people trying a few sentences in the language they're learning.
+
+A few prolific writers can tilt letter counts, so we also counted people. In the "no shared language, outside the English-speaking world" group, ${LETTER_LANGS.noEnglishPairs.byPerson.own}% of people wrote mostly in their own language and ${LETTER_LANGS.noEnglishPairs.byPerson.english}% mostly in English. Counting people nudges English up, but own-language writing still leads.
+
+## By country
+
+Countries outside the English-speaking world with at least 30 letters sent abroad and at least 5 writers.
+
+| Writer's country | Letters sent abroad | Writers | English | Own language |
+|---|---|---|---|---|
+${LETTER_LANGS.byCountry.map(([cc, n, p, en, own]) => `| ${({ KR: 'South Korea', CN: 'China', TR: 'Türkiye', BR: 'Brazil' } as Record<string, string>)[cc] ?? cc} | ${n} | ${p} | ${en}% | ${own}% |`).join('\n')}
+
+Letters sent abroad from Korea were mostly in Korean; ${LETTER_LANGS.byCountry[0][3]}% were in English. Small samples (5 writers in Brazil) mostly reflect a few people's habits, so read them lightly.
+
+## Even to a stranger
+
+Open letters released into the sky are written without knowing who will read them. Of ${LETTER_LANGS.publicNonEnglish.n} released by ${LETTER_LANGS.publicNonEnglish.people} people outside English-speaking countries, ${LETTER_LANGS.publicNonEnglish.english}% were in English. The rest went up in the writer's own language, and whoever picked them up translated them.
+
+## So, do you need English?
+
+- **No.** Lettie translates letters into the reader's app language (${FACTS.languagesRounded} languages). Tap "Show translation" and the letter turns into your language in place; "Show original only" switches back.
+- Translating letters is **free ${FACTS.translateFreePerDay} times a day** and unlimited with Lettie Plus. Translating the same letter again on the same day doesn't count.
+- A line of greeting in your pen pal's language goes a long way. See [how to write to someone who doesn't speak your language](/en/blog/writing-across-languages).
+- If you want to practise English, write in English. See [using a pen pal to learn a language](/en/blog/pen-pal-for-language-learning).
+
+## How we counted
+
+- **Letters:** human-written letters on Lettie (conversation letters and open letters), excluding AI accounts, staff and test accounts — the same basis as [Lettie letter statistics](/en/letter-stats).
+- **Language:** the first 100 characters of each letter. Hangul, kana, Chinese characters, Cyrillic, Arabic, Devanagari and Thai are told apart by script; Latin-script letters by common words in each language (the/and, que/hola, você/eu …). These are approximate, and ${LETTER_LANGS.unsure}% couldn't be told. Simplified and Traditional Chinese are combined.
+- **English-speaking countries:** the US, UK, Canada, Australia, New Zealand and Ireland, plus countries where English is an official language such as India, Nigeria and the Philippines. All of them are excluded from the "neither in an English-speaking country" group.
+- We don't publish conversation metrics such as reply rates; the samples are small.
 `,
     },
     'valentines-letter-to-a-friend': {

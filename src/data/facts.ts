@@ -43,6 +43,9 @@ export const FACTS = {
   passport: { minTotal: 5, minEach: 2, titles: 20, continents: 6 },
   /** 편지 최대 글자 수 (2026-10-16 부터) */
   letterMaxChars: 100_000,
+  /** 편지 번역: 무료 하루 3번(UTC 0시 = 한국 오전 9시에 다시 채워짐), Lettie Plus 무제한, 같은 날 같은 글을 다시 번역하면 안 센다
+   *  (서버 TranslationQuota lettie.translate.free-per-day, 2026-10-26 · 앱 2.0.36 부터) */
+  translateFreePerDay: 3,
 };
 
 /**

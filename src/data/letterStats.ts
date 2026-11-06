@@ -39,6 +39,27 @@ export const LETTER_ENDINGS = {
   ko: { n: 102, question: 17, niceDay: 15, askReply: 12, thanks: 9, nameSign: 2, none: 54 },
 };
 
+/**
+ * 편지를 어떤 말로 쓰나 — 편지 앞 100자로 가린 대략값 (1차 소스, 2026-11-04). 다시 뽑기: scripts/seo/letter-langs.sql → letter-langs.py.
+ * 라틴 문자가 아니면 문자 체계로, 라틴 문자면 언어별 기능어로 가린다(zh 는 간체·번체 합침, cyr 는 키릴 문자 — 대부분 러시아어).
+ * cross = 나라가 다른 두 사람 사이 대화 편지. own = 보낸 사람 나라의 말, theirs = 받는 사람 나라의 말.
+ * noEnglishPairs = 두 사람 모두 영어권(영어가 공용어인 나라 포함)이 아니고 서로 다른 말을 쓰는 나라. toNativeEnglish = 영어권이 아닌 나라 → 미국·영국·캐나다·호주·뉴질랜드·아일랜드.
+ * byPerson = 사람마다 그 묶음에서 가장 많이 쓴 방식 하나로 센 것(몇 사람이 많이 쓴 탓인지 보려고). 답장률은 내지 않는다.
+ */
+export const LETTER_LANGS = {
+  asOf: '2026-11-04',
+  letters: 2447, people: 419, countries: 63, unsure: 3,
+  /** [언어 라벨, 편지 %] */
+  share: { en: 65, zh: 11, ko: 9, cyr: 3, tr: 3, de: 2, es: 1, pt: 1, arab: 1, it: 1, fr: 1 },
+  cross: { n: 1783, people: 295, english: 64, own: 29, theirs: 4, other: 4, byPerson: { english: 68, own: 23, theirs: 3, other: 5 } },
+  noEnglishPairs: { n: 345, people: 85, english: 25, own: 61, theirs: 9, other: 5, byPerson: { english: 38, own: 48, theirs: 8, other: 6 } },
+  toNativeEnglish: { n: 231, people: 74, english: 48, own: 45, other: 7 },
+  /** 공개로 띄운 편지 중 영어권이 아닌 나라 사람이 쓴 것 */
+  publicNonEnglish: { n: 190, people: 124, english: 32 },
+  /** [나라, 나라 밖으로 보낸 편지 수, 보낸 사람 수, 영어 %, 자기 나라 말 %] — 30통·5명 이상, 영어권 제외 */
+  byCountry: [['KR', 131, 31, 12, 85], ['CN', 143, 22, 22, 73], ['TR', 76, 10, 34, 61], ['BR', 30, 5, 47, 33]] as [string, number, number, number, number][],
+};
+
 /** 고양이·강아지 이야기와 사진 동봉 (1차 소스, 2026-10-20) — scripts/seo/letter-pets.sql, 여러 언어 낱말로 센 대략값 */
 export const LETTER_PETS = { asOf: '2026-10-20', letters: 1099, cat: 35, dog: 10 };
 export const LETTER_PHOTOS = { asOf: '2026-10-20', since: '2026-09-15', letters: 844, withPhoto: 51 };

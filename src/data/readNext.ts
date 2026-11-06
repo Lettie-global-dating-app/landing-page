@@ -17,7 +17,7 @@ export const TOPICS: string[][] = [
   ['what-is-a-pen-pal', 'how-to-start-penpal', 'first-letter-examples-discover', 'what-to-write-to-a-pen-pal', 'how-to-find-a-pen-pal',
     'keep-a-pen-pal-conversation-going', 'pen-pal-not-replying', 'how-to-end-a-letter-to-a-pen-pal', 'letter-delivery-time-by-distance'],
   // 언어·문화
-  ['language-exchange-tips', 'pen-pal-for-language-learning', 'korean-pen-pals', 'japanese-pen-pals', 'writing-across-languages',
+  ['language-exchange-tips', 'pen-pal-for-language-learning', 'korean-pen-pals', 'japanese-pen-pals', 'writing-across-languages', 'what-language-do-pen-pals-write-in',
     'language-exchange-friendship', 'penpal-culture-guide', 'cultural-understanding-global-etiquette', 'international-friendship-guide',
     'making-global-friends', 'armchair-world-travel'],
   // 우표·여권·기념일 (2026-10-18)
