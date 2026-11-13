@@ -21,8 +21,10 @@ async function readTable(url, rowRe, maxPages = 60) {
       for (const m of txt.matchAll(rowRe)) rows.set(m[1], [Number(m[2].replace(/,/g, '')), Number(m[3].replace(/,/g, ''))]);
       const rect = await ev(`(()=>{const b=[...document.querySelectorAll('[aria-label="Next page"],[aria-label="다음 페이지"]')].filter(e=>e.offsetParent).pop();if(!b||b.getAttribute('aria-disabled')==='true'||b.disabled)return null;b.scrollIntoView({block:'center'});const r=b.getBoundingClientRect();return {x:r.x+r.width/2,y:r.y+r.height/2};})()`);
       if (!rect) break;
+      // 다음 쪽이 실제로 바뀔 때까지 기다린다 — 1.5초 고정으로는 표가 안 넘어간 채 끝나는 날이 있었다(11/13 날짜 표 10줄만)
+      const before = (txt.match(rowRe) || [])[0] || '';
       await click(rect.x, rect.y);
-      await sleep(1500);
+      for (let w = 0; w < 12; w++) { await sleep(500); const now = (((await ev('document.body.innerText')) || '').match(rowRe) || [])[0] || ''; if (now && now !== before) break; }
     }
     return rows;
   });
@@ -32,7 +34,12 @@ const toIso = (k) => { const [y, m, d] = k.replace(/\.$/, '').split('. ').map(Nu
 
 /** 날짜별 확정치 [{date, clicks, impressions}] 오래된 순 */
 export async function gscDays(days = 30, filter = '') {
-  const rows = await readTable(PERF('date', days, filter), /^(20\d\d\. \d+\. \d+\.)\t(\d[\d,]*)\t(\d[\d,]*)$/gm, 20);
+  // 표는 늘 3개월(90줄 안팎)이다. 덜 읽혔으면(쪽 넘기기 실패) 두 번까지 다시 읽는다 — 앞 7일 비교가 틀어진다(11/13)
+  let rows = new Map();
+  for (let attempt = 0; attempt < 3 && rows.size < 60; attempt++) {
+    const r = await readTable(PERF('date', days, filter), /^(20\d\d\. \d+\. \d+\.)\t(\d[\d,]*)\t(\d[\d,]*)$/gm, 20);
+    if (r.size > rows.size) rows = r;
+  }
   return [...rows].map(([k, [clicks, impressions]]) => ({ date: toIso(k), clicks, impressions })).sort((a, b) => a.date.localeCompare(b.date));
 }
 

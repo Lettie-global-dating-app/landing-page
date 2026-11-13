@@ -101,7 +101,9 @@ m.gsc.issues = await safe('gsc issues', () => gscIssues());
 const d = m.gsc.days || [];
 const sum = (a, k) => a.reduce((s, x) => s + x[k], 0);
 const last7 = d.slice(-7), prev7 = d.slice(-14, -7);
-m.gsc.summary = d.length ? {
+// 날짜 표가 14일 넘게 안 읽혔으면 7일 비교를 내지 않는다(틀린 「앞 7일」로 회복 신호가 켜지지 않게)
+if (d.length && d.length < 14) errors.push(`gsc days: ${d.length}일치만 읽힘 — 7일 비교 생략`);
+m.gsc.summary = d.length >= 14 ? {
   latestDate: d.at(-1).date,
   latest: d.at(-1),
   last7: { clicks: sum(last7, 'clicks'), impressions: sum(last7, 'impressions'), avgImpressions: +(sum(last7, 'impressions') / Math.max(1, last7.length)).toFixed(1) },
