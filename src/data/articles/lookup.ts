@@ -11,10 +11,11 @@ export function getArticle(locale: string, slug: string): Article | null {
  * 자기 앱을 1위에 둔 비교 글을 27개 언어로 찍어 둔 것과 언어마다 같은 일반 글이 가장 큰 의심이라:
  *  - MERGED_TO_EN: 다국어판을 없애고 영어판으로 308 (next.config.ts). 한국어·영어 원본만 남는다.
  *  - NOINDEX_LOCALIZED: 다국어판은 사람에게는 그대로 보이고 검색에서만 뺀다(noindex·sitemap·hreflang 제외).
- * 언어별 홈·FAQ·앱 소개(penpal-app)·시작하기(getting-started)는 앱 사용자에게 필요한 안내라 색인에 둔다.
+ * 언어별 홈·앱 소개(penpal-app)는 앱 사용자에게 필요한 안내라 색인에 둔다 (FAQ 는 11/4, 시작하기는 11/13 noindex).
  */
 export const MERGED_TO_EN: readonly ArticleSlug[] = ['best-penpal-apps-2026', 'slowly-alternatives-2026'];
-export const NOINDEX_LOCALIZED: readonly ArticleSlug[] = ['writing-tips'];
+// 2026-11-13: 시작하기(getting-started) 25개 언어판도 — 3개월 노출 합 48, 12개 언어는 0
+export const NOINDEX_LOCALIZED: readonly ArticleSlug[] = ['writing-tips', 'getting-started'];
 
 /** 이 글이 실제로 있는 언어 (한국어·영어 제외). 영어판으로 합친 글은 없다. */
 export function articleLocales(slug: ArticleSlug): string[] {
