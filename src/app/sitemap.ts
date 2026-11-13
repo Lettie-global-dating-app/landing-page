@@ -1,6 +1,7 @@
 import { execFileSync } from 'node:child_process';
 import { MetadataRoute } from 'next';
 import { blogPosts } from '@/data/blogPosts';
+import { isBlogIndexed } from '@/data/searchPrune';
 import { LOCALES } from '@/i18n/config';
 import { LOCALIZED_POSTS_NOINDEX, localizedPosts } from '@/data/localizedPosts';
 import { FAQ_LOCALES, LOCALIZED_FAQ_NOINDEX } from '@/data/localizedFaq';
@@ -47,7 +48,8 @@ const pageFile = (prefix: string, path: string) =>
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://lettie-dating.com';
-  const posts = Object.values(blogPosts);
+  // 2026-11-13: 검색에서 뺀 글(searchPrune.ts)은 사이트맵에서도 뺀다
+  const posts = Object.values(blogPosts).filter((p) => isBlogIndexed(p.id));
 
   const priorityOf = (path: string) => {
     if (path === '') return 1;
@@ -65,7 +67,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   );
 
   const blogRoutes = posts.flatMap((post) =>
-    ['', '/en'].map((prefix) => ({
+    ['', '/en'].filter((prefix) => isBlogIndexed(post.id, prefix ? 'en' : 'ko')).map((prefix) => ({
       url: `${baseUrl}${prefix}/blog/${post.id}`,
       lastModified: (prefix === '/en' ? post.updatedEn : undefined) ?? post.updated ?? post.date,
       changeFrequency: 'monthly' as const,

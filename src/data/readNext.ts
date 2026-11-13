@@ -1,4 +1,5 @@
 import { blogPosts } from '@/data/blogPosts';
+import { isBlogIndexed } from '@/data/searchPrune';
 
 /**
  * 글 사이 내부 링크 (2026-10-07).
@@ -46,7 +47,8 @@ export const PILLAR_POSTS = [
 export function relatedPostIds(id: string, n = 6, siblings = 3): string[] {
   const out: string[] = [];
   const add = (x: string) => {
-    if (x !== id && blogPosts[x] && !out.includes(x) && out.length < n) out.push(x);
+    // 검색에서 뺀 글(searchPrune.ts)로는 관련 글 링크를 보내지 않는다 — 내부 링크를 색인 글에 모은다 (2026-11-13)
+    if (x !== id && blogPosts[x] && isBlogIndexed(x) && !out.includes(x) && out.length < n) out.push(x);
   };
   const topic = TOPICS.find((t) => t.includes(id));
   if (topic) {

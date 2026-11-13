@@ -13,6 +13,7 @@ import { koEnAlternates } from '@/i18n/config';
 import { localizedArticleAlternatesForPath } from '@/data/articles/lookup';
 import { localizedAlternatesFor } from '@/data/localizedPosts';
 import { relatedPostIds } from '@/data/readNext';
+import { isBlogIndexed } from '@/data/searchPrune';
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -45,10 +46,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       // 상대 경로가 404 로 해석된다. 반드시 절대 URL 로 넣는다.
       images: [{ url: 'https://lettie-dating.com/lettie-og-image.png', width: 1200, height: 630 }],
     },
-    alternates: {
-      canonical: `https://lettie-dating.com/en/blog/${slug}`,
-      languages: { ...koEnAlternates(`/blog/${slug}`), ...localizedAlternatesFor(slug), ...localizedArticleAlternatesForPath(`/blog/${slug}`) },
-    },
+    // 2026-11-13 검색에서 뺀 글(searchPrune.ts)은 noindex 이고 hreflang 묶음에도 안 들어간다
+    ...(isBlogIndexed(slug, 'en')
+      ? isBlogIndexed(slug, 'ko')
+        ? {
+            alternates: {
+              canonical: `https://lettie-dating.com/en/blog/${slug}`,
+              languages: { ...koEnAlternates(`/blog/${slug}`), ...localizedAlternatesFor(slug), ...localizedArticleAlternatesForPath(`/blog/${slug}`) },
+            },
+          }
+        : { alternates: { canonical: `https://lettie-dating.com/en/blog/${slug}` } }
+      : { robots: { index: false, follow: true }, alternates: { canonical: `https://lettie-dating.com/en/blog/${slug}` } }),
   };
 }
 
