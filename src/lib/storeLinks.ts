@@ -17,6 +17,8 @@ export const CHANNELS = [
   'threads', 'x', 'ig', 'tiktok', 'yt', 'reddit', 'naver', 'blog', 'landing', 'outreach', 'shorts', 'share', 'email', 'kakao',
   // 2026-11-05 친구 초대(앱 「친구 초대하고 우표 받기」 링크 /get?c=invite&r=<코드>). share 는 편지 웹 공유 쪽.
   'invite',
+  // 2026-11-14 스레드 일본어 실험(한국 친구를 찾는 일본 사람 쪽 — 일본어 게시물 링크). 영어 계정 글(threads)과 따로 센다.
+  'threads_jp',
 ] as const;
 export type Channel = (typeof CHANNELS)[number] | 'other';
 
