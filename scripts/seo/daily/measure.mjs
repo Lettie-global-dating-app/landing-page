@@ -98,16 +98,31 @@ m.gsc = {};
 m.gsc.days = await safe('gsc days', () => gscDays(35));
 m.gsc.index = await safe('gsc index', () => gscIndex());
 m.gsc.issues = await safe('gsc issues', () => gscIssues());
+// 브랜드 검색어(lettie·레티) 날짜별 — 오른 노출이 브랜드에서 왔는지 가르려고(11/19 점검 제안). 노출 없는 날은 표에 없다
+m.gsc.brandDays = [];
+for (const [label, f] of [['lettie', '&query=*lettie'], ['레티', `&query=*${encodeURIComponent('레티')}`]]) {
+  const r = await safe(`gsc brand ${label}`, () => gscDays(35, f, 1));
+  for (const x of r || []) {
+    const o = m.gsc.brandDays.find((y) => y.date === x.date);
+    if (o) { o.clicks += x.clicks; o.impressions += x.impressions; } else m.gsc.brandDays.push({ ...x });
+  }
+}
+m.gsc.brandDays.sort((a, b) => a.date.localeCompare(b.date));
 const d = m.gsc.days || [];
 const sum = (a, k) => a.reduce((s, x) => s + x[k], 0);
 const last7 = d.slice(-7), prev7 = d.slice(-14, -7);
 // 날짜 표가 14일 넘게 안 읽혔으면 7일 비교를 내지 않는다(틀린 「앞 7일」로 회복 신호가 켜지지 않게)
-if (d.length && d.length < 14) errors.push(`gsc days: ${d.length}일치만 읽힘 — 7일 비교 생략`);
+// 표가 통째로 비어도 오류로 남긴다(11/17 빈 표 → 요약에 undefined, 오류 칸은 비었다)
+if (d.length < 14) errors.push(`gsc days: ${d.length ? `${d.length}일치만 읽힘` : '날짜 표가 비어 있음'} — 7일 비교 생략`);
+const inDates = (rows, ds) => rows.filter((x) => ds.has(x.date));
 m.gsc.summary = d.length >= 14 ? {
   latestDate: d.at(-1).date,
   latest: d.at(-1),
   last7: { clicks: sum(last7, 'clicks'), impressions: sum(last7, 'impressions'), avgImpressions: +(sum(last7, 'impressions') / Math.max(1, last7.length)).toFixed(1) },
   prev7: { clicks: sum(prev7, 'clicks'), impressions: sum(prev7, 'impressions'), avgImpressions: +(sum(prev7, 'impressions') / Math.max(1, prev7.length)).toFixed(1) },
+  // 같은 7일 창의 브랜드 검색어 몫 (lettie·레티 합, 둘 다 들어간 검색어는 두 번 셀 수 있다)
+  brand7: { clicks: sum(inDates(m.gsc.brandDays, new Set(last7.map((x) => x.date))), 'clicks'), impressions: sum(inDates(m.gsc.brandDays, new Set(last7.map((x) => x.date))), 'impressions') },
+  brandPrev7: { impressions: sum(inDates(m.gsc.brandDays, new Set(prev7.map((x) => x.date))), 'impressions') },
 } : null;
 
 // 4) 쪽별 3개월 표 — 월요일, 또는 7일 넘게 없을 때, 또는 --pages
@@ -145,18 +160,20 @@ writeFileSync(join(STATE, 'measure', `${today}.json`), JSON.stringify(m, null, 1
 
 // history.tsv — 하루 한 줄 (같은 날 다시 재면 줄이 늘지만 판단은 마지막 줄)
 const H = join(STATE, 'history.tsv');
-if (!existsSync(H)) writeFileSync(H, ['재측정일', 'GSC최신일', '최신일노출', '최신일클릭', '7일노출', '7일클릭', '앞7일노출', '색인', '미색인', '구글브랜드순위', '구글일반1쪽수', '빙브랜드순위', '사이트맵쪽', '크롤문제', '진행중업데이트'].join('\t') + '\n');
+if (!existsSync(H)) writeFileSync(H, ['재측정일', 'GSC최신일', '최신일노출', '최신일클릭', '7일노출', '7일클릭', '앞7일노출', '색인', '미색인', '구글브랜드순위', '구글일반1쪽수', '빙브랜드순위', '사이트맵쪽', '크롤문제', '진행중업데이트', '브랜드7일노출'].join('\t') + '\n');
 const s = m.gsc.summary;
 const brand = m.serp?.google?.filter((x) => x.kind === 'brand').map((x) => x.position ?? '-').join('/') ?? '';
 const generic1 = m.serp?.google?.filter((x) => x.kind !== 'brand' && x.position).length ?? '';
 const bingBrand = m.serp?.bing?.find((x) => x.kind === 'brand')?.position ?? '-';
 const crawlIssues = m.crawl ? m.crawl.sitemapProblems.length + m.crawl.keyProblems.length + (m.crawl.robotsBlocksAll ? 1 : 0) + (m.crawl.notFoundStatus === 404 ? 0 : 1) : 'ERR';
 const ongoing = (m.googleUpdates || []).filter((x) => x.ongoing).map((x) => x.name).join(', ') || '-';
-appendFileSync(H, [today, s?.latestDate ?? '-', s?.latest.impressions ?? '-', s?.latest.clicks ?? '-', s?.last7.impressions ?? '-', s?.last7.clicks ?? '-', s?.prev7.impressions ?? '-', m.gsc.index?.indexed ?? '-', m.gsc.index?.notIndexed ?? '-', brand, generic1, bingBrand, m.crawl?.sitemapCount ?? '-', crawlIssues, ongoing].join('\t') + '\n');
+appendFileSync(H, [today, s?.latestDate ?? '-', s?.latest.impressions ?? '-', s?.latest.clicks ?? '-', s?.last7.impressions ?? '-', s?.last7.clicks ?? '-', s?.prev7.impressions ?? '-', m.gsc.index?.indexed ?? '-', m.gsc.index?.notIndexed ?? '-', brand, generic1, bingBrand, m.crawl?.sitemapCount ?? '-', crawlIssues, ongoing, s?.brand7.impressions ?? '-'].join('\t') + '\n');
 
 // 요약 출력 (에이전트·로그용)
 console.log(`# ${today} SEO 측정`);
-console.log(`GSC 확정치 최신 ${s?.latestDate}: 노출 ${s?.latest.impressions}·클릭 ${s?.latest.clicks} | 최근 7일 노출 ${s?.last7.impressions}(하루 ${s?.last7.avgImpressions})·클릭 ${s?.last7.clicks} | 앞 7일 노출 ${s?.prev7.impressions}`);
+console.log(s
+  ? `GSC 확정치 최신 ${s.latestDate}: 노출 ${s.latest.impressions}·클릭 ${s.latest.clicks} | 최근 7일 노출 ${s.last7.impressions}(하루 ${s.last7.avgImpressions})·클릭 ${s.last7.clicks} | 앞 7일 노출 ${s.prev7.impressions} | 그중 브랜드 검색어(lettie·레티) 7일 노출 ${s.brand7.impressions}·클릭 ${s.brand7.clicks}(앞 7일 ${s.brandPrev7.impressions})`
+  : `GSC 확정치: 날짜 표를 못 읽음(${d.length}일치) — 오늘은 7일 비교·회복 판정 없음`);
 console.log(`색인 ${m.gsc.index?.indexed} / 미색인 ${m.gsc.index?.notIndexed} ${JSON.stringify(m.gsc.index?.reasons ?? {})} | 수동 조치 ${m.gsc.issues?.manualActionsOk ? '없음' : '확인 필요'}·보안 ${m.gsc.issues?.securityOk ? '없음' : '확인 필요'}`);
 console.log(`크롤러: 사이트맵 ${m.crawl?.sitemapCount}쪽, 문제 ${m.crawl?.sitemapProblems.length}·핵심 쪽 문제 ${m.crawl?.keyProblems.length}·robots 전체 차단 ${m.crawl?.robotsBlocksAll}·404 응답 ${m.crawl?.notFoundStatus}`);
 for (const p of [...(m.crawl?.sitemapProblems || []), ...(m.crawl?.keyProblems || [])]) console.log(`  ! ${p.path || '/'} ${p.problems.join(', ')}`);
