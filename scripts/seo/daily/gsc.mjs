@@ -33,10 +33,11 @@ async function readTable(url, rowRe, maxPages = 60) {
 const toIso = (k) => { const [y, m, d] = k.replace(/\.$/, '').split('. ').map(Number); return `${y}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`; };
 
 /** 날짜별 확정치 [{date, clicks, impressions}] 오래된 순 */
-export async function gscDays(days = 30, filter = '') {
+export async function gscDays(days = 30, filter = '', minRows = 60) {
   // 표는 늘 3개월(90줄 안팎)이다. 덜 읽혔으면(쪽 넘기기 실패) 두 번까지 다시 읽는다 — 앞 7일 비교가 틀어진다(11/13)
+  // 필터를 건 표는 노출 없는 날이 빠져 줄이 적은 게 정상이다 — minRows 를 낮춰 부른다
   let rows = new Map();
-  for (let attempt = 0; attempt < 3 && rows.size < 60; attempt++) {
+  for (let attempt = 0; attempt < 3 && rows.size < minRows; attempt++) {
     const r = await readTable(PERF('date', days, filter), /^(20\d\d\. \d+\. \d+\.)\t(\d[\d,]*)\t(\d[\d,]*)$/gm, 20);
     if (r.size > rows.size) rows = r;
   }
