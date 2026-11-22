@@ -73,8 +73,8 @@ function LanguageMenu({ current, label }: { current: string; label: string }) {
 
 export default async function Home2({ lang }: { lang: string }) {
   const t = getHomeCopy(lang)
-  // 동의한 사람들의 진짜 편지 (2026-11-01) — 10분마다 새로 받는다(ISR). 없으면 칸이 숨는다
-  const featured = await fetchFeaturedLetters()
+  // 동의한 사람들의 진짜 편지 (2026-11-01, 11/23 부터 인스타 대기열이 거른 목록) — 10분마다 새로 받는다(ISR). 없으면 칸이 숨는다
+  const { letters: featured, total: featuredTotal } = await fetchFeaturedLetters()
   const isKo = lang === 'ko'
   const isEn = lang === 'en'
   const home = isKo ? '/' : `/${lang}`
@@ -234,7 +234,7 @@ export default async function Home2({ lang }: { lang: string }) {
       </section>
 
       {/* 레티 하늘에 떠 있는 편지 — 쓴 사람이 실어도 좋다고 한 진짜 편지 (2026-11-01) */}
-      <FeaturedLetters letters={featured} lang={lang} />
+      <FeaturedLetters letters={featured} total={featuredTotal} lang={lang} />
 
       {/* What's new — 검색·답변엔진이 읽는 본문 */}
       <section id="whats-new" className="py-20 md:py-24 border-t border-line/60 scroll-mt-20">

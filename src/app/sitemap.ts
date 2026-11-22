@@ -22,6 +22,7 @@ const STATIC_PATHS = [
   '/penpal-app',
   '/letter-map',
   '/letter-stats',
+  '/letters', // 2026-11-23 동의 편지 모음 (내용은 매일 바뀐다 — lastmod 는 페이지 파일 기준)
   '/guide/getting-started',
   '/guide/writing-tips',
   '/guide/building-friendship',

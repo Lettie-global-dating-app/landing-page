@@ -1,12 +1,14 @@
 import { STRINGS, characterSrc, countryName, fill, stampSrc } from '@/lib/letterShare'
+import Link from 'next/link'
 import { FEATURED_COPY, type FeaturedLetter } from '@/lib/featuredLetters'
+import { lettersPath } from '@/lib/siteLetters'
 
 /**
  * 홈의 「레티 하늘에 떠 있는 편지」 (2026-11-01). 실제로 띄운 편지를 앱과 같은 종이 카드로 — 이름 대신 「나라의 펜팔」,
  * 그 사람이 붙인 우표, 캐릭터, 글 앞부분, 사진. 누르면 웹 편지 페이지에서 봉투를 열어 읽고 앱으로 답장한다.
  * 글은 쓴 사람의 말 그대로 둔다(번역은 편지 페이지에서).
  */
-export default function FeaturedLetters({ letters, lang }: { letters: FeaturedLetter[]; lang: string }) {
+export default function FeaturedLetters({ letters, total, lang }: { letters: FeaturedLetter[]; total: number; lang: string }) {
   if (!letters.length) return null
   const c = FEATURED_COPY[lang] ?? FEATURED_COPY.en
   const s = STRINGS[lang] ?? STRINGS.en
@@ -52,6 +54,12 @@ export default function FeaturedLetters({ letters, lang }: { letters: FeaturedLe
             )
           })}
         </ul>
+        {/* 편지 쪽(/letters · /en/letters)에 동의 편지 전부가 전문·번역과 함께 있다 (2026-11-23) */}
+        <div className="mt-12 text-center">
+          <Link href={lettersPath(lang)} className="inline-flex items-center gap-2 rounded-full border border-line px-6 py-3 font-semibold text-paper hover:border-paper/40 hover:bg-sky2/50 transition-colors">
+            {fill(c.all ?? FEATURED_COPY.en.all!, { n: String(total) })} <span aria-hidden>→</span>
+          </Link>
+        </div>
       </div>
     </section>
   )
