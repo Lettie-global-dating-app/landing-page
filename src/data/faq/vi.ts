@@ -25,7 +25,7 @@ export const faq: FaqContent = {
     },
     {
       q: 'Vì sao lúc đầu không thấy ảnh?',
-      a: 'Lettie bắt đầu không có ảnh đại diện để ấn tượng đầu tiên là những gì một người viết ra. Thay vì ảnh, mỗi người bắt đầu với một nhân vật pixel: có 16 nhân vật miễn phí, và với một tấm ảnh selfie hoặc vài dòng về ngoại hình, nhân vật riêng của bạn sẽ được vẽ ra (cái đầu tiên miễn phí, ảnh không được lưu lại).',
+      a: 'Lettie bắt đầu không có ảnh đại diện để ấn tượng đầu tiên là những gì một người viết ra. Thay vì ảnh, mỗi người bắt đầu với một nhân vật pixel: có 16 nhân vật miễn phí, và với một tấm ảnh selfie hoặc vài dòng về ngoại hình, nhân vật riêng của bạn sẽ được vẽ ra (ảnh không được lưu lại).',
     },
     {
       q: 'Viết thư cho người lạ có an toàn không?',

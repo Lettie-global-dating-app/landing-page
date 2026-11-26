@@ -25,7 +25,7 @@ export const faq: FaqContent = {
     },
     {
       q: 'Proč na začátku nejsou vidět fotky?',
-      a: 'Lettie začíná bez profilové fotky, aby první dojem vycházel z toho, co člověk napíše. Místo fotky každý začíná s pixelovou postavou: šestnáct je zdarma a ze selfie nebo pár slov o svém vzhledu si můžete vytvořit vlastní (první postava je zdarma, fotka se neukládá).',
+      a: 'Lettie začíná bez profilové fotky, aby první dojem vycházel z toho, co člověk napíše. Místo fotky každý začíná s pixelovou postavou: šestnáct je zdarma a ze selfie nebo pár slov o svém vzhledu si můžete vytvořit vlastní (fotka se neukládá).',
     },
     {
       q: 'Je bezpečné psát cizím lidem?',

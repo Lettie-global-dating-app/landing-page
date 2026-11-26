@@ -31,7 +31,7 @@ export const pl: HomeCopy = {
     ['Odkryj — podnoszenie wypuszczonych listów', 'Raz dziennie przybliżają się trzy nowe koperty. Darmowe w pełni wystarczają; obejrzyj jedną reklamę dziennie, by dostać więcej.'],
     ['Tłumaczenie AI, ponad 70 języków', 'Otwierasz list i masz przycisk tłumaczenia, który tłumaczy tekst w tym samym miejscu, a kolejne dotknięcie przywraca oryginał. Sama aplikacja również działa w ponad 70 językach.'],
     ['Znaczki malowane specjalnie dla Ciebie', 'Każdy wylosowany znaczek jest malowany na nowo, więc nikt inny nie będzie miał takiego samego. W sklepie ze znaczkami znajdziesz znaczki ze 103 krajów, które możesz przykleić na swoje listy.'],
-    ['Postać zamiast zdjęcia', 'Profil zaczyna się jako pikselowa postać. Szesnaście jest bezpłatnych, a z selfie lub kilku słów o twoim wyglądzie narysujemy twoją w tym samym stylu. Pierwsza jest darmowa, a zdjęcie nie jest zachowywane.'],
+    ['Postać zamiast zdjęcia', 'Profil zaczyna się jako pikselowa postać. Szesnaście jest bezpłatnych, a z selfie lub kilku słów o twoim wyglądzie narysujemy twoją w tym samym stylu. Zdjęcie nie jest zachowywane.'],
     ['Dzisiejsze przedstawienia — bez przesuwania', 'Kilka kart przedstawień dziennie. Bez punktów, bez bezkońcowego przesuwania. Jeśli ktoś zainteresuje cię, zaczynasz od jednego listu.'],
   ],
   cmpTitle: 'Czym to się różni od Slowly?',
@@ -48,7 +48,7 @@ export const pl: HomeCopy = {
   cmpNote: 'Na podstawie informacji publicznych z września 2026. Slowly to świetna aplikacja — wypróbuj obie i zostań przy tej, która ci pasuje.',
   faqTitle: 'Najczęstsze pytania',
   faqs: [
-    { q: 'Czy Lettie jest bezpłatne?', a: 'Tak. Pisanie, podnoszenie listów, tłumaczenie, szesnaście podstawowych postaci i twoja pierwsza własna postać są bezpłatne. Klejnoty są tylko do dodatków, takich jak losowanie znaczków, znaczki krajów czy druga postać.' },
+    { q: 'Czy Lettie jest bezpłatne?', a: 'Tak. Pisanie, podnoszenie listów, tłumaczenie i szesnaście podstawowych postaci — wszystko to jest bezpłatne. Klejnoty są tylko do dodatków, takich jak losowanie znaczków, znaczki krajów czy narysowanie własnej postaci.' },
     { q: 'Jak długo list dociera?', a: 'Zależy to od odległości między dwoma krajami. Od jednej do dwóch godzin w obrębie kraju, kilka godzin do sąsiedniego, blisko doby na drugi koniec świata. Czekając, możesz śledzić kopertę na globusie.' },
     { q: 'Czy mogę mieć korespondenta, nie znając jego języka?', a: 'Tak. Każdy list ma przycisk tłumaczenia, który tłumaczy tekst w tym samym miejscu, a kolejne dotknięcie przywraca oryginał. Dzięki ponad 70 językom piszesz w swoim, a druga osoba czyta w swoim.' },
     { q: 'Jak poznać kogoś bez zdjęć?', a: 'Profil to pikselowa postać, kilka zainteresowań i same listy. Z selfie lub kilku słów o twoim wyglądzie może powstać postać w tym samym stylu (zdjęcie nie jest zachowywane). Poznajesz sposób myślenia drugiej osoby, zanim poznasz jej wygląd.' },

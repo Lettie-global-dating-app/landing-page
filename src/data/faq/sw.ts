@@ -25,7 +25,7 @@ export const faq: FaqContent = {
     },
     {
       q: 'Kwa nini picha hazionekani mwanzoni?',
-      a: 'Lettie huanza bila picha ya wasifu ili maoni ya kwanza yatokane na kile mtu anachoandika. Badala ya picha, kila mtu huanza na mhusika wa pixel — kumi na sita ni bure, na kutoka kwenye selfie au maneno machache kuhusu sura yako, mhusika wako mwenyewe huchorwa kwa mtindo huo (wa kwanza ni bure, na picha haihifadhiwi).',
+      a: 'Lettie huanza bila picha ya wasifu ili maoni ya kwanza yatokane na kile mtu anachoandika. Badala ya picha, kila mtu huanza na mhusika wa pixel — kumi na sita ni bure, na kutoka kwenye selfie au maneno machache kuhusu sura yako, mhusika wako mwenyewe huchorwa kwa mtindo huo (picha haihifadhiwi).',
     },
     {
       q: 'Je, ni salama kuandika kwa watu wasiowafahamu?',

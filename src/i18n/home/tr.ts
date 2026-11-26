@@ -31,7 +31,7 @@ export const tr: HomeCopy = {
     ['Keşfet — bırakılan mektupları al', 'Günde bir kez üç yeni zarf yaklaşır. Ücretsizi zaten yeterli; daha fazlası için günde bir reklam izle.'],
     ["Yapay zeka çevirisi, 70'ten fazla dil", 'Bir mektubu açtığında çeviri düğmesi var, metin olduğu yerde çevrilir ve bir dokunuşla orijinale döner. Uygulamanın kendisi de 70’ten fazla dilde.'],
     ['Sadece senin için boyanan pullar', 'Çektiğin her pul sana özel olarak baştan boyanır, yani başka kimsede aynısı olmaz. Pul dükkanında ise mektuplarına yapıştırabileceğin 103 ülkenin pulu var.'],
-    ['Fotoğraf yerine bir karakter', 'Profiller piksel karakterlerle başlar. On altısı ücretsiz, bir selfie veya görünümünle ilgili birkaç kelime aynı stilde kendi karakterine dönüşür. İlki ücretsiz, fotoğraf saklanmaz.'],
+    ['Fotoğraf yerine bir karakter', 'Profiller piksel karakterlerle başlar. On altısı ücretsiz, bir selfie veya görünümünle ilgili birkaç kelime aynı stilde kendi karakterine dönüşür. Fotoğraf saklanmaz.'],
     ['Günün tanışma kartları — kaydırma yok', 'Günde birkaç tanışma kartı gelir. Puan yok, sonu gelmeyen kaydırma yok. Biri ilgini çekerse bir mektupla başlarsın.'],
   ],
   cmpTitle: "Bu Slowly'den farkı ne?",
@@ -48,7 +48,7 @@ export const tr: HomeCopy = {
   cmpNote: "Eylül 2026 itibarıyla kamuya açık bilgilere dayanır. Slowly da güzel bir uygulama — ikisini de dene, sana uyanı kullan.",
   faqTitle: 'Sorulan sorular',
   faqs: [
-    { q: 'Lettie ücretsiz mi?', a: 'Evet. Mektup yazmak, mektup almak, çeviri, on altı temel karakter ve ilk özel karakterin hepsi ücretsiz. Elmaslar sadece pul çekilişi, ülke pulları veya ikinci karakter gibi ekstralar için.' },
+    { q: 'Lettie ücretsiz mi?', a: 'Evet. Mektup yazmak, mektup almak, çeviri ve on altı temel karakter; hepsi ücretsiz. Elmaslar sadece pul çekilişi, ülke pulları veya kendi karakterini çizdirmek gibi ekstralar için.' },
     { q: 'Bir mektup ulaşmak için ne kadar sürer?', a: 'İki ülke arasındaki mesafeden hesaplanır. Aynı ülke içinde bir iki saat, komşu bir ülkeye birkaç saat, dünyanın diğer ucuna yaklaşık bir gün. Beklerken zarfı kürede izleyebilirsin.' },
     { q: 'Dilini bilmediğim biriyle mektuplaşabilir miyim?', a: 'Evet. Her mektupta bir çeviri düğmesi var; metin olduğu yerde çevrilir ve bir dokunuşla orijinale döner. 70’ten fazla dille, sen kendi dilinde yazarsın, karşı taraf kendi dilinde okur.' },
     { q: 'Fotoğraf olmadan birini nasıl tanırım?', a: 'Profil bir piksel karakter, birkaç ilgi alanı ve mektupların kendisidir. Bir selfie veya görünümünle ilgili birkaç kelime aynı stilde bir karaktere dönüşebilir (fotoğraf saklanmaz). Birinin neye benzediğinden önce nasıl düşündüğünü öğrenirsin.' },

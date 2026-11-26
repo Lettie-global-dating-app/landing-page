@@ -22,6 +22,8 @@ const STALE = [
   ['나라마다 우표가 모인다 (여권 규칙: 5통·각자 2통)', /(편지가 닿은 나라마다 우표|나라마다 모이는 우표|그 나라의 우표가 우표첩에 모입니다|adds its stamp to your album|A stamp for every country you reach)/],
   // 젬으로 여는 무제한 대화는 없어졌다(2026-10-07 「한 번 더 보내기」, Plus 는 기다림 없음) (2026-10-18)
   ['젬으로 무제한 대화 (없어진 기능)', /(젬으로 (\*\*)?무제한 대화|무제한 대화를 열|unlock (an )?(\*\*)?unlimited conversation|unlimited conversation can be unlocked|unlimited back-and-forth|unlimited conversations, stamp draws)/i],
+  // 2026-11-16 부터 첫 나만의 캐릭터 그리기도 젬이 든다(backend #104). 기본 16종만 무료, 파츠 꾸미기는 무료·프리미엄 파츠는 젬/Plus
+  ['첫 캐릭터 무료 (2026-11-16 꺼짐)', /(첫 (나만의 )?캐릭터(는|까지)? ?무료|첫 나만의 캐릭터|두 번째 캐릭터|first one is free|first (own |custom )?character (is )?free|your first (own|custom) character)/i],
   // 레티는 펜팔 앱이다 (2026-09-21 대표 지시). 홈·FAQ 문구에 데이팅·연애 매칭 표현을 쓰지 않는다
   ['홈·FAQ 에 데이팅 표현 (펜팔 앱이다)', /(데이팅|소개팅|\bdating\b|\bflört|hẹn hò|หาคู่|\bdaten\b|seznamk|randk[ai]|побачен|γνωριμί|întâlniri romantice|kencan|cita romántica|encontro amoroso|rencontres amoureuses|出会い系|约会)/i, /src[\/](i18n[\/]home|data[\/](faq|articles))[\/]/],
 ];

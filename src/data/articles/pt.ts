@@ -22,7 +22,7 @@ export const articles: ArticleSet = {
 | Cartas por distância | A carta voa sobre um globo e chega entre 1 e 24 horas depois, dependendo da distância entre os dois países. |
 | Descobrir | Todo dia, três novos envelopes de cartas que outras pessoas soltaram se aproximam; você pega e responde às que chamarem sua atenção. Grátis; assistir a um anúncio libera mais. |
 | Tradução | Um botão de traduzir em cada carta, mais de 70 idiomas, grátis, com tradução no próprio lugar. |
-| Perfis | Você começa como um personagem pixel (16 grátis) em vez de uma foto. Uma selfie ou algumas palavras sobre sua aparência se tornam o seu próprio personagem; o primeiro é grátis e a foto não é guardada. |
+| Perfis | Você começa como um personagem pixel (16 grátis) em vez de uma foto. Uma selfie ou algumas palavras sobre sua aparência se tornam o seu próprio personagem; a foto não é guardada. |
 | Selos | Os países com os quais você troca cartas pintam o globo; o selo de um país entra no passaporte depois de pelo menos 5 cartas no total (ao menos 2 suas e 2 deles). |
 | Apresentações | Alguns cartões de apresentação por dia. Sem arrastar para os lados, sem pontuação. |
 
@@ -43,14 +43,14 @@ O tempo de entrega depende da distância entre os pontos centrais dos dois país
 |---|---|
 | Escrever, ler e responder cartas | Continuar escrevendo sem esperar resposta (Lettie Plus) |
 | Traduzir qualquer carta para mais de 70 idiomas | Sorteios de selos de coleção |
-| 16 personagens pixel básicos + seu primeiro personagem próprio | Um segundo personagem próprio em diante |
+| 16 personagens pixel básicos | Desenhar seu próprio personagem (foto ou palavras) |
 | Descobrir: três envelopes novos por dia | Envelopes extras |
 
 **Um número honesto**: Lettie é uma comunidade pequena. As respostas podem demorar um pouco; isso faz parte da ideia do app, não é um defeito.
 
 ## Perfis com personagens pixel, não fotos
 
-Em vez de começar com uma foto, cada pessoa em Lettie é um personagem pixel. Você pode usar um dos 16 personagens básicos sem custo, ou criar seu próprio personagem a partir de uma selfie ou de algumas palavras descrevendo sua aparência. O primeiro personagem próprio é grátis e a foto usada para gerá-lo não é guardada. Um segundo personagem próprio é uma das opções pagas com gemas.
+Em vez de começar com uma foto, cada pessoa em Lettie é um personagem pixel. Você pode usar um dos 16 personagens básicos sem custo, ou criar seu próprio personagem a partir de uma selfie ou de algumas palavras descrevendo sua aparência. A foto usada para gerá-lo não é guardada. Desenhar seu próprio personagem é uma das opções pagas com gemas.
 
 ## Não existe uma regra fixa sobre quando trocar o contato
 
@@ -62,7 +62,7 @@ Se você está escolhendo entre vários apps, o que diferencia Lettie é a combi
     faqs: [
       {
         q: 'Lettie é um app gratuito de amigo por correspondência?',
-        a: 'Sim. Escrever, ler e responder cartas, traduzi-las, os 16 personagens básicos e seu primeiro personagem próprio são gratuitos no iOS e no Android. Gemas opcionais adicionam extras como mais cartas por dia, sorteios de selos, selos de países e um segundo personagem próprio; com a assinatura Lettie Plus, você continua escrevendo sem esperar resposta.',
+        a: 'Sim. Escrever, ler e responder cartas, traduzi-las, os 16 personagens básicos são gratuitos no iOS e no Android. Gemas opcionais adicionam extras como mais cartas por dia, sorteios de selos, selos de países e o desenho do seu próprio personagem; com a assinatura Lettie Plus, você continua escrevendo sem esperar resposta.',
       },
       {
         q: 'Onde posso baixar o app de amigo por correspondência Lettie?',
@@ -159,7 +159,7 @@ Seja qual for o app, uma primeira carta que recebe resposta reage ao que a outra
       },
       {
         q: 'Lettie é grátis?',
-        a: 'Sim. Escrever, ler e responder cartas, a tradução para mais de 70 idiomas, os 16 personagens básicos e seu primeiro personagem próprio são gratuitos. Gemas opcionais adicionam extras como sorteios de selos ou selos de países.',
+        a: 'Sim. Escrever, ler e responder cartas, a tradução para mais de 70 idiomas, os 16 personagens básicos são gratuitos. Gemas opcionais adicionam extras como sorteios de selos ou selos de países.',
       },
       {
         q: 'O que diferencia Lettie do Slowly?',
@@ -275,7 +275,7 @@ Uma observação, porque ela te acompanha até o próximo app: as respostas cost
       'Para começar com um amigo por correspondência no Lettie: crie seu personagem pixel (ou um próprio a partir de uma foto ou de algumas palavras), escreva uma primeira carta curta com uma pergunta no final, e responda às cartas que chegarem com a mesma calma com que as escreveu.',
     body: `## Crie seu personagem, não um perfil com fotos
 
-No Lettie você não começa com uma foto. Escolha um dos 16 personagens pixel básicos, grátis, ou crie seu próprio personagem a partir de uma selfie ou de algumas palavras descrevendo sua aparência. O primeiro personagem próprio é grátis e a foto usada não é guardada.
+No Lettie você não começa com uma foto. Escolha um dos 16 personagens pixel básicos, grátis, ou crie seu próprio personagem a partir de uma selfie ou de algumas palavras descrevendo sua aparência. A foto usada não é guardada.
 
 - **Apresentação genuína**: escreva algo real sobre você, sem exagerar.
 - **Interesses concretos**: um hobby específico diz mais que uma frase vaga como "gosto de música".
@@ -322,7 +322,7 @@ Escrever no primeiro dia não garante uma resposta imediata: cada carta demora c
     faqs: [
       {
         q: 'Como eu crio meu personagem no Lettie?',
-        a: 'Escolha um dos 16 personagens pixel básicos, grátis, ou crie seu próprio personagem a partir de uma selfie ou de algumas palavras descrevendo sua aparência. O primeiro é grátis e a foto não é guardada.',
+        a: 'Escolha um dos 16 personagens pixel básicos, grátis, ou crie seu próprio personagem a partir de uma selfie ou de algumas palavras descrevendo sua aparência. A foto não é guardada.',
       },
       {
         q: 'O que devo escrever na minha primeira carta?',

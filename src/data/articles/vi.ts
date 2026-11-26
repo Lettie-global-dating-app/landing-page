@@ -14,7 +14,7 @@ export const articles: ArticleSet = {
 | Thư bay theo khoảng cách | Lá thư bay qua một địa cầu và đến nơi sau 1 đến 24 giờ, tùy khoảng cách giữa hai nước |
 | Discover (Khám phá) | Nhặt những lá thư người lạ thả ra và trả lời lá thư nào khiến bạn thấy đồng cảm |
 | Dịch thuật | Mỗi lá thư đều có nút dịch, hỗ trợ hơn 70 ngôn ngữ, miễn phí, dịch ngay tại chỗ |
-| Hồ sơ | Bạn bắt đầu bằng một nhân vật pixel thay vì ảnh thật (16 nhân vật cơ bản miễn phí). Một tấm ảnh selfie hoặc vài dòng mô tả cũng tạo ra nhân vật riêng của bạn (nhân vật đầu tiên miễn phí, ảnh không được lưu lại) |
+| Hồ sơ | Bạn bắt đầu bằng một nhân vật pixel thay vì ảnh thật (16 nhân vật cơ bản miễn phí). Một tấm ảnh selfie hoặc vài dòng mô tả cũng tạo ra nhân vật riêng của bạn (ảnh không được lưu lại) |
 | Tem | Các quốc gia bạn trao đổi thư sẽ tô màu địa cầu; tem của một quốc gia vào hộ chiếu sau ít nhất 5 lá thư (ít nhất 2 lá của bạn, 2 lá của họ) |
 | Thẻ giới thiệu | Mỗi ngày nhận vài thẻ giới thiệu. Không vuốt, không chấm điểm |
 
@@ -33,7 +33,7 @@ export const articles: ArticleSet = {
 |---|---|
 | Viết, đọc và trả lời thư | Tăng số thư thả ra mỗi ngày |
 | Dịch bất kỳ lá thư nào sang hơn 70 ngôn ngữ | Viết tiếp mà không cần chờ thư trả lời (Lettie Plus) |
-| 16 nhân vật pixel cơ bản + nhân vật riêng đầu tiên (từ ảnh hoặc mô tả) | Nhân vật riêng thứ hai trở đi |
+| 16 nhân vật pixel cơ bản | Vẽ nhân vật riêng của bạn (từ ảnh hoặc mô tả) |
 | Discover: ba lá thư mới mỗi ngày (miễn phí) | Quay tem và thêm thư |
 
 Lettie vẫn là một cộng đồng nhỏ, nên có khi phải chờ một thời gian để nhận được hồi âm - đó cũng là một phần của việc viết thư chậm.
@@ -44,7 +44,7 @@ Nếu bạn đang so sánh với các ứng dụng khác như Slowly, có thể 
     faqs: [
       {
         q: `Lettie có phải ứng dụng kết bạn qua thư miễn phí không?`,
-        a: `Có. Viết, đọc, trả lời thư, dịch thư, 16 nhân vật pixel cơ bản và nhân vật riêng đầu tiên đều miễn phí trên cả iPhone và Android. Đá quý là tùy chọn thêm, giúp tăng số thư mỗi ngày, mở khóa quay tem, tem các nước và nhân vật riêng thứ hai; còn Lettie Plus cho phép bạn viết tiếp mà không cần chờ thư trả lời.`,
+        a: `Có. Viết, đọc, trả lời thư, dịch thư, và 16 nhân vật pixel cơ bản đều miễn phí trên cả iPhone và Android. Đá quý là tùy chọn thêm, giúp tăng số thư mỗi ngày, mở khóa quay tem, tem các nước và vẽ nhân vật riêng của bạn; còn Lettie Plus cho phép bạn viết tiếp mà không cần chờ thư trả lời.`,
       },
       {
         q: `Tải Lettie ở đâu?`,

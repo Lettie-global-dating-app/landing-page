@@ -25,7 +25,7 @@ export const faq: FaqContent = {
     },
     {
       q: 'Bakit walang litrato sa simula?',
-      a: 'Nagsisimula ang Lettie nang walang profile photo para ang unang impresyon ay base sa kung ano ang isinusulat ng tao. Sa halip na litrato, nagsisimula ang bawat isa sa isang pixel character — labing-anim na libre, at mula sa isang selfie o ilang salita tungkol sa hitsura mo, iguguhit ang sarili mong character (libre ang una, at hindi itinatago ang litrato).',
+      a: 'Nagsisimula ang Lettie nang walang profile photo para ang unang impresyon ay base sa kung ano ang isinusulat ng tao. Sa halip na litrato, nagsisimula ang bawat isa sa isang pixel character — labing-anim na libre, at mula sa isang selfie o ilang salita tungkol sa hitsura mo, iguguhit ang sarili mong character (hindi itinatago ang litrato).',
     },
     {
       q: 'Ligtas ba ang magsulat sa estranghero?',

@@ -4776,7 +4776,7 @@ Slowly는 편지 번역이 기본 경험에 들어 있지 않습니다. 외부 �
 
 ## 4. 프로필 — 아바타 조합 vs 글로 그리는 캐릭터
 
-Slowly의 아바타는 부품을 조합해 만듭니다. Lettie는 기본 픽셀 캐릭터 16종을 무료로 쓰고, **사진 한 장이나 생김새 몇 줄로 같은 그림체의 나만의 캐릭터를 그려 줍니다**(첫 캐릭터 무료, 사진은 그리는 데만 쓰고 저장하지 않음). 상대에게 보이는 프로필에 사진은 없습니다.
+Slowly의 아바타는 부품을 조합해 만듭니다. Lettie는 기본 픽셀 캐릭터 16종을 무료로 쓰고, **사진 한 장이나 생김새 몇 줄로 같은 그림체의 나만의 캐릭터를 그려 줍니다**(사진은 그리는 데만 쓰고 저장하지 않음). 상대에게 보이는 프로필에 사진은 없습니다.
 
 ## 5. 매칭 — 없음 vs 하루 몇 장
 
@@ -4841,7 +4841,7 @@ Slowly doesn't put letter translation in the base experience; you go out to anot
 
 ## 4. Profiles — avatar builder vs a character drawn from words
 
-Slowly's avatars are assembled from parts. Lettie gives you sixteen pixel characters for free and **draws your own in the same style from a selfie or a few words about how you look** (the first one is free; the photo is used only for the drawing and isn't stored). No photo appears on the profile other people see.
+Slowly's avatars are assembled from parts. Lettie gives you sixteen pixel characters for free and **draws your own in the same style from a selfie or a few words about how you look** (the photo is used only for the drawing and isn't stored). No photo appears on the profile other people see.
 
 ## 5. Matching — none vs a few a day
 
@@ -4894,12 +4894,12 @@ Lettie is smaller than Slowly. If you need to find someone in a specific small c
         keywordsEn: ['Slowly alternatives', 'apps like Slowly', 'Slowly app alternative 2026', 'best pen pal apps', 'slow letter apps', 'language exchange apps', 'InterPals alternative', 'HelloTalk vs Tandem'],
         faq: [
             { q: 'Slowly와 가장 비슷한 앱은 무엇인가요?', a: '편지가 거리만큼 걸려 도착한다는 핵심이 같은 앱은 Lettie입니다(이 글을 쓴 팀의 앱이고, 아직 사람이 적습니다). 언어 교환이 목적이면 HelloTalk·Tandem, 이메일 펜팔이면 InterPals가 가깝습니다.' },
-            { q: 'Slowly 대안 앱들은 무료인가요?', a: '이 글의 여섯 앱 모두 무료로 시작할 수 있습니다. 차이는 유료 항목입니다. Lettie는 번역과 기념일·여권 우표가 무료이고 우표 뽑기·나라 우표·두 번째 캐릭터·Lettie Plus가 유료 항목입니다.' },
+            { q: 'Slowly 대안 앱들은 무료인가요?', a: '이 글의 여섯 앱 모두 무료로 시작할 수 있습니다. 차이는 유료 항목입니다. Lettie는 번역과 기념일·여권 우표가 무료이고 우표 뽑기·나라 우표·내 캐릭터 그리기·Lettie Plus가 유료 항목입니다.' },
             { q: '사진 없이 시작할 수 있는 펜팔 앱이 있나요?', a: 'Lettie는 사진 대신 픽셀 캐릭터로 시작하며, 처음 만나는 사람에게 사진이 보이지 않습니다.' },
         ],
         faqEn: [
             { q: 'Which app is most similar to Slowly?', a: 'Lettie keeps the same core: letters take time to arrive based on distance (it is our app, and still small). For language exchange HelloTalk and Tandem are closer; for email-style pen pals, InterPals.' },
-            { q: 'Are the Slowly alternatives free?', a: 'All six apps in this article are free to start. The difference is what is paid: in Lettie translation and holiday and passport stamps are free, while stamp draws, country stamps, a second custom character and Lettie Plus are paid extras.' },
+            { q: 'Are the Slowly alternatives free?', a: 'All six apps in this article are free to start. The difference is what is paid: in Lettie translation and holiday and passport stamps are free, while stamp draws, country stamps, drawing your own character and Lettie Plus are paid extras.' },
             { q: 'Is there a pen-pal app that works without photos?', a: 'Lettie starts every profile as a pixel character, and no photograph is shown to someone you meet for the first time.' },
         ],
         content: `
@@ -5387,7 +5387,7 @@ You'll still improve with translation on, because you keep switching between the
 
 ## 캐릭터는 어떻게 생겼나
 
-작은 전신 픽셀 캐릭터 16종이 기본으로 있고 언제든 무료로 바꿉니다. 그리고 **"짧은 곱슬머리, 노란 우비, 안경"** 처럼 생김새를 글로 적거나, 2.0.17 부터는 사진 한 장을 올리면 같은 그림체로 나만의 캐릭터를 그려 줍니다. 첫 캐릭터는 무료이고, 사진은 그림을 그리는 데만 쓰고 저장하지 않습니다 — 상대에게 보이는 건 그림뿐입니다. 얼굴을 그대로 옮기는 게 아니라 **분위기**를 그립니다. 그게 이 앱에서 "나"를 보여 주는 방식입니다.
+작은 전신 픽셀 캐릭터 16종이 기본으로 있고 언제든 무료로 바꿉니다. 그리고 **"짧은 곱슬머리, 노란 우비, 안경"** 처럼 생김새를 글로 적거나, 2.0.17 부터는 사진 한 장을 올리면 같은 그림체로 나만의 캐릭터를 그려 줍니다. 사진은 그림을 그리는 데만 쓰고 저장하지 않습니다 — 상대에게 보이는 건 그림뿐입니다. 얼굴을 그대로 옮기는 게 아니라 **분위기**를 그립니다. 그게 이 앱에서 "나"를 보여 주는 방식입니다.
 
 ## 그럼 얼굴은 영영 안 보나요
 
@@ -5421,7 +5421,7 @@ On most apps for meeting people, the first screen is a face. The decision happen
 
 ## What the character looks like
 
-Sixteen small full-body pixel characters come free and you can switch any time. And if you describe yourself in words — **"short curly hair, yellow raincoat, glasses"** — or, since version 2.0.17, upload a selfie — and we draw your own in the same style. The first one is free, and the photo is used only for the drawing and isn't stored; the other person only ever sees the drawing. It doesn't copy your face; it draws your **mood.** That's how you show up here.
+Sixteen small full-body pixel characters come free and you can switch any time. And if you describe yourself in words — **"short curly hair, yellow raincoat, glasses"** — or, since version 2.0.17, upload a selfie — and we draw your own in the same style. The photo is used only for the drawing and isn't stored; the other person only ever sees the drawing. It doesn't copy your face; it draws your **mood.** That's how you show up here.
 
 ## So do you never see a face?
 

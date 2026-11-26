@@ -31,7 +31,7 @@ export const sw: HomeCopy = {
     ['Gundua — kuokota barua zilizotolewa', 'Bahasha tatu mpya zinakaribia mara moja kwa siku. Bure inatosha; tazama tangazo moja kwa siku kupata zaidi.'],
     ['Tafsiri ya AI, lugha zaidi ya 70', 'Ukifungua barua kuna kitufe cha tafsiri kinachotafsiri maandishi palepale yalipo, na mbofyo mwingine unarudisha maandishi asilia. Programu yenyewe pia inazungumza lugha zaidi ya 70.'],
     ['Stempu zilizopakwa rangi kwa ajili yako tu', 'Kila stempu unayochora hupakwa rangi upya, kwa hivyo hakuna mwingine aliye na inayofanana nayo. Duka la stempu lina stempu kutoka nchi 103 za kubandika kwenye barua zako.'],
-    ['Mhusika badala ya picha', 'Wasifu huanza kama mhusika wa pixel. Kumi na sita ni bure, na kutoka kwenye selfie au maneno machache kuhusu sura yako, mhusika wako mwenyewe huchorwa kwa mtindo huo. Wa kwanza ni bure, na picha haihifadhiwi.'],
+    ['Mhusika badala ya picha', 'Wasifu huanza kama mhusika wa pixel. Kumi na sita ni bure, na kutoka kwenye selfie au maneno machache kuhusu sura yako, mhusika wako mwenyewe huchorwa kwa mtindo huo. Picha haihifadhiwi.'],
     ['Utambulisho wa leo — bila kuteleza', 'Kadi chache za utambulisho kwa siku. Hakuna alama, hakuna kuteleza bila mwisho. Kama mtu anaonekana wa kuvutia, unaanza na barua moja.'],
   ],
   cmpTitle: 'Hii inatofautiana vipi na Slowly?',
@@ -48,7 +48,7 @@ export const sw: HomeCopy = {
   cmpNote: 'Kulingana na taarifa za umma hadi Septemba 2026. Slowly ni programu nzuri — jaribu zote mbili na ubaki na inayokufaa.',
   faqTitle: 'Maswali ya watu',
   faqs: [
-    { q: 'Je, Lettie ni bure?', a: 'Ndiyo. Kuandika, kuokota barua, tafsiri, wahusika kumi na sita wa msingi, na mhusika wako wa kwanza binafsi — yote ni bure. Almasi hutumika tu kwa vitu vya ziada kama uchoraji wa stempu, stempu za nchi au mhusika wa pili.' },
+    { q: 'Je, Lettie ni bure?', a: 'Ndiyo. Kuandika, kuokota barua, tafsiri, na wahusika kumi na sita wa msingi — yote ni bure. Almasi hutumika tu kwa vitu vya ziada kama uchoraji wa stempu, stempu za nchi au kuchorewa mhusika wako mwenyewe.' },
     { q: 'Barua inachukua muda gani kufika?', a: 'Inatokana na umbali halisi kati ya nchi mbili. Saa moja hadi mbili ndani ya nchi moja, saa chache hadi nchi jirani, karibu siku moja kwenda upande mwingine wa dunia. Unaposubiri, unaweza kuona bahasha juu ya dunia.' },
     { q: 'Naweza kuwa na rafiki wa kalamu bila kujua lugha yake?', a: 'Ndiyo. Kila barua ina kitufe cha tafsiri kinachotafsiri maandishi palepale yalipo, na mbofyo mwingine unarudisha maandishi asilia. Kwa lugha zaidi ya 70, unaandika kwa lugha yako na yeye anasoma kwa lugha yake.' },
     { q: 'Nitamfahamu mtu vipi bila picha?', a: 'Wasifu ni mhusika wa pixel, maslahi machache, na barua zenyewe. Kutoka kwenye selfie au maneno machache kuhusu sura yako, mhusika anaweza kuchorwa kwa mtindo huo (picha haihifadhiwi). Unajua jinsi mtu anavyofikiri kabla ya kujua sura yake.' },

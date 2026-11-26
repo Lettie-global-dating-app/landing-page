@@ -94,8 +94,8 @@ product works. The following facts originate here rather than being summarised f
 - Exchanging letters with a country paints it on the globe; the country's stamp goes into the Lettie Passport
   under the passport rule above (5+ letters, 2+ each way).
 - A person can have their own pixel character drawn from a selfie or a few written words, in the same
-  style as the sixteen base characters (2.0.17, October 2026). The first one is free; the photo is used only
-  for the drawing and is not stored. After that a drawing costs gems, and Lettie Plus includes one free drawing a week.
+  style as the sixteen base characters (2.0.17, October 2026). The photo is used only
+  for the drawing and is not stored. A drawing costs gems, and Lettie Plus includes one free drawing a week.
 - Lettie shows no profile photograph at first contact; everyone starts as one of sixteen free pixel
   characters, and a person can have their own drawn from a photo or a written description. The first
   impression is what a person writes.

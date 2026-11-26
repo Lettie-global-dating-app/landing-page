@@ -13,7 +13,7 @@ export const faq: FaqContent = {
     },
     {
       q: 'Lettie ücretsiz mi?',
-      a: 'İndirme ve temel kullanım ücretsizdir: mektup yazabilir, alabilir ve cevaplayabilirsin, ödeme gerekmez. Pul çekilişi, ülke pulları veya ikinci bir karakter gibi isteğe bağlı ekstralar için elmaslar kullanılır.',
+      a: 'İndirme ve temel kullanım ücretsizdir: mektup yazabilir, alabilir ve cevaplayabilirsin, ödeme gerekmez. Pul çekilişi, ülke pulları veya kendi karakterini çizdirmek gibi isteğe bağlı ekstralar için elmaslar kullanılır.',
     },
     {
       q: 'İngilizce yazmak zorunda mıyım?',
@@ -25,7 +25,7 @@ export const faq: FaqContent = {
     },
     {
       q: 'Neden başta fotoğraf görünmüyor?',
-      a: 'Lettie, ilk izlenimin birinin yazdıkları olması için profil fotoğrafı olmadan başlar. Fotoğraf yerine herkes bir piksel karakterle başlar: on altısı ücretsizdir ve bir selfie veya görünümünle ilgili birkaç kelimeyle kendi karakterin çizilir (ilki ücretsizdir, fotoğraf saklanmaz).',
+      a: 'Lettie, ilk izlenimin birinin yazdıkları olması için profil fotoğrafı olmadan başlar. Fotoğraf yerine herkes bir piksel karakterle başlar: on altısı ücretsizdir ve bir selfie veya görünümünle ilgili birkaç kelimeyle kendi karakterin çizilir (fotoğraf saklanmaz).',
     },
     {
       q: 'Yabancılara mektup yazmak güvenli mi?',

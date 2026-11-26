@@ -31,7 +31,7 @@ export const it: HomeCopy = {
     ['Scopri: raccogliere lettere lanciate', 'Ogni giorno si avvicinano tre buste nuove. Il gratuito basta e avanza; con una pubblicità al giorno ne ricevi altre.'],
     ['Traduzione IA, oltre 70 lingue', 'Aprendo una lettera c’è un pulsante per tradurre che traduce il testo proprio lì dov’è, e con un altro tocco torni all’originale. Anche l’app parla oltre 70 lingue.'],
     ['Francobolli dipinti apposta per te', 'Ogni francobollo che peschi viene dipinto sul momento, così nessun altro ne avrà uno uguale. Nel negozio trovi i francobolli di 103 paesi da attaccare alle tue lettere.'],
-    ['Un personaggio al posto della foto', 'Il profilo parte da un personaggio pixel. Sedici sono gratis, e da una foto o poche parole sul tuo aspetto disegniamo il tuo nello stesso stile. Il primo è gratis e la foto non viene conservata.'],
+    ['Un personaggio al posto della foto', 'Il profilo parte da un personaggio pixel. Sedici sono gratis, e da una foto o poche parole sul tuo aspetto disegniamo il tuo nello stesso stile. La foto non viene conservata.'],
     ['Le presentazioni del giorno, senza swipe', 'Poche carte di presentazione al giorno. Niente punteggi, niente scorrimento infinito. Se qualcuno ti incuriosisce, inizi con una lettera.'],
   ],
   cmpTitle: 'In cosa è diverso da Slowly?',
@@ -48,7 +48,7 @@ export const it: HomeCopy = {
   cmpNote: 'In base a informazioni pubbliche a settembre 2026. Slowly è un’ottima app: provale entrambe e tieni quella che fa per te.',
   faqTitle: 'Domande frequenti',
   faqs: [
-    { q: 'Lettie è gratis?', a: 'Sì. Scrivere, raccogliere lettere, tradurre, i sedici personaggi base e il tuo primo personaggio personalizzato sono gratis. Le gemme servono solo per gli extra: pesca di francobolli, francobolli dei paesi o un secondo personaggio.' },
+    { q: 'Lettie è gratis?', a: 'Sì. Scrivere, raccogliere lettere, tradurre e i sedici personaggi base sono gratis. Le gemme servono solo per gli extra: pesca di francobolli, francobolli dei paesi o il disegno del tuo personaggio.' },
     { q: 'Quanto ci mette una lettera ad arrivare?', a: 'Si calcola sulla distanza reale tra due città. Da una a due ore nello stesso paese, qualche ora verso un paese vicino, quasi un giorno per l’altra parte del mondo. Mentre aspetti vedi la busta sul mappamondo.' },
     { q: 'Posso avere un amico di penna senza parlare la sua lingua?', a: 'Sì. Ogni lettera ha un pulsante per tradurre che traduce il testo proprio lì dov’è, e con un altro tocco torni all’originale. Con oltre 70 lingue, tu scrivi nella tua e l’altro legge nella sua.' },
     { q: 'Come conosco qualcuno senza foto?', a: 'Un profilo è un personaggio pixel, qualche interesse e le lettere stesse. Da una foto o poche parole sul tuo aspetto disegniamo un personaggio nello stesso stile (la foto non viene conservata). Scopri come pensa una persona prima di sapere com’è fatta.' },

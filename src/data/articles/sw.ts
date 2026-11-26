@@ -18,7 +18,7 @@ Lettie imejengwa juu ya wazo rahisi: barua inapaswa kusafiri. Badala ya ujumbe w
 | Uwasilishaji kwa umbali | Barua huruka juu ya dunia na kufika ndani ya saa 1 hadi 24, kulingana na umbali kati ya nchi mbili |
 | Gundua (Discover) | Bahasha tatu mpya za barua kutoka watu wasiowajua zinakaribia kwako kila siku bila malipo; tazama tangazo kupata zaidi |
 | Tafsiri | Kitufe cha tafsiri kwenye kila barua, lugha zaidi ya 70, bila malipo, na maandishi hutafsiriwa palepale yalipo |
-| Wasifu | Chagua mhusika wa pikseli badala ya picha (wahusika 16 wa msingi bila malipo), au tengeneza mhusika wako kutoka selfie au maneno machache ya maelezo (wa kwanza ni bure, picha haihifadhiwi) |
+| Wasifu | Chagua mhusika wa pikseli badala ya picha (wahusika 16 wa msingi bila malipo), au tengeneza mhusika wako kutoka selfie au maneno machache ya maelezo (picha haihifadhiwi) |
 | Stempu | Nchi unazobadilishana nazo barua hupakwa rangi kwenye dunia yako; stempu ya nchi huingia kwenye pasipoti baada ya barua zisizopungua 5 kwa jumla (angalau 2 kutoka kwako na 2 kutoka kwao) |
 | Kadi za utangulizi | Kadi chache za utangulizi kila siku, hakuna kusogeza, hakuna alama |
 
@@ -28,7 +28,7 @@ Muda wa uwasilishaji unategemea umbali kati ya vituo vya nchi mbili. Ndani ya nc
 
 ## Kinachokuwa bure na kinachokuwa cha hiari
 
-Kuandika, kusoma, na kujibu barua ni bure, kama vile tafsiri ya lugha zaidi ya 70, wahusika 16 wa msingi, na mhusika wako wa kwanza binafsi. Gundua inakupa bahasha tatu mpya bila malipo kila siku, na unaweza kutazama tangazo kupata zaidi.
+Kuandika, kusoma, na kujibu barua ni bure, kama vile tafsiri ya lugha zaidi ya 70, na wahusika 16 wa msingi. Gundua inakupa bahasha tatu mpya bila malipo kila siku, na unaweza kutazama tangazo kupata zaidi.
 
 Almasi (gems) za hiari zinafungua vitu vya ziada: michezo ya kubahatisha stempu, stempu za nchi, na mhusika wa pili wa ziada. Usajili wa Lettie Plus hukuruhusu kuendelea kuandika bila kusubiri jibu. Hakuna kipengele hicho kinachohitajika kuandika barua na kufahamiana na watu wapya — ni ziada tu kwa wale wanaotaka zaidi.
 
@@ -42,7 +42,7 @@ Programu hii inafaa watu wanaopenda mdundo wa kuandika barua, wanaotaka kufahami
     faqs: [
       {
         q: 'Je Lettie ni bure?',
-        a: 'Ndiyo. Kuandika, kusoma, na kujibu barua, tafsiri ya lugha zaidi ya 70, wahusika 16 wa msingi, na mhusika wako wa kwanza binafsi ni bure kwenye iOS na Android. Almasi za hiari huongeza vitu vya ziada kama michezo ya kubahatisha stempu, stempu za nchi, na mhusika wa pili; kwa usajili wa Lettie Plus unaweza kuendelea kuandika bila kusubiri jibu.',
+        a: 'Ndiyo. Kuandika, kusoma, na kujibu barua, tafsiri ya lugha zaidi ya 70, na wahusika 16 wa msingi ni bure kwenye iOS na Android. Almasi za hiari huongeza vitu vya ziada kama michezo ya kubahatisha stempu, stempu za nchi, na kuchorewa mhusika wako mwenyewe; kwa usajili wa Lettie Plus unaweza kuendelea kuandika bila kusubiri jibu.',
       },
       {
         q: 'Naweza kupakua Lettie wapi?',
@@ -233,7 +233,7 @@ Kumbuka moja, kwa sababu itakufuata kwenye programu inayokuja: majibu yanakoma h
       'Kuanza na rafiki wa kalamu kwenye Lettie kunahusisha hatua tatu: kutengeneza wasifu (mhusika wa pikseli na maneno machache kuhusu wewe), kuandika barua ya kwanza ya maneno 150-300 ikiwa na swali moja mwishoni, na kuwa na subira — barua huruka kulingana na umbali na jibu linaweza kufika ndani ya masaa au siku moja.',
     body: `## Kutengeneza wasifu
 
-Wasifu ni kitu cha kwanza mtu mwingine anachokiona. Badala ya picha, unachagua mmoja wa wahusika kumi na sita wa pikseli wa bure, au unatengeneza mhusika wako mwenyewe kutoka selfie au maneno machache ya maelezo — mhusika wako wa kwanza binafsi ni bure na picha haihifadhiwi popote.
+Wasifu ni kitu cha kwanza mtu mwingine anachokiona. Badala ya picha, unachagua mmoja wa wahusika kumi na sita wa pikseli wa bure, au unatengeneza mhusika wako mwenyewe kutoka selfie au maneno machache ya maelezo — na picha haihifadhiwi popote.
 
 Wasifu unapaswa kuwa na maneno machache kuhusu wewe. Maelezo mahususi yanafanya kazi vizuri zaidi:
 

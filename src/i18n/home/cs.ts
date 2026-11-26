@@ -31,7 +31,7 @@ export const cs: HomeCopy = {
     ['Objevit — zvedání vypuštěných dopisů', 'Jednou denně se přiblíží tři nové obálky. Zdarma jich je dost; jedna reklama denně vám přidá další.'],
     ['AI překlad, více než 70 jazyků', 'Otevřete dopis a je tam tlačítko překladu, které text přeloží přímo na místě, a dalším klepnutím se vrátí originál. I samotná aplikace mluví více než 70 jazyky.'],
     ['Známky namalované jen pro vás', 'Každá známka, kterou si vylosujete, se namaluje nově, takže nikdo jiný nebude mít stejnou. V obchodě se známkami najdete známky ze 103 zemí, které můžete nalepit na své dopisy.'],
-    ['Postava místo fotky', 'Profil začíná jako pixelová postava. Šestnáct je zdarma a ze selfie nebo pár slov o vašem vzhledu nakreslíme vaši ve stejném stylu. První je zdarma a fotka se neukládá.'],
+    ['Postava místo fotky', 'Profil začíná jako pixelová postava. Šestnáct je zdarma a ze selfie nebo pár slov o vašem vzhledu nakreslíme vaši ve stejném stylu. Fotka se neukládá.'],
     ['Dnešní seznámení — bez swipování', 'Několik karet se seznámením denně. Žádné body, žádné nekonečné swipování. Pokud vás někdo zaujme, začnete jedním dopisem.'],
   ],
   cmpTitle: 'Čím se to liší od Slowly?',
@@ -48,7 +48,7 @@ export const cs: HomeCopy = {
   cmpNote: 'Podle veřejných informací k září 2026. Slowly je skvělá aplikace — vyzkoušejte obě a zůstaňte u té, která vám sedne.',
   faqTitle: 'Časté otázky',
   faqs: [
-    { q: 'Je Lettie zdarma?', a: 'Ano. Psaní, zvedání dopisů, překlad, šestnáct základních postav a vaše první vlastní postava jsou zdarma. Drahokamy jsou jen na nadstandardní věci jako losování známek, známky zemí nebo druhou postavu.' },
+    { q: 'Je Lettie zdarma?', a: 'Ano. Psaní, zvedání dopisů, překlad a šestnáct základních postav jsou zdarma. Drahokamy jsou jen na nadstandardní věci jako losování známek, známky zemí nebo nakreslení vlastní postavy.' },
     { q: 'Jak dlouho dopis putuje?', a: 'Počítá se to ze skutečné vzdálenosti mezi dvěma zeměmi. Jednu až dvě hodiny v rámci země, několik hodin do sousední, téměř den na druhý konec světa. Zatímco čekáte, vidíte obálku na glóbu.' },
     { q: 'Mohu mít dopisovatele, aniž bych uměl jeho jazyk?', a: 'Ano. Každý dopis má tlačítko překladu, které text přeloží přímo na místě, a dalším klepnutím se vrátí originál. Díky více než 70 jazykům píšete ve své řeči a druhá strana čte ve své.' },
     { q: 'Jak poznám někoho bez fotek?', a: 'Profil tvoří pixelová postava, pár zájmů a samotné dopisy. Ze selfie nebo pár slov o vzhledu může vzniknout postava ve stejném stylu (fotka se neukládá). Poznáte, jak člověk myslí, dřív než jak vypadá.' },

@@ -22,7 +22,7 @@ export const articles: ArticleSet = {
 | Lettere per distanza | Una lettera vola su un globo e arriva da 1 a 24 ore dopo, in base alla distanza tra i due paesi. |
 | Scopri | Ogni giorno si avvicinano tre nuove buste con lettere che altre persone hanno lasciato andare; le raccogli e rispondi a quelle che ti colpiscono. Gratis; guardare una pubblicità ne sblocca altre. |
 | Traduzione | Un pulsante di traduzione in ogni lettera, oltre 70 lingue, gratis, con il testo tradotto proprio dov’è. |
-| Profili | Inizi come personaggio pixel (16 gratis) invece che con una foto. Un selfie o poche parole sul tuo aspetto diventano il tuo personaggio personale; il primo è gratis e la foto non viene conservata. |
+| Profili | Inizi come personaggio pixel (16 gratis) invece che con una foto. Un selfie o poche parole sul tuo aspetto diventano il tuo personaggio personale; la foto non viene conservata. |
 | Francobolli | I paesi con cui scambi lettere colorano il globo; il francobollo di un paese entra nel passaporto dopo almeno 5 lettere in tutto (almeno 2 tue e 2 loro). |
 | Presentazioni | Poche schede di presentazione al giorno. Niente da scorrere, niente punteggi. |
 
@@ -43,14 +43,14 @@ Il tempo di consegna dipende dalla distanza tra i punti centrali dei due paesi. 
 |---|---|
 | Scrivere, leggere e rispondere alle lettere | Continuare a scrivere senza aspettare una risposta (Lettie Plus) |
 | Tradurre qualsiasi lettera in oltre 70 lingue | Estrazioni di francobolli |
-| 16 personaggi pixel base + il tuo primo personaggio personale | Un secondo personaggio personale in poi |
+| 16 personaggi pixel base | Far disegnare il tuo personaggio (foto o parole) |
 | Scopri: tre nuove buste al giorno | Buste aggiuntive |
 
 **Un numero onesto**: Lettie è una comunità piccola. Le risposte possono richiedere tempo; fa parte dell'idea dell'app, non è un difetto.
 
 ## Profili con personaggi pixel, non foto
 
-Invece di partire da una foto, ogni persona su Lettie è un personaggio pixel. Puoi usare uno dei 16 personaggi base senza costi, oppure creare il tuo personaggio a partire da un selfie o da poche parole che descrivono il tuo aspetto. Il primo personaggio personale è gratis e la foto usata per generarlo non viene conservata. Un secondo personaggio personale è una delle opzioni a pagamento con le gemme.
+Invece di partire da una foto, ogni persona su Lettie è un personaggio pixel. Puoi usare uno dei 16 personaggi base senza costi, oppure creare il tuo personaggio a partire da un selfie o da poche parole che descrivono il tuo aspetto. La foto usata per generarlo non viene conservata. Far disegnare il tuo personaggio personale è una delle opzioni a pagamento con le gemme.
 
 ## Non c'è una regola fissa su quando scambiarsi i contatti
 
@@ -62,7 +62,7 @@ Se stai scegliendo tra diverse app, ciò che distingue Lettie è la combinazione
     faqs: [
       {
         q: 'Lettie è un’app gratuita di amici di penna?',
-        a: 'Sì. Scrivere, leggere e rispondere alle lettere, tradurle, i 16 personaggi base e il tuo primo personaggio personale sono gratuiti su iOS e Android. Le gemme opzionali aggiungono extra come più lettere al giorno, estrazioni di francobolli, francobolli dei paesi e un secondo personaggio personale; con l’abbonamento Lettie Plus puoi continuare a scrivere senza aspettare una risposta.',
+        a: 'Sì. Scrivere, leggere e rispondere alle lettere, tradurle, i 16 personaggi base sono gratuiti su iOS e Android. Le gemme opzionali aggiungono extra come più lettere al giorno, estrazioni di francobolli, francobolli dei paesi e il disegno del tuo personaggio personale; con l’abbonamento Lettie Plus puoi continuare a scrivere senza aspettare una risposta.',
       },
       {
         q: 'Dove si scarica l’app di amici di penna Lettie?',
@@ -159,7 +159,7 @@ Qualunque app scegli, una prima lettera che riceve risposta reagisce a quello ch
       },
       {
         q: 'Lettie è gratis?',
-        a: 'Sì. Scrivere, leggere e rispondere alle lettere, la traduzione in oltre 70 lingue, i 16 personaggi base e il tuo primo personaggio personale sono gratuiti. Le gemme opzionali aggiungono extra come estrazioni di francobolli o francobolli dei paesi.',
+        a: 'Sì. Scrivere, leggere e rispondere alle lettere, la traduzione in oltre 70 lingue, i 16 personaggi base sono gratuiti. Le gemme opzionali aggiungono extra come estrazioni di francobolli o francobolli dei paesi.',
       },
       {
         q: 'Cosa differenzia Lettie da Slowly?',
@@ -275,7 +275,7 @@ Una nota, perché ti segue nella prossima app: le risposte di solito si spengono
       'Per iniziare con un amico di penna su Lettie: crea il tuo personaggio pixel (o uno personale a partire da una foto o da poche parole), scrivi una prima lettera breve con una domanda alla fine, e rispondi alle lettere che arrivano con la stessa calma con cui le hai scritte.',
     body: `## Crea il tuo personaggio, non un profilo con le foto
 
-Su Lettie non parti da una foto. Scegli uno dei 16 personaggi pixel base, gratis, oppure crea il tuo personaggio a partire da un selfie o da poche parole che descrivono il tuo aspetto. Il primo personaggio personale è gratis e la foto usata non viene conservata.
+Su Lettie non parti da una foto. Scegli uno dei 16 personaggi pixel base, gratis, oppure crea il tuo personaggio a partire da un selfie o da poche parole che descrivono il tuo aspetto. La foto usata non viene conservata.
 
 - **Presentazione genuina**: scrivi qualcosa di reale su di te, senza esagerare.
 - **Interessi concreti**: un hobby specifico dice più di una frase vaga come "mi piace la musica".
@@ -322,7 +322,7 @@ Scrivere il primo giorno non garantisce una risposta immediata: ogni lettera imp
     faqs: [
       {
         q: 'Come creo il mio personaggio su Lettie?',
-        a: 'Scegli uno dei 16 personaggi pixel base, gratis, oppure crea il tuo personaggio a partire da un selfie o da poche parole che descrivono il tuo aspetto. Il primo è gratis e la foto non viene conservata.',
+        a: 'Scegli uno dei 16 personaggi pixel base, gratis, oppure crea il tuo personaggio a partire da un selfie o da poche parole che descrivono il tuo aspetto. La foto non viene conservata.',
       },
       {
         q: 'Cosa devo scrivere nella mia prima lettera?',
