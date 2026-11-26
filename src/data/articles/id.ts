@@ -26,7 +26,7 @@ Aplikasi sahabat pena menghubungkan kamu dengan orang di negara lain untuk bertu
 | Surat berdasarkan jarak | Surat terbang melintasi globe dan tiba 1 sampai 24 jam kemudian, tergantung jarak antara dua negara. |
 | Discover | Ambil surat yang dilepas orang asing ke langit, lalu balas yang terasa cocok untukmu. |
 | Terjemahan | Ada tombol terjemahan di setiap surat, 70+ bahasa, gratis, dan teks langsung diterjemahkan di tempatnya. |
-| Profil | Kamu mulai sebagai karakter piksel (16 karakter gratis), bukan foto. Selfie atau beberapa kalimat tentang penampilanmu bisa dijadikan karaktermu sendiri (yang pertama gratis, fotonya tidak disimpan). |
+| Profil | Kamu mulai sebagai karakter piksel (16 karakter gratis), bukan foto. Selfie atau beberapa kalimat tentang penampilanmu bisa dijadikan karaktermu sendiri (fotonya tidak disimpan). |
 | Prangko | Negara tempat kamu bertukar surat mewarnai globe-mu; prangko negara itu masuk ke paspor setelah minimal 5 surat (minimal 2 darimu, 2 dari mereka). |
 | Kartu perkenalan | Ada beberapa kartu perkenalan tiap hari. Tanpa swipe, tanpa skor. |
 
@@ -45,7 +45,7 @@ Waktu pengiriman dihitung dari jarak antara dua negara.
 |---|---|
 | Menulis, membaca, dan membalas surat | Terus menulis tanpa menunggu balasan (Lettie Plus) |
 | Menerjemahkan surat ke 70+ bahasa | Tarik prangko piksel |
-| 16 karakter piksel dasar + karakter khususmu yang pertama (dari foto atau kata-kata) | Karakter khusus kedua dan seterusnya |
+| 16 karakter piksel dasar | Menggambar karakter khusus milikmu (dari foto atau kata-kata) |
 | Discover: tiga sampul baru setiap hari, gratis (tonton iklan untuk tambahan) | Sampul dan surat tambahan |
 
 ## Dibanding aplikasi sahabat pena lain
@@ -54,7 +54,7 @@ Lettie dan Slowly sama-sama mengirim surat berdasarkan jarak. Bedanya, Lettie me
     faqs: [
       {
         q: 'Apakah Lettie aplikasi sahabat pena gratis?',
-        a: 'Ya. Menulis, membaca, membalas, dan menerjemahkan surat, 16 karakter dasar, dan karakter khusus pertamamu gratis di iOS dan Android. Gem opsional menambah tarik prangko, prangko negara, dan karakter kedua; dengan Lettie Plus, kamu bisa terus menulis tanpa menunggu balasan.',
+        a: 'Ya. Menulis, membaca, membalas, dan menerjemahkan surat, serta 16 karakter dasar gratis di iOS dan Android. Gem opsional menambah tarik prangko, prangko negara, dan menggambar karakter sendiri; dengan Lettie Plus, kamu bisa terus menulis tanpa menunggu balasan.',
       },
       {
         q: 'Di mana saya bisa mengunduh aplikasi Lettie?',
@@ -341,7 +341,7 @@ Jaga percakapan tetap mengalir dengan pertanyaan dan cerita yang dipikirkan deng
       },
       {
         q: 'Apakah saya perlu pasang foto di profil Lettie?',
-        a: 'Tidak. Lettie dimulai dari karakter piksel (16 karakter dasar gratis, karakter sendiri dari selfie atau kata-kata, yang pertama gratis dan fotonya tidak disimpan), jadi fokusnya pada kepribadian.',
+        a: 'Tidak. Lettie dimulai dari karakter piksel (16 karakter dasar gratis, karakter sendiri dari selfie atau kata-kata, fotonya tidak disimpan), jadi fokusnya pada kepribadian.',
       },
       {
         q: 'Apa yang harus saya lakukan kalau surat pertama saya tidak dibalas?',

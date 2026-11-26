@@ -25,7 +25,7 @@ export const faq: FaqContent = {
     },
     {
       q: 'Czemu na początku nie widać zdjęć?',
-      a: 'Lettie zaczyna się bez zdjęcia profilowego, by pierwsze wrażenie opierało się na tym, co ktoś napisze. Zamiast zdjęcia każda osoba zaczyna z pikselową postacią: szesnaście jest bezpłatnych, a z selfie lub kilku słów o swoim wyglądzie można stworzyć własną (pierwsza postać jest darmowa, a zdjęcie nie jest zachowywane).',
+      a: 'Lettie zaczyna się bez zdjęcia profilowego, by pierwsze wrażenie opierało się na tym, co ktoś napisze. Zamiast zdjęcia każda osoba zaczyna z pikselową postacią: szesnaście jest bezpłatnych, a z selfie lub kilku słów o swoim wyglądzie można stworzyć własną (zdjęcie nie jest zachowywane).',
     },
     {
       q: 'Czy bezpiecznie jest pisać do nieznajomych?',

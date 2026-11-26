@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: 'Is Lettie a free pen pal app?',
-    a: 'Yes. Writing, reading and replying to letters, translating them, the 16 base characters and your first custom character are free on iOS and Android. Holiday stamps and passport stamps are free to collect too. Optional gems and the Lettie Plus subscription add extras such as more letters per day, stamp draws and country stamps, and a second custom-drawn character; Plus also lets you keep writing without waiting for a reply.',
+    a: 'Yes. Writing, reading and replying to letters, translating them and the 16 base characters are free on iOS and Android. Holiday stamps and passport stamps are free to collect too. Optional gems and the Lettie Plus subscription add extras such as more letters per day, stamp draws and country stamps, and having your own character drawn; Plus also lets you keep writing without waiting for a reply.',
   },
   {
     q: 'Where can I download the Lettie pen pal app?',
@@ -120,7 +120,7 @@ export default function PenpalAppPage() {
               ['Letters by distance', 'A letter flies across a globe and arrives 1 to 24 hours later, depending on the distance between the two countries.'],
               ['Discover', 'Pick up letters strangers released into the sky and reply to the ones that speak to you.'],
               ['Translation', 'A translate button in every letter, 70+ languages, free. Tap it and the text turns into your language in place; you can also translate what you write into their language. Even 100,000-character letters translate to the end.'],
-              ['Profiles', 'You start as a pixel character (16 free ones) instead of a photo. A selfie or a few words about your look become your own character (the first is free; the photo isn’t stored).'],
+              ['Profiles', 'You start as a pixel character (16 free ones) instead of a photo. A selfie or a few words about your look become your own character (the photo isn’t stored).'],
               ['Stamps', 'Default stamps, the stamp draw, a shop of 103 country stamps and free holiday stamps for sending one letter, all to put on your letters.'],
               ['Passport', 'Exchange 5+ letters with people from a country (2+ each way) for its passport stamp and postage stamp, plus 20 titles.'],
               ['Introductions', 'A few introduction cards a day. No swiping, no scores.'],
@@ -156,7 +156,7 @@ export default function PenpalAppPage() {
             rows={[
               ['Write, read and reply to letters', 'More letters released per day'],
               ['Translate any letter into 70+ languages', 'Keep writing without waiting for a reply (Plus)'],
-              ['16 base pixel characters + your first custom character (photo or words)', 'A second custom character onward'],
+              ['16 base pixel characters', 'Having your own character drawn from a selfie or words'],
               ['Discover: three new envelopes a day', 'Stamp draws (10 gems), country stamps (15 gems), extra envelopes'],
               ['Holiday stamps, passport stamps and titles', ''],
             ]}

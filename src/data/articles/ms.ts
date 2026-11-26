@@ -26,7 +26,7 @@ Aplikasi rakan pena menghubungkan kamu dengan orang di negara lain untuk bertuka
 | Surat mengikut jarak | Surat terbang merentasi dunia dan tiba dalam 1 hingga 24 jam, bergantung pada jarak antara dua negara. |
 | Discover | Ambil surat yang dilepaskan oleh orang asing ke udara, dan balas yang menarik perhatian kamu. |
 | Terjemahan | Ada butang terjemahan dalam setiap surat, 70+ bahasa, percuma, dan teks terus diterjemah di tempatnya. |
-| Profil | Kamu mula sebagai watak piksel (16 watak percuma), bukan gambar. Selfie atau beberapa ayat tentang rupa kamu boleh jadi watak sendiri (yang pertama percuma, gambar tidak disimpan). |
+| Profil | Kamu mula sebagai watak piksel (16 watak percuma), bukan gambar. Selfie atau beberapa ayat tentang rupa kamu boleh jadi watak sendiri (gambar tidak disimpan). |
 | Setem | Negara tempat kamu bertukar surat mewarnakan globe kamu; setem negara itu masuk ke pasport selepas sekurang-kurangnya 5 surat (sekurang-kurangnya 2 daripadamu, 2 daripada mereka). |
 | Kad pengenalan | Beberapa kad pengenalan setiap hari. Tiada swipe, tiada skor. |
 
@@ -45,7 +45,7 @@ Masa penghantaran dikira daripada jarak antara dua negara.
 |---|---|
 | Menulis, membaca, dan membalas surat | Terus menulis tanpa menunggu balasan (Lettie Plus) |
 | Menterjemah surat ke 70+ bahasa | Cabutan setem piksel |
-| 16 watak piksel asas + watak sendiri yang pertama (dari gambar atau kata-kata) | Watak sendiri kedua dan seterusnya |
+| 16 watak piksel asas | Melukis watak sendiri (dari gambar atau kata-kata) |
 | Discover: tiga sampul baharu setiap hari, percuma (tonton iklan untuk tambahan) | Sampul dan surat tambahan |
 
 ## Berbanding aplikasi rakan pena lain
@@ -54,7 +54,7 @@ Lettie dan Slowly sama-sama menghantar surat mengikut jarak. Bezanya, Lettie men
     faqs: [
       {
         q: 'Adakah Lettie aplikasi rakan pena percuma?',
-        a: 'Ya. Menulis, membaca, membalas, dan menterjemah surat, 16 watak asas, dan watak sendiri yang pertama percuma di iOS dan Android. Gem pilihan menambah cabutan setem, setem negara, dan watak kedua; dengan Lettie Plus, kamu boleh terus menulis tanpa menunggu balasan.',
+        a: 'Ya. Menulis, membaca, membalas, dan menterjemah surat, serta 16 watak asas percuma di iOS dan Android. Gem pilihan menambah cabutan setem, setem negara, dan melukis watak sendiri; dengan Lettie Plus, kamu boleh terus menulis tanpa menunggu balasan.',
       },
       {
         q: 'Di mana saya boleh muat turun aplikasi Lettie?',
@@ -341,7 +341,7 @@ Kekalkan perbualan dengan soalan dan cerita yang difikirkan dengan baik.`,
       },
       {
         q: 'Perlukah saya letak gambar dalam profil Lettie?',
-        a: 'Tidak. Lettie bermula dengan watak piksel (16 watak asas percuma, watak sendiri daripada selfie atau kata-kata, yang pertama percuma dan gambar tidak disimpan), jadi fokusnya pada personaliti.',
+        a: 'Tidak. Lettie bermula dengan watak piksel (16 watak asas percuma, watak sendiri daripada selfie atau kata-kata, gambar tidak disimpan), jadi fokusnya pada personaliti.',
       },
       {
         q: 'Apa patut saya buat jika surat pertama saya tidak dibalas?',

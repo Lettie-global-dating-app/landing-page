@@ -25,7 +25,7 @@ export const faq: FaqContent = {
     },
     {
       q: 'Mengapa gambar tidak kelihatan pada mulanya?',
-      a: 'Lettie bermula tanpa gambar profil supaya tanggapan pertama datang daripada apa yang seseorang tulis. Sebagai ganti gambar, setiap orang bermula dengan watak piksel — enam belas adalah percuma, dan daripada gambar selfie atau beberapa patah kata tentang rupamu, watak sendiri dilukis dengan gaya yang sama (percuma untuk yang pertama, dan gambar itu tidak disimpan).',
+      a: 'Lettie bermula tanpa gambar profil supaya tanggapan pertama datang daripada apa yang seseorang tulis. Sebagai ganti gambar, setiap orang bermula dengan watak piksel — enam belas adalah percuma, dan daripada gambar selfie atau beberapa patah kata tentang rupamu, watak sendiri dilukis dengan gaya yang sama (gambar itu tidak disimpan).',
     },
     {
       q: 'Selamatkah menulis kepada orang yang tidak dikenali?',

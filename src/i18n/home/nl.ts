@@ -31,7 +31,7 @@ export const nl: HomeCopy = {
     ['Ontdekken — raap verzonden brieven op', 'Eén keer per dag drijven er drie nieuwe enveloppen dichterbij. Gratis is ruim voldoende; bekijk één advertentie per dag voor meer.'],
     ['AI-vertaling, meer dan 70 talen', 'Open een brief en er staat een vertaalknop die de tekst ter plekke vertaalt, en met nog een tik is het origineel terug. Ook de app zelf spreekt meer dan 70 talen.'],
     ['Postzegels speciaal voor jou geschilderd', 'Elke postzegel die je trekt wordt vers geschilderd, dus niemand anders heeft dezelfde. De postzegelwinkel heeft postzegels uit 103 landen om op je brieven te plakken.'],
-    ['Een personage in plaats van een foto', 'Profielen beginnen als pixelpersonage. Zestien zijn gratis, en een selfie of een paar woorden over je uiterlijk wordt je eigen personage in dezelfde stijl. Je eerste is gratis en de foto wordt niet bewaard.'],
+    ['Een personage in plaats van een foto', 'Profielen beginnen als pixelpersonage. Zestien zijn gratis, en een selfie of een paar woorden over je uiterlijk wordt je eigen personage in dezelfde stijl. De foto wordt niet bewaard.'],
     ['De introducties van vandaag — zonder swipen', 'Een paar introductiekaarten per dag. Geen scores, geen eindeloos swipen. Klinkt iemand interessant, dan begin je met één brief.'],
   ],
   cmpTitle: 'Wat is het verschil met Slowly?',
@@ -48,7 +48,7 @@ export const nl: HomeCopy = {
   cmpNote: 'Gebaseerd op openbare informatie van september 2026. Slowly is een fijne app — probeer beide en houd degene die bij je past.',
   faqTitle: 'Vragen die mensen stellen',
   faqs: [
-    { q: 'Is Lettie gratis?', a: 'Ja. Schrijven, brieven oprapen, vertalen, de zestien basispersonages en je eerste eigen personage zijn allemaal gratis. Gems zijn alleen voor extra’s zoals postzegels trekken, landenpostzegels of een tweede personage.' },
+    { q: 'Is Lettie gratis?', a: 'Ja. Schrijven, brieven oprapen, vertalen en de zestien basispersonages zijn allemaal gratis. Gems zijn alleen voor extra’s zoals postzegels trekken, landenpostzegels of je eigen personage laten tekenen.' },
     { q: 'Hoelang doet een brief erover?', a: 'Dat komt uit de afstand tussen de twee landen. Een tot twee uur binnen hetzelfde land, een paar uur naar een buurland, bijna een dag voor de andere kant van de wereld. Je kunt de envelop op de wereldbol volgen terwijl je wacht.' },
     { q: 'Kan ik een penvriend hebben zonder zijn taal te spreken?', a: 'Ja. Elke brief heeft een vertaalknop die de tekst ter plekke vertaalt, en met nog een tik is het origineel terug. Met meer dan 70 talen schrijf je in jouw taal en leest de ander in zijn eigen taal.' },
     { q: 'Hoe leer ik iemand kennen zonder foto’s?', a: 'Een profiel is een pixelpersonage, een paar interesses en de brieven zelf. Een selfie of een paar woorden over je uiterlijk kunnen een personage in dezelfde stijl worden (de foto wordt niet bewaard). Zo leer je hoe iemand denkt voordat je weet hoe iemand eruitziet.' },

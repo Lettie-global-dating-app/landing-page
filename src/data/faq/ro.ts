@@ -25,7 +25,7 @@ export const faq: FaqContent = {
     },
     {
       q: 'De ce nu văd fotografii la început?',
-      a: 'Lettie începe fără fotografie de profil, ca prima impresie să vină din ce scrie cineva. În locul unei fotografii, fiecare persoană începe cu un personaj pixelat: șaisprezece sunt gratuite, iar dintr-un selfie sau câteva cuvinte despre cum arăți se desenează propriul tău personaj (primul este gratuit și fotografia nu este păstrată).',
+      a: 'Lettie începe fără fotografie de profil, ca prima impresie să vină din ce scrie cineva. În locul unei fotografii, fiecare persoană începe cu un personaj pixelat: șaisprezece sunt gratuite, iar dintr-un selfie sau câteva cuvinte despre cum arăți se desenează propriul tău personaj (fotografia nu este păstrată).',
     },
     {
       q: 'Este sigur să scriu unor necunoscuți?',

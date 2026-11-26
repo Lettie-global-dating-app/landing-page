@@ -31,7 +31,7 @@ export const id: HomeCopy = {
     ['Temukan: memungut surat yang dilepas', 'Setiap hari, tiga amplop baru mendekat. Gratis sudah lebih dari cukup; tonton satu iklan sehari untuk dapat lebih.'],
     ['Terjemahan AI, lebih dari 70 bahasa', 'Saat membuka surat ada tombol terjemahkan yang menerjemahkan teks di tempatnya, dan satu ketukan lagi mengembalikannya ke teks asli. Aplikasinya sendiri juga tersedia dalam lebih dari 70 bahasa.'],
     ['Prangko yang dilukis khusus untukmu', 'Setiap prangko yang kamu tarik dilukis baru, jadi tidak ada orang lain yang punya prangko yang sama. Toko prangko menyediakan prangko dari 103 negara untuk ditempel di suratmu.'],
-    ['Karakter sebagai ganti foto', 'Profil dimulai sebagai karakter piksel. Enam belas gratis, dan dari satu foto atau beberapa kata tentang penampilanmu kami menggambar karaktermu dengan gaya yang sama. Yang pertama gratis dan fotonya tidak disimpan.'],
+    ['Karakter sebagai ganti foto', 'Profil dimulai sebagai karakter piksel. Enam belas gratis, dan dari satu foto atau beberapa kata tentang penampilanmu kami menggambar karaktermu dengan gaya yang sama. Fotonya tidak disimpan.'],
     ['Perkenalan hari ini, tanpa geser', 'Hanya beberapa kartu perkenalan sehari. Tanpa skor, tanpa geser tanpa akhir. Kalau ada yang menarik, mulai dengan satu surat.'],
   ],
   cmpTitle: 'Apa bedanya dengan Slowly?',
@@ -48,7 +48,7 @@ export const id: HomeCopy = {
   cmpNote: 'Berdasarkan informasi publik per September 2026. Slowly aplikasi yang bagus; coba keduanya dan pilih yang cocok.',
   faqTitle: 'Pertanyaan yang sering diajukan',
   faqs: [
-    { q: 'Apakah Lettie gratis?', a: 'Ya. Menulis, memungut surat, terjemahan, enam belas karakter dasar, dan karakter khusus pertamamu semuanya gratis. Permata hanya untuk tambahan seperti undian prangko, prangko negara, atau karakter kedua.' },
+    { q: 'Apakah Lettie gratis?', a: 'Ya. Menulis, memungut surat, terjemahan, dan enam belas karakter dasar semuanya gratis. Permata hanya untuk tambahan seperti undian prangko, prangko negara, atau menggambar karakter sendiri.' },
     { q: 'Berapa lama surat sampai?', a: 'Dihitung dari jarak sebenarnya antara dua kota. Satu sampai dua jam di dalam negeri, beberapa jam ke negara tetangga, hampir sehari ke belahan dunia lain. Sambil menunggu, kamu bisa melihat amplopnya di bola dunia.' },
     { q: 'Bisa punya sahabat pena tanpa bisa bahasanya?', a: 'Bisa. Setiap surat punya tombol terjemahkan yang menerjemahkan teks di tempatnya, dan satu ketukan lagi mengembalikannya ke teks asli. Dengan lebih dari 70 bahasa, kamu menulis dalam bahasamu dan dia membaca dalam bahasanya.' },
     { q: 'Bagaimana mengenal orang tanpa foto?', a: 'Profil terdiri dari karakter piksel, beberapa minat, dan surat-suratnya sendiri. Dari satu foto atau beberapa kata tentang penampilanmu, kami menggambar karakter dengan gaya yang sama (fotonya tidak disimpan). Kamu tahu cara seseorang berpikir sebelum tahu rupanya.' },

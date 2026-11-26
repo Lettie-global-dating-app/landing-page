@@ -20,7 +20,7 @@ Mektup arkadaşı uygulaması, farklı ülkelerden insanların mektup yazarak ta
 | Mesafeye göre teslimat | Mektup küre üzerinde uçar, iki ülke arasındaki mesafeye göre 1 ile 24 saat arasında ulaşır. |
 | Keşfet | Yabancıların gökyüzüne saldığı mektupları toplar, size yakın gelenlere yanıt verirsiniz. |
 | Çeviri | Her mektupta bir çeviri düğmesi vardır: 70'in üzerinde dil, ücretsiz, metin olduğu yerde çevrilir. |
-| Profiller | Fotoğraf yerine piksel karakterlerle başlarsınız (16 ücretsiz temel karakter). Bir selfie ya da birkaç kelimelik tarifle kendi karakterinizi çizdirebilirsiniz; ilki ücretsizdir, fotoğraf saklanmaz. |
+| Profiller | Fotoğraf yerine piksel karakterlerle başlarsınız (16 ücretsiz temel karakter). Bir selfie ya da birkaç kelimelik tarifle kendi karakterinizi çizdirebilirsiniz; fotoğraf saklanmaz. |
 | Pullar | Mektuplaştığınız ülkeler küreyi renklendirir; bir ülkenin pulu, o ülkeden insanlarla toplam en az 5 mektup (en az 2’si sizden, 2’si onlardan) olunca pasaportunuza girer. |
 | Tanışma kartları | Günde birkaç tanışma kartı gösterilir. Kaydırma yok, puanlama yok. |
 
@@ -37,7 +37,7 @@ Mektup arkadaşı uygulaması, farklı ülkelerden insanların mektup yazarak ta
 |---|---|
 | Mektup yazma, okuma, yanıtlama | Yanıt beklemeden yazmaya devam etme (Lettie Plus) |
 | 70'in üzerinde dile ücretsiz çeviri | Pul çekilişleri |
-| 16 temel piksel karakter + ilk özel karakteriniz | İkinci özel karakterden itibaren |
+| 16 temel piksel karakter | Kendi karakterinizi çizdirmek (fotoğraf veya tarif ile) |
 | Keşfet'te her gün yeni mektuplar, reklam izleyerek daha fazlası | Ekstra mektup zarfları |
 
 Lettie küçük bir topluluktur, bu yüzden bir yanıtı beklemek zaman alabilir — bu da fikrin bir parçasıdır.
@@ -48,7 +48,7 @@ Slowly gibi uygulamalar da mesafeye göre teslimat yapar. Lettie'yi ayıran, yab
     faqs: [
       {
         q: 'Lettie ücretsiz bir mektup arkadaşı uygulaması mı?',
-        a: "Evet. Mektup yazmak, okumak, yanıtlamak, çeviri yapmak, 16 temel karakter ve ilk özel karakteriniz iPhone ve Android'de ücretsizdir. İsteğe bağlı gemler pul çekilişleri, ülke pulları ve ikinci bir özel karakter gibi ekstralar ekler; Lettie Plus ile yanıt beklemeden yazmaya devam edebilirsiniz.",
+        a: "Evet. Mektup yazmak, okumak, yanıtlamak, çeviri yapmak ve 16 temel karakter iPhone ve Android'de ücretsizdir. İsteğe bağlı gemler pul çekilişleri, ülke pulları ve kendi karakterinizi çizdirmek gibi ekstralar ekler; Lettie Plus ile yanıt beklemeden yazmaya devam edebilirsiniz.",
       },
       {
         q: 'Lettie mektup arkadaşı uygulamasını nereden indirebilirim?',
@@ -302,7 +302,7 @@ Düşünceli sorular ve hikayelerle sohbeti canlı tutun.`,
       },
       {
         q: 'Lettie fotoğrafsız mı başlar?',
-        a: 'Evet. Profiller piksel karakterlerle başlar; 16 temel karakter ücretsizdir ve bir selfie veya birkaç kelimelik tarifle kendi karakterinizi de çizdirebilirsiniz, ilki ücretsizdir.',
+        a: 'Evet. Profiller piksel karakterlerle başlar; 16 temel karakter ücretsizdir ve bir selfie veya birkaç kelimelik tarifle kendi karakterinizi de çizdirebilirsiniz.',
       },
       {
         q: 'İletişim bilgilerimi ne zaman paylaşmalıyım?',

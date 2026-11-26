@@ -26,7 +26,7 @@ Ang pen pal app ay nag-connect sayo sa mga tao sa ibang bansa para mag-exchange 
 | Sulat ayon sa distansya | Lumilipad ang sulat papuntang kabilang bansa at dumarating sa 1 hanggang 24 oras, depende sa distansya ng dalawang bansa. |
 | Discover | Kunin ang mga sulat na pinakawalan ng mga stranger sa langit, at sagutin ang mga nakaka-connect sayo. |
 | Translate | May translate button sa bawat sulat, 70+ wika, libre, at nagta-translate ang teksto mismo sa kinaroroonan nito. |
-| Profile | Magsisimula ka bilang pixel character (16 free characters), hindi litrato. Ang selfie mo o konting salita tungkol sa itsura mo ay magiging sariling character mo (libre ang una, hindi sine-save ang litrato). |
+| Profile | Magsisimula ka bilang pixel character (16 free characters), hindi litrato. Ang selfie mo o konting salita tungkol sa itsura mo ay magiging sariling character mo (hindi sine-save ang litrato). |
 | Stamps | Napipintahan ang globe ng mga bansang kapalitan mo ng sulat; napupunta sa passport mo ang stamp ng isang bansa kapag may hindi bababa sa 5 sulat kayo sa kabuuan (kahit 2 mula sa iyo at 2 mula sa kanila). |
 | Introduction cards | May ilang introduction card araw-araw. Walang swipe, walang score. |
 
@@ -45,7 +45,7 @@ Base ang delivery time sa distansya ng dalawang bansa.
 |---|---|
 | Magsulat, magbasa, at sagutin ang mga sulat | Magsulat nang hindi naghihintay ng sagot (Lettie Plus) |
 | I-translate ang mga sulat sa 70+ wika | Stamp draws |
-| 16 basic pixel characters + sariling character mo na una (mula sa litrato o salita) | Pangalawang sariling character pataas |
+| 16 basic pixel characters | Pagpapaguhit ng sariling character (mula sa litrato o salita) |
 | Discover: tatlong bagong envelope araw-araw, libre (panoorin ang ad para sa extra) | Extra envelopes at letters |
 
 ## Paghambing sa ibang pen pal apps
@@ -54,7 +54,7 @@ Pareho ang Lettie at Slowly sa pagpapadala ng sulat base sa distansya. Ang pagka
     faqs: [
       {
         q: 'Libre ba ang Lettie bilang pen pal app?',
-        a: 'Oo. Libre ang pagsulat, pagbasa, pagsagot, pag-translate ng sulat, ang 16 basic characters, at ang unang sariling character mo, sa iOS at Android. Optional ang gems at Lettie Plus para sa stamp draws, country stamps, at pangalawang character; sa Lettie Plus, puwede kang magsulat nang hindi naghihintay ng sagot.',
+        a: 'Oo. Libre ang pagsulat, pagbasa, pagsagot, pag-translate ng sulat, at ang 16 basic characters sa iOS at Android. Optional ang gems at Lettie Plus para sa stamp draws, country stamps, at pagpapaguhit ng sariling character; sa Lettie Plus, puwede kang magsulat nang hindi naghihintay ng sagot.',
       },
       {
         q: 'Saan ma-download ang Lettie app?',
@@ -341,7 +341,7 @@ Panatilihing umaagos ang usapan gamit ang thoughtful questions at stories.`,
       },
       {
         q: 'Kailangan ko bang maglagay ng litrato sa profile sa Lettie?',
-        a: 'Hindi, nagsisimula ang Lettie sa pixel character (16 free basic characters, sariling character mula sa selfie o salita, libre ang una at hindi sine-save ang litrato), kaya ang focus ay sa personality.',
+        a: 'Hindi, nagsisimula ang Lettie sa pixel character (16 free basic characters, sariling character mula sa selfie o salita, hindi sine-save ang litrato), kaya ang focus ay sa personality.',
       },
       {
         q: 'Ano ang gagawin ko kung hindi nasagot ang unang sulat ko?',

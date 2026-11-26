@@ -26,7 +26,7 @@ Lettie opiera się na tej idei, ale dodaje coś, czego nie miały starsze aplika
 | Listy na odległość | List leci przez globus i dociera w 1–24 godziny — zależnie od odległości między krajami |
 | Discover | Podbierasz listy, które nieznajomi wypuścili „w niebo", i odpowiadasz na te, które cię zainteresowały |
 | Tłumaczenie | Przycisk tłumaczenia w każdym liście, 70+ języków, bezpłatnie, tekst tłumaczy się w tym samym miejscu |
-| Profile | Zamiast zdjęcia — pikselowa postać (16 bezpłatnych); własną postać można narysować na podstawie selfie lub opisu (pierwsza bezpłatna, zdjęcie nie jest zapisywane) |
+| Profile | Zamiast zdjęcia — pikselowa postać (16 bezpłatnych); własną postać można narysować na podstawie selfie lub opisu (zdjęcie nie jest zapisywane) |
 | Znaczki | Kraje, z którymi korespondujesz, kolorują się na globusie; znaczek kraju trafia do paszportu po co najmniej 5 listach łącznie (min. 2 od Ciebie, 2 od nich) |
 | Poznawanie | Kilka kart z propozycjami dziennie, bez przesuwania profili i bez punktów |
 
@@ -45,7 +45,7 @@ Czas dostawy zależy od odległości między krajami, nie od losowego licznika.
 |---|---|
 | Pisanie, czytanie i odpowiadanie na listy | Pisanie dalej bez czekania na odpowiedź (Lettie Plus) |
 | Tłumaczenie na 70+ języków | Losowanie znaczków |
-| 16 podstawowych postaci + własna pierwsza (ze zdjęcia lub opisu) | Druga własna postać i kolejne |
+| 16 podstawowych postaci | Narysowanie własnej postaci (ze zdjęcia lub opisu) |
 | Discover: trzy nowe koperty dziennie, bezpłatnie | Więcej kopert — za obejrzenie reklamy lub gemy |
 
 ## Czym Lettie różni się od innych aplikacji
@@ -54,7 +54,7 @@ Najstarszą aplikacją tego gatunku jest Slowly: również dostarcza listy na od
     faqs: [
       {
         q: `Czy Lettie jest bezpłatną aplikacją do korespondencji?`,
-        a: `Tak. Pisanie, czytanie i odpowiadanie na listy, ich tłumaczenie, 16 podstawowych postaci i pierwsza własna postać są bezpłatne na iOS i Androidzie. Gemy dodają opcjonalne funkcje: więcej listów dziennie, losowanie znaczków, znaczki krajów i drugą postać; dzięki subskrypcji Lettie Plus piszesz dalej bez czekania na odpowiedź.`,
+        a: `Tak. Pisanie, czytanie i odpowiadanie na listy, ich tłumaczenie i 16 podstawowych postaci — wszystko to jest bezpłatne na iOS i Androidzie. Gemy dodają opcjonalne funkcje: więcej listów dziennie, losowanie znaczków, znaczki krajów i narysowanie własnej postaci; dzięki subskrypcji Lettie Plus piszesz dalej bez czekania na odpowiedź.`,
       },
       {
         q: `Gdzie można pobrać Lettie?`,

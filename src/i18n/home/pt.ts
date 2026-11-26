@@ -31,7 +31,7 @@ export const pt: HomeCopy = {
     ['Descobrir: pegar cartas soltas', 'Todo dia, três envelopes novos se aproximam. O gratuito já é bastante; com um anúncio por dia você recebe mais.'],
     ['Tradução por IA, mais de 70 idiomas', 'Ao abrir uma carta há um botão de traduzir que traduz o texto ali mesmo, e com outro toque você volta ao original. O app também fala mais de 70 idiomas.'],
     ['Selos pintados só para você', 'Cada selo que você sorteia é pintado na hora, então ninguém mais tem um igual. A loja de selos tem selos de 103 países para colar nas suas cartas.'],
-    ['Um personagem em vez de foto', 'O perfil começa como um personagem em pixel. Dezesseis são grátis, e com uma foto ou algumas palavras sobre sua aparência desenhamos o seu no mesmo estilo. O primeiro é grátis e a foto não fica guardada.'],
+    ['Um personagem em vez de foto', 'O perfil começa como um personagem em pixel. Dezesseis são grátis, e com uma foto ou algumas palavras sobre sua aparência desenhamos o seu no mesmo estilo. A foto não fica guardada.'],
     ['Apresentações do dia, sem deslizar', 'Poucos cartões de apresentação por dia. Sem notas nem deslizar sem fim. Se alguém parecer interessante, você começa com uma carta.'],
   ],
   cmpTitle: 'Qual é a diferença para o Slowly?',
@@ -48,7 +48,7 @@ export const pt: HomeCopy = {
   cmpNote: 'Com base em informações públicas de setembro de 2026. O Slowly é um ótimo app: experimente os dois e fique com o que combinar com você.',
   faqTitle: 'Perguntas frequentes',
   faqs: [
-    { q: 'O Lettie é grátis?', a: 'Sim. Escrever, pegar cartas, traduzir, os dezesseis personagens básicos e seu primeiro personagem próprio são grátis. As gemas servem só para extras, como sorteio de selos, selos de países ou um segundo personagem.' },
+    { q: 'O Lettie é grátis?', a: 'Sim. Escrever, pegar cartas, traduzir e os dezesseis personagens básicos são grátis. As gemas servem só para extras, como sorteio de selos, selos de países ou o desenho do seu próprio personagem.' },
     { q: 'Quanto tempo uma carta leva para chegar?', a: 'É calculado pela distância real entre duas cidades. De uma a duas horas dentro do país, algumas horas até um país vizinho e quase um dia até o outro lado do mundo. Enquanto espera, você vê o envelope no globo.' },
     { q: 'Dá para ter um correspondente sem falar o idioma dele?', a: 'Dá. Toda carta tem um botão de traduzir que traduz o texto ali mesmo, e com outro toque você volta ao original. Com mais de 70 idiomas, você escreve no seu e a outra pessoa lê no dela.' },
     { q: 'Como conhecer alguém sem fotos?', a: 'O perfil é um personagem em pixel, alguns interesses e as próprias cartas. Com uma foto ou algumas palavras sobre sua aparência, desenhamos um personagem no mesmo estilo (a foto não fica guardada). Você descobre como a pessoa pensa antes de saber como ela é.' },

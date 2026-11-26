@@ -20,7 +20,7 @@ O aplicație de corespondenți este o aplicație în care oameni din țări dife
 | Livrare în funcție de distanță | Scrisoarea zboară pe glob și ajunge în 1 până la 24 de ore, în funcție de distanța dintre cele două țări. |
 | Discover | Culegi scrisori pe care necunoscuți le-au lăsat să zboare pe cer și răspunzi celor care îți atrag atenția. |
 | Traducere | Fiecare scrisoare are un buton de traducere: peste 70 de limbi, gratuit, cu traducere chiar pe loc. |
-| Profiluri | Începi cu personaje pixelate în loc de fotografie (16 personaje de bază, gratuite). Îți poți crea propriul personaj dintr-un selfie sau din câteva cuvinte de descriere; primul este gratuit și fotografia nu este păstrată. |
+| Profiluri | Începi cu personaje pixelate în loc de fotografie (16 personaje de bază, gratuite). Îți poți crea propriul personaj dintr-un selfie sau din câteva cuvinte de descriere; fotografia nu este păstrată. |
 | Timbre | Țările cu care ai corespondat colorează globul; timbrul unei țări intră în pașaport după cel puțin 5 scrisori în total (cel puțin 2 de la tine și 2 de la ei). |
 | Carduri de prezentare | Câteva carduri de prezentare pe zi. Fără glisare, fără scoruri. |
 
@@ -37,7 +37,7 @@ O aplicație de corespondenți este o aplicație în care oameni din țări dife
 |---|---|
 | Scrisul, citirea și răspunsul la scrisori | Scrii mai departe fără să aștepți un răspuns (Lettie Plus) |
 | Traducere gratuită în peste 70 de limbi | Extrageri de timbre |
-| 16 personaje pixelate de bază + primul tău personaj propriu | Al doilea personaj propriu și următoarele |
+| 16 personaje pixelate de bază | Desenarea propriului tău personaj (din fotografie sau descriere) |
 | În Discover, scrisori noi în fiecare zi, mai multe urmărind o reclamă | Plicuri suplimentare |
 
 Lettie este o comunitate mică, așa că un răspuns poate dura puțin — face parte din idee.
@@ -302,7 +302,7 @@ Răspunde la scrisorile primite și continuă conversațiile promițătoare.
       },
       {
         q: 'Lettie începe fără fotografii?',
-        a: 'Da. Profilurile pornesc cu personaje pixelate; 16 personaje de bază sunt gratuite, iar tu îți poți crea propriul personaj dintr-un selfie sau din câteva cuvinte de descriere, primul fiind gratuit.',
+        a: 'Da. Profilurile pornesc cu personaje pixelate; 16 personaje de bază sunt gratuite, iar tu îți poți crea propriul personaj dintr-un selfie sau din câteva cuvinte de descriere.',
       },
       {
         q: 'Când ar trebui să fac schimb de date de contact?',

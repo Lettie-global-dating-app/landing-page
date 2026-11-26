@@ -22,7 +22,7 @@ export const articles: ArticleSet = {
 | Lettres selon la distance | Une lettre traverse un globe et arrive en 1 à 24 heures selon la distance entre les deux pays. |
 | Découverte | Ramassez des lettres que des inconnus ont lâchées dans le ciel et répondez à celles qui vous parlent. |
 | Traduction | Un bouton de traduction dans chaque lettre, plus de 70 langues, gratuit, traduit sur place. |
-| Profils | Vous commencez avec un personnage pixel (16 gratuits) plutôt qu'une photo. Un selfie ou quelques mots sur votre allure donnent naissance à votre propre personnage (le premier est gratuit, la photo n'est pas conservée). |
+| Profils | Vous commencez avec un personnage pixel (16 gratuits) plutôt qu'une photo. Un selfie ou quelques mots sur votre allure donnent naissance à votre propre personnage (la photo n'est pas conservée). |
 | Timbres | Les pays avec lesquels vous échangez des lettres colorent le globe ; le timbre d’un pays rejoint votre passeport après au moins 5 lettres échangées (au moins 2 de vous, 2 d’eux). |
 | Présentations | Quelques cartes de présentation par jour. Pas de glissement d'écran, pas de score. |
 
@@ -41,7 +41,7 @@ La durée dépend de la distance entre les deux pays.
 |---|---|
 | Écrire, lire et répondre aux lettres | Continuer à écrire sans attendre de réponse (Lettie Plus) |
 | Traduire n'importe quelle lettre dans plus de 70 langues | Tirages de timbres |
-| 16 personnages pixel de base + votre premier personnage personnalisé (photo ou mots) | Un second personnage personnalisé |
+| 16 personnages pixel de base | Faire dessiner votre propre personnage (photo ou mots) |
 | Découverte : trois nouvelles enveloppes par jour, et une publicité par jour pour en avoir plus | - |
 
 ## Lettie face aux autres applications de correspondance
@@ -230,7 +230,7 @@ Une remarque, car elle vous suivra dans la prochaine appli : les réponses meure
       },
       {
         q: 'Existe-t-il une alternative à Slowly sans photo de profil ?',
-        a: "Lettie remplace les photos par des personnages pixel : seize personnages de base gratuits, et votre propre personnage dessiné à partir d'un selfie ou de quelques mots (le premier est gratuit).",
+        a: "Lettie remplace les photos par des personnages pixel : seize personnages de base gratuits, et votre propre personnage dessiné à partir d'un selfie ou de quelques mots.",
       },
       {
         q: "Pourquoi mes correspondances meurent-elles après deux ou trois lettres, même en changeant d'appli ?",
@@ -264,7 +264,7 @@ Un bon profil contient quatre éléments :
 - **Vos objectifs de langue** : indiquez clairement la langue que vous voulez apprendre ou pratiquer.
 - **Un ton chaleureux** : écrivez de façon avenante et accessible.
 
-Sur Lettie, votre profil commence par un personnage pixel plutôt qu'une photo : seize personnages de base gratuits, et votre propre personnage dessiné à partir d'un selfie ou de quelques mots sur votre allure (le premier est gratuit, la photo n'est pas conservée). Votre profil est la première impression que vous laissez : un profil soigné aide à trouver des correspondants qui vous ressemblent et lance la conversation du bon pied.
+Sur Lettie, votre profil commence par un personnage pixel plutôt qu'une photo : seize personnages de base gratuits, et votre propre personnage dessiné à partir d'un selfie ou de quelques mots sur votre allure (la photo n'est pas conservée). Votre profil est la première impression que vous laissez : un profil soigné aide à trouver des correspondants qui vous ressemblent et lance la conversation du bon pied.
 
 ## Écrire votre première lettre
 

@@ -31,7 +31,7 @@ export const ro: HomeCopy = {
     ['Descoperă — ia scrisori trimise de alții', 'O dată pe zi se apropie trei plicuri noi. Gratuitul e mai mult decât suficient; urmărește o reclamă pe zi pentru mai multe.'],
     ['Traducere AI, peste 70 de limbi', 'Deschizi o scrisoare și apare un buton de traducere care traduce textul chiar pe loc, iar o nouă atingere te întoarce la original. Și aplicația în sine vorbește peste 70 de limbi.'],
     ['Timbre pictate special pentru tine', 'Fiecare timbru pe care îl extragi este pictat pe loc, așa că nimeni altcineva nu are unul la fel. Magazinul de timbre are timbre din 103 țări pe care să le lipești pe scrisori.'],
-    ['Un personaj în loc de fotografie', 'Profilul începe ca personaj pixelat. Șaisprezece sunt gratuite, iar dintr-un selfie sau câteva cuvinte despre cum arăți îți creăm propriul personaj, în același stil. Primul e gratuit, iar fotografia nu este păstrată.'],
+    ['Un personaj în loc de fotografie', 'Profilul începe ca personaj pixelat. Șaisprezece sunt gratuite, iar dintr-un selfie sau câteva cuvinte despre cum arăți îți creăm propriul personaj, în același stil. Fotografia nu este păstrată.'],
     ['Prezentările zilei — fără swipe', 'Câteva carduri de prezentare pe zi. Fără scoruri, fără derulare la nesfârșit. Dacă cineva te intrigă, începi cu o scrisoare.'],
   ],
   cmpTitle: 'Prin ce diferă de Slowly?',
@@ -48,7 +48,7 @@ export const ro: HomeCopy = {
   cmpNote: 'Pe baza informațiilor publice din septembrie 2026. Slowly este o aplicație excelentă — încearcă-le pe amândouă și păstreaz-o pe cea care ți se potrivește.',
   faqTitle: 'Întrebări frecvente',
   faqs: [
-    { q: 'Lettie este gratuit?', a: 'Da. Scrisul, strângerea scrisorilor, traducerea, cele șaisprezece personaje de bază și primul tău personaj propriu sunt gratuite. Gemele sunt doar pentru extra, precum extrageri de timbre, timbre de țări sau un al doilea personaj.' },
+    { q: 'Lettie este gratuit?', a: 'Da. Scrisul, strângerea scrisorilor, traducerea și cele șaisprezece personaje de bază sunt gratuite. Gemele sunt doar pentru extra, precum extrageri de timbre, timbre de țări sau desenarea propriului tău personaj.' },
     { q: 'Cât durează până ajunge o scrisoare?', a: 'Reiese din distanța dintre cele două țări. Una până la două ore în aceeași țară, câteva ore spre o țară vecină, aproape o zi pentru cealaltă parte a lumii. Poți urmări plicul pe glob cât aștepți.' },
     { q: 'Pot avea un prieten de corespondență fără să-i vorbesc limba?', a: 'Da. Fiecare scrisoare are un buton de traducere care traduce textul chiar pe loc, iar o nouă atingere te întoarce la original. Cu peste 70 de limbi, tu scrii în limba ta și celălalt citește în limba lui.' },
     { q: 'Cum cunosc pe cineva fără fotografii?', a: 'Un profil este un personaj pixelat, câteva interese și scrisorile în sine. Dintr-un selfie sau câteva cuvinte despre cum arăți poate rezulta un personaj în același stil (fotografia nu este păstrată). Afli cum gândește cineva înainte de a afla cum arată.' },

@@ -31,7 +31,7 @@ export const vi: HomeCopy = {
     ['Khám phá — nhận những lá thư được thả đi', 'Mỗi ngày một lần, ba phong bì mới trôi đến gần. Miễn phí là đủ dùng; xem một quảng cáo mỗi ngày để nhận thêm.'],
     ['Dịch bằng AI, hơn 70 ngôn ngữ', 'Mở một lá thư ra là có nút dịch, chạm một cái là văn bản được dịch ngay tại chỗ, chạm lần nữa là về bản gốc. Chính ứng dụng cũng hỗ trợ hơn 70 ngôn ngữ.'],
     ['Tem được vẽ dành riêng cho bạn', 'Mỗi con tem bạn rút đều được vẽ mới hoàn toàn, nên không ai khác có con tem giống bạn. Cửa hàng tem có sẵn tem từ 103 quốc gia để bạn dán lên thư.'],
-    ['Một nhân vật thay cho một tấm ảnh', 'Hồ sơ bắt đầu là một nhân vật pixel. Mười sáu nhân vật miễn phí, và một tấm ảnh selfie hoặc vài dòng về ngoại hình của bạn sẽ trở thành nhân vật riêng cùng phong cách đó. Nhân vật đầu tiên miễn phí, và ảnh không được lưu lại.'],
+    ['Một nhân vật thay cho một tấm ảnh', 'Hồ sơ bắt đầu là một nhân vật pixel. Mười sáu nhân vật miễn phí, và một tấm ảnh selfie hoặc vài dòng về ngoại hình của bạn sẽ trở thành nhân vật riêng cùng phong cách đó. Ảnh không được lưu lại.'],
     ['Giới thiệu hôm nay — không lướt', 'Mỗi ngày chỉ có vài thẻ giới thiệu. Không điểm số, không lướt vô tận. Nếu thấy ai thú vị, bạn bắt đầu bằng một lá thư.'],
   ],
   cmpTitle: 'Khác gì so với Slowly?',
@@ -48,7 +48,7 @@ export const vi: HomeCopy = {
   cmpNote: 'Dựa trên thông tin công khai tính đến tháng 9 năm 2026. Slowly là một ứng dụng hay — hãy thử cả hai và giữ lại ứng dụng phù hợp với bạn.',
   faqTitle: 'Câu hỏi thường gặp',
   faqs: [
-    { q: 'Lettie có miễn phí không?', a: 'Có. Viết thư, nhận thư, dịch, mười sáu nhân vật cơ bản và nhân vật riêng đầu tiên của bạn đều miễn phí. Đá quý chỉ dùng cho các tiện ích thêm như rút tem, tem các nước, hoặc một nhân vật thứ hai.' },
+    { q: 'Lettie có miễn phí không?', a: 'Có. Viết thư, nhận thư, dịch, và mười sáu nhân vật cơ bản đều miễn phí. Đá quý chỉ dùng cho các tiện ích thêm như rút tem, tem các nước, hoặc vẽ nhân vật riêng của bạn.' },
     { q: 'Một lá thư mất bao lâu để đến nơi?', a: 'Thời gian được tính từ khoảng cách thật giữa hai quốc gia. Một đến hai giờ trong cùng một nước, vài giờ đến nước láng giềng, gần một ngày cho phía bên kia thế giới. Bạn có thể theo dõi phong bì trên địa cầu trong lúc chờ.' },
     { q: 'Tôi có thể có bạn qua thư mà không biết ngôn ngữ của họ không?', a: 'Có. Mỗi lá thư đều có nút dịch, chạm một cái là văn bản được dịch ngay tại chỗ, chạm lần nữa là về bản gốc. Với hơn 70 ngôn ngữ, bạn viết bằng ngôn ngữ của mình và họ đọc bằng ngôn ngữ của họ.' },
     { q: 'Làm sao tôi hiểu một người mà không có ảnh?', a: 'Hồ sơ là một nhân vật pixel, vài sở thích, và chính những lá thư. Một tấm ảnh selfie hoặc vài dòng về ngoại hình có thể trở thành một nhân vật cùng phong cách (ảnh không được lưu lại). Bạn hiểu cách một người suy nghĩ trước khi biết họ trông như thế nào.' },

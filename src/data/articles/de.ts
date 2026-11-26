@@ -22,7 +22,7 @@ export const articles: ArticleSet = {
 | Briefe nach Entfernung | Ein Brief fliegt über einen Globus und kommt je nach Entfernung zwischen zwei Ländern in 1 bis 24 Stunden an. |
 | Entdecken | Hol dir Briefe, die Fremde in den Himmel losgelassen haben, und antworte auf die, die dich ansprechen. |
 | Übersetzung | Ein Übersetzungsknopf in jedem Brief, über 70 Sprachen, kostenlos, mit Übersetzung direkt an Ort und Stelle. |
-| Profile | Du startest als Pixel-Figur (16 kostenlose) statt mit einem Foto. Ein Selfie oder ein paar Worte über dein Aussehen werden zu deiner eigenen Figur (die erste ist kostenlos, das Foto wird nicht gespeichert). |
+| Profile | Du startest als Pixel-Figur (16 kostenlose) statt mit einem Foto. Ein Selfie oder ein paar Worte über dein Aussehen werden zu deiner eigenen Figur (das Foto wird nicht gespeichert). |
 | Briefmarken | Länder, mit denen du Briefe tauschst, färben den Globus; die Marke eines Landes kommt in deinen Pass, sobald ihr mindestens 5 Briefe gewechselt habt (mindestens 2 von dir, 2 von ihnen). |
 | Vorstellungskarten | Ein paar Vorstellungskarten pro Tag. Kein Wischen, keine Punktzahlen. |
 
@@ -41,7 +41,7 @@ Die Dauer richtet sich nach der Entfernung zwischen den beiden Ländern.
 |---|---|
 | Briefe schreiben, lesen und beantworten | Weiterschreiben, ohne auf eine Antwort zu warten (Lettie Plus) |
 | Jeden Brief in über 70 Sprachen übersetzen | Briefmarken-Ziehungen |
-| 16 Basis-Pixelfiguren + deine erste eigene Figur (Foto oder Worte) | Eine zweite eigene Figur |
+| 16 Basis-Pixelfiguren | Deine eigene Figur zeichnen lassen (Foto oder Worte) |
 | Entdecken: drei neue Briefumschläge pro Tag, plus eine Werbeanzeige pro Tag für mehr | - |
 
 ## Lettie im Vergleich zu anderen Brieffreund-Apps
@@ -50,7 +50,7 @@ Wie Slowly lässt Lettie Briefe nach der echten Entfernung zwischen zwei Länder
     faqs: [
       {
         q: 'Ist Lettie eine kostenlose Brieffreund-App?',
-        a: 'Ja. Briefe schreiben, lesen und beantworten, sie übersetzen, die 16 Basisfiguren und deine erste eigene Figur sind auf iOS und Android kostenlos. Optionale Gems fügen Extras wie Briefmarken-Ziehungen, Länder-Briefmarken und eine zweite eigene Figur hinzu; mit dem Lettie-Plus-Abo schreibst du weiter, ohne auf eine Antwort zu warten.',
+        a: 'Ja. Briefe schreiben, lesen und beantworten, sie übersetzen und die 16 Basisfiguren sind auf iOS und Android kostenlos. Optionale Gems fügen Extras wie Briefmarken-Ziehungen, Länder-Briefmarken und das Zeichnen deiner eigenen Figur hinzu; mit dem Lettie-Plus-Abo schreibst du weiter, ohne auf eine Antwort zu warten.',
       },
       {
         q: 'Wo kann ich die Lettie Brieffreund-App herunterladen?',
@@ -230,7 +230,7 @@ Eine Anmerkung, denn sie begleitet dich in die nächste App: Antworten bleiben m
       },
       {
         q: 'Gibt es eine Alternative zu Slowly ohne Profilfoto?',
-        a: 'Lettie ersetzt Fotos durch Pixelfiguren: sechzehn kostenlose Basisfiguren, und deine eigene Figur, gezeichnet aus einem Selfie oder ein paar Worten (die erste ist kostenlos).',
+        a: 'Lettie ersetzt Fotos durch Pixelfiguren: sechzehn kostenlose Basisfiguren, und deine eigene Figur, gezeichnet aus einem Selfie oder ein paar Worten.',
       },
       {
         q: 'Warum sterben meine Brieffreundschaften nach zwei oder drei Briefen, auch bei anderen Apps?',
@@ -264,7 +264,7 @@ Ein gutes Profil enthält vier Dinge:
 - **Deine Sprachziele**: Gib klar an, welche Sprache du lernen oder üben willst.
 - **Einen freundlichen Ton**: Schreib warm und zugänglich.
 
-Auf Lettie beginnt dein Profil mit einer Pixelfigur statt einem Foto: sechzehn kostenlose Basisfiguren, und deine eigene Figur, gezeichnet aus einem Selfie oder ein paar Worten über dein Aussehen (die erste ist kostenlos, das Foto wird nicht gespeichert). Dein Profil ist der erste Eindruck, den du hinterlässt - ein gut gestaltetes Profil hilft, passende Brieffreunde zu finden und startet das Gespräch auf dem richtigen Fuß.
+Auf Lettie beginnt dein Profil mit einer Pixelfigur statt einem Foto: sechzehn kostenlose Basisfiguren, und deine eigene Figur, gezeichnet aus einem Selfie oder ein paar Worten über dein Aussehen (das Foto wird nicht gespeichert). Dein Profil ist der erste Eindruck, den du hinterlässt - ein gut gestaltetes Profil hilft, passende Brieffreunde zu finden und startet das Gespräch auf dem richtigen Fuß.
 
 ## Deinen ersten Brief schreiben
 

@@ -25,7 +25,7 @@ export const faq: FaqContent = {
     },
     {
       q: 'Waarom zie ik in het begin geen foto’s?',
-      a: 'Lettie begint zonder profielfoto, zodat de eerste indruk komt van wat iemand schrijft. In plaats van een foto begint iedereen met een pixelpersonage: zestien zijn gratis, en met een selfie of een paar woorden over je uiterlijk wordt je eigen personage getekend (het eerste is gratis en de foto wordt niet bewaard).',
+      a: 'Lettie begint zonder profielfoto, zodat de eerste indruk komt van wat iemand schrijft. In plaats van een foto begint iedereen met een pixelpersonage: zestien zijn gratis, en met een selfie of een paar woorden over je uiterlijk wordt je eigen personage getekend (de foto wordt niet bewaard).',
     },
     {
       q: 'Is het veilig om naar onbekenden te schrijven?',

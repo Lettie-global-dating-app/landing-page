@@ -31,7 +31,7 @@ export const en: HomeCopy = {
     ['Discover — pick up released letters', 'Three new envelopes drift close once a day. Free is plenty; watch one ad a day for more.'],
     ['AI translation, 70+ languages', 'Open a letter and tap translate: it turns into your language right where it is, and back to the original with one tap. The app itself speaks 70+ languages too.'],
     ['Stamps painted just for you', 'Every stamp you draw is painted fresh. The stamp shop has stamps from 103 countries to stick on your letters, and holiday stamps are free for sending one letter.'],
-    ['A character instead of a photo', 'Profiles start as pixel characters. Sixteen are free, and a selfie or a few words about your look becomes your own character in the same style. Your first one is free, and the photo isn’t kept.'],
+    ['A character instead of a photo', 'Profiles start as pixel characters. Sixteen are free, and a selfie or a few words about your look becomes your own character in the same style. The photo isn’t kept.'],
     ['Today’s introductions — no swiping', 'A few introduction cards a day. No scores, no endless swiping. If someone sounds interesting, you start with one letter.'],
   ],
   cmpTitle: 'How is this different from Slowly?',
@@ -48,7 +48,7 @@ export const en: HomeCopy = {
   cmpNote: 'Based on public information as of September 2026. Slowly is a lovely app — try both and keep the one that fits.',
   faqTitle: 'Questions people ask',
   faqs: [
-    { q: 'Is Lettie free?', a: 'Yes. Writing, picking up letters, translation, the sixteen base characters and your first custom character are all free. Holiday and passport stamps are free too. Gems are only for extras like stamp draws, country stamps, more envelopes or a second character.' },
+    { q: 'Is Lettie free?', a: 'Yes. Writing, picking up letters, translation and the sixteen base characters are all free. Holiday and passport stamps are free too. Gems are only for extras like stamp draws, country stamps, more envelopes or having your own character drawn.' },
     { q: 'How long does a letter take to arrive?', a: 'It comes from the distance between the two countries. One to two hours within a country, a few hours to a neighbouring one, close to a day for the other side of the world. You can watch the envelope on the globe while you wait.' },
     { q: 'Can I have a pen pal without speaking their language?', a: 'Yes. Every letter has a translate button, and the original sits next to the translation. With 70+ languages, you write in yours and they read in theirs.' },
     { q: 'How do I get to know someone without photos?', a: 'A profile is a pixel character, a few interests and the letters themselves. A selfie or a few words about your look can become a character in the same style (the photo isn’t kept). You learn how someone thinks before what they look like.' },

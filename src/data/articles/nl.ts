@@ -22,7 +22,7 @@ export const articles: ArticleSet = {
 | Brieven op afstand | Een brief vliegt over een wereldbol en komt afhankelijk van de afstand tussen twee landen aan in 1 tot 24 uur. |
 | Ontdekken | Raap brieven op die vreemden in de lucht hebben losgelaten en reageer op degene die je aanspreken. |
 | Vertaling | Een vertaalknop in elke brief, meer dan 70 talen, gratis, vertaald op de plek zelf. |
-| Profielen | Je begint als pixelkarakter (16 gratis) in plaats van met een foto. Een selfie of een paar woorden over je uiterlijk worden je eigen karakter (het eerste is gratis, de foto wordt niet bewaard). |
+| Profielen | Je begint als pixelkarakter (16 gratis) in plaats van met een foto. Een selfie of een paar woorden over je uiterlijk worden je eigen karakter (de foto wordt niet bewaard). |
 | Postzegels | Landen waarmee je brieven uitwisselt kleuren de wereldbol; de postzegel van een land komt in je paspoort na minstens 5 brieven samen (minstens 2 van jou, 2 van hen). |
 | Introductiekaarten | Een paar introductiekaarten per dag. Geen swipen, geen scores. |
 
@@ -41,7 +41,7 @@ De duur hangt af van de afstand tussen de twee landen.
 |---|---|
 | Brieven schrijven, lezen en beantwoorden | Blijven schrijven zonder op een antwoord te wachten (Lettie Plus) |
 | Elke brief vertalen in meer dan 70 talen | Postzegeltrekkingen |
-| 16 basis-pixelkarakters + je eerste eigen karakter (foto of woorden) | Een tweede eigen karakter |
+| 16 basis-pixelkarakters | Je eigen karakter laten tekenen (foto of woorden) |
 | Ontdekken: drie nieuwe enveloppen per dag, plus een advertentie per dag voor meer | - |
 
 ## Lettie versus andere penvriendenapps
@@ -50,7 +50,7 @@ Net als Slowly laat Lettie brieven reizen op basis van de echte afstand tussen t
     faqs: [
       {
         q: 'Is Lettie een gratis penvriendenapp?',
-        a: 'Ja. Brieven schrijven, lezen en beantwoorden, ze vertalen, de 16 basiskarakters en je eerste eigen karakter zijn gratis op iOS en Android. Optionele gems voegen extra\'s toe, zoals postzegeltrekkingen, landenpostzegels en een tweede eigen karakter; met het Lettie Plus-abonnement blijf je schrijven zonder op een antwoord te wachten.',
+        a: 'Ja. Brieven schrijven, lezen en beantwoorden, ze vertalen en de 16 basiskarakters zijn gratis op iOS en Android. Optionele gems voegen extra\'s toe, zoals postzegeltrekkingen, landenpostzegels en je eigen karakter laten tekenen; met het Lettie Plus-abonnement blijf je schrijven zonder op een antwoord te wachten.',
       },
       {
         q: 'Waar kan ik de Lettie penvriendenapp downloaden?',
@@ -230,7 +230,7 @@ Een opmerking, want die volgt je naar de volgende app: reacties blijven meestal 
       },
       {
         q: 'Bestaat er een alternatief voor Slowly zonder profielfoto?',
-        a: 'Lettie vervangt foto\'s door pixelkarakters: zestien gratis basiskarakters, en je eigen karakter, getekend op basis van een selfie of een paar woorden (het eerste is gratis).',
+        a: 'Lettie vervangt foto\'s door pixelkarakters: zestien gratis basiskarakters, en je eigen karakter, getekend op basis van een selfie of een paar woorden.',
       },
       {
         q: 'Waarom sterven mijn penvriendschappen na twee of drie brieven, ook in andere apps?',
@@ -264,7 +264,7 @@ Een goed profiel bevat vier dingen:
 - **Je taaldoelen**: geef duidelijk aan welke taal je wilt leren of oefenen.
 - **Een vriendelijke toon**: schrijf warm en toegankelijk.
 
-Op Lettie begint je profiel met een pixelkarakter in plaats van een foto: zestien gratis basiskarakters, en je eigen karakter, getekend op basis van een selfie of een paar woorden over je uiterlijk (het eerste is gratis, de foto wordt niet bewaard). Je profiel is de eerste indruk die je achterlaat - een goed profiel helpt om passende penvrienden te vinden en start het gesprek goed.
+Op Lettie begint je profiel met een pixelkarakter in plaats van een foto: zestien gratis basiskarakters, en je eigen karakter, getekend op basis van een selfie of een paar woorden over je uiterlijk (de foto wordt niet bewaard). Je profiel is de eerste indruk die je achterlaat - een goed profiel helpt om passende penvrienden te vinden en start het gesprek goed.
 
 ## Je eerste brief schrijven
 

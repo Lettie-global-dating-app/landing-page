@@ -31,7 +31,7 @@ export const ms: HomeCopy = {
     ['Temui — memungut surat yang dilepaskan', 'Tiga sampul baharu datang hampir sekali sehari. Percuma pun sudah cukup; tonton satu iklan sehari untuk dapat lebih.'],
     ['Terjemahan AI, lebih 70 bahasa', 'Bila kamu buka surat, ada butang terjemah yang menterjemah teks di tempatnya, dan satu ketukan lagi kembali kepada teks asal. Aplikasi itu sendiri juga menyokong lebih 70 bahasa.'],
     ['Setem yang dilukis khas untukmu', 'Setiap setem yang dicabut dilukis baharu, jadi tiada orang lain yang memiliki setem yang sama. Kedai setem menawarkan setem dari 103 negara untuk ditampal pada suratmu.'],
-    ['Watak sebagai ganti gambar', 'Profil bermula sebagai watak piksel. Enam belas adalah percuma, dan daripada gambar selfie atau beberapa patah kata tentang rupamu, kami lukis watak sendiri dengan gaya yang sama. Yang pertama percuma, dan gambar itu tidak disimpan.'],
+    ['Watak sebagai ganti gambar', 'Profil bermula sebagai watak piksel. Enam belas adalah percuma, dan daripada gambar selfie atau beberapa patah kata tentang rupamu, kami lukis watak sendiri dengan gaya yang sama. Gambar itu tidak disimpan.'],
     ['Pengenalan hari ini — tanpa leret', 'Hanya beberapa kad pengenalan sehari. Tanpa skor, tanpa leret tanpa henti. Kalau seseorang menarik minatmu, kamu mula dengan satu surat.'],
   ],
   cmpTitle: 'Apa bezanya dengan Slowly?',
@@ -48,7 +48,7 @@ export const ms: HomeCopy = {
   cmpNote: 'Berdasarkan maklumat awam setakat September 2026. Slowly aplikasi yang bagus — cuba kedua-duanya dan kekalkan yang paling sesuai.',
   faqTitle: 'Soalan yang sering ditanya',
   faqs: [
-    { q: 'Adakah Lettie percuma?', a: 'Ya. Menulis surat, memungut surat, terjemahan, enam belas watak asas dan watak sendiri pertamamu semuanya percuma. Gem hanya untuk tambahan seperti cabutan setem, setem negara atau watak kedua.' },
+    { q: 'Adakah Lettie percuma?', a: 'Ya. Menulis surat, memungut surat, terjemahan, dan enam belas watak asas semuanya percuma. Gem hanya untuk tambahan seperti cabutan setem, setem negara atau melukis watak sendiri.' },
     { q: 'Berapa lama surat mengambil masa untuk tiba?', a: 'Masanya dikira daripada jarak sebenar antara dua negara. Satu hingga dua jam dalam negara yang sama, beberapa jam ke negara jiran, hampir sehari ke hujung dunia yang lain. Sambil menunggu, kamu boleh lihat sampul itu di atas glob.' },
     { q: 'Bolehkah saya ada sahabat pena tanpa tahu bahasanya?', a: 'Boleh. Setiap surat ada butang terjemah yang menterjemah teks di tempatnya, dan satu ketukan lagi kembali kepada teks asal. Dengan lebih 70 bahasa, kamu menulis dalam bahasa kamu dan dia membaca dalam bahasanya.' },
     { q: 'Bagaimana saya mengenali seseorang tanpa gambar?', a: 'Profil terdiri daripada watak piksel, beberapa minat, dan surat itu sendiri. Daripada gambar selfie atau beberapa patah kata tentang rupamu, satu watak boleh dilukis dengan gaya yang sama (gambar itu tidak disimpan). Kamu kenal cara seseorang berfikir dahulu sebelum tahu rupanya.' },

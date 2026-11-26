@@ -22,7 +22,7 @@ export const articles: ArticleSet = {
 | Cartas por distancia | Una carta vuela sobre un globo y llega entre 1 y 24 horas después, según la distancia entre los dos países. |
 | Descubrir | Cada día se acercan tres sobres nuevos de cartas que otras personas soltaron en el aire; recógelos y responde a los que te llamen la atención. Gratis; ver un anuncio da acceso a más. |
 | Traducción | Un botón de traducir en cada carta, más de 70 idiomas, gratis, y el texto se traduce en el mismo lugar con un toque. |
-| Perfiles | Empiezas como un personaje pixel (16 gratis) en vez de con una foto. Una selfie o unas palabras sobre tu aspecto se convierten en tu propio personaje; el primero es gratis y la foto no se guarda. |
+| Perfiles | Empiezas como un personaje pixel (16 gratis) en vez de con una foto. Una selfie o unas palabras sobre tu aspecto se convierten en tu propio personaje; la foto no se guarda. |
 | Sellos | Los países con los que intercambias cartas pintan el globo; el sello de un país entra en tu pasaporte tras al menos 5 cartas en total (mínimo 2 tuyas y 2 suyas). |
 | Presentaciones | Unas pocas tarjetas de presentación al día. Sin deslizar, sin puntuaciones. |
 
@@ -43,14 +43,14 @@ La demora depende de la distancia entre los puntos centrales de los dos países.
 |---|---|
 | Escribir, leer y responder cartas | Seguir escribiendo sin esperar respuesta (Lettie Plus) |
 | Traducir cualquier carta a más de 70 idiomas | Tiradas de sellos de colección |
-| 16 personajes pixel base + tu primer personaje propio | Un segundo personaje propio en adelante |
+| 16 personajes pixel base | Dibujar tu propio personaje (foto o palabras) |
 | Descubrir: tres sobres nuevos cada día | Sobres adicionales |
 
 **Una cifra honesta**: Lettie es una comunidad pequeña. Las respuestas pueden tardar; es parte de la idea de la app, no un defecto.
 
 ## Perfiles con personajes pixel, no fotos
 
-En lugar de empezar con una foto, cada persona en Lettie es un personaje pixel. Puedes usar uno de los 16 personajes base sin coste, o crear tu propio personaje a partir de una selfie o de unas pocas palabras describiendo tu aspecto. El primer personaje propio es gratis y la foto que uses para generarlo no se guarda. Un segundo personaje propio es una de las opciones de pago con gemas.
+En lugar de empezar con una foto, cada persona en Lettie es un personaje pixel. Puedes usar uno de los 16 personajes base sin coste, o crear tu propio personaje a partir de una selfie o de unas pocas palabras describiendo tu aspecto. La foto que uses para generarlo no se guarda. Dibujar tu propio personaje es una de las opciones de pago con gemas.
 
 ## No hay una regla fija sobre cuándo dar tu contacto
 
@@ -62,7 +62,7 @@ Si estás decidiendo entre varias apps, lo que distingue a Lettie es la combinac
     faqs: [
       {
         q: '¿Lettie es una app gratis de amigos por correspondencia?',
-        a: 'Sí. Escribir, leer y responder cartas, traducirlas, los 16 personajes base y tu primer personaje propio son gratis en iOS y Android. Las gemas opcionales añaden extras como más cartas al día, tiradas de sellos, sellos de países y un segundo personaje propio; con la suscripción Lettie Plus puedes seguir escribiendo sin esperar respuesta.',
+        a: 'Sí. Escribir, leer y responder cartas, traducirlas, los 16 personajes base son gratis en iOS y Android. Las gemas opcionales añaden extras como más cartas al día, tiradas de sellos, sellos de países y dibujar tu propio personaje; con la suscripción Lettie Plus puedes seguir escribiendo sin esperar respuesta.',
       },
       {
         q: '¿Dónde se descarga la app de amigos por correspondencia Lettie?',
@@ -159,7 +159,7 @@ Sea la app que elijas, una primera carta que recibe respuesta reacciona a lo que
       },
       {
         q: '¿Lettie es gratis?',
-        a: 'Sí. Escribir, leer y responder cartas, la traducción a más de 70 idiomas, los 16 personajes base y tu primer personaje propio son gratis. Las gemas opcionales añaden extras como tiradas de sellos o sellos de países.',
+        a: 'Sí. Escribir, leer y responder cartas, la traducción a más de 70 idiomas, los 16 personajes base son gratis. Las gemas opcionales añaden extras como tiradas de sellos o sellos de países.',
       },
       {
         q: '¿Qué diferencia a Lettie de Slowly?',
@@ -275,7 +275,7 @@ Un apunte, porque te va a seguir a la próxima app: las respuestas suelen apagar
       'Para empezar con un amigo por correspondencia en Lettie: crea tu personaje pixel (o uno propio a partir de una foto o unas palabras), escribe una primera carta breve con una pregunta al final, y responde a las cartas que te lleguen con la misma calma con la que las escribiste.',
     body: `## Crea tu personaje, no un perfil con fotos
 
-En Lettie no empiezas con una foto. Eliges uno de los 16 personajes pixel base, gratis, o creas tu propio personaje a partir de una selfie o de unas pocas palabras describiendo tu aspecto. El primer personaje propio es gratis y la foto que uses no se guarda.
+En Lettie no empiezas con una foto. Eliges uno de los 16 personajes pixel base, gratis, o creas tu propio personaje a partir de una selfie o de unas pocas palabras describiendo tu aspecto. La foto que uses no se guarda.
 
 - **Presentación genuina**: escribe algo real sobre ti, sin exagerar.
 - **Intereses concretos**: una afición específica dice más que una frase vaga como "me gusta la música".
@@ -322,7 +322,7 @@ Escribir el primer día no garantiza una respuesta inmediata: cada carta tarda s
     faqs: [
       {
         q: '¿Cómo creo mi personaje en Lettie?',
-        a: 'Elige uno de los 16 personajes pixel base, gratis, o crea tu propio personaje a partir de una selfie o de unas palabras describiendo tu aspecto. El primero es gratis y la foto no se guarda.',
+        a: 'Elige uno de los 16 personajes pixel base, gratis, o crea tu propio personaje a partir de una selfie o de unas palabras describiendo tu aspecto. La foto no se guarda.',
       },
       {
         q: '¿Qué debo escribir en mi primera carta?',

@@ -31,7 +31,7 @@ export const fil: HomeCopy = {
     ['Discover — pagpulot ng mga pinakawalang sulat', 'Tatlong bagong envelope ang lumalapit kada araw. Sapat na ang libre; manood ng isang ad kada araw para sa mas marami.'],
     ['AI translation, mahigit 70 wika', 'Kapag binuksan mo ang isang sulat, may translate button na nagta-translate ng teksto mismo sa kinaroroonan nito, at isang tap lang ay balik sa orihinal. Mahigit 70 wika rin ang suportado ng app mismo.'],
     ['Mga stamp na ipininta para lang sa iyo', 'Bawat stamp na mabunot mo ay bagong pinta, kaya walang ibang may katulad nito. May mga stamp mula sa 103 bansa sa stamp shop na pwede mong idikit sa iyong mga sulat.'],
-    ['Character sa halip na litrato', 'Pixel character ang simula ng profile. Labing-anim na libre, at mula sa isang selfie o ilang salita tungkol sa hitsura mo, iguguhit ang sarili mong character sa parehong style. Libre ang una, at hindi itinatago ang litrato.'],
+    ['Character sa halip na litrato', 'Pixel character ang simula ng profile. Labing-anim na libre, at mula sa isang selfie o ilang salita tungkol sa hitsura mo, iguguhit ang sarili mong character sa parehong style. Hindi itinatago ang litrato.'],
     ['Mga intro ngayon — walang swiping', 'Ilang intro card lang kada araw. Walang score, walang walang-katapusang swiping. Kung may nakaka-interes, magsisimula kayo sa isang sulat.'],
   ],
   cmpTitle: 'Ano ang pagkakaiba nito sa Slowly?',
@@ -48,7 +48,7 @@ export const fil: HomeCopy = {
   cmpNote: 'Base sa pampublikong impormasyon noong Setyembre 2026. Magandang app ang Slowly — subukan mong dalawa at panatilihin kung alin ang bagay sa iyo.',
   faqTitle: 'Mga tanong ng mga tao',
   faqs: [
-    { q: 'Libre ba ang Lettie?', a: 'Oo. Libre ang pagsulat, pagpulot ng sulat, translation, ang labing-anim na base character, at ang unang custom character mo. Para sa extra lang ang gems, gaya ng stamp draws, country stamps, o pangalawang character.' },
+    { q: 'Libre ba ang Lettie?', a: 'Oo. Libre ang pagsulat, pagpulot ng sulat, translation, at ang labing-anim na base character. Para sa extra lang ang gems, gaya ng stamp draws, country stamps, o pagpapaguhit ng sarili mong character.' },
     { q: 'Gaano katagal bago dumating ang isang sulat?', a: 'Base ito sa distansya ng dalawang bansa. Isa hanggang dalawang oras kung sa loob ng bansa, ilang oras kung sa karatig-bansa, malapit sa isang araw kung sa kabilang panig ng mundo. Habang naghihintay, makikita mo ang envelope sa globo.' },
     { q: 'Pwede ba akong magkaroon ng penpal kahit hindi ko kabisado ang wika niya?', a: 'Oo. Bawat sulat ay may translate button na nagta-translate ng teksto mismo sa kinaroroonan nito, at isang tap lang ay balik sa orihinal. Dahil mahigit 70 wika ang suportado, sumusulat ka sa wika mo at binabasa niya ito sa kanya.' },
     { q: 'Paano ko makikilala ang isang tao kung walang litrato?', a: 'Ang profile ay pixel character, ilang interes, at ang mga sulat mismo. Mula sa isang selfie o ilang salita tungkol sa hitsura mo, maiiguhit ang isang character sa parehong style (hindi itinatago ang litrato). Nakikilala mo muna kung paano mag-isip ang tao bago kung ano ang hitsura niya.' },

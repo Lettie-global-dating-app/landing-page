@@ -18,7 +18,7 @@ Lettie staví na jednoduché myšlence: dopis by měl cestovat. Místo okamžit�
 | Doručení podle vzdálenosti | Dopis letí přes glóbus a doručí se za 1 až 24 hodin, podle vzdálenosti mezi zeměmi |
 | Objevování (Discover) | Každý den se k vám přiblíží tři nové obálky s dopisy od cizích lidí zdarma; za zhlédnutí reklamy jich můžete získat víc |
 | Překlad | Tlačítko překladu u každého dopisu, 70+ jazyků, zdarma, text se přeloží přímo na místě |
-| Profily | Místo fotky si vyberete pixelovou postavu (16 základních zdarma) nebo si vytvoříte vlastní z selfie či pár slov o vzhledu (první zdarma, fotka se neukládá) |
+| Profily | Místo fotky si vyberete pixelovou postavu (16 základních zdarma) nebo si vytvoříte vlastní z selfie či pár slov o vzhledu (fotka se neukládá) |
 | Razítka | Za každou zemi, se kterou si dopisy vyměníte, přibude razítko a vybarví se kousek glóbu |
 | Seznamovací karty | Pár úvodních karet denně, žádné švihání prstem, žádné skóre |
 
@@ -28,9 +28,9 @@ Doba doručení závisí na vzdálenosti mezi středy obou zemí. V rámci jedn�
 
 ## Co je zdarma a co je volitelné
 
-Psaní, čtení a odpovídání na dopisy je zdarma, stejně jako překlad do 70+ jazyků, šestnáct základních postav a vaše první vlastní postava. Objevování vám denně přinese tři nové obálky zdarma, další získáte zhlédnutím reklamy.
+Psaní, čtení a odpovídání na dopisy je zdarma, stejně jako překlad do 70+ jazyků a šestnáct základních postav. Objevování vám denně přinese tři nové obálky zdarma, další získáte zhlédnutím reklamy.
 
-Volitelné drahokamy odemykají extra věci: losování razítek, razítka zemí a druhou vlastní postavu navíc. S předplatným Lettie Plus můžete psát dál, aniž byste čekali na odpověď. Žádná z těchto funkcí není potřeba k tomu, abyste si psali a poznávali nové lidi — jsou to jen doplňky pro ty, kdo chtějí víc.
+Volitelné drahokamy odemykají extra věci: losování razítek, razítka zemí a nakreslení vlastní postavy navíc. S předplatným Lettie Plus můžete psát dál, aniž byste čekali na odpověď. Žádná z těchto funkcí není potřeba k tomu, abyste si psali a poznávali nové lidi — jsou to jen doplňky pro ty, kdo chtějí víc.
 
 ## Žádné pevné pravidlo, kdy si vyměnit kontakt
 
@@ -42,7 +42,7 @@ Aplikace se hodí pro lidi, kteří mají rádi rytmus psaní dopisů, chtějí 
     faqs: [
       {
         q: 'Je Lettie zdarma?',
-        a: 'Ano. Psaní, čtení a odpovídání na dopisy, překlad do 70+ jazyků, 16 základních postav a vaše první vlastní postava jsou zdarma na iOS i Androidu. Volitelné drahokamy přidávají extra věci, jako losování razítek, razítka zemí a druhou vlastní postavu; s předplatným Lettie Plus můžete psát dál, aniž byste čekali na odpověď.',
+        a: 'Ano. Psaní, čtení a odpovídání na dopisy, překlad do 70+ jazyků a 16 základních postav jsou zdarma na iOS i Androidu. Volitelné drahokamy přidávají extra věci, jako losování razítek, razítka zemí a nakreslení vlastní postavy; s předplatným Lettie Plus můžete psát dál, aniž byste čekali na odpověď.',
       },
       {
         q: 'Kde si můžu Lettie stáhnout?',
@@ -233,7 +233,7 @@ Jedna poznámka, protože tohle vás bude sledovat i v další aplikaci: odpově
       'Začít s korespondenčním přátelstvím na Lettie znamená tři kroky: vytvořit profil (pixelová postava a pár vět o sobě), napsat první dopis o 150–300 slovech s jednou otázkou na konci, a mít trpělivost — dopisy letí podle vzdálenosti a odpověď může přijít za hodiny i za den.',
     body: `## Vytvoření profilu
 
-Profil je první věc, kterou druhá osoba vidí. Místo fotky si zvolíte jednu z šestnácti bezplatných pixelových postav, nebo si vytvoříte vlastní z selfie nebo z pár slov o vzhledu — první vlastní postava je zdarma a fotka se nikde neukládá.
+Profil je první věc, kterou druhá osoba vidí. Místo fotky si zvolíte jednu z šestnácti bezplatných pixelových postav, nebo si vytvoříte vlastní z selfie nebo z pár slov o vzhledu — fotka se přitom nikde neukládá.
 
 K profilu patří pár vět o sobě. Nejlépe fungují konkrétní detaily:
 
