@@ -5599,9 +5599,9 @@ Whichever app, a first letter that gets a reply is a reaction to what they wrote
         title: '펜팔이란? 뜻과 유래, 요즘 펜팔은 이렇게 한다',
         titleEn: 'What Is a Pen Pal? Meaning, Origin and How People Do It Now',
         seoTitle: '펜팔 뜻: 펜팔이란 무엇이고 요즘은 어떻게 할까',
-        seoTitleEn: 'What Is a Pen Pal? Meaning, Origin and How It Works Today',
+        seoTitleEn: 'Pen Pal Meaning: What a Pen Pal Is and How It Works Today',
         description: '펜팔은 편지를 주고받으며 사귀는 먼 곳의 친구입니다. 말의 유래, 채팅·언어 교환과 다른 점, 손편지와 앱 펜팔의 차이, 시작하는 법을 정리했습니다.',
-        descriptionEn: 'A pen pal is a friend you get to know by exchanging letters, usually someone far away. Where the word comes from, how it differs from chat, and how to start.',
+        descriptionEn: 'Pen pal meaning: a friend you get to know by exchanging letters, usually far away. Pen pal, penpal or pen-pal, what it means on dating apps, and how to start.',
         date: '2026-10-03',
         readTime: '6분',
         readTimeEn: '6 min',
@@ -5610,20 +5610,22 @@ Whichever app, a first letter that gets a reply is a reaction to what they wrote
         image: '/v2/key-ko-s2.png',
         author: 'Lettie',
         keywords: ['펜팔 뜻', '펜팔이란', '펜팔', '펜프렌드', '펜팔 하는 법', '펜팔 시작', '외국인 펜팔', '펜팔 앱'],
-        keywordsEn: ['what is a pen pal', 'pen pal meaning', 'pen pal definition', 'pen friend vs pen pal', 'how to get a pen pal', 'pen pal app'],
+        keywordsEn: ['pen pal meaning', 'what is a pen pal', 'pen pals meaning', 'pen pal definition', 'penpal or pen pal', 'pen pal meaning in dating', 'pen pal relationship', 'pen friend vs pen pal', 'how to get a pen pal'],
         faq: [
             { q: '펜팔은 무슨 뜻인가요?', a: '펜팔(pen pal)은 편지를 주고받으며 사귀는 친구, 대개 멀리 사는 친구를 뜻합니다. 영어 pen(펜)과 pal(친구)을 합친 말로, 얼굴보다 글로 먼저 서로를 알아 간다는 점이 특징입니다.' },
             { q: '펜팔과 펜프렌드는 다른 말인가요?', a: '같은 뜻입니다. Online Etymology Dictionary에 따르면 pen-friend가 1919년에 먼저 기록됐고 pen pal(1931년 기록)이 점차 그 자리를 대신했습니다. 영국에서는 지금도 pen friend라고 많이 씁니다.' },
             { q: '요즘도 펜팔을 하나요?', a: '합니다. 주소를 주고받아 우편으로 손편지를 보내는 방식, 펜팔 사이트에서 메시지를 주고받는 방식, 그리고 편지가 거리만큼 시간이 걸려 도착하는 느린 편지 앱(Slowly, Lettie 등)이 함께 쓰입니다.' },
             { q: '펜팔은 데이팅과 다른가요?', a: '다릅니다. 펜팔은 편지로 사귀는 우정과 교류가 목적입니다. Lettie도 데이팅 앱이 아니라 펜팔 앱으로, 사진 대신 픽셀 캐릭터로 시작하고 스와이프가 없습니다.' },
-            { q: '외국어를 못해도 외국인 펜팔을 할 수 있나요?', a: '할 수 있습니다. 번역이 붙은 펜팔 앱을 쓰면 각자 자기 언어로 쓰고 읽습니다. Lettie는 편지 안의 번역 버튼으로 70개 넘는 언어를 무료로 번역합니다.' },
+            { q: '외국어를 못해도 외국인 펜팔을 할 수 있나요?', a: `할 수 있습니다. 번역이 붙은 펜팔 앱을 쓰면 각자 자기 언어로 쓰고 읽습니다. Lettie는 편지 안의 번역 버튼으로 70개 넘는 언어를 번역하고, 하루 ${FACTS.translateFreePerDay}번은 무료입니다.` },
         ],
         faqEn: [
             { q: 'What does pen pal mean?', a: 'A pen pal is a friend you get to know by exchanging letters, usually someone who lives far away. The word joins pen and pal, and the defining trait is that you know each other through writing before anything else.' },
+            { q: 'Is pen pal one word or two?', a: 'Dictionaries such as Cambridge and Vocabulary.com list it as two words, pen pal. Penpal and pen-pal are common variants, and the plural is pen pals.' },
+            { q: 'What does pen pal mean in dating?', a: 'On dating apps, people sometimes call a match who keeps messaging but never suggests meeting a pen pal. That is informal slang, not a dictionary sense; the dictionary meaning is a friend you write to.' },
             { q: 'Is a pen friend the same as a pen pal?', a: 'Yes. The Online Etymology Dictionary records pen-friend from 1919 and pen pal from 1931; pen pal gradually took over, while British English still often says pen friend.' },
             { q: 'Do people still have pen pals?', a: 'Yes. Some trade postal addresses and send handwritten letters, some message on pen pal websites, and some use slow-letter apps such as Slowly or Lettie, where a letter takes time to arrive depending on distance.' },
             { q: 'Is a pen pal the same as online dating?', a: 'No. Pen pals write for friendship and cultural exchange. Lettie is a pen pal app, not a dating app: profiles start as pixel characters instead of photos, and there is no swiping.' },
-            { q: 'Can I have a foreign pen pal if I do not speak their language?', a: 'Yes. With a pen pal app that has translation built in, each person writes and reads in their own language. Lettie translates letters into 70+ languages for free with a button inside the letter.' },
+            { q: 'Can I have a foreign pen pal if I do not speak their language?', a: `Yes. With a pen pal app that has translation built in, each person writes and reads in their own language. Lettie translates letters into 70+ languages with a button inside the letter, free ${FACTS.translateFreePerDay} times a day.` },
         ],
         content: `
 # 펜팔이란?
@@ -5663,7 +5665,7 @@ Lettie는 저희가 만든 [펜팔 앱](/penpal-app)입니다. 펜팔을 앱으�
 
 - **편지는 거리만큼 걸려 도착합니다.** 두 나라 사이 거리로 도착 시간이 정해지고, 같은 나라는 1~2시간, 지구 반대편은 최대 ${FACTS.deliveryHours.max}시간입니다. 도시별 시간은 [편지 배달 시간표](/blog/letter-delivery-time-by-distance)에 있습니다.
 - **첫 편지는 주워서 시작합니다.** 누구에게랄 것 없이 띄운 편지가 봉투로 떠 있고, 하루 한 번 새 봉투 ${FACTS.discoverEnvelopesPerDay}장이 무료로 옵니다. 마음에 드는 편지에 답장하면 둘만의 편지가 시작됩니다.
-- **언어가 달라도 됩니다.** 편지 안의 번역 버튼으로 70개 넘는 언어를 무료로 번역합니다.
+- **언어가 달라도 됩니다.** 편지 안의 번역 버튼으로 70개 넘는 언어를 번역하고, 하루 ${FACTS.translateFreePerDay}번은 무료입니다.
 - **실제 규모**: ${koDate(LETTER_MAP.asOf)} 기준, 레티에서 사람끼리 주고받은 편지는 ${LETTER_MAP.countries}개 나라 사이 ${LETTER_MAP.letters}통입니다. 나라와 경로는 [레티 편지 지도](/letter-map)에서 볼 수 있습니다.
 
 ## 펜팔을 시작하는 법
@@ -5688,6 +5690,25 @@ Lettie는 저희가 만든 [펜팔 앱](/penpal-app)입니다. 펜팔을 앱으�
 - **Meaning**: a friend or contact with whom you keep up a regular correspondence. It first meant people trading handwritten letters by post; today people writing through apps and websites are called pen pals too.
 - **Origin**: the Online Etymology Dictionary records *pen-friend* from 1919 and *pen pal* from 1931, with pen pal gradually replacing the older word. Dictionaries give slightly different first dates.
 - **Regional use**: American English mostly says pen pal; British English still often says pen friend.
+
+## Pen pal, penpal or pen-pal?
+
+**Pen pal is two words in the dictionary.** Cambridge and Vocabulary.com both list *pen pal* as a noun, and Cambridge gives *pen friend* as the British form. *Penpal* and *pen-pal* are common variants that mean the same thing; Wikipedia's article opens with all of them.
+
+| Form | What it is |
+|---|---|
+| pen pal | Dictionary spelling, mostly American |
+| pen pals | Plural: two or more people who write to each other |
+| penpal, pen-pal | Common variants, same meaning |
+| pen friend, penfriend | British form, same meaning |
+
+## What a pen pal relationship is
+
+A pen pal relationship is a friendship kept up mainly through letters. The two people usually start as strangers, often live in different countries, and may never meet. What holds it together is a steady exchange: each letter answers the last one and leaves something for the next. Many last a few letters; some last for years.
+
+## Pen pal meaning in dating
+
+On dating apps, people sometimes use *pen pal* for a match who keeps messaging but never suggests meeting, and *pen palling* for that stuck stage. That is informal slang, not a dictionary sense. In its ordinary meaning a pen pal is a friend you write to, and Lettie uses it that way: it is a pen pal app for friendship, not a dating app.
 
 ## How a pen pal differs from chat
 
@@ -5716,7 +5737,7 @@ Lettie is the [pen pal app](/en/penpal-app) we make. Moving pen pals into an app
 
 - **Letters take time, by distance.** Delivery time is set by the distance between two countries: one to two hours within a country, up to ${FACTS.deliveryHours.max} hours across the world. Times by city are in [the letter delivery timetable](/en/blog/letter-delivery-time-by-distance).
 - **Your first letter is one you pick up.** Letters released to no one in particular float as envelopes, and ${FACTS.discoverEnvelopesPerDay} new ones arrive free once a day. Reply to one you like and a correspondence for two begins.
-- **No shared language needed.** A translate button inside each letter covers 70+ languages for free.
+- **No shared language needed.** A translate button inside each letter covers 70+ languages, free ${FACTS.translateFreePerDay} times a day.
 - **Real scale**: as of ${enDate(LETTER_MAP.asOf)}, people on Lettie have exchanged ${LETTER_MAP.letters} letters between ${LETTER_MAP.countries} countries. Countries and routes are on [the Lettie letter map](/en/letter-map).
 
 ## How to start
@@ -5729,7 +5750,7 @@ Lettie is the [pen pal app](/en/penpal-app) we make. Moving pen pals into an app
 
 ---
 
-*Sources: Online Etymology Dictionary, "pen-pal"; Wikipedia, "Pen pal". Lettie figures are counted from the app database (${enDate(LETTER_MAP.asOf)}).*
+*Sources: Online Etymology Dictionary, "pen-pal"; Cambridge Dictionary and Vocabulary.com, "pen pal"; Wikipedia, "Pen pal". Lettie figures are counted from the app database (${enDate(LETTER_MAP.asOf)}).*
 `,
     },
     'lettie-stamps-guide': {
@@ -7060,11 +7081,11 @@ The same holiday goes by different names. Call it what your friend calls it: "Se
     },
     'how-to-end-a-letter-to-a-pen-pal': {
         id: 'how-to-end-a-letter-to-a-pen-pal',
-        title: '펜팔 편지 끝인사 쓰는 법 — 영어 맺음말 25개와 실제 편지 데이터',
+        title: '편지 끝인사·맺음말 쓰는 법 — 상황별 한국어 예시와 영어 맺음말 25개',
         titleEn: 'How to end a letter to a pen pal: 25 sign-offs and how real letters end',
-        seoTitle: '편지 끝인사·맺음말 쓰는 법 — 영어 표현 25개와 예시',
+        seoTitle: '편지 끝인사·맺음말 예시: 상황별 문장과 서명, 영어 25개',
         seoTitleEn: 'How to End a Letter to a Pen Pal: 25 Sign-offs',
-        description: `레티 영어 편지 ${LETTER_ENDINGS.en.n}통 중 ${LETTER_ENDINGS.en.none}%는 끝인사 없이 끝났습니다. 마지막 세 줄(질문·따뜻한 한 줄·맺음말)로 편지를 닫는 법, 영어 맺음말 25개, 한국어 끝인사, 피해야 할 것.`,
+        description: `친구·부모님·선생님·펜팔에게 쓰는 편지 끝인사와 맺음말 예시, 이름 뒤 올림·드림·씀 쓰는 법, 영어 맺음말 25개. 레티 한글 편지 ${LETTER_ENDINGS.ko.n}통의 ${LETTER_ENDINGS.ko.none}%는 끝인사 없이 끝났습니다.`,
         descriptionEn: `${LETTER_ENDINGS.en.none}% of ${LETTER_ENDINGS.en.n} English letters on Lettie ended with no sign-off at all. How to close with three lines (a question, a warm line, a sign-off), 25 sign-offs by tone, and what to avoid.`,
         date: '2026-10-20',
         readTime: '5분',
@@ -7073,10 +7094,11 @@ The same holiday goes by different names. Call it what your friend calls it: "Se
         categoryEn: 'Letter writing',
         image: '/v2/app-letter.png',
         author: 'Lettie',
-        keywords: ['편지 끝인사', '편지 맺음말', '영어 편지 끝인사', '펜팔 편지 마무리', '편지 마지막 인사', '영어 편지 맺음말 표현'],
+        keywords: ['편지 끝인사', '편지 맺음말', '맺음말', '끝인사', '편지 끝맺음', '편지 마지막 문구', '편지 마지막 이름', '영어 편지 끝인사', '영어 편지 맺음말 표현'],
         keywordsEn: ['how to end a letter to a pen pal', 'letter sign-offs', 'how to end a letter to a friend', 'letter closings', 'pen pal letter ending', 'friendly letter closing'],
         faq: [
             { q: '펜팔 편지는 어떻게 끝내면 좋나요?', a: '상대가 답할 질문 하나, 따뜻한 한 줄, 맺음말과 이름 — 이 세 줄이면 됩니다. 예: "너희 동네는 지금 무슨 계절이야? 오늘도 좋은 하루 보내. Take care, 민지"' },
+            { q: '편지 마지막에 이름은 어떻게 쓰나요?', a: '부모님·선생님처럼 높여야 할 분께는 "민지 올림"이 가장 무난하고, "민지 드림"도 높임으로 널리 씁니다. 친구나 동생에게는 "민지가"나 "민지 씀"이라고 씁니다. 날짜는 이름 위나 아래에 적습니다.' },
             { q: '영어 편지 맺음말은 뭐가 무난한가요?', a: '펜팔에게는 Take care, Talk soon, Best wishes, Warm wishes가 무난합니다. Sincerely·Kind regards는 업무 편지 느낌이고, Love·Hugs는 친해진 뒤에 쓰는 편이 좋습니다.' },
             { q: '실제 편지는 어떻게 끝나나요?', a: `레티 편지 데이터(${LETTER_ENDINGS.asOf})로 영어 편지 ${LETTER_ENDINGS.en.n}통 중 ${LETTER_ENDINGS.en.none}%는 끝인사가 없었고, ${LETTER_ENDINGS.en.question}%는 질문으로, ${LETTER_ENDINGS.en.nameSign}%는 이름으로 끝났습니다.` },
         ],
@@ -7086,9 +7108,30 @@ The same holiday goes by different names. Call it what your friend calls it: "Se
             { q: 'How do real pen pal letters end?', a: `In Lettie letter data (${LETTER_ENDINGS.asOf}), ${LETTER_ENDINGS.en.none}% of ${LETTER_ENDINGS.en.n} English letters had no sign-off, ${LETTER_ENDINGS.en.question}% ended with a question and ${LETTER_ENDINGS.en.nameSign}% ended with the writer's name.` },
         ],
         content: `
-# 펜팔 편지 끝인사 쓰는 법
+# 편지 끝인사·맺음말 쓰는 법
 
-펜팔 편지는 **질문 하나 → 따뜻한 한 줄 → 맺음말과 이름**, 이 세 줄로 닫으면 됩니다. 레티(Lettie) 편지를 세어 보니 끝인사를 쓰는 사람은 생각보다 적었습니다. 마지막 세 줄만 챙겨도 편지가 눈에 띄게 편지다워집니다.
+편지는 **질문 하나 → 따뜻한 한 줄 → 맺음말과 이름**, 이 세 줄로 닫으면 됩니다. 받는 사람에 따라 말만 바꾸면 됩니다. 친구에게는 "또 편지할게! 민지가", 부모님께는 "늘 건강하세요. 딸 민지 올림"처럼 씁니다. 레티(Lettie) 편지를 세어 보니 끝인사를 쓰는 사람은 생각보다 적었습니다. 마지막 세 줄만 챙겨도 편지가 눈에 띄게 편지다워집니다.
+
+## 상황별 한국어 끝인사 예시
+
+| 받는 사람 | 끝인사·맺음말 예시 | 이름 쓰는 법 |
+|---|---|---|
+| 친구 | "또 편지할게!", "답장 기다릴게", "감기 조심하고 잘 지내" | 민지가 · 민지 씀 |
+| 처음 편지하는 펜팔 | "천천히 답장해 주셔도 괜찮아요", "다음 편지에서 또 이야기 들려주세요" | 서울에서 민지 드림 |
+| 부모님 | "늘 건강하세요", "사랑해요, 곧 찾아뵐게요" | 딸 민지 올림 |
+| 선생님·윗사람 | "늘 건강하시고 행복하시길 바랍니다", "가르쳐 주셔서 감사합니다" | 제자 민지 올림 |
+| 감사 편지 | "다시 한번 진심으로 감사드립니다" | 민지 드림 |
+| 생일 편지 | "다시 한번 생일 축하해!", "올해는 좋은 일만 가득하길" | 너의 친구 민지가 |
+| 연인 | "오늘도 고마워", "보고 싶어" | 너의 민지가 |
+
+계절 인사를 한 줄 더하면 편지다워집니다. 겨울엔 "추운 날씨에 감기 조심하세요", 여름엔 "더위 조심하세요"처럼 씁니다.
+
+### 이름은 어떻게 쓰나요 — 올림·드림·씀·가
+
+- **올림**: 부모님·선생님처럼 높여야 할 분께 가장 무난합니다. "딸 민지 올림", "제자 민지 올림"처럼 관계를 이름 앞에 둡니다.
+- **드림**: 윗사람이나 처음 편지하는 사람에게 두루 쓰는 높임입니다. "민지 드림".
+- **씀·가**: 친구나 동생처럼 편한 사이에 씁니다. "민지 씀", "민지가".
+- **날짜**는 이름 위나 아래에 "2026년 11월 26일"처럼 적습니다.
 
 ## 실제 편지는 어떻게 끝날까
 
@@ -7142,11 +7185,6 @@ The same holiday goes by different names. Call it what your friend calls it: "Se
 | Hugs, | 친해진 뒤에 |
 | Love, | 아주 친해진 뒤에 |
 | Kind regards, | 격식 — 펜팔에겐 딱딱하게 느껴질 수 있다 |
-
-## 한국어 끝인사
-
-- 친구에게: "좋은 하루 보내!", "답장 기다릴게", "또 편지할게", "감기 조심해", 그리고 "민지가" 또는 "민지 씀"
-- 처음이거나 윗사람에게: "좋은 하루 보내세요", "건강하세요", 그리고 "민지 드림"
 
 ## 피해야 할 것
 

@@ -3,10 +3,11 @@ import { faqAlternates } from '@/data/localizedFaq';
 import Image from 'next/image';
 import { ChevronDown, HelpCircle, Mail, Shield, Globe, Users } from 'lucide-react';
 import { Metadata } from 'next';
+import { FACTS } from '@/data/facts';
 
 export const metadata: Metadata = {
   title: { absolute: 'Lettie FAQ: Pen Pal App Questions Answered' },
-  description: 'Answers to frequently asked questions about Lettie pen pal app usage, letter exchange, safety features, and more',
+  description: 'Is Lettie free? Is it a dating app? Is there a web version? Answers about letters, translation, safety, stamps and characters on the Lettie pen pal app.',
   keywords: ['Lettie FAQ', 'pen pal app guide', 'letter app questions', 'pen pal help', 'Lettie support'],
   alternates: {
     canonical: 'https://lettie-dating.com/en/faq',
@@ -29,7 +30,19 @@ const faqCategories = [
       },
       {
         q: 'Is it free to use?',
-        a: 'Lettie offers basic features for free. You can write letters, receive them, and reply for free. Premium features are available with an additional subscription if desired.'
+        a: `Yes. Writing, reading and replying to letters is free. On the free plan you can release ${FACTS.freeLettersPerDay} new letter a day, pick up ${FACTS.discoverEnvelopesPerDay} envelopes a day in Discover and translate ${FACTS.translateFreePerDay} letters a day. Lettie Plus, an optional subscription, lifts those limits.`
+      },
+      {
+        q: 'Is Lettie a dating app?',
+        a: 'No. Lettie is a pen pal app for friendship and cultural exchange. Profiles start as pixel characters instead of photos, there is no swiping, and letters take time to arrive.'
+      },
+      {
+        q: 'Is there a web version of Lettie?',
+        a: 'No. Lettie is an app for iPhone (App Store) and Android (Google Play), and letters are written and read in the app. A letter someone shares as a link can be opened and read in a browser.'
+      },
+      {
+        q: 'What other pen pal apps are there?',
+        a: 'The best-known are Slowly, InterPals, HelloTalk, Tandem, Ablo and Penpal World. Our 2026 pen pal app comparison sets out what each free tier gives you, Lettie included.'
       }
     ]
   },
@@ -39,11 +52,11 @@ const faqCategories = [
     questions: [
       {
         q: 'How often can I send letters?',
-        a: 'There\'s no limit on sending letters. You can write and send as many letters as you like. However, we recommend maintaining appropriate intervals considering your pen pal\'s response speed.'
+        a: `Replies have no daily limit. A conversation takes turns: you write again once your letter has been answered, or after three days without a reply. On the free plan you can also release ${FACTS.freeLettersPerDay} new letter a day for anyone to pick up.`
       },
       {
         q: 'What if I receive a letter in another language?',
-        a: 'Lettie provides automatic translation. You can easily understand letters written in other languages. If you want to learn the language, you can view both the original and translated versions.'
+        a: `Tap the translate button inside the letter and it turns into your app language in place; tap again to see the original. Lettie covers 70+ languages, ${FACTS.translateFreePerDay} translations a day are free, and Lettie Plus has no limit.`
       },
       {
         q: 'My letter wasn\'t delivered. What should I do?',
@@ -65,7 +78,7 @@ const faqCategories = [
       },
       {
         q: 'I received inappropriate content. How do I report it?',
-        a: 'You can immediately report by pressing the report button on any letter or user profile. The Lettie team will review within 24 hours and take appropriate action.'
+        a: 'Press the report button on the letter or the profile. The Lettie team reviews reports and can hide letters and suspend accounts that break the rules. You can also block the person straight away.'
       },
       {
         q: 'Is there a blocking feature?',
@@ -99,7 +112,7 @@ const faqCategories = [
       },
       {
         q: 'Can I make my own character?',
-        a: 'Yes. Upload a selfie or describe how you look in a few words, and Lettie draws you in the same pixel style. Your first character is free, and the photo is used only for the drawing — it is not stored or shown to anyone. After that a drawing costs gems, and Lettie Plus includes one free drawing a week. The 16 default characters are always free to switch between.'
+        a: 'Yes. You put your pixel character together from parts such as face, hair and outfit, and some premium parts are unlocked with gems or Lettie Plus. You can also have Lettie draw you from a selfie or a few words about how you look, for gems; Lettie Plus includes one drawing a week. The photo is used only for the drawing and is not shown to anyone.'
       },
       {
         q: 'What is a stopover greeting?',
